@@ -1,0 +1,259 @@
+
+env:
+  TERM: alacritty
+  EDITOR: nvim
+
+# Auto-start every alacritty with tmux
+shell:
+  program: /usr/bin/bash
+  args:
+    - --login
+#     - -c
+#    - "tmux attach || tmux"  # attaches the last used session
+#     - "tmux attach -d -t alacritty || tmux new -s alacritty" # attaches session named 'alacritty'
+
+window:
+  dimensions:
+    columns: 100 
+    lines: 40
+  padding:
+    x: 2
+    y: 2
+  dynamic_title: true
+    #decorations: full
+  decorations: none
+    # decorations: full, none, transparent, buttonless
+  opacity: 0.8
+  
+# title: Alacritty@Garuda
+  dynamic_title: true
+  
+# Window class (Linux/BSD only):
+  class:
+    # Application instance name
+    instance: Alacritty
+    # General application class
+    general: Alacritty
+# startup_mode values ( Windowed - Maximized - Fullscreen )      
+  startup_mode: Maximized
+  #startup_mode: Windowed
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+tabspaces: 4
+
+
+# Font configuration
+font:
+  normal:
+    family: CaskaydiaCove Nerd Font
+    style: Regular
+  # Bold font face
+  bold:
+    family: CaskaydiaCove Nerd Font
+    style: Bold
+  # Italic font face
+  italic:
+    family: CaskaydiaCove Nerd Font
+    style: Italic
+  # Bold italic font face
+  bold_italic:
+    family: CaskaydiaCove Nerd Font
+    style: Bold Italic
+  # Point size
+  size: 12.0
+  
+draw_bold_text_with_bright_colors: true
+
+  # Thin strokes = true on retina displays, Non-retina disp = false
+  #use_thin_strokes: true
+
+cursor:
+   # - ▇ Block
+   # - _ Underline
+   # - | Beam
+  style: 
+    # shape: Underline
+    shape: Block
+    blinking: Off
+
+mouse:
+  double_click: { threshold: 300 }   
+  triple_click: { threshold: 300 }
+  hide_when_typing: true
+  
+selection:
+  save_to_clipboard: false
+
+
+live_config_reload: true
+
+bell:
+  animation: EaseOutQuint
+  duration: 10
+  color: '0xF44C8D'
+
+debug:
+  render_timer: false
+  persistent_logging: false
+  log_level: Warn
+  print_events: false
+  ref_test: false
+
+
+key_bindings:
+# - { key: T,        mods: Command, command: { program: "open", args: ["-n", "/Applications/Alacritty.app"] } }
+#  - { key: N,        mods: Command, action: SpawnNewInstance            }
+# - { key: N,        mods: Command, command: { program: "/usr/local/bin/tmux", args: ["new-session","-d","-s","test"] } }
+# - { key: N,        mods: Command, command: { program: "/usr/local/bin/tmux", args: ["new-session","-d"] } }
+# - { key: N,        mods: Command, action: SpawnNewInstance }
+  - { key: N,        mods: Command|Shift, command: { program: "/usr/local/bin/tmux", args: ["new-session","-d"] } }
+  - { key: T,        mods: Command, command: { program: "/usr/local/bin/tmux", args: ["new-window"] } }
+  - { key: V,        mods: Command, action: Paste                        }
+  - { key: C,        mods: Command, action: Copy                         }
+# - { key: Q,        mods: Command, action: Quit                         }
+  - { key: W,        mods: Command, action: Quit                         }
+  - { key: Q,        mods: Alt|Shift, command: { program: "/usr/local/bin/tmux", args: ["kill-window"] } }
+  - { key: Q,        mods: Command, command: { program: "/usr/local/bin/tmux", args: ["kill-pane"] } }
+  - { key: S,        mods: Command, command: { program: "/usr/local/bin/tmux", args: ["split-window", "-h"] } }
+  - { key: B,        mods: Command, command: { program: "/usr/local/bin/tmux", args: ["split-window", "-b"] } }
+  - { key: Key1,     mods: Command, command: { program: "/usr/local/bin/tmux", args: ["selected window", "-t", "1"] } }
+  - { key: Key2,     mods: Command, command: { program: "/usr/local/bin/tmux", args: ["selected window", "-t", "2"] } }
+  - { key: Key3,     mods: Command, command: { program: "/usr/local/bin/tmux", args: ["selected window", "-t", "3"] } }
+  - { key: Key4,     mods: Command, command: { program: "/usr/local/bin/tmux", args: ["selected window", "-t", "4"] } }
+  - { key: Key5,     mods: Command, command: { program: "/usr/local/bin/tmux", args: ["selected window", "-t", "5"] } }
+  - { key: Key6,     mods: Command, command: { program: "/usr/local/bin/tmux", args: ["selected window", "-t", "6"] } }
+  - { key: Key7,     mods: Command, command: { program: "/usr/local/bin/tmux", args: ["selected window", "-t", "7"] } }
+  - { key: Key8,     mods: Command, command: { program: "/usr/local/bin/tmux", args: ["selected window", "-t", "8"] } }
+  - { key: Key9,     mods: Command, command: { program: "/usr/local/bin/tmux", args: ["selected window", "-t", "9"] } }
+  - { key: Delete,                  chars: "\x1b[3~"                     }
+  - { key: Key1,     mods: Alt,           chars: "©"                  }
+  - { key: Key2,     mods: Alt,           chars: "@"                  }
+  - { key: Key3,     mods: Alt,           chars: "£"                  }
+  - { key: Key4,     mods: Alt,           chars: "$"                  }
+  - { key: Key5,     mods: Alt,           chars: "∞"                  }
+  - { key: Key6,     mods: Alt,           chars: "§"                  }
+  - { key: Key7,     mods: Alt,           chars: "|"                  }
+  - { key: Key8,     mods: Alt,           chars: "["                  }
+  - { key: Key9,     mods: Alt,           chars: "]"                  }
+  - { key: Key0,     mods: Alt,           chars: "≈"                  }
+  - { key: Grave,    mods: Alt,           chars: "~"                  }  
+  - { key: Equals,   mods: Command, action: IncreaseFontSize             }
+  - { key: Key0,     mods: Command, action: ResetFontSize                }
+  - { key: Equals,   mods: Command, action: IncreaseFontSize             }
+  - { key: Minus,    mods: Command, action: DecreaseFontSize             }
+  - { key: Left,     mods: Alt,     chars: "\x1bb"                       }
+  - { key: Right,    mods: Alt,     chars: "\x1bf"                       }
+  - { key: Left,     mods: Command, chars: "\x1bOH",   mode: AppCursor   } # Home
+  - { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   } # End  
+
+# RobocopAlpha colors
+#colors:   
+# Default colors   
+#  primary:     
+#    background: '#000000'     
+#    foreground: '#FFFFFF' 
+
+#  normal:
+#    black:   '#000000'
+#    red:     '#FF2222'
+#    green:   '#22BB22'
+#    yellow:  '#BBBB22'
+#    blue:    '#2279FF'
+#    magenta: '#BB22BB'
+#    cyan:    '#22BBBB'
+#    white:   '#DDDDDD'
+ 
+  # Bright colors
+#  bright:
+#    black:   '#888888'
+#    red:     '#FF2222'
+#    green:   '#22FF22'
+#    yellow:  '#FFFF22'
+#    blue:    '#2279FF'
+#    magenta: '#FF22FF'
+#    cyan:    '#22FFFF'
+#    white:   '#FFFFFF'
+
+import:
+
+#- ~/.config/alacritty/themes/themes/afterglow.yaml
+#- ~/.config/alacritty/themes/themes/argonaut.yaml
+#- ~/.config/alacritty/themes/themes/atom_one_light.yaml
+ - ~/.config/alacritty/themes/themes/ayu_dark.yaml
+#- ~/.config/alacritty/themes/themes/ayu_light.yaml
+# - ~/.config/alacritty/themes/themes/base16_default_dark.yaml
+# - ~/.config/alacritty/themes/themes/blood_moon.yaml
+#- ~/.config/alacritty/themes/themes/bluish.yaml
+#- ~/.config/alacritty/themes/themes/breeze.yaml
+#- ~/.config/alacritty/themes/themes/campbell.yaml
+#- ~/.config/alacritty/themes/themes/challenger_deep.yaml
+#- ~/.config/alacritty/themes/themes/citylights.yaml
+#- ~/.config/alacritty/themes/themes/Cobalt2.yaml
+#- ~/.config/alacritty/themes/themes/cyber_punk_neon.yaml
+#- ~/.config/alacritty/themes/themes/darcula.yaml
+#- ~/.config/alacritty/themes/themes/dark_pastels.yaml
+#- ~/.config/alacritty/themes/themes/doom_one.yaml
+#- ~/.config/alacritty/themes/themes/dracula.yaml
+#- ~/.config/alacritty/themes/themes/everforest_dark.yaml
+#- ~/.config/alacritty/themes/themes/everforest_light.yaml
+#- ~/.config/alacritty/themes/themes/falcon.yaml
+#- ~/.config/alacritty/themes/themes/flat_remix.yaml
+#- ~/.config/alacritty/themes/themes/github_dark_colorblind.yaml
+#- ~/.config/alacritty/themes/themes/github_dark_default.yaml
+#- ~/.config/alacritty/themes/themes/github_dark.yaml
+#- ~/.config/alacritty/themes/themes/github_dimmed.yaml
+#- ~/.config/alacritty/themes/themes/github_light_colorblind.yaml
+#- ~/.config/alacritty/themes/themes/github_light_default.yaml
+#- ~/.config/alacritty/themes/themes/github_light.yaml
+#- ~/.config/alacritty/themes/themes/gnome_terminal.yaml
+#- ~/.config/alacritty/themes/themes/gotham.yaml
+#- ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
+#- ~/.config/alacritty/themes/themes/gruvbox_light.yaml
+#- ~/.config/alacritty/themes/themes/gruvbox_material.yaml
+#- ~/.config/alacritty/themes/themes/high_contrast.yaml
+#- ~/.config/alacritty/themes/themes/horizon-dark.yaml
+#- ~/.config/alacritty/themes/themes/hyper.yaml
+#- ~/.config/alacritty/themes/themes/iterm.yaml
+#- ~/.config/alacritty/themes/themes/konsole_linux.yaml
+#- ~/.config/alacritty/themes/themes/low_contrast.yaml
+#- ~/.config/alacritty/themes/themes/Mariana.yaml
+#- ~/.config/alacritty/themes/themes/material_theme_mod.yaml
+#- ~/.config/alacritty/themes/themes/material_theme.yaml
+#- ~/.config/alacritty/themes/themes/monokai_charcoal.yaml
+#- ~/.config/alacritty/themes/themes/monokai_pro.yaml
+#- ~/.config/alacritty/themes/themes/moonlight_ii_vscode.yaml
+#- ~/.config/alacritty/themes/themes/night_owlish_light.yaml
+#- ~/.config/alacritty/themes/themes/nord.yaml
+#- ~/.config/alacritty/themes/themes/oceanic_next.yaml
+#- ~/.config/alacritty/themes/themes/omni.yaml
+#- ~/.config/alacritty/themes/themes/one_dark.yaml
+#- ~/.config/alacritty/themes/themes/palenight.yaml
+#- ~/.config/alacritty/themes/themes/papercolor_dark.yaml
+#- ~/.config/alacritty/themes/themes/papercolor_light.yaml
+#- ~/.config/alacritty/themes/themes/papertheme.yaml
+#- ~/.config/alacritty/themes/themes/pencil_dark.yaml
+#- ~/.config/alacritty/themes/themes/pencil_light.yaml
+#- ~/.config/alacritty/themes/themes/rainbow.yaml
+#- ~/.config/alacritty/themes/themes/remedy_dark.yaml
+#- ~/.config/alacritty/themes/themes/rose-pine.yaml
+#- ~/.config/alacritty/themes/themes/seashells.yaml
+#- ~/.config/alacritty/themes/themes/smoooooth.yaml
+#- ~/.config/alacritty/themes/themes/snazzy.yaml
+#- ~/.config/alacritty/themes/themes/solarized_dark.yaml
+#- ~/.config/alacritty/themes/themes/solarized_light.yaml
+#- ~/.config/alacritty/themes/themes/taerminal.yaml
+#- ~/.config/alacritty/themes/themes/tango_dark.yaml
+#- ~/.config/alacritty/themes/themes/tender.yaml
+#- ~/.config/alacritty/themes/themes/terminal_app.yaml
+#- ~/.config/alacritty/themes/themes/thelovelace.yaml
+#- ~/.config/alacritty/themes/themes/tokyo-night-storm.yaml
+#- ~/.config/alacritty/themes/themes/tokyo-night.yaml
+#- ~/.config/alacritty/themes/themes/tomorrow_night_bright.yaml
+#- ~/.config/alacritty/themes/themes/tomorrow_night.yaml
+#- ~/.config/alacritty/themes/themes/ubuntu.yaml
+#- ~/.config/alacritty/themes/themes/wombat.yaml
+#- ~/.config/alacritty/themes/themes/xterm.yaml
+# - ~/.config/alacritty/themes/themes/zenburm.yaml
