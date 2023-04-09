@@ -11,7 +11,7 @@ source "$HOME/.config/user-dirs.dirs"
 #export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin"
 export XDG_DATA_HOME="/home/$USER/.local/share"
 export EDITOR="nvim"
-export TERM="alacritty"
+export TERM="xterm-256color"
 export MANPAGER="less"
 #export MANPAGER="most -s"
 #export PAGER="cat"
@@ -134,7 +134,7 @@ PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
 PS1+="\$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n \"( BRANCH )\")"
 PS1+="${FMT_RESET}${FG_WHITE}" # print current git branch
 PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
-PS1+="\$(git status -s 2> /dev/null | grep '^A' | wc -l | sed 's/0//' | xargs -I UN echo -n ' !UN')" 
+PS1+="\$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/0//' | xargs -I UN echo -n \" MUN\")" 
 PS1+="${FMT_RESET}${FG_WHITE}"
 PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
 PS1+="\$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/0//' | xargs -I MD echo -n \" ?MD\")" 
@@ -172,9 +172,6 @@ fi
 # -f : Complete arguments as if they were directory names (default behaviour)
 #     (eg: `doas /bi<tab>` -> `doas /bin/`)
 complete -cf doas
-
-. "$HOME/.cargo/env"
-
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
