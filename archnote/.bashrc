@@ -6,6 +6,7 @@
 ### Sources ###
 source "$HOME/.config/user-dirs.dirs"
 source "/usr/share/nvm/init-nvm.sh"
+source "$HOME/.profile"
 
 ### Exports and variables ###
 # Modificando o PATH do sistema
@@ -135,7 +136,7 @@ PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
 PS1+="\$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n \"( BRANCH )\")"
 PS1+="${FMT_RESET}${FG_WHITE}" # print current git branch
 PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
-PS1+="\$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/0//' | xargs -I MD echo -n \" !MD\")" 
+PS1+="\$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/0//' | xargs -I UK echo -n \" \!UK\")" 
 PS1+="${FMT_RESET}${FG_WHITE}"
 PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
 PS1+="\$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/0//' | xargs -I MD echo -n \" ?MD\")" 
