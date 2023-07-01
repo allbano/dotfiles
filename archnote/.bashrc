@@ -7,24 +7,32 @@
 source "$HOME/.config/user-dirs.dirs"
 source "/usr/share/nvm/init-nvm.sh"
 source "$HOME/.profile"
+source "$HOME/github/dotfiles/tmux_completion.sh"
+
+source "/usr/share/nvm/nvm.sh"
+source "/usr/share/nvm/bash_completion"
+source "/usr/share/nvm/install-nvm-exec"
 
 ### Exports and variables ###
+[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
 # Modificando o PATH do sistema
-#export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin"
 export XDG_DATA_HOME="/home/$USER/.local/share"
+#export JUPYTERLAB_DIR="$HOME/.local/share/jupyter/lab"
 export EDITOR="nvim"
 export TERM="xterm-256color"
 export MANPAGER="less"
 #export MANPAGER="most -s"
-#export PAGER="cat"
+export PAGER="cat"
 export LESSHISTFILE="-"
 export LS_OPTIONS='--color=auto'
 
+export HISTCONTROL=ignoreboth:erasedups
 HISTCONTROL=ignoreboth:erasedups
 HISTFILE="$XDG_DATA_HOME/bash/history"
+ALIASES="$XDG_DATA_HOME/bash/aliases"
 HISTSIZE=10000
 HISTFILESIZE=2000
-ALIASES="$XDG_DATA_HOME/bash/aliases"
+
 
 ## Colorir Manual
 man() {
@@ -81,7 +89,7 @@ if [ -f "$XDG_DATA_HOME/bash/aliases" ]; then
 fi
 
 eval "`dircolors`"
-
+eval "$(mcfly init bash)"
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -136,10 +144,16 @@ PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
 PS1+="\$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n \"( BRANCH )\")"
 PS1+="${FMT_RESET}${FG_WHITE}" # print current git branch
 PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
-PS1+="\$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/0//' | xargs -I UK echo -n \" \!UK\")" 
+PS1+="\$(git status -s 2> /dev/null | grep '^A' | wc -l | sed 's/^0//' | xargs -I AD echo -n \" A(AD)\")" 
+PS1+="${FMT_RESET}${FG_WHITE}" # print current git branch
+PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
+PS1+="\$(git status -s 2> /dev/null | grep '^M' | wc -l | sed 's/^0//' | xargs -I MD echo -n \" M(MD)\")"
+PS1+="${FMT_RESET}${FG_WHITE}" # print current git branch
+PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
+PS1+="\$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/^0//' | xargs -I UD echo -n \" UM(UD)\")" 
 PS1+="${FMT_RESET}${FG_WHITE}"
 PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
-PS1+="\$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/0//' | xargs -I MD echo -n \" ?MD\")" 
+PS1+="\$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -I UK echo -n \" U(UK)\")" 
 PS1+="${FMT_RESET}${FG_WHITE}"
 PS1+="${FG_WHITE} - ${BG_GREY}${FG_WHITE}[\t]${FMT_RESET}\n" # end last container (either FILES or BRANCH)
 PS1+="${FG_WHITE}\342\224\224\342\224\200\342\224\200\342\225\274 " # end arrow to prompt
@@ -176,6 +190,10 @@ fi
 complete -cf doas
 
 
+source /home/albano/.bash_completions/shell-genie.sh
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
