@@ -7,9 +7,9 @@ env:
 shell:
   program: /usr/bin/bash
   args:
-    - --login
-#     - -c
-#    - "tmux attach || tmux"  # attaches the last used session
+    - -l
+    - -c
+    - "tmux new-ses -s al0" #"tmux attach || tmux"  # attaches the last used session
 #     - "tmux attach -d -t alacritty || tmux new -s alacritty" # attaches session named 'alacritty'
 
 window:
@@ -39,7 +39,7 @@ window:
   #startup_mode: Windowed
 
 scrolling:
-  history: 10000
+  history: 100000
   multiplier: 3
 
 tabspaces: 4
@@ -179,4 +179,4 @@ key_bindings:
 
 import:
 
- - ~/.config/alacritty/default.yml
+  - ~/.config/alacritty/default.yml
