@@ -39,18 +39,20 @@ export LS_COLOR="--color=auto"
 # ignoredups - eliminate duplicate commands (from the current session)
 # ignoreboth - Enable both ignoredups and ignorespace
 # erasedups - eliminate duplicates from the whole list (I don't use it)
-export HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoreboth
+HISTCONTROL='ignoreboth:erasedups'
 
 # ignore the following commands
-export HISTIGNORE='ls:lsd:exa:history:pwd:htop:bg:fg:ll:l:x:xx:his:up:uy:ur:exit:gst:ga:gcm:gcam'
+IGNORE='cd:ls:lsd -l:lsd -la:exa:history:pwd:htop:bg:fg:ll:l:x:xx:his:up:uy:ur:exit:gst:ga .:gp:gl:nvtop:bashtop'
+IGNORE="$IGNORE:sudo systemctl status:..:ll ~:l ~:github/dotfiles:lvim ~/.bashrc:lvim ~/.profile"
+HISTIGNORE="$IGNORE"
 
 # append last command to the history right before next prompt
 [[ "${PROMPT_COMMAND[*]}" != *'history -a'* ]] \
   && export PROMPT_COMMAND+=('history -a')
 
-export HISTFILE="$XDG_DATA_HOME/bash/history"
-export HISTSIZE=10000
-export HISTFILESIZE=20000
+HISTFILE="$XDG_DATA_HOME/bash/history"
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 
 # Aliases
