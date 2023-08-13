@@ -1,6 +1,6 @@
-# Welcome Albano's dotfiles
+# Welcome
 
-## This Repository of dotfiles for my usual machines and distros.
+## This is the dotfile repository I use on my computers and distros.
 
 ### I'm currently using the distros:
 * Archlinux (Notebook)
