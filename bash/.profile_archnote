@@ -1,0 +1,21 @@
+##### STANDARD CONFIG #####
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    export PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
+export PATH="$PATH:/usr/sbin:/sbin:/opt/anaconda/bin"
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+
+
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+#GTK_THEME="Flat-Remix-GTK-Green-Darkest-Solid" 
+GTK_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme | sed "s/'/\"/g") 
+
