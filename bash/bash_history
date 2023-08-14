@@ -1,0 +1,1011 @@
+nvtop
+exirt
+paru -Ssss debootstrap
+which malloc
+pacman -Si talloc
+lsblk -f
+nvtop
+env
+env|rg TERMCAP
+set|rg TERMCAP
+man man
+nvim  /.bashrc
+nvim  ~/.bashrc
+most
+nvim  ~/.bashrc
+man man
+man man
+cd github/
+cd dotfiles/
+gl
+cat tmux/.tmux.conf
+ls bash-completion/
+lsd bash-completion/
+cd bash-completion/
+cat  /.bashrc
+cat  ~/.bashrc
+/usr/share/bash-completion/
+cd completions/
+TMUX="$(pwd)/tmux_completion
+TMUX="$(pwd)/tmux_completion"
+echo $TMUX
+cd  ~/github/dotfiles/bash-completion/
+sudo ln -s /home/albano/github/dotfiles/bash-completion/tmux_completion $(echo $TMUX)
+cd $OLDPWD
+ll l*
+ll t*
+neofetch
+nvim ~/.bashrc
+/usr/share/bash-completion/
+complete 
+completions/
+ll doas
+ll tmux
+ll -d tmux
+sudo ln -s /home/albano/github/dotfiles/bash-completion/tmux_completion ./tmux_completion
+ll -d tmux_completion 
+sudo ln -s /home/albano/github/dotfiles/bash-completion/doas /home/albano/github/dotfiles/bash-completion/doas
+ll -d doas
+ll -d ./doas
+ll d*
+sudo ln -s /home/albano/github/dotfiles/bash-completion/doas /usr/share/bash-completion/completions/doas
+ll d*
+nvim ~/.bashrc
+doas syexit
+doas syexit
+doas pacman -Syyuu
+cd github/dotfiles/
+mkdir qBittorrent
+cd qBittorrent/
+mkdir themes
+then
+themes/
+git clone https://github.com/dracula/qbittorrent.git
+cd qbittorrent/
+cp dracula.qbtheme ..
+~/.config/qBittorrent/
+cat qBittorrent
+cat qBittorrent.conf
+nvim qBittorrent.conf
+cd ~/github/dotfiles/qBittorrent/themes/
+rm dracula.qbtheme
+mv qbittorrent Dracula
+cd Dracula/
+rm .git
+rm -rf .git
+rm -rf .github/
+ga .
+git restore --staged .
+cd..
+cd themes
+rm -rf qBittorrent/
+cd ~/.config/
+cd qBittorrent/
+mkdir themes
+man git clone
+git clone https://github.com/dracula/qbittorrent.git -o Dracula
+cd qbittorrent/
+rm -rf qbittorrent/
+git clone https://github.com/dracula/qbittorrent.git Dracula
+mv Dracula ./themes/
+cd themes/
+cd Animes/
+rm '[AnimesTC] AI no Idenshi - 01 (1080p).mkv'
+rm '[Erai-raws] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka - 01 ~ 13 [1080p][Multiple Subtitle]'
+rm -rf '[Erai-raws] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka - 01 ~ 13 [1080p][Multiple Subtitle]'
+mkdir Dungeon_ni_Deai
+cd Dungeon_ni_Deai/
+mkdir S4
+cd S4/
+free -h
+cd github/
+cd cd jgp4/
+jgp4/
+cd Cap01_Introducao/
+bat Cap01_Introducao.txt
+cd ../..
+rm -rf jgp4/
+cd webcoder/
+cat funcoes.js
+rm -rf webcoder/
+cd we-
+cd web-moderno/
+cd exercicios-web/
+cd web-moderno/
+git status
+rm -rf web-moderno/
+rm -rf extensaoinclusaodigital/
+cd db3
+cd ebook/
+git config -l
+rm -rf construindosaberes/
+cd git
+cd javaexercicios/
+cd analisedeprojetos/
+ga .
+gcam "Reorganizado os arquivos. Projeto finalizado!"
+gp
+cd ana
+analisedeprojetos/
+rm -rf analisedeprojetos/
+rm -rf TrabalhoFinalJava1
+cd javaexercicios
+cd Exercicio
+cd Exercicio2
+cd utfprct-tex/
+git config -l
+cd utfprct-tex/
+gl
+git clone git@github.com:wmeira/utfprct-tex.git
+rm -rf utfprct-tex/
+git clone git@github.com:wmeira/utfprct-tex.git
+cd utfprct-tex/
+cat README.md
+cd myscripts/
+gl
+cd WEBII/
+ga .
+gp
+rm -rf WEBII/
+LPOO1Exercises/
+rm -rf LPOO1Exercises/
+cd jogodavelha/
+neofetch
+systemctl restart
+doas pacman -R chormium
+doas pacman -R chromium
+alias |rg py
+bat /home/albano/.py3env/bin/activate
+echo BASH_SOURCE
+echo $BASH_SOURCE
+cd /home/albano/.py3env/bin/
+lvim
+cd github/
+git clone git@github.com:allbano/Developing.git
+cd Developing/
+cd CLang/
+cd examples/
+mkdir DataStructs
+cd DataStructs/
+mkdir examples
+cd .. && mv ./CLang/examples/DataStructs .
+mv DataStructs ./CLang/
+cd CLang/
+cd DataStructs/
+cd examples/
+touch exDataStruct.c exDataStruct.h
+lvim exDataStruct.h
+lvim
+cd ~/.config/lvim/
+lvim config.lua
+lvim
+cd $OLDPWD
+lvim exDataStruct.h
+lvim exDataStruct.c
+touch Ponto.c
+lvim Ponto.c
+mv exDataStruct.h Ponto.h
+lvim Ponto.h
+lvim Ponto.c
+mv exDataStruct.c exTestPonto.c
+lvim exTestPonto.c
+gcc -c Ponto.c exTestPonto.c -o dt
+gcc Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc -ld  Ponto.c exTestPonto.c -o dt
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+doas find / -name '*math.h'
+doas find / -name '*/math.h'
+doas find / -wholename '*/math.h'
+bat /usr/include/math.h'
+bat /usr/include/math.h
+bat /usr/include/math.h | rg sqrt
+lvim /usr/include/math.h
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+gcc exTestPonto.c Ponto.c -o dt
+gcc exTestPonto.c Ponto.c -o xxx
+gcc -00 exTestPonto.c Ponto.c -o xxx
+gcc -Wall exTestPonto.c Ponto.c -o xxx
+gcc -Wall exTestPonto.c Ponto.c -o xxx -lm
+lvim Ponto.c
+lvim Ponto.c
+gcc -Wall exTestPonto.c Ponto.c -o xxx
+rm xxx
+gcc -Wall exTestPonto.c Ponto.c -o xxx
+gcc -Wall -lm exTestPonto.c Ponto.c -o xxx
+lvim exTestPonto.c
+gcc -Wall -lm exTestPonto.c Ponto.c -o xxx
+lvim exTestPonto.c
+lvim Ponto.c
+gcc -Wall -lm exTestPonto.c Ponto.c -o xxx
+gcc -std=c99  -Wall  exTestPonto.c Ponto.c -o xxx
+gcc -std=c99  -Wall -00  exTestPonto.c Ponto.c -o xxx
+gcc -std=c99  -Wall  exTestPonto.c Ponto.c -o xxx
+gcc -lm  -Wall  exTestPonto.c Ponto.c -o xxx
+l -h
+lsd -l
+cd github/laundry_online/
+cat docker-compose.yml
+cd ui
+cat Dockerfile
+cd app/
+cat Dockerfile
+nvtop
+exuit
+cd github/
+git clone git@github.com:allbano/bantads.git BANTADS
+cd BANTADS/
+touch README.md
+got config -l
+git config -l
+git branch -M main
+ga .
+gcam "Primeiro commit do repositório."
+gp
+lvim README.md
+ga .
+gc -m "Adicionada informações no README."
+gp
+man ash
+man bash
+doas pacman -S less
+doas pacman -S most
+doas pacman -Ssss build-dep
+doas pacman -Ssss build-
+doas pacman -Ssss fdupes
+doas pacman -Si fdupes rm lint
+doas pacman -Si fdupes rmlint
+cd Projects/
+cd Filters/
+cd github/
+git clone https://github.com/allbano/SINAPSENSE
+cd SINAPSENSE/
+cd Projects/
+cd Filters
+mv Filters ~/github/SINAPSENSE/
+cd SINAPSENSE/
+ga .
+git branch -M main
+git restore --staged .
+gi rm --cached .
+git rm --cached .
+git rm --cached -r .
+touch README.md
+ga README.md
+gc -M "Primeiro commit, adicionado README."
+gc -m "Primeiro commit, adicionado README."
+gp
+git push -u origin main
+mv Filters ..
+rm SINAPSENSE/
+rm -rf SINAPSENSE/
+git clone git@github.com:allbano/SINAPSENSE.git
+cd SINAPSENSE/
+touch README.md
+ga .
+gcam "Primeiro commit, adiciionado README."
+gp
+mv Filters ./SINAPSENSE/
+cd SINAPSENSE/
+gab .
+ga .
+gcam "Filtros da última versão do programa de leitura do EEG. (Python)"
+gp
+doas pacman -S octave
+ip -c r
+flatpak update
+dc .ssh
+kl
+.ssh
+chmod 600 known_hosts
+chmod 600 known_hosts.old
+ip -c a
+ssh-keygen --help
+history|rg ssh-keygen
+history|rg ssh-ke
+exit
+ssh-keygen -t ed25519 -C "allnote"
+ssh-copy-id albano@192.168.15.3
+ssh-copy-id albano@192.168.15.3 -p 6969
+ssh-copy-id -p 6969  albano@192.168.15.3
+ssh-copy-id -p 6969  192.168.15.3
+ssh-copy-id -p 6969 -i /home/albano/.ssh/allnote.pub  192.168.15.3
+ssh-copy-id -p 6969 -i allnote.pub  192.168.15.3
+ssh 192.168.15.3
+ssh -p 6969  alano@192.168.15.3
+ssh -p 6969  albano@192.168.15.3
+ssh-copy-id -p 6969 -i allnote.pub  albano@192.168.15.3
+ssh -p 6969 albano@192.168.15.3
+uname -a
+ssh -p 6969 albano@192.168.15.3
+ssh -p 6969 albano@179.187.195.199
+uname -a
+neofetch
+ssh -p 6969 albano@192.168.15.3
+ls -l
+cat known_hosts
+docker
+ls -l /proc/$BASHPID
+ls -l /proc/$BASHPID/fd
+ls -l /proc/$$/fd
+echo $LOGIN
+echo$LOGIN
+cat /etc/pacman.d/mirrorlist
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+yay -Ssss megasync
+yay -Rscnd megasync
+yay -S megasync -bin
+yay -S megasync-bin
+doas lvim /etc/pacman.d/mirrorlist
+yay -Ssss megasync
+yay -S megasync-bin
+yay -Ssss megasync
+yay -Syyu
+neofetch
+github/dotfiles/
+cd tmux/
+lvim.tm
+lvim .tmux.confm
+lvim .tmux.conf
+cd alacritty/
+cd themes2/
+lsd -l
+lvim alacritty.yml
+cd ~/.config/alacritty/
+cat Albano-Dkeg-Vw.yml
+rm themes
+rm -rf themes
+cd $OLDPWD
+rm -rf alacritty/
+cp ~/.config/alacritty .
+cp -r ~/.config/alacritty .
+ga .
+gcam "Melhorada estrutura dos arquivos de configuração e iniciado testes de thema."
+gp
+cd UFPR/TADS/
+mkdir DS252-ESII
+cd DS252-ESII/
+mkdir Docs
+mkdir DS143-EDII
+up\
+~/github/Developing/
+ga .
+git restore --staged xxx
+git restore --staged CLang/DataStructs/examples/xxx
+cd CLang/DataStructs/
+cd examples/
+lvim Ponto.h
+is
+gcc exTestPonto.c Ponto.c -o xxx
+gcc -lm exTestPonto.c Ponto.c -o xxx
+rm xxx
+bat Ponto.h
+bat Ponto.c
+lvim exTestPonto.c
+lvim Ponto.
+lvim Ponto.c
+gcc -lm  exTestPonto.c Ponto.c -o xxx
+lvim Ponto.c
+gcc -lm  exTestPonto.c Ponto.c -o xxx
+lvim Ponto.c
+gcc -lm  exTestPonto.c Ponto.c -o xxx
+rm xxx
+git restore --staged .
+mkdir Ponto
+mv ./* ./Ponto
+mv ./* ./Ponto/
+mv Ponto.{c,h} exTestPonto.c  ./Ponto/
+mv ./Ponto.{c,h} ./exTestPonto.c  Ponto/
+cd Ponto/
+gcam "Ponto example Data Structure."
+gp
+mkdir UnionFind
+cd UnionFind/
+lk
+touch UnionFind.{h,c}
+mv UnionFind.h libUnionFind.h
+cp libUnionFind.h libUnionFind.c
+lvim libUnionFind.h
+lvim libUnionFind.c
+lvim UnionFind.c
+cd github/Developing/CLang/DataStructs/examples/UnionFind/
+lvim UnionFind.c
+lvim libUnionFind.c
+rm libUnionFind.{c,h}
+lvim UnionFind.c
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/tinyUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/mediumUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/largeUF.txt
+l -h
+lsd -l
+lvim largeUF.txt
+rm largeUF.txt
+rm mediumUF.txt
+rm tinyUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/largeUF.txt
+rm largeUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/tinyUF.txt
+cat tinyUF.txt
+rm tinyUF.txt
+cat tinyUF.txt
+cat mediumUF.txt
+cat largeUF.txt
+reset
+lvim UnionFind.c
+cd github/Developing/CLang/DataStructs/examples/
+mkdir ListaSequencial
+cd ListaSequencial/
+ga .
+touch README.md
+lvim README.md
+ga .
+git restore --staged .
+ga README.md
+gc -m "Added README of Data Structure Directory."
+ga .
+gcam "Exercise UnionFind - Data Structure II subject."
+gp
+lsd -l
+cd examples/
+cd ListaSequencial/
+touch ListaSequencial.{h,c}
+cd github/Developing/CLang/DataStructs/examples/ListaSequencial/
+lvim ListaSequencial.c
+lvim ListaSequencial.h
+lvim ListaSequencial.c
+neofetch
+cd github/
+cd Developing/CLang/DataStructs/examples/UnionFind/
+#1691437106
+lvim UnionFind.c 
+lvim UnionFind.c
+cd github/Developing/CLang/DataStructs/examples/
+cd ListaSequencial/
+bat ListaSequencial.
+bat ListaSequencial.h
+bat ListaSequencial.c
+bashtop
+ps
+nvim ~/.local/share/bash/history
+exit
+ll
+nvim ~/.local/share/bash/history
+cat ~/.local/share/bash/history
+//g'
+//g'
+//g'
+//g'
+cat ~/.local/share/bash/history
+nvim ~/.local/share/bash/history
+cat ~/.local/share/bash/history
+nvim ~/.zshrc
+l
+cat .zsh_history
+his
+history
+cat ~/.local/share/bash/history
+//g'
+cat ~/.local/share/bash/history 
+exit
+ll
+his
+history
+exit
+exit
+cat /etc/bash.bashrc
+cd /etc/bash_completion.d/
+echo $PS1
+37m\] $ \[\e[0m\]"
+cd github/
+cd Developing/CLang/
+tree
+lsd -l
+yay -Ssss pwd
+tree --help
+tree -L 0
+tree -L 1
+tree -L 1 ~
+tree -L 1 $HOME
+reset
+cd github/
+cd Developing/
+yay -Syyu
+paru -Syyu
+paru -Qi python-anytree
+paru -R python-anytree
+neofetch
+doas systemctl status
+jobs -l
+echo $PS1
+37m\] $ \[\e[0m\]"
+cd github/
+cd Developing/CLang/DataStructs/
+cd examples/
+cd UnionFind/
+lvim UnionFind.c
+his|rg sh
+his|rg ssh
+ssh -p 6969 albano@192.168.15.3
+exitt
+htop
+exit
+exit
+yay -R mawk
+neofetch
+flatpak update
+bat /etc/bash.bashr
+bat /etc/bash.bashrc
+cat  ~/.config/user-dirs.dirs
+cd github/dotfiles/
+cd bash
+cat .bashrc
+lvim ~/.bashrc
+cat .profile
+cat $HOME/.cargo/env
+cargo
+uname -a
+echo $PATH
+uname -a
+cat $HOME/.cargo/env
+.cargo/
+cd .
+rustup --help
+rustup update
+rustup show
+lvim ~/.bashrc
+cat ~/.cargo/env
+lvim ~/.cargo/env
+lvim ~/.bashrc
+ssh -p 6969 albano@192.168.15.3
+doas systemctl restart bluetooth.service
+reboot
+ssh -p 6969 albano@192.168.15.3
+doas systemctl restart bluetooth.service
+reboot
+lvim ~/.profile
+lvim ~/.bashrc
+ssh -p 6969 albano@192.168.15.3
+ssh -p 6969 albano@2804:7f4:309a:885c:80fc:7ee1:f946:fd9a
+uname -a
+neofetch 
+uname -a
+neofetch 
+lvim ~/.bashrc
+cat /proc/loadavg 
+cat /proc/loadavg | cut -d
+cat /proc/loadavg | cut -d" "
+cat /proc/loadavg | cut -d" " -f1
+cat /proc/loadavg | cut -d" " -f1-3
+upower -e
+upower -e | rg battery
+upower -i '$(upower -e | rg battery)'
+upower -i "$(upower -e | rg battery)"
+upower -i "$(upower -e | rg battery | head)"
+upower -i "$(upower -e | rg battery | head -n1)"
+upower -i $(upower -e | rg battery | head -n1)
+upower -i $(upower -e | rg battery | head -n1)|rg percentagel
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-3
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|cut -c 1-4
+upower -i $(upower -e | rg battery | head -n1)|rg percentage
+upower -i $(upower -e | rg battery | head -n1)|rg percentage\rev
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-4
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-4|rev
+cd salsa/devel/
+./prompt 
+./prompt --help
+exi
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-4|rev
+cd salsa/devel/
+./prompt 
+./prompt --help
+exi
+nerdctl
+nerdctl --help
+docker
+yay -Ssss osx-cpu-temp
+yay -Ssss cpu-temp
+yay -Sss lm-sensors
+yay -Sss lm_sensors
+yay -Sss iostat
+iostat
+man htop
+man ip
+type -a abshtop
+type -a bashtop
+which bashtop
+type bashtop
+whoami
+who --help
+who a
+who am
+who -a
+who -am
+who -am i
+who -am -i
+who am i
+who am i | awk '{print $NF
+who am i | awk '{print $NF}'
+who am i | awk '{print $NF}' | tr -d ')''('
+eval --help
+eval "$@"
+ssh -p 6969 albano@192.168.15.3
+ssh -p 6969 albano@2804:7f4:309a:885c:80fc:7ee1:f946:fd9a
+uname -a
+neofetch 
+lvim ~/.bashrc
+cd salsa/
+rm devel/
+pl
+gl
+cd git clone git@salsa.debian.org:kretcheu/tutoriais.git
+cd ..
+ll ~/.ssh
+cat ~/.ssh/allnote.pub 
+git clone git@salsa.debian.org:kretcheu/tutoriais.git
+yay -Ssss nethogs
+rm -rf devel/
+git clone git@salsa.debian.org:kretcheu/devel.git
+cd devel/
+lvim ./prompt 
+cat abshtop
+cat babshtop
+cat bashtop
+cat $(which bashtop)
+yay -Si btop
+top
+btop
+bashtop
+cd Downloads/CursoKretcheu/
+cd cgcr/
+rm a05.mp4 
+man wge
+man wget
+pacman -S less
+doas pacman -S less
+doas pacman -R less
+lvim ~/.bashrc
+cat $(which bashtop)
+yay -Si btop
+top
+btop
+rm a05.mp4 
+cd Downloads/CursoKretcheu/
+cd cgcr/
+cd ~/github/
+cd ~/github/dotfiles/
+git config -e
+git config --global -e
+cd $OLDPWD
+bashtop
+cat | strace -f -e read,write,clone,execve,dup2,openat,close bash
+cat .bashrc | strace -f -e read,write,clone,execve,dup2,openat,close bash
+rm -rf devel/
+git clone git@salsa.debian.org:kretcheu/devel.git
+cd devel/
+lvim ./prompt 
+cat abshtop
+cat babshtop
+cat bashtop
+cat $(which bashtop)
+yay -Si btop
+top
+btop
+bashtop
+cd Cursos/
+cd Downloads/
+ll * d/
+ll  d*/
+ll -d */
+lsd -ld */
+cd CursoKretcheu/
+wget -rc https://kretcheu.com.br/
+rm -rf kretcheu.com.br/
+cd kretcheu.com.br/
+mv cgcr/* ../cgcr/
+rmdir cgcr/
+rmdir kretcheu.com.br/
+ll -h
+rm -rf 'index.*'
+rm -rf {index.*}
+rm -rf l
+nautilus .
+rm -rf *
+tldr wget
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/ -R 'index.*'
+cd cgcr/
+cd ..
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/cgcr/ -R 'index.*'
+rm -rf cgcr/
+wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,*.html,*.ico,*.tmp'
+ip -c a
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/ -R 'index.*'
+cd cgcr/
+cd ..
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/cgcr/ -R 'index.*'
+rm -rf cgcr/
+wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,*.html,*.ico,*.tmp'
+ip -c a
+github/BANTADS/
+gcam 'Atualizado as informações das configurações do Projeto.'
+git commit --amend -m 'Atualizado as informações das configurações do Projeto.'
+git push -ff
+gl
+lvim README.md 
+git commit --amend
+gp
+gp -ff
+git log
+rm -rf *
+tldr wget
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/ -R 'index.*'
+cd cgcr/
+cd ..
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/cgcr/ -R 'index.*'
+rm -rf cgcr/
+wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,*.html,*.ico,*.tmp'
+ip -c a
+github/
+BANTADS/
+gp
+gl
+cat README.md 
+nvm
+nvm update
+nvm list
+nvm nvm ls
+nvm install --lts
+nvm use lts
+nvm use 18.17.1
+nvm ls
+cd
+ng
+lvim ~/.bashrc
+npm instasll npm@latest -g
+npm i-v
+npm -v
+npm update -f
+npm update -g
+npm install -g @angular/cli
+npm version
+npm 
+npm -l
+npm ls
+npm --help
+npm version typescript
+nv version
+ng version
+npm install -g @typescript@latest
+npm install -g typescript@latest
+npm view typescript
+npm install -g typescript@latest
+github/BANTADS/
+npm list -global --dpth 0
+npm list -global --depth 0
+npm view typescript
+tsc --version
+npm
+npm version
+npm ls
+npm -g ls
+lvim README.md 
+gp --ff
+gp -ff
+glo
+glog
+gloga
+glol
+alias glol
+ng
+ng --help
+github/dotfiles/
+cd bash
+rm .bashrc 
+cp ~/.bashrc .
+rm ~/.bashrc
+ln -s /home/albano/github/dotfiles/bash/.bashrc /home/albano/.bashrc
+cd
+cat .bash_history 
+rm .bash_history 
+cd $OLDPWD
+github/dotfiles/
+cd archnote/
+cat .bashrc 
+cd ..
+cd bash
+cp ~/.profile 
+cp ~/.profile .
+mv .profile .profile_archlinux
+mv .bashrc .bashrc_archnote
+mv .profile_archlinux .profile_archnote
+ln -s /home/albano/github/dotfiles/bash/.bashrc_archnote /home/albano/.bashrc
+unlink ~/.bashrc
+ln -s /home/albano/github/dotfiles/bash/.bashrc_archnote /home/albano/.bashrc
+rm .h2.server.properties 
+rm package-lock.json 
+rm -rf .voltapp
+github/dotfiles/
+bash
+cd bash
+kl
+cat .bashrc_archnote 
+cat .profile_archnote 
+rm ~/.profile 
+ln -s ./.profile_archnote ~/.profile
+ll ~
+l ~
+unlink ~/.profile
+ln -s /home/albano/github/dotfiles/bash/.profile_archnote ~/.profile
+l ~
+babt ~/.profile
+bat ~/.profile
+ga .
+gc -m "Added bash configuration file and archnote profile."
+gp
+cd .
+..
+chmod 750 README.md 
+lsd -la
+chmod 650 README.md 
+chmod 750 README.md 
+lvim README.md 
+ga .
+gst -l
+gst -s
+gc -m "Updated README."
+gp
+bat README.md 
+lvim README.md 
+ga .
+glol
+glo
+gc -m "Modified README."
+gp
+cd 
+lvim ~/.bashrc
+lvim ~/.bashrc..
+cd 
+gp
+lsd -la
+lvim ~/.bashrc
+nvtop
+github/dotfiles/
+ga .
+github/dotfiles/
+git restore --staged .
+lvim ~/.bashrc
+github/dotfiles
+cd
+lvim ~/.bashrc
+exity
+ng version
+gc -m "Updated .bashrc"
+ng version
+ng --help
+nvm
+nvm list
+nvm use default 18.17.1
+nvm list
+ng version
+cd ..
+cd BANTADS/
+lvim ~/.abshrc
+lvim ~/.babshrc
+github/dotfiles/
+cd github/BANTADS/
+ng version
+github/BANTADS/
+nvm list
+nvm alias default 18.17.1
+nvm lis
+nvm list
+nvm use
+nvm insall --lts
+nvm uninstall 18.16.0
+nvm use 18.17.1
+nvm uninstall 18.16.0
+nvm lis
+nvm list
+ng new ui
+~l
+cd ui/
+ng g m cliente
+cd g m auth
+ng g m auth
+cd src/
+cd app/
+cd atu
+cd auth/
+github/BANTADS/
+ui
+gs
+git restore --staged .
+rm ui
+gs
+rm -rf ui
+gstt
+github/BANTADS/
+ng new ui
+gcam "Criado o projeto no Angular."
+ng g m cliente
+ng g m auth
+ga auth
+gc -m "Criado módulo de Autenticação."
+ga cliente
+gc -m "Criado módulo de Cliente."
+gp -ff
+glog
+alias
+glgg
+lvim README.md 
+gcam "Attualizado README."
+uname -a
+neofetch 
+lsusb
+lspci
+exitt
+gstt
+paru -Ssss gdb
+paru -S gdb
+gdb -v
+cat /etc/shells 
+csh
+tcsh
+zsh
+help
+type ls
+man -k man
+tldr man
+cat /etc/locale.conf 
+man --locate=pt_BR.UTF-8 bash
+man --locale=pt_BR.UTF-8 bash
+sudo locale.gen
+sudo lvim /ettc/locale.gen
+sudo lvim /etc/locale.gen
+sudo nvim /etc/locale.gen
+sudo locale-gen
+nvim /etc/locale.conf 
+doas nvim /etc/locale.conf 
+man --locale=pt_BR.UTF-8 ip
+echo $0
+echo $SHELL
+env
+which his
+which history
+help
+rm aliases 
+rm history 
+rmdir bash
+man tldr
+gedit profile_archnote 
+;;
+tmux
+his | rg 898
+cargo
+exity
+his|rg lvim
+his|rg lvims
+git restore --staged .
+lsd
+#1691992402
+lsd -1

@@ -12,10 +12,19 @@ fi
 
 export PATH="$PATH:/usr/sbin:/sbin:/opt/anaconda/bin"
 export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
-
+. "$HOME/.cargo/env"
 
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 #GTK_THEME="Flat-Remix-GTK-Green-Darkest-Solid" 
 GTK_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme | sed "s/'/\"/g") 
 
+### NVM Implemantation ###
+source "/usr/share/nvm/init-nvm.sh"
+source "/usr/share/nvm/nvm.sh"
+source "/usr/share/nvm/bash_completion"
+source "/usr/share/nvm/install-nvm-exec"
+[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

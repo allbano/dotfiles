@@ -6,70 +6,94 @@
 # Bash Form
 ## [[ "$-" != *i* ]] && return
 #Posix Form
+###############################################################################
 case $- in
     *i*) ;;
       *) return;;
 esac
 
+
 ### Modified xdg-user-dirs ###
+###############################################################################
 source "$HOME/.config/user-dirs.dirs"
 export XDG_DATA_HOME="/home/$USER/.local/share"
 
-### NVM Implemantation ###
-source "/usr/share/nvm/init-nvm.sh"
-source "/usr/share/nvm/nvm.sh"
-source "/usr/share/nvm/bash_completion"
-source "/usr/share/nvm/install-nvm-exec"
-[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
 
-
-
-### Exports and Environments ###
+# Load Profile 
+###############################################################################
 source "$HOME/.profile"
-. "$HOME/.cargo/env"
 
+
+# Exports and User Configs 
+###############################################################################
 export EDITOR="nvim"
 export TERM="xterm-256color"
 export MANPAGER="less -s -M -Gg"
 export LS_COLOR="--color=auto"
+export DOTFILES="/home/$USER/github/dotfiles"
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+
+# History Configs
 # Remember: https://meleu.sh/bash-history
+###############################################################################
 # HISTCONTROL options
 # ignorespace - eliminates commands that begin with a space history list.
 # ignoredups - eliminate duplicate commands (from the current session)
 # ignoreboth - Enable both ignoredups and ignorespace
 # erasedups - eliminate duplicates from the whole list (I don't use it)
-HISTCONTROL='ignoreboth:erasedups'
+# export HISTCONTROL="$HISTCONTROL:erasedups"
+export HISTCONTROL="ignoreboth"
+
+# show a timestamp in the history command output
+export HISTTIMEFORMAT="%F %T$ "
 
 # ignore the following commands
-IGNORE='cd:ls:lsd -l:lsd -la:exa:history:pwd:htop:bg:fg:ll:l:x:xx:his:up:uy:ur:exit:gst:ga .:gp:gl:nvtop:bashtop'
-IGNORE="$IGNORE:sudo systemctl status:..:ll ~:l ~:github/dotfiles:lvim ~/.bashrc:lvim ~/.profile"
-HISTIGNORE="$IGNORE"
+# IGNORE="$IGNORE:"
+# Path's ignore
+IGNORE="cd:cd *:..:~:/etc:/usr:/var"
+IGNORE="$IGNORE:github/dotfiles/:github/BANTADS/"
+# Ls/exa/lsd ignore
+IGNORE="$IGNORE:ls:lsd -l:lsd -la:exa:ll:l:x:xx:ll ~:l ~"
+# git's ignore
+IGNORE="$IGNORE:gst:ga *:gp:gl:glol:glob"
+# Commands ignore
+IGNORE="$IGNORE:* --help:help *:history:history *:his:his *:pwd:htop:bg:fg:up:uy:ur:exit:nvtop:bashtop"
+IGNORE="$IGNORE:sudo systemctl status:lvim ~/.bashrc:lvim ~/.profile:neofetch:lspci:lsusb:lsblk:lsblk -f"
+IGNORE="$IGNORE:alias:alias *:lvim *:cat *:bat *"
+# frameworks ignore
+IGNORE="$IGNORE:nvm --help:ng --help:nvm version:ng version"
+export HISTIGNORE="$IGNORE"
 
 # append last command to the history right before next prompt
 [[ "${PROMPT_COMMAND[*]}" != *'history -a'* ]] \
   && export PROMPT_COMMAND+=('history -a')
 
-HISTFILE="$XDG_DATA_HOME/bash/history"
-HISTSIZE=10000
-HISTFILESIZE=20000
+HISTFILE="$DOTFILES/bash/bash_history"
+export HISTSIZE=20000
+export HISTFILESIZE=20000
 
 
-# Aliases
+# Aliases definitions
 ###############################################################################
-ALIASES="$XDG_DATA_HOME/bash/aliases"
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+ALIASES="$DOTFILES/bash/bash_aliases"
 ###############################################################################
 if [ -f "${ALIASES}" ]; then
   source "${ALIASES}"
 fi
 
-# Functions
+# Shell Functions
 ###############################################################################
-if [ -f "${XDG_DATA_HOME}/bash/bash_functions" ]; then
-  source "${XDG_DATA_HOME}/bash/bash_functions"
+if [ -f "${DOTFILES}/bash/bash_functions" ]; then
+  source "${DOTFILES}/bash/bash_functions"
 fi
 
-### Options ###
+# Shell Options 
+###############################################################################
 # set -o vi
 shopt -s histappend
 shopt -s expand_aliases
@@ -77,6 +101,8 @@ shopt -s checkwinsize
 shopt -s autocd # change to named directory
 shopt -s cdspell # autocorrects ced misspellings
 shopt -s cmdhist # save multi-line commands in history as single line
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
 shopt -s dotglob
 
 #ignore upper and lowercase when TAB completion
@@ -84,7 +110,8 @@ shopt -s dotglob
 
 
 
-### Change window title ###
+# Change window title 
+###############################################################################
 case "$TERM" in
 	xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|alacritty|st-256color|konsole*)
 		PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
@@ -95,24 +122,6 @@ case "$TERM" in
 esac
 
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-if [ -f "$XDG_DATA_HOME/bash/aliases" ]; then
-    source "$XDG_DATA_HOME"/bash/aliases
-fi
-
-eval "`dircolors`"
-
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
-#shopt -s globstar
-
 # make less more friendly for non-text input files, see lesspipe(1)
 #[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
@@ -120,6 +129,9 @@ eval "`dircolors`"
 # if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 #    debian_chroot=$(cat /etc/debian_chroot)
 # fi
+
+# PS1 Construction 
+###############################################################################
 
 FMT_BOLD="\[\e[1m\]"
 FMT_DIM="\[\e[2m\]"
@@ -174,7 +186,12 @@ PS1+="${FG_WHITE}\342\224\224\342\224\200\342\224\200\342\225\274 " # end arrow 
 PS1+="\[\e[1;37m\] \$ $FMT_RESET" # print prompt
 export PS1
 
+
 # enable color support of ls and also add handy aliases
+###############################################################################
+
+eval "`dircolors`"
+
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls $LS_COLOR'
@@ -194,8 +211,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
 
