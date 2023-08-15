@@ -69,7 +69,7 @@ export HISTIGNORE="$IGNORE"
 [[ "${PROMPT_COMMAND[*]}" != *'history -a'* ]] \
   && export PROMPT_COMMAND+=('history -a')
 
-HISTFILE="$DOTFILES/bash/bash_history"
+HISTFILE="$DOTFILES/bash/history_archnote"
 export HISTSIZE=20000
 export HISTFILESIZE=20000
 
