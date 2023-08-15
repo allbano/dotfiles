@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+# Albano's .bash_funtions
+# Based in Meleu's .bash_funtions
+
+# functions for colorized output
+###############################################################################
+# ANSI escape color codes
+if [[ -z "${ansiRed}" ]]; then
+	readonly ansiRed='\e[1;31m'
+	readonly ansiGreen='\e[1;32m'
+	readonly ansiYellow='\e[1;33m'
+	readonly ansiNoColor='\e[0m'
+fi
+
+echoRed() {
+	echo -e "${ansiRed}$*${ansiNoColor}"
+}
+
+echoGreen() {
+	echo -e "${ansiGreen}$*${ansiNoColor}"
+}
+
+echoYellow() {
+	echo -e "${ansiYellow}$*${ansiNoColor}"
+}
+
+err() {
+	echoRed "$*" >&2
+}
+
+warn() {
+	echoYellow "$*" >&2
+}
+###############################################################################
+
+# launch(): Open the file/URL with the default application.
+launch() {
+    
+    local args="$@"
+
+  	case "$OSTYPE" in
+	    "cygwin"*)
+		    cygstart "$@"
+		  ;;
+	    "darwin"*) # MacOS
+		    open "$@"
+		  ;;
+	    *)
+		    xdg-open "$args"
+		  ;;
+	  esac
+}
+
+# google(): Open google.com in the default browser, arguments are used as search terms.
+google() {
+	  local terms
+	  terms="$(urlencode "$@")"
+	  launch "https://www.google.com/search?q=${terms}"
+}

@@ -1009,3 +1009,87 @@ git restore --staged .
 lsd
 #1691992402
 lsd -1
+#1691992637
+gcam "Added bash_aliases,bash_functions and bash_history. Updated bashrc and my notebook profile."
+#1691993015
+git status --porcelain 
+#1691993073
+git status
+#1691993101
+update
+#1691993125
+date +'%Y'
+#1691993132
+date +'%Y'-%M
+#1691993136
+date +'%Y'-%m
+#1691993158
+date +'%Y-%m'
+#1691993162
+date +'%Y-%M'
+#1691993176
+date +'%Y-%m-%D'
+#1691993188
+date +'%Y-%m-%d'
+#1691993191
+date +'%Y-%m-%dd'
+#1691993199
+date +'%Y-%mm-%d'
+#1691993208
+date +'%Y-%mmm-%d'
+#1691993217
+date +'%Y-%m-%d'
+#1691993235
+date +'%Y-%m-%d %R'
+#1691993319
+git status --porcelain 
+#1691993430
+echo $OSTYPE 
+#1691993749
+du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
+#1691993788
+duf
+#1691993791
+dud
+#1691993795
+dust
+#1691993799
+tree
+#1691993864
+github/dotfiles/bash
+#1691994275
+launch google.com
+#1691994323
+launch vlc
+#1691994345
+xdg-open vlc
+#1691994354
+xdg-open VLC
+#1691994392
+xdg-open calculator
+#1691994397
+xdg-open Calculator
+#1691994586
+launch firefox &
+#1691994701
+[200~xdg-open 'https://meleu.sh/'~
+#1691994709
+xdg-open 'https://meleu.sh/'
+#1691994757
+xdg-open 'firefox &'
+#1691994762
+xdg-open 'firefox'
+#1691994796
+launch google.com
+#1691994807
+du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
+#1691994954
+xdg-open .bashrc
+#1691995315
+exec vlc
+#1691995330
+exec opera 
+#1691995365
+exec opera &
+#1692110527
+yay -Syyuu

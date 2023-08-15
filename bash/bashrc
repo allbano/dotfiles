@@ -34,7 +34,6 @@ export DOTFILES="/home/$USER/github/dotfiles"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-
 # History Configs
 # Remember: https://meleu.sh/bash-history
 ###############################################################################
@@ -92,6 +91,7 @@ if [ -f "${DOTFILES}/bash/bash_functions" ]; then
   source "${DOTFILES}/bash/bash_functions"
 fi
 
+
 # Shell Options 
 ###############################################################################
 # set -o vi
@@ -107,7 +107,6 @@ shopt -s dotglob
 
 #ignore upper and lowercase when TAB completion
 #bind 'set completion-ignore-case on'
-
 
 
 # Change window title 
@@ -132,7 +131,6 @@ esac
 
 # PS1 Construction 
 ###############################################################################
-
 FMT_BOLD="\[\e[1m\]"
 FMT_DIM="\[\e[2m\]"
 FMT_RESET="\[\e[0m\]"
@@ -155,7 +153,6 @@ BG_MAGENTA="\[\e[45m\]"
 BG_YELLOW="\[\e[43m\]"
 BG_GREY="\[\e[48;5;242m\]"
 BG_GREY10="\[\e[48;5;239m\]"
-
 
 
 PS1="\n${FG_WHITE}\342\224\214\342\224\200" # begin arrow to prompt
@@ -189,7 +186,6 @@ export PS1
 
 # enable color support of ls and also add handy aliases
 ###############################################################################
-
 eval "`dircolors`"
 
 if [ -x /usr/bin/dircolors ]; then
@@ -203,12 +199,13 @@ fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
-
-
+###############################################################################
+#if ! shopt -oq posix; then
+#  if [ -f /usr/share/bash-completion/bash_completion ]; then
+#    . /usr/share/bash-completion/bash_completion
+#  elif [ -f /etc/bash_completion ]; then
+#    . /etc/bash_completion
+#  fi
+#fi
+# It's enable because that's the bash way
+[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
