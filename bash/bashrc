@@ -19,11 +19,6 @@ source "$HOME/.config/user-dirs.dirs"
 export XDG_DATA_HOME="/home/$USER/.local/share"
 
 
-# Load Profile 
-###############################################################################
-source "$HOME/.profile"
-
-
 # Exports and User Configs 
 ###############################################################################
 export EDITOR="nvim"
@@ -69,7 +64,9 @@ export HISTIGNORE="$IGNORE"
 [[ "${PROMPT_COMMAND[*]}" != *'history -a'* ]] \
   && export PROMPT_COMMAND+=('history -a')
 
-HISTFILE="$DOTFILES/bash/history_archnote"
+# Warning: This file is sinchronized with the file
+# in the directory $HOME/github/dotfiles/bash/history_archnote
+HISTFILE="$HOME/.bash_history"
 export HISTSIZE=20000
 export HISTFILESIZE=20000
 
@@ -79,7 +76,9 @@ export HISTFILESIZE=20000
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-ALIASES="$DOTFILES/bash/bash_aliases"
+# Warning: This file is a symbolic link to
+# $HOME/github/dotfiles/bash/$HOME/github/dotfiles/bash/bash_aliases
+ALIASES="$HOME/.bash_aliases"
 ###############################################################################
 if [ -f "${ALIASES}" ]; then
   source "${ALIASES}"
@@ -87,8 +86,12 @@ fi
 
 # Shell Functions
 ###############################################################################
-if [ -f "${DOTFILES}/bash/bash_functions" ]; then
-  source "${DOTFILES}/bash/bash_functions"
+# Warning: This file is a symbolic link to
+# $HOME/github/dotfiles/bash/bash_functions
+FUNCTIONS="$HOME/.bash_functions"
+###############################################################################
+if [ -f "${FUNCSTIONS}" ]; then
+  source "${FUNCTIONS}"
 fi
 
 

@@ -28,3 +28,6 @@ source "/usr/share/nvm/install-nvm-exec"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# Init bashrc
+[ -f "$HOME/.bashrc" ] &&  . "$HOME/.bashrc"
