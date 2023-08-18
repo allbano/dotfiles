@@ -55,7 +55,7 @@ IGNORE="$IGNORE:gst:ga *:gp:gl:glol:glob"
 # Commands ignore
 IGNORE="$IGNORE:* --help:help *:history:history *:his:his *:pwd:htop:bg:fg:up:uy:ur:exit:nvtop:bashtop"
 IGNORE="$IGNORE:sudo systemctl status:lvim ~/.bashrc:lvim ~/.profile:neofetch:lspci:lsusb:lsblk:lsblk -f"
-IGNORE="$IGNORE:alias:alias *:lvim *:cat *:bat *"
+IGNORE="$IGNORE:alias:alias *:lvim *:bat *"
 # frameworks ignore
 IGNORE="$IGNORE:nvm --help:ng --help:nvm version:ng version"
 export HISTIGNORE="$IGNORE"
