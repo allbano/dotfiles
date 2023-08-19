@@ -28,6 +28,8 @@ export LS_COLOR="--color=auto"
 export DOTFILES="/home/$USER/github/dotfiles"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f "${DOTFILES}/bash-completion/tmux_completion" ] && source "${DOTFILES}/bash-completion/tmux_completion"
+[ -f "${DOTFILES}/bash-completion/doas" ] && source "${DOTFILES}/bash-completion/doas"
 
 # History Configs
 # Remember: https://meleu.sh/bash-history
