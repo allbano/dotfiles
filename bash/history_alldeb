@@ -1097,3 +1097,55 @@ yay -Syyuu
 gcam "Updated bash files."
 #1692110427
 ssh -p 6969 albano@192.168.15.3
+#1692486529
+nvm 
+#1692486533
+nvm ls
+#1692486656
+nvm install --lts
+#1692486666
+npm version
+#1692486783
+nvm install 'lts/*' --reinstall-packages-from=current
+#1692486834
+npm install npm@latest -g
+#1692486842
+npm version
+#1692486920
+npm install -g @angular/cli
+#1692486950
+npm version
+#1692486954
+ng
+#1692486977
+cat .bashrc
+#1692487109
+cat bash_completion 
+#1692487244
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/tmux_completion /usr/share/bash-completion/completions/tmux_completion
+#1692487262
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/doas /usr/share/bash-completion/completions/doas
+#1692487284
+ls -l doas
+#1692487288
+ls -l tmux_completion 
+#1692487318
+man tmux
+#1692488443
+ls -la
+#1692488482
+sudo apt install bash-completion 
+#1692488540
+cat /usr/share/bash-completion/completions/tmux_completion
+#1692488599
+vim profile_alldeb 
+#1692488770
+lsd -l ~/.bash*
+#1692488781
+lsd -l ~/.pro*
+#1692488792
+lsd -l ~/.prof*
+#1692488849
+vim .profile 
+#1692488923
+vim .bashrc 
