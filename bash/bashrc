@@ -51,15 +51,16 @@ export HISTTIMEFORMAT="%F %T$ "
 IGNORE="cd:cd *:..:~:/etc:/usr:/var"
 IGNORE="$IGNORE:github/dotfiles/:github/BANTADS/"
 # Ls/exa/lsd ignore
-IGNORE="$IGNORE:ls:lsd -l:lsd -la:exa:ll:l:x:xx:ll ~:l ~"
+IGNORE="$IGNORE:ls:lsd:lsd -l:lsd -la:exa:ll:l:x:xx:ll ~:l ~"
 # git's ignore
-IGNORE="$IGNORE:gst:ga *:gp:gl:glol:glob"
+IGNORE="$IGNORE:gst:ga .:gp:gl:glol:glob"
 # Commands ignore
-IGNORE="$IGNORE:* --help:help *:history:history *:his:his *:pwd:htop:bg:fg:up:uy:ur:exit:nvtop:bashtop"
-IGNORE="$IGNORE:sudo systemctl status:lvim ~/.bashrc:lvim ~/.profile:neofetch:lspci:lsusb:lsblk:lsblk -f"
-IGNORE="$IGNORE:alias:alias *:lvim *:bat *"
+IGNORE="$IGNORE:* --help:help *:history:history *:his:his *:pwd:bg:fg:up:uy:ur:exit"
+IGNORE="$IGNORE:htop:nvtop:bashtop:du:ncdu:dust:cargo:ip -c a"
+IGNORE="$IGNORE:* systemctl status:neofetch:lspci:lsusb:lsblk:lsblk -f"
+IGNORE="$IGNORE:alias:alias *:lvim *"
 # frameworks ignore
-IGNORE="$IGNORE:nvm --help:ng --help:nvm version:ng version"
+IGNORE="$IGNORE:nvm version:ng version:npm version"
 export HISTIGNORE="$IGNORE"
 
 # append last command to the history right before next prompt
@@ -188,7 +189,7 @@ PS1+=" -${FMT_RESET} ${BG_BLUE}${FG_WHITE} \H ${FMT_RESET}" # print directory
 
 PS1+="${FG_WHITE} - ${BG_GREY}${FG_WHITE}[\t]${FMT_RESET}\n" # end last container (either FILES or BRANCH)
 PS1+="${FG_WHITE}\342\224\224\342\224\200\342\224\200\342\225\274 " # end arrow to prompt
-PS1+="\[\e[1;37m\] \$ $FMT_RESET" # print prompt
+PS1+="\[\e[1;37m\]$FG_GREEN \$ $FMT_RESET" # print prompt
 export PS1
 
 

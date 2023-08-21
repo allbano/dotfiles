@@ -181,18 +181,21 @@ alias gwtrm='git worktree remove'
 
 
 ########## LS
-alias ls='ls $LS_OPTIONS'
-alias ll='ls $LS_OPTIONS -l'
-alias l='ls $LS_OPTIONS -lA'
+alias ls='ls $LS_COLOR'
+alias ll='ls $LS_COLOR -l'
+alias l='ls $LS_COLOR -lA'
 
 ########## EXA 
 alias x='exa --icons -lga'
 alias xx='exa --icons -lg'
 
-########## SYSTEM
-alias up='paru -Syu' 
+########## ARCHLINUX SYSTEM
+alias ua='paru -Syu' 
 alias ur='sudo reflector --verbose -p hhtp,https --sort rate -n 10 --save /etc/pacman.d/mirrorlist && paru -Syyuu' 
 alias uy='yay -Syyu'
+
+########## DEBIAN SYSTEM
+alias ud='sudo apt update && sudo apt upgrade'
 
 ########## REDE
 alias ports='sudo netstat -tulanp'
