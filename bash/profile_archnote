@@ -10,10 +10,8 @@ if [ -d "$HOME/.local/bin" ] ; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
-export PATH="$PATH:/usr/sbin:/sbin:/opt/anaconda/bin"
-export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
 . "$HOME/.cargo/env"
-
+export PATH="$PATH:/usr/sbin:/sbin"
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 #GTK_THEME="Flat-Remix-GTK-Green-Darkest-Solid" 

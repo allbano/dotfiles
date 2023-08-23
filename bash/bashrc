@@ -12,8 +12,10 @@ case $- in
       *) return;;
 esac
 
+# Sorted Path
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
 
-### Modified xdg-user-dirs ###
+# Modified xdg-user-dirs
 ###############################################################################
 source "$HOME/.config/user-dirs.dirs"
 export XDG_DATA_HOME="/home/$USER/.local/share"
