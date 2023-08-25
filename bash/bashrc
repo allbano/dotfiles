@@ -30,10 +30,11 @@ export LS_COLOR="--color=auto"
 
 # This is the Dotfiles directory PATH
 export DOTFILES="/home/$USER/github/dotfiles"
+export BASH="/home/$USER/github/dotfiles/bash"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-[ -f "${DOTFILES}/bash-completion/tmux_completion" ] && source "${DOTFILES}/bash-completion/tmux_completion"
-[ -f "${DOTFILES}/bash-completion/doas" ] && source "${DOTFILES}/bash-completion/doas"
+[[ -f "${DOTFILES}/bash-completion/tmux_completion" && -r "${DOTFILES}/bash-completion/tmux_completion" ]] && . "${DOTFILES}/bash-completion/tmux_completion"
+[[ -f "${DOTFILES}/bash-completion/doas" && -r "${DOTFILES}/bash-completion/doas" ]] && source "${DOTFILES}/bash-completion/doas"
 
 # Aliases definitions
 ###############################################################################
@@ -44,7 +45,7 @@ export DOTFILES="/home/$USER/github/dotfiles"
 
 # Shell Functions
 ###############################################################################
-[ -f "${DOTFILES}/bash/bash_functions" ] &&  source "${DOTFILES}/bash/bash_functions"
+[[ -f "${DOTFILES}/bash/bash_functions" && -r "${DOTFILES}/bash/bash_functions" ]] &&  source "${DOTFILES}/bash/bash_functions"
 
 # History Configs
 # Remember: https://meleu.sh/bash-history
@@ -217,3 +218,4 @@ fi
 #fi
 # It's enable because that's the bash way
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
+
