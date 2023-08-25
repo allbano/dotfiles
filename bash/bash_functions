@@ -57,3 +57,9 @@ google() {
 	  terms="$(urlencode "$@")"
 	  launch "https://www.google.com/search?q=${terms}"
 }
+_exit_status() {
+  case $1 in
+    0) return ;;
+    *) printf '(%d) ' "$1" ;;
+  esac
+}
