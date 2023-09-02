@@ -30,11 +30,13 @@ export LS_COLOR="--color=auto"
 
 # This is the Dotfiles directory PATH
 export DOTFILES="/home/$USER/github/dotfiles"
-export BASH="/home/$USER/github/dotfiles/bash"
+export BASHCN="/home/$USER/github/dotfiles/bash-completion"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-[[ -f "${DOTFILES}/bash-completion/tmux_completion" && -r "${DOTFILES}/bash-completion/tmux_completion" ]] && . "${DOTFILES}/bash-completion/tmux_completion"
-[[ -f "${DOTFILES}/bash-completion/doas" && -r "${DOTFILES}/bash-completion/doas" ]] && source "${DOTFILES}/bash-completion/doas"
+[[ -f "${BASHCN}/tmux_completion" && -r "${BASHCH}/tmux_completion" ]] && \
+    . "${BASHCN}/tmux_completion"
+[[ -f "${BASHCN}/doas" && -r "${BASHCH}/doas" ]] && \
+    . "${BASHCH}/doas"
 
 # Aliases definitions
 ###############################################################################
@@ -45,7 +47,8 @@ export BASH="/home/$USER/github/dotfiles/bash"
 
 # Shell Functions
 ###############################################################################
-[[ -f "${DOTFILES}/bash/bash_functions" && -r "${DOTFILES}/bash/bash_functions" ]] &&  source "${DOTFILES}/bash/bash_functions"
+[[ -f "${DOTFILES}/bash/bash_functions" && -r "${DOTFILES}/bash/bash_functions" ]] && \
+  source "${DOTFILES}/bash/bash_functions"
 
 # History Configs
 # Remember: https://meleu.sh/bash-history
@@ -70,12 +73,17 @@ IGNORE="$IGNORE:github/dotfiles/:github/BANTADS/"
 IGNORE="$IGNORE:ls:lsd:lsd -l:lsd -la:exa:ll:l:x:xx:ll ~:l ~"
 # git's ignore
 IGNORE="$IGNORE:gst:ga .:gp:gl:glol:glob"
+# Vim, lvim, nvim ignore
+IGNORE="$IGNORE:lvim:lvim *:vim:vim *:nvim:nvim *"
 # Commands ignore
-IGNORE="$IGNORE:* --help:help *:history:history *:his:his *:pwd:bg:fg:ua:ud:uy:ur:exit"
+IGNORE="$IGNORE:* --help:help *:help:* --version:history:history *:his:his *"
+IGNORE="$IGNORE:pwd:bg:fg:ua:ud:uy:ur:exit"
 IGNORE="$IGNORE:htop:nvtop:bashtop:du:ncdu:dust:cargo:ip -c a"
 IGNORE="$IGNORE:* systemctl status:neofetch:lspci:lsusb:lsblk:lsblk -f"
-IGNORE="$IGNORE:alias:alias *:lvim *:. ~/.bashrc"
+IGNORE="$IGNORE:alias:alias *:. ~/.bashrc"
 IGNORE="$IGNORE:doas systemctl status *"
+# compilation ignore
+IGNORE="$IGNORE:make:make *"
 # frameworks ignore
 IGNORE="$IGNORE:nvm version:ng version:npm version"
 export HISTIGNORE="$IGNORE"
