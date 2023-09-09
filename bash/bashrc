@@ -25,18 +25,22 @@ export XDG_DATA_HOME="/home/$USER/.local/share"
 ###############################################################################
 export EDITOR="nvim"
 export TERM="xterm-256color"
-export MANPAGER="less -s -M -Gg"
+#export MANPAGER="less -s -M -Gg"
+export MANPAGER="lvim +Man!"
 export LS_COLOR="--color=auto"
 
 # This is the Dotfiles directory PATH
 export DOTFILES="/home/$USER/github/dotfiles"
-export BASHCN="/home/$USER/github/dotfiles/bash-completion"
+export DOTBASHCN="/home/$USER/github/dotfiles/bash-completion"
+export DOTBASH="/home/$USER/github/dotfiles/bash"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-[[ -f "${BASHCN}/tmux_completion" && -r "${BASHCH}/tmux_completion" ]] && \
-    . "${BASHCN}/tmux_completion"
-[[ -f "${BASHCN}/doas" && -r "${BASHCH}/doas" ]] && \
-    . "${BASHCH}/doas"
+
+# If you don't want to create symbolic link, use it!
+#[[ -f "${DOTBASHCN}/tmux_completion" && -r "${BASHCH}/tmux_completion" ]] && \
+#    . "${DOTBASHCN}/tmux_completion"
+#[[ -f "${DOTBASHCN}/doas" && -r "${BASHCH}/doas" ]] && \
+#    . "${DOTBASHCN}/doas"
 
 # Aliases definitions
 ###############################################################################
@@ -77,13 +81,15 @@ IGNORE="$IGNORE:gst:ga .:gp:gl:glol:glob"
 IGNORE="$IGNORE:lvim:lvim *:vim:vim *:nvim:nvim *"
 # Commands ignore
 IGNORE="$IGNORE:* --help:help *:help:* --version:history:history *:his:his *"
-IGNORE="$IGNORE:pwd:bg:fg:ua:ud:uy:ur:exit"
+IGNORE="$IGNORE:pwd:bg:fg:ua:ud:uy:ur:exit:man *"
 IGNORE="$IGNORE:htop:nvtop:bashtop:du:ncdu:dust:cargo:ip -c a"
 IGNORE="$IGNORE:* systemctl status:neofetch:lspci:lsusb:lsblk:lsblk -f"
 IGNORE="$IGNORE:alias:alias *:. ~/.bashrc"
 IGNORE="$IGNORE:doas systemctl status *"
 # compilation ignore
 IGNORE="$IGNORE:make:make *"
+# python ignore
+IGNORE="$IGNORE:py3a:py3d"
 # frameworks ignore
 IGNORE="$IGNORE:nvm version:ng version:npm version"
 export HISTIGNORE="$IGNORE"
@@ -172,8 +178,8 @@ DES[3]="\342\224\200" # Linha horizontal
 
 
 PS1="\n${FG_WHITE}${DES[0]}" # begin arrow to prompt
-PS1+="${BG_GREY10}${FG_WHITE} \u@\H " # print username
-PS1+="${BG_BLUE}${FG_WHITE} \w " # print directory
+PS1+="${BG_GREY10}${FG_CYAN} \u${FG_WHITE}@${FG_YELLOW}\H " # print username
+PS1+="${BG_BLUE}${FG_YELLOW} \w " # print directory
 PS1+="${BG_GREY10}${FG_WHITE} " # end DIRECTORY container / begin FILES container
 PS1+="[\$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D " # print number of folders
 PS1+="[\$(find . -mindepth 1 -maxdepth 1 -type f | wc -l)]F " # print number of files
