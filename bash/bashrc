@@ -63,7 +63,7 @@ export DOTBASH="/home/$USER/github/dotfiles/bash"
 # ignoreboth - Enable both ignoredups and ignorespace
 # erasedups - eliminate duplicates from the whole list (I don't use it)
 # export HISTCONTROL="$HISTCONTROL:erasedups"
-export HISTCONTROL="ignoreboth"
+export HISTCONTROL="ignoreboth:erasedups"
 
 # show a timestamp in the history command output
 export HISTTIMEFORMAT="%F %T$ "
