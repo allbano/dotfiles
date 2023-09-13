@@ -25,9 +25,9 @@ export XDG_DATA_HOME="/home/$USER/.local/share"
 ###############################################################################
 export EDITOR="nvim"
 export TERM="xterm-256color"
-#export MANPAGER="less -s -M -Gg"
+export PAGER="less -s -M -Gg"
 export MANPAGER="lvim +Man!"
-export LS_COLOR="--color=auto"
+export LS_OPTIONS="--color=auto"
 
 # This is the Dotfiles directory PATH
 export DOTFILES="/home/$USER/github/dotfiles"
@@ -213,10 +213,9 @@ eval "`dircolors`"
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls $LS_COLOR'
-    alias dir='dir $LS_COLOR'
-    alias grep='grep $LS_COLOR'
-    alias egrep='grep -E $LS_COLOR'
+    alias dir='dir $LS_OPTIONS'
+    alias grep='grep $LS_OPTIONS'
+    alias egrep='grep -E $LS_OPTIONS'
 fi
 
 # enable programmable completion features (you don't need to enable
