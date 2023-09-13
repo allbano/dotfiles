@@ -63,7 +63,7 @@ export DOTBASH="/home/$USER/github/dotfiles/bash"
 # ignoreboth - Enable both ignoredups and ignorespace
 # erasedups - eliminate duplicates from the whole list (I don't use it)
 # export HISTCONTROL="$HISTCONTROL:erasedups"
-export HISTCONTROL="ignoreboth"
+export HISTCONTROL="ignoreboth:erasedups"
 
 # show a timestamp in the history command output
 export HISTTIMEFORMAT="%F %T$ "
@@ -78,7 +78,7 @@ IGNORE="$IGNORE:ls:lsd:lsd -l:lsd -la:exa:ll:l:x:xx:ll ~:l ~"
 # git's ignore
 IGNORE="$IGNORE:gst:ga .:gp:gl:glol:glob"
 # Vim, lvim, nvim ignore
-IGNORE="$IGNORE:lvim:lvim *:vim:vim *:nvim:nvim *"
+IGNORE="$IGNORE:lvim:lvim ~/.bashrc:vim:vim ~/.bashrc:nvim:nvim ~/.bashrc"
 # Commands ignore
 IGNORE="$IGNORE:* --help:help *:help:* --version:history:history *:his:his *"
 IGNORE="$IGNORE:pwd:bg:fg:ua:ud:uy:ur:exit:man *"
