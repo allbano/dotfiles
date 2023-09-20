@@ -1,0 +1,3175 @@
+nvtop
+exirt
+paru -Ssss debootstrap
+which malloc
+pacman -Si talloc
+lsblk -f
+nvtop
+env
+env|rg TERMCAP
+set|rg TERMCAP
+man man
+nvim  /.bashrc
+nvim  ~/.bashrc
+most
+nvim  ~/.bashrc
+man man
+man man
+cd github/
+cd dotfiles/
+gl
+cat tmux/.tmux.conf
+ls bash-completion/
+lsd bash-completion/
+cd bash-completion/
+cat  /.bashrc
+cat  ~/.bashrc
+/usr/share/bash-completion/
+cd completions/
+TMUX="$(pwd)/tmux_completion
+TMUX="$(pwd)/tmux_completion"
+echo $TMUX
+cd  ~/github/dotfiles/bash-completion/
+sudo ln -s /home/albano/github/dotfiles/bash-completion/tmux_completion $(echo $TMUX)
+cd $OLDPWD
+ll l*
+ll t*
+neofetch
+nvim ~/.bashrc
+/usr/share/bash-completion/
+complete 
+completions/
+ll doas
+ll tmux
+ll -d tmux
+sudo ln -s /home/albano/github/dotfiles/bash-completion/tmux_completion ./tmux_completion
+ll -d tmux_completion 
+sudo ln -s /home/albano/github/dotfiles/bash-completion/doas /home/albano/github/dotfiles/bash-completion/doas
+ll -d doas
+ll -d ./doas
+ll d*
+sudo ln -s /home/albano/github/dotfiles/bash-completion/doas /usr/share/bash-completion/completions/doas
+ll d*
+nvim ~/.bashrc
+doas syexit
+doas syexit
+doas pacman -Syyuu
+cd github/dotfiles/
+mkdir qBittorrent
+cd qBittorrent/
+mkdir themes
+then
+themes/
+git clone https://github.com/dracula/qbittorrent.git
+cd qbittorrent/
+cp dracula.qbtheme ..
+~/.config/qBittorrent/
+cat qBittorrent
+cat qBittorrent.conf
+nvim qBittorrent.conf
+cd ~/github/dotfiles/qBittorrent/themes/
+rm dracula.qbtheme
+mv qbittorrent Dracula
+cd Dracula/
+rm .git
+rm -rf .git
+rm -rf .github/
+ga .
+git restore --staged .
+cd..
+cd themes
+rm -rf qBittorrent/
+cd ~/.config/
+cd qBittorrent/
+mkdir themes
+man git clone
+git clone https://github.com/dracula/qbittorrent.git -o Dracula
+cd qbittorrent/
+rm -rf qbittorrent/
+git clone https://github.com/dracula/qbittorrent.git Dracula
+mv Dracula ./themes/
+cd themes/
+cd Animes/
+rm '[AnimesTC] AI no Idenshi - 01 (1080p).mkv'
+rm '[Erai-raws] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka - 01 ~ 13 [1080p][Multiple Subtitle]'
+rm -rf '[Erai-raws] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka - 01 ~ 13 [1080p][Multiple Subtitle]'
+mkdir Dungeon_ni_Deai
+cd Dungeon_ni_Deai/
+mkdir S4
+cd S4/
+free -h
+cd github/
+cd cd jgp4/
+jgp4/
+cd Cap01_Introducao/
+bat Cap01_Introducao.txt
+cd ../..
+rm -rf jgp4/
+cd webcoder/
+cat funcoes.js
+rm -rf webcoder/
+cd we-
+cd web-moderno/
+cd exercicios-web/
+cd web-moderno/
+git status
+rm -rf web-moderno/
+rm -rf extensaoinclusaodigital/
+cd db3
+cd ebook/
+git config -l
+rm -rf construindosaberes/
+cd git
+cd javaexercicios/
+cd analisedeprojetos/
+ga .
+gcam "Reorganizado os arquivos. Projeto finalizado!"
+gp
+cd ana
+analisedeprojetos/
+rm -rf analisedeprojetos/
+rm -rf TrabalhoFinalJava1
+cd javaexercicios
+cd Exercicio
+cd Exercicio2
+cd utfprct-tex/
+git config -l
+cd utfprct-tex/
+gl
+git clone git@github.com:wmeira/utfprct-tex.git
+rm -rf utfprct-tex/
+git clone git@github.com:wmeira/utfprct-tex.git
+cd utfprct-tex/
+cat README.md
+cd myscripts/
+gl
+cd WEBII/
+ga .
+gp
+rm -rf WEBII/
+LPOO1Exercises/
+rm -rf LPOO1Exercises/
+cd jogodavelha/
+neofetch
+systemctl restart
+doas pacman -R chormium
+doas pacman -R chromium
+alias |rg py
+bat /home/albano/.py3env/bin/activate
+echo BASH_SOURCE
+echo $BASH_SOURCE
+cd /home/albano/.py3env/bin/
+lvim
+cd github/
+git clone git@github.com:allbano/Developing.git
+cd Developing/
+cd CLang/
+cd examples/
+mkdir DataStructs
+cd DataStructs/
+mkdir examples
+cd .. && mv ./CLang/examples/DataStructs .
+mv DataStructs ./CLang/
+cd CLang/
+cd DataStructs/
+cd examples/
+touch exDataStruct.c exDataStruct.h
+lvim exDataStruct.h
+lvim
+cd ~/.config/lvim/
+lvim config.lua
+lvim
+cd $OLDPWD
+lvim exDataStruct.h
+lvim exDataStruct.c
+touch Ponto.c
+lvim Ponto.c
+mv exDataStruct.h Ponto.h
+lvim Ponto.h
+lvim Ponto.c
+mv exDataStruct.c exTestPonto.c
+lvim exTestPonto.c
+gcc -c Ponto.c exTestPonto.c -o dt
+gcc Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc -ld  Ponto.c exTestPonto.c -o dt
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+doas find / -name '*math.h'
+doas find / -name '*/math.h'
+doas find / -wholename '*/math.h'
+bat /usr/include/math.h'
+bat /usr/include/math.h
+bat /usr/include/math.h | rg sqrt
+lvim /usr/include/math.h
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+gcc exTestPonto.c Ponto.c -o dt
+gcc exTestPonto.c Ponto.c -o xxx
+gcc -00 exTestPonto.c Ponto.c -o xxx
+gcc -Wall exTestPonto.c Ponto.c -o xxx
+gcc -Wall exTestPonto.c Ponto.c -o xxx -lm
+lvim Ponto.c
+lvim Ponto.c
+gcc -Wall exTestPonto.c Ponto.c -o xxx
+rm xxx
+gcc -Wall exTestPonto.c Ponto.c -o xxx
+gcc -Wall -lm exTestPonto.c Ponto.c -o xxx
+lvim exTestPonto.c
+gcc -Wall -lm exTestPonto.c Ponto.c -o xxx
+lvim exTestPonto.c
+lvim Ponto.c
+gcc -Wall -lm exTestPonto.c Ponto.c -o xxx
+gcc -std=c99  -Wall  exTestPonto.c Ponto.c -o xxx
+gcc -std=c99  -Wall -00  exTestPonto.c Ponto.c -o xxx
+gcc -std=c99  -Wall  exTestPonto.c Ponto.c -o xxx
+gcc -lm  -Wall  exTestPonto.c Ponto.c -o xxx
+l -h
+lsd -l
+cd github/laundry_online/
+cat docker-compose.yml
+cd ui
+cat Dockerfile
+cd app/
+cat Dockerfile
+nvtop
+exuit
+cd github/
+git clone git@github.com:allbano/bantads.git BANTADS
+cd BANTADS/
+touch README.md
+got config -l
+git config -l
+git branch -M main
+ga .
+gcam "Primeiro commit do repositório."
+gp
+lvim README.md
+ga .
+gc -m "Adicionada informações no README."
+gp
+man ash
+man bash
+doas pacman -S less
+doas pacman -S most
+doas pacman -Ssss build-dep
+doas pacman -Ssss build-
+doas pacman -Ssss fdupes
+doas pacman -Si fdupes rm lint
+doas pacman -Si fdupes rmlint
+cd Projects/
+cd Filters/
+cd github/
+git clone https://github.com/allbano/SINAPSENSE
+cd SINAPSENSE/
+cd Projects/
+cd Filters
+mv Filters ~/github/SINAPSENSE/
+cd SINAPSENSE/
+ga .
+git branch -M main
+git restore --staged .
+gi rm --cached .
+git rm --cached .
+git rm --cached -r .
+touch README.md
+ga README.md
+gc -M "Primeiro commit, adicionado README."
+gc -m "Primeiro commit, adicionado README."
+gp
+git push -u origin main
+mv Filters ..
+rm SINAPSENSE/
+rm -rf SINAPSENSE/
+git clone git@github.com:allbano/SINAPSENSE.git
+cd SINAPSENSE/
+touch README.md
+ga .
+gcam "Primeiro commit, adiciionado README."
+gp
+mv Filters ./SINAPSENSE/
+cd SINAPSENSE/
+gab .
+ga .
+gcam "Filtros da última versão do programa de leitura do EEG. (Python)"
+gp
+doas pacman -S octave
+ip -c r
+flatpak update
+dc .ssh
+kl
+.ssh
+chmod 600 known_hosts
+chmod 600 known_hosts.old
+ip -c a
+ssh-keygen --help
+history|rg ssh-keygen
+history|rg ssh-ke
+exit
+ssh-keygen -t ed25519 -C "allnote"
+ssh-copy-id albano@192.168.15.3
+ssh-copy-id albano@192.168.15.3 -p 6969
+ssh-copy-id -p 6969  albano@192.168.15.3
+ssh-copy-id -p 6969  192.168.15.3
+ssh-copy-id -p 6969 -i /home/albano/.ssh/allnote.pub  192.168.15.3
+ssh-copy-id -p 6969 -i allnote.pub  192.168.15.3
+ssh 192.168.15.3
+ssh -p 6969  alano@192.168.15.3
+ssh -p 6969  albano@192.168.15.3
+ssh-copy-id -p 6969 -i allnote.pub  albano@192.168.15.3
+ssh -p 6969 albano@192.168.15.3
+uname -a
+ssh -p 6969 albano@192.168.15.3
+ssh -p 6969 albano@179.187.195.199
+uname -a
+neofetch
+ssh -p 6969 albano@192.168.15.3
+ls -l
+cat known_hosts
+docker
+ls -l /proc/$BASHPID
+ls -l /proc/$BASHPID/fd
+ls -l /proc/$$/fd
+echo $LOGIN
+echo$LOGIN
+cat /etc/pacman.d/mirrorlist
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+yay -Ssss megasync
+yay -Rscnd megasync
+yay -S megasync -bin
+yay -S megasync-bin
+doas lvim /etc/pacman.d/mirrorlist
+yay -Ssss megasync
+yay -S megasync-bin
+yay -Ssss megasync
+yay -Syyu
+neofetch
+github/dotfiles/
+cd tmux/
+lvim.tm
+lvim .tmux.confm
+lvim .tmux.conf
+cd alacritty/
+cd themes2/
+lsd -l
+lvim alacritty.yml
+cd ~/.config/alacritty/
+cat Albano-Dkeg-Vw.yml
+rm themes
+rm -rf themes
+cd $OLDPWD
+rm -rf alacritty/
+cp ~/.config/alacritty .
+cp -r ~/.config/alacritty .
+ga .
+gcam "Melhorada estrutura dos arquivos de configuração e iniciado testes de thema."
+gp
+cd UFPR/TADS/
+mkdir DS252-ESII
+cd DS252-ESII/
+mkdir Docs
+mkdir DS143-EDII
+up\
+~/github/Developing/
+ga .
+git restore --staged xxx
+git restore --staged CLang/DataStructs/examples/xxx
+cd CLang/DataStructs/
+cd examples/
+lvim Ponto.h
+is
+gcc exTestPonto.c Ponto.c -o xxx
+gcc -lm exTestPonto.c Ponto.c -o xxx
+rm xxx
+bat Ponto.h
+bat Ponto.c
+lvim exTestPonto.c
+lvim Ponto.
+lvim Ponto.c
+gcc -lm  exTestPonto.c Ponto.c -o xxx
+lvim Ponto.c
+gcc -lm  exTestPonto.c Ponto.c -o xxx
+lvim Ponto.c
+gcc -lm  exTestPonto.c Ponto.c -o xxx
+rm xxx
+git restore --staged .
+mkdir Ponto
+mv ./* ./Ponto
+mv ./* ./Ponto/
+mv Ponto.{c,h} exTestPonto.c  ./Ponto/
+mv ./Ponto.{c,h} ./exTestPonto.c  Ponto/
+cd Ponto/
+gcam "Ponto example Data Structure."
+gp
+mkdir UnionFind
+cd UnionFind/
+lk
+touch UnionFind.{h,c}
+mv UnionFind.h libUnionFind.h
+cp libUnionFind.h libUnionFind.c
+lvim libUnionFind.h
+lvim libUnionFind.c
+lvim UnionFind.c
+cd github/Developing/CLang/DataStructs/examples/UnionFind/
+lvim UnionFind.c
+lvim libUnionFind.c
+rm libUnionFind.{c,h}
+lvim UnionFind.c
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/tinyUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/mediumUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/largeUF.txt
+l -h
+lsd -l
+lvim largeUF.txt
+rm largeUF.txt
+rm mediumUF.txt
+rm tinyUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/largeUF.txt
+rm largeUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/tinyUF.txt
+cat tinyUF.txt
+rm tinyUF.txt
+cat tinyUF.txt
+cat mediumUF.txt
+cat largeUF.txt
+reset
+lvim UnionFind.c
+cd github/Developing/CLang/DataStructs/examples/
+mkdir ListaSequencial
+cd ListaSequencial/
+ga .
+touch README.md
+lvim README.md
+ga .
+git restore --staged .
+ga README.md
+gc -m "Added README of Data Structure Directory."
+ga .
+gcam "Exercise UnionFind - Data Structure II subject."
+gp
+lsd -l
+cd examples/
+cd ListaSequencial/
+touch ListaSequencial.{h,c}
+cd github/Developing/CLang/DataStructs/examples/ListaSequencial/
+lvim ListaSequencial.c
+lvim ListaSequencial.h
+lvim ListaSequencial.c
+neofetch
+cd github/
+cd Developing/CLang/DataStructs/examples/UnionFind/
+#1691437106
+lvim UnionFind.c 
+lvim UnionFind.c
+cd github/Developing/CLang/DataStructs/examples/
+cd ListaSequencial/
+bat ListaSequencial.
+bat ListaSequencial.h
+bat ListaSequencial.c
+bashtop
+ps
+nvim ~/.local/share/bash/history
+exit
+ll
+nvim ~/.local/share/bash/history
+cat ~/.local/share/bash/history
+//g'
+//g'
+//g'
+//g'
+cat ~/.local/share/bash/history
+nvim ~/.local/share/bash/history
+cat ~/.local/share/bash/history
+nvim ~/.zshrc
+l
+cat .zsh_history
+his
+history
+cat ~/.local/share/bash/history
+//g'
+cat ~/.local/share/bash/history 
+exit
+ll
+his
+history
+exit
+exit
+cat /etc/bash.bashrc
+cd /etc/bash_completion.d/
+echo $PS1
+37m\] $ \[\e[0m\]"
+cd github/
+cd Developing/CLang/
+tree
+lsd -l
+yay -Ssss pwd
+tree --help
+tree -L 0
+tree -L 1
+tree -L 1 ~
+tree -L 1 $HOME
+reset
+cd github/
+cd Developing/
+yay -Syyu
+paru -Syyu
+paru -Qi python-anytree
+paru -R python-anytree
+neofetch
+doas systemctl status
+jobs -l
+echo $PS1
+37m\] $ \[\e[0m\]"
+cd github/
+cd Developing/CLang/DataStructs/
+cd examples/
+cd UnionFind/
+lvim UnionFind.c
+his|rg sh
+his|rg ssh
+ssh -p 6969 albano@192.168.15.3
+exitt
+htop
+exit
+exit
+yay -R mawk
+neofetch
+flatpak update
+bat /etc/bash.bashr
+bat /etc/bash.bashrc
+cat  ~/.config/user-dirs.dirs
+cd github/dotfiles/
+cd bash
+cat .bashrc
+lvim ~/.bashrc
+cat .profile
+cat $HOME/.cargo/env
+cargo
+uname -a
+echo $PATH
+uname -a
+cat $HOME/.cargo/env
+.cargo/
+cd .
+rustup --help
+rustup update
+rustup show
+lvim ~/.bashrc
+cat ~/.cargo/env
+lvim ~/.cargo/env
+lvim ~/.bashrc
+ssh -p 6969 albano@192.168.15.3
+doas systemctl restart bluetooth.service
+reboot
+ssh -p 6969 albano@192.168.15.3
+doas systemctl restart bluetooth.service
+reboot
+lvim ~/.profile
+lvim ~/.bashrc
+ssh -p 6969 albano@192.168.15.3
+ssh -p 6969 albano@2804:7f4:309a:885c:80fc:7ee1:f946:fd9a
+uname -a
+neofetch 
+uname -a
+neofetch 
+lvim ~/.bashrc
+cat /proc/loadavg 
+cat /proc/loadavg | cut -d
+cat /proc/loadavg | cut -d" "
+cat /proc/loadavg | cut -d" " -f1
+cat /proc/loadavg | cut -d" " -f1-3
+upower -e
+upower -e | rg battery
+upower -i '$(upower -e | rg battery)'
+upower -i "$(upower -e | rg battery)"
+upower -i "$(upower -e | rg battery | head)"
+upower -i "$(upower -e | rg battery | head -n1)"
+upower -i $(upower -e | rg battery | head -n1)
+upower -i $(upower -e | rg battery | head -n1)|rg percentagel
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-3
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|cut -c 1-4
+upower -i $(upower -e | rg battery | head -n1)|rg percentage
+upower -i $(upower -e | rg battery | head -n1)|rg percentage\rev
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-4
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-4|rev
+cd salsa/devel/
+./prompt 
+./prompt --help
+exi
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-4|rev
+cd salsa/devel/
+./prompt 
+./prompt --help
+exi
+nerdctl
+nerdctl --help
+docker
+yay -Ssss osx-cpu-temp
+yay -Ssss cpu-temp
+yay -Sss lm-sensors
+yay -Sss lm_sensors
+yay -Sss iostat
+iostat
+man htop
+man ip
+type -a abshtop
+type -a bashtop
+which bashtop
+type bashtop
+whoami
+who --help
+who a
+who am
+who -a
+who -am
+who -am i
+who -am -i
+who am i
+who am i | awk '{print $NF
+who am i | awk '{print $NF}'
+who am i | awk '{print $NF}' | tr -d ')''('
+eval --help
+eval "$@"
+ssh -p 6969 albano@192.168.15.3
+ssh -p 6969 albano@2804:7f4:309a:885c:80fc:7ee1:f946:fd9a
+uname -a
+neofetch 
+lvim ~/.bashrc
+cd salsa/
+rm devel/
+pl
+gl
+cd git clone git@salsa.debian.org:kretcheu/tutoriais.git
+cd ..
+ll ~/.ssh
+cat ~/.ssh/allnote.pub 
+git clone git@salsa.debian.org:kretcheu/tutoriais.git
+yay -Ssss nethogs
+rm -rf devel/
+git clone git@salsa.debian.org:kretcheu/devel.git
+cd devel/
+lvim ./prompt 
+cat abshtop
+cat babshtop
+cat bashtop
+cat $(which bashtop)
+yay -Si btop
+top
+btop
+bashtop
+cd Downloads/CursoKretcheu/
+cd cgcr/
+rm a05.mp4 
+man wge
+man wget
+pacman -S less
+doas pacman -S less
+doas pacman -R less
+lvim ~/.bashrc
+cat $(which bashtop)
+yay -Si btop
+top
+btop
+rm a05.mp4 
+cd Downloads/CursoKretcheu/
+cd cgcr/
+cd ~/github/
+cd ~/github/dotfiles/
+git config -e
+git config --global -e
+cd $OLDPWD
+bashtop
+cat | strace -f -e read,write,clone,execve,dup2,openat,close bash
+cat .bashrc | strace -f -e read,write,clone,execve,dup2,openat,close bash
+rm -rf devel/
+git clone git@salsa.debian.org:kretcheu/devel.git
+cd devel/
+lvim ./prompt 
+cat abshtop
+cat babshtop
+cat bashtop
+cat $(which bashtop)
+yay -Si btop
+top
+btop
+bashtop
+cd Cursos/
+cd Downloads/
+ll * d/
+ll  d*/
+ll -d */
+lsd -ld */
+cd CursoKretcheu/
+wget -rc https://kretcheu.com.br/
+rm -rf kretcheu.com.br/
+cd kretcheu.com.br/
+mv cgcr/* ../cgcr/
+rmdir cgcr/
+rmdir kretcheu.com.br/
+ll -h
+rm -rf 'index.*'
+rm -rf {index.*}
+rm -rf l
+nautilus .
+rm -rf *
+tldr wget
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/ -R 'index.*'
+cd cgcr/
+cd ..
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/cgcr/ -R 'index.*'
+rm -rf cgcr/
+wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,*.html,*.ico,*.tmp'
+ip -c a
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/ -R 'index.*'
+cd cgcr/
+cd ..
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/cgcr/ -R 'index.*'
+rm -rf cgcr/
+wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,*.html,*.ico,*.tmp'
+ip -c a
+github/BANTADS/
+gcam 'Atualizado as informações das configurações do Projeto.'
+git commit --amend -m 'Atualizado as informações das configurações do Projeto.'
+git push -ff
+gl
+lvim README.md 
+git commit --amend
+gp
+gp -ff
+git log
+rm -rf *
+tldr wget
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/ -R 'index.*'
+cd cgcr/
+cd ..
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/cgcr/ -R 'index.*'
+rm -rf cgcr/
+wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,*.html,*.ico,*.tmp'
+ip -c a
+github/
+BANTADS/
+gp
+gl
+cat README.md 
+nvm
+nvm update
+nvm list
+nvm nvm ls
+nvm install --lts
+nvm use lts
+nvm use 18.17.1
+nvm ls
+cd
+ng
+lvim ~/.bashrc
+npm instasll npm@latest -g
+npm i-v
+npm -v
+npm update -f
+npm update -g
+npm install -g @angular/cli
+npm version
+npm 
+npm -l
+npm ls
+npm --help
+npm version typescript
+nv version
+ng version
+npm install -g @typescript@latest
+npm install -g typescript@latest
+npm view typescript
+npm install -g typescript@latest
+github/BANTADS/
+npm list -global --dpth 0
+npm list -global --depth 0
+npm view typescript
+tsc --version
+npm
+npm version
+npm ls
+npm -g ls
+lvim README.md 
+gp --ff
+gp -ff
+glo
+glog
+gloga
+glol
+alias glol
+ng
+ng --help
+github/dotfiles/
+cd bash
+rm .bashrc 
+cp ~/.bashrc .
+rm ~/.bashrc
+ln -s /home/albano/github/dotfiles/bash/.bashrc /home/albano/.bashrc
+cd
+cat .bash_history 
+rm .bash_history 
+cd $OLDPWD
+github/dotfiles/
+cd archnote/
+cat .bashrc 
+cd ..
+cd bash
+cp ~/.profile 
+cp ~/.profile .
+mv .profile .profile_archlinux
+mv .bashrc .bashrc_archnote
+mv .profile_archlinux .profile_archnote
+ln -s /home/albano/github/dotfiles/bash/.bashrc_archnote /home/albano/.bashrc
+unlink ~/.bashrc
+ln -s /home/albano/github/dotfiles/bash/.bashrc_archnote /home/albano/.bashrc
+rm .h2.server.properties 
+rm package-lock.json 
+rm -rf .voltapp
+github/dotfiles/
+bash
+cd bash
+kl
+cat .bashrc_archnote 
+cat .profile_archnote 
+rm ~/.profile 
+ln -s ./.profile_archnote ~/.profile
+ll ~
+l ~
+unlink ~/.profile
+ln -s /home/albano/github/dotfiles/bash/.profile_archnote ~/.profile
+l ~
+babt ~/.profile
+bat ~/.profile
+ga .
+gc -m "Added bash configuration file and archnote profile."
+gp
+cd .
+..
+chmod 750 README.md 
+lsd -la
+chmod 650 README.md 
+chmod 750 README.md 
+lvim README.md 
+ga .
+gst -l
+gst -s
+gc -m "Updated README."
+gp
+bat README.md 
+lvim README.md 
+ga .
+glol
+glo
+gc -m "Modified README."
+gp
+cd 
+lvim ~/.bashrc
+lvim ~/.bashrc..
+cd 
+gp
+lsd -la
+lvim ~/.bashrc
+nvtop
+github/dotfiles/
+ga .
+github/dotfiles/
+git restore --staged .
+lvim ~/.bashrc
+github/dotfiles
+cd
+lvim ~/.bashrc
+exity
+ng version
+gc -m "Updated .bashrc"
+ng version
+ng --help
+nvm
+nvm list
+nvm use default 18.17.1
+nvm list
+ng version
+cd ..
+cd BANTADS/
+lvim ~/.abshrc
+lvim ~/.babshrc
+github/dotfiles/
+cd github/BANTADS/
+ng version
+github/BANTADS/
+nvm list
+nvm alias default 18.17.1
+nvm lis
+nvm list
+nvm use
+nvm insall --lts
+nvm uninstall 18.16.0
+nvm use 18.17.1
+nvm uninstall 18.16.0
+nvm lis
+nvm list
+ng new ui
+~l
+cd ui/
+ng g m cliente
+cd g m auth
+ng g m auth
+cd src/
+cd app/
+cd atu
+cd auth/
+github/BANTADS/
+ui
+gs
+git restore --staged .
+rm ui
+gs
+rm -rf ui
+gstt
+github/BANTADS/
+ng new ui
+gcam "Criado o projeto no Angular."
+ng g m cliente
+ng g m auth
+ga auth
+gc -m "Criado módulo de Autenticação."
+ga cliente
+gc -m "Criado módulo de Cliente."
+gp -ff
+glog
+alias
+glgg
+lvim README.md 
+gcam "Attualizado README."
+uname -a
+neofetch 
+lsusb
+lspci
+exitt
+gstt
+paru -Ssss gdb
+paru -S gdb
+gdb -v
+cat /etc/shells 
+csh
+tcsh
+zsh
+help
+type ls
+man -k man
+tldr man
+cat /etc/locale.conf 
+man --locate=pt_BR.UTF-8 bash
+man --locale=pt_BR.UTF-8 bash
+sudo locale.gen
+sudo lvim /ettc/locale.gen
+sudo lvim /etc/locale.gen
+sudo nvim /etc/locale.gen
+sudo locale-gen
+nvim /etc/locale.conf 
+doas nvim /etc/locale.conf 
+man --locale=pt_BR.UTF-8 ip
+echo $0
+echo $SHELL
+env
+which his
+which history
+help
+rm aliases 
+rm history 
+rmdir bash
+man tldr
+gedit profile_archnote 
+;;
+tmux
+his | rg 898
+cargo
+exity
+his|rg lvim
+his|rg lvims
+git restore --staged .
+lsd
+#1691992402
+lsd -1
+#1691992637
+gcam "Added bash_aliases,bash_functions and bash_history. Updated bashrc and my notebook profile."
+#1691993015
+git status --porcelain 
+#1691993073
+git status
+#1691993101
+update
+#1691993125
+date +'%Y'
+#1691993132
+date +'%Y'-%M
+#1691993136
+date +'%Y'-%m
+#1691993158
+date +'%Y-%m'
+#1691993162
+date +'%Y-%M'
+#1691993176
+date +'%Y-%m-%D'
+#1691993188
+date +'%Y-%m-%d'
+#1691993191
+date +'%Y-%m-%dd'
+#1691993199
+date +'%Y-%mm-%d'
+#1691993208
+date +'%Y-%mmm-%d'
+#1691993217
+date +'%Y-%m-%d'
+#1691993235
+date +'%Y-%m-%d %R'
+#1691993319
+git status --porcelain 
+#1691993430
+echo $OSTYPE 
+#1691993749
+du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
+#1691993788
+duf
+#1691993791
+dud
+#1691993795
+dust
+#1691993799
+tree
+#1691993864
+github/dotfiles/bash
+#1691994275
+launch google.com
+#1691994323
+launch vlc
+#1691994345
+xdg-open vlc
+#1691994354
+xdg-open VLC
+#1691994392
+xdg-open calculator
+#1691994397
+xdg-open Calculator
+#1691994586
+launch firefox &
+#1691994701
+[200~xdg-open 'https://meleu.sh/'~
+#1691994709
+xdg-open 'https://meleu.sh/'
+#1691994757
+xdg-open 'firefox &'
+#1691994762
+xdg-open 'firefox'
+#1691994796
+launch google.com
+#1691994807
+du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
+#1691994954
+xdg-open .bashrc
+#1691995315
+exec vlc
+#1691995330
+exec opera 
+#1691995365
+exec opera &
+#1692110527
+yay -Syyuu
+#1692114717
+gcam "Updated bash files."
+#1692110427
+ssh -p 6969 albano@192.168.15.3
+#1692486529
+nvm 
+#1692486533
+nvm ls
+#1692486656
+nvm install --lts
+#1692486666
+npm version
+#1692486783
+nvm install 'lts/*' --reinstall-packages-from=current
+#1692486834
+npm install npm@latest -g
+#1692486842
+npm version
+#1692486920
+npm install -g @angular/cli
+#1692486950
+npm version
+#1692486954
+ng
+#1692486977
+cat .bashrc
+#1692487109
+cat bash_completion 
+#1692487244
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/tmux_completion /usr/share/bash-completion/completions/tmux_completion
+#1692487262
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/doas /usr/share/bash-completion/completions/doas
+#1692487284
+ls -l doas
+#1692487288
+ls -l tmux_completion 
+#1692487318
+man tmux
+#1692488443
+ls -la
+#1692488482
+sudo apt install bash-completion 
+#1692488540
+cat /usr/share/bash-completion/completions/tmux_completion
+#1692488599
+vim profile_alldeb 
+#1692488770
+lsd -l ~/.bash*
+#1692488781
+lsd -l ~/.pro*
+#1692488792
+lsd -l ~/.prof*
+#1692488849
+vim .profile 
+#1692488923
+vim .bashrc 
+#1692489217
+gcam "Updated bashrc."
+#1692489227
+rm history_alldeb 
+#1692489262
+cp ~/.bash_history history_alldeb
+#1692489283
+gcam "Updated history_alldeb."
+#1692489309
+npm version
+#1692489343
+ud
+#1692489345
+sudo ud
+#1692584764
+ud
+#1692584801
+doas lvim /etc/apt/sources.list
+#1692584844
+ud
+#1692584955
+ll ~/.fzf
+#1692585180
+doas systemctl status ssh
+#1692585185
+doas systemctl status sshd
+#1692596447
+cat /etc/shells 
+#1692596475
+doas nala search nu
+#1692596481
+doas nala search nushel
+#1692596491
+echo $PATH
+#1692596512
+node
+#1692596527
+cargo search nu
+#1692596600
+doas nala install man-db
+#1692596623
+doas nala search shell
+#1692596766
+doas nala show ssh
+#1692596798
+doas nala show openssh
+#1692596801
+doas nala show openssh-client
+#1692596848
+cargo install --list
+#1692596861
+duf
+#1692596875
+doas nala install duf
+#1692596882
+duf
+#1692596888
+duf -a
+#1692596895
+duf -all
+#1692596918
+duf -json
+#1692596956
+duf -only-fs
+#1692596983
+duf
+#1692596998
+env
+#1692597110
+teste=(laranja morango pera uva)
+#1692597118
+echo $teste
+#1692597128
+echo ${teste}
+#1692597134
+echo ${teste[2]}
+#1692597139
+echo ${teste[1]}
+#1692597148
+echo ${teste[*]}
+#1692597151
+echo ${teste[@]}
+#1692597159
+echo ${teste[0]}
+#1692597442
+doi(){echo "Oi! Tudo bem?"}
+#1692597458
+"doi(){echo "Oi! Tudo bem?"}"
+#1692597499
+"doi() {echo "Oi! Tudo bem?"}"
+#1692597507
+"doi() { echo "Oi! Tudo bem?"}"
+#1692597520
+doo() {  echo "Consegui fazer function!"; }
+#1692597544
+doo
+#1692597563
+typeset -f
+#1692597579
+typeset -f | grep doo()
+#1692597588
+typeset -f | grep 'doo()'
+#1692597592
+typeset -f | grep 'doo\()'
+#1692597596
+typeset -f | grep 'doo\(\)'
+#1692597607
+typeset -f | less
+#1692597629
+echo $MANPAGER 
+#1692597677
+typeset -f | $(${MANPAGER})
+#1692596447
+cat /etc/shells 
+#1692596475
+doas nala search nu
+#1692596481
+doas nala search nushel
+#1692596491
+echo $PATH
+#1692596512
+node
+#1692596527
+cargo search nu
+#1692596600
+doas nala install man-db
+#1692596623
+doas nala search shell
+#1692596766
+doas nala show ssh
+#1692596798
+doas nala show openssh
+#1692596801
+doas nala show openssh-client
+#1692596848
+cargo install --list
+#1692596861
+duf
+#1692596875
+doas nala install duf
+#1692596882
+duf
+#1692596888
+duf -a
+#1692596895
+duf -all
+#1692596918
+duf -json
+#1692596956
+duf -only-fs
+#1692596983
+duf
+#1692596998
+env
+#1692597110
+teste=(laranja morango pera uva)
+#1692597118
+echo $teste
+#1692597128
+echo ${teste}
+#1692597134
+echo ${teste[2]}
+#1692597139
+echo ${teste[1]}
+#1692597148
+echo ${teste[*]}
+#1692597151
+echo ${teste[@]}
+#1692597159
+echo ${teste[0]}
+#1692597442
+doi(){echo "Oi! Tudo bem?"}
+#1692597458
+"doi(){echo "Oi! Tudo bem?"}"
+#1692597499
+"doi() {echo "Oi! Tudo bem?"}"
+#1692597507
+"doi() { echo "Oi! Tudo bem?"}"
+#1692597520
+doo() {  echo "Consegui fazer function!"; }
+#1692597544
+doo
+#1692597563
+typeset -f
+#1692597579
+typeset -f | grep doo()
+#1692597588
+typeset -f | grep 'doo()'
+#1692597592
+typeset -f | grep 'doo\()'
+#1692597596
+typeset -f | grep 'doo\(\)'
+#1692597607
+typeset -f | less
+#1692597629
+echo $MANPAGER 
+#1692597677
+typeset -f | $(${MANPAGER})
+#1692597687
+typeset -f | $(echo $MANPAGER)
+#1692597712
+typeset -f | less -s -M -Gg
+#1692597942
+typeset -f | less -N
+#1692597946
+typeset -f | less -s
+#1692597950
+typeset -f | less -S
+#1692597963
+last
+#1692597973
+last| less +F
+#1692598042
+last| less +Fs
+#1692598050
+typeset -f | less -s
+#1692598056
+typeset -f | less
+#1692598090
+info typeset
+#1692598100
+doas nala install info
+#1692598113
+doas nala install man-db
+#1692598116
+doas nala install man
+#1692598127
+doas nala install tldr
+#1692598133
+tldr less
+#1692598415
+cut -d: -f 1,3 /etc/group
+#1692598426
+cut -d: -f 1,2 /etc/group
+#1692598432
+cut -d: -f 1 /etc/group
+#1692598441
+cut -d: -f 1-3 /etc/group
+#1692598449
+cat /etc/group
+#1692598472
+cut -d: -f 1,3-4 /etc/group
+#1692598505
+uname -o
+#1692598516
+echo $OSTYPE 
+#1692598535
+os=`uname -o`
+#1692598540
+echo $os
+#1692598646
+man less
+#1692598970
+echo $MANPAGER 
+#1692598986
+cat /etc/group
+#1692598992
+cat /etc/group| less -s
+#1692599002
+cat /etc/group| less -sM
+#1692599012
+man less
+#1692599040
+cat /etc/group| less -sm
+#1692599050
+cat /etc/group| less -s
+#1692599054
+cat /etc/group| less -sM
+#1692599064
+cat /etc/group| less -sM -m
+#1692599078
+cat /etc/group| less -s -M -m
+#1692599095
+cat /etc/group| less -s -M +m
+#1692599109
+cat /etc/group| less -Mm
+#1692599143
+MANPAGER='less -sm'
+#1692599148
+man less
+#1692599190
+MANPAGER='less -sM'
+#1692599199
+man less
+#1692599226
+MANPAGER='less -s %b'
+#1692599228
+man less
+#1692599243
+MANPAGER='less -s %pB'
+#1692599245
+man less
+#1692599255
+MANPAGER='less -s +M'
+#1692599257
+man less
+#1692599263
+MANPAGER='less -sM'
+#1692599265
+man less
+#1692599321
+MANPAGER='less -P %s'
+#1692599324
+man less
+#1692599337
+man tldr
+#1692599348
+MANPAGER='less -s'
+#1692599351
+man tldr
+#1692599365
+MANPAGER='less -sm'
+#1692599366
+man tldr
+#1692599372
+man less
+#1692599401
+MANPAGER="less -sm"
+#1692599403
+man less
+#1692599417
+MANPAGER="less -s -m"
+#1692599418
+man less
+#1692599495
+MANPAGER="less -s -N"
+#1692599497
+man less
+#1692599522
+MANPAGER="less -N"
+#1692599523
+man less
+#1692601247
+mkdir salsa
+#1692601303
+docker
+#1692601341
+git clone git@salsa.debian.org:kretcheu/devel.git
+#1692601366
+./prompt 
+#1692601369
+./prompt 1
+#1692601372
+./prompt 2
+#1692601375
+./prompt 3
+#1692601377
+./prompt 4
+#1692601390
+./prompt 1
+#1692601486
+./prompt 1 2
+#1692601494
+./prompt 1 1
+#1692601496
+./prompt 1 0
+#1692601506
+./prompt 1 4
+#1692601508
+./prompt 1 3
+#1692601511
+./prompt 1 2
+#1692601513
+./prompt 1 1
+#1692601527
+./prompt
+#1692601542
+./prompt 8
+#1692601571
+./prompt 7
+#1692601575
+./prompt 1
+#1692601579
+./prompt 6
+#1692601588
+./prompt 5
+#1692601591
+./prompt 4
+#1692601597
+./prompt 3
+#1692601600
+./prompt 2
+#1692601602
+./prompt 1
+#1692601725
+./prompt 
+#1692601734
+./prompt 9
+#1692601738
+./prompt 12
+#1692601744
+./prompt 8
+#1692601747
+./prompt 7
+#1692601757
+./prompt 6
+#1692601763
+./prompt 5
+#1692601768
+./prompt 4
+#1692601772
+./prompt 3
+#1692601775
+./prompt 2
+#1692601779
+./prompt 1
+#1692601784
+./prompt 1 1
+#1692601787
+./prompt 1 2
+#1692601801
+./prompt 1 3
+#1692601805
+./prompt 1 4
+#1692601811
+./prompt 1 3
+#1692601845
+sudo /root/.bashrc
+#1692601855
+sudo lvim /root/.bashrc
+#1692601858
+sudo vim /root/.bashrc
+#1692602057
+sudo -i
+#1692602072
+sudo vim /root/.bashrc
+#1692602095
+sudo nvim /root/.bashrc
+#1692602258
+sudo -i
+#1692602290
+lvim
+#1692602562
+echo $#
+#1692602569
+lvim
+#1692602573
+echo $#
+#1692602141
+nvim prompt 
+#1692602207
+cat prompt 
+#1692602435
+sudo -i
+#1692678586
+vim .bashrc
+#1692678633
+bat /etc/profile
+#1692678674
+cat bash_completion.sh 
+#1692678806
+cat gawk.sh 
+#1692678883
+`gawk 'BEGIN {print ENVIRON["AWKPATH"]}'`
+#1692678889
+gawk 'BEGIN {print ENVIRON["AWKPATH"]}'
+#1692678930
+env|rg AWK
+#1692678938
+ud
+#1692679066
+doas systemctl enable gdm
+#1692679080
+doas systemctl start gdm
+#1692679195
+sudo -i
+#1692679264
+ls -l /
+#1692679311
+echo $UID
+#1692679313
+env
+#1692679414
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692679428
+echo -e "${PATH//:/\\n}" | sort -u | xargs
+#1692679447
+echo $PATH
+#1692679500
+echo -e "${PATH//:/\\n}"
+#1692679535
+echo -h
+#1692679583
+echo -e ${PATH//:/\\n}
+#1692679603
+echo -e "${PATH}"
+#1692679612
+echo -e "${PATH//}"
+#1692679615
+echo -e "${PATH//:}"
+#1692679634
+echo -e "${PATH//:/}"
+#1692679643
+echo -e "${PATH//:/\}"
+#1692679651
+echo -e "${PATH//:/\\n}"
+#1692679677
+echo -e "${PATH//:/\\n}" | sort -u
+#1692679689
+echo -e "${PATH//:/\\n}" | sort -u | xargs | 
+#1692679692
+echo -e "${PATH//:/\\n}" | sort -u | xargs 
+#1692679711
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692679748
+lvim
+#1692679798
+echo -e "${PATH}"
+#1692679826
+source .profile
+#1692679828
+echo -e "${PATH}"
+#1692679848
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692679870
+echo -e "${PATH//:/\\n}"
+#1692679904
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692679925
+echo $PATH
+#1692680373
+source .profile
+#1692680377
+echo $PATH
+#1692680461
+date +%d
+#1692680465
+date +%d%m
+#1692680469
+date +%d%m%Y
+#1692680473
+date +%d%m%y
+#1692680481
+date +%d%m%Y%h
+#1692680484
+date +%d%m%Y%H
+#1692680497
+date +%d%m%Y%H:%M
+#1692680507
+date +%d%m%Y-%H:%M
+#1692680552
+date
+#1692680634
+echo $PATH
+#1692680643
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692680685
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1692680687
+echo $PATH
+#1692680840
+bc
+#1692681001
+echo $PATH
+#1692681043
+his| lvim
+#1692681068
+his| grep 'lvim'
+#1692681146
+echo $PROMPT_COMMAND 
+#1692681253
+dircolors 
+#1692681282
+dircolors -b
+#1692681301
+dir
+#1692681344
+dir -l
+#1692681347
+dir -L
+#1692681354
+dir -aL
+#1692681358
+dir -aLl
+#1692681362
+dir -al
+#1692681383
+dir -1a
+#1692681405
+dir -1a l*/
+#1692681407
+dir -1a l */
+#1692681431
+dir -1a l
+#1692681437
+dir -1a l */
+#1692681440
+dir -1a d */
+#1692681448
+dir -1a d*/
+#1692681452
+dir -1a
+#1692681461
+echo $PATH
+#1692681491
+export PATH="$(echo -e \"${PATH//:/\\n}\" | sort -u | xargs | tr ' ' :)"
+#1692681506
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1692681523
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692681545
+echo $PATH
+#1692681550
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1692681552
+echo $PATH
+#1692681560
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1692681565
+echo $PATH
+#1692681591
+nu
+#1692681598
+cargo install --list
+#1692681608
+doas nala search nu
+#1692681649
+doas nala search nu shell
+#1692681657
+doas nala search 'nu shell'
+#1692681666
+doas nala search "nu shell"
+#1692681723
+sudo nala update
+#1692682360
+sudo nala search rclone
+#1692682593
+echo ${PATH}
+#1692682603
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1692682606
+echo ${PATH}
+#1692682835
+cpuuinfo
+#1692682840
+cpuinfo
+#1692754686
+cat profile_archnote 
+#1692754758
+gsettings get org.gnome.desktop.interface gtk-theme
+#1692754794
+gsettings get org.gnome.desktop.interface gtk-theme | sed "s/'/\"/g"
+#1692754812
+echo $GTK_THEME
+#1692754847
+echo $NVM_DIR
+#1692755402
+gcam "Updated bashrc and machines profile."
+#1692754471
+ud
+#1692754648
+echo $APATH
+#1692754651
+echo $PATH
+#1692754658
+cat profile_a
+#1692754661
+cat profile_alldeb 
+#1692755418
+echo $APTH
+#1692755422
+echo $PATH
+#1692755742
+git status --porcelain 
+#1692755830
+git log --graph
+#1692755845
+git log --graph --online
+#1692755851
+git log --graph --oneline
+#1692860720
+sudo nala search opera
+#1692860808
+sudo nala search chromium-codecs-ff
+#1692860812
+sudo nala search chromium-codecs-
+#1692860825
+sudo nala search chromium-codecs
+#1692860828
+sudo nala search chromium-codec
+#1692860831
+sudo nala search chromium-
+#1692860850
+sudo nala search codecs
+#1692860951
+sudo nala install libavcodec-*
+#1692861021
+sudo nala install lm-sensors libavcodec-{dev,extra}
+#1692861040
+sudo nala install lm-sensors libavcodec-{extra}
+#1692861060
+sudo nala install libavcodec-{extra,extra60}
+#1692861094
+sudo nala install libavcodec-extra{60,50}
+#1692861100
+sudo nala install libavcodec-extra{60,59}
+#1692861147
+sudo nala search pepper
+#1692861231
+sudo apt install libwidevinecdm0
+#1692861243
+sudo apt search libwidevinecdm
+#1692861247
+sudo apt search libwidevine
+#1692861253
+sudo apt search widevine
+#1692861351
+sudo apt search libffmpeg
+#1692861384
+sudo apt install libffmpeg-nvenc-dev 
+#1692861796
+doas cp opera-beta-ffmpeg-codecs-116.0.5845.62-1-x86_64.pkg.tar.zst /usr/lib/x86_64-linux-gnu/opera/
+#1692861885
+sudo nala purge opera-stable 
+#1692862182
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+#1692862194
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+#1692862200
+doas nala update
+#1692862213
+doas nala upgrade
+#1692862227
+sudo nala search brave
+#1692862248
+doas nala install brave-browser 
+#1692862581
+doas nala install ffmpeg
+#1692864069
+flatpak
+#1692864076
+sudo apt install flatpak
+#1692864101
+flatpak search brave
+#1692864107
+flatpak search Brave
+#1692864111
+flatpak search browser
+#1692864183
+apt install gnome-software-plugin-flatpak
+#1692864187
+sudo apt install gnome-software-plugin-flatpak
+#1692864204
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+#1692864216
+cat /etc/group
+#1692864229
+doas usermod -aG _flatpak albano
+#1692864237
+flatpak search brave
+#1692864270
+sudo apt purge brave-browser 
+#1692864289
+doas rm brave-browser-release.list 
+#1692864297
+doas apt update
+#1692864337
+flatpak install com.brave.Browser
+#1692865137
+flatpak list
+#1692865156
+flatpak run com.brave.Browser
+#1692865187
+[A
+#1692865189
+flatpak run com.brave.Browser
+#1692865425
+flatpak uninstall com.brave.Browser
+#1692865454
+sudo apt install gnome-software-plugin-flatpak
+#1692865477
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+#1692865482
+sudo nala update
+#1692865498
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+#1692865501
+sudo nala update
+#1692865520
+doas nala install brave-browser 
+#1692864383
+sudo nala search openh264
+#1692864395
+sudo nala search openh265
+#1692864398
+sudo nala search openh26
+#1692864427
+sudo nala install mediastreamer2-plugin-openh264 
+#1692902612
+flatpak list
+#1692902614
+docker
+#1692902652
+flatpak search firefox
+#1692902727
+flatpak info org.mozilla.firefox
+#1692902784
+doas systemctl status ssh
+#1692902788
+doas systemctl status sshd
+#1692902872
+doas cp /etc/ssh/ssh_config{,.bak}
+#1692902922
+doas nvim ssh_config
+#1692903196
+sudo nvim sshd_config
+#1692903218
+doas cp /etc/ssh/sshd_config{,.bak}
+#1692903251
+sudo nvim sshd_config
+#1692903461
+sudo -i
+#1692903811
+his|rg .bashrc
+#1692903822
+sudo nala install ripgrep
+#1692903854
+. ~/.bashrc
+#1692903863
+his|rg .bashrc
+#1692903964
+. ~/.bashrc
+#1692904416
+:1488
+#1692905007
+chmod 700 ~/.ssh
+#1692905030
+chmod 644 authorized_keys 
+#1692905058
+chmod 644 known_hosts
+#1692905230
+ll -d ~/.ssh
+#1692905324
+vmstat 1 10
+#1692905375
+vmstat -d
+#1692905409
+ps aux
+#1692905462
+fuser -a
+#1692905477
+fuser -a ~
+#1692905482
+doas fuser -a ~
+#1692905492
+doas fuser -a /home/albano
+#1692905708
+fuser -v
+#1692905715
+fuser -v /home/albano
+#1692905723
+doas fuser -v /home/albano
+#1692905953
+echo $HISTIGNORE
+#1692906171
+sudo nala show nnn
+#1692906199
+sudo nala install nnn
+#1692906210
+nnn
+#1692906306
+cargo install --list
+#1692906313
+cargo install bat
+#1692906320
+cargo install du-dust
+#1692906325
+cargo install exa
+#1692906333
+cargo install fd-find
+#1692906339
+cargo install lfs
+#1692906344
+lfs
+#1692906352
+lfs -a
+#1692906530
+lsmod
+#1692906567
+doas systemctl list-unit --fail
+#1692906569
+doas systemctl list-unit --failed 
+#1692906574
+doas systemctl --failed 
+#1692907134
+sudo systemctl status tcsd.service | rg TCSD | read -n1
+#1692907141
+sudo systemctl status tcsd.service | rg TCSD | head -n1
+#1692907168
+sudo systemctl status tcsd.service | rg TCSD | head -n1| cut -d ': ' -f2
+#1692907178
+sudo systemctl status tcsd.service | rg TCSD | head -n1| cut -d: -f2
+#1692907191
+sudo systemctl status tcsd.service | rg TCSD | head -n1| cut -d: -f4
+#1692907228
+sudo systemctl status tcsd.service | rg TCSD | head -n1| cut -d] -f4
+#1692907230
+sudo systemctl status tcsd.service | rg TCSD | head -n1| cut -d] -f2
+#1692907293
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd[878]://'
+#1692907296
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd[878]://g'
+#1692907303
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed -i 's/Aug 24 16:32:44 alldeb tcsd[878]://g'
+#1692907308
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed -e 's/Aug 24 16:32:44 alldeb tcsd[878]://g'
+#1692907323
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd[878]://g'
+#1692907346
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd[878]://'
+#1692907380
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug//'
+#1692907387
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24//'
+#1692907396
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44//'
+#1692907403
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb//'
+#1692907410
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd//'
+#1692907426
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd \[878\]://'
+#1692907444
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd [878]://'
+#1692907449
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd//'
+#1692907474
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd//; s/[878]//'
+#1692907482
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd//; s/\[878\]//'
+#1692907508
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd\[878\]//'
+#1692907513
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd\[878\]://'
+#1692907788
+sudo nala install xclip
+#1692907937
+exi
+#1692911818
+sudo nala autojump
+#1692911830
+sudo nala show autojump
+#1692912272
+bash --verion
+#1692912284
+bash --version
+#1692912561
+echo $PS0
+#1692912563
+echo $PS2
+#1692912567
+echo $PS3
+#1692912761
+infocmp 
+#1692912795
+tput setaf 2
+#1692916335
+148
+#1692916749
+make 2>&1 | sed -e 's/.*\bWARN.*/\x1b[7m&\x1b[0m/i' -e 's/.*\bERR.*/\x1b[93;41m&\x1b[0m/i'
+#1692917097
+cd..
+#1692917108
+touch tent
+#1692917114
+chmod +x tent
+#1692917132
+./tent 
+#1692917639
+$0
+#1692917643
+echo $0
+#1692917648
+echo $#
+#1692917697
+exi
+#1692917758
+echo $?
+#1692917781
+ex
+#1692917791
+exi
+#1692917803
+echo $?
+#1692917841
+W1488
+#1692917852
+exi
+#1692917863
+echo $?
+#1692918218
+exi
+#1692918221
+echo $?
+#1692918343
+exi
+#1692918375
+echo "$?"
+#1692918381
+echo $?
+#1692918386
+exi
+#1692918388
+echo $?
+#1692918426
+exi
+#1692919341
+ex
+#1692919345
+exi
+#1692919366
+sudo -i
+#1692919999
+set | grep _exit_status
+#1692920004
+env
+#1692920046
+set | grep google
+#1692920049
+set
+#1692920059
+google
+#1692920083
+cat ~/.bash_functions 
+#1692920113
+. ~/.bash_functions 
+#1692920172
+echo #home
+#1692920178
+echo $HOME
+#1692920196
+cat $HOME/.bash_functions
+#1692920224
+source ~/.bash_functions 
+#1692920710
+unset _exit_status
+#1692908377
+tmux --version
+#1692908382
+tmux -v
+#1692908384
+tmux -V
+#1692921082
+_exit_status $?
+#1692921111
+exi | _exit_status $?
+#1692921242
+./tent 
+#1692922235
+;
+#1692922255
+unlink .bash_aliases 
+#1692922269
+unlink .bash_functions 
+#1692923155
+st
+#1692923179
+date
+#1692923209
+gcam "Updated Dotfiles $(date)."
+#1692923219
+git log
+#1692923371
+set
+#1692923379
+warn 
+#1692923413
+nvm_remote_version
+#1692923430
+echo -n $?
+#1692923438
+echo $?
+#1692923442
+echo -n $?
+#1692923451
+nvm_ls
+#1692923465
+set
+#1692923563
+doas systemctl --failed
+#1692924127
+git rev-parse
+#1692924137
+git rev-parse --git-dir
+#1692924153
+git rev-parse --git-dir 2>&
+#1692924157
+git rev-parse --git-dir 2>&1
+#1692924180
+git rev-parse --show-toplevel 2>&1
+#1692924286
+export LS_COLORS='fi=37:di=1;97:ln=90:mh=90:ex=3;2;37:no=1;97:mi=90:ow=91'
+#1692924290
+ls -l
+#1692924293
+ls -la
+#1692924308
+ls --color=auto
+#1692924312
+ls -l
+#1692924457
+echo $BASH
+#1692924755
+man ip
+#1692924764
+env
+#1692924860
+gcam "Updated Dotfiles $(date)."
+#1692992035
+doas nala install tpm-tools
+#1692992053
+doas systemctl restart tcsd.service 
+#1692992070
+doas journalctl -zeu tcsd.service
+#1692992077
+doas journalctl -xeu tcsd.service
+#1692992127
+doas systemctl stop
+#1692992141
+doas systemctl stop tcsd.service
+#1692992229
+doas systemctl start tcsd.service
+#1692992237
+reboot
+#1692993488
+journalctl -xeu tcsd.service
+#1692993520
+sudo nvim /etc/fstab
+#1692993873
+sudo mkdir /ssd
+#1692993898
+cat /etc/fstab
+#1692994073
+sudo nala search trousers
+#1692994096
+sudo apt purge trousers
+#1692994114
+reboot
+#1692994264
+service
+#1692994270
+service --status-all
+#1692994328
+service ssh status
+#1692994337
+systemctl status ssh
+#1692994340
+systemctl status sshd
+#1692994400
+doas nvim /etc/ssh/sshd_config
+#1692994785
+doas systemctl restart ssh
+#1692994795
+service ssh status
+#1693122006
+gcc exCalcEuler.c -o xxx
+#1693122009
+./xxx
+#1693122027
+gcc exFloydTriangle.c -o xxx
+#1693122031
+./xxx
+#1693122090
+gcc exFloydTriangle.c -o xxx
+#1693122092
+./xxx
+#1693123450
+sudo nala update
+#1693123481
+sudo nala upgrade 
+#1693125084
+reboot
+#1693125048
+doas systemctl start gdm
+#1693134788
+lsd -1
+#1693134978
+doas lvim /etc/lightdm/lightdm.conf 
+#1693135125
+mkdir lightdm.conf.d
+#1693135127
+doas mkdir lightdm.conf.d
+#1693135315
+doas lvim 50-my-custom-config.conf
+#1693341433
+neofetch 
+#1693341445
+doas nala install bashtop
+#1693341471
+doas nala search bashtop
+#1693341490
+bat /etc/apt/sources.list
+#1693341519
+cat tmux-client-16206.log 
+#1693341542
+rm tmux-client-16206.log 
+#1693341587
+vim
+#1693341970
+vim fruits
+#1693342014
+vim fruits 
+#1693342014
+vim fruits 
+#1693675699
+vimtutor 
+#1693675770
+vim
+#1693684494
+cat ~/.bashrc 
+#1693686446
+git restore bash/bashrc 
+#1693686494
+loginctl show-session 
+#1693686524
+file /etc/systemd/system/display-manager.service 
+#1693686547
+bat /lib/systemd/system/lightdm.service 
+#1693686559
+bat /lib/systemd/system/gdm.service 
+#1693686563
+bat /lib/systemd/system/gdm3.service 
+#1693688153
+gl -f
+#1693688278
+git-pull
+#1693688299
+gl -f --show-forced-updates 
+#1693688564
+python
+#1693688586
+python3
+#1693688664
+sudo nala search venv
+#1693688748
+add
+#1693688798
+sudo nala search venv
+#1693688832
+sudo nala search pip
+#1693688874
+sudo nala install pv
+#1693688958
+sudo nala show pipenv
+#1693704158
+sudo nala install qbittorrent
+#1693704191
+sudo nala install qbittorrent qt6-qmltooling-plugins 
+#1694050546
+sudo -i 
+#1694050651
+set 
+#1694050658
+echo $PAGER
+#1694050666
+echo $MANPAGER
+#1694050704
+man
+#1694050709
+man ip
+#1694050744
+man less
+#1694051008
+PAGER="most -s"
+#1694051013
+man help
+#1694051017
+man ip
+#1694051039
+echo $MANPAGER
+#1694051050
+MANPAGER="most -s"
+#1694051052
+man ip
+#1694051058
+sudo nala install most
+#1694051065
+man ip
+#1694051077
+env
+#1694051111
+LS_OPTIONS="${LS_COLORS}"
+#1694051118
+man ip
+#1694051205
+echo $PAGER
+#1694051209
+echo $MANPAGER
+#1694051214
+man less
+#1694051228
+echo $MANPAGER
+#1694051245
+echo $PAGER
+#1694051250
+man ip
+#1694051511
+. ~/github/dotfiles/bash/bash_functions
+#1694051516
+set man
+#1694051522
+. ~/github/dotfiles/bash/bash_functions
+#1694051530
+set| grep man
+#1694051541
+set| grep -E "^man"
+#1694051546
+man ip
+#1694051879
+. ~/github/dotfiles/bash/bash_functions
+#1694051888
+man ip
+#1694051934
+echo $PAGER
+#1694051938
+echo $MANPAGER
+#1694051953
+man chmod
+#1694051965
+git restore bash_functions 
+#1694051969
+man ip
+#1694052542
+. $DOTFILES/bash/bash_functions 
+#1694052545
+man
+#1694052551
+man ip
+#1694052558
+env
+#1694052575
+source ~/github/dotfiles/bash/bash_functions 
+#1694052579
+env
+#1694052594
+export PAGER=most
+#1694052596
+env
+#1694052599
+man ip
+#1694052612
+export PAGER="most -s"
+#1694052618
+env
+#1694052621
+man ip
+#1694052688
+most -s /etc/fstab
+#1694052703
+bat /etc/fstab
+#1694052722
+export PAGER=bat
+#1694052724
+man ip
+#1694052730
+env
+#1694052741
+export MANPAGER=bat
+#1694052752
+man less
+#1694052933
+man id
+#1694052968
+man ip
+#1694053023
+github/dotfiles/bash
+#1694053031
+git restore bashrc 
+#1694053224
+uname -a 
+#1694053680
+uname -a
+#1694053683
+man man
+#1694053719
+env
+#1694053728
+man man
+#1694053830
+whatis modprobe
+#1694053835
+whatis ip
+#1694053983
+man ip
+#1694053992
+man 8 ip
+#1694054015
+info man
+#1694054022
+tldr man
+#1694054036
+man --path
+#1694054089
+whatis man
+#1694054097
+man 7 man
+#1694054140
+man modprobe
+#1694054167
+man 8 modprobe
+#1694054177
+man  modprobe.d
+#1694054244
+arch
+#1694054257
+uname -m
+#1694055470
+cal
+#1694055477
+sudo nala install cal
+#1694055494
+sudo nala search cal
+#1694055540
+sudo nala search '^cal'
+#1694055558
+sudo nala search cal | rg '^cal'
+#1694055571
+sudo nala install calendar
+#1694055578
+cal
+#1694055925
+finger albano
+#1694055933
+sudo nala install finger
+#1694055939
+finger albano
+#1694055960
+whereis finger
+#1694056160
+resolv
+#1694056180
+netstat
+#1694056193
+netstat -tulpn
+#1694056244
+cal
+#1694056251
+calendar 
+#1694056277
+calendar -h
+#1694056280
+man calendar
+#1694056366
+man -a man
+#1694056454
+man -a swaponm
+#1694056455
+man -a swapon
+#1694056481
+man -a ip
+#1694056605
+xman
+#1694056615
+xman calendar
+#1694056624
+xman ip
+#1694056638
+xman
+#1694056727
+which man
+#1694056744
+doas apt-cache show man
+#1694056757
+doas apt-cache show man-db 
+#1694056763
+doas nala show man-db 
+#1694057090
+env
+#1694057103
+env | rg PAGER
+#1694057138
+export PAGER='nvim +Man!'
+#1694057144
+env | rg PAGER
+#1694057160
+unset MANPAGER
+#1694057164
+env | rg PAGER
+#1694057168
+man ip
+#1694057224
+man 7 ip
+#1694057230
+man 8 ip
+#1694057309
+export PAGER="vim +Man!"
+#1694057314
+env | rg PAGER
+#1694057319
+man sudo
+#1694057346
+export PAGER="lvim +Man!"
+#1694057349
+man ip
+#1694057465
+source ~/.bashrc
+#1694057476
+man ip
+#1694057637
+which printf
+#1694057645
+whatis printf
+#1694057652
+whereis printf
+#1694057673
+whereis srintf
+#1694057677
+whereis sprintf
+#1694057687
+whereis vprintf
+#1694057695
+whereis fprintf
+#1694057702
+whais fprintf
+#1694057707
+whatis fprintf
+#1694057790
+printf("%'.2f", 1234567.89);
+#1694057794
+printf("%.2f", 1234567.89);
+#1694057800
+printf("% .2f", 1234567.89);
+#1694057818
+printf("%` .2f", 1234567.89);
+#1694057826
+printf("%' .2f", 1234567.89);
+#1694057850
+printf("%.2f", 1234567.89);
+#1694057865
+man printf
+#1694057893
+whatis printf
+#1694057900
+man 3 printf
+#1694058150
+man ip
+#1694058169
+env | rg PAGER
+#1694058177
+unset MANPAGER 
+#1694058180
+env | rg PAGER
+#1694058200
+export PAGER="lvim +Man!"
+#1694058204
+man man
+#1694058233
+man -f lvim
+#1694058250
+man -f vim
+#1694058297
+man -f modprobe
+#1694058324
+whatis modprobe
+#1694058441
+man -P less man
+#1694058602
+man -P less -f man
+#1694058610
+man -P less -f man {
+#1694058615
+man -P less -f man [
+#1694058622
+man -P less -f man 
+#1694058632
+man -P less -f man 2> /dev/null 
+#1694058641
+man-f man 2> /dev/null 
+#1694058644
+man -f man 2> /dev/null 
+#1694058710
+set -n man
+#1694058770
+man
+#1694058774
+man ip
+#1694058801
+export PAGER="nvim +Man!"
+#1694058804
+man
+#1694058806
+man man
+#1694058813
+unset MANPAGER 
+#1694058816
+man man
+#1694058895
+his| rg lvim
+#1694058969
+env
+#1694058976
+unset MANPAGER 
+#1694058983
+export PAGER="nvim +Man!"
+#1694058989
+man 7 man
+#1694059146
+man man
+#1694059233
+reset
+#1694059243
+env
+#1694059305
+man ip
+#1694059312
+man bash
+#1694059359
+tput cols
+#1694059402
+free
+#1694059424
+echo $TERM
+#1694059470
+man --nh --nj man
+#1694059497
+man man
+#1694059509
+man --nh --nj man
+#1694059687
+git restore bash/bash_functions 
+#1694059570
+bat /etc/manpath.config 
+#1694059702
+enf
+#1694059703
+env
+#1694059709
+man
+#1694059724
+man man
+#1694059779
+git diff bashrc
+#1694224592
+cat .gitconfig 
+#1694225748
+curl -sLf https://spacevim.org/install.sh | bash -s -- -h
+#1694225756
+curl -sLf https://spacevim.org/install.sh | bash -s -- --install vim
+#1694226022
+whatis ls
+#1694226027
+whatis ip
+#1694226066
+rm history_alldeb 
+#1694226121
+gcam "Remove history_alldeb,(not used)."
+#1694634021
+echo $PATH
+#1694634047
+source ~/.bashrc
+#1694634050
+echo $PATH
+#1694634077
+ls .profile
+#1694634114
+source .profile
+#1694634119
+echo $PATH
+#1694634193
+bash ~/.local/share/lunarvim/lvim/utils/installer/uninstall.sh
+#1694634221
+LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
+#1694634477
+gaa
+#1694634487
+glog
+#1694634541
+gcm "Update bashrc( include erasedups )."
+#1694634735
+sudo nala search mandoc
+#1694634749
+sudo nala install mandoc
+#1694634783
+sudo nala autoremove 
+#1694634999
+gaa
+#1694635009
+gc
+#1694635048
+glog
+#1694635115
+git commit --amend -m "Update bashrc( include erasedups ) and HISTIGNORE."
+#1694635118
+gp 
+#1694635139
+git pull
+#1694635167
+rm -rf dotfiles
+#1694635187
+git@github.com:allbano/dotfiles.git
+#1694635193
+git clone git@github.com:allbano/dotfiles.git
+#1694635310
+gaa
+#1694635327
+git log --oneline -5
+#1694635341
+glol -5
+#1694635410
+git commit --amend -m "Update bashrc( include erasedups ) and modified HISTIGNORE."
+#1694635437
+git pull -ff
+#1694635455
+git config --global
+#1694635459
+git config --global -l
+#1694635477
+git pull --force 
+#1694635481
+git pull --force -ff
+#1694635516
+git pull --ff
+#1694635538
+gb
+#1694635673
+chmod 770 Backup
+#1694635678
+chmod 770 Documents
+#1694635684
+chmod 770 Images/
+#1695156485
+doas nala update && doas nala upgrade
+#1695156673
+reboot
+#1694635516
+git pull --ff
+#1694635538
+gb
+#1694635673
+chmod 770 Backup
+#1694635678
+chmod 770 Documents
+#1694635684
+chmod 770 Images/
+#1695156485
+doas nala update && doas nala upgrade
+#1695156673
+reboot
+#1695157050
+flatpak update
+#1695157063
+doas nala search telegram
+#1695157077
+doas nala install telegram-desktop 
+#1695157326
+mkdir Cursos
+#1695157372
+mkdir cgof
+#1695157382
+wget https://kretcheu.com.br/cgof/a01.mp4
+#1695157518
+wget https://kretcheu.com.br/cgof/a01.odp
+#1695157522
+wget https://kretcheu.com.br/cgof/a01.pdf
+#1695157531
+wget https://kretcheu.com.br/cgof/a01.sx.mp4
+#1695157635
+sudo nala install vlc
+#1695157714
+sudo nala install vlc vlc-plugin-{fluidsynth,jackm,pipewire,svg} libdvd-pkg
+#1695157719
+sudo nala install vlc vlc-plugin-{fluidsynth,jack,pipewire,svg} libdvd-pkg
+#1695157740
+sudo nala install vlc vlc-plugin-{fluidsynth,jack,pipewire,svg} libdvd-pkg dh-make
+#1695158565
+pl
+#1695158587
+git reset HEAD
+#1695158605
+git restore bash/bashrc 
+#1695162479
+ls -l / | cut -f4
+#1695162484
+ls -l / | cut -f2
+#1695162514
+ls -l / | cut -d' ' -f2
+#1695162537
+ls -l / | cut -d ' '
+#1695162582
+ls -l / | cut -d '	' -f12
+#1695162584
+ls -l / | cut -d '	' -f1
+#1695162589
+ls -l / | cut -d ' ' -f1
+#1695162592
+ls -l / | cut -d ' ' -f2
+#1695162595
+ls -l / | cut -d ' ' -f3
+#1695162629
+ls -l / | cut -d ' ' -f4
+#1695162661
+ls -l / | cut -d ' ' -f5
+#1695162663
+ls -l / | cut -d ' ' -f6
+#1695162666
+ls -l / | cut -d ' ' -f7
+#1695162671
+ls -l / | cut -d ' ' -f8
+#1695162696
+ls -l / | cut -d ' ' -f9
+#1695162703
+ls -l / | cut -d ' ' -f10
+#1695162706
+ls -l / | cut -d ' ' -f11
+#1695162709
+ls -l / | cut -d ' ' -f12
+#1695162712
+ls -l / | cut -d ' ' -f13
+#1695162714
+ls -l / | cut -d ' ' -f14
+#1695162716
+ls -l / | cut -d ' ' -f15
+#1695162718
+ls -l / | cut -d ' ' -f16
+#1695162721
+ls -l / | cut -d ' ' -f17
+#1695162727
+ls -l /
+#1695162796
+ls -l / | cut -c1-3
+#1695162810
+ls -l / | cut -c1-10
+#1695162814
+ls -l / | cut -c1-15
+#1695162819
+
+#1695162850
+ls -l / | expand 
+#1695162875
+ls -l / | expand --tabs=4
+#1695162878
+ls -l / | expand --tabs=6
+#1695162910
+ls -l / | sed 's/ /	/'
+#1695162926
+ls -l / | sed 's/ /	/b'
+#1695162928
+ls -l / | sed 's/ /	/g'
+#1695163294
+sudo nala show asciidoc
+#1695163434
+asciidoc
+#1695163441
+which asciidoc
+#1695163470
+
+#1695165019
+sudo -i
+#1695165305
+cut -d: -f1 /etc/passwd
+#1695165310
+cut -d: -f1 /etc/passwd | sort
+#1695165314
+cut -d: -f1 /etc/passwd | sort -nr
+#1695165318
+cut -d: -f1 /etc/passwd | sort -n
+#1695165632
+ssh 
+#1695165632
+eVzwkFk99qP6dDh3hzFtZ25Pt@nyc1.tmate.io
+#1695165637
+ssh eVzwkFk99qP6dDh3hzFtZ25Pt@nyc1.tmate.io
+#1695166709
+neofetch 
+#1695166755
+uname -a 
+#1695166779
+cat /etc/doas.conf 
+#1695166783
+doas cat /etc/doas.conf 
+#1695166797
+doas lvim /etc/doas.conf 
+#1695166755
+uname -a 
+#1695166779
+cat /etc/doas.conf 
+#1695166783
+doas cat /etc/doas.conf 
+#1695166797
+doas lvim /etc/doas.conf 
+#1695166837
+doas apt update
+#1695166845
+doas apt upgrade
+#1695166895
+md5sum .bashrc 
+#1695166926
+md5sum ~/github/dotfiles/bash/bashrc 
+#1695167567
+md256sum ~/github/dotfiles/bash/bashrc 
+#1695167574
+sha256sum ~/github/dotfiles/bash/bashrc 
+#1695167580
+sha512sum ~/github/dotfiles/bash/bashrc 
+#1695167647
+doas find /boot/efi/EFI -name '*efi' -exec sha512sum {} \;
+#1695168099
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+#1695168162
+lvim install
+#1695168300
+echo $SHELL
+#1695168327
+doas nala install nushell
+#1695168339
+doas nala install nu
+#1695168354
+cargo search nushell
+#1695168437
+sudo nala openssl
+#1695168446
+doas nala install openssl
+#1695168455
+doas nala reinstall openssl
+#1695168464
+doas aptitude install openssl
+#1695168475
+doas nala install aptitude
+#1695168494
+sudo apt-get check
+#1695168564
+rustup update
+#1695168599
+rustup default stable
+#1695168612
+uname -a
+#1695168690
+sudo nala install libssl-dev
+#1695168703
+cargo install nu
+#1695168787
+nu
+#1695168902
+doas aptitude update
+#1695168917
+cat /etc/shells 
+#1695168972
+doas nala show csh
+#1695168976
+doas nala show tcsh
+#1695169042
+doas nala install tcsh
+#1695169445
+ls -l /dev/nvme*
+#1695169585
+sudo nala remove libdvd-pkg
+#1695169645
+doas nala update && doas nala upgrade
+#1695169671
+neofetch 
+#1695169680
+doas nala autoremove 
+#1695169686
+doas nala autoclean
+#1695169692
+doas apt autoclean 
+#1695169709
+./install --all
+#1695169862
+du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
+#1695170194
+du --max-depth 1 --human-readable "${@:-.}"
+#1695170224
+dust --max-depth 1
+#1695170247
+dust --depth 1
+#1695170277
+dust /ssd
+#1695170291
+dust --depth 1 /ssd
+#1695170322
+dust -r --depth 1 /ssd
+#1695170533
+doas nala install ncdu
+#1695170564
+cargo install --list
+#1695170575
+lfs
+#1695170600
+doas nala install gparted
+#1695170631
+doas nala install gparted dmraid gpart jfsutils kpartx mtools udftools libparted-dev
+#1695170643
+doas nala install gparted gpart jfsutils kpartx mtools udftools libparted-dev
+#1695170666
+doas nala install gparted gpart jfsutils kpartx mtools udftools libparted-dev udfclient
+#1695170679
+doas nala install gparted gpart jfsutils kpartx mtools udftools libparted-dev udfclient parted-doc 
+#1695170710
+doas nala search btrfs
+#1695171081
+fzf --print0 | xargs -0 -o vim
+#1695171134
+find * -type f | fzf > selected
+#1695171636
+doas nala install update
+#1695171734
+fzf --bind 'enter:become(vim {})'
+#1695172282
+doas parted -l
+#1695172856
+doas nala show fzf
+#1695172994
+vim $(fzf --height 40% --reverse)
+#1695173027
+vim $(fzf --reverse)
+#1695173432
+doas nala search man-pages
+#1695173436
+doas nala search man-
+#1695173783
+cat /usr/share/dict/words | fzf-tmux -l 20% --multi --reverse
+#1695174452
+doas blkid
+#1695174492
+fdisk -l /dev/nvme0n1
+#1695175855
+doas update-initramfs -u -k all
+#1695175895
+grub-mkconfig -o /boot/grub/grub.cfg 
+#1695175898
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+#1695175968
+efibootmgr -v
