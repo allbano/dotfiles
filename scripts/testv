@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo -n "Isso é o conteúdo passado como parâmetro: ";
+echo $1
+
+
+
