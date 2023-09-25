@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+ano=$(date +%Y)
+nome='Albano Roberto Drescher Von Maywitz'
+email='allbano@gmail.com'
+err[0]='Uso: ns.sh ARQUIVO'
+err[1]='Arquivo já existe!'
+err[2]='Número incorreto de argumentos!'
+
+hashbang='!#/usr/bin/env bash'
+
+copy="# Copyright (C) $ano, $autor <$email>.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+"
+
+conteudo="\
+$hashbang
+
+$copy
+"
+
+die() {
+
+	echo ${err[$1]}
+	echo ${err[0]}
+	exit $1
+}
+
+[[ -a "$1" ]] && die 1
+[[ -z "$1" ]] && die 2
+
+echo "$conteudo" > $1
+chmod +x "$1"
+exec nvim -c ':$' "$1"
+

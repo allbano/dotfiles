@@ -1,0 +1,3 @@
+# Dividir arquivo...
+
+paste -d , <(seq 1 5 20) <(seq 5 5 20) | sed 's/.*/& w linhas-&.txt/ ; s/,/-/2' | sed -n -f /dev/stdin test.txt

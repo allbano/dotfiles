@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+shopt -q login_shell && echo 'Login shell' || echo 'Non-login shell'

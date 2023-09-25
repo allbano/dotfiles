@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+wget --post-data "lspci=$(lspci -vmmnn)" https://h-node.org/search/lspci/en -qO - \
+| w3m -T text/html -cols 999 \
+| awk '/\[mobile\]/{i=0}; i; /found in the database/ {i=1}' \
+| sed -E 's/^(does it work.*\?)(.*)$/Does it work without non-free firmware? \2\n/'
+
