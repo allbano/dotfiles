@@ -11,7 +11,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 . "$HOME/.cargo/env"
-export PATH="$PATH:/usr/sbin:/sbin"
+export PATH="$PATH:/usr/sbin:/sbin:/bin"
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 #GTK_THEME="Flat-Remix-GTK-Green-Darkest-Solid" 
