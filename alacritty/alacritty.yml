@@ -46,7 +46,7 @@ tabspaces: 4
 font:
   normal:
     family: "CaskaydiaCove NFM"
-    style: Regular
+      #    style: Regular
   # Bold font face
   bold:
     family: "CaskaydiaCove NFM"
@@ -71,6 +71,9 @@ cursor:
     # shape: Underline
     shape: Block
     blinking: Off
+
+custom_cursor_colors: true
+hide_cursor_when_typing: true
 
 mouse:
   double_click: { threshold: 300 }   
