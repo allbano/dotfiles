@@ -185,6 +185,11 @@ alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
 
+########## LSD
+alias ldl='lsd -l'
+alias lda='lsd -lA'
+
+
 ########## EXA 
 alias x='exa --icons -lga'
 alias xx='exa --icons -lg'
@@ -196,18 +201,16 @@ alias uy='yay -Syyu'
 
 ########## DEBIAN SYSTEM
 alias ud='sudo apt update && sudo apt upgrade'
+alias un='doas nala update && doas nala upgrade'
 
 ########## REDE
 alias ports='sudo netstat -tulanp'
 alias ips='ip -c -br a'
 
 
-########## SHELL GENIE
-alias shg=" shell-genie ask"
-
 
 ########## Neovim
-alias nba='nvim ~/.local/share/bash/aliases'
+alias nba='nvim ~/.bash_aliases'
 alias vi="vim"
 
 
