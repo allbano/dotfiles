@@ -12,14 +12,12 @@ case $- in
       *) return;;
 esac
 
-# Sorted Path
-export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
-
 # Modified xdg-user-dirs
 ###############################################################################
 source "$HOME/.config/user-dirs.dirs"
 export XDG_DATA_HOME="/home/$USER/.local/share"
 export XDG_CONFIG_HOME="/home/$USER/.config"
+export JULIA_BIN="/home/albano/github/julia/usr/bin"
 
 
 # Exports and User Configs 
@@ -35,6 +33,11 @@ export JUPYTERLAB_DIR="$HOME/.local/share/jupyter/lab"
 export DOTFILES="/home/$USER/github/dotfiles"
 export DOTBASHCN="/home/$USER/github/dotfiles/bash-completion"
 export DOTBASH="/home/$USER/github/dotfiles/bash"
+
+# Sorted Path
+PATH="$PATH:$JULIA_BIN"
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -234,3 +237,7 @@ fi
 # It's enable because that's the bash way
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib/mojo
+export PATH=$PATH:~/.modular/pkg/packages.modular.com_mojo/bin/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib/mojo
+export PATH=$PATH:~/.modular/pkg/packages.modular.com_mojo/bin/
