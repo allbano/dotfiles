@@ -237,3 +237,5 @@ fi
 # It's enable because that's the bash way
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
+eval "$(register-python-argcomplete pipx)"
+
