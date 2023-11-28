@@ -224,3 +224,6 @@ alias yd=yt-dlp
 ######## TMUX
 alias tx="tmux new"
 alias tz="tmux new /usr/bin/zsh"
+
+######## SYSTEMCTL
+alias dss="doas systemctl status"
