@@ -7,9 +7,9 @@ env:
 shell:
   program: /usr/bin/bash
   args:
-    - -l
+    #    - --login
     - -c
-    - "tmux new-ses -s al0" #"tmux attach || tmux"  # attaches the last used session
+    - "tmux new-ses -s al0 /usr/bin/bash --login" #"tmux attach || tmux"  # attaches the last used session
 #     - "tmux attach -d -t alacritty || tmux new -s alacritty" # attaches session named 'alacritty'
 
 window:
@@ -45,15 +45,15 @@ tabspaces: 4
 # Font configuration
 font:
   normal:
-    family: "CaskaydiaCove NFM"
-    style: Regular
+    family: "CaskaydiaCove Nerd Font"
+    style: Semilight
   # Bold font face
   bold:
-    family: "CaskaydiaCove NFM"
-    style: Bold
+    family: "CaskaydiaCove Nerd Font"
+    style: Semibold
   # Italic font face
   italic:
-    family: "CaskaydiaCove NFM"
+    family: "CaskaydiaCove Nerd Font"
     style: Italic
   # Point size
   size: 12.0
