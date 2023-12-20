@@ -6,3 +6,4 @@
 * Archlinux (Notebook)
 * Debian (Home PC)
 
+### Accept suggestions for new shellscripts
