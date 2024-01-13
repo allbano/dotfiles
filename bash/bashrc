@@ -100,14 +100,15 @@ IGNORE="$IGNORE:nvm version:ng version:npm version"
 export HISTIGNORE="$IGNORE"
 
 # append last command to the history right before next prompt
-[[ "${PROMPT_COMMAND[*]}" != *'history -a'* ]] \
-  && export PROMPT_COMMAND+=('history -a')
+#[[ "${PROMPT_COMMAND[*]}" != *'history -a'* ]] \
+#  && export PROMPT_COMMAND+=('history -a')
+PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND" # immeditely write on history
 
 # Warning: This file is sinchronized with the file
 # in the directory $HOME/github/dotfiles/bash/history_archnote
 HISTFILE="$HOME/.bash_history"
-export HISTSIZE=20000
-export HISTFILESIZE=20000
+export HISTSIZE=
+export HISTFILESIZE=
 
 
 # Shell Options 
@@ -128,16 +129,6 @@ shopt -s login_shell
 #bind 'set completion-ignore-case on'
 
 
-# Change window title 
-###############################################################################
-case "$TERM" in
-	xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|alacritty|st-256color|konsole*)
-		PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
-		;;
-	screen*)
-		PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
-		;;
-esac
 
 
 # make less more friendly for non-text input files, see lesspipe(1)
