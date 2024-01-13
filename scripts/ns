@@ -7,7 +7,7 @@ err[0]='Uso: ns.sh ARQUIVO'
 err[1]='Arquivo já existe!'
 err[2]='Número incorreto de argumentos!'
 
-hashbang='!#/usr/bin/env bash'
+hashbang='#!/usr/bin/env bash'
 
 copy="# Copyright (C) $ano, $autor <$email>.
 # License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
