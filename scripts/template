@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+# Copyright (C) 2024, Albano Roberto Drescher Von Maywitz <allbano@gmail.com>.
+# Copyright (C) 2024, Guilherme H. Jardim <>.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# templates linguagem caminho
+
+# TODO: e se "$2" for um diretorio que nao existe?
+
+err[0]='Uso: template [-]<template-desejado> <caminho-de-saída>'
+err[1]='Arquivo já existe!'
+err[2]='Número incorreto de argumentos!'
+
+declare -A template
+
+template["c"]="\
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc,char *argv[]) {
+  
+  return 0;
+}"
+
+template["-cpp"]="\
+#include <iostream>
+
+using namespace std;
+int main(int argc,char *argv[]) {
+
+  return 0;
+}"
+
+template["-libc"]="\
+#include <iostream>
+
+using namespace std;
+int main(int argc,char *argv[]) {
+
+  return 0;
+}"
+
+die() {
+  echo ${err[$1]}
+  echo ${err[0]}
+  exit $1
+}
+
+[[ -a "$2" ]] && die 1
+[[ "${#}" -gt 3 ]] || [[ "${#}" -lt 2 ]] && die 2
+# Lógica erro 0 amanhã
+
+selected="${1##-}"
+echo "${template[$selected]}" > "$2"
+exec lvim -c ":${3:-5}" "$2"
