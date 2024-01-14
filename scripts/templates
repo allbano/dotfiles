@@ -10,6 +10,8 @@
 
 # TODO: e se "$2" for um diretorio que nao existe?
 
+set -eou pipefail
+
 err[0]='Uso: template [-]<template-desejado> <caminho-de-saída/nome-do-arquivo>'
 err[1]='Arquivo já existe!'
 err[2]='Número incorreto de argumentos!'

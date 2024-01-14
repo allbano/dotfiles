@@ -110,10 +110,12 @@ HISTFILE="$HOME/.bash_history"
 export HISTSIZE=
 export HISTFILESIZE=
 
-
 # Shell Options 
 ###############################################################################
 # set -o vi
+
+# Bash Options 
+###############################################################################
 shopt -s histappend
 shopt -s expand_aliases
 shopt -s checkwinsize
