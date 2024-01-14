@@ -10,7 +10,7 @@
 
 # TODO: e se "$2" for um diretorio que nao existe?
 
-err[0]='Uso: template [-]<template-desejado> <caminho-de-saída>'
+err[0]='Uso: template [-]<template-desejado> <caminho-de-saída/nome-do-arquivo>'
 err[1]='Arquivo já existe!'
 err[2]='Número incorreto de argumentos!'
 
@@ -25,7 +25,16 @@ int main(int argc,char *argv[]) {
   return 0;
 }"
 
-template["-cpp"]="\
+template["cpp"]="\
+#include <iostream>
+
+
+int main(int argc,char *argv[]) {
+
+  return 0;
+}"
+
+template["cppstd"]="\
 #include <iostream>
 
 using namespace std;
@@ -34,7 +43,7 @@ int main(int argc,char *argv[]) {
   return 0;
 }"
 
-template["-libc"]="\
+template["libc"]="\
 #include <iostream>
 
 using namespace std;
@@ -42,6 +51,15 @@ int main(int argc,char *argv[]) {
 
   return 0;
 }"
+template["libcpp"]="\
+#include <iostream>
+
+using namespace std;
+int main(int argc,char *argv[]) {
+
+  return 0;
+}"
+
 
 die() {
   echo ${err[$1]}
@@ -56,3 +74,4 @@ die() {
 selected="${1##-}"
 echo "${template[$selected]}" > "$2"
 exec lvim -c ":${3:-5}" "$2"
+
