@@ -211,7 +211,6 @@ alias ips='ip -c -br a'
 
 ########## Neovim
 alias nba='nvim ~/.bash_aliases'
-alias vi="vim"
 
 
 ######### Python
