@@ -123,7 +123,7 @@ shopt -s cmdhist # save multi-line commands in history as single line
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
 shopt -s dotglob
-shopt -s login_shell
+shopt -s login_shell # use bash shell as login shell
 
 #ignore upper and lowercase when TAB completion
 #bind 'set completion-ignore-case on'
