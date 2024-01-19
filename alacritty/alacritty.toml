@@ -216,8 +216,8 @@ multiplier = 3
 save_to_clipboard = false
 
 [shell]
-#args = ["-c", "tmux new-ses -s al0 /usr/bin/bash --login"]
-args = ["-c", "tmux new-ses -s al0 /usr/bin/bash"]
+args = ["-c", "tmux new-ses -s al0 /usr/bin/bash --login"]
+#args = ["-c", "tmux new-ses -s al0 /usr/bin/bash"]
 program = "/usr/bin/bash"
 
 [window]
