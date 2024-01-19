@@ -233,3 +233,4 @@ fi
 
 eval "$(register-python-argcomplete pipx)"
 
+autogitpullDotfiles

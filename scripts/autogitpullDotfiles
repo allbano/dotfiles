@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Copyright (C) 2024,  <allbano@gmail.com>.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+declare -A MSGS
+GITDOTFILES="/home/$USER/github/dotfiles"
+MSGS["check"]="Verificando dotfiles..."
+MSGS["update"]="Atualizando repositório de dotfiles..."
+
+echo "${MSGS["check"]}"   && \
+[[ -d  "$GITDOTFILES" ]]  && \
+echo "${MSGS["update"]}"   && \
+cd $GITDOTFILES           && \
+git pull && cd $HOME
