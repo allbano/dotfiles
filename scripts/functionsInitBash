@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# ---------------------------------------------------------------------- #
+# Script      : /home/albano/bin/functionsInitBash
+# Description : 
+# Version     : 0.1
+# Author      : Albano Maywitz <allbano@gmail.com> 
+# Data        : 19 de janeiro de 2024
+# License     : GNU/GPL v3.0 
+# ---------------------------------------------------------------------- #
+# Use :
+# ---------------------------------------------------------------------- #
+updateDotfiles() {
+    declare -A MSGS
+    MSGS["check"]="Verificando dotfiles..."
+    MSGS["update"]="Atualizando repositório de dotfiles..."
+    echo "${MSGS["check"]}"
+    [[ ! -d "$DOTFILES"  ]] && exit 2
+    echo "${MSGS["update"]}"
+    cd $DOTFILES
+    git pull origin main
+    cd $HOME
+}
+  
