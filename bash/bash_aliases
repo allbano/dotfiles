@@ -194,6 +194,9 @@ alias lda='lsd -lA'
 alias x='exa --icons -lga'
 alias xx='exa --icons -lg'
 
+########## LSBLK
+alias lsblk='lsblk --output NAME,TRAN,FSTYPE,UUID,MODEL,TYPE,FSUSE%,SIZE,MOUNTPOINT'
+
 ########## ARCHLINUX SYSTEM
 alias ua='paru -Syu' 
 alias ur='sudo reflector --verbose -p hhtp,https --sort rate -n 10 --save /etc/pacman.d/mirrorlist && paru -Syyuu' 
