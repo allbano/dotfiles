@@ -20,4 +20,6 @@ updateDotfiles() {
     git pull origin main
     cd $HOME
 }
-  
+git_current_branch() {
+    git branch | cut -d' ' -f2
+}  
