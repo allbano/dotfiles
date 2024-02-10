@@ -190,9 +190,9 @@ alias ldl='lsd -l'
 alias lda='lsd -lA'
 
 
-########## EXA 
-alias x='exa --icons -lga'
-alias xx='exa --icons -lg'
+########## eza 
+alias x='eza --icons -lga'
+alias xx='eza --icons -lg'
 
 ########## LSBLK
 alias lsblk='lsblk --output NAME,TRAN,FSTYPE,UUID,MODEL,TYPE,FSUSE%,SIZE,MOUNTPOINT'
