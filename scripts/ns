@@ -1,30 +1,52 @@
 #!/usr/bin/env bash
 
+
+line="# ------------------------------------------------------------------------------- # "
+#Variables
 ano=$(date +%Y)
-nome='Albano Roberto Drescher Von Maywitz'
+name='Albano'
 email='allbano@gmail.com'
-err[0]='Uso: ns.sh ARQUIVO'
+scriptName=$1
+description=
+version=0.1
+author='Albano Roberto Drescher Von Maywitz'
+today=$(date +'%d de %B de %Y')
+
+#Tests
+err[0]='Forma de uso: ns ARQUIVO'
 err[1]='Arquivo já existe!'
 err[2]='Número incorreto de argumentos!'
 
+
 hashbang='#!/usr/bin/env bash'
 
-copy="# Copyright (C) $ano, $autor <$email>.
+copy="# Copyright (C) $ano, $name <$email>.
 # License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
-"
+$line "
+
+header="$line
+# Script      : $scriptName
+# Description : $description
+# Version     : $version
+# Author      : $author 
+# Data        : $today
+$line
+# Use : 
+$line"
 
 conteudo="\
 $hashbang
 
+$header
 $copy
 "
 
 die() {
 
-	echo ${err[$1]}
 	echo ${err[0]}
+	echo ${err[$1]}
 	exit $1
 }
 
@@ -33,5 +55,5 @@ die() {
 
 echo "$conteudo" > $1
 chmod +x "$1"
-exec nvim -c ':$' "$1"
+exec vim -c ':$' "$1"
 

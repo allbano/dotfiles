@@ -9,6 +9,7 @@
 # ---------------------------------------------------------------------- #
 # Use :
 # ---------------------------------------------------------------------- #
+
 updateDotfiles() {
     declare -A MSGS
     MSGS["check"]="Verificando dotfiles..."
@@ -20,6 +21,8 @@ updateDotfiles() {
     git pull origin main
     cd $HOME
 }
-git_current_branch() {
-    git branch | cut -d' ' -f2
+git_current_branch() {\
+  git branch --show-current &> /dev/null; \
+  [[ "$?" -ne "0" ]] && echo "Este diretório não é um repositório git!" \
+  || git branch --show-current | xargs -I BRANCH echo -n BRANCH 
 }  
