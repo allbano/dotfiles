@@ -32,5 +32,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+#SSH Agent
+eval $(ssh-agent &> /dev/null)
+
 # Init bashrc
 [ -f "$HOME/.bashrc" ] &&  . "$HOME/.bashrc"

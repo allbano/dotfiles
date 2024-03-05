@@ -18,7 +18,6 @@ alias gapa='git add --patch'
 alias gapt='git apply --3way'
 alias gau='git add --update'
 alias gav='git add --verbose'
-
 alias gava='git add --verbose --all'
 alias gb='git branch'
 alias gbD='git branch --delete --force'
@@ -42,7 +41,7 @@ alias gcd='git checkout $(git_develop_branch)'
 alias gcf='git config --list'
 alias gcl='git clone --recurse-submodules'
 alias gclean='git clean --interactive -d'
-alias gcm='git checkout $(git_main_branch)'
+alias gcbm='git checkout $(git_main_branch)'
 alias gcmsg='git commit --message'
 alias gcm='git commit -m'
 alias gco='git checkout'
@@ -229,3 +228,6 @@ alias tz="tmux new /usr/bin/zsh"
 
 ######## SYSTEMCTL
 alias dss="doas systemctl status"
+
+######## SSH
+alias sshw="eval $(ssh-agent -s)"
