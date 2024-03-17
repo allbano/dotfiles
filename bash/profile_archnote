@@ -35,5 +35,8 @@ esac
 #SSH Agent
 eval $(ssh-agent &> /dev/null)
 
+# ASDF
+. "$HOME/.asdf/asdf.sh"
+
 # Init bashrc
 [ -f "$HOME/.bashrc" ] &&  . "$HOME/.bashrc"

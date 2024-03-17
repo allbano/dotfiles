@@ -28,7 +28,7 @@ export TERM="xterm-256color"
 export PAGER="less -s -M -Gg"
 export MANPAGER="lvim +Man!"
 export LS_OPTIONS="--color=auto"
-Export JUPYTERLAB_DIR="$HOME/.local/share/jupyter/lab"
+export JUPYTERLAB_DIR="$HOME/.local/share/jupyter/lab"
 
 # This is the Dotfiles directory PATH
 export DOTFILES="/home/$USER/github/dotfiles"
@@ -38,9 +38,6 @@ export DOTBASH="/home/$USER/github/dotfiles/bash"
 # Sorted Path
 #export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
 PATH="$PATH:$JULIA_BIN"
-
-# Activate Profile's Bash
-[ -f "$HOME/.bash_profile" ] && source "$HOME/.bash_profile"
 
 # Fuzzy Finder - fzf
 [ -f "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"
@@ -240,8 +237,5 @@ eval "$(register-python-argcomplete pipx)"
 . "$DOTFILES/scripts/functionsInitBash"
 BLVL="$(ps -o tty= -p$$ | sed 's/pts\///')"
 [[ $BLVL -eq "1" ]] && updateDotfiles
-
-# ASDF
-. "$HOME/.asdf/asdf.sh"
 
 
