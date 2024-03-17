@@ -184,6 +184,13 @@ alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
 
+########## GREP
+alias grep='grep $LS_OPTIONS'
+alias egrep='grep -E $LS_OPTIONS'
+
+########## DIR 
+alias dir='dir $LS_OPTIONS'
+
 ########## LSD
 alias ldl='lsd -l'
 alias lda='lsd -lA'
@@ -216,7 +223,7 @@ alias nba='nvim ~/.bash_aliases'
 
 
 ######### Python
-alias py3a=' source /home/albano/.py3env/bin/activate'
+alias py3a="activateVenvPython"
 alias py3d=' deactivate'
 
 ######### Yt-dlp ( Youtube )
@@ -230,4 +237,4 @@ alias tz="tmux new /usr/bin/zsh"
 alias dss="doas systemctl status"
 
 ######## SSH
-alias sshw="eval $(ssh-agent -s)"
+alias sshw='eval "$(ssh-agent -s)"'

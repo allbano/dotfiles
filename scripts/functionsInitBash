@@ -25,4 +25,10 @@ git_current_branch() {\
   git branch --show-current &> /dev/null; \
   [[ "$?" -ne "0" ]] && echo "Este diretório não é um repositório git!" \
   || git branch --show-current | xargs -I BRANCH echo -n BRANCH 
-}  
+}
+
+activateVenvPython() {
+  local VENVS=("$HOME/.py3env/bin/activate" "$HOME/.py3envpypy/bin/activate")
+#  source "${VENVS[${1}]}"
+  . ${VENVS[$1]}
+}

@@ -18,7 +18,7 @@ esac
 source "$HOME/.config/user-dirs.dirs"
 export XDG_DATA_HOME="/home/$USER/.local/share"
 export XDG_CONFIG_HOME="/home/$USER/.config"
-export JULIA_BIN="/home/albano/github/julia/usr/bin"
+export JULIA_BIN="$HOME/github/julia/usr/bin"
 
 
 # Exports and User Configs 
@@ -28,7 +28,7 @@ export TERM="xterm-256color"
 export PAGER="less -s -M -Gg"
 export MANPAGER="lvim +Man!"
 export LS_OPTIONS="--color=auto"
-export JUPYTERLAB_DIR="$HOME/.local/share/jupyter/lab"
+Export JUPYTERLAB_DIR="$HOME/.local/share/jupyter/lab"
 
 # This is the Dotfiles directory PATH
 export DOTFILES="/home/$USER/github/dotfiles"
@@ -36,11 +36,14 @@ export DOTBASHCN="/home/$USER/github/dotfiles/bash-completion"
 export DOTBASH="/home/$USER/github/dotfiles/bash"
 
 # Sorted Path
+#export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
 PATH="$PATH:$JULIA_BIN"
-export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
 
+# Activate Profile's Bash
+[ -f "$HOME/.bash_profile" ] && source "$HOME/.bash_profile"
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# Fuzzy Finder - fzf
+[ -f "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"
 
 # If you don't want to create symbolic link, use it!
 #[[ -f "${DOTBASHCN}/tmux_completion" && -r "${BASHCH}/tmux_completion" ]] && \
@@ -209,13 +212,10 @@ export PS1
 
 # enable color support of ls and also add handy aliases
 ###############################################################################
-eval "`dircolors`"
+eval "$(dircolors)"
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias dir='dir $LS_OPTIONS'
-    alias grep='grep $LS_OPTIONS'
-    alias egrep='grep -E $LS_OPTIONS'
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -232,12 +232,16 @@ fi
 # It's enable because that's the bash way
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
+# PIPX
 eval "$(register-python-argcomplete pipx)"
 
 
 # My Functions Config
-. $DOTFILES/scripts/functionsInitBash
+. "$DOTFILES/scripts/functionsInitBash"
 BLVL="$(ps -o tty= -p$$ | sed 's/pts\///')"
 [[ $BLVL -eq "1" ]] && updateDotfiles
+
+# ASDF
+. "$HOME/.asdf/asdf.sh"
 
 

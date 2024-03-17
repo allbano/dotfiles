@@ -24,13 +24,13 @@ export NVM_DIR="$HOME/.nvm"
 
 source <(ng completion script)
 
-# pnpm
+### PNPM Implemantation ###
 export PNPM_HOME="/home/albano/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+
 
 #SSH Agent
 eval $(ssh-agent &> /dev/null)
