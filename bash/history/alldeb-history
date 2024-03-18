@@ -3173,3 +3173,121 @@ grub-mkconfig -o /boot/grub/grub.cfg
 doas grub-mkconfig -o /boot/grub/grub.cfg 
 #1695175968
 efibootmgr -v
+#1710792116
+type updateDotfiles 
+#1710792123
+typeset updateDotfiles 
+#1710792945
+mkdir history
+#1710792957
+cp debianHistory archlinuxHistory ./history/
+#1710792967
+rm archlinuxHistory debianHistory 
+#1710792970
+lcd history/
+#1710793027
+lvim functionsInitBash 
+#1710793506
+date
+#1710793646
+date --date='TZ="America/Sao_Paulo"
+#1710793650
+date --date='TZ="America/Sao_Paulo"'
+#1710793709
+date -s dd/mm/YYYY
+#1710793719
+date -s dd/mm/yyyy
+#1710793722
+date -s dd/mm/yy
+#1710793826
+date +'%F'
+#1710793859
+date +'%d/%b'
+#1710793872
+date +'%d/%B'
+#1710793886
+date +'%d/%M'
+#1710793893
+date +'%d/%m'
+#1710793905
+date +'%d/%m/%y'
+#1710793908
+date +'%d/%m/%yy'
+#1710793911
+date +'%d/%m/%Y'
+#1710793950
+date +'%d/%m/%Y às %H:%M:%S'
+#1710794040
+lvim functionsInitBash 
+#1710794173
+lvim $DOTBASH/functionsInitBash 
+#1710794211
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710794704
+cat bin/functionsInitBash 
+#1710794712
+updateHistory 
+#1710794732
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710794766
+updateHistory 
+#1710794771
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710794830
+updateHistory 
+#1710794845
+cat updates 
+#1710794856
+updateHistory 
+#1710794858
+cat updates 
+#1710794984
+uname -r
+#1710794986
+uname -a
+#1710794993
+uname --machine 
+#1710794997
+uname --nodename 
+#1710795049
+echo "$(uname --nodename)-history"
+#1710795205
+NODENAME="$(uname --nodename)-history"
+#1710795209
+echo $NODENAME 
+#1710794884
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710795279
+updateHistory 
+#1710795290
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710795341
+gaa
+#1710795354
+rm archlinuxHistory 
+#1710795368
+rm debianHistory 
+#1710795372
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710795577
+updateHistory 
+#1710795590
+rm updates 
+#1710795603
+gaa
+#1710795641
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710795804
+rm all*
+#1710795821
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710795828
+type -a updateHistory 
+#1710795836
+updateHistory 
+#1710795852
+cat alldeb-updates 
+#1710795858
+cat alldeb-history 
+#1710795893
+git restore .

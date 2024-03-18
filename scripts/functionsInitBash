@@ -32,3 +32,18 @@ activateVenvPython() {
 #  source "${VENVS[${1}]}"
   . ${VENVS[$1]}
 }
+
+updateHistory() {
+  local LOCALPATH="/home/$USER/github/dotfiles/bash/history"
+  local UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
+  local HISTNAME="$(uname --nodename)-history"
+  local UPNAME="$(uname --nodename)-updates"
+  if [ -f "$LOCALPATH/$UPNAME" ]; then
+    cp -f "$HOME/.bash_history" "$HOME/github/dotfiles/bash/history/$HISTNAME"
+    echo "Seu history foi atualizado em $UPTODATE" >> "$LOCALPATH/$UPNAME"
+  else
+    touch "$LOCALPATH/$UPNAME"
+    cp -f "$HOME/.bash_history" "$HOME/github/dotfiles/bash/history/$HISTNAME"
+    echo "Seu history foi atualizado em $UPTODATE" >> "$LOCALPATH/$UPNAME"
+  fi 
+  }
