@@ -2863,3 +2863,613 @@ lvim ~/bin/functionsInitBash
 git_current_branc 
 #1710802830
 lvim ~/bin/functionsInitBash 
+#1710802893
+git_current_branch 
+#1710802923
+gl origin $(git_current_branch)
+#1710803052
+git add --all 
+#1710803110
+gcm "Updated and revised bashrc and functionsInitBash files with shellcheck."
+#1710803166
+cat allarch-updates 
+#1710803263
+lvim ~/bin/functionsInitBash 
+#1710817329
+py3a 0
+#1710817358
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710817485
+type -a activateVenvPython 
+#1710817495
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710818173
+lvim $DOTBASH/bash_aliases 
+#1710818546
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710821565
+unzip 'Dados Brutos-20240318T183102Z-001.zip' 
+#1710821585
+mv 'Dados Brutos' DadosBrutos
+#1710821643
+mv DadosBrutos /home/albano/Cursos/python/
+#1710823366
+cat 1.json 
+#1710823529
+cat 1.json | jq --indent 2
+#1710823753
+cat 1.json 
+#1710823844
+cat 1.json | jq --indent 2
+#1710824500
+tldr jq
+#1710824522
+cat 1.json | jq --indent 2 '.'
+#1710824574
+cat 1.json | jq --indent 2
+#1710824596
+cat 1.json | jq --indent 2 > arrumado1.json
+#1710824610
+cat arrumado1.json 
+#1710818280
+jupyter-lab --port 12000 --browser firefox
+#1710824616
+bat arrumado1.json 
+#1710825385
+xit
+#1710871113
+doas mkinitcpio -P
+#1710871183
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+#1710876632
+neofetch 
+#1710877309
+flatpak list
+#1710877323
+flatpak update
+#1710877545
+lsk
+#1710877553
+lvim ~/.bash_aliases
+#1710877827
+ss -ntp
+#1710878161
+git_current_branch 
+#1710878699
+type -a updateDotfiles 
+#1710879613
+ps aux | rg google
+#1710879635
+ps aux | rg chrome
+#1710879658
+ps 
+#1710879662
+ps chrome
+#1710879745
+ps aux | rg 'pid=11703'
+#1710879757
+ps aux | rg '11703'
+#1710890680
+type -a google-chrome
+#1710890688
+type -a google-chrome-stable 
+#1710890694
+type -a google
+#1710890741
+type -a urlencode
+#1710890767
+paru -Sss urlencode
+#1710890814
+paru -S urlencode
+#1710890847
+google active directory
+#1710891574
+type -a google
+#1710891594
+type -a launch
+#1710891627
+type -a google
+#1710891639
+lvim templates 
+#1710891685
+lvim sp
+#1710891694
+sp
+#1710891711
+lvim sp
+#1710891778
+cat loginShell 
+#1710891784
+loginShell 
+#1710891794
+shopt -q login_shell && echo 'Login shell' || echo 'Non-login shell'
+#1710891831
+RS=$(shopt -q login_shell && echo 'Login shell' || echo 'Non-login shell')
+#1710891835
+echo RS
+#1710891839
+echo $RS
+#1710891866
+export RS
+#1710891874
+echo $RS
+#1710891899
+RS=$(shopt -q login_shell && echo 'Login shell' || echo 'Non-login shell') && export RS
+#1710891908
+echo $RS
+#1710891919
+ubf
+#1710891922
+inf
+#1710891932
+hostname
+#1710891938
+paru -S hostname
+#1710892014
+paru -Sss inetutils
+#1710892023
+paru -S inetutils
+#1710892031
+hostname
+#1710892035
+inf
+#1710892094
+whois
+#1710892112
+hostnamectl
+#1710892124
+inf
+#1710892127
+hostnamectl
+#1710892141
+ifconfig
+#1710898170
+paru -Sss opera
+#1710898230
+paru -Sss '^opera'
+#1710898265
+paru -Syyu
+#1710898285
+paru -R python-jinja-time
+#1710898294
+paru -R python-cx-freeze 
+#1710898310
+paru -Rs python-cx_freeze 
+#1710898351
+paru -R opera opera-ffmpeg-codecs 
+#1710898417
+doas pacman -Syyu
+#1710898433
+yay -Sua
+#1710898446
+yay -R pypy3-setuptools 
+#1710898456
+yay -R pypy3-pip
+#1710898460
+yay -R pypy3-setuptools 
+#1710898470
+yay -R xz-static
+#1710898476
+yay -Sua
+#1710898494
+paru -Sya
+#1710898498
+paru -Sua
+#1710899432
+jupyter-lab --port 12000 --browser firefox
+#1710901291
+pip list
+#1710901295
+pip
+#1710901307
+pip list
+#1710901312
+pip
+#1710901336
+pip list -o
+#1710901383
+pip list -o | cut -d' ' -f1
+#1710901463
+pip freeze 
+#1710901533
+pip list -o --format=freeze
+#1710901549
+pip list --format=freeze
+#1710901555
+pip list --format=freeze -o
+#1710901594
+pip list --outdated -l
+#1710901662
+pip list --outdated
+#1710901693
+pip list --outdated | grep -v '^\-e'
+#1710901742
+pip list --outdated | tr " " "\n"
+#1710901781
+pip list -o | cut -f1 -d' ' | tr " " "\n"
+#1710901800
+pip list -o | cut -f1 -d' '
+#1710901845
+pip list -o | cut -f1 -d' ' |  awk '{if(NR>=3)print}' 
+#1710901912
+pip list -o | cut -f1 -d' ' |  awk '{if(NR>=3)print}' | xargs -n1 pip3 install -U 
+#1710901940
+pip list -o
+#1710954715
+jupyter-lab --port 12000 --browser firefox
+#1710957901
+npm versions
+#1710957919
+npm i -g react-native
+#1710957947
+npm versions
+#1710957965
+npm i -g react-native-cli
+#1710957981
+react-native -v
+#1710957988
+react-native versions
+#1710957992
+react-native
+#1710958060
+java -v
+#1710958067
+java --version 
+#1710958094
+java -V
+#1710958099
+java
+#1710958114
+java version
+#1710958136
+hostname
+#1710958755
+mkdir react-native
+#1710958770
+mkdir 20_03_2024
+#1710958783
+lsof -P
+#1710958797
+lsof -P | rg LIST
+#1710959442
+npm uninstall -g react-native
+#1710959450
+nvm use default 
+#1710959513
+npx react-native@latest init AwesomeProject
+#1710959646
+npx react-native run-android
+#1710959851
+npm i -g react-native-cli
+#1710959919
+npx react-native init ToDoApp
+#1710959995
+rm -rf ToDoApp/
+#1710960010
+react-native 
+#1710960029
+react-native init ToDoApp
+#1710960103
+code .
+#1710960188
+rm -rf ToDoApp/
+#1710960209
+npm uninstall -g react-native-cli @react-native-community/cli
+#1710960223
+rm -rf AwesomeProject/
+#1710960229
+npx react-native@latest init AwesomeProject
+#1710960297
+npx react-native@latest init ToDoApp
+#1710960368
+code .
+#1710960902
+mv ToDoApp ToDoAppTS
+#1710961155
+npx react-native init ToDoApp
+#1710961224
+code .
+#1710961260
+npx run android
+#1710961284
+npx run ios
+#1710961313
+npx react-native run android
+#1710961381
+npx react-native run-ios
+#1710961451
+npx react-native run-android
+#1710974061
+ga bash/bash_aliases 
+#1710974083
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710985502
+jupyter-lab --port 12000 --browser firefox
+#1710995598
+nvm use system
+#1710995691
+type -a google
+#1710995708
+type -a launch
+#1710995732
+urlencode eu vou pra praia
+#1710995745
+urlencode "eu vou pra praia"
+#1710995751
+urlencode -a "eu vou pra praia"
+#1710995758
+urlencode -a eu vou pra praia
+#1710995767
+urlencode -l eu vou pra praia
+#1710995773
+urlencode -l "eu vou pra praia"
+#1710995790
+google
+#1710995818
+google guerra
+#1710995848
+type -a launch
+#1710995885
+echo OSTYPE
+#1710995888
+echo $OSTYPE
+#1710995915
+type -a google
+#1710995965
+tldr urlencode
+#1710996190
+cat sp
+#1710996198
+cat templates 
+#1710996233
+which google
+#1710996248
+type -a google
+#1710996253
+type -p google
+#1710996257
+type -f google
+#1710996265
+type -p google
+#1710996271
+type -t google
+#1710996306
+lvim functionsInitBash 
+#1710996316
+lvim hn-check 
+#1710996419
+lvim alacritty.toml 
+#1710996660
+test="Oi vamos para praia"
+#1710996663
+echo $test
+#1710996676
+echo -n $test
+#1710996709
+echo $test | sed s/ /+/g
+#1710996728
+echo $test | sed 's/ /+/g'
+#1710996789
+paru -R urlencode
+#1710996836
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710996876
+lvim bash_
+#1710997166
+echoYellow 
+#1710997173
+echoYellow oi
+#1710997245
+lvim test
+#1710997252
+ns test
+#1710997374
+ggfind eu sei que vou te amar
+#1710996880
+lvim bash_functions 
+#1710997385
+lvim test
+#1710997573
+ggfind eu sei que vou te amar
+#1710997821
+echo '$DOTFILES'
+#1710997966
+lvim bash_functions 
+#1710998043
+type -a google
+#1710998088
+google eu sei que vou te amar
+#1710997629
+lvim $(pwd)/bash_functions
+#1710998131
+google eu sei que vou te amar
+#1710998172
+type -a google
+#1710998175
+google eu sei que vou te amar
+#1710998215
+type -a google
+#1710998220
+google eu sei que vou te amar
+#1710998278
+lvim $(pwd)/bash_functions
+#1710998281
+nvm
+#1711075081
+cat test 
+#1711075103
+ggfind 
+#1711075112
+ggfind eu sei que vou te amar
+#1711075141
+898
+#1711075165
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1711075207
+cat ./test 
+#1711075223
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1711075242
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1711075246
+echo -e "${PATH//:/\\n}" | sort -u | xargs
+#1711075261
+echo -e "${PATH//:/\\n}"
+#1711075292
+nvm
+#1711075297
+ss -tan
+#1711075342
+zsh
+#1711075513
+glow
+#1711075585
+curl https://blauaraujo.com/tgl.src/hacks/20231228_070542-listar-arquivos-carregados-na-inicializacao-do-bash.md
+#1711075595
+curl https://blauaraujo.com/tgl.src/hacks/20231228_070542-listar-arquivos-carregados-na-inicializacao-do-bash.md | glow
+#1711075623
+bash -lixc exit 2>&1 | sed -rn '/^\++ \. /p'
+#1711076698
+curl https://blauaraujo.com/tgl.src/hacks/20231228_070542-listar-arquivos-carregados-na-inicializacao-do-bash.md | glow
+#1711077168
+curl https://blauaraujo.com/tgl.src/hacks/20240217_094213-encontrar-pacotes-disponiveis-debian.md | glow
+#1711077192
+cat discoclient.properties 
+#1711077203
+rm discoclient.properties 
+#1711077224
+cat .tool-versions 
+#1711077229
+rm .tool-versions 
+#1711077256
+tree
+#1711077424
+cat ./test 
+#1711077433
+ggfind 
+#1711077448
+ggfind eu não vou mais reclamar
+#1711077464
+lvim te
+#1711077469
+lvim test 
+#1711077597
+ggfind eu não vou mais reclamar
+#1711077712
+cat test
+#1711077648
+lvim bash_functions 
+#1711077836
+google procure por eu sei que vou te amar
+#1711078199
+rm test
+#1711078283
+google evanescence
+#1711078217
+lvim bash_functions 
+#1711078401
+google evanesce
+#1711078431
+lvim $DOTBASH/bash_functions 
+#1711078486
+type -a google
+#1711078491
+type -a launch
+#1711078502
+google evanescence
+#1711078510
+lvim $DOTBASH/bash_functions 
+#1711078534
+google evanescence
+#1711078872
+paru -Sss fjo
+#1711078999
+asdf
+#1711079006
+asdf updat
+#1711079008
+asdf update
+#1711078958
+rustup update
+#1711079046
+echo -e "${PATH//:/\\n}"
+#1711079054
+nvm
+#1711079064
+nvm use default
+#1711079074
+type -a yarn
+#1711079126
+cargo install --list
+#1711079155
+cargo --list
+#1711079214
+cargo tree fjo
+#1711079244
+cargo tree -p fjo
+#1711079258
+cargo install --list
+#1711079265
+cargo tree -p bat
+#1711079281
+cargo install bat
+#1711079288
+cargo install bottom
+#1711079294
+cargo install choose
+#1711079301
+cargo install du-dust
+#1711079309
+cargo install lfs
+#1711079316
+cargo install sd
+#1711079333
+cargo install mdbook
+#1711079404
+cargo install --list
+#1711079420
+cargo install mdbook-course
+#1711079453
+cargo uninstall mdbook-course
+#1711079456
+cargo install --list
+#1711079482
+cargo uninstall mdbook-exerciser
+#1711079498
+cargo uninstall mdbook-i18n-helpers
+#1711079506
+cargo uninstall mdbook-svgbob
+#1711079512
+cargo install --list
+#1711079518
+mdbook
+#1711079537
+sd
+#1711079934
+cargo install fjo
+#1711079957
+cargo search fjo
+#1711080172
+git clone git@codeberg.org:VoiDD/fjo.git
+#1711080201
+cargo install --path .
+#1711080474
+cargo install --list
+#1711080480
+fjo
+#1711080485
+type -a fjo
+#1711080524
+fjo auth login
+#1711080663
+git clone https://codeberg.org/blau_araujo/tgl.git && cd tgl
+#1711080681
+fjo --helkp
+#1711080730
+fjo completion bash
+#1711080772
+fjo completion bash > $DOTFILES/bash-completion/fjo
+#1711080784
+ldl -d $DOTFILES/bash-completion/fjo
+#1711080831
+doas ln -sf /home/albano/github/dotfiles/bash-completion/fjo /usr/share/bash-completion/completions/fjo
