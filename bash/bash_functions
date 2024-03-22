@@ -36,7 +36,7 @@ warn() {
 # launch(): Open the file/URL with the default application.
 launch() {
     
-    local args="$@"
+    local args="$*"
 
   	case "$OSTYPE" in
 	    "cygwin"*)
@@ -46,16 +46,18 @@ launch() {
 		    open "$@"
 		  ;;
 	    *)
-		    xdg-open "$args"
+		    xdg-open "$args" && bg
 		  ;;
 	  esac
 }
 
 # google(): Open google.com in the default browser, arguments are used as search terms.
 google() {
-	  local terms
-	  terms="$(urlencode "$@")"
-	  launch "https://www.google.com/search?q=${terms}"
+	  local terms;
+	  terms="$*"
+    echo terms
+    terms="$(echo -e ${terms// /+})"
+	  launch "https://www.google.com/search?q=${terms}" 
 }
 _exit_status() {
   case $1 in

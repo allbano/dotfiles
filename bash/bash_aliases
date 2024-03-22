@@ -201,7 +201,7 @@ alias x='eza --icons -lga'
 alias xx='eza --icons -lg'
 
 ########## LSBLK
-alias lsblk='lsblk --output NAME,TRAN,FSTYPE,UUID,MODEL,TYPE,FSUSE%,SIZE,MOUNTPOINT'
+alias lsk='lsblk --output NAME,TRAN,FSTYPE,UUID,MODEL,TYPE,FSUSE%,SIZE,MOUNTPOINT'
 
 ########## ARCHLINUX SYSTEM
 alias ua='paru -Syu' 
@@ -223,7 +223,7 @@ alias nba='nvim ~/.bash_aliases'
 
 
 ######### Python
-alias py3a="activateVenvPython"
+alias py3a=" . /home/albano/.py3env/bin/activate"
 alias py3d=' deactivate'
 
 ######### Yt-dlp ( Youtube )
