@@ -3291,3 +3291,25 @@ cat alldeb-updates
 cat alldeb-history 
 #1710795893
 git restore .
+#1710796014
+cat alldeb-updates 
+#1710796022
+gaa 
+#1710796131
+gcm "Updated bashrc with options to update bash history automatically."
+#1710796139
+gp origin main
+#1711035511
+un
+#1711035613
+neofetch 
+#1711035615
+inxi
+#1711035670
+inxi -F
+#1711035710
+doas inxi -F
+#1711059699
+un
+#1711060588
+modular update mojo
