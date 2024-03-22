@@ -23,33 +23,24 @@ updateDotfiles() {
 }
 
 updateHistory() {
-  local LOCALPATH
   LOCALPATH="/home/$USER/github/dotfiles/bash/history"
-  local UPTODATE 
   UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
-  local HISTNAME
   HISTNAME="$(uname --nodename)-history"
-  local UPNAME
   UPNAME="$(uname --nodename)-updates"
   if [ -f "$LOCALPATH/$UPNAME" ]; then
-    cp -f "$HOME/.bash_history" "$HOME/github/dotfiles/bash/history/$HISTNAME"
-    echo "Seu history foi atualizado em $UPTODATE" >> "$LOCALPATH/$UPNAME"
-  else
-    touch "$LOCALPATH/$UPNAME"
-    cp -f "$HOME/.bash_history" "$HOME/github/dotfiles/bash/history/$HISTNAME"
-    echo "Seu history foi atualizado em $UPTODATE" >> "$LOCALPATH/$UPNAME"
+    cp -f "$HOME/.bash_history" "$HOME/github/dotfiles/bash/history/$HISTNAME";
+    echo "Seu history foi atualizado em $UPTODATE" >> "$LOCALPATH/$UPNAME";
+    else
+      touch "$LOCALPATH/$UPNAME";
+      cp -f "$HOME/.bash_history" "$HOME/github/dotfiles/bash/history/$HISTNAME";
+      echo "Seu history foi atualizado em $UPTODATE" >> "$LOCALPATH/$UPNAME";
   fi 
-}
-
-activateVenvPython() {
-  local VENVS=("$HOME/.py3env/bin/activate" "$HOME/.py3envpypy/bin/activate")
-  "source ${VENVS[$1]}" || exit 2
 }
 
 git_current_branch() {\
   if ! git branch --show-current &> /dev/null; then
     echo "Este diretório não é um repositório git!"
-  else
-    git branch --show-current | xargs -I BRANCH echo -n BRANCH 
+    else
+      git branch --show-current | xargs -I BRANCH echo -n BRANCH 
   fi
 }
