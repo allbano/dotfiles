@@ -3313,3 +3313,191 @@ doas inxi -F
 un
 #1711060588
 modular update mojo
+#1711147230
+gsty
+#1711147236
+gaa 
+#1711147302
+gcm "Included bash_history for Desktop Debian."
+#1711147304
+gpp
+#1711147311
+git pull origin main
+#1711147318
+git push origin main
+#1711147739
+/home/albano/github/dotfiles/
+#1711147778
+lvim functionsInitBash 
+#1711147677
+lvim bash_functions 
+#1711153902
+lsk
+#1711155132
+gaa
+#1711155189
+gcm "Updated bashrc and functions (bash_functions,functionsInitBash)."
+#1711155267
+grep -P "(([1-9]\d{0,2})\.){3}(?2)" <<< 177.96.83.51
+#1711155339
+curl ipinfo.io/$(grep -P "(([1-9]\d{0,2})\.){3}(?2)" <<< 177.96.83.51)
+#1711155388
+curl ipinfo.io/$(rg -P "(([1-9]\d{0,2})\.){3}(?2)" <<< 177.96.83.51)
+#1711155424
+grep -P "(([1-9]\d{0,2})\.){3}(?2)" <<< www.google.com
+#1711155430
+echo $?
+#1711155524
+bc
+#1711155793
+host "$1" | awk '/address/ { print $NF }'
+#1711155803
+host www.google.com | awk '/address/ { print $NF }'
+#1711155935
+ipawk() { host "$1" | awk '/address/ { print $NF }' }
+#1711155940
+ipawk() { host "$1" | awk '/address/ { print $NF }' };
+#1711155953
+ipawk() { host "$1" | awk '/address/ { print $NF }'; }
+#1711155971
+ipawk 
+#1711155978
+ipawk google.com
+#1711155987
+ipawk cloudflare.com
+#1711156071
+ipall=$(ipawk cloudflare.com)
+#1711156082
+echo $ipall 
+#1711156087
+echo $ipall[1] 
+#1711156097
+echo ${ipall[1]}
+#1711156119
+echo ${ipall[@]}
+#1711156123
+echo ${ipall[0]}
+#1711156152
+echo ${ipall[1]}
+#1711156180
+declare -A ipall
+#1711156204
+ipall=$(ipawk cloudflare.com)
+#1711156207
+echo ${ipall[1]}
+#1711156211
+echo ${ipall[0]}
+#1711156266
+echo $ipall
+#1711156273
+echo -n $ipall |  
+#1711156276
+echo -n $ipall
+#1711156293
+echo -n $ipall | tr ' ' '\n'
+#1711156409
+echo -e ${ipall// /\\n}
+#1711156436
+echo -e "${ipall// /\\n}"
+#1711156541
+ipawk() { $(host "$1" | awk '/address/ { print $NF }'); }
+#1711156549
+ipawk google.com
+#1711156558
+ipawk www.google.com
+#1711156568
+ipawk() { host "$1" | awk '/address/ { print $NF }'; }
+#1711156570
+ipawk www.google.com
+#1711156573
+ipawk google.com
+#1711156601
+host google.com
+#1711156626
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)"
+#1711156682
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/.[1-9]*//g'
+#1711156698
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/.[1-9]//g'
+#1711156713
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/!.[1-9]//g'
+#1711156835
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9]//g'
+#1711156846
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g'
+#1711156859
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9].//g'
+#1711156864
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9]//g'
+#1711156901
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/(([1-9]\d{0,2})\.){3}(?2)//g'
+#1711156921
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/([1-9]\d{0,2})\.){3}(?2)//g'
+#1711156933
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" 
+#1711156951
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9]//g'
+#1711156958
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g'
+#1711156962
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9\.]//g'
+#1711156968
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g'
+#1711157014
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g; s/^(.){1}//g'
+#1711157022
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g; s/^.//g'
+#1711157028
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)"
+#1711157047
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g;'
+#1711157055
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^.1-9]//g;'
+#1711157071
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9]//g;'
+#1711157102
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^.1-9]//g;'
+#1711157187
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^.1-9]//; s/^\.//'
+#1711157192
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^.1-9]//g; s/^\.//g'
+#1711157255
+host google.com | awk '{print $1}'
+#1711157261
+host google.com | awk '{print $2}'
+#1711157265
+host google.com | awk '{print $3}
+#1711157271
+host google.com | awk '{print $3}'
+#1711157275
+host google.com | awk '{print $4}'
+#1711157289
+host google.com | awk '{print $4}' | head -n 12
+#1711157291
+host google.com | awk '{print $4}' | head -n 1
+#1711157355
+host google.com | awk '{print $4} NR==1'
+#1711157480
+host google.com | awk -F, -v col=4 'NR==1 {print $col}'
+#1711157486
+host google.com | awk -v col=4 'NR==1 {print $col}'
+#1711157516
+host google.com | awk 'NR==1 {print $4}'
+#1711157568
+curl ipinfo.io/$(host google.com | awk 'NR==1 {print $4}')
+#1711157858
+ipinf google.com
+#1711157866
+ipinf cloudflare.com
+#1711155735
+lvim functionsInitBash 
+#1711159390
+lvim $DOTFILES/scripts/functionsInitBash 
+#1711159436
+type -a updateDotfiles 
+#1711159449
+lvim $DOTFILES/scripts/functionsInitBash 
+#1711159505
+nvim $DOTFILES/scripts/functionsInitBash 
+#1711159512
+lvim $DOTFILES/scripts/functionsInitBash 

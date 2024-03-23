@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # ---------------------------------------------------------------------- #
 # Script      : /home/albano/bin/functionsInitBash
 # Description : 
@@ -9,6 +10,8 @@
 # ---------------------------------------------------------------------- #
 # Use :
 # ---------------------------------------------------------------------- #
+#set -euo pipefail
+
 
 # launch(): Open the file/URL with the default application.
 launch() {
@@ -33,4 +36,12 @@ _exit_status() {
   esac
 }
 
+ipinf() { 
+  if rg -P "(([1-9]\d{0,2})\.){3}(?2)" <<< "$1"; then
+	 curl ipinfo.io/"$1"
+    else
+	  ipawk=$(host "$1" | awk 'NR==1 {print $4}')
+	  curl ipinfo.io/${ipawk[1]}
+  fi
+}
 
