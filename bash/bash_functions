@@ -31,37 +31,44 @@ err() {
 warn() {
 	echoYellow "$*" >&2
 }
-###############################################################################
 
-# launch(): Open the file/URL with the default application.
-launch() {
-    
-    local args="$*"
-
-  	case "$OSTYPE" in
-	    "cygwin"*)
-		    cygstart "$@"
-		  ;;
-	    "darwin"*) # MacOS
-		    open "$@"
-		  ;;
-	    *)
-		    xdg-open "$args" && bg
-		  ;;
-	  esac
+updateDotfiles() {
+    declare -A MSGS
+    MSGS["check"]="Verificando dotfiles..."
+    MSGS["update"]="Atualizando repositório de dotfiles..."
+    echo "${MSGS["check"]}"
+    [[ ! -d "$DOTFILES"  ]] && exit 2
+    echo "${MSGS["update"]}"
+    cd "$DOTFILES" || return
+    git pull origin main
+    cd "$HOME" || return
 }
 
-# google(): Open google.com in the default browser, arguments are used as search terms.
-google() {
-	  local terms;
-	  terms="$*"
-    echo terms
-    terms="$(echo -e ${terms// /+})"
-	  launch "https://www.google.com/search?q=${terms}" 
+updateHistory() {
+  LOCALPATH="/home/$USER/github/dotfiles/bash/history"
+  UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
+  HISTNAME="$(uname --nodename)-history"
+  UPNAME="$(uname --nodename)-updates"
+  if [ -f "$LOCALPATH/$UPNAME" ]; then
+    cp -f "$HOME/.bash_history" "$HOME/github/dotfiles/bash/history/$HISTNAME";
+    echo "Seu history foi atualizado em $UPTODATE" >> "$LOCALPATH/$UPNAME";
+    else
+      touch "$LOCALPATH/$UPNAME";
+      cp -f "$HOME/.bash_history" "$HOME/github/dotfiles/bash/history/$HISTNAME";
+      echo "Seu history foi atualizado em $UPTODATE" >> "$LOCALPATH/$UPNAME";
+  fi 
 }
-_exit_status() {
-  case $1 in
-    0) return ;;
-    *) printf '(%d) ' "$1" ;;
-  esac
+
+git_current_branch() {\
+  if ! git branch --show-current &> /dev/null; then
+    echo "Este diretório não é um repositório git!"
+    else
+      git branch --show-current | xargs -I BRANCH echo -n BRANCH 
+  fi
 }
+
+
+
+
+
+

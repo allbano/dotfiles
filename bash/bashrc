@@ -58,7 +58,8 @@ PATH="$PATH:$JULIA_BIN"
 # Shell Functions
 ###############################################################################
 [[ -f "${DOTFILES}/bash/bash_functions" && -r "${DOTFILES}/bash/bash_functions" ]] && \
-  source "${DOTFILES}/bash/bash_functions"
+  source "${DOTFILES}/bash/bash_functions" && \
+  source "${DOTFILES}/scripts/functionsInitBash"
 
 # History Configs
 # Remember: https://meleu.sh/bash-history
@@ -234,7 +235,6 @@ eval "$(register-python-argcomplete pipx)"
 
 
 # My Functions Config
-. "$DOTFILES/scripts/functionsInitBash"
 BLVL="$(ps -o tty= -p$$ | sed 's/pts\///')"
 [[ $BLVL -eq "1" ]] && updateDotfiles && updateHistory
 
