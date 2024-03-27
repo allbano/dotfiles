@@ -3501,3 +3501,365 @@ lvim $DOTFILES/scripts/functionsInitBash
 nvim $DOTFILES/scripts/functionsInitBash 
 #1711159512
 lvim $DOTFILES/scripts/functionsInitBash 
+#1711159588
+echo -e "${ipall// /\\n}"
+#1711159598
+echo -e "${PATH//:/\\n}"
+#1711159608
+modular update mojo
+#1711159643
+jupyter-lab --port 12000 --browser firefox
+#1711159810
+gsdt
+#1711159811
+tsa5
+#1711159818
+gaa
+#1711159883
+gcm "Update alldeb-history. Include function ipinf to API(https://ipinfo.io/)."
+#1711159893
+lbk
+#1711159899
+lsk
+#1711159905
+snap
+#1711159925
+flatpak update
+#1711383825
+un
+#1711395269
+un
+#1711395384
+updateDotfiles 
+#1711395399
+pyenv
+#1711395415
+inxi -M
+#1711395418
+inxi -Mx
+#1711395420
+inxi -Mxx
+#1711395422
+inxi -Mxxx
+#1711395426
+doas inxi -Mxxx
+#1711395434
+doas inxi -Nxxx
+#1711395455
+tldr inxi
+#1711395461
+doas inxi -r
+#1711395487
+tldr -u
+#1711395527
+tldr inxi
+#1711395533
+inxi
+#1711395537
+inxi -Fz
+#1711395637
+inxi -FZ
+#1711395641
+doas inxi -FZ
+#1711395657
+doas inxi -nx
+#1711395663
+doas inxi -nxx
+#1711395669
+doas inxi -nxxx
+#1711395739
+type -a inxi
+#1711395744
+lvim inxi
+#1711395756
+lvim $(type -p inxi)
+#1711396506
+yay -Qs xdg
+#1711396540
+doas nala show xdg-utils
+#1711396597
+xdg-settings 
+#1711396625
+xdg-settings --list
+#1711397405
+paru -Sss cmatrix
+#1711397415
+doas nala search cmatrix
+#1711397430
+doas nala install cmatrix
+#1711397442
+cmatrix
+#1711397984
+ldd
+#1711397993
+ldd $(type -p bash)
+#1711402079
+exitr
+#1711402164
+doas nala list wayland
+#1711402175
+doas nala search wayland
+#1711402317
+dkms status
+#1711402596
+cat /sys/module/nvidia_drm/parameters/modeset
+#1711402599
+doas cat /sys/module/nvidia_drm/parameters/modeset
+#1711403002
+type -a mokutil
+#1711403013
+doas mokutil --sb-state
+#1711403105
+dpkg -l nvidia-driver* |grep ii |awk '{print $2}'
+#1711403143
+dpkg -l acpid'
+#1711403146
+dpkg -l acpid
+#1711403158
+dpkg -l acpid*
+#1711403169
+doas nala install acpid
+#1711403180
+doas nala install consolekit
+#1711403230
+doas nala install dracut
+#1711403287
+doas update-grub2
+#1711403337
+doas nala show dracut
+#1711403516
+nvidia-smi
+#1711403753
+dpkg -l xwayland libxcb1 libnvidia-egl-wayland
+#1711403758
+dpkg -l xwayland libxcb1 libnvidia-egl-wayland1
+#1711403865
+doas nvim /etc/default/grub
+#1711403939
+cat /etc/default/grub
+#1711405354
+doas nala install wayland
+#1711405521
+doas nala install wayland-protocols wayland-utils
+#1711404030
+doas nvim /etc/default/grub
+#1711405668
+sudo update-initramfs 
+#1711405684
+sudo update-initramfs -k all
+#1711405687
+sudo update-initramfs -k
+#1711405695
+sudo update-initramfs -k 'all'
+#1711405701
+sudo update-initramfs -k ALL
+#1711405714
+sudo update-initramfs -u
+#1711405727
+sudo update-initramfs -uv
+#1711405767
+cat $(type -p update-grb2)
+#1711405776
+cat $(type -p update-grub2)
+#1711405798
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+#1711405885
+doas cat /sys/module/nvidia_drm/parameters/modeset
+#1711406061
+sudo nala list wayland
+#1711406070
+sudo nala list '*wayland'
+#1711406101
+sudo nala search wayland
+#1711406203
+sudo nala install wl-clipboard 
+#1711406251
+sudo nala install weston
+#1711406377
+mokutil --sb-state
+#1711406485
+cat default-display-manager 
+#1711406494
+cat Xsession.options 
+#1711406880
+doas nala list
+#1711406896
+doas nala list lightdm
+#1711406900
+doas nala list lightdm*
+#1711406926
+sudo nala search lightdm-slick
+#1711406931
+sudo nala search lightdm-
+#1711406842
+doas lvim /etc/lightdm/lightdm.conf 
+#1711406976
+cat users.conf 
+#1711407090
+echo $XDG_SESSION_TYPE
+#1711407107
+sudo nvim /etc/lightdm/lightdm.conf
+#1711407161
+weston
+#1711407214
+type -a weston
+#1711407381
+sudo nvim /etc/lightdm/lightdm.conf
+#1711407406
+sudo systemctl status gdm
+#1711407408
+sudo systemctl status gdm3
+#1711407418
+sudo systemctl disable lightdm.service 
+#1711407442
+sudo systemctl enable gdm.service 
+#1711407449
+sudo systemctl enable gdm3
+#1711407465
+doas nala install gdm
+#1711407479
+doas nala install gdm3 gdm-settings
+#1711407492
+sudo systemctl enable gdm
+#1711407505
+sudo systemctl enable gdm3
+#1711407567
+sudo systemctl start gdm
+#1711407661
+sudo dpkg-reconfigure gdm3
+#1711407706
+sudo nala reinstall gdm3
+#1711407711
+sudo nala install gdm3
+#1711407716
+sudo nala install --reinstall gdm3
+#1711407732
+sudo nala install 
+#1711407777
+sudo nala
+#1711407801
+sudo nala purge gdm3
+#1711408132
+sudo nala install gdm3
+#1711408156
+sudo nala install --install-suggests  gdm3 
+#1711408294
+sudo dpkg-reconfigure gdm3
+#1711408483
+echo $XDG_SESSION_TYPE
+#1711408537
+sudo nala list xorg-xwayland
+#1711408542
+sudo nala list xwayland
+#1711408610
+loginctl
+#1711408635
+loginctl show-session 2 -p Type
+#1711408658
+loginctl show-session $(awk '/tty/ {print $1}' <(loginctl)) -p Type | awk -F= '{print $2}'
+#1711408715
+ps aux | rg gnome-shell
+#1711408766
+find . | xargs ldd | grep wayland -B 55
+#1711408797
+find . -type f | xargs ldd | grep wayland -B 55
+#1711408917
+find . -type f | xargs ldd | rg wayland
+#1711408953
+find . -type f | xargs ldd 2> /dev/null| rg wayland
+#1711409085
+sudo dpkg-reconfigure lightdm
+#1711497394
+npx create-expo-app MyToDo
+#1711497573
+code .
+#1711500865
+expo init todo-list
+#1711500928
+npm i -g expo
+#1711501039
+npm i -g @npmcli/fs
+#1711501056
+npm i -g @babel
+#1711501290
+expo init todo-list
+#1711501333
+npx create-expo-app --template
+#1711501417
+rm -rf MyToDo/
+#1711501471
+git clone git@github.com:JefersonLucas/todo-list-mobile.git
+#1711501498
+codium .
+#1711501426
+npx create-expo-app --template
+#1711501758
+yarn init
+#1711501762
+yarn
+#1711501771
+rm package-lock.json 
+#1711501773
+yarn
+#1711501821
+code .
+#1711502142
+npx expo install expo-font @expo-google-fonts/inter
+#1711502158
+npx expo uninstall expo-font @expo-google-fonts/inter
+#1711502177
+npm uninstall expo-font @expo-google-fonts/inter
+#1711502185
+yarn add expo-font @expo-google-fonts/inter
+#1711502196
+yarn 
+#1711502212
+nvm use default
+#1711502227
+npm i -g npm@latest
+#1711502235
+npm i -g yarn@latest
+#1711502243
+yarn add expo-font @expo-google-fonts/inter
+#1711502297
+yarn expo start
+#1711503421
+yarn -D @babel/core
+#1711503491
+yarn add -D @babel/core
+#1711503537
+yarn add -D @types/react
+#1711503542
+yarn add -D @types/react-native
+#1711503567
+yarn add react-dom
+#1711503579
+yarn add react-native-web
+#1711503912
+yarn expo start
+#1711504014
+rm -rf .git
+#1711504318
+zip Albano_MyToDo.zip MyToDo
+#1711504337
+zip -l Albano_MyToDo.zip 
+#1711504357
+rm Albano_MyToDo.zip 
+#1711504362
+zip -r Albano_MyToDo.zip MyToDo
+#1711504378
+ldl
+#1711504481
+zip -r Albano_MyToDo.zip MyToDo
+#1711504510
+zip -d node_modules Albano_MyToDo.zip
+#1711504540
+zip -d MyToDo/node_modules Albano_MyToDo.zip
+#1711504600
+zip -d  Albano_MyToDo.zip MyToDo/node_modules/
+#1711504636
+ldl
+#1711504818
+un
+#1711504860
+modular update mojo
