@@ -4467,3 +4467,71 @@ lua5.2 -v
 lua5.3 -v
 #1711691893
 lvim updateHist 
+#1711692013
+updateHist 
+#1711692060
+journalctl
+#1711692147
+journalctl -xe
+#1711692212
+journalctl -e
+#1711692518
+cron
+#1711692522
+crontab
+#1711692525
+crontab -u
+#1711692532
+crontab -l
+#1711695896
+ga bash/bashrc
+#1711695948
+gcm "Exclude updateHistory function."
+#1711696004
+ga bash/*
+#1711696097
+gcm "Deleted the updateHistory function in the bash_functions file."
+#1711696136
+lvim updateHist 
+#1711696231
+updateHist 
+#1711696236
+lvim updateHist 
+#1711696314
+updateHist 
+#1711696505
+tty -s
+#1711696510
+echo $?
+#1711696628
+lvim updateHist 
+#1711696643
+updateHist 
+#1711696684
+lvim updateHist 
+#1711696828
+updateHist 
+#1711697099
+glol -5
+#1711697154
+updateHist 
+#1711697222
+git reset --soft HEAD~1
+#1711697265
+git restore --staged bash/history/allarch-history 
+#1711697293
+rm bash/history/allarch-history 
+#1711697325
+updateHist 
+#1711697360
+git reset --soft HEAD~1
+#1711697364
+git restore --staged bash/history/allarch-history 
+#1711697371
+gl -fg
+#1711697373
+gl -f
+#1711697396
+rm bash/history/allarch-history 
+#1711697399
+gl -f
