@@ -44,20 +44,6 @@ updateDotfiles() {
     cd "$HOME" || return
 }
 
-updateHistory() {
-  LOCALPATH="/home/$USER/github/dotfiles/bash/history"
-  UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
-  HISTNAME="$(uname --nodename)-history"
-  UPNAME="$(uname --nodename)-updates"
-  if [ -f "$LOCALPATH/$UPNAME" ]; then
-    cp -f "$HOME/.bash_history" "$HOME/github/dotfiles/bash/history/$HISTNAME";
-    echo "Seu history foi atualizado em $UPTODATE" >> "$LOCALPATH/$UPNAME";
-    else
-      touch "$LOCALPATH/$UPNAME";
-      cp -f "$HOME/.bash_history" "$HOME/github/dotfiles/bash/history/$HISTNAME";
-      echo "Seu history foi atualizado em $UPTODATE" >> "$LOCALPATH/$UPNAME";
-  fi 
-}
 
 git_current_branch() {\
   if ! git branch --show-current &> /dev/null; then

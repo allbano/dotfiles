@@ -3473,3 +3473,997 @@ fjo completion bash > $DOTFILES/bash-completion/fjo
 ldl -d $DOTFILES/bash-completion/fjo
 #1711080831
 doas ln -sf /home/albano/github/dotfiles/bash-completion/fjo /usr/share/bash-completion/completions/fjo
+#1711080889
+fjo issue view
+#1711080909
+fjo issue
+#1711080919
+fjo auth
+#1711080926
+fjo auth login
+#1711081066
+fjo
+#1711081075
+fjo user 
+#1711081082
+fjo user info
+#1711081110
+fjo repo info
+#1711081168
+fjo repo assignees 
+#1711081208
+fjo issue
+#1711081224
+fjo user info
+#1711081238
+fjo pr
+#1711081269
+fjo issue view
+#1711081278
+fjo repo view
+#1711081289
+fjo repo pr
+#1711081298
+fjo repo list
+#1711081338
+fjo auth git-credential 
+#1711081342
+fjo auth git-credential get
+#1711081481
+du tgl
+#1711081486
+du -h tgl
+#1711081494
+dust tgl
+#1711081530
+rm -rf tgl
+#1711081556
+cargo uninstall fjo
+#1711081565
+rm -rf fjo
+#1711081574
+cat aula05022023 
+#1711081586
+rm -rf cvim/
+#1711081597
+cat script
+#1711081600
+cat script1
+#1711081603
+cat ns
+#1711081606
+cat ns.sh 
+#1711081621
+rm -rf scripts-csg/
+#1711082199
+rm bash-completion/fjo 
+#1711082200
+gsg
+#1711082213
+ga bash/bash_functions 
+#1711082240
+gcm "Updated bash_aliases and bash_functions."
+#1711082270
+ga scripts/functionsInitBash 
+#1711082283
+gcm "All functions OK."
+#1711082288
+gaa
+#1711082342
+gcm "Included bash_history Arch Linux distro."
+#1711082357
+git push origin main
+#1711128398
+paru -R qt5-gsettings 
+#1711128417
+paru -R python-cx-freeze 
+#1711128434
+paru -Qi gns3-converter 
+#1711128486
+paru -Rscdd gns3-converter 
+#1711128593
+bridge
+#1711128603
+apropos bridge
+#1711181669
+paru -Ssss jump
+#1711181799
+jupyter labextension list
+#1711181927
+pip install "jupyterlab>=3" "ipywidgets>=7.6"
+#1711181962
+pip install plotly
+#1711181975
+jupyter labextension list
+#1711181687
+jupyter-lab --port 12000 --browser firefox
+#1711182067
+jupyter labextension unistall @tabnine/jupyterlab
+#1711182080
+jupyter labextension uninstall @tabnine/jupyterlab
+#1711182122
+pip uninstall @tabnine/jupyterlab
+#1711182141
+pip uninstall jupyterlab_tabnine
+#1711182154
+jupyter labextension list
+#1711182797
+jupyter labextension enable completer-extension
+#1711182805
+jupyter labextension list
+#1711182846
+jupyter labextension enable @jupyterlab/completer-extension
+#1711182853
+jupyter labextension list
+#1711182874
+pip version
+#1711182876
+pip versions
+#1711182881
+pip list
+#1711182893
+pip list | flake8
+#1711182902
+pip list | rg flake8
+#1711182914
+pip list | rg jupyter
+#1711182946
+jupyter labextension list
+#1711183327
+jupyter labextension update jupyterlab-plotly
+#1711183368
+pip install plotly
+#1711183409
+pip list --outdated | tr " " "\n"
+#1711183470
+pip list --outdated
+#1711183501
+pip install -U nbconvert
+#1711183505
+pip list --outdated
+#1711183582
+pip install jupyterlab-widgets
+#1711183618
+pip install jupyterlab-manager
+#1711183666
+jupyter-lab --port 12000 --browser firefox
+#1711183881
+pip install ipylab
+#1711183962
+pip install jupyterlab_templates
+#1711184005
+jupyter labextension install @jupyterlab/toc
+#1711184115
+pip install ipywidgets
+#1711184130
+pip install lckr_jupyterlab_variableinspector
+#1711184191
+jupyter-lab --port 12000 --browser firefox
+#1711184383
+jupyter-lab --port 12000 --app-dir /home/albano  --browser firefox 
+#1711185605
+mv eeg_recording.zip ../tests/
+#1711185617
+unzip eeg_recording.zip 
+#1711184455
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1711188391
+rm -rf .virtual_documents
+#1711246037
+paru -Syyu
+#1711246086
+doas mkinitcpio -P
+#1711246125
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+#1711246131
+reboot
+#1711246424
+doas lvim custom.conf 
+#1711246505
+reboot
+#1711246770
+doas pacman -S cinnamon
+#1711246802
+doas pacman -Qs xorg-server
+#1711246840
+doas pacman -Ss nemo
+#1711246860
+doas pacman -S cinnamon
+#1711246927
+doas pacman -S cinnamon-translations cinnamon-settings-daemon cinnamon-control-center 
+#1711246940
+reboot
+#1711246731
+tmux
+#1711247241
+paru -S lightdm
+#1711247267
+paru -S lightdm-gtk-greeter
+#1711247283
+doas systemctl disable gdm.service 
+#1711247299
+doas systemctl enable lightdm.service 
+#1711247316
+doas mkinitcpio -P
+#1711247343
+reboot
+#1711249781
+paru -Sss bluez
+#1711249856
+doas lvim custom.conf 
+#1711249865
+doas lvim /etc/gdm/custom.conf 
+#1711249989
+paru -Qs google
+#1711249999
+paru -S google-chrome
+#1711250177
+paru -Syyu
+#1711251332
+optimus-manager
+#1711251388
+mannvidia-smi 
+#1711251202
+paru -Syyuu
+#1711251598
+doas lvim /etc/gdm/custom.conf 
+#1711251899
+optimus-manager
+#1711251913
+optimus-manager --status
+#1711251992
+optimus-manager --print-mode
+#1711252016
+optimus-manager --print-startup
+#1711252045
+optimus-manager --print-next-mode
+#1711252076
+optimus-manager --switch integrated
+#1711252171
+nvidia-smi 
+#1711252552
+xrandr 
+#1711252621
+lspci 
+#1711252630
+lspci | rg VGA
+#1711252976
+nvidia-settings -q all
+#1711252992
+nvidia-settings -q all |rg SLIMode
+#1711253000
+nvidia-settings -q all |rg SLI-Mode
+#1711253004
+nvidia-settings -q all |rg SLI
+#1711253007
+nvidia-settings -q all
+#1711254066
+paru -S blueman
+#1711310997
+gh
+#1711311035
+gh auth login --scopes use,repo,workflow
+#1711311328
+gh
+#1711311583
+gh auth login --scopes use,repo,workflow
+#1711311618
+gh
+#1711311665
+gh runs
+#1711311713
+gh auth --status
+#1711311721
+gh auth status
+#1711311732
+gh auth token
+#1711311741
+gh auth setup-git
+#1711311761
+tldr gh
+#1711313812
+doas mkdir -p ~/.config/systemd/user/
+#1711313825
+lvim ~/.config/systemd/user/xscreensaver.service
+#1711313870
+doas rmdir ~/.config/systemd/user/
+#1711313878
+mkdir ~/.config/systemd/user/
+#1711313888
+dir ~/.config/
+#1711313905
+ll -d systemd
+#1711313920
+doas chown albano:albano systemd
+#1711313943
+lvim ~/.config/systemd/user/xscreensaver.service
+#1711313984
+mkdir user
+#1711313986
+lvim ~/.config/systemd/user/xscreensaver.service
+#1711314003
+systemctl --user enable xscreensaver.service 
+#1711325085
+paru -Sss snowflake
+#1711333329
+doas systemctl disable lightdm.service 
+#1711333351
+sudo systemctl enable gdm.service 
+#1711333572
+sudo systemctl disasble   gdm.service 
+#1711333586
+sudo systemctl disable   gdm.service 
+#1711333596
+sudo systemctl enable lightdm.service 
+#1711333598
+reboot
+#1711334159
+pyenv
+#1711334168
+paru -S pyenv
+#1711334188
+pyenv
+#1711334196
+pyenv global
+#1711334217
+pyenv latest
+#1711334226
+pyenv version
+#1711334250
+pyenv versions
+#1711334261
+pyenv whence
+#1711334292
+pyenv commands 
+#1711334576
+echo -e "${PATH//:/\\n}"
+#1711334597
+type -a pyenv
+#1711334618
+paru -R pyenv
+#1711334633
+paru -S pyenv
+#1711334755
+lvim $DOTBASH/profile_archnote 
+#1711334958
+pipx
+#1711335153
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+#1711335170
+pyenv
+#1711335178
+rm -rf ~/.pyenv
+#1711335181
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+#1711335253
+kk
+#1711335388
+lvim .bash_profile 
+#1711335776
+rm -rf .pyenv
+#1711335787
+lvim ~/.bash_profile 
+#1711335886
+curl https://pyenv.run | bash
+#1711335955
+lvim ~/.bash_profile 
+#1711336021
+pyenv
+#1711336033
+pyenv update
+#1711336080
+echo -e "${PATH//:/\\n}"
+#1711336139
+pyenv root
+#1711336198
+pyenv versions
+#1711336217
+pyenv install --list
+#1711336242
+pyenv install 3.12.2
+#1711336309
+python --versin
+#1711336378
+pyenv list
+#1711336381
+pyenv versions
+#1711336508
+pip list
+#1711336529
+pip list -l
+#1711336538
+pip list -l | rg jupyter
+#1711336486
+pyenv install pypy3.10-7.3.15 anaconda3-2023.09-0
+#1711336619
+pyenv versions
+#1711336680
+pyenv virtualenv pypy3.10-7.3.15 pypy --upgrade-deps
+#1711336731
+pyenv versions
+#1711336783
+pyenv virtualenv 3.12.2 pypy --upgrade-deps
+#1711336796
+pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
+#1711336823
+pyenv activate py3.12 
+#1711336866
+pyenv dectivate py3.12 
+#1711336883
+pyenv deactivate py3.12
+#1711336948
+lvim pyenv-commands 
+#1711337000
+lvim pyenv-exec 
+#1711337045
+lvim pyenv-exec cd ..
+#1711337094
+find . -type f -wholename '*activate*'
+#1711337167
+/home/albano/.pyenv/plugins/pyenv-virtualenv/bin/pyenv-activate
+#1711337174
+/home/albano/.pyenv/plugins/pyenv-virtualenv/bin/
+#1711337181
+lvim pyenv-activate 
+#1711337281
+lvim pyenv-virtualenv
+#1711337377
+lvim pyenv-sd-activate 
+#1711337383
+lvim pyenv-sh-activate 
+#1711337433
+lvim activate 
+#1711337563
+pyenv versions
+#1711337608
+pyenv
+#1711337634
+pyenv virtualenv-delete py3.12 
+#1711337650
+pyenv virtualenv-delete pypy
+#1711337656
+pyenv versions
+#1711337670
+pyenv virtualenv-delete py3.12 
+#1711337690
+pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
+#1711337701
+pyenv versions
+#1711337721
+pyenv activate py3.12 
+#1711337743
+pyenv deactivate py3.12 
+#1711337748
+pyenv virtualenv-delete py3.12 
+#1711337767
+/home/albano/.pyenv/plugins/pyenv-virtualenv/bin/
+#1711337778
+lvim pyenv-sh-activate 
+#1711336589
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1711338002
+pyenv versions
+#1711338018
+pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
+#1711338029
+pyenv virtualenv-delete py3.12 
+#1711338033
+pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
+#1711338043
+pyenv versions
+#1711338058
+pyenv activate py3.12 
+#1711338098
+pyenv deactivate py3.12 
+#1711338104
+pyenv virtualenv-delete py3.12 
+#1711338120
+/home/albano/.pyenv/plugins/pyenv-virtualenv/bin/
+#1711338125
+lvim pyenv-sh-activate 
+#1711338236
+pyenv versions
+#1711338256
+pyenv virtualenv 3.12.2 py3.12.2 --upgrade-deps
+#1711338267
+pyenv versions
+#1711338278
+pyenv activate py3.12.2 
+#1711338331
+pyenv dectivate py3.12.2 
+#1711338334
+pyenv deactivate py3.12.2 
+#1711338345
+pyenv virtualenv-delete py3.12.2 
+#1711338350
+pyenv versions
+#1711338365
+pyenv
+#1711338370
+pyenv 
+#1711338402
+pyenv which 3.12.2
+#1711338407
+pyenv which
+#1711338446
+pyenv which bash
+#1711338451
+pyenv which command
+#1711338454
+pyenv which echo
+#1711338462
+pyenv which cat
+#1711338479
+dirs
+#1711338481
+dirs -v
+#1711338539
+pip list -l | rg jupyter
+#1711338580
+pip list -l | rg 'jupyter{,lab}'
+#1711338603
+pip list -l | rg '{jupyter,jupyterlab}'
+#1711338614
+pip list -l | rg '(jupyter|jupyterlab)'
+#1711338628
+pip list -l | rg '(^jupyter|jupyterlab)'
+#1711338634
+pip list -l | rg '(^jupyter|^jupyterlab)'
+#1711338654
+pip list -l | rg '(^jupyter|^jupyterlab)' | cut -d' ' -f1
+#1711338661
+pip list -l | rg '(^jupyter|^jupyterlab)' | cut -f1
+#1711338665
+pip list -l | rg '(^jupyter|^jupyterlab)' | cut -d' ' -f1
+#1711338700
+pyenv versions
+#1711338762
+pyenv virtualenv pypy3.10-7.3.15 pypy3.10-7.3.15 --upgrade-deps
+#1711338784
+pyenv virtualenv-delete anaconda3-2023.09-0 
+#1711338804
+pyenv versions
+#1711338821
+pyenv virtualenv pypy3.10-7.3.15 pypy3.10-7.3.15 --upgrade-deps
+#1711338884
+pyenv virtualenv pypy3.10-7.3.15 pypy --upgrade-deps
+#1711338922
+pyenv activate pypy
+#1711338981
+pyenv deactivate pypy
+#1711339365
+pyed
+#1711339385
+curl -s https://get.modular.com | bash - modular auth
+#1711339397
+curl -s https://get.modular.com | sh -
+#1711339397
+modular auth
+#1711339431
+paru -Sss modular
+#1711339452
+paru -Sss '^modular'
+#1711339465
+paru -S modular
+#1711339477
+modular
+#1711339484
+modular auth
+#1711339000
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1711339556
+modular install mojo
+#1711339860
+paru -S bsdlib
+#1711339870
+paru -S libbsd
+#1711340044
+py3a 
+#1711340056
+python <(curl -sSL https://raw.githubusercontent.com/Sharktheone/arch-mojo/main/src/install.py)
+#1711340080
+modular install mojo
+#1711340091
+python <(curl -sSL https://raw.githubusercontent.com/Sharktheone/arch-mojo/main/src/install.py)
+#1711340238
+modular auth mut_a7ae3fd2456d43ad9ca26184acc7e312 && modular install mojo
+#1711340256
+modular auth "mut_a7ae3fd2456d43ad9ca26184acc7e312" && modular install mojo
+#1711340280
+modular auth mut_a7ae3fd2456d43ad9ca26184acc7e312 && modular install mojo
+#1711340284
+modular
+#1711340294
+modular clean
+#1711340302
+modular host-info
+#1711340309
+modular update
+#1711340320
+modular update modular
+#1711340358
+curl -sSL https://raw.githubusercontent.com/Sharktheone/arch-mojo/main/src/install.py
+#1711340446
+curl -sSL https://raw.githubusercontent.com/Sharktheone/arch-mojo/main/src/install.py > installMojo.txt
+#1711340485
+mv installMojo.txt Cursos/python/
+#1711340638
+modular 
+#1711340647
+modular config-list
+#1711340775
+modular install mojo
+#1711341060
+modular clean
+#1711341069
+paru -Rscdd modular
+#1711341084
+paru -Sss distrobox
+#1711341120
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1711341241
+julia
+#1711341267
+paru -Qs julia
+#1711341284
+rm -rf .julia
+#1711341297
+paru -S julia
+#1711341313
+julia
+#1711341412
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1711341599
+jupyter-lab kernelspec list
+#1711341629
+jupyter kernelspec list
+#1711341651
+jupyter kernelspec uninstall julia-1.9
+#1711341677
+jupyter kernelspec uninstall mojo-jupyter-kernel
+#1711341681
+jupyter kernelspec list
+#1711342243
+docker container ls
+#1711342249
+docker images
+#1711342263
+docker image ls
+#1711342421
+docker pull alpine
+#1711342512
+mv dom Cursos/JavaScript/
+#1711342528
+mkdir alpine
+#1711342583
+docker run --name alp_prog_test --port 15000:15000 alpine:latest
+#1711342590
+docker run --name alp_prog_test -p 15000:15000 alpine:latest
+#1711342600
+docker exec sh
+#1711342604
+docker exec -it sh
+#1711342650
+docker container ls
+#1711342712
+docker run --name alp_prog_test -p 15000:15000 -d alpine:latest
+#1711342727
+docker run --name alp-prog-test -p 15000:15000 -d alpine:latest
+#1711342748
+docker exec -it alp-prog-test sh
+#1711342761
+docker container ls
+#1711342765
+docker container ls --all 
+#1711342781
+docker container rm ed3
+#1711342784
+docker container ls --all 
+#1711342811
+docker container start alp-prog-test 
+#1711342815
+docker container ls --all 
+#1711342818
+docker container ls
+#1711342823
+docker ps
+#1711342853
+docker container stop alp-prog-test
+#1711342858
+docker container rm alp-prog-test
+#1711342872
+docker container rm 236
+#1711342878
+docker container ls --all 
+#1711342896
+docker images
+#1711342901
+docker rmi alpine
+#1711342905
+docker images
+#1711343331
+docker run --name nginx_alpine_test -d -p 80:80 -p 15000:15000 nginx:alpine
+#1711343375
+docker exec -it nginx_alpine_test bash
+#1711343379
+docker exec -it nginx_alpine_test sh
+#1711343508
+docker exec -it nginx_alpine_test bash
+#1711343390
+docker exec -it nginx_alpine_test bash
+#1711343614
+docker container stop nginx_alpine_test 
+#1711343624
+docker container ls --all 
+#1711343746
+docker container stats
+#1711343765
+docker container diff 
+#1711343785
+docker container ls --all 
+#1711343794
+docker container diff nginx_alpine_test
+#1711343830
+docker container logs nginx_alpine_test
+#1711343870
+docker container ls --all 
+#1711343877
+docker container inspect nginx_alpine_test 
+#1711343894
+docker container start nginx_alpine_test 
+#1711343912
+docker container ls --all 
+#1711343934
+docker container top
+#1711343937
+docker container top nginx_alpine_test 
+#1711343994
+docker container stats --no-stream nginx_alpine_test 
+#1711344014
+docker container stop nginx_alpine_test 
+#1711342542
+lvim Dockerfile
+#1711344068
+paru -Sss lightdm
+#1711344112
+paru -S lightdm-gtk-greeter
+#1711344148
+paru -Rscnd lightdm-gtk-greeter
+#1711344283
+ls -1 /usr/share/xgreeters/
+#1711344399
+paru -S lightdm-webkit2-greeter 
+#1711344444
+sudo lvim
+#1711344452
+sudo sudoers
+#1711344460
+sudo nvim /etc/sudoers
+#1711344479
+type -a lvim
+#1711344501
+type -p lvim
+#1711344561
+sudo ln -sf /home/albano/.local/bin/lvim /usr/bin/lvim
+#1711344581
+sudo lvim /etc/lightdm/lightdm.conf
+#1711344593
+ldl
+#1711344599
+lvim users.conf 
+#1711344632
+lvim lightdm-webkit2-greeter.conf 
+#1711344649
+sudo lvim /etc/lightdm/lightdm.conf
+#1711344775
+dm-tool
+#1711344793
+lightdm --test-mode --debug
+#1711344922
+paru -R lightdm-webkit2-greeter 
+#1711345002
+paru -S lightdm-slick-greeter
+#1711345037
+paru -S lightdm-slick-greeter-mint-theme 
+#1711345053
+paru -S lightdm-slick-greeter
+#1711345067
+sudo lvim /etc/lightdm/lightdm.conf
+#1711345106
+lightdm --test-mode --debug
+#1711376782
+git diff IC_2023_RP_AlbanoMaywitz.odt IC_2023_RP_AlbanoMaywitz_Corrigido.odt
+#1711476645
+type -a lvim
+#1711476855
+neofetch 
+#1711477302
+optimus-manager-qt
+#1711477330
+optimus-manager
+#1711477341
+paru -Qs optimus-manager-qt
+#1711477345
+paru -Qi optimus-manager-qt
+#1711477353
+paru -S optimus-manager-qt
+#1711477398
+optimus-manager
+#1711477402
+optimus-manager-qt
+#1711477425
+optimus-manager --status
+#1711477439
+eit
+#1711480544
+optimus-manager --status
+#1711480590
+optimus-manager --switch integrated
+#1711480660
+optimus-manager --status
+#1711480999
+nvm use default
+#1711481017
+npx create-expo-app my-app
+#1711481027
+npx create-expo-app MyToDo
+#1711481123
+code .
+#1711481359
+npx expo start
+#1711481007
+bash -l
+#1711484469
+lvim .bash_history 
+#1711484486
+lvim allarch-history 
+#1711484671
+neofetch 
+#1711484880
+paru -Sss fastfetch
+#1711484898
+paru -S fastfetch
+#1711484915
+fastfetch 
+#1711485026
+paru -S ddcutil chafa
+#1711488998
+cat main.js
+#1711489000
+cat main.jl
+#1711486787
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1711489120
+bat utils.jl 
+#1711654230
+ll -h
+#1711654269
+lvim allarch-history 
+#1711654397
+lvim $DOTFILES/scripts/functionsInitBash 
+#1711654411
+ipinf google.com
+#1711655279
+mkdir services
+#1711655301
+lvim updateHistory
+#1711655376
+cat xscreensaver.service 
+#1711655487
+ns updateHistory
+#1711655880
+type -a updateHistory
+#1711655896
+unset updateHistory
+#1711655899
+type -a updateHistory
+#1711655907
+mv updateHistory updateHist
+#1711655910
+type -a updateHistory
+#1711655914
+type -a updateHist
+#1711655932
+updateHist
+#1711655961
+rm allarch-*
+#1711655965
+updateHist
+#1711655977
+lvi allarch-history 
+#1711655982
+lvim allarch-history 
+#1711654555
+lvim $DOTFILES/bash/bash_functions 
+#1711656081
+lvim updateHist 
+#1711656392
+rm allarch-history 
+#1711656398
+updateHist
+#1711656408
+lvim allarch-history 
+#1711656424
+lvim $(type -p updateHist)
+#1711655411
+ns updateHistory
+#1711683094
+ntp
+#1711683099
+paru -Sss ntp
+#1711683126
+paru -Sss cron
+#1711683295
+systemctl list-timers
+#1711683392
+systemctl status systemd-tmpfiles-clean.timer 
+#1711683439
+lvim /usr/lib/systemd/system/systemd-tmpfiles-clean.timer 
+#1711683508
+lvim /usr/lib/systemd/system/systemd-tmpfiles-clean.service 
+#1711683595
+systemctl list-timers
+#1711683842
+cat /etc/locale.conf
+#1711683887
+LC_ALL=pt_BR.UTF-8 man systemd.timer
+#1711683899
+LC_ALL=pt_BR.UTF-8 |  man systemd.timer
+#1711683924
+LC_ALL=pt_BR.UTF-8 man paru
+#1711683978
+LC_ALL=pt_BR.UTF-8 man ip
+#1711683988
+LANG=pt_BR.UTF-8 man ip
+#1711684096
+paru -S man-pages-pt_BR
+#1711684103
+paru -S man-pages
+#1711684138
+paru -S man-pages-pt_br 
+#1711684150
+LANG=pt_BR.UTF-8 man ip
+#1711684161
+LC_ALL=pt_BR.UTF-8 man systemd.timer
+#1711684220
+exec man -L pt_BR systemd.timer
+#1711684234
+ll -h
+#1711684339
+exec man -L pt_BR systemd.timer
+#1711684996
+exec man -L pt_BR systemd.time
+#1711685021
+exec man systemd.time
+#1711685070
+command man systemd.time
+#1711689037
+type -a man
+#1711689041
+type -a man-pages
+#1711689051
+paru -Si man-db
+#1711689060
+paru -Si man-pages
+#1711689335
+comm man -L pt_BR systemd.time
+#1711689342
+command man -L pt_BR systemd.time
+#1711689965
+command man systemd.time
+#1711689977
+command man ip
+#1711689981
+command man ls
+#1711689987
+command man iw
+#1711690001
+command man nm
+#1711690140
+lua -v
+#1711690154
+lua5.2 -v
+#1711690320
+lua5.3 -v
+#1711691893
+lvim updateHist 
