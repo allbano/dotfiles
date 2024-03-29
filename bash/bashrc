@@ -236,6 +236,6 @@ eval "$(register-python-argcomplete pipx)"
 
 # My Functions Config
 BLVL="$(ps -o tty= -p$$ | sed 's/pts\///')"
-[[ $BLVL -eq "1" ]] && updateDotfiles && updateHistory
+[[ $BLVL -eq "1" ]] && updateDotfiles 
 
 
