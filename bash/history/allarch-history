@@ -4535,3 +4535,395 @@ gl -f
 rm bash/history/allarch-history 
 #1711697399
 gl -f
+#1711697411
+updateHist 
+#1711697423
+gp -f origin main
+#1711697437
+glol -5
+#1711697497
+git log -5
+#1711697535
+uname --nodename 
+#1711697724
+update
+#1711697767
+lvim templates 
+#1711696853
+lvim updateHist 
+#1711698480
+docker images
+#1711698485
+docker ps --all 
+#1711698530
+ollama
+#1711698536
+paru -Sss ollama
+#1711698613
+docker image
+#1711698616
+docker image ls
+#1711698743
+docker run --name test_py -d -p 80:80 -p 20000:20000 nginx:alpine
+#1711698750
+docker ps
+#1711698763
+docker exec -it bash
+#1711698769
+docker exec -it test_py bash
+#1711698772
+docker exec -it test_py sh
+#1711698834
+docker exec -it test_py bash
+#1711700944
+docker container stop test_py 
+#1711745954
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1711746396
+docker ps
+#1711746400
+docker ps --all 
+#1711746409
+docker container start test_py 
+#1711746416
+docker exec -it test_py bash
+#1711747860
+docker exec -it test_py "bash -l"
+#1711747872
+docker exec -it test_py "/bin/bash -l"
+#1711747905
+lvim ~/.bash_aliases 
+#1711747883
+docker exec -it test_py bash
+#1711748490
+docker container stop test_py 
+#1711748522
+docker inspect -f '{{ .State.Pid }}' test_py
+#1711748531
+docker inspect -f  test_py
+#1711748547
+docker inspect --hepl
+#1711748589
+docker container start test_py 
+#1711748591
+docker inspect -f '{{ .State.Pid }}' test_py
+#1711748602
+nsenter --target 15580 --uts
+#1711748615
+nsenter --target 16791 --uts
+#1711748619
+sudo nsenter --target 16791 --uts
+#1711748653
+docker exec -it test_py bash
+#1711748688
+docker container stop test_py 
+#1711748711
+docker container start test_py 
+#1711748715
+docker exec -it test_py bash
+#1711748749
+docker container stop test_py 
+#1711748757
+docker container inspect test_py 
+#1711748801
+docker container inspect -s test_py
+#1711748825
+docker
+#1711748921
+docker ps --all 
+#1711748925
+docker ps
+#1711748931
+docker container rm test_py 
+#1711749072
+rm 5
+#1711750469
+docker container ls
+#1711750473
+docker container ls --all 
+#1711750500
+docker container rm nginx_alpine_test 
+#1711750623
+docker container ls --all 
+#1711750727
+docker run --name test_py --hostname test -d -p 80:80 -p 20000:20000 nginx:alpine
+#1711749075
+lvim Dockerfile 
+#1711751249
+mkdir -p ../dockerfiles/nginx
+#1711751265
+cp Dockerfile ../dockerfiles/nginx
+#1711750737
+docker exec -it test_py sh
+#1711752182
+docker image ls
+#1711752298
+paru -Sss nvidia-container-to
+#1711752311
+paru -S nvidia-container-toolkit
+#1711752692
+docker container ls
+#1711752698
+docker exec -it test_py sh
+#1711752708
+docker exec -it test_py bash
+#1711751275
+lvim Dockerfile 
+#1711753848
+docker build -t nginx_python
+#1711753857
+docker build -t nginx_python Dockerfile 
+#1711753925
+docker build -t nginx_python -f ./Dockerfile 
+#1711753946
+docker build -t nginx_python -f ./Dockerfile .
+#1711753964
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1711753990
+lvim Dockerfile 
+#1711754004
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1711754017
+lvim Dockerfile 
+#1711754062
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1711754082
+lvim Dockerfile 
+#1711754093
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1711754122
+lvim Dockerfile 
+#1711754160
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1711754185
+docker ps
+#1711754457
+docker clean
+#1711754460
+docker 
+#1711754597
+lvim Dockerfile 
+#1711754237
+lvim Dockerfile 
+#1711754646
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1711754653
+docker build -t nginx_python -f ./Dockerfile .
+#1711754660
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1711754666
+lvim Dockerfile 
+#1711754676
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1711754683
+docker build -t nginx_python -f ./Dockerfile .
+#1711754687
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1711754715
+sudo pacman -S
+#1711754738
+sudo pacman -Syyu
+#1711754752
+su -
+#1711754769
+sudo pacman -Syyu
+#1711754211
+docker exec -it test_py bash
+#1711754807
+docker ps
+#1711754815
+docker container rm -f test_py 
+#1711903105
+sudo mkinitcpio -P
+#1711903151
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+#1711903827
+sudo journalctl -xe
+#1711903874
+sudo journalctl -x
+#1711904092
+sudo systemctl status bluetooth.dq
+#1711904099
+sudo systemctl status bluetooth.service 
+#1711904133
+sudo systemctl restart bluetooth.service 
+#1711904137
+sudo systemctl status bluetooth.service 
+#1711904319
+journalctl -b 0 -g 'bluetooth'
+#1711904387
+bluetoothctl 
+#1711904624
+ps
+#1711904649
+killall bash
+#1711904685
+killall -v -n 5310
+#1711904734
+kill -9 5310
+#1711904750
+ps aux | rg bash
+#1711904765
+kill -9 299
+#1711904773
+kill -9 2919
+#1711904779
+ps aux | rg bash
+#1711904785
+kill -9 2922
+#1711904435
+sudo rmmod btusb
+#1711904792
+kill -9 2923
+#1711904796
+ps aux | rg bash
+#1711905124
+sudo systemctl status bluetooth.service 
+#1711905303
+sudo insmod btusb
+#1711905328
+sudo modprobe btusb
+#1711905332
+sudo insmod btusb
+#1711905364
+sudo modinfo btusb
+#1711905410
+btrtl
+#1711905642
+docker images
+#1711905651
+docker container ls --all 
+#1711905665
+docker run --name test_py --hostname test -d -p 80:80 -p 20000:20000 nginx:alpine
+#1711905676
+docker exec -it test_py sh
+#1711905929
+sudo su -
+#1711906442
+docker exec -it test_py sh
+#1711906448
+docker exec -it test_py bash
+#1711905598
+lvim Dockerfile 
+#1711941293
+type -a neofetch
+#1711941298
+type -p neofetch
+#1711941304
+ll -d < type -p neofetch
+#1711941318
+ll -d < $(type -p neofetch)
+#1711941329
+ll -d  $(type -p neofetch)
+#1711941361
+ldl
+#1711942290
+mkdir Albano
+#1711942297
+mv Albano Estudos
+#1711944266
+mv Python_Básico_Code_Along.ipynb Python_Basico_Code_Along.ipynb 
+#1711944287
+mv Python_Basico_Co* Estudos/
+#1711944306
+mv Kotlin_Test_Notebook.ipynb Estudos/
+#1711944332
+mv DS_Playlist_yt.ipynb Estudos/
+#1711944431
+mv Curso_DataScience.ipynb Estudos/
+#1711944445
+mv Julia_Tests.ipynb 
+#1711944448
+mv Julia_Tests.ipynb Estudos/
+#1711946678
+mv API_Video_Youtube.ipynb Estudos/
+#1711942086
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1712003360
+ss -tanp | awk '{print $4,$5,$8,$9}'
+#1712003384
+ss -tanp
+#1712003454
+[200~ss -audp | awk '{print $4,$5,$8,$9}'~
+#1712003459
+ss -audp | awk '{print $4,$5,$8,$9}'
+#1712003468
+ss -audp
+#1712003664
+ng
+#1712003675
+ng update
+#1712003734
+k
+#1712003755
+docker ps --all 
+#1712003770
+lvim Dockerfile 
+#1712003923
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1712003932
+lvim Dockerfile 
+#1712003952
+sudo docker build -t nginx_python -f ./Dockerfile .
+#1712007603
+docker container ls --all
+#1712007610
+docker container start test_py 
+#1712007623
+docker container ls --all 
+#1712007634
+docker port test_py 
+#1712007675
+curl 0IL http://localhost:80
+#1712007682
+curl -IL http://localhost:80
+#1712007690
+curl -IL http://localhost:80/
+#1712007704
+curl -IL http://localhost:20000/
+#1712007724
+curl -IL http://localhost:20000
+#1712007735
+docker port test_py 
+#1712008057
+docker exec -it test_py bash
+#1712009259
+docker container ls -a
+#1712009270
+docker container ls -aq
+#1712009531
+lvim Dockerfile 
+#1712009600
+lvim package.json 
+#1712009644
+lvim Dockerfile 
+#1712009733
+docker build -t laundry_angular .
+#1712009784
+lvim Dockerfile 
+#1712009801
+docker build -t laundry_angular .
+#1712009874
+lvim package.json 
+#1712010134
+docker clean
+#1712010138
+docker 
+#1712011070
+nvm ls
+#1712011082
+nvm use default
+#1712011096
+npm i -g npm@latest
+#1712011107
+yarn
+#1712011122
+rm -rf node_modules
+#1712011127
+rm -rf yarn.lock 
+#1712011213
+mkdir crud-angular-spring
+#1712011221
+ng new crud-angular
+#1712007337
+lvim Dockerfile 
