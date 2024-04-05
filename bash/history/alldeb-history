@@ -3863,3 +3863,557 @@ ldl
 un
 #1711504860
 modular update mojo
+#1711575129
+un
+#1711575575
+adivinha="/tmp/adivinha" && mkdir -p $adivinha && cd $adivinha
+#1711575596
+ns adivinha
+#1711577513
+find /home/$USER/Documents/ -type f -mtime +30
+#1711577933
+find . -type f
+#1711577941
+find / -type f
+#1711577953
+lll
+#1711577959
+ll /
+#1711577972
+find / -type f -depth 1
+#1711577975
+find / -type f -depth
+#1711577985
+find / -type f -L 1
+#1711578059
+apropos find
+#1711578068
+find / -type f -L 1
+#1711578070
+apropos find
+#1711578304
+echo LC_ALL
+#1711578309
+echo $LC_ALL
+#1711578432
+LC_ALL=pt_BR.UTF-8 man find
+#1711578831
+lbl
+#1711578834
+lbk
+#1711578841
+lsk
+#1711579068
+lsblk --output NAME,TRAN,FSTYPE,UUID,MODEL,TYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINT
+#1711579109
+lvim ~/.bash_alias
+#1711579115
+lvim ~/.bash_aliases 
+#1711579161
+lsk
+#1711579171
+gaa
+#1711579224
+gcm "Update alias lsk and update alldeb-(history,updates)."
+#1711579333
+lsk
+#1711579340
+snap
+#1711579366
+sudo nala list snap
+#1711579378
+sudo nala purge snap
+#1711579388
+sudo nala list snapd
+#1711579554
+mkdir IAs
+#1711579560
+curl -fsSL https://ollama.com/install.sh | bash
+#1711579580
+ollama
+#1711579770
+rmdir IAs/
+#1711579802
+ollama
+#1711579817
+ollama run llama2:13b
+#1711575615
+lvim adivinha 
+#1711591958
+type -a ollama
+#1711591984
+cat ollama 
+#1711591998
+curl -fsSL https://ollama.com/install.sh
+#1711592014
+reset
+#1711592028
+curl -fsSL https://ollama.com/install.sh
+#1711592092
+sudo systemctl status ollama.service 
+#1711592123
+nvidia-smi
+#1711592175
+un
+#1711592381
+sudo nala install ./Progs/fastfetch-linux-amd64.deb 
+#1711592395
+fastfetch 
+#1711592612
+ollama list
+#1711592715
+lsk
+#1711592825
+type -a adivinha
+#1711592851
+find . -type f -name adivinha
+#1711592885
+find . -type f -wholename '*adivinha$'
+#1711592891
+find . -type f -wholename '*adivinha'
+#1711592913
+lvim $(find . -type f -wholename '*adivinha')
+#1711593068
+lvim adivinha
+#1711593083
+rm adivinha 
+#1711593086
+ns adivinha
+#1711592782
+ollama run codellama:34b
+#1711593361
+ollama list
+#1711593366
+lsk
+#1711593429
+ollama list
+#1711593442
+ollama rm llama2
+#1711593448
+ollama rm llama2:13b
+#1711593453
+lsk
+#1711593528
+ollama list
+#1711593551
+ollama show codellama:34b
+#1711593576
+tldr ollama
+#1711593502
+ollama pull llama2:13b
+#1711593915
+mkdir ollama
+#1711593998
+sudo chown albano:www-data /ssh
+#1711594056
+sudo chown albano:albano /backup
+#1711594060
+ll /
+#1711594073
+lsk
+#1711594159
+ollama 
+#1711594408
+sudo apt purge snapd
+#1711594424
+lsk
+#1711594709
+docker network ls
+#1711594885
+lsk
+#1711594832
+docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711595031
+docker container ls
+#1711595033
+docker container ls --all 
+#1711595046
+docker ps
+#1711595203
+docker container stop open-webui 
+#1711595213
+docker container rm open-webui 
+#1711595222
+docker ps --all 
+#1711595251
+docker run -d --network=host -v open-webui:/app/backend/data -p 20000:8080  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711595325
+docker container stop open-webui 
+#1711595331
+docker container rm open-webui 
+#1711595423
+docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=https://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
+#1711595549
+docker run -d --network=host -v open-webui:/app/backend/data   -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711595555
+docker container stop open-webui 
+#1711595558
+docker container rm open-webui 
+#1711595567
+docker run -d --network=host -v open-webui:/app/backend/data  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711595951
+nvidia-smi
+#1711596400
+docker container stop open-webui 
+#1711596411
+docker container rm open-webui 
+#1711596473
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+#1711596691
+iptables -t nat -L -n
+#1711596696
+sudo iptables -t nat -L -n
+#1711596717
+docker network ls
+#1711596739
+docker network 
+#1711596744
+docker network inspect host
+#1711597032
+docker ps --all 
+#1711597041
+docker container stop open-webui 
+#1711597049
+docker container rm open-webui 
+#1711597102
+docker run -d -p 20000:8080 -p 11434:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+#1711597632
+docker ps --all 
+#1711597653
+docker container stop open-webui 
+#1711597656
+docker container rm open-webui 
+#1711597662
+docker network ls
+#1711598213
+git clone git@github.com:open-webui/open-webui.git
+#1711598257
+docker compose up
+#1711598261
+docker compose build
+#1711598288
+cat run-compose.sh 
+#1711598629
+chmod +x run.sh 
+#1711598638
+./run.sh 
+#1711598646
+docker ps
+#1711598648
+docker ps --all 
+#1711598653
+docker images
+#1711598762
+sudo nala search kuctl
+#1711598773
+sudo nala search kubernetes
+#1711598870
+curl -L -s https://dl.k8s.io/release/stable.txt
+#1711598896
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+#1711598921
+kubctl
+#1711598940
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+#1711598948
+echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+#1711599003
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+#1711599012
+type -a kubctl
+#1711599018
+type -a kubectl
+#1711599024
+kubectl
+#1711599044
+lvim kubectl
+#1711599066
+kubectl version --client
+#1711599476
+docker run -d --network=host -v open-webui:/app/backend/data  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711599618
+nvidia-smi
+#1711599677
+rm -rf open-webui/
+#1711599822
+docker ps
+#1711599840
+docker exec -it open-webui bash
+#1711600301
+docker network
+#1711600304
+docker network ls
+#1711600374
+docker network create -d host my-host
+#1711600531
+docker ps
+#1711600591
+ollama 
+#1711600599
+ollama list
+#1711600854
+docker network create --subnet 192.168.0.0/24 my-net
+#1711600860
+docker ps
+#1711600871
+docker container rm -f open-webui 
+#1711600873
+docker ps
+#1711600875
+docker ps --all 
+#1711600925
+docker run -d --network my-net -p 20000:8080 -v open-webui:/app/backend/data  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711601007
+docker container rm -f open-webui 
+#1711600611
+ollama run codellama:34b
+#1711601082
+nvidia-smi
+#1711593091
+lvim adivinha
+#1711738531
+glol -56
+#1711738535
+glol -5
+#1711738543
+glog -5
+#1711738546
+glo -5
+#1711738628
+git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'\''
+#1711738635
+git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'\'''
+#1711738649
+git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset''
+#1711738653
+git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
+#1711738664
+git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1711738670
+glol -5
+#1711738725
+git log --graph --pretty='%Cred%h -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1711738735
+git log --graph --pretty='%Cred% -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1711738763
+git log --graph --pretty='%Cred%h -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1711738776
+git log --graph --pretty='%Cblue%h -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1711738795
+git log --graph --pretty='%Cblue%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1712112572
+nvm ls
+#1712112578
+nvm install --lts
+#1712112595
+npm i -g npm@latest
+#1712112606
+nvm ls
+#1712112638
+nvm install lts/hydrogen
+#1712112647
+nvm use default
+#1712112690
+npm 
+#1712112703
+nvm ls
+#1712112711
+nvm use 18.20.0
+#1712112714
+ng
+#1712112721
+npm i -g yarn
+#1712112727
+yarn 
+#1712112736
+rm yarn.lock 
+#1712112743
+rm -rf node_modules
+#1712112849
+nvm ls
+#1712112861
+nvm use v18.20.0 
+#1712112872
+npm search ng
+#1712112886
+npm search angular
+#1712113030
+npm install -g @angular/cli^16
+#1712113050
+npm install -g @angular/cli@16
+#1712113205
+nvm ls
+#1712113219
+nvm use default 
+#1712113222
+ng
+#1712113250
+code .
+#1712113940
+flatpak update
+#1712114073
+sudo systemctl status sshd
+#1712114082
+passwd 
+#1712114112
+sudo passwd albano
+#1712114208
+expo init todo-list
+#1712114217
+npm install -g expo
+#1712114308
+npm install -g react-native
+#1712114344
+nvm ls
+#1712114366
+npm i -g @npmcli/fs
+#1712114414
+npx create-expo-app --template
+#1712114428
+expo init todo-list
+#1712114442
+npx create-expo-app
+#1712114479
+npx create-expo-app --template
+#1712114516
+npx create-expo-app --template todo-list
+#1712114522
+npx create-expo-app --template
+#1712112811
+un
+#1712114676
+sudo systemctl daemon-reload 
+#1712114710
+atd
+#1712114767
+code .
+#1712114830
+code -s
+#1712254998
+nvm ls
+#1712255001
+ng
+#1712255015
+nvm use v18.20.0 
+#1712255019
+ng
+#1712255750
+un
+#1712258364
+sudo nala search sublime
+#1712258382
+sudo nala search sublime-text
+#1712258776
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg
+#1712258821
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+#1712258865
+echo "deb https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+#1712258870
+sudo nala update
+#1712258878
+sudo nala upgrade
+#1712259026
+sudo nala install sublime-text 
+#1712259065
+sudo nala purge sublime-text 
+#1712259090
+sudo lvimm /etc/apt/sources.list.d/sublime-text.list
+#1712259093
+sudo lvim /etc/apt/sources.list.d/sublime-text.list
+#1712259101
+type -a lvim
+#1712259135
+sudo ln -sf $(type -p lvim) /usr/bin/
+#1712259138
+sudo lvim /etc/apt/sources.list.d/sublime-text.list
+#1712259164
+un
+#1712259189
+sudo nala install sublime-text 
+#1712259272
+sudo nala search android
+#1712259278
+sudo nala search android-s
+#1712259400
+javac
+#1712259412
+type -a java
+#1712259426
+sudo nala search openjdk
+#1712259484
+sudo nala install openjdk-17-{jre,jdk,doc}
+#1712259559
+sudo update-alternatives --config java
+#1712259639
+sudo nala add-repo https://dl.google.com/android/studio/binaries/stable
+#1712259647
+sudo nala
+#1712259839
+sudo nala qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+#1712259862
+sudo nala libvirt-daemon-system libvirt-clients bridge-utils
+#1712259869
+sudo nala libvirt-clients bridge-utils
+#1712259879
+sudo nala bridge-utils
+#1712259886
+sudo nala install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+#1712259909
+cat /etc/group
+#1712260247
+wget https://r6---sn-b8u-jfcy.gvt1.com/edgedl/android/studio/ide-zips/2023.2.1.23/android-studio-2023.2.1.23-linux.tar.gz?cms_redirect=yes&mh=20&mip=2804:7f4:309f:48b3:48d1:2f39:de46:9477&mm=28&mn=sn-b8u-jfcy&ms=nvh&mt=1712259858&mv=m&mvi=6&pl=38&rmhost=r4---sn-b8u-jfcy.gvt1.com&shardbypass=sd&smhost=r5---sn-b8u-jfcd.gvt1.com
+#1712260257
+rm 'android-studio-2023.2.1.23-linux.tar.gz?cms_redirect=yes' 
+#1712260261
+rm wget-log 
+#1712302526
+nvm ls
+#1712302537
+nvm use v20.11.1 
+#1712302540
+ng
+#1712302558
+nvm use v20.11.1 
+#1712302586
+env
+#1712302601
+env | rg node
+#1712302615
+nvm
+#1712302622
+nvm use default
+#1712302629
+nvm 
+#1712302651
+nvm alias default v20.11.1 
+#1712302656
+nvm use default 
+#1712302667
+ex it
+#1712302685
+ex
+#1712302727
+type -a ex
+#1712302732
+ex
+#1712302797
+sudo nala search pycharm
+#1712303038
+flatpak update
+#1712303141
+echo $?
+#1712303145
+rr
+#1712303147
+echo $?
+#1712303241
+bat ~/.bashrc
+#1712303314
+sudo nala search spyder
+#1712303706
+sudo nala install spyder
+#1712303745
+flatpak search spyder
+#1712305158
+rustup
