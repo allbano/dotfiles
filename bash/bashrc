@@ -18,7 +18,6 @@ esac
 source "$HOME/.config/user-dirs.dirs"
 export XDG_DATA_HOME="/home/$USER/.local/share"
 export XDG_CONFIG_HOME="/home/$USER/.config"
-export JULIA_BIN="$HOME/github/julia/usr/bin"
 
 
 # Exports and User Configs 
@@ -37,7 +36,6 @@ export DOTBASH="/home/$USER/github/dotfiles/bash"
 
 # Sorted Path
 #export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
-PATH="$PATH:$JULIA_BIN"
 
 # Fuzzy Finder - fzf
 [ -f "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"

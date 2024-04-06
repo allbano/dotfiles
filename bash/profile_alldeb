@@ -19,10 +19,10 @@ if [ -d "$MODULAR_HOME" ] ; then
     export PATH="$PATH:$MODULAR_HOME:/home/albano/.modular/pkg/packages.modular.com_mojo/bin"
 fi
 
-# set PATH so it includes user's private MODULAR_HOME if it exists
-export JULIABIN="$HOME/.julia/bin"
-if [ -d "$JULIABIN" ] ; then
-    export PATH="$PATH:$JULIABIN"
+# set PATH so it includes user's private JULIAUP if it exists
+export JULIAUPBIN="$HOME/.juliaup/bin"
+if [ -d "$JULIAUPBIN" ] ; then
+    export PATH="$JULIAUPBIN:$PATH"
 fi
 
 # Load NVM Cli
@@ -35,3 +35,5 @@ source <(ng completion script)
 
 # Init bashrc
 [ -f "$HOME/.bashrc" ] &&  . "$HOME/.bashrc"
+
+
