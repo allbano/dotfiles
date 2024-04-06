@@ -4551,3 +4551,309 @@ type -a julia
 env | rg julia
 #1712379403
 lvim ~/.bash_profile 
+#1712379495
+updateHist 
+#1712379546
+mkdir -p ~/Cursos/bash && mv scripts/adivinha ~/Cursos/bash
+#1712379552
+gaa
+#1712379596
+git restore .
+#1712379608
+git restore --staged .
+#1712379619
+exity
+#1712378331
+jupyter-lab --port 12000 --browser firefox | bg
+#1712379643
+modular update moko
+#1712379645
+modular update mojo
+#1712379909
+rm -rf .julia
+#1712379923
+fd -u -E .local julia
+#1712380044
+rm -rf venv/
+#1712380050
+fd -u -E .local julia
+#1712380063
+rm -rf .SpaceVim
+#1712380076
+type -a vim
+#1712380102
+type -f vim
+#1712380108
+type -a vim
+#1712380116
+type -t vim
+#1712380122
+type -P vim
+#1712380126
+type -p vim
+#1712380717
+sudo systemctl status wpa_supplicant.service 
+#1712380726
+sudo systemctl status NetworkManager
+#1712380761
+curl -fsSL https://install.julialang.org | sh
+#1712380892
+lvim .zshrc
+#1712380958
+echo ${PATH}
+#1712381045
+git diff bash/bashrc
+#1712380980
+lvim ~/.bash_profile 
+#1712381293
+fd -u -E .local juliaup
+#1712381298
+fd -u juliaup
+#1712381325
+julia
+#1712381336
+juliaup
+#1712381340
+juliaup status
+#1712381348
+juliaup update
+#1712381356
+crontab 
+#1712381361
+crontab -e
+#1712381395
+juliaup
+#1712381400
+juliaup list
+#1712381446
+juliaup
+#1712381449
+juliaup status
+#1712381493
+juliaup completions bash
+#1712381504
+sudo juliaup completions bash
+#1712381528
+type -p juliaup
+#1712381551
+type -p juliaup | sudo $1 
+#1712381591
+sudo < $(type -p juliaup)
+#1712381606
+type -p juliaup | sudo 
+#1712381618
+type -p juliaup | sudo tee
+#1712381715
+type -p juliaup | tee >(sudo )
+#1712381724
+type -p juliaup | tee >(sudo $1
+#1712381727
+type -p juliaup | tee >(sudo $1)
+#1712381744
+type -p juliaup | tee 
+#1712381759
+type -p juliaup | sudo tee 
+#1712381798
+type -p juliaup | xargs
+#1712381802
+type -p juliaup | sudo xargs
+#1712381815
+type -p juliaup | xargs | sudo 
+#1712381872
+echo $JULIAUPBIN 
+#1712381883
+sudo $JULIAUPBIN 
+#1712381891
+sudo $JULIAUPBIN/juliaup
+#1712381930
+juliaup completions bash
+#1712381961
+juliaup completions bash > $DOTFILES/bash-completion/juliaup
+#1712381968
+bat $DOTFILES/bash-completion/juliaup
+#1712382026
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/juliaup /usr/share/bash-completion/completions/
+#1712382037
+ldl -d  /usr/share/bash-completion/completions/juliaup 
+#1712382041
+exity
+#1712382067
+juliaup default -h
+#1712382085
+juliaup status
+#1712382093
+juliaup list
+#1712382125
+juliaup default release
+#1712382140
+juliaup update release
+#1712382148
+juliaup update -h
+#1712382201
+julia
+#1712382221
+env | rg JULIA
+#1712382228
+type -a julia
+#1712382269
+cat julialauncher 
+#1712382306
+type -a julia
+#1712382318
+julia
+#1712382346
+juliaup list | rg '1.6*'
+#1712382356
+juliaup list | rg '1.6.*'
+#1712382379
+juliaup add lts
+#1712382396
+juliaup status 
+#1712382433
+juliaup api 
+#1712382444
+juliaup info
+#1712382475
+juliaup status
+#1712382497
+juliaup self update 
+#1712382525
+juliaup status
+#1712382539
+juliaup self channel release
+#1712382544
+juliaup self update
+#1712382563
+juliaup self channel lts
+#1712382587
+juliaup self update lts
+#1712382603
+juliaup list
+#1712382623
+juliaup update lts
+#1712382691
+juliaup link lts lts
+#1712382705
+juliaup link meuLTS lts
+#1712382713
+juliaup status
+#1712382731
+juliaup self channel meuLTS
+#1712382761
+juliaup gc meuLTS
+#1712382766
+juliaup status
+#1712382775
+juliaup remove meuLTS
+#1712382781
+juliaup status
+#1712382791
+juliaup default lts
+#1712382793
+julia
+#1712383016
+rm -rf SINAPSENSE/
+#1712383050
+julia 
+#1712383277
+juliaup status
+#1712383284
+juliaup default realise
+#1712383289
+juliaup default release
+#1712383294
+julia
+#1712383869
+ga bash-completion/juliaup 
+#1712383948
+gcm "Added jualiaup autocomplete file."
+#1712383967
+git diff zsh/.zshrc
+#1712384088
+jupyter-lab --port 12000 --browser firefox
+#1712384229
+py3a 
+#1712384275
+jupyter-lab --port 12000 --app-dir="$HOME"  --browser firefox
+#1712384418
+jupyter kernelspec list
+#1712384434
+jupyter kernelspec 
+#1712384449
+jupyter kernelspec uninstall julia-1.9
+#1712384469
+jupyter kernelspec install julia-1.10
+#1712384526
+pip install ipykernel
+#1712384626
+julia
+#1712385889
+docker ps 
+#1712385893
+docker ps --all 
+#1712385908
+docker container start nginx_alpine 
+#1712385937
+docker container rm nginx_alpine 
+#1712385941
+docker images
+#1712386122
+docker run --name nginx_tests --hostname nginx -d -p 80:80 -p 443:443 -p 20000:20000 nginx:alpine 
+#1712386130
+docker ps --all 
+#1712384386
+jupyter-lab --port 12000 --notebook-dir="$HOME"  --browser firefox
+#1712386862
+pip list
+#1712386869
+pip list -o
+#1712386997
+pip list -o | cut -d' ' -f1
+#1712387033
+pip list -o --help | cut -d' ' -f1
+#1712387038
+pip list -o --help 
+#1712387060
+pip list -o --format freeze
+#1712387089
+pip list -lo
+#1712387187
+py3a 
+#1712387191
+pip freeze
+#1712387199
+pip freeze -o
+#1712387247
+pip freeze -l
+#1712387294
+pip list -lo | cut -d' ' -f1
+#1712387372
+pip list -lo | cut -d' ' -f1 | sed '1.2d'
+#1712387380
+pip list -lo | cut -d' ' -f1 | sed '1,2d'
+#1712387415
+pip list -lo | cut -d' ' -f1 | sed '1,2d' | xargs pip install -U 
+#1712387526
+pip completion bash
+#1712387539
+pip completion -b
+#1712387579
+pip completions -d > $DOTFILES/bash-completion/pip
+#1712387590
+pip completion -d > $DOTFILES/bash-completion/pip
+#1712387594
+pip completion -b > $DOTFILES/bash-completion/pip
+#1712387600
+bat $DOTFILES/bash-completion/pip
+#1712387631
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/pip /usr/share/bash-completion/completions/
+#1712387647
+bat /usr/share/bash-completion/completions/pip
+#1712387672
+ga bash-completion/pip 
+#1712387683
+gcm "Added pip autocomplete file."
+#1712387701
+gaa
+#1712387850
+gcm "Updated juliaup settings in shells."
