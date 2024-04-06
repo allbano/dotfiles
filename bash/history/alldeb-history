@@ -4417,3 +4417,137 @@ sudo nala install spyder
 flatpak search spyder
 #1712305158
 rustup
+#1712305169
+updateHist 
+#1712305201
+lll
+#1712305209
+rm alldeb-updates 
+#1712305226
+ga alldeb-updates
+#1712305243
+gcm "Deleted alldeb-updates."
+#1712305260
+rustup
+#1712305267
+rustup update
+#1712305294
+rustc --version 
+#1712305306
+cargo install --list
+#1712305319
+cargo install du-dust
+#1712305381
+cargo install --list
+#1712305398
+cargo install bat
+#1712305405
+cargo install bottom
+#1712305413
+bottom
+#1712305416
+btm
+#1712305428
+cargo install fd-find
+#1712305569
+cargo install --list
+#1712305577
+cargo install fclones
+#1712305583
+cargo install lfs
+#1712305616
+rustup docs
+#1712305590
+cargo install nu
+#1712305835
+cargo install --list
+#1712305842
+cargo install rustlings
+#1712305864
+cargo install --list
+#1712305882
+rustlings
+#1712305902
+tree
+#1712305971
+cargo install --list
+#1712305973
+nu
+#1712306034
+lvim ~/.config/nushell/config.nu 
+#1712306069
+cargo uninstall nu
+#1712306079
+cargo install nu
+#1712306262
+find . -type d -name nushell
+#1712306271
+nu
+#1712376211
+un
+#1712378229
+dirs
+#1712378237
+jg
+#1712378286
+jupyter-lab --port 12000 --browser firefox
+#1712378439
+setterm -foreground green -background blue -store
+#1712378483
+env | rg TERM
+#1712378499
+ps aux | rg xterm
+#1712378503
+ps
+#1712378524
+alacritty
+#1712378532
+ps
+#1712378682
+julia
+#1712378705
+sudo nala show julia
+#1712378719
+sudo nala list julia\
+#1712378722
+sudo nala list julia
+#1712378735
+fd julia
+#1712378759
+find . -name julia
+#1712378776
+fd -i julia
+#1712378780
+fd -I julia
+#1712378830
+fd -u julia
+#1712378868
+fd -I -E .local  julia
+#1712378879
+fd -I -E ./.local  julia
+#1712378900
+fd -I -E ".local"  julia
+#1712378904
+fd -I -E ".local"  .julia
+#1712378913
+fd -I -E ".local" julia
+#1712378923
+fd -I julia
+#1712378928
+fd -u julia
+#1712378934
+fd -u -E .local julia
+#1712379239
+juliaup
+#1712379318
+paru -S juliaup
+#1712379342
+sudo nala search juliaup
+#1712379345
+sudo nala search julia
+#1712379369
+type -a julia
+#1712379378
+env | rg julia
+#1712379403
+lvim ~/.bash_profile 
