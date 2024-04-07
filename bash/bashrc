@@ -116,7 +116,7 @@ export HISTFILESIZE=
 
 # Bash Options 
 ###############################################################################
-shopt -s histappend
+shopt -s histappend histreedit histverify
 shopt -s expand_aliases
 shopt -s checkwinsize
 shopt -s autocd # change to named directory
@@ -126,6 +126,7 @@ shopt -s cmdhist # save multi-line commands in history as single line
 # match all files and zero or more directories and subdirectories.
 shopt -s dotglob
 shopt -s login_shell # use bash shell as login shell
+shopt -s extglob
 
 #ignore upper and lowercase when TAB completion
 #bind 'set completion-ignore-case on'
