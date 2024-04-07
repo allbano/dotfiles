@@ -4857,3 +4857,515 @@ gcm "Added pip autocomplete file."
 gaa
 #1712387850
 gcm "Updated juliaup settings in shells."
+#1712387870
+updateHist 
+#1712387885
+glol -5
+#1712387951
+lvim updateHist 
+#1712388109
+UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
+#1712388117
+echo $UPTODATE 
+#1712388135
+UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
+#1712388137
+echo $UPTODATE 
+#1712388157
+update
+#1712388198
+bat functionsInitBash 
+#1712388215
+google eu quero foder
+#1712388575
+py3a 
+#1712388581
+jupyter-lab --port 12000 --notebook-dir="$HOME"  --browser firefox
+#1712389006
+pyenv
+#1712442199
+un
+#1712442247
+docker ps
+#1712442249
+docker ps -a
+#1712442328
+mv nginx nginx_alpine
+#1712442566
+docker run -d --name node_alpine --hostname node_alpine -p 80:80 node:lts-alpine
+#1712442623
+docker ps
+#1712442628
+docker ps -a
+#1712442643
+docker container start node_alpine 
+#1712442670
+docker ps
+#1712442679
+docker ps -a
+#1712442705
+docker ps
+#1712442721
+docker container rm -f node_alpine 
+#1712442742
+sudo lvim /etc/doas.conf 
+#1712442797
+dss docker
+#1712442804
+dss podeman
+#1712442809
+dss podman
+#1712442817
+dss podman.target
+#1712442820
+dss podman.service
+#1712443170
+echo && ls -nh --color=always --group-directories-first
+#1712443211
+echo && echo $(alias | sed "s/alias/ | /" | cut -d "=" -f1) | sed "s/| //" | grep "|"
+#1712443236
+dir --color=auto
+#1712443254
+echo && egrep -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|/)"
+#1712443297
+echo && rg -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | rg "(-> deb|\[|\]|/)"
+#1712443335
+rg -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | rg "(-> deb|\[|\]|/)"
+#1712443358
+echo -e "\033[1;33m" && lspci | grep VGA | cut -d " " -f 5-
+#1712443365
+echo -e "\033[1;33m" && lspci | grep VGA
+#1712443409
+echo -e "\033[1;33m" && lspci | grep VGA | cut -d " " -f 5
+#1712443414
+echo -e "\033[1;33m" && lspci | grep VGA | cut -d " " -f 5-
+#1712443478
+echo -e "\033[1;33m" && echo $HOSTTYPE
+#1712443523
+echo $JUPYTERLAB_DIR 
+#1712443580
+ls -R /etc/apt/*.list* /etc/apt/*/*.list* | cut -d ":" -f 2 | sed -e "s/[0-9 ]*//" -e s"|/[^ ]*/| -> |" | egrep "(->)"
+#1712443615
+echo && usb-devices | sed -e "s/T: / ->/" -e "s/S:/  /" -e "s/#=  /=/" | egrep "(Dev|Bus|Product)"
+#1712443794
+doas df -Th --total
+#1712443799
+doas df -Th
+#1712443822
+doas df -T
+#1712443827
+doas df -Th
+#1712443843
+doas df -T --total
+#1712442340
+lvim Dockerfile
+#1712444102
+pwd 
+#1712444267
+dss NetworkManager
+#1712444507
+h
+#1712444576
+ls -ltcr
+#1712444601
+ls -ltcrh
+#1712444608
+ls -ltcrH
+#1712444613
+ls -ltcrh
+#1712444739
+function xtitle() {     case "$TERM" in     *term* | rxvt)         echo -en  "\e]0;$*\a" ;;     *)  ;;     esac; }
+#1712444744
+xtitle 
+#1712444773
+type -a xtitle
+#1712444778
+xtitle 
+#1712444784
+echo $TERM
+#1712444905
+find . -type f -iname '*'"$*"'*' -ls 
+#1712444936
+find . -type f -iname '*'"$*"'*'
+#1712444939
+find . -type f -iname '*'"$*"'*' -ls
+#1712445069
+echo $#
+#1712445168
+hostname
+#1712445170
+hostnamectl
+#1712445290
+cat /etc/bashrc
+#1712445301
+cat /etc/bash.bashrc 
+#1712445482
+cat /etc/shells 
+#1712445493
+dash
+#1712445527
+dash 
+#1712445532
+dash -h
+#1712445557
+docker ps
+#1712445559
+docker ps -a
+#1712445573
+docker ps
+#1712445585
+docker exec -it nginx_tests ash
+#1712445751
+docker exec -it nginx_tests bash
+#1712445870
+docker exec -it nginx_tests ash
+#1712446252
+docker container stop nginx_tests
+#1712446580
+rm -rf nginx_alpine/
+#1712446602
+nginx_alpine.dockerfile
+#1712446606
+lvim nginx_alpine.dockerfile
+#1712448978
+un
+#1712460407
+lvim nginx_alpine.dockerfile 
+#1712460511
+docker build -f ./nginx_alpine.dockerfile -t "nginx-alpine:v1.0"
+#1712460516
+docker build -f ./nginx_alpine.dockerfile -t "nginx-alpine:v1.0" .
+#1712460524
+docker images
+#1712460553
+docker commit nginx-alpine
+#1712460708
+docker run -d --name nginx-alpine --hostname nginxAlpine -p 80:80 -p 443:443 nginx-alpine:v1.0 
+#1712460712
+docker ps
+#1712460821
+docker container rm -f nginx-alpine 
+#1712460833
+docker images 
+#1712460836
+docker image ls
+#1712460863
+docker image rm nginx-alpine:v1.0 
+#1712460893
+docker container start nginx_tests 
+#1712460898
+docker ps 
+#1712460998
+docker build -f ./nginx_alpine.dockerfile -t "nginx-alpine:v1.0" .
+#1712461015
+docker image history nginx-alpine:v1.0 
+#1712461075
+docker image history
+#1712461080
+docker image
+#1712461101
+docker login
+#1712462899
+docker login --username allbano
+#1712462964
+docker login -u allbano -p All@25822513
+#1712462981
+docker login -u allbano --password-stdin 
+#1712463025
+docker login -u allbano
+#1712463145
+sudo docker login -u allbano
+#1712463300
+sudo docker logout 
+#1712463309
+docker login -u allbano
+#1712463339
+cat config.json 
+#1712463355
+cat /root/.docker/config.json 
+#1712463358
+sudo cat /root/.docker/config.json 
+#1712463409
+lvim config.json 
+#1712463439
+docker login
+#1712463493
+type -a docker
+#1712463512
+ls -d $(type -p docker)
+#1712463521
+ls -ld $(type -p docker)
+#1712463556
+sudo chown root:adm /usr/bin/docker
+#1712463559
+ls -ld $(type -p docker)
+#1712463575
+sudo chmod 775 /usr/bin/docker
+#1712463576
+ls -ld $(type -p docker)
+#1712463583
+docker login\
+#1712463585
+docker login
+#1712464029
+sudo docker login -u allbano
+#1712464045
+sudo cat /root/.docker/config.json 
+#1712464060
+cat config.json 
+#1712464088
+lvim config.json 
+#1712464121
+cat config.json 
+#1712464125
+sudo cat /root/.docker/config.json 
+#1712464135
+lvim config.json 
+#1712464173
+sudo diff /root/.docker/config.json config.json
+#1712464208
+sudo docker logout 
+#1712464213
+sudo diff /root/.docker/config.json config.json
+#1712464241
+sudo cp -r ./config.json /root/.docker/config.json
+#1712464244
+sudo diff /root/.docker/config.json config.json
+#1712464251
+sudo docker login
+#1712464296
+sudo lvim /root/.docker/config.json
+#1712464312
+sudo nvim /root/.docker/config.json
+#1712464434
+docker
+#1712464459
+sudo nvim /root/.docker/config.json
+#1712464468
+sudo cat /root/.docker/config.json
+#1712464476
+docker login -u allbano
+#1712464504
+docker image ls
+#1712464545
+docker tag
+#1712464559
+docker image ls
+#1712464606
+docker tag 0b968a788d09 allbano/testNginx:1.0
+#1712464620
+docker tag 0b968a788d09 allbano/test_nginx:1.0
+#1712464626
+docker image ls
+#1712464656
+docker push allbano/test_nginx:1.0 
+#1712465027
+docker 
+#1712465415
+docker image ls
+#1712465423
+docker pull archlinux:latest
+#1712465441
+docker image ls
+#1712465457
+docker image rm debian:latest 
+#1712465460
+docker image ls
+#1712465501
+docker image rm node:lts-alpine 
+#1712465503
+docker image ls
+#1712465518
+docker image rm archlinux:latest 
+#1712465525
+docker pull archlinux
+#1712465542
+docker image ls
+#1712465551
+docker image rm archlinux:latest 
+#1712465554
+docker image ls
+#1712465564
+docker image rm allbano/test_nginx:1.0 
+#1712465573
+docker image ls
+#1712465663
+docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 nginx:alpine 
+#1712465677
+docker container ls --all
+#1712465688
+docker container rm -f nginx_test
+#1712465693
+docker container ls --all
+#1712465702
+docker container rm 44e
+#1712460912
+docker exec -it nginx_tests bash
+#1712465709
+docker container rm -f 44e
+#1712465718
+docker image ls
+#1712465728
+docker image rm nginx:bookworm 
+#1712465732
+docker image ls
+#1712465757
+docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 alpine
+#1712465765
+docker exec -it nginx_tests bash
+#1712465773
+docker exec -it nginx_tests 
+#1712465780
+docker container ls
+#1712465782
+docker container ls -a
+#1712465797
+docker container start nginx_test 
+#1712465800
+docker container ls
+#1712465822
+docker container rm -f nginx_test 
+#1712465833
+docker container ls -a
+#1712465846
+docker image ls
+#1712465851
+docker image rm alpine:latest 
+#1712465879
+docker pull alpine:latest
+#1712465904
+docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 alpine bash
+#1712465912
+docker container ls -a
+#1712465917
+docker container ls
+#1712465929
+docker exec -it nginx_tests bash
+#1712465931
+docker exec -it nginx_tests ash
+#1712466122
+docker container ls -a
+#1712466128
+docker container rm -f nginx_test 
+#1712466136
+docker image ls
+#1712466172
+docker image history nginx-alpine:v1.0 
+#1712466190
+lvim alpine.dockerfile
+#1712466880
+lvim nginx_alpine.dockerfile 
+#1712466997
+docker build -f ./nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0" .
+#1712467012
+docker image ls
+#1712467080
+docker run -d --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712467097
+docker exec -it nginx_sinap bash
+#1712467103
+docker exec -it nginx_sinap ash
+#1712467149
+docker container rm -f nginx_sinap 
+#1712467157
+lvim nginx_alpine.dockerfile 
+#1712467326
+docker build -f ./nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0" .
+#1712467345
+docker run -it --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712467368
+docker run -d --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712467383
+docker exec -it nginx_sinap bash
+#1712467395
+docker container ls
+#1712467397
+docker container ls -a
+#1712467403
+docker container rm 7dae
+#1712467407
+docker run -d --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712467411
+docker container ls -a
+#1712467413
+docker container ls
+#1712467417
+docker exec -it nginx_sinap bash
+#1712467463
+docker image ls
+#1712467480
+docker image rm febe
+#1712467484
+docker image ls
+#1712467499
+docker image rm 4c59
+#1712467514
+docker container rm -f nginx_sinap
+#1712467520
+docker image rm 4c59
+#1712467525
+docker image ls
+#1712467534
+docker image rm alpine:latest 
+#1712467535
+docker image ls
+#1712467548
+docker image rm nginx-alpine:v1.0 
+#1712467552
+docker image ls
+#1712467576
+docker build -f ./nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0" $(pwd)
+#1712467589
+docker image ls
+#1712467606
+docker run -d --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712467612
+docker exec -it nginx_sinap bash
+#1712467690
+lvim nginx_alpine.dockerfile 
+#1712468151
+docker container rm -f nginx_sinap 
+#1712468159
+docker image ls
+#1712468165
+docker image rm allbano/sinapsense:v1.0 
+#1712468174
+lvim nginx_alpine.dockerfile 
+#1712468219
+docker build -f /home/albano/github/dotfiles/docker/nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0"
+#1712468232
+docker build -f /home/albano/github/dotfiles/docker/nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0" -
+#1712468273
+docker image ls
+#1712468301
+docker build -f ./nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0" $(pwd)
+#1712468322
+docker run -d --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712468329
+docker exec -it nginx_sinap bash
+#1712468373
+docker image ls
+#1712468395
+docker container rm -f nginx_sinap 
+#1712468402
+docker image rm allbano/sinapsense:v1.0 
+#1712468409
+lfs
+#1712468424
+nc
+#1712468454
+ncdu /var
+#1712468497
+sudo apt-get clean
+#1712468504
+ncdu /var
+#1712468520
+sudo apt
+#1712468527
+sudo apt clean
+#1712468531
+sudo apt autoclean
+#1712468545
+sudo apt autoremove 
+#1712468551
+un
