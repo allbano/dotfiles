@@ -5369,3 +5369,65 @@ sudo apt autoclean
 sudo apt autoremove 
 #1712468551
 un
+#1712468627
+updateHist
+#1712468673
+gaa
+#1712468679
+glol -5
+#1712468726
+gcm "Update .bashrc file (remove duplicates). Added nginx dockerfile."
+#1712468760
+lfs
+#1712468797
+dust 
+#1712468804
+dust -r
+#1712468852
+dust -r -d 1
+#1712468890
+ls -l
+#1712468901
+cat fstab 
+#1712468907
+rm fstab 
+#1712468917
+sudo rm fstab 
+#1712468929
+bat sources.list 
+#1712468933
+rm sources.list 
+#1712468937
+sudo rm sources.list 
+#1712468947
+dust -r -d 1
+#1712469131
+dust -r
+#1712469144
+lfs
+#1712469147
+duf
+#1712469186
+cat /etc/fstab
+#1712469200
+bat /etc/fstab
+#1712469361
+perl -de0
+#1712964537
+juliaup 
+#1712964543
+juliaup update
+#1712964549
+juliaup status
+#1712964569
+juliaup update release
+#1712964600
+un
+#1712964701
+cat updateHist
+#1712964711
+type -a updateHist 
+#1712964717
+type -p updateHist 
+#1712964725
+cat $(type -p updateHist)
