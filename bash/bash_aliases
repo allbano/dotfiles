@@ -181,8 +181,8 @@ alias gwtrm='git worktree remove'
 
 ########## LS
 alias ls='ls $LS_OPTIONS'
-alias ll='ls $LS_OPTIONS -l'
-alias l='ls $LS_OPTIONS -lA'
+alias ll='ls $LS_OPTIONS -lh'
+alias l='ls $LS_OPTIONS -lhA'
 
 ########## GREP
 alias grep='grep $LS_OPTIONS'
