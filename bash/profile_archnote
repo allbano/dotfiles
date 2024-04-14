@@ -1,40 +1,24 @@
 ##### STANDARD CONFIG #####
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    export PATH="$HOME/bin:$PATH"
-fi
+[[ -d "$HOME/bin" ]] &&  export PATH="$HOME/bin:$PATH"
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    export PATH="$HOME/.local/bin:$PATH"
-fi
+[[ -d "$HOME/.local/bin" ]] &&  export PATH="$HOME/.local/bin:$PATH"
 
-. "$HOME/.cargo/env"
-export PATH="$PATH:/usr/sbin:/sbin:/bin"
-export QT_QPA_PLATFORMTHEME=qt5ct
-
+[[ -d "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
+export PATH="$PATH:/usr/sbin:/sbin"
 
 ### NVM Implemantation ###
 export NVM_DIR="$HOME/.nvm"
 [ -s "${NVM_DIR}/nvm.sh" ] && . "${NVM_DIR}/nvm.sh"  # This loads nvm
 [ -s "${NVM_DIR}/bash_completion" ] && . "${NVM_DIR}/bash_completion"  # This loads nvm bash_completion# Load Angular CLI autocompletion.
 
+# Load Angular CLI autocompletion.
 source <(ng completion script)
-
-### PNPM Implemantation ###
-export PNPM_HOME="/home/albano/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
 
 #SSH Agent
 eval "$(ssh-agent &> /dev/null)"
-
-# ASDF
-. "$HOME/.asdf/asdf.sh"
 
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -42,6 +26,16 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+
+# ASDF
+. "$HOME/.asdf/asdf.sh"
+
+### PNPM Implemantation ###
+export PNPM_HOME="/home/albano/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 
 # Init bashrc
 [ -f "$HOME/.bashrc" ] &&  . "$HOME/.bashrc"
