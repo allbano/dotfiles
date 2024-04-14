@@ -5431,3 +5431,213 @@ type -a updateHist
 type -p updateHist 
 #1712964725
 cat $(type -p updateHist)
+#1712964734
+updateHist 
+#1712964830
+uname -a
+#1712964870
+flatpak update
+#1712964969
+env | rg debian
+#1712965062
+echo && echo $(alias | sed "s/alias/ | /" | cut -d "=" -f1) | sed "s/| //" | grep "|"
+#1712965134
+echo && egrep -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|/)"
+#1712965146
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|/)"
+#1712965206
+echo && egrep -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list
+#1712965215
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |"
+#1712965234
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|/)"
+#1712965282
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\])"
+#1712965298
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|deb-src)"
+#1712965313
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|-src)"
+#1712965336
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | rg "(-> deb|\[|\]|-src)"
+#1712965347
+echo && rg -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | rg "(-> deb|\[|\]|-src)"
+#1712965352
+echo && rg -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | rg "(-> deb|\[|\]|-src)"
+#1712965384
+echo && lscpu | cut -d " " -f 4- | sed "s/CPU:      /OP-Mode CPU: /" | egrep "(CPU:|-bit)"
+#1712965403
+echo && lscpu | cut -d " " -f 4 | sed "s/CPU:      /OP-Mode CPU: /" | egrep "(CPU:|-bit)"
+#1712965415
+echo && lscpu | cut -d " " -f 4- | sed "s/CPU:      /OP-Mode CPU: /" | egrep "(CPU:|-bit)"
+#1712965425
+echo && lscpu
+#1712965713
+sudo nala search axel
+#1712965723
+sudo nala install axel
+#1713036257
+lvim ~/.bash_aliases 
+#1713036313
+un
+#1713036426
+sudo chown albano:albano /ssh
+#1713036432
+sudo chown albano:albano /ssd
+#1713036465
+rm -rf '$RECYCLE.BIN'
+#1713036470
+rm -rf 'System Volume Information'
+#1713036474
+sudo rm -rf 'System Volume Information'
+#1713036504
+sudo chown -R albano:albano /ssd
+#1713036531
+find . -type d -empty 
+#1713036543
+find . -type d -empty -delete
+#1713036548
+find . -type d -empty 
+#1713036617
+duf
+#1713036856
+sudo nala search duf
+#1713036868
+duff
+#1713036879
+duf
+#1713036925
+tldr duf
+#1713036937
+duf --all
+#1713065072
+ldl
+#1713065056
+un
+#1713065258
+sudo nala list duf
+#1713065293
+duf -all
+#1713065299
+duf --all
+#1713065310
+lfs
+#1713065312
+lfs -a
+#1713065482
+lsk
+#1713065557
+bat /etc/fstab 
+#1713065562
+cat /etc/fstab 
+#1713065565
+bat /etc/fstab 
+#1713065686
+sudo nala search plasma-desktop
+#1713065707
+sudo nala show kde-plasma-desktop 
+#1713065715
+sudo nala show plasma-desktop 
+#1713065739
+sudo nala -t sid show plasma-desktop 
+#1713065745
+sudo apt -t sid show plasma-desktop 
+#1713065753
+sudo apt show -t sid plasma-desktop 
+#1713065759
+sudo apt show
+#1713130565
+pyenv
+#1713130634
+echo $PA
+#1713130637
+echo $PATH 
+#1713130653
+echo -e "${PATH//:/\\n}"
+#1713130696
+echo -e "${PATH//:/\ }"
+#1713130702
+echo -e "${PATH//:/ }"
+#1713130706
+echo -e "${PATH/:/ }"
+#1713130711
+echo -e "${PATH/:/\n }"
+#1713130719
+echo -e "${PATH/://\n}"
+#1713130727
+echo -e "${PATH/:/\\n}"
+#1713130744
+echo -e "${PATH//:/\\n}"
+#1713130769
+echo -e "${PATH\/:/\\n}"
+#1713130772
+echo -e "${PATH/:/\\n}"
+#1713130804
+echo -e "${PATH//:/\\n}"
+#1713130808
+echo -e "${PATH//:/\n}"
+#1713130819
+echo -e "${PATH//:/\\n}"
+#1713130846
+echo -e "${PATH/:/\\n}"
+#1713130851
+echo -e "${PATH//:/\\n}"
+#1713131011
+unlink .vim
+#1713131036
+rm -rf .SpaceVim.d/
+#1713131072
+tree -d
+#1713131084
+tree --helpo
+#1713131110
+tree -L1
+#1713131114
+tree -L 1
+#1713131117
+tree -L 2
+#1713131349
+curl https://pyenv.run | bash
+#1713131377
+sudo nala list pyenv
+#1713131389
+sudo nala search pyenv
+#1713131402
+un
+#1713131441
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+#1713131449
+rm -rf .pyenv/
+#1713131452
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+#1713131688
+bat bash_completion 
+#1713131825
+set
+#1713131856
+zsh
+#1713132102
+exec $SHELL
+#1713131488
+lvim ~/.bash_profile 
+#1713132184
+bat profile_archnote 
+#1713132203
+ssh-add -l
+#1713132169
+bat profile_alldeb 
+#1713132256
+lvim profile_alldeb 
+#1713132263
+lvim profile_archnote 
+#1713132784
+pyenv
+#1713133255
+un
+#1713133274
+lsk
+#1713133285
+duf
+#1713133290
+duf -a
+#1713133341
+pyenv
