@@ -124,7 +124,7 @@ plugins=(
  	fzf
  	zsh-autosuggestions
  	k
-)
+autojump)
 
 
 source $ZSH/oh-my-zsh.sh
