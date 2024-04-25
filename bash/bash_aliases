@@ -201,7 +201,8 @@ alias x='eza --icons -lga'
 alias xx='eza --icons -lg'
 
 ########## LSBLK
-alias lsk='lsblk --output NAME,TRAN,FSTYPE,UUID,MODEL,TYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINT'
+alias lsk='lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,FSUSE%,FSAVAIL,SIZE'
+alias lsku='lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,FSUSE%,FSAVAIL,SIZE,UUID'
 
 ########## ARCHLINUX SYSTEM
 alias ua='paru -Syu' 
