@@ -12,6 +12,7 @@ fi
 
 . "$HOME/.cargo/env"
 export PATH="$PATH:/usr/sbin:/sbin"
+export LS_OPTIONS="--color=auto"
 
 # set PATH so it includes user's private MODULAR_HOME if it exists
 export MODULAR_HOME="$HOME/.modular"
