@@ -235,7 +235,7 @@ alias tx="tmux new"
 alias tz="tmux new /usr/bin/zsh"
 
 ######## SYSTEMCTL
-alias dss="doas systemctl status"
+alias sct="sudo systemctl "
 
 ######## SSH
 alias sshw='eval "$(ssh-agent -s)"'
