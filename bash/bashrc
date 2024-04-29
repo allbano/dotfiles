@@ -76,8 +76,8 @@ export HISTTIMEFORMAT="%F %T$ "
 # ignore the following commands
 # IGNORE="$IGNORE:"
 # Path's ignore
-IGNORE="cd:cd *:..:~:/etc:/usr:/var"
-IGNORE="$IGNORE:github/dotfiles/:github/BANTADS/"
+IGNORE="..:~:/etc:/usr:/var"
+IGNORE="$IGNORE:github/dotfiles/"
 # Ls/exa/lsd ignore
 IGNORE="$IGNORE:ls:lsd:lsd -l:lsd -la:exa:ll:l:x:xx:ll ~:l ~"
 # git's ignore
@@ -85,10 +85,10 @@ IGNORE="$IGNORE:gst:ga .:gp:gl:glol:glob"
 # Vim, lvim, nvim ignore
 IGNORE="$IGNORE:lvim:lvim ~/.bashrc:vim:vim ~/.bashrc:nvim:nvim ~/.bashrc"
 # Commands ignore
-IGNORE="$IGNORE:* --help:help *:help:* --version:history:history *:his:his *"
+IGNORE="$IGNORE:history:history *:his:his *"
 IGNORE="$IGNORE:pwd:bg:fg:ua:ud:uy:ur:exit:man *"
 IGNORE="$IGNORE:htop:nvtop:bashtop:du:ncdu:dust:cargo:ip -c a"
-IGNORE="$IGNORE:* systemctl status:neofetch:lspci:lsusb:lsblk:lsblk -f"
+IGNORE="$IGNORE:neofetch:lspci:lsusb:lsblk:lsblk -f"
 IGNORE="$IGNORE:alias:alias *:. ~/.bashrc"
 IGNORE="$IGNORE:doas systemctl status *"
 # compilation ignore

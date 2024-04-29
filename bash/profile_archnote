@@ -9,6 +9,8 @@
 . "$HOME/.cargo/env"
 [[  ! $PATH =~ /usr/sbin ]] && export PATH="$PATH:/usr/sbin"
 [[  ! $PATH =~ /sbin ]] && export PATH="$PATH:/sbin"
+# . in PATH
+export PATH="$PATH:."
 
 ### NVM Implemantation ###
 export NVM_DIR="$HOME/.nvm"
