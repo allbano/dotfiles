@@ -4927,3 +4927,2309 @@ mkdir crud-angular-spring
 ng new crud-angular
 #1712007337
 lvim Dockerfile 
+#1712038372
+updateHist 
+#1712038415
+glol -5
+#1712038554
+ng new crud-angular
+#1712039330
+code .
+#1712040125
+ng serve
+#1712040339
+ng add @angular/material
+#1712040968
+ng new crud-angular2
+#1712041096
+code .
+#1712041126
+rm -rf crud-angular2
+#1712041134
+code .
+#1712041485
+ng update @angular/core@latest
+#1712041488
+ng update @angular/core
+#1712041543
+npm i -g @angular/cli
+#1712041598
+ng new crud-angular2
+#1712042281
+nvm use default 
+#1712042287
+nvm
+#1712042310
+nvm ls-remote lts
+#1712042323
+nvm ls lts
+#1712042326
+nvm ls --lts
+#1712042345
+nvm install --lts
+#1712042363
+nvm versions
+#1712042374
+nvm ls
+#1712042397
+npm i -g npm@latest
+#1712042406
+npm i -g yarn@latest
+#1712042585
+rm -rf crud-angular
+#1712042593
+mv crud-angular2 crud-angular
+#1712042599
+code .
+#1712042609
+ng serve
+#1712042624
+ng serve
+#1712042628
+ng
+#1712042643
+npm i -g @angular/cli
+#1712042698
+ng verson
+#1712042714
+ng serve
+#1712044858
+rm src/app/filme.component.ts 
+#1712045238
+ng seve
+#1712045241
+ng serve
+#1712049529
+mv crud-angular testAngular17
+#1712049546
+mv testAngular17 ../
+#1712049891
+sudo find / -type f -wholename "*KStatusNotifierItem*"
+#1712049984
+lvim appindicatorsupport@rgcjonas.gmail.com
+#1712050022
+lvim metadata.json 
+#1712050345
+numlockx
+#1712050353
+paru -S numlockx
+#1712050371
+sudo gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
+#1712050408
+sudo gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state true
+#1712050245
+sudo lvim /etc/lightdm/lightdm.conf
+#1712050492
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+#1712078624
+sudo lvim /etc/lightdm/lightdm.conf
+#1712078745
+sudo lvim users.conf 
+#1712078795
+sudo lvim keys.conf 
+#1712078813
+sudo lvim 20-optimus-manager.conf 
+#1712078864
+sudo lvim /sbin/prime-offload 
+#1712078929
+type -a python
+#1712078937
+sudo lvim /sbin/prime-offload 
+#1712079010
+cat /sbin/prime-offload 
+#1712079063
+paru -Qs lick
+#1712079075
+sudo find / -wholename '*slick-greeter'
+#1712079260
+paru -Qs accoun
+#1712079337
+paru -R lightdm-slick-greeter
+#1712079448
+paru -Ssss lightdm-web
+#1712079518
+sudo pacman -S --needed lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
+#1712079541
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+#1712080297
+sudo pacman -R lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
+#1712080318
+paru -S lightdm-slick-greeter
+#1712080324
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+#1712080330
+reboot
+#1712167918
+sudo systemctl status failed
+#1712167975
+sudo systemctl list-unit --failed 
+#1712167987
+sudo systemctl list-units --failed 
+#1712168007
+sudo systemctl restart NetworkManager
+#1712168013
+sudo systemctl list-units --failed 
+#1712168022
+sudo systemctl restart NetworkManager-wait-online.service 
+#1712168026
+sudo systemctl list-units --failed 
+#1712168051
+yay -Syyu
+#1712168071
+sudo rm /var/lib/pacman/db.lck 
+#1712170276
+reboot
+#1712170560
+sudo systemctl status bluetooth
+#1712170606
+sudo systemctl stop bluetooth
+#1712170609
+sudo systemctl status bluetooth
+#1712170618
+sudo systemctl start bluetooth
+#1712170621
+sudo systemctl status bluetooth
+#1712170630
+sudo systemctl restart bluetooth
+#1712170679
+sudo systemctl status bluetooth
+#1712171346
+rm -rf .ipynb_checkpoints
+#1712171377
+lvim updateHist 
+#1712171486
+gaa
+#1712171515
+gcm "Added updateHist script."
+#1712183366
+sudo systemctl status 
+#1712184037
+curl https://ohmyposh.dev/install.sh
+#1712184078
+curl https://ohmyposh.dev/install.sh > install.sh
+#1712184084
+bat install.sh 
+#1712184208
+docker ps
+#1712184214
+docker ps -a
+#1712184242
+docker container start test_py 
+#1712184343
+su 
+#1712184848
+echo $0
+#1712184250
+docker exec -it test_py bash
+#1712186481
+lvim ~/.bash_profile 
+#1712186747
+$DOTFILES/
+#1712275710
+echo $PS1
+#1712275841
+sudo su
+#1712276087
+fail
+#1712276101
+suggest
+#1712276203
+echo $PS1
+#1712276247
+. ~/.BASHRC
+#1712276262
+xit
+#1712276281
+. ~/.BASHRC
+#1712276375
+github/dotfiles
+#1712276539
+. ~/.BASHRC
+#1712276995
+source ~/.bashrc
+#1712278258
+git restore bash/bashrc 
+#1712278262
+source ~/.bashrc
+#1712278747
+unzip DS030_2020.zip 
+#1712278795
+lfs
+#1712278821
+dust ~
+#1712278856
+dust -r ~
+#1712280085
+ls -l
+#1712280099
+pip list -l | rg 'jupyter{,lab}'
+#1712280129
+pip list -l | rg 'jupyter{||,lab}'
+#1712280141
+pip list -l | rg 'jupyter||lab}'
+#1712280147
+pip list -l | rg 'jupyter||jupyterlab}'
+#1712280175
+pip list -l | rg '(^jupyter|^jupyterlab)' | cut -f1
+#1712280185
+pip list -l | rg '(^jupyter|^jupyterlab)' | cut -f1 -d' '
+#1712280204
+pip list -l | rg '(^jupyter|^jupyterlab)' | cut -d' ' -f1
+#1712280235
+pip list -l | rg '(^jupyter|^jupyterlab)'
+#1712280241
+pip list -l | rg '(^jupyter|^jupyterlab)' | cut -d' ' -f1
+#1712280858
+pycharm
+#1712280884
+paru -Ssss pycharm
+#1712280931
+paru -R pycharm-community-edition 
+#1712281034
+paru -S pycharm-professional 
+#1712281463
+paru -S python-{coverage,tox}
+#1712346337
+paru -Sss jamovi
+#1712346410
+flatpak search jamovi
+#1712346427
+flatpak install org.jamovi.jamovi
+#1712348871
+paru -R python-hid-parser
+#1712348900
+pyenv
+#1712348935
+env
+#1712348996
+ex
+#1712349015
+paru -Ss ex
+#1712349021
+paru -Si ex
+#1712349040
+paru -Si '^ex'
+#1712349048
+paru -Ssss '^ex'
+#1712349072
+vis
+#1712349871
+wzi
+#1712501410
+juliaup
+#1712501416
+paru -S juliaup
+#1712501436
+paru -Qs julia
+#1712501463
+paru -R julia
+#1712501476
+paru -S juliaup
+#1712501761
+juliaup
+#1712502611
+juliaup list
+#1712502616
+juliaup status
+#1712502620
+juliaup
+#1712502662
+juliaup add release
+#1712502690
+juliaup status
+#1712502695
+juliaup add lts
+#1712502701
+juliaup status
+#1712502715
+julia 
+#1712502779
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1712559525
+paru -R gdm-prime
+#1712559542
+paru -S gdm
+#1712559587
+sudo systemctl disable lightdm.service 
+#1712559605
+sudo systemctl enable gdm.service 
+#1712559624
+doas mkinitcpio -P
+#1712560153
+sudo systemctl disable gdm.service 
+#1712560164
+sudo systemctl enable lightdm.service 
+#1712560942
+docker image ls
+#1712561004
+ng
+#1712561013
+nvm list
+#1712561041
+nvm default
+#1712561080
+nvm ls
+#1712561083
+nvm lis
+#1712561100
+nvm current 
+#1712561109
+nvm ls
+#1712561117
+nvm use default
+#1712561137
+nvm default v20.11.1
+#1712561161
+nvm alias
+#1712561198
+nvm alias default v20.11.0
+#1712561207
+nvm current 
+#1712561214
+ng
+#1712561242
+nvm use default
+#1712561245
+ng
+#1712561278
+nvm alias default v20.11.1
+#1712561281
+nvm use default
+#1712561284
+ng
+#1712561298
+nvm ls
+#1712561305
+nvm use v18.17.1 
+#1712561307
+ng
+#1712561496
+cat profile_alldeb 
+#1712561514
+lvim profile_archnote 
+#1712561558
+juliaup
+#1712561565
+type -a juliaup
+#1712561580
+type -a julia
+#1712561595
+juliaup status
+#1712561603
+pyenv
+#1712561611
+juliaup status
+#1712561615
+type -a juliaup
+#1712561619
+juliaup status
+#1712561623
+juliaup list
+#1712561629
+pyenv
+#1712561637
+type -a pyenv
+#1712561672
+julia
+#1712601845
+pyenv
+#1712601862
+pyenv commands 
+#1712602731
+paru -Sss asciinema
+#1712602987
+paru -S asciinema
+#1712603705
+juliaup 
+#1712603721
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1712603792
+pip list -o | cut -f1 -d' ' |  awk '{if(NR>=3)print}'
+#1712603838
+pip list -o | cut -f1 -d' '
+#1712603866
+pip list -o | cut -f1 -d' ' | sed '1,2d'
+#1712603906
+pip list -o | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
+#1712603940
+pip list -lo | cut -f1 -d' ' |  sed '1,2d'
+#1712603957
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
+#1712604493
+pip list -l
+#1712604512
+pip list -l | sed '1,2d'
+#1712604530
+pip freeze -l
+#1712604549
+pip list -l | sed '1,2d'
+#1712604695
+pip freeze -l
+#1712604701
+pip freeze -l | wc -l
+#1712604706
+pip list -l | sed '1,2d' | wc -l
+#1712605321
+mkdir Lives
+#1712605396
+rg ./alldeb-history 'yt-dlp'
+#1712605412
+rg 'yd'  ./alldeb-history
+#1712605419
+rg 'yt-dlp'  ./alldeb-history
+#1712605423
+yt-dlp
+#1712605642
+paru -Sss yt-dlp
+#1712606219
+paru -Ss yt-dlp
+#1712606254
+yd
+#1712606930
+mkdir -p .config/yt-dlp
+#1712606978
+mkdir configs
+#1712606990
+yt-dlp.config
+#1712607200
+yt-dlp --list-formats https://www.youtube.com/watch?v=O26fDEnAukY&ab_channel=FernandaKipper%7CDev
+#1712607945
+yt-dlp -f 'bv*+ba' https://www.youtube.com/watch?v=O26fDEnAukY&ab_channel=FernandaKipper%7CDev
+#1712606994
+lvim yt-dlp.config
+#1712608399
+l -h
+#1712608584
+ydlmp4 https://www.youtube.com/watch?v=O26fDEnAukY&ab_channel=FernandaKipper%7CDev
+#1712608767
+yt-dlp -F --list-formats  https://www.youtube.com/watch?v=O26fDEnAukY&ab_channel=FernandaKipper%7CDev
+#1712608233
+lvim bash_aliases 
+#1712608875
+paru -Sss yt-dlp
+#1712608929
+paru -Rscd yt-dlp
+#1712608969
+paru -S yt-dlp-git
+#1712722995
+type -a yt-dlp
+#1712722999
+type -a yt-dlp.sh
+#1712723039
+sudo find / -type f -wholename '*yt-dlp*'
+#1712723116
+sudo ln -sf /usr/share/bash-completion/completions/yt-dlp /usr/share/bash-completion/completions/yd
+#1712723175
+sudo unlink /usr/share/bash-completion/completions/yd
+#1712728773
+flatpak update
+#1712728785
+paru -Sss plasma-desktop
+#1712805509
+ls |rg improved
+#1712807669
+eza
+#1712807678
+rustup
+#1712807694
+rustup update
+#1712807738
+rustup
+#1712807845
+rustup check
+#1712807870
+type -a rustc
+#1712807899
+paru -Sss rust
+#1712807991
+dust -h
+#1712808005
+dust -D
+#1712808010
+dust -h
+#1712808047
+dust -Db
+#1712808071
+tree
+#1712808078
+dust -Db
+#1712808081
+dust -Dbr
+#1712808085
+dust -DbR
+#1712808103
+dust -R
+#1712808113
+dust -RD
+#1712808137
+dust -h
+#1712808179
+du 
+#1712808183
+dust -h
+#1712808187
+dust -RD
+#1712808193
+du -h
+#1712808269
+paru -R npm
+#1712808274
+nvm
+#1712808276
+nvm ls
+#1712808287
+nvm use default
+#1712808308
+nvm alias default v20.12.0 
+#1712808313
+nvm use default
+#1712808317
+ng
+#1712808427
+paru -Si axel
+#1712811464
+paru -S axel
+#1712811518
+git clone git@github.com:MichaelAquilina/improved-workspace-indicator.git
+#1712811532
+lvim metadata.json 
+#1712811559
+cat Makefile 
+#1712811866
+cat install.sh 
+#1712811882
+rm install.sh 
+#1712811887
+ldl
+#1712811914
+rm -rf wekafiles
+#1712811933
+cat Dockerfile 
+#1712811937
+cat Makefile 
+#1712862360
+nvm ls
+#1712862376
+ng update
+#1712862414
+npm i -g @angular/cli@latest
+#1712862484
+npm i -g npm@latest
+#1712862531
+ng new landing-page
+#1712862639
+code .
+#1712862978
+ng generate component components/home
+#1712864992
+ng generate component components/header
+#1712865324
+git clone git@github.com:Fernanda-Kipper/landing-page-ssr.git
+#1712865352
+cat .gitkeep 
+#1712865411
+cp -r *.png ../../../landing-page/src/assets/
+#1712866228
+yarn
+#1712866290
+rm package-lock.json 
+#1712866303
+yarn start
+#1712883307
+uname -a
+#1712883317
+dss
+#1712897612
+npm install -g typescript@latest
+#1713151645
+rm bash_aliases 
+#1713151683
+cat $DOTBASH/profile_archnote 
+#1713151690
+ssh-add -l
+#1713151703
+ssh -T git@github.com
+#1713151718
+juliaup 
+#1713151725
+juliaup  list
+#1713151730
+juliaup status
+#1713151732
+pyenv
+#1713151740
+type -a pyenv
+#1713151763
+echo -e "${PATH//:/\\n}"
+#1713151838
+lvim ~/.bash_profile 
+#1713151898
+asdf
+#1713151904
+echo -e "${PATH//:/\\n}"
+#1713152470
+blueman 
+#1713152518
+blueman-services 
+#1713152527
+bluemoon 
+#1713152544
+blueman-applet 
+#1713152568
+sudo systemctl status blueman-mechanism.service 
+#1713152582
+!
+#1713152601
+sudo systemctl disable blueman-mechanism.service 
+#1713153063
+ll /etc/xdg/autostart/
+#1713153084
+sudo sed -i "s/NoDisplay=true/NoDisplay=false/g" /etc/xdg/autostart/*.desktop
+#1713153123
+ll /etc/xdg/autostart/*.desktop
+#1713153139
+ll /etc/xdg/autostart/blueman*
+#1713153157
+cat /etc/xdg/autostart/blueman.desktop 
+#1713153165
+sudo rm /etc/xdg/autostart/blueman.desktop 
+#1713153227
+lvim ~/blueman.desktop
+#1713153281
+mv blueman.desktop Test/
+#1713153337
+sudo systemctl enable blueman-mechanism.service 
+#1713153428
+echo -e "${PATH//:/\\n}"
+#1713153896
+cat argv.json 
+#1713153934
+echo -e "${PATH//:/\\n}"
+#1713153967
+lvim ~/.bash_profile 
+#1713154475
+ns tt
+#1713154518
+./tt
+#1713154526
+lvim tt
+#1713154539
+./tt
+#1713154562
+lvim tt
+#1713154646
+echo -e "${PATH//:/\\n}"
+#1713154663
+echo -e "${PATH//:/\\n}" | rg $HOME/bin
+#1713154677
+lvim ~/.bash_profile 
+#1713154982
+echo -e "${PATH//:/\\n}"
+#1713154999
+cat /etc/profile
+#1713155050
+cat /etc/profile.d/gawk.sh 
+#1713155118
+echo -e "${PATH//:/\\n}"
+#1713155169
+rustup update
+#1713155207
+rustup 
+#1713155216
+rustup show
+#1713155321
+echo -e "${PATH//:/\\n}"
+#1713155324
+asdf
+#1713155402
+rm -rf .anaconda\:q/
+#1713155420
+rm -rf .zshrc.bck 
+#1713155481
+rm .root_hist 
+#1713155523
+rm .gtkrc-2.0 
+#1713155540
+cat .gitconfig 
+#1713155644
+pyenv
+#1713155650
+echo -e "${PATH//:/\\n}"
+#1713155812
+lvim ~/.bash_profile 
+#1713155849
+echo -e "${PATH//:/\\n}"
+#1713155905
+lvim ~/.bash_profile 
+#1713155945
+echo -e "${PATH//:/\\n}"
+#1713155971
+lvim ~/.bash_profile 
+#1713155992
+echo -e "${PATH//:/\\n}"
+#1713156015
+pyenv
+#1713156035
+pyenv update
+#1713156149
+pyenv version
+#1713156152
+pyenv versions
+#1713156194
+type -a python
+#1713156201
+pyenv
+#1713156235
+pyenv whence
+#1713156278
+pyenv doctor
+#1713156297
+pyenv version
+#1713156302
+pyenv versions
+#1713156320
+pyenv global
+#1713156334
+pyenv global pypy
+#1713156350
+pyenv deactivate 
+#1713156358
+pyenv deactivate pypy
+#1713156368
+deactivate
+#1713156382
+pyenvdeactivate
+#1713156385
+pyenv deactivate
+#1713156401
+pyenv 
+#1713156433
+pyenv versions
+#1713156469
+pyenv deactivate
+#1713156486
+pyenv shims 
+#1713156492
+pyenv
+#1713156509
+pyenv virtualenvs
+#1713156529
+source deactivate
+#1713156555
+pyenv versions
+#1713156567
+pyenv activate system
+#1713156592
+pyenv virtualenv-delete pypy
+#1713156602
+pyenv version
+#1713156608
+pyenv versions
+#1713156619
+pyenv
+#1713156634
+pyenv rehas
+#1713156636
+pyenv rehash 
+#1713156643
+pyenv
+#1713156651
+pyenv versions
+#1713156686
+pyenv global system
+#1713156690
+pyenv
+#1713156695
+pyenv verions
+#1713156702
+pyenv versions
+#1713156759
+pyenv virtualenv pypy3.10-7.3.15 pypy
+#1713156777
+pyenv versions
+#1713156794
+pyenv update
+#1713157058
+pyenv versions
+#1713157067
+pyenv activate pypy
+#1713157072
+pyenv dectivate pypy
+#1713157075
+pyenv deactivate pypy
+#1713157083
+pyenv versions
+#1713157091
+pyenv activate pypy
+#1713157100
+pyenv versions
+#1713157140
+pip list -l | sed '1,2d'
+#1713157167
+pip list -l | sed '1,2d' | cut -d' ' -f1
+#1713157198
+pip list -l | sed '1,2d' | cut -d' ' -f1 > pacotesPy3.txt
+#1713157202
+cat pacotesPy3.txt 
+#1713157319
+pip install -U pip
+#1713157343
+pip list -l
+#1713157365
+pip install -r pacotesPy3.txt -U
+#1713159918
+pip list -l
+#1713159950
+cat pacotesPy3.txt
+#1713159993
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1
+#1713160050
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
+#1713160094
+pyenv
+#1713160098
+pyenv versions
+#1713160110
+pyenv activate pypy
+#1713160117
+pip list -l
+#1713160125
+cat pacotesPy3.txt 
+#1713160448
+python --versiuon
+#1713160724
+uname -a
+#1713160743
+git diff
+#1713160925
+paru -Sss pypy
+#1713161550
+pyenv 
+#1713161553
+pyenv verions
+#1713161556
+pyenv versions
+#1713161587
+pyenv virtualenv latest 3.12.2 
+#1713161605
+pyenv virtualenv 3.12.2 latest
+#1713161613
+pyenv versions
+#1713161623
+pyenv activate latest 
+#1713161631
+pip list -l
+#1713161643
+pip install -U setuptools
+#1713161667
+pip install -U certifi
+#1713161679
+pip install -U sqlite
+#1713161759
+pip install -U sqlite4
+#1713161768
+pip install -U vc
+#1713161785
+pip install -U wheel
+#1713161796
+django
+#1713161802
+pip install -U django
+#1713161826
+pip freeze
+#1713161927
+mkdir django-yt
+#1713161941
+pycharm-eap .
+#1713161980
+paru -Qs pych
+#1713161992
+paru -Rs pycharm-eap 
+#1713162004
+paru -Sss pycharm
+#1713162054
+paru -S pycharm-community-edition 
+#1713162082
+pycharm .
+#1713162738
+pyenv deactivate latest
+#1713162860
+rm -rf pythonProject
+#1713162867
+rm -rf main.py 
+#1713163036
+pip freeze -
+#1713163146
+type -a python
+#1713163155
+type -a python3
+#1713163162
+type -a pip
+#1713163175
+deactivate
+#1713163216
+pyenv
+#1713163239
+pip freeze
+#1713163274
+django-admin startproject mysite
+#1713160153
+cat pacotesPy3.txt | xargs -n1 pip install -U
+#1713163388
+cat pacotesPy3.txt
+#1713163534
+pyenv activate latest 
+#1713163548
+pip freeze 
+#1713163578
+manage.py runserver
+#1713163585
+./manage.py runserver
+#1713163617
+python manage.py migrate
+#1713163717
+pyenv activate pypy
+#1713163721
+pip freeze
+#1713163739
+cat pacotesPy3.txt 
+#1713163776
+pip list -l
+#1713163805
+pip freeze | cut -d== -f
+#1713163808
+pip freeze | cut -d== -f1
+#1713163814
+pip freeze | cut -d'==' -f1
+#1713163825
+pip freeze | cut -d'=' -f1
+#1713163853
+pip freeze | cut -d'=' -f1 > pacotesPy3_test.txt
+#1713163863
+diff pacotesPy3.txt pacotesPy3_test.txt 
+#1713163884
+pip install -U wheel
+#1713163893
+pip install -U ujson
+#1713163905
+pip install -U setuptools
+#1713163916
+pip install -U readline
+#1713163930
+pip install -U python-lsp-server
+#1713163942
+pip install -U python-lsp-rpc
+#1713163961
+pip install -U python-lsp-jsonrpc
+#1713163969
+diff pacotesPy3.txt pacotesPy3_test.txt 
+#1713163983
+pip install -U exceptiongroup
+#1713163991
+pip install -U greenlet
+#1713164006
+pip install -U hpy
+#1713164027
+pip list -l | rg jupyter
+#1713164052
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1713164109
+pip freeze | cut -d'=' -f1
+#1713164121
+pip freeze | cut -d'=' -f1 > pacotesPy3_test.txt 
+#1713164125
+diff pacotesPy3.txt pacotesPy3_test.txt 
+#1713164142
+pip install -U jupyter_client
+#1713164150
+pip install -U jupyter_core
+#1713164173
+pip install -U jupyter_dashboard
+#1713164180
+diff pacotesPy3.txt pacotesPy3_test.txt 
+#1713164197
+pip install -U pip
+#1713164213
+pip install -U jupyterlab
+#1713164223
+pip install -U jupyterlab_server
+#1713164232
+pip install -U jupyterlab_templates
+#1713164242
+pip install -U jupyterlab_widgets
+#1713164267
+pip list -l | rg notebook
+#1713164289
+pip install -U numpy pandas
+#1713164315
+rm pacotesPy3*
+#1713164320
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1713164346
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1713164371
+notebook
+#1713164378
+jupyter notebook
+#1713164558
+pip install -U ipykernel
+#1713164569
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1713164663
+pip install -U jupyterlab 
+#1713163624
+./manage.py runserver
+#1713164672
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1713164977
+type -a jupyter-lab
+#1713165008
+pyenv deactivate latest
+#1713165030
+jupyter lab
+#1713165150
+pip install -U jupyter
+#1713165203
+pip list -l
+#1713165241
+jupyter kernelspec list
+#1713165296
+pyenv activate pypy
+#1713165299
+jupyter
+#1713165329
+jupyter notebook
+#1713165350
+jupyter kernelspec list
+#1713165368
+pip install -U ikernel
+#1713165374
+pip install -U ipykernel
+#1713165399
+pip install -U ipython
+#1713165454
+pyenv deactivate pypy
+#1713165463
+pyenv install jupyterlab
+#1713165602
+cat Pipfile 
+#1713165511
+pipenv install git+git://github.com/jupyterlab/jupyterlab.git#egg=jupyterlab
+#1713165695
+rm -rf albano-z1f-C5gL
+#1713165711
+pyenv activate pypy
+#1713165754
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1713165898
+pyenv activate pypy
+#1713165911
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1713166013
+pyenv deactivate pypy
+#1713166156
+pyenv activate pypy
+#1713166162
+pip freeze
+#1713166167
+pip freese
+#1713166169
+pip freeze
+#1713166245
+pip freeze | wc -l
+#1713166252
+pip freeze | wc -l
+#1713166020
+jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
+#1713166315
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1713166449
+jupyter lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1713166496
+pip list -l
+#1713166636
+ipykernel
+#1713166647
+python -m ipykernel
+#1713166684
+ipython 
+#1713166819
+ipython list
+#1713166854
+ipython kernel list
+#1713166975
+ipython
+#1713166998
+jupyter lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1713167068
+jupyter kernelspec list
+#1713167082
+jupyter kernelspec uninstall jupyter
+#1713167180
+ipython
+#1713167247
+jupyter lab --port 15000 --notebook-dir /home/albano  -
+#1713167254
+jupyter lab --port 15000 --notebook-dir /home/albano
+#1713167273
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1713167356
+pip freeze
+#1713167535
+pyenv deactivate pypy
+#1713167548
+pyenv activate latest 
+#1713167557
+pip install -U pip
+#1713167563
+pip install -U ipython
+#1713167574
+pip install -U jupyter
+#1713167598
+pip install -U jupyter-lab
+#1713167602
+pip install -U jupyterlab
+#1713167631
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1713167720
+pyenv deactivate latest
+#1713167723
+pyenv
+#1713167727
+pyenv versions
+#1713167748
+pyenv virtualenv-delete pypy
+#1713167757
+pyenv versions
+#1713167792
+pyenv virtualenv pypy3.10
+#1713167804
+pyenv versions
+#1713167810
+pyenv virtualenv pypy3
+#1713167832
+pyenv uninstall pypy3.10-7.3.15 
+#1713167837
+pyenv versions
+#1713167841
+pyenv
+#1713167879
+pyenv whence
+#1713167978
+pyenv hooks 
+#1713168034
+pyenv install --list
+#1713168158
+pyenv install anaconda3-2024.02-1
+#1713168309
+pyenv versions
+#1713235025
+./manage.py startapp polls
+#1713235039
+pyenv activate latest 
+#1713235066
+./manage.py startapp polls
+#1713236000
+./manage.py runserver
+#1713242444
+pyenv deactivate latest 
+#1713242470
+bridge
+#1713242476
+bridge monitor
+#1713315675
+sudo pacman -Syyu
+#1713397888
+pyenv 
+#1713397898
+pyenv versions
+#1713397931
+pyenv virtualenv testPyAPI
+#1713397941
+pyenv virtualenv-delete testPyAPI
+#1713397961
+pyenv virtualenv testPyAPI 3.12.2
+#1713397975
+pyenv virtualenv
+#1713398001
+pyenv
+#1713398045
+pyenv whence 
+#1713398060
+pyenv install --list
+#1713398083
+pyenv install 3.12.3
+#1713404709
+sudo btrfs su list /
+#1713416432
+pyenv install --list
+#1713416815
+pyenv
+#1713416833
+pyenv update
+#1713416885
+pyenv
+#1713416892
+pyenv versions
+#1713416912
+pyenv global 3.12.2
+#1713416945
+pip install --list
+#1713416953
+pip list -l
+#1713416961
+pip freeze -
+#1713416963
+pip freeze
+#1713416984
+pip install -U pip
+#1713416991
+pip install -U poetry
+#1713417007
+pip freeze
+#1713417100
+poetry
+#1713417131
+pyenv verions
+#1713417135
+pyenv versions
+#1713417167
+pyenv virtualenv 
+#1713417210
+pyenv virtualenv anaconda3-2024.02-1 testAnac
+#1713417241
+pyenv activate testAnac
+#1713417249
+pip list -l
+#1713417255
+pip install -U pip
+#1713417309
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
+#1713417321
+pip list -l
+#1713417351
+type -a python
+#1713417380
+pyenv global anaconda3-2024.02-1
+#1713417407
+pip list
+#1713417425
+pyenv deactivate testAnac
+#1713417459
+pyenv global 3.12.2
+#1713417467
+pyenv global anaconda3-2024.02-1
+#1713417470
+pyenv global 3.12.2
+#1713417490
+pyenv versions
+#1713417505
+pyenv activate testAnac
+#1713417527
+pip list -k
+#1713417529
+pip list -l
+#1713417544
+pip install -U poetry
+#1713417562
+poetry
+#1713417610
+poetry completions bash
+#1713417666
+poetry completions bash > $DOTFILES/bash-completion/poetry
+#1713417742
+vlink
+#1713418060
+lvim .inputrc
+#1713418105
+pyenv activate testAnac
+#1713418123
+poetry
+#1713418236
+lvim .inputrc
+#1713418289
+pyenv activate testAnac
+#1713418303
+poetry 
+#1713418308
+fastfetch 
+#1713418362
+zsh
+#1713418564
+pyenv activate testAnac
+#1713418610
+doas ln -sf /home/albano/github/dotfiles/bash-completion/poetry /usr/share/bash-completion/completions/poetry
+#1713418839
+paru -Qi bash-completion
+#1713418887
+docker images
+#1713418970
+docker
+#1713419006
+docker image pull 
+#1713419013
+docker image pull nginx:alpine
+#1713419022
+docker pull nginx:alpine
+#1713419037
+docker login
+#1713419067
+sudo docker login
+#1713419221
+docker pull nginx:alpine
+#1713419245
+sudo systemctl daemon-reload 
+#1713419255
+docker pull nginx:alpine
+#1713419396
+docker pull nginx
+#1713419428
+sudo docker login
+#1713419450
+docker pull nginx
+#1713419493
+docker ps
+#1713419496
+docker ps --all 
+#1713419514
+docker container rm test_py
+#1713419518
+docker ps --all 
+#1713419529
+docker images
+#1713419533
+docker pull nginx
+#1713419557
+docker
+#1713419563
+docker -D
+#1713419579
+sudo docker pull nginx
+#1713419622
+docker login
+#1713419630
+sudo docker login
+#1713419717
+docker pull allbano/sinapsense
+#1713420884
+poetry init
+#1713420958
+pyenv deactivate testAnac
+#1713420969
+pyenv activate testAnac
+#1713420972
+env
+#1713421038
+asdf
+#1713421045
+asdf list
+#1713421098
+asdf list all python
+#1713421853
+type -p poetry 
+#1713421865
+lvim $(type -p poetry )
+#1713421889
+lvim $(type -p poetr)
+#1713421897
+lvim $(type -p poetry)
+#1713422000
+ll | rg poetry
+#1713422006
+lvim poetry 
+#1713422124
+pyenv 
+#1713422129
+lvim pyenv 
+#1713422155
+pyenv 
+#1713422295
+pyenv deactivate testAnac
+#1713553553
+yt-dlp 
+#1713571816
+LL
+#1713571843
+pyenv 
+#1713571857
+pyenv root
+#1713571863
+pyenv version
+#1713571865
+pyenv versions
+#1713571874
+pyenv global system
+#1713571877
+pyenv versions
+#1713572048
+pyenv version
+#1713572050
+pyenv versions
+#1713572078
+pyenv activate testAnac
+#1713572100
+python -V
+#1713572118
+pyenv global anaconda3-2024.02-1/envs/testAnac 
+#1713572121
+python -V
+#1713572134
+pyenv 
+#1713572142
+pyenv shims 
+#1713572147
+pyenv 
+#1713572159
+pyenv whence 
+#1713572174
+pyenv whence --path
+#1713572191
+pyenv whence .pyenv
+#1713572199
+pyenv which 
+#1713572211
+pyenv which --nosystem
+#1713572239
+pyenv which python
+#1713572244
+pyenv which pip
+#1713572255
+pyenv whence python
+#1713572270
+pyenv global system
+#1713572279
+pyenv local anaconda3-2024.02-1/envs/testAnac 
+#1713572287
+pyenv which python
+#1713572291
+pyenv which pip
+#1713572295
+pip versions
+#1713572298
+pip version
+#1713572306
+pip list
+#1713572320
+poetry
+#1713572350
+pyenv deactivate testAnac
+#1713572365
+pyenv deactivate 
+#1713572375
+pyenv deactivate anaconda3-2024.02-1/envs/testAnac
+#1713572388
+pyenv local
+#1713572401
+pyenv local --unset
+#1713579084
+paru -Sss modular
+#1713579100
+paru -Si modular
+#1713579109
+paru -S modular
+#1713579154
+modular update
+#1713579160
+modular update modular
+#1713579165
+modular
+#1713579196
+modular list-packages
+#1713579238
+modular auth
+#1713579292
+paru -R modular
+#1713579302
+curl -s https://get.modular.com | sh -
+#1713579309
+curl -s https://get.modular.com | bash -
+#1713579380
+paru -S mojo
+#1713579409
+paru -Si mojo-git
+#1713579424
+paru -S libmd
+#1713579431
+paru -S icu
+#1713579436
+paru -S xr
+#1713579443
+paru -S xz
+#1713579456
+paru -S glibc
+#1713579463
+paru -S gcc-libs
+#1713579468
+ncurses
+#1713579474
+paru -S ncurses
+#1713579482
+paru -S zlib
+#1713579491
+paru -S libbsd
+#1713579498
+paru -S mojo
+#1713579528
+modular
+#1713579545
+paru -R modular
+#1713579602
+python <(curl -sSL https://raw.githubusercontent.com/Sharktheone/arch-mojo/main/src/install.py)
+#1713579639
+mojo
+#1713579702
+rm -rf arch-mojo
+#1713583640
+mkdir pythonando
+#1713583675
+yt-dlp -f 'bv*+ba' https://www.youtube.com/watch?v=t__DAj3OAro&ab_channel=pythonando
+#1713584093
+yt-dlp -f 'bv*+ba' https://www.youtube.com/watch?v=OV2EKT4lACY&ab_channel=pythonando
+#1713584174
+yt-dlp --list-formats https://www.youtube.com/watch?v=t__DAj3OAro&ab_channel=pythonando
+#1713584278
+yt-dlp -f 'bv*[ext=mp4]+ba' https://www.youtube.com/watch?v=OV2EKT4lACY&ab_channel=pythonando
+#1713584322
+rm 'AULA 2 ｜ PYSTACK WEEK 10 [OV2EKT4lACY].f616.mp4.*
+#1713584327
+rm 'AULA 2 ｜ PYSTACK WEEK 10 [OV2EKT4lACY].f616.mp4.*'
+#1713584337
+rm -rf 'AULA 2 ｜ PYSTACK WEEK 10 [OV2EKT4lACY].f616.mp4.*'
+#1713584347
+rm -rf 'AULA 2 ｜ PYSTACK WEEK 10 [OV2EKT4lACY].f616.mp4.part' 
+#1713584350
+rm -rf 'AULA 2 ｜ PYSTACK WEEK 10 [OV2EKT4lACY].f616.mp4.ytdl' 
+#1713584483
+yt-dlp -f 'bv*[ext=mp4]+ba' https://www.youtube.com/watch?v=t__DAj3OAro&t=349s&ab_channel=pythonando
+#1713584531
+yt-dlp -f 'bv*[ext=mp4][height=1980]+ba' https://www.youtube.com/watch?v=t__DAj3OAro&t=349s&ab_channel=pythonando
+#1713584545
+yt-dlp --list-formats https://www.youtube.com/watch?v=t__DAj3OAro&ab_channel=pythonando
+#1713584567
+yt-dlp -f 'bv*[ext=mp4][height=1080]+ba' https://www.youtube.com/watch?v=t__DAj3OAro&t=349s&ab_channel=pythonando
+#1713584705
+yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=t__DAj3OAro&t=349s&ab_channel=pythonando
+#1713584809
+rm 'AULA 1 ｜ PYSTACK WEEK 10 [t__DAj3OAro].webm' 
+#1713584812
+yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=t__DAj3OAro&t=349s&ab_channel=pythonando
+#1713584862
+rm 'AULA 2 ｜ PYSTACK WEEK 10 [OV2EKT4lACY].webm' 
+#1713584912
+yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=OV2EKT4lACY&t=1s&ab_channel=pythonando
+#1713585107
+yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=m0QFwMY2uyQ&t=2s&ab_channel=pythonando
+#1713814913
+nvm ls
+#1713814919
+nvm
+#1713814929
+nvm install --lts
+#1713814944
+npm i -g npm@latest
+#1713814957
+nvm ls
+#1713815052
+sudo pacman -Syyu
+#1713815066
+paru -Syyuu
+#1713815087
+paru -Scccc
+#1713815139
+rm -rf .
+#1713815149
+rm -rf ./*
+#1713815188
+lsk
+#1713815241
+sudo btrfs sub show /
+#1713815254
+sudo btrfs sub list /
+#1713815300
+yu
+#1713815328
+yuu
+#1713815350
+yay -Syyuu
+#1713815830
+pyenv
+#1713815861
+pyenv versions
+#1713815951
+pyenv version-origin
+#1713815964
+pyenv version
+#1713815974
+pyenv update
+#1713816033
+gl -f
+#1713816157
+pyenv virtualenvs
+#1713816164
+pyenv
+#1713816179
+pyenv commands
+#1713816183
+pyenv
+#1713816246
+pyenv install --list
+#1713816269
+pyenv virtualenvs
+#1713816284
+pyenv versions
+#1713816287
+pyenv virtualenvs
+#1713816328
+mkdir healing
+#1713816349
+pyenv virtualenvs
+#1713816352
+pyenv versions
+#1713816378
+pyenv virtualenv 3.12.3 healing
+#1713816392
+pyenv virtualenvs
+#1713816401
+pyenv activate healing
+#1713816480
+pip freeze
+#1713816484
+pip list -l
+#1713816492
+pip install django
+#1713816499
+pip list -l
+#1713816520
+pip install pillow
+#1713816906
+django-admin
+#1713816917
+django-admin startproject
+#1713816941
+django-admin startproject healing .
+#1713816954
+code .
+#1713817518
+pip install black
+#1713817537
+pip install click
+#1713817544
+pip list -l
+#1713817602
+pyenv shell healing
+#1713817613
+pyenv
+#1713817623
+pyenv activate healing 
+#1713817638
+pyenv deactivate healing 
+#1713817641
+pyenv activate healing 
+#1713817686
+black manage.py 
+#1713818021
+pyenv shell healing
+#1713818123
+pip install blue
+#1713818393
+blue .
+#1713839551
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
+#1713839526
+sudo mkinitcpio -P
+#1713839570
+flatpak update
+#1713839652
+sudo pacman -Syyu
+#1713840208
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
+#1713840347
+systemctl status
+#1713840362
+pyenv activate healing 
+#1713840368
+pip list -l
+#1713840371
+pip list -lo
+#1713840380
+pip list -l
+#1713840574
+python manage.py runserver
+#1713840882
+./manage.py startapp usuarios
+#1713843658
+paru -Sss raycast
+#1713843675
+flatpak raicast
+#1713843679
+flatpak search raicast
+#1713843684
+flatpak search raycast
+#1713843688
+flatpak search raykast
+#1713845243
+git diff
+#1713845286
+gst -s
+#1713845304
+gaa
+#1713845323
+git restore --staged bash-completion/poetry 
+#1713845349
+gcm "Updated archnote profile and zshrc."
+#1713845354
+gaa
+#1713845356
+gsgt
+#1713845386
+gcm "Added portry autocomplete."
+#1713845400
+poetry 
+#1713845430
+pyenv deactivate healing 
+#1713980630
+paru -R nodejs
+#1713980642
+paru -R yarn
+#1713980650
+paru -R semver
+#1713980656
+paru -R gulp
+#1713980664
+paru -R node-gyp
+#1713980671
+paru -R nodejs
+#1713980675
+paru -R semver
+#1713980682
+paru -R nodejs
+#1713980692
+paru -R nodejs-nopt
+#1713980696
+paru -R nodejs
+#1713981214
+fastfetch 
+#1714069490
+neofetch 
+#1714069540
+paru -Rscdd neofetch 
+#1714069606
+sudo btrfs filesystem show
+#1714069634
+lsk
+#1714069738
+lsblk --output NAME,TRAN,FSTYPE,MAJ:MIN,UUID,MODEL,TYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINT
+#1714069756
+lsblk --output NAME,TRAN,FSTYPE,MAJ:MIN,UUID,TYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINT
+#1714069766
+lsk
+#1714069797
+lsblk --output NAME,TRAN,FSTYPE,MAJ:MIN,RM,UUID,TYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINT
+#1714069808
+lsblk --output NAME,TRAN,FSTYPE,MAJ:MIN,RM,UUID,FSUSE%,FSAVAIL,SIZE,MOUNTPOINT
+#1714069850
+lsblk --output NAME,MAJ:MIN,SIZE,TYPE,MOUNTPOINTS
+#1714069862
+lsblk --output NAME,MAJ:MIN,SIZE,TYPE,MOUNTPOINTS,UUID
+#1714069869
+lsk
+#1714069872
+lsblk --output NAME,MAJ:MIN,SIZE,TYPE,MOUNTPOINTS,UUID
+#1714069885
+lsblk --output NAME,MAJ:MIN,SIZE,TYPE,MOUNTPOINTS,TYPE,UUID
+#1714069908
+lsblk --output NAME,MAJ:MIN,SIZE,FSTYPE,TYPE,MOUNTPOINTS,TYPE,UUID
+#1714069913
+lsk
+#1714069919
+lsblk --output NAME,MAJ:MIN,SIZE,FSTYPE,TYPE,MOUNTPOINTS,TYPE,UUID
+#1714069972
+lsblk --output NAME,MAJ:MIN,FSTYPE,TYPE,MOUNTPOINTS,UUID
+#1714069991
+lsblk --output NAME,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,UUID
+#1714069996
+lsk
+#1714069998
+lsblk --output NAME,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,UUID
+#1714070017
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,UUID
+#1714070026
+lsk
+#1714070031
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,UUID
+#1714070075
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,SYZE,UUID
+#1714070081
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,SIZE,UUID
+#1714070086
+lak
+#1714070088
+lsk
+#1714070092
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,SYZE,UUID
+#1714070094
+lsk
+#1714070097
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,SIZE,UUID
+#1714070109
+lsk
+#1714070111
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,SIZE,UUID
+#1714070147
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,FSUSE,SIZE,UUID
+#1714070152
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,FSUSE%,SIZE,UUID
+#1714070167
+lsk
+#1714070177
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,FSUSE%,FSAVAIL,SIZE,UUID
+#1714070195
+lvim ~/.bash_aliases 
+#1714070338
+lsk
+#1714070340
+lsku
+#1714070380
+lsblk -A
+#1714070388
+lsblk -l
+#1714070400
+lsblk -H
+#1714070420
+lsblk -N
+#1714070445
+gaa
+#1714070494
+gcm "Updated lsk alias and added lsku alias."
+#1714070525
+btn
+#1714070531
+top
+#1714070720
+cargo install --list
+#1714070723
+btm
+#1714070730
+exot
+#1714070737
+btm
+#1714094983
+fastfetch 
+#1714095110
+yt-dlp 
+#1714095293
+cat /etc/pacman.conf
+#1714095304
+cat /etc/pacman.d/mirrorlist
+#1714095312
+sudo lvim /etc/pacman.d/mirrorlist
+#1714095446
+paru -Si yt-dlp
+#1714095479
+ls -l
+#1714095487
+npm 
+#1714095501
+npm view
+#1714095514
+npm 
+#1714095561
+npm i -g nextjs
+#1714095591
+paru -S yt-dlp-git
+#1714096906
+pyenv versions
+#1714097211
+yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=vxfouMYa9dM&ab_channel=pythonando
+#1714098915
+exi
+#1714113359
+paru -Sss xpdf
+#1714113372
+paru -S xpdf
+#1714116368
+sudo systemctl daemon-reload 
+#1714116499
+paru -S cups-pdf
+#1714116542
+sudo systemctl restart cups.service 
+#1714116547
+sudo systemctl restart cups.socket 
+#1714116614
+sudo lpadmin -p MyPDFPrinter /usr/lib/cups/filter/pdftops -o "PageSize=A4"
+#1714116635
+sudo lpadmin -p "MyPDFPrinter" /usr/lib/cups/filter/pdftops -o "PageSize=A4"
+#1714116692
+sudo lpadmin -p "MyPDFPrinter" /usr/lib/cups/filter/pdftops
+#1714116704
+sudo lpadmin -p "MyPDFPrinter"
+#1714116766
+sudo lpadmin -p MyPDFPrinter "/usr/lib/cups/filter/pdftops" -o "PageSize=A4"
+#1714116908
+sudo systemctl status cups
+#1714117009
+sudo lpadmin -p MyPDFPrinter -o "PageSize=A4"
+#1714117014
+sudo systemctl restart cups.socket 
+#1714117018
+sudo systemctl restart cups
+#1714117022
+sudo systemctl restart cups.service 
+#1714117069
+sudo lpadmin -p MyPDFPrinter "/usr/lib/cups/filter/pdftops" -o "PageSize=A4"
+#1714117100
+sudo lpadmin -p MyPDFPrinter -L "/usr/lib/cups/filter/pdftops" -o "PageSize=A4"
+#1714117105
+sudo systemctl restart cups.service 
+#1714117136
+sudo lpadmin
+#1714117157
+sudo lpadmin -u
+#1714117167
+sudo lpadmin -u allow:all
+#1714119626
+yt-dlp -U
+#1714119705
+pyenv 
+#1714119736
+pyenv versions
+#1714119780
+pyenv local 3.12.3
+#1714119789
+pyenv versions
+#1714119801
+pyenv 
+#1714119815
+pyenv latest
+#1714119833
+pyenv which
+#1714119845
+pyenv local
+#1714119866
+pyenv local --unset 
+#1714119872
+pyenv versions
+#1714184223
+sudo pacman 
+#1714184230
+sudo pacman -h
+#1714184252
+sudo pacman -Q
+#1714184256
+sudo pacman -h
+#1714184265
+paru -h
+#1714184288
+paru
+#1714184336
+paru -Sss onlyoffice
+#1714184351
+paru -Sss office
+#1714185848
+code .
+#1714185851
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
+#1714261488
+bat config 
+#1714261522
+ssh alldeb
+#1714261887
+reset
+#1714262080
+dirname
+#1714262083
+dirname .
+#1714262090
+dirname ~
+#1714262101
+basename ~
+#1714262417
+tree -L 1
+#1714262574
+trap -l
+#1714262659
+ps
+#1714262720
+stty -echo
+#1714262732
+stty -echosttye +echo
+#1714262739
+stty +echo
+#1714262748
+stty echo
+#1714263728
+sct
+#1714263782
+sst
+#1714263946
+time for (( i=1; i<20; i++ )) { echo i }
+#1714263952
+time for (( i=1; i<20; i++ )) { echo i; }
+#1714263966
+time for (( i=1; i<20; i++ )) { echo $i; }
+#1714264160
+time for (( i=1; i<20; i++ )) { > "arq$i"; }
+#1714264208
+rm arq*
+#1714264217
+grep tt
+#1714264223
+grep tt *
+#1714264226
+cat tt
+#1714264384
+wc -l < tt
+#1714264430
+wc -l < ./tt
+#1714264480
+time cat tt | wc -l
+#1714264484
+wc -l < ./tt
+#1714264487
+time wc -l < ./tt
+#1714264907
+hexdump -x
+#1714264918
+hexdump -x <<< "$IFS"
+#1714264965
+ls *
+#1714264995
+echo *
+#1714265053
+find . -maxdepth 1
+#1714265068
+find $(pwd) -maxdepth 1
+#1714265089
+find ~/Test -maxdepth 1
+#1714265357
+lvim bashrc
+#1714265374
+lvim ~/.bash_profile 
+#1714265412
+rciy
+#1714265426
+tt
+#1714265450
+echo -e "${PATH//:/\\n}"
+#1714265473
+tt
+#1714265474
+echo -e "${PATH//:/\\n}"
+#1714265529
+lvim ~/.bash_profile 
+#1714265616
+tt
+#1714265629
+echo $?
+#1714265642
+echo -e "${PATH//:/\\n}"
+#1714265733
+ps au | grep bash
+#1714265810
+ps au | grep '[b]ash'
+#1714265876
+expr
+#1714265882
+expr 3 + 3
+#1714266494
+env
+#1714266521
+basename $HG
+#1714266527
+dirname $HG
+#1714266535
+hg
+#1714266742
+basename tt
+#1714266747
+dirname tt
+#1714266756
+basename help
+#1714266761
+dirname help
+#1714266772
+basename bash
+#1714266774
+basename zsh
+#1714266825
+echo ${zsh%/*}
+#1714266836
+echo ${hg%/*}
+#1714266841
+echo ${HG%/*}
+#1714266890
+echo ${HG##*/}
+#1714266914
+echo ${HG%/*} #dirname
+#1714266921
+echo ${HG##*/} #basename
+#1714268921
+pyenv versions
+#1714268953
+pyenv virtualenvs
+#1714268995
+pyenv virtualenv 3.12.3 cadUsers
+#1714269011
+pyenv activate cadUsers
+#1714269024
+mkdir cadUsers
+#1714269034
+pip list -l
+#1714269053
+pip install wheel django
+#1714269063
+pip list -lo
+#1714269067
+pip list -l
+#1714269090
+django-admin startproject cadUsers
+#1714269141
+django-admin startapp app_cad_users
+#1714269235
+l;
+#1714269263
+mv cadUsers ..
+#1714269292
+mv cadUsers cadUsuarios
+#1714269300
+mv cadUsers ..
+#1714269306
+rm cadUs
+#1714269311
+rm cadUsuarios/
+#1714269317
+rm -rf cadUsuarios
+#1714269324
+code .
+#1714269327
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
+#1714280679
+python manage.py runserver
+#1714281300
+python ./manage.py runserver
+#1714281722
+python manage.py runserver
+#1714283230
+python manage.py makemigration
+#1714283250
+python manage.py makemigrations
+#1714283393
+python manage.py migrate
+#1714284535
+python manage.py runserver
+#1714284705
+python manage.py makemigrations
+#1714284722
+python manage.py migrate
+#1714284739
+python manage.py runserver
+#1714285122
+python manage.py makemigrations
+#1714285128
+python manage.py migrate
+#1714285132
+python manage.py runserver
+#1714286900
+pyenv deactivate cadUsers
+#1714286912
+pyenv virtualenv-delete cadUsers
+#1714286926
+pyenv versions
+#1714288729
+yt-dlp
+#1714288787
+paru -Qs yt-dlp
+#1714288797
+paru -Rscdd yt-dlp
+#1714288802
+paru -Rscdd yt-dlp-git 
+#1714288816
+paru -Scccc
+#1714310622
+sct
+#1714310702
+paru -R python-async_generator 
+#1714310712
+sct status
+#1714310660
+tmux new-ses -s tty0
+#1714310744
+sct status
+#1714310789
+sudo systemctl daemon-reload 
+#1714310798
+sct status
+#1714310894
+sct
+#1714310919
+sct status
+#1714310946
+journalctl -xe
+#1714311065
+sudo mkinitcpio -P
+#1714311109
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+#1714310757
+tmux new-ses -s tty0
+#1714311131
+reboot
+#1714311191
+sudo systemctl status 
+#1714311238
+sudo systemctl list-units --failed
+#1714311265
+paru -Sss gdm-prime
+#1714311298
+paru -S gdm-prime libgdm-prime
+#1714311417
+paru -Qs optimus
+#1714311446
+paru -Rs optimus-manager{,-qt}
+#1714311459
+paru -Rc optimus-manager{,-qt}
+#1714311480
+reboot
+#1714311530
+paru -S --needed optimus-manager{,-qt}
+#1714311554
+paru -Ss optimus-manager{,-qt}
+#1714311567
+paru -Ss optimus-manager
+#1714311602
+paru -Ss optimus-manager{,-qt}
+#1714311609
+paru -S optimus-manager{,-qt}
+#1714311692
+reboot
+#1714311737
+sudo systemctl status 
+#1714311763
+sudo systemctl enable gdm.service 
+#1714311768
+reboot
+#1714311888
+sudo systemctl status blueman-mechanism.service 
+#1714311899
+sudo systemctl disable blueman-mechanism.service 
+#1714311940
+cat /etc/xdg/autostart/blueman.desktop 
+#1714311963
+sudo rm /etc/xdg/autostart/blueman.desktop 
+#1714312059
+sudo systemctl disable gdm.service 
+#1714312081
+sudo systemctl enable lightdm.service 
+#1714312164
+paru -Sss gns3
+#1714356260
+fastfetch 
+#1714356297
+paru -Sss gns3
+#1714356340
+paru -S gns3-{gui,server}
+#1714356459
+lvim ~/.bash_aliases 
+#1714356547
+sudo ln -sf $DOTFILES/bash-completion/systemctl /etc/bash_completion.d/systemctl
+#1714356573
+git restore bash_aliases 
