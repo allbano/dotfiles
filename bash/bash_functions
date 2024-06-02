@@ -46,11 +46,9 @@ updateDotfiles() {
 
 
 git_current_branch() {\
-  if ! git branch --show-current &> /dev/null; then
+   [[ $(git branch &>/dev/null;echo $?) -eq 0  ]] && \
+    git branch | head -n1 | colrm 1 2  | xargs -I BRANCH echo -n BRANCH  || \
     echo "Este diretório não é um repositório git!"
-    else
-      git branch --show-current | xargs -I BRANCH echo -n BRANCH 
-  fi
 }
 
 
