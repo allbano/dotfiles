@@ -7233,3 +7233,1031 @@ lvim ~/.bash_aliases
 sudo ln -sf $DOTFILES/bash-completion/systemctl /etc/bash_completion.d/systemctl
 #1714356573
 git restore bash_aliases 
+#1716862036
+lvim ~/.bash_history 
+#1716862975
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1716863258
+cd git/projetosEEG/eegDjango/
+#1716863624
+doas find / -wholename '*clementine'
+#1716863645
+doas find / -type d -wholename '*clementine'
+#1716863935
+doas find /home -type d -wholename '*clementine*'
+#1716863955
+cd .var
+#1716863958
+cd app/
+#1716863979
+rm -rf org.clementine_player.Clementine
+#1716864005
+flatpak search clementine
+#1716864017
+paru -S clementine
+#1716864028
+paru -Sss clementine
+#1716864054
+paru -S clementine
+#1716863273
+python manage runserver
+#1717007672
+cd github/
+#1717007680
+rm -rf marvel-app
+#1717007743
+git clone git@github.com:JoaoV1821/marvel-app.git
+#1717007750
+cd marvel-app/
+#1717007752
+code .
+#1717009500
+cd
+#1717009512
+cd git/projetosEEG/eegDjango/
+#1717009523
+pyenv version
+#1717009526
+pyenv versions
+#1717017096
+cd git/projetosEEG/eegDjango/
+#1717017099
+code .
+#1717017103
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1717167405
+exir
+#1717167407
+exitr
+#1717167409
+exirt
+#1717167411
+exitr
+#1717167552
+flatpak update
+#1717167731
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1717167858
+cd git/pythonando/healing/
+#1717167860
+code .
+#1717167864
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1717266760
+ala
+#1717267048
+flatpak update 
+#1717267854
+paru -S python-pytorch
+#1717267900
+cd git/projetosEEG/eegDjango/
+#1717267911
+pip list -lo
+#1717267930
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
+#1717267968
+pip list -l
+#1717267991
+pip install -U djlint
+#1717268014
+code .
+#1717268017
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1717268797
+python manage collectstatic
+#1717269340
+cd github/
+#1717269344
+git clone git@github.com:luizomf/curso-django-projeto1.git
+#1717269357
+cd curso-django-projeto1/
+#1717269380
+mv manage.py manage
+#1717269386
+vscodium .
+#1717269424
+flatpak run com.vscodium.codium .
+#1717269831
+cd git/pythonando/healing/
+#1717269839
+subl .
+#1717276850
+dig
+#1717276866
+dig +short +dnssec registro.br @localhost
+#1717277295
+sudo pacman -Q paru
+#1717277336
+sudo -H -u paru -a -Syu
+#1717277365
+sudo -H -u \#1000 paru -a -Syu
+#1717277379
+sudo -H -u \#1000 paru -Sayu
+#1717277417
+sudo pacman -Q flatpak >/dev/null 2>&1
+#1717277436
+sudo pacman -Q flatpak >/dev/null 2>&1 && flatpack update -y
+#1717277443
+sudo pacman -Q flatpak >/dev/null 2>&1 && flatpak update -y
+#1717277470
+sudo pacman -Qdtq
+#1717277528
+wc sudo pacman -Qdtq |
+#1717277535
+wc > sudo pacman -Qdtq
+#1717277541
+wc -l > sudo pacman -Qdtq
+#1717277555
+wc -l < sudo pacman -Qdtq
+#1717277565
+pacman -Qdtq
+#1717277574
+wc < pacman -Qdtq
+#1717277580
+wc -l < pacman -Qdtq
+#1717277613
+wc -l < $(pacman -Qdtq)
+#1717277627
+wc -l < ${pacman -Qdtq}
+#1717277627
+wc -l < ${pacman -Qdtq}
+#1717277642
+wc -l < `pacman -Qdtq`
+#1717277658
+wc -l < EOF pacman -Qdtq EOF
+#1717277682
+wc -l < { pacman -Qdtq }
+#1717277691
+wc -l < {pacman -Qdtq}
+#1717277801
+pacman -Qk gnome
+#1717277812
+pacman -Qk gnome-shell
+#1717277857
+pacman -Qdt
+#1717277860
+pacman -Qdtq
+#1717277871
+pacman -Qe
+#1717277873
+pacman -Qet
+#1717277885
+pactree gnome-shell
+#1717277960
+pacman -Qdt
+#1717277976
+yasm
+#1717277979
+yasm --help
+#1717277996
+pacman -Si yasm
+#1717278019
+pacman -Rs yasm
+#1717278022
+sudo pacman -Rs yasm
+#1717278037
+pacman -Qdt
+#1717278060
+sudo pacman -Rs xmlto zeitgeist 
+#1717278083
+pacman -Si xapian-core
+#1717278515
+sudo paccache -r
+#1717278539
+type -a paccache
+#1717278543
+type -p paccache
+#1717278551
+cat $(type -p paccache)
+#1717278631
+pacman -Qdt
+#1717278677
+gn --help
+#1717278710
+gn all
+#1717278724
+paru -Si gn
+#1717278760
+sudo pacman -Rs xmlto zeitgeist 
+#1717278778
+fastfetch 
+#1717278785
+pacman -Qdt
+#1717278788
+pacman -Qdtq
+#1717278842
+pacman -Qdtq |rg '^ttf-.*'
+#1717278885
+pacman -Qs python-flask
+#1717278910
+pacman -Qdt python-flask
+#1717278915
+pacman -Qsdt python-flask
+#1717278924
+pacman -Qst python-flask
+#1717278928
+pacman -Qsd python-flask
+#1717278933
+pacman -Qds python-flask
+#1717278938
+pacman -Qd python-flask
+#1717278945
+pacman -Qdt python-flask
+#1717278959
+pacman -Qdts python-flask
+#1717278963
+pacman -Qdt python-flask
+#1717278988
+pacman -Qdtq |rg '^python-.*'
+#1717279031
+cd git/pythonando/healing/
+#1717279043
+pip list -l | cut -f1 -d' ' |  sed '1,2d'
+#1717279089
+pacman -Qdtq |rg '^python-.*' | xargs -n1 paru -R 
+#1717279101
+pacman -Qdtq |rg '^python-.*' | xargs  paru -R 
+#1717279151
+paru -R < $(pacman -Qdtq |rg '^python-.*')
+#1717279175
+paru -R <| $(pacman -Qdtq |rg '^python-.*')
+#1717279184
+pacman -Qdtq |rg '^python-.*' | xargs  paru -R --noconfirm
+#1717279199
+pacman -Qdtq
+#1717279220
+paru -Qi wasi-compiler-rt 
+#1717279265
+pacman -Qdtq
+#1717279481
+pacman -R $(pacman -Qdtq)
+#1717279493
+sudo pacman -R $(sudo pacman -Qdtq)
+#1717279532
+sudo pacman -Qi yarn
+#1717279610
+sudo pacman -Rcns $(sudo pacman -Qdtq)
+#1717279653
+paru -R reiserfsprogs 
+#1717279663
+paru -Rcns reiserfsprogs 
+#1717279671
+paru -Rs reiserfsprogs 
+#1717279675
+paru -Rc reiserfsprogs 
+#1717279699
+paru -R btrfs-convert
+#1717279717
+paru -Rc reiserfsprogs 
+#1717279743
+pacman -Qdtq
+#1717279768
+sudo pacman -R $(sudo pacman -Qdtq)
+#1717279798
+sudo pacman -Qdtq| wc -l
+#1717279812
+sudo pacman -R $(sudo pacman -Qdtq)
+#1717280191
+sudo pacman -Syyuu
+#1717280364
+sudo pacman -S --asexplicit ttf-3270-nerd
+#1717280380
+ttf-agave-nerd
+#1717280380
+ttf-anonymouspro-nerd
+#1717280380
+ttf-arimo-nerd
+#1717280380
+ttf-bigblueterminal-nerd
+#1717280380
+ttf-bitstream-vera-mono-nerd
+#1717280380
+ttf-cascadia-code-nerd
+#1717280380
+ttf-cousine-nerd
+#1717280380
+ttf-daddytime-mono-nerd
+#1717280380
+ttf-dejavu-nerd
+#1717280380
+ttf-fantasque-nerd
+#1717280380
+ttf-firacode-nerd
+#1717280380
+ttf-go-nerd
+#1717280380
+ttf-hack-nerd
+#1717280380
+ttf-heavydata-nerd
+#1717280380
+ttf-iawriter-nerd
+#1717280380
+ttf-ibmplex-mono-nerd
+#1717280380
+ttf-inconsolata-go-nerd
+#1717280380
+ttf-inconsolata-lgc-nerd
+#1717280380
+ttf-inconsolata-nerd
+#1717280380
+ttf-iosevka-nerd
+#1717280380
+ttf-iosevkaterm-nerd
+#1717280380
+ttf-jetbrains-mono-nerd
+#1717280380
+ttf-lekton-nerd
+#1717280380
+ttf-liberation-mono-nerd
+#1717280380
+ttf-lilex-nerd
+#1717280381
+ttf-meslo-nerd
+#1717280381
+ttf-monofur-nerd
+#1717280381
+ttf-monoid-nerd
+#1717280381
+ttf-mononoki-nerd
+#1717280381
+ttf-mplus-nerd
+#1717280381
+ttf-noto-nerd
+#1717280381
+ttf-opensans
+#1717280381
+ttf-profont-nerd
+#1717280381
+ttf-proggyclean-nerd
+#1717280381
+ttf-roboto-mono-nerd
+#1717280381
+ttf-sharetech-mono-nerd
+#1717280381
+ttf-sourcecodepro-nerd
+#1717280381
+ttf-space-mono-nerd
+#1717280381
+ttf-terminus-nerd
+#1717280381
+ttf-tinos-nerd
+#1717280381
+ttf-ubuntu-mono-nerd
+#1717280381
+ttf-ubuntu-nerd
+#1717280381
+ttf-victor-mono-nerd
+#1717280439
+cd
+#1717280449
+lvim ttf-fonts.txt
+#1717280499
+sudo pacman -S --asexplicit < ttf-fonts.txt 
+#1717280527
+sudo pacman -S --asexplicit $(cat ttf-fonts.txt)
+#1717276565
+python manage runserver
+#1717280850
+paru -Si gcab
+#1717280906
+paru -Si hlint
+#1717280973
+paru -Si imake
+#1717281209
+paru -Si pacthutils
+#1717281222
+paru -Si patchutils 
+#1717281276
+paru -Si plymouth
+#1717281369
+sudo pacman -S --asexplicit lld appstream-glib blas64-openblas boost cbindgen ccache check cppunit dmraid dump_syms electron electron29 extra-cmake-modules ffmpeg git-lfs gn gnome-common go gperf hlint imake gperf ldns lhasa libguestfs libsmbios libunrar libupnp libmatroska libkate libdvdpsi lld nawk onednn openlibm optipng patchutils wayland-protocols wayland-utils webrtc-audio-processing 
+#1717281391
+sudo pacman -S --asexplicit lld appstream-glib blas64-openblas boost cbindgen ccache check cppunit dmraid dump_syms electron electron29 extra-cmake-modules ffmpeg git-lfs gn gnome-common go gperf hlint imake gperf ldns lhasa libguestfs libsmbios libunrar libupnp libmatroska libkate lld nawk onednn openlibm optipng patchutils wayland-protocols wayland-utils webrtc-audio-processing 
+#1717281715
+fastfetch 
+#1717281887
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1717284160
+cd git/pythonando/healing/
+#1717284170
+EXIT
+#1717284186
+cd github/curso-django-projeto1/
+#1717284238
+git checkout 3ca96de
+#1717284255
+git restore manage.py 
+#1717284273
+git restore manage
+#1717284291
+git reset --soft HEAD~1
+#1717284319
+git restore --staged .env-example 
+#1717284327
+git restore .vscode/settings.json 
+#1717284344
+git restore .env-example 
+#1717284360
+mv manage manage.py
+#1717284371
+git checkout 3ca96de
+#1717284399
+cd ..
+#1717284406
+cd github/curso-django-projeto1/
+#1717284417
+cd curso-django-projeto1/
+#1717284454
+git branch 
+#1717284469
+echo $PS1
+#1717284487
+PS1=$PS1
+#1717284516
+echo $PS1 | rg 'git branch'
+#1717284526
+git branch
+#1717284532
+git branch --show-current 
+#1717284545
+git branch
+#1717284551
+git branch --help
+#1717284640
+git branch
+#1717284643
+git branch -q
+#1717284653
+git branch HEAD
+#1717284661
+git branch 
+#1717284664
+git branch -l;
+#1717284665
+git branch -l
+#1717284816
+git 
+#1717284835
+git rev-parse --abbrev-ref HEAD
+#1717284918
+echo $branch_name
+#1717285086
+git 
+#1717285120
+git branch
+#1717285154
+git branch --help
+#1717285165
+git branch -M
+#1717285434
+git checkout HEAD
+#1717285437
+cd ..
+#1717285442
+cd -
+#1717285455
+git branch -l
+#1717285475
+git checkout origin/HEAD
+#1717285494
+git checkout main
+#1717285527
+cd git/projetosEEG/projecteeg/
+#1717285534
+subl .
+#1717297815
+cd git/projetosEEG/eegDjango/
+#1717297827
+python manage --help
+#1717299368
+python manage runserver
+#1717301077
+flatpak run com.vscodium.codium .
+#1717304907
+cd ..
+#1717304919
+cd $DOTFILES
+#1717305108
+exot
+#1717305119
+cd $DOTFILES
+#1717305254
+glo
+#1717305257
+glo -5
+#1717305268
+git checkout c4f
+#1717305273
+git checkout c4f6
+#1717305289
+git checkout c4f69b7
+#1717305307
+cd
+#1717305319
+cd github/
+#1717305327
+cd TrabalhoFinalEDII/
+#1717305336
+glo -5
+#1717305344
+git checkout 17a5
+#1717305360
+git checkout main
+#1717305388
+cd $DOTFILES
+#1717305390
+ls 
+#1717305395
+cd bash
+#1717305483
+cd $DOTFILES
+#1717305490
+updateDotfiles 
+#1717305571
+git_current_branch 
+#1717305594
+cd $DOTFILES
+#1717305597
+git_current_branch 
+#1717305641
+git checkout 17a5
+#1717305651
+glol -5
+#1717305655
+glo -5
+#1717305676
+cd ~/github/
+#1717305682
+cd API_REST/
+#1717305689
+glo -5
+#1717305695
+cd ..
+#1717305702
+rm -RF API_REST
+#1717305707
+cd BANTADS/
+#1717305712
+glo -5
+#1717305734
+git checkout 2899
+#1717305777
+git restore .
+#1717305781
+git checkout 2899
+#1717305790
+git_current_branch 
+#1717305807
+type -a git_current_branch 
+#1717305839
+echo $PS1
+#1717305853
+echo $PS1 | rg 'git branch'
+#1717305911
+type -a git_current_branch 
+#1717305922
+cd github/
+#1717305928
+rm -rf API_REST/
+#1717305936
+cd BANTADS/
+#1717305946
+git_current_branch 
+#1717305962
+git branch
+#1717305981
+git branch | rg '^*'
+#1717305987
+git branch | grep '^*'
+#1717306030
+cd github/BANTADS/
+#1717306037
+git_current_branch 
+#1717306099
+git branch 2> /dev/null | grep '^*' | colrm 1 2  | xargs -I BRANCH echo -n BRANCH
+#1717306118
+git branch 2> /dev/null | head -n1 | colrm 1 2  | xargs -I BRANCH echo -n BRANCH
+#1717306134
+time git branch 2> /dev/null | head -n1 | colrm 1 2  | xargs -I BRANCH echo -n BRANCH
+#1717306141
+time git_current_branch 
+#1717306149
+git branch 2> /dev/null | grep '^*' | colrm 1 2  | xargs -I BRANCH echo -n BRANCH
+#1717306152
+time git branch 2> /dev/null | grep '^*' | colrm 1 2  | xargs -I BRANCH echo -n BRANCH
+#1717306158
+time git branch 2> /dev/null | head -n1 | colrm 1 2  | xargs -I BRANCH echo -n BRANCH
+#1717306206
+git checkout main 
+#1717306213
+cd ..
+#1717306222
+cd jogodavelha/
+#1717306227
+git_current_branch 
+#1717306235
+type -a git_current_branch 
+#1717306325
+time git branch 2> /dev/null | head -n1 | colrm 1 2  | xargs -I BRANCH echo -n BRANCH
+#1717306329
+git branch 2> /dev/null | head -n1 | colrm 1 2  | xargs -I BRANCH echo -n BRANCH
+#1717306344
+glol -5
+#1717306348
+glo -5
+#1717306357
+git checkout ad2f
+#1717306378
+git diff
+#1717306397
+cd ..
+#1717306401
+cd sinap-eeg/
+#1717306408
+glo -5
+#1717306414
+git checkout 58a1
+#1717306426
+git branch 2> /dev/null | head -n1 | colrm 1 2  | xargs -I BRANCH echo -n BRANCH
+#1717306445
+git branch 2> /dev/null | head -n1  | xargs -I BRANCH echo -n BRANCH
+#1717306455
+git checkout main 
+#1717305416
+lvim $DOTFILES/bash/bash_functions 
+#1717306482
+ps
+#1717306586
+cd $DOTFILES
+#1717306596
+type -a git_current_branch 
+#1717306601
+cd
+#1717306604
+git_current_branch 
+#1717306613
+cd -
+#1717306616
+git_current_branch 
+#1717306649
+git branch 2>/dev/null
+#1717306657
+git branch 
+#1717306672
+echo $?
+#1717306681
+git branch 2>/dev/null
+#1717306684
+echo $?
+#1717306729
+lvim $DOTFILES/bash/bash_functions 
+#1717306761
+cd $DOTFILES
+#1717306767
+git_current_branch 
+#1717306787
+type -a git_current_branch 
+#1717306793
+cd bash
+#1717306806
+source bash_functions 
+#1717306810
+git_current_branch 
+#1717306815
+type -a git_current_branch 
+#1717306877
+git_current_branch 
+#1717306899
+cd $DOTFILES
+#1717306905
+git d
+#1717306911
+git_current_branch 
+#1717306918
+type -a git_current_branch 
+#1717306976
+[[ git branch ]] && echo "Deu certo"
+#1717307002
+test --help
+#1717307010
+help test
+#1717307057
+[[ -z git branch  ]] && echo "Deu certo"
+#1717307111
+rep=$(git branch);[[ -z rep  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307327
+[[ git branch -eq "0"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307351
+[[ $(git branch &>/dev/null) -eq "0"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307360
+cd
+#1717307362
+[[ $(git branch &>/dev/null) -eq "0"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307375
+[[ $(git branch &>/dev/null) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307400
+git branch
+#1717307408
+echo $?
+#1717307456
+[[ $(git branch &>/dev/null) -eq 128  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307470
+[[ $(git branch &>/dev/null) -eq "128"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307483
+cd -
+#1717307485
+[[ $(git branch &>/dev/null) -eq "128"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307524
+[[ $(git branch --show-current) -eq "0"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307527
+cd
+#1717307530
+[[ $(git branch --show-current) -eq "0"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307540
+[[ $(git branch ) -eq "0"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307546
+[[ $(git branch) -eq "0"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307577
+[[ $(git branch) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307590
+[[ $(git branch) -nq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307599
+[[ $(git branch) -ne 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307617
+[[ $(git branch 2>/dev/null) -ne 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307624
+cd -
+#1717307625
+[[ $(git branch 2>/dev/null) -ne 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307645
+[[ $(git branch &>/dev/null) -ne 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307661
+[[ $(git branch &>/dev/null) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307668
+cd
+#1717307670
+[[ $(git branch &>/dev/null) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307680
+[[ $(git branch &>/dev/null) -ne 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307686
+cd -
+#1717307688
+[[ $(git branch &>/dev/null) -ne 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307738
+[[ $(git branch &>/dev/null) -eq 1  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307755
+[[ $(git branch &>/dev/null) -ge 1  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307762
+cd
+#1717307763
+[[ $(git branch &>/dev/null) -ge 1  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307774
+[[ $(git branch &>/dev/null) -ge "1"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307829
+git branch 2>/dev/null
+#1717307841
+[[ $(git branch 2>/dev/null) -ge "1"  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307852
+[[ $(git branch 2>/dev/null) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307873
+[[ $(git branch) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717307886
+git branch
+#1717307890
+decho $?
+#1717307895
+git branch
+#1717307897
+echo $?
+#1717307958
+git branch; echo $?
+#1717307987
+git branch 2>/dev/null; echo $?
+#1717308007
+[[ $(git branch 2>/dev/null;echo $?) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717308023
+cd -
+#1717308025
+[[ $(git branch 2>/dev/null;echo $?) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717308055
+[[ $(git branch &>/dev/null;echo $?) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717308070
+lvim $DOTFILES/bash/bash_functions 
+#1717308169
+[[ $(git branch &>/dev/null;echo $?) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
+#1717308085
+lvim $DOTFILES/bash/bash_functions 
+#1717308259
+type -a git_current_branch 
+#1717308268
+git_current_branch 
+#1717308322
+cd $DOTFILES
+#1717308332
+gaa
+#1717309032
+gcm "Included glow bash-completion. Updated the bashrc, zshrc and bash_functions files."
+#1717309095
+cd
+#1717309100
+cd git/projetosEEG/eegDjango/
+#1717309169
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1717309108
+python manage runserver
+#1717310205
+python manage createsuperuser
+#1717310244
+python manage runserver
+#1717361037
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1717361238
+flatpak list
+#1717361251
+cd git/pythonando/healing/
+#1717361320
+paru -Sss bustle
+#1717361334
+paru -S --asexplicit bustle
+#1717361530
+flatpak search DataGrip
+#1717361538
+paru -Sss datagrip
+#1717361602
+paru -R dbeaver 
+#1717361562
+flatpak install com.jetbrains.DataGrip
+#1717361656
+paru -Sss cudatext
+#1717361672
+flatpak search cudatext
+#1717361972
+paru -Sss spyder
+#1717361997
+flatpak search spyder
+#1717362069
+paru -S spyder python-{spyder-kernels,pyls-syper}
+#1717362120
+paru -S spyder python-{spyder-kernels,pyls-spyper}
+#1717362131
+paru -S spyder python-{spyder-kernels,pyls-spyder}
+#1717362726
+paru -S kate
+#1717362733
+paru -Ssss kate
+#1717362746
+flatpak search kate
+#1717363026
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1717363103
+cd
+#1717363111
+cd git/projetosEEG/eegDjango/
+#1717364946
+cd github/curso-django-projeto1/
+#1717364958
+flatpak run com.vscodium.codium .
+#1717365610
+cd ~/git/pythonando/healing/
+#1717365613
+flatpak run com.vscodium.codium .
+#1717363158
+python manage runserver
+#1717365664
+cd git/projetosEEG/eegDjango/
+#1717365680
+pyenv 
+#1717365683
+pyenv versions
+#1717365700
+pyenv local eegDjango
+#1717369137
+flatpak list
+#1717369158
+flatpak list | rg DataGrip
+#1717369169
+flatpak uninstall com.jetbrains.DataGrip
+#1717369191
+flatpak search dbeaver
+#1717369224
+flatpak install io.dbeaver.DBeaverCommunity
+#1717386536
+paru -R megasync-bin 
+#1717386548
+paru -Rss megasync
+#1717386553
+paru -Sss megasync
+#1717387075
+cd git/projetosEEG/eegDjango/
+#1717387080
+code .
+#1717387084
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1717386589
+paru -S megasync
+#1717388673
+find /home -wholename '*/vlc/lua*'
+#1717388715
+sudo find / -type d -wholename '*/vlc/lua*'
+#1717388738
+paru -Sss vlc
+#1717388754
+flatpak list|rg vlc
+#1717388759
+flatpak list
+#1717388766
+flatpak list|rg VLC
+#1717388786
+flatpak list|rg 'VLC'
+#1717388806
+flatpak uninstall org.videolan.VLC
+#1717388820
+paru -Sss vlc
+#1717388830
+paru -S vlc
+#1717388962
+sudo find / -type d -wholename '*/vlc/lua*'
+#1717389237
+cd /usr/lib/vlc/lua/playlist/
+#1717389270
+sudo find / -type d -wholename '*/vlc/lua*'
+#1717389293
+sudo find / -type d -wholename '*/vlc/lua/playlist*'
+#1717389357
+doas cp ~/Desktop/youtube.lua /usr/lib/vlc/lua/playlist/
+#1717389377
+rm youtube.luac
+#1717389390
+sudo rm youtube.luac
+#1717389402
+sudo mv youtube.lua youtube.luac
+#1717389839
+cd
+#1717389846
+cd git/projetosEEG/eegDjango/
+#1717390574
+paru -Ss adwaita-qt
+#1717390698
+paru -S adwaita-qt
+#1717390705
+paru -S adwaita-qt6-git 
+#1717391124
+paru -S adwaita-qt5-git 
+#1717391618
+sudo find / -type d -wholename '*/vlc/lua/playlist*'
+#1717391632
+sudo find / -type d -wholename '*/vlc/lua/playlist*' 2>/dev/null
+#1717391668
+doas cp ~/Desktop/youtube.lua /usr/lib/vlc/lua/playlist/
+#1717391676
+cd /usr/lib/vlc/lua/playlist/
+#1717391686
+doas rm youtube.luac
+#1717391701
+doas mv youtube.lua youtube.luac
+#1717389857
+python manage runserver
+#1717403389
+django-admin startapp experimentos
+#1717403406
+git add templates/
+#1717403416
+git add eeg/
+#1717403425
+git add usuarios/
+#1717403459
+gcm "Finalizado todas as funcionalidades de usuário."
+#1717403466
+gaa
+#1717403486
+gcm "Adicionado app experimentos."
+#1717403490
+glo
+#1717407163
+cd
+#1717407431
+/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1717510318
+sudo rm /etc/xdg/autostart/blueman.desktop 
+#1717510384
+cd $DOTFILES
+#1717510391
+cd bash
+#1717510414
+lvim $DOTFILES/bash/bash_functions 
+#1717510473
+cd
+#1717510474
+cd bin
+#1717510505
+lvim $(type -p updateHist)
+#1717510528
+cd -
+#1717510552
+cd $DOTFILES/scripts/
+#1717510645
+cd ..
+#1717510652
+cd bash/history/
+#1717510666
+lvim allarch-history 
