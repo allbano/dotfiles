@@ -8261,3 +8261,489 @@ cd ..
 cd bash/history/
 #1717510666
 lvim allarch-history 
+#1719697749
+type -a updateHist 
+#1719697761
+cat  updateHist 
+#1719697778
+cat  $(type -p updateHist )
+#1719697858
+type -a updateDotfiles 
+#1719698106
+paru -Sss plasma
+#1719698116
+paru -Sss plasma-desktop
+#1719719770
+cd Cursos/python/
+#1719719780
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1719724765
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
+#1719729292
+cd Cursos/python/
+#1719729300
+pip uninstall nltk
+#1719729316
+pip install -U nltk
+#1719729324
+pip install -U vaderSentiment
+#1719725146
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1719731523
+cd DadosBrutos/
+#1719731523
+kl
+#1719731531
+cd ..
+#1719736207
+cd Cursos/python/
+#1719736217
+pip install -U textblob
+#1719731536
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1719792691
+¹a
+#1719792807
+paru -Qs libselinux
+#1719792812
+paru -Qi libselinux
+#1719794667
+cd Cursos/python/
+#1719794670
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1719798929
+paru -Rscndd libselinux
+#1719798959
+paru -Qi ufraw-thumbnailer 
+#1719798982
+paru -Qi electron-builder 
+#1719798997
+paru -Rscndd electron-builder 
+#1719886720
+paru -Rscndd ufraw-thumbnailer 
+#1719886741
+paru -Rcndd ufraw-thumbnailer 
+#1719886752
+paru -Rscndd ufraw-thumbnailer 
+#1719886774
+paru -S gtkimageview 
+#1719886783
+paru -Si cfitsio
+#1719886794
+paru -S cfitsio
+#1719888710
+paru -Si zig
+#1719888727
+paru -Si clang
+#1719888765
+paru -Si llvm
+#1719893712
+docker images
+#1720060900
+code --version
+#1720060919
+cd github/
+#1720060922
+cd zed/
+#1720060955
+cd script/
+#1720060988
+his|wc -l
+#1720061014
+cd Cursos/python/
+#1720061020
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720061147
+ala
+#1720061150
+un
+#1720061756
+cd Cursos/python/
+#1720061760
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720062685
+pip list
+#1720062689
+pip list -l
+#1720062691
+pip list -lo
+#1720062714
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
+#1720062787
+pip install -U jupyterlab_tabnine
+#1720062798
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720062914
+pip install -U jupyterlab_flake8
+#1720062918
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720063054
+jupyter labextension list
+#1720063074
+jupyter labextension --help
+#1720063091
+jupyter labextension install tabnine
+#1720063126
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
+#1720063165
+pip list -lo 
+#1720063208
+jupyter nbextension install jupyter_tabnine
+#1720063215
+jupyter nbextension install --py jupyter_tabnine
+#1720063272
+pip install jupyter_contrib_nbextensions
+#1720063289
+pip install -U jupyter
+#1720063328
+jupyter contrib nbextension install --user
+#1720063344
+jupyter nbextension list
+#1720063393
+jupyter nbextension install --py jupyter_tabnine
+#1720063439
+jupyter labextension
+#1720063445
+jupyter labextension list
+#1720063591
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
+#1720063599
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720063770
+jupyter labextension uninstall tabnine
+#1720063798
+pip uninstall jupyterlab_tabnine
+#1720063806
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720063878
+pyenv local --unset 
+#1720063884
+pyenv versions
+#1720063897
+pyenv virtualenv-delete jupyters 
+#1720063924
+pyenv virtualenv 3.12.4 jupyterlab
+#1720063951
+pyenv local jupyterlab 
+#1720063955
+pip list
+#1720063963
+pip install -U pip
+#1720063969
+pip list
+#1720063975
+pip install -U wheel
+#1720063983
+pip install -U jupyterlab
+#1720064013
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720064190
+jupyter labextension list
+#1720064225
+pip install --upgrade jupyterlab_tabnine
+#1720064250
+jupyter serverextension enable --py jupyterlab_tabnine
+#1720064325
+jupyter labextension install @tabnine/jupyterlab
+#1720064387
+jupyter kernelspec list
+#1720064416
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720064522
+pip install -U jupyterlab_flake8
+#1720064552
+jupyter labextension install @jupyterlab/flake8
+#1720064589
+pip install -U flake8-nb
+#1720064596
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720065444
+pip install -U jupyterlab-lsp
+#1720065466
+npm list
+#1720065476
+npm list -g
+#1720065487
+node --version
+#1720065505
+npm i -g bash-language-server
+#1720065527
+npm i -g javascript-typescript-langserver
+#1720065551
+npm i -g typescript-language-server
+#1720065564
+npm i -g npm
+#1720065585
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720065628
+pip install -U jupyterlab
+#1720065632
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720065673
+pyenv local --unset 
+#1720065685
+pyenv virtualenv-delete jupyterlab 
+#1720065697
+pyenv virtualenv 3.12.4 jupyters
+#1720065779
+pyenv local jupyters 
+#1720065785
+pip install -U pip
+#1720065791
+pip list
+#1720065798
+pip instal wheel jupyterlab
+#1720065807
+pip install -U wheel jupyterlab
+#1720065839
+pip install -U jupyterlab-lsp
+#1720065861
+cd Cursos/python/
+#1720065870
+jupyter kernelspec list
+#1720065846
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720066022
+jupyter lab build
+#1720067271
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720067321
+pip install jupyterlab-tabnine
+#1720067326
+jupyter lab build
+#1720069945
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720070225
+pip install jupyterlab
+#1720070231
+pip install -U jupyterlab
+#1720070235
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720070293
+jupyter lab clean
+#1720070300
+jupyter lab build
+#1720070876
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720070897
+pyenv local --unset 
+#1720070912
+pyenv virtualenv-delete jupyters
+#1720070926
+pyenv virtualenv 3.12.4 jupyterlab
+#1720070938
+pyenv local jupyterlab 
+#1720070945
+pip install -U pip
+#1720070951
+pip install -U wheel
+#1720070956
+pip install -U os
+#1720070966
+pip install -U jupyterlab
+#1720071078
+pip install -U jupyterlab-lsp
+#1720071089
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720071180
+jupyter labextension install @agoose77/jupyterlab-markdown-viewer
+#1720075387
+cd 
+#1720075395
+curl -fsSL https://ollama.com/install.sh | bash
+#1720075428
+ollama 
+#1720075832
+ollama run llama3:8b
+#1720076001
+ollama list
+#1720076023
+dust -r
+#1720076048
+lsk
+#1720076340
+docker run -d -p 25000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+#1720076644
+ollama
+#1720076647
+ollama serve
+#1720076873
+paru -S ca-certificates
+#1720076908
+docker run -d -p 25000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+#1720077153
+docker volume ls
+#1720077159
+docker volume prune 
+#1720077166
+docker volume ls
+#1720077172
+docker volume rm open-webui 
+#1720077178
+docker volume ls
+#1720077218
+docker run -d -p 25000:8080 --add-host=127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+#1720077275
+docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1720077501
+docker container ls
+#1720077509
+docker container -f ee
+#1720077514
+docker container rm -f ee
+#1720077526
+docker container ls -a
+#1720077548
+docker run -d --network=host -p 25000:8080 -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1720077595
+docker container ls -a
+#1720077601
+docker container rm -f 33
+#1720077701
+docker volume ls
+#1720077705
+docker volume rm open-webui 
+#1720077717
+docker run -d -p 25000:8080 -e OLLAMA_BASE_URL=https://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
+#1720077738
+docker container ls -a
+#1720077746
+docker container rm -f d2
+#1720077761
+docker run -d -p 25000:8080 -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
+#1720077942
+docker container rm -f open-webui 
+#1720077952
+docker volume rm open-webui 
+#1720077970
+docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+#1720078371
+docker container rm -f open-webui 
+#1720078376
+docker images
+#1720078383
+docker images rm c
+#1720078387
+docker images rm c26a
+#1720078395
+docker image rm c2
+#1720078404
+docker image rm 3d
+#1720078414
+docker images
+#1720078423
+cd github/
+#1720078428
+git clone git@github.com:open-webui/open-webui.git
+#1720078453
+cd open-webui/
+#1720078461
+cp -RPp .env.example .env
+#1720078471
+nvm ls
+#1720078491
+nvm list-remote 
+#1720078547
+cat .env
+#1720078582
+npm i
+#1720078619
+npm run build 
+#1720078699
+cd ./backend/
+#1720078716
+pyenv 
+#1720078738
+pyenv install 3.11.9
+#1720078863
+cd ..
+#1720078882
+pyenv virtualenv 3.11.9 open-webui
+#1720078894
+pyenv local open-webui 
+#1720078900
+cd backend/
+#1720071186
+jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
+#1720078924
+pip install -r requirements.txt -U 
+#1720079267
+pip install -U pip
+#1720079306
+start.sh 
+#1720079621
+cat start.sh 
+#1720079632
+lvim start.sh 
+#1720079981
+nvidia-smi
+#1720079986
+sudo nvidia-smi
+#1720080103
+nvidia-xconfig 
+#1720080133
+paru -Sss gpustat
+#1720079699
+start.sh 
+#1720081805
+cd ..
+#1720081823
+pyenv local --unset 
+#1720081826
+cd backend/
+#1720081832
+pyenv local open-webui 
+#1720081866
+lexot
+#1720132135
+paru -Sss lmstudio
+#1720132362
+lsk
+#1720132391
+sudo fdisk /dev/sda
+#1720132412
+sudo fdisk -l /dev/sda
+#1720132671
+lsk
+#1720133020
+cd Videos/2024/Sex/
+#1720133084
+rsync -havP SexTorrents /run/media/albano/NETAC2Tb/
+#1720133116
+cd /run/media/albano/NETAC2Tb
+#1720133126
+rm -rf SexTorrents/
+#1720133163
+rsync -havP SexTorrents /run/media/albano/NETAC2Tb/Backup/
+#1720133363
+rsync -haAXvP --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/
+#1720133440
+rsync -haAXvP --info progress2 --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/
+#1720133594
+rsync -haAXvP --info=progress2 --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/
+#1720133610
+rsync -haAXvP --info=progress2 --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/ | pv -petar
+#1720133619
+paru -S pv
+#1720133624
+rsync -haAXvP --info=progress2 --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/ | pv -petar
+#1720133794
+rsync -haAXvP --info=progress2 --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/
+#1720133842
+diff SexTorrents /run/media/albano/NETAC2Tb/Backup/SexTorrents
+#1720134466
+ollama run gemma:7b
+#1720134637
+ollama run codellama:34b
+#1720294304
+paru -Qi reflective-rapidjson 
+#1720294321
+paru -R reflective-rapidjson 
+#1720294591
+paru -Sss podman
+#1720295024
+cd /run/media/albano/NETAC2Tb/
+#1720295037
+find . -type d -empty
+#1720295074
+find . -type d -empty -delete
