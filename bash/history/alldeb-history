@@ -5641,3 +5641,1495 @@ duf
 duf -a
 #1713133341
 pyenv
+#1713133357
+updateHist 
+#1713133368
+gaa
+#1713133465
+gcm "Updated bash_aliases (added humam readable option in l and ll)
+#1713133479
+git restore --staged bash/profile_a*
+#1713133484
+gcm "Updated bash_aliases (added humam readable option in l and ll)"
+#1713133489
+gaa
+#1713133586
+gcm "Updated and reorganized profile options."
+#1713727511
+un
+#1713727525
+nala list --upgradable 
+#1713727533
+fastfetch 
+#1713738458
+echo $PS1
+#1713738490
+find . -mindepth 1 -maxdepth 1 -type l
+#1713738823
+env
+#1713738828
+set
+#1713738890
+find /usr/share/bash-completion/completions/ -name tmux
+#1713738904
+find /usr/share/bash-completion/completions/ -name '*tmux'
+#1713738931
+find /usr/share/bash-completion/completions/ -name '*tmux*'
+#1713738957
+source /usr/share/bash-completion/completions/tmux_completion 
+#1713739048
+source /usr/share/bash-completion/completions/
+#1713739061
+ll tmux_completion 
+#1713739091
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/tmux_completion /usr/share/bash-completion/completions/tmux
+#1713739108
+sudo unlink tmux_completion
+#1713739111
+ll tmux_completion 
+#1713739119
+ll tmux
+#1713738977
+tmux new-session -s qt0
+#1713739164
+lvim zprofile 
+#1714002982
+pyenv
+#1714003006
+pyenv versions
+#1714003043
+pyenv virtualenvs
+#1714003045
+pyenv virtualenv
+#1714003054
+pyenv install
+#1714003056
+pyenv install -l
+#1714003076
+pyenv install 3.12.2
+#1714003198
+pyenv install 3.12.3
+#1714004055
+pyenv local 3.12.2
+#1714004069
+pyenv 
+#1714004177
+pyenv versions
+#1714004186
+pyenv global system 
+#1714004191
+pyenv versions
+#1714004197
+pyenv 
+#1714004448
+un
+#1714005473
+git diff
+#1714006985
+flatpak update 
+#1714007057
+sudo nala search eclipse
+#1714007259
+rm -rf eclipse
+#1714259494
+lvim .bashrc 
+#1714259615
+su 
+#1714259619
+su -
+#1714259689
+un
+#1714260383
+lvim systemctl 
+#1714260506
+find /usr/share/bash-completion/completions/ -name system*
+#1714260583
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/systemctl /etc/bash_completion.d/systemctl
+#1714259914
+sudo su
+#1714260599
+sudo su -
+#1714260782
+docker
+#1714260802
+lvim ~/.bash_aliases 
+#1714260881
+sct
+#1714261079
+ga bash-completion/systemctl 
+#1714261103
+ga bash/bash_aliases 
+#1714261259
+gcm "Updated the bash_aliases file and changed the dss alias to sct(sudo systemctl)."
+#1714261269
+gaa
+#1714261280
+git diff
+#1714261288
+git diff zsh/zprofile
+#1714261297
+git restore --staged .
+#1714261301
+git diff
+#1714261311
+gaa
+#1714261406
+gcm "Updated the zprofile file. Added LS_OPTIONS environment in zprofile."
+#1714261528
+un
+#1714261611
+sudo nala history 
+#1714858234
+un
+#1714870361
+gnome-shell --versions
+#1714870363
+gnome-shell --version
+#1714870407
+nvm ls
+#1714870421
+nvm
+#1714870431
+nvm versions
+#1714870471
+nvm install --lts
+#1714870479
+nvm ls
+#1714870544
+nvm uninstall v18.17.1 
+#1714870555
+nvm install
+#1714870568
+nvm install --help
+#1714870606
+nvm version-remote lts
+#1714870610
+nvm version-remote --lts
+#1714870616
+nvm version-remote
+#1714870634
+nvm ls-remote 
+#1714870662
+nvm install 18.20.2
+#1714870667
+nvm ls
+#1714870678
+nvm uninstall v18.20.0
+#1714870681
+nvm ls
+#1714870707
+nvm ls-remote 
+#1714870732
+nvm ls
+#1714870743
+nvm use 20.10.0
+#1714870765
+npm i -g npm@latest
+#1714870775
+npm --version
+#1714870788
+nvm use default
+#1714870793
+npm i -g npm@latest
+#1714870798
+npm --version
+#1714870802
+nvm use 20.10.0
+#1714870804
+ng
+#1715229673
+un
+#1715229963
+sudo nala install numlockx
+#1715230017
+sudo lvim
+#1715230056
+sudo lvim /etc/lightdm/users.conf 
+#1715230778
+sudo nala search vimix
+#1715230858
+cd /etc/init.d/
+#1715230894
+setleds 
+#1715230898
+setleds --help
+#1715230961
+sct
+#1715230969
+sct status gdm
+#1715230975
+sct status lightdm
+#1715230985
+sct disable lightdm
+#1715231001
+sct enable  gdm
+#1715231072
+sct enable gdm
+#1715231105
+sudo nala install gdm
+#1715231113
+sudo nala install gdm3
+#1715231143
+sudo nala install gdm3 --no-fix-broken 
+#1715231149
+sudo apt update
+#1715231161
+sudo apt upgrade
+#1715231205
+un
+#1715231247
+uname -a
+#1715231264
+sudo systemctl enable lightdm.service 
+#1715231272
+reboot
+#1715231317
+un
+#1715231333
+sudo nala full-upgrade 
+#1715232050
+reboot
+#1715232100
+fastfetch 
+#1715232178
+gnome-shell --version
+#1715232188
+un
+#1715232201
+sudo nala search cursor
+#1715232304
+sudo nala install bibata-cursor-theme breeze-cursor-theme chameleon-cursor-theme crystalcursors dmz-cursor-theme 
+#1715232530
+sudo nala search gns3
+#1715304430
+un
+#1715304560
+sfastf
+#1715304564
+fastfetch 
+#1715304591
+cat /etc/doas.conf 
+#1715304595
+doas cat /etc/doas.conf 
+#1715304635
+docker images
+#1715304650
+docker pull nginx:alpine
+#1715304661
+sudo docker login
+#1715304971
+docker pull nginx:alpine
+#1715304981
+docker images
+#1715305010
+docker rmi 2b70
+#1715305014
+docker images
+#1715305071
+docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 nginx:alpine 
+#1715305280
+un
+#1715305658
+ping 192.168.5.1
+#1715305674
+ssh root@192.168.5.1
+#1715305808
+sct 
+#1715305848
+doas nala autoremove
+#1715305852
+doas nala autoclean
+#1715305861
+doas apt autoclean
+#1715305877
+doas apt update
+#1715305882
+doas apt upgrade
+#1715305892
+fastfetch 
+#1715305921
+ip -c a sh enp6s0
+#1715305935
+ip -c a show enp6s0 
+#1715306780
+fastfetch 
+#1715364247
+/home/albano/.pyenv/versions/3.12.2/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1715365769
+un
+#1715365837
+reboot
+#1715381052
+un
+#1715381094
+nala
+#1715381102
+nala --help\
+#1715381104
+nala --help
+#1715381132
+nala list
+#1715381140
+nala --help
+#1715381154
+nala history 
+#1715381175
+cd /etc
+#1715381474
+doas nala fetch 
+#1715381746
+cd /etc/apt/sources.list.d/
+#1715381750
+cat nala-sources.list 
+#1715381767
+sudo rm nala-sources.list 
+#1715381833
+doas apt update
+#1715381839
+time doas apt update
+#1715381845
+time doas nala update
+#1715381894
+doas nala history --installed 
+#1715381918
+doas nala history info
+#1715381931
+doas nala history info 1
+#1715382365
+doas nala search netbeans
+#1715382401
+java --version 
+#1715382586
+doas nala search spring
+#1715711084
+flatpak search netbeans
+#1715711097
+flatpak install org.apache.netbeans
+#1716751560
+flatpak
+#1716751563
+flatpak --help
+#1716751575
+flatpak --ostree-verbose 
+#1716751687
+sct
+#1716751717
+sct status zfs-import-scan.service 
+#1716751725
+sct enable zfs-import-scan.service 
+#1716751800
+sct status fwupd
+#1716751405
+un
+#1716751816
+sudo fwupd
+#1716751827
+sudo fwupdmgr 
+#1716751832
+sudo fwupdmgr --help
+#1716751872
+sudo fwupdmgr verify-update 
+#1716940700
+un
+#1716940794
+sudo apt update
+#1716940807
+sudo apt list --upgradable 
+#1716940818
+sudo apt upgrade
+#1716940833
+reboot
+#1716940889
+sudo apt update
+#1716940979
+un
+#1716941001
+sudo nala autoremove
+#1716941010
+reboot
+#1716941432
+sudo nala search spring
+#1717032775
+un
+#1717034210
+sct fstrim
+#1717034227
+sct status fstrim
+#1717034264
+sct enable fstrim
+#1717034271
+sct start fstrim
+#1717034295
+sct status fstrim
+#1717034579
+sct enable fstrim
+#1717034595
+sct status fstrim
+#1717127054
+flatpak update
+#1717127699
+cd .icons/
+#1717127634
+un
+#1717127816
+cd moblin-cursor-theme/
+#1717127817
+kl
+#1717127822
+cd cursors/
+#1717128543
+cd ..
+#1717128557
+unzip Empty-Butterfly-White-vr6-Linux.zip 
+#1717128574
+chmod 775 Empty-Butterfly-White-vr6-Linux
+#1717128580
+cd Em
+#1717128583
+cd Empty-Butterfly-White-vr6-Linux/
+#1717128589
+cd ..
+#1717128596
+chmod -R 775 Empty-Butterfly-White-vr6-Linux
+#1717128599
+cd Empty-Butterfly-White-vr6-Linux/
+#1717128599
+l;
+#1717128870
+cd ..
+#1717128888
+mv Empty-Butterfly-White-vr6-Linux ../.cursors
+#1717128893
+rm Empty-Butterfly-White-vr6-Linux.zip 
+#1717128895
+cd ..
+#1717128900
+cd .cursors/
+#1717129033
+cd ..
+#1717129044
+mv .cursors .cursor
+#1717129146
+doas find / -wholename '*bibata*' 2> /dev/null 
+#1717129228
+cd /usr/share/icons/
+#1717129352
+mv ~/.cursor/Empty-Butterfly-White-vr6 ~/.icons/
+#1717129363
+cd ~/.cursor/
+#1717129366
+cd ..
+#1717129369
+rmdir .cursor/
+#1717129373
+cd .icons/
+#1717129487
+nautilus .
+#1717130036
+sudo nala list cursors
+#1717130049
+sudo nala list 
+#1717130065
+sudo nala list --help
+#1717130105
+sudo nala list -i oxy
+#1717130122
+sudo nala list -i '*oxy*'
+#1717130141
+sudo nala purge oxygencursors 
+#1717130158
+cd /usr/share/icons/
+#1717130175
+sudo nala list -i '*chamaleon*'
+#1717130184
+sudo nala list -i '*chama*'
+#1717130200
+sudo nala list -i '*chameleon*'
+#1717130210
+sudo nala purge chameleon-cursor-theme 
+#1717130248
+sudo nala list -i '*bibata*'
+#1717130260
+sudo nala purge bibata-cursor-theme 
+#1717130273
+cd .icons/
+#1717130278
+rm -rf moblin-cursor-theme/
+#1717130318
+sudo nala list -i '*dmz*'
+#1717130337
+sudo nala purge dmz-cursor-theme 
+#1717130435
+sudo nala list -i '*crystal*'
+#1717130444
+sudo nala purge crystalcursors 
+#1717130485
+sudo nala list -i '*vintage*'
+#1717130500
+sudo nala list -i '*breeze*'
+#1717130511
+sudo nala purge breeze-cursor-theme 
+#1717629893
+ssh -T git@github.com
+#1717629925
+cd .ssh/
+#1717629941
+eval $(ssh-agent)
+#1717629950
+ssh-add -l
+#1717629993
+cat alldeb_home.pub 
+#1717630035
+ssh -T git@github.com
+#1717630115
+cat $DOTBASH/history/allarch-history 
+#1717630146
+date
+#1717630172
+timedatectl 
+#1717630185
+status
+#1717630192
+timedatectl status
+#1717630197
+timedatectl timesync-status 
+#1717630202
+un
+#1717630743
+fastfetch 
+#1717630749
+uname -a
+#1717683525
+un
+#1717694497
+jfs_mkfs 
+#1717694505
+mkfs.jfs
+#1717694518
+type -a mkfs.jfs
+#1717694528
+type -a jfs_mkfs
+#1717694536
+cd /usr/sbin/
+#1717694543
+ll mkfs
+#1717694548
+ll mkfs.jfs
+#1717694989
+nala search linux-
+#1717695974
+nala list --upgradable 
+#1717695996
+unm
+#1717695997
+un
+#1717696009
+exity
+#1717696063
+un
+#1717696076
+sct status
+#1717696380
+cd
+#1717696382
+cd ./
+#1717696384
+cd /
+#1717698873
+type -a bash
+#1717698879
+file bash
+#1717698897
+file $(type -p bash)
+#1717698913
+file $(type -p /bin/bash)
+#1717698922
+file /bin/bash
+#1717699174
+nala seach mmdebstrap
+#1717699182
+nala search mmdebstrap
+#1718130466
+un
+#1718352769
+sct status
+#1718352796
+sudo nala search fastfetch
+#1718352806
+fastfetch 
+#1718352827
+sudo nala search plasma
+#1718353442
+cat /etc/apt/sources.list
+#1718353472
+doas nala search -t unstable plasma
+#1718353479
+doas apt search -t unstable plasma
+#1718353547
+doas apt search -t unstable qt6
+#1718353608
+sudo nala autoremove 
+#1718353621
+sudo nala
+#1718353626
+sudo nala --help
+#1718353636
+sudo nala
+#1718411155
+un
+#1718411443
+reboot
+#1718411492
+un
+#1718411551
+doas nala search -t sid plasma
+#1718411564
+doas nala search  plasma
+#1718411783
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
+#1718411843
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+#1718411936
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
+#1718412103
+sudo nala search plasma-desktop
+#1718412125
+bat /etc/apt/sources.list
+#1718412145
+cargo install --list
+#1718412152
+rustup
+#1718412164
+cd .cargo/
+#1718412168
+cd ..
+#1718412190
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#1718412262
+cargo install --list
+#1718412280
+rustup default stable
+#1718412294
+rustup update stable
+#1718412305
+rustup update 
+#1718412347
+rustc --version
+#1718412359
+rustup
+#1718412369
+rustup man
+#1718412388
+rustup show
+#1718412425
+bat /etc/apt/sources.list
+#1718412455
+doas nala search virtualbox
+#1718415735
+ip -c as
+#1718416072
+pactl info
+#1718416110
+doas nala install pactl
+#1718416128
+doas nala install pulseaudio-utils 
+#1718416134
+pactl
+#1718416141
+pactl info
+#1718416191
+ls -1 /usr/lib64/pipewire-0.3/libpipewire-module* | grep cancel
+#1718416203
+ls -1 /usr/lib64/pipewire
+#1718416251
+doas nala search libpipewire
+#1718416284
+doas nala install libpipewire-0.3-*
+#1718416301
+ls -1 /usr/lib64/pipewire-0.3/libpipewire-module* | grep cancel
+#1718416329
+pactl info
+#1718416337
+sct daemon-reload 
+#1718416346
+pactl info
+#1718665853
+un
+#1718666142
+sudo update-db
+#1718666147
+sudo updatedb
+#1718666338
+cd github/
+#1718666360
+exot
+#1718666750
+docker container ls -la
+#1718666752
+docker container ls -a
+#1718666761
+docker container start nginx_test 
+#1718667174
+docker ps 
+#1718903344
+un 
+#1718903546
+nala search intellij
+#1718904301
+nala --version\
+#1718904304
+nala --version
+#1718904316
+apt show nala
+#1718904323
+nala show nala
+#1718904383
+nala show dpkg
+#1719601338
+un
+#1719601913
+reboot
+#1719602158
+fastfetch 
+#1719679922
+un
+#1719690918
+reboot
+#1719691689
+gnome-shell --version
+#1719691724
+sudo nala search gnome-shell
+#1719691767
+sudo nala search -t sid gnome-shell
+#1719691793
+sudo apt search -t sid gnome-shell
+#1719842950
+ala
+#1719853754
+un
+#1720722758
+sudo nala update
+#1720722768
+sudo nala full-upgrade
+#1720722882
+sudo dpkg --configure -a
+#1720722903
+un
+#1720722912
+reboot
+#1720723097
+un
+#1720724879
+java --version 
+#1720724966
+cd .ssh
+#1720724971
+sct status ssh
+#1720727756
+cd ..
+#1720727758
+ccd github/
+#1720727763
+cd github/
+#1720727772
+cd laundry_online/
+#1720727775
+gll
+#1720727776
+gl\\
+#1720727939
+cd github/laundry_online/
+#1720727943
+cd app
+#1720727946
+lvvim Dockerfile 
+#1720727949
+lvim Dockerfile 
+#1720728279
+cd ..
+#1720728280
+l;l
+#1720728441
+git log
+#1720732030
+cd
+#1720736533
+python --version
+#1720736543
+pyenv
+#1720736547
+pyenv versions
+#1720736556
+pyenv global system 
+#1720736559
+python --version
+#1720736565
+pyenv versions
+#1720737299
+pyenv virtualenvs
+#1720737322
+pyenv 
+#1720737328
+pyenv rehash 
+#1720737336
+python --version
+#1720737357
+pyenv global --help
+#1720737369
+pyenv global 3.12.2 system
+#1720737378
+type -a python
+#1720737399
+pyenv rehash 
+#1720737405
+pyenv versions
+#1720737421
+pyenv global --unset
+#1720737433
+pyenv global system
+#1720737463
+pyenv exec python
+#1720737481
+pyenv hooks
+#1720737493
+pyenv hooks --help
+#1720737503
+pyenv
+#1720737513
+pyenv latest 
+#1720737526
+pyenv prefix 
+#1720737536
+pyenv update
+#1720737578
+pyenv install 3.12.4
+#1720737637
+pyenv update
+#1720737653
+pyenv virtualenv 3.12.4 jupyterlab
+#1720737666
+pyenv activate jupyterlab 
+#1720737682
+cat core 
+#1720737694
+rm core 
+#1720737701
+pip list
+#1720737710
+pip install -U pip
+#1720738038
+pip install -U wheel
+#1720738057
+pip install -U jupyterlab pandas numpy
+#1720738083
+pip list
+#1720738087
+pip list -l
+#1720738241
+jupyter
+#1720738260
+jupyter --paths
+#1720738290
+sudo nala list jupyter
+#1720738300
+sudo nala purge jupyter
+#1720738317
+sudo nala list 
+#1720738325
+sudo nala list --instaledc
+#1720738327
+sudo nala list --instaled
+#1720738333
+sudo nala list --installed
+#1720738343
+sudo nala list --installed| rg jupyter
+#1720738384
+cd github/dotfiles/bash/history/
+#1720738388
+cat alldeb-history 
+#1720738402
+cat alldeb-history | wc-l
+#1720738405
+cat alldeb-history | wc -l
+#1720738415
+exity
+#1720727803
+lvim docker-compose.yml 
+#1720979358
+un
+#1720979464
+doas update-initramfs --help
+#1720979501
+doas update-initramfs -k 6.7.12-amd64 
+#1720979519
+doas update-initramfs -k 6.7.12-amd64 -vu
+#1720979540
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+#1720979602
+doas nala search linux-
+#1720979753
+sudo nala show linux-firewire-utils 
+#1720980272
+doas nala search linux-image
+#1720980316
+doas nala show linux-image-cloud-amd64
+#1720980328
+doas nala show -a linux-image-cloud-amd64
+#1720980459
+doas nala install linux-image-cloud-amd64
+#1720980497
+fastfetch 
+#1720980501
+flatpak update
+#1720980565
+sudo nala search fastfetch
+#1720981380
+un
+#1720981558
+fastfetch --version
+#1720981618
+cd github/
+#1720981684
+sudo nala purge fastfetch 
+#1720981736
+git clone https://github.com/fastfetch-cli/fastfetch.git
+#1720981740
+cd fastfetch/
+#1720981782
+cat CMakeLists.txt 
+#1720981801
+cd debian/
+#1720982723
+cat rules
+#1720982745
+cat control
+#1720982760
+cd
+#1720982770
+cd Downloads/Progs/
+#1720982780
+doas nala install ./fastfetch-linux-amd64.deb 
+#1720982788
+fastfetch 
+#1720982818
+lsk
+#1720982840
+lsku
+#1720982918
+cd /ssd/
+#1720982938
+doas nala search kde
+#1720982955
+doas nala search kde-st
+#1720982971
+doas nala show -a kde-standard 
+#1720983009
+docker 
+#1720983014
+docker update
+#1720983111
+jq
+#1720983118
+pyfiglet
+#1720983131
+doas nala install pyfiglet
+#1720983255
+fastfetch 
+#1720983320
+exi6t
+#1722137373
+exity
+#1722137509
+un
+#1722144325
+cd /media/albano/NETAC2Tb/
+#1722144327
+ls -l
+#1722144337
+ll /backup
+#1722144499
+rsync -havrP albano /backup/
+#1722144524
+diff albano /backup/
+#1722144543
+diff albano /backup/albano
+#1722144557
+diff -r albano /backup/albano
+#1722144957
+sudo nala install nemo
+#1722145071
+sudo nala 
+#1722145080
+doas nala
+#1722145083
+doas nala --help
+#1722145113
+doas nala list --installed 
+#1722145121
+uname -a
+#1722145139
+sudo update-initramfs -u
+#1722145906
+un
+#1722293395
+sudo nautilus
+#1722293447
+lsk
+#1722293457
+cd /media/albano/NETAC2Tb/
+#1722293469
+doas rm -rf albano
+#1722293602
+lsk
+#1722298810
+fdupes --help
+#1722299165
+sudo nala search fclone
+#1722299173
+doas nala search fclone
+#1722299390
+doas nala search rdfind
+#1722299657
+lsk
+#1722299873
+cargo search fclones
+#1722299883
+sudo nala search fclones
+#1722303264
+un
+#1722305584
+cd
+#1722305700
+cargo search fclones
+#1722305711
+cargo install fclones
+#1722305725
+type -a fclones
+#1722305730
+fclones --help
+#1722305768
+lsk
+#1722306216
+mkfs.xfs --help
+#1722306315
+lsk
+#1722306369
+reboot
+#1722306566
+lsk
+#1722306576
+mkfs.xfs --help
+#1722306702
+sudo mkfs.xfs -L ALL -f /dev/sdb1
+#1722306736
+lsk
+#1722395274
+cat /etc/fstab
+#1722393507
+un
+#1722398689
+doas nvim /etc/default/grub
+#1722401083
+un
+#1722401321
+nala list --upgradable 
+#1722401934
+un
+#1722401961
+reboot
+#1722458615
+un
+#1722459029
+uname -a
+#1722459127
+docker login
+#1722459144
+fastfetch 
+#1722459206
+reboot
+#1722459320
+LL
+#1722459327
+un
+#1722459361
+sudo nala full-upgrade 
+#1722459588
+un
+#1722466038
+exity
+#1722567372
+un
+#1722567526
+nala list --upgradable 
+#1722567555
+fclones
+#1722567631
+sudo find / -type d -wholename '*dashtopanel*' 2> /dev/null
+#1722567745
+sudo find / -type d -wholename '*dash*' 2> /dev/null
+#1722567756
+sudo find / -type d -wholename '*dasht*' 2> /dev/null
+#1722567811
+sudo find / -type d -wholename '*dasht-to-panel' 2> /dev/null
+#1722567841
+sudo find / -type d -wholename '*dasht-to-panel*' 2> /dev/null
+#1722567847
+sudo find / -type d -wholename '*dash-to-panel*' 2> /dev/null
+#1722567863
+cd .local/share/gnome-shell/
+#1722567865
+ls -l
+#1722567919
+cd extension
+#1722567923
+ls -ls
+#1722567939
+sudo find / -type d -wholename '*dash-to-panel*' 2> /dev/null
+#1723045539
+un
+#1723045885
+reboot
+#1723045943
+un
+#1723045955
+sudo nala full-upgrade
+#1723106308
+cd .rustup/
+#1723106309
+ls -l
+#1723105208
+un
+#1723109559
+un
+#1724160038
+fastfetch 
+#1724160270
+cd github/dotfiles/alacritty/
+#1724163006
+btop
+#1724163011
+bashtop 
+#1724163030
+sudo bashtop 
+#1724431303
+un
+#1724431627
+reboot
+#1724431726
+un
+#1724431740
+sudo nala full-upgrade 
+#1724432105
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+#1724435311
+sudo nala search fastfetch
+#1724435326
+fastfetch 
+#1724435424
+cd github/dotfiles/
+#1724435433
+git diff
+#1724435455
+git restore bash/bashrc 
+#1724435483
+cd
+#1724435517
+cd .vscode
+#1724435522
+cat argv.json 
+#1724435527
+cd cli/
+#1724435533
+cd ..
+#1724435535
+cd extensions/
+#1724435673
+sudo apt search kde
+#1724435677
+sudo apt search plasma
+#1724435708
+sudo apt search '^plasma'
+#1724435734
+sudo apt search -t experimental '^plasma'
+#1724435769
+ps
+#1724435782
+tasksel
+#1725641580
+un
+#1725652818
+nala list --upgradable 
+#1725652841
+sudo nala full-upgrade 
+#1725653713
+sudo update-initramfs -k all
+#1725653724
+sudo update-initramfs -k 'all'
+#1725653732
+sudo update-initramfs -k all
+#1725653751
+doas update-initramfs -u -k all
+#1725653787
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+#1725653850
+un
+#1725653913
+sudo nala search plasma
+#1725653942
+sudo nala search plasma-des
+#1725653953
+sudo nala search -t experimental plasma-des
+#1725653968
+sudo apt search -t experimental plasma-des
+#1725654007
+sudo apt search -t experimental kde-plasma-des
+#1725654030
+exitr
+#1726169817
+un
+#1726170160
+nala list --upgradable 
+#1726170174
+dirmgr
+#1726336779
+un
+#1726337135
+docker container ls -a
+#1726337141
+docker image ls
+#1726698164
+un
+#1727188145
+nala list --upgradable 
+#1727188169
+gnome-shell --version
+#1727188189
+gnome-tweaks --version
+#1727188223
+flatpak update 
+#1727188355
+sudo tasksel 
+#1727188394
+fastfetch 
+#1727188458
+sudo tasksel
+#1727188773
+cd .ssh
+#1727188774
+;;
+#1727188792
+ssh -T git@github.com
+#1727188887
+cat alldeb_home.pub 
+#1727188915
+ssh -T git@github.com
+#1727188929
+sudo systemctl status sshd
+#1727188949
+nvim 
+#1727188969
+sudo nvim /etc/ssh/sshd_config
+#1727189018
+sudo nvim /etc/ssh/ssh_config
+#1727189054
+sudo systemctl restart sshd
+#1727189059
+ssh -T git@github.com
+#1727190078
+sudo systemctl status docker
+#1727190163
+sudo nala 
+#1727190168
+sudo nala --help
+#1727190195
+sudo nala purge gnome
+#1727190204
+sudo nala purge gnome-desktop
+#1727190208
+sudo nala purge gnome-desktop3-data 
+#1727190242
+sudo nala purge gnome-desktop3-data gnome-shell gnome-shell-extensions gnome-tweak-tool gnome-control-center 
+#1727190262
+sudo nala purge gnome-desktop3-data gnome-shell gnome-shell-extensions gnome-tweaks gnome-control-center 
+#1727190433
+sudo nala install task-cinnamon-desktop xwayland 
+#1727190675
+sudo nala purge gnome-terminal
+#1727190702
+sudo nala search terminal
+#1727190785
+sudo nala install xfce4-terminal tio
+#1727190793
+sudo nala install xfce4-terminal
+#1727190799
+sudo nala install xfce4-terminal tio
+#1727190820
+sudo nala install tiny
+#1727190830
+sudo nala install putty
+#1727190870
+sudo nala purge putty
+#1727190885
+sudo nala purge putty gnome-menus
+#1727191526
+sudo nala install xsensors smartmontools
+#1727191539
+sensors
+#1727191542
+sudo sensors
+#1727191558
+sudo systemctl status smartd.service 
+#1727191567
+sudo systemctl status smartmontools.service 
+#1727191853
+sct
+#1727191895
+sudo find / -type f -wholename '*sct*' 2> /dev/null
+#1727191916
+sudo find /etc -type f -wholename '*sct*' 2> /dev/null
+#1727191944
+sudo find /etc -type f -wholename '*sct*'
+#1727191958
+cd github/dotfiles/bash-completion/
+#1727191971
+cat systemctl 
+#1727191982
+sudo find /etc -type f -wholename '*systemctl*'
+#1727192003
+cd /etc/bash_completion.d/
+#1727192469
+sct status docker
+#1727192479
+sudo nala search distrobox
+#1727192583
+sudo nala install docker-compose
+#1727192599
+docker-compose 
+#1727192623
+sudo nala install docker-compose
+#1727192659
+runc --help
+#1727192661
+docker
+#1727192731
+docker 
+#1727192742
+sct status docker
+#1727192759
+sct status docker.socket 
+#1727192767
+docker-compose 
+#1727192775
+docker login
+#1727198946
+sudo nala list --help
+#1727198967
+sudo nala
+#1727198971
+sudo nala --help
+#1727199053
+sudo nala list -i|rg kde
+#1727199081
+sudo tasksel 
+#1727199322
+fastfetch 
+#1727199397
+un
+#1727199439
+nala list --upgradable 
+#1727199462
+nala purge gnome-text-editor 
+#1727199466
+sudo nala purge gnome-text-editor 
+#1727199522
+sudo nala search kde
+#1727199531
+sudo nala search plasma-desktop
+#1727199545
+sudo nala search -t experimental plasma-desktop
+#1727199553
+sudo apt search -t experimental plasma-desktop
+#1727199629
+sudo dpkg -L
+#1727199632
+sudo dpkg -l
+#1727199652
+fastfetch 
+#1727199776
+sudo dpkg -l|cut -d'ii ' -f2
+#1727199783
+sudo dpkg -l|cut -d' ' -f2
+#1727199793
+sudo dpkg -l|cut -d' ' -f1
+#1727199796
+sudo dpkg -l|cut -d' ' -f2
+#1727199809
+sudo dpkg -l|cut -d' ' -f3
+#1727199831
+sudo dpkg -l|cut -d' ' -f3|rg '^kd*'
+#1727199838
+sudo dpkg -l|cut -d' ' -f3|rg '^k*'
+#1727199842
+sudo dpkg -l|cut -d' ' -f3|rg '^kd*'
+#1727199852
+sudo dpkg -l|cut -d' ' -f3|rg '^k.*'
+#1727199873
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*'
+#1727199921
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z].*'
+#1727199927
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*'
+#1727200002
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*' | xargs -n1 sudo nala purge 
+#1727200025
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*' | xargs -n1 | sudo nala purge 
+#1727200030
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*' | xargs -n1 sudo nala purge 
+#1727200049
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*'
+#1727200064
+sudo nala purge kactivities-bin 
+#1727200073
+sudo nala purge kactivitymanagerd 
+#1727200096
+sudo nala purge kbd
+#1727200117
+sudo nala purge kded5 
+#1727200153
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*'
+#1727200170
+kmod --help
+#1727200194
+sudo nala show kpartx
+#1727200227
+sudo nala show krb5-
+#1727200232
+sudo nala show krb5-locales 
+#1727201513
+timedatectl 
+#1727201526
+localectl 
+#1727201538
+sudo localectl --help
+#1727201572
+sudo localectl list-keymaps 
+#1727201594
+sudo localectl set-keymap us-acentos
+#1727201602
+sudo localectl
+#1727201612
+sudo su
+#1727201673
+cat /etc/vconsole.conf 
+#1727201684
+sudo vim /etc/vconsole.conf 
+#1727201751
+doas update-initramfs -u -k all
+#1727201776
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+#1727203077
+cd .ssh
+#1727203085
+cat authorized_keys 
+#1727203365
+doas nala update && doas nala upgrade
