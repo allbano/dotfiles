@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# ------------------------------------------------------------------------------- # 
+# Script      : remove-orphans
+# Description : 
+# Version     : 0.1
+# Author      : Albano Roberto Drescher Von Maywitz 
+# Data        : 01 de outubro de 2024
+# ------------------------------------------------------------------------------- # 
+# Use : 
+# ------------------------------------------------------------------------------- # 
+# Copyright (C) 2024, Albano <allbano@gmail.com>.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+# ------------------------------------------------------------------------------- #  
+# Lista os pacotes órfãos
+orphans=$(pacman -Qdtq)
+
+# Lista os Pacotes a serem removidos
+echo -e "${orphans//:/\\n}"
+
+# Percorre cada pacote órfão
+for orphan in $orphans; do
+  read -p "Remover $orphan? (s/N) " confirm
+  if [[ $confirm =~ ^[Ss]$ ]]; then
+    sudo pacman -Rs $orphan
+  fi
+done
