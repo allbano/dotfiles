@@ -12,8 +12,8 @@
 
 [[  ! $PATH =~ /usr/sbin ]] && export PATH="$PATH:/usr/sbin"
 [[  ! $PATH =~ /sbin ]] && export PATH="$PATH:/sbin"
-# . in PATH
-export PATH="$PATH:."
+# cargo in PATH
+source "$HOME/.cargo/env"
 
 #SSH Agent
 eval "$(ssh-agent &> /dev/null)"
