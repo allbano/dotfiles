@@ -1,0 +1,8529 @@
+nvtop
+exirt
+paru -Ssss debootstrap
+which malloc
+pacman -Si talloc
+lsblk -f
+nvtop
+env
+env|rg TERMCAP
+set|rg TERMCAP
+man man
+nvim  /.bashrc
+nvim  ~/.bashrc
+most
+nvim  ~/.bashrc
+man man
+man man
+cd github/
+cd dotfiles/
+gl
+cat tmux/.tmux.conf
+ls bash-completion/
+lsd bash-completion/
+cd bash-completion/
+cat  /.bashrc
+cat  ~/.bashrc
+/usr/share/bash-completion/
+cd completions/
+TMUX="$(pwd)/tmux_completion
+TMUX="$(pwd)/tmux_completion"
+echo $TMUX
+cd  ~/github/dotfiles/bash-completion/
+sudo ln -s /home/albano/github/dotfiles/bash-completion/tmux_completion $(echo $TMUX)
+cd $OLDPWD
+ll l*
+ll t*
+neofetch
+nvim ~/.bashrc
+/usr/share/bash-completion/
+complete 
+completions/
+ll doas
+ll tmux
+ll -d tmux
+sudo ln -s /home/albano/github/dotfiles/bash-completion/tmux_completion ./tmux_completion
+ll -d tmux_completion 
+sudo ln -s /home/albano/github/dotfiles/bash-completion/doas /home/albano/github/dotfiles/bash-completion/doas
+ll -d doas
+ll -d ./doas
+ll d*
+sudo ln -s /home/albano/github/dotfiles/bash-completion/doas /usr/share/bash-completion/completions/doas
+ll d*
+nvim ~/.bashrc
+doas syexit
+doas syexit
+doas pacman -Syyuu
+cd github/dotfiles/
+mkdir qBittorrent
+cd qBittorrent/
+mkdir themes
+then
+themes/
+git clone https://github.com/dracula/qbittorrent.git
+cd qbittorrent/
+cp dracula.qbtheme ..
+~/.config/qBittorrent/
+cat qBittorrent
+cat qBittorrent.conf
+nvim qBittorrent.conf
+cd ~/github/dotfiles/qBittorrent/themes/
+rm dracula.qbtheme
+mv qbittorrent Dracula
+cd Dracula/
+rm .git
+rm -rf .git
+rm -rf .github/
+ga .
+git restore --staged .
+cd..
+cd themes
+rm -rf qBittorrent/
+cd ~/.config/
+cd qBittorrent/
+mkdir themes
+man git clone
+git clone https://github.com/dracula/qbittorrent.git -o Dracula
+cd qbittorrent/
+rm -rf qbittorrent/
+git clone https://github.com/dracula/qbittorrent.git Dracula
+mv Dracula ./themes/
+cd themes/
+cd Animes/
+rm '[AnimesTC] AI no Idenshi - 01 (1080p).mkv'
+rm '[Erai-raws] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka - 01 ~ 13 [1080p][Multiple Subtitle]'
+rm -rf '[Erai-raws] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka - 01 ~ 13 [1080p][Multiple Subtitle]'
+mkdir Dungeon_ni_Deai
+cd Dungeon_ni_Deai/
+mkdir S4
+cd S4/
+free -h
+cd github/
+cd cd jgp4/
+jgp4/
+cd Cap01_Introducao/
+bat Cap01_Introducao.txt
+cd ../..
+rm -rf jgp4/
+cd webcoder/
+cat funcoes.js
+rm -rf webcoder/
+cd we-
+cd web-moderno/
+cd exercicios-web/
+cd web-moderno/
+git status
+rm -rf web-moderno/
+rm -rf extensaoinclusaodigital/
+cd db3
+cd ebook/
+git config -l
+rm -rf construindosaberes/
+cd git
+cd javaexercicios/
+cd analisedeprojetos/
+ga .
+gcam "Reorganizado os arquivos. Projeto finalizado!"
+gp
+cd ana
+analisedeprojetos/
+rm -rf analisedeprojetos/
+rm -rf TrabalhoFinalJava1
+cd javaexercicios
+cd Exercicio
+cd Exercicio2
+cd utfprct-tex/
+git config -l
+cd utfprct-tex/
+gl
+git clone git@github.com:wmeira/utfprct-tex.git
+rm -rf utfprct-tex/
+git clone git@github.com:wmeira/utfprct-tex.git
+cd utfprct-tex/
+cat README.md
+cd myscripts/
+gl
+cd WEBII/
+ga .
+gp
+rm -rf WEBII/
+LPOO1Exercises/
+rm -rf LPOO1Exercises/
+cd jogodavelha/
+neofetch
+systemctl restart
+doas pacman -R chormium
+doas pacman -R chromium
+alias |rg py
+bat /home/albano/.py3env/bin/activate
+echo BASH_SOURCE
+echo $BASH_SOURCE
+cd /home/albano/.py3env/bin/
+lvim
+cd github/
+git clone git@github.com:allbano/Developing.git
+cd Developing/
+cd CLang/
+cd examples/
+mkdir DataStructs
+cd DataStructs/
+mkdir examples
+cd .. && mv ./CLang/examples/DataStructs .
+mv DataStructs ./CLang/
+cd CLang/
+cd DataStructs/
+cd examples/
+touch exDataStruct.c exDataStruct.h
+lvim exDataStruct.h
+lvim
+cd ~/.config/lvim/
+lvim config.lua
+lvim
+cd $OLDPWD
+lvim exDataStruct.h
+lvim exDataStruct.c
+touch Ponto.c
+lvim Ponto.c
+mv exDataStruct.h Ponto.h
+lvim Ponto.h
+lvim Ponto.c
+mv exDataStruct.c exTestPonto.c
+lvim exTestPonto.c
+gcc -c Ponto.c exTestPonto.c -o dt
+gcc Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc -ld  Ponto.c exTestPonto.c -o dt
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+doas find / -name '*math.h'
+doas find / -name '*/math.h'
+doas find / -wholename '*/math.h'
+bat /usr/include/math.h'
+bat /usr/include/math.h
+bat /usr/include/math.h | rg sqrt
+lvim /usr/include/math.h
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+lvim Ponto.c
+gcc  Ponto.c exTestPonto.c -o dt
+gcc exTestPonto.c Ponto.c -o dt
+gcc exTestPonto.c Ponto.c -o xxx
+gcc -00 exTestPonto.c Ponto.c -o xxx
+gcc -Wall exTestPonto.c Ponto.c -o xxx
+gcc -Wall exTestPonto.c Ponto.c -o xxx -lm
+lvim Ponto.c
+lvim Ponto.c
+gcc -Wall exTestPonto.c Ponto.c -o xxx
+rm xxx
+gcc -Wall exTestPonto.c Ponto.c -o xxx
+gcc -Wall -lm exTestPonto.c Ponto.c -o xxx
+lvim exTestPonto.c
+gcc -Wall -lm exTestPonto.c Ponto.c -o xxx
+lvim exTestPonto.c
+lvim Ponto.c
+gcc -Wall -lm exTestPonto.c Ponto.c -o xxx
+gcc -std=c99  -Wall  exTestPonto.c Ponto.c -o xxx
+gcc -std=c99  -Wall -00  exTestPonto.c Ponto.c -o xxx
+gcc -std=c99  -Wall  exTestPonto.c Ponto.c -o xxx
+gcc -lm  -Wall  exTestPonto.c Ponto.c -o xxx
+l -h
+lsd -l
+cd github/laundry_online/
+cat docker-compose.yml
+cd ui
+cat Dockerfile
+cd app/
+cat Dockerfile
+nvtop
+exuit
+cd github/
+git clone git@github.com:allbano/bantads.git BANTADS
+cd BANTADS/
+touch README.md
+got config -l
+git config -l
+git branch -M main
+ga .
+gcam "Primeiro commit do repositório."
+gp
+lvim README.md
+ga .
+gc -m "Adicionada informações no README."
+gp
+man ash
+man bash
+doas pacman -S less
+doas pacman -S most
+doas pacman -Ssss build-dep
+doas pacman -Ssss build-
+doas pacman -Ssss fdupes
+doas pacman -Si fdupes rm lint
+doas pacman -Si fdupes rmlint
+cd Projects/
+cd Filters/
+cd github/
+git clone https://github.com/allbano/SINAPSENSE
+cd SINAPSENSE/
+cd Projects/
+cd Filters
+mv Filters ~/github/SINAPSENSE/
+cd SINAPSENSE/
+ga .
+git branch -M main
+git restore --staged .
+gi rm --cached .
+git rm --cached .
+git rm --cached -r .
+touch README.md
+ga README.md
+gc -M "Primeiro commit, adicionado README."
+gc -m "Primeiro commit, adicionado README."
+gp
+git push -u origin main
+mv Filters ..
+rm SINAPSENSE/
+rm -rf SINAPSENSE/
+git clone git@github.com:allbano/SINAPSENSE.git
+cd SINAPSENSE/
+touch README.md
+ga .
+gcam "Primeiro commit, adiciionado README."
+gp
+mv Filters ./SINAPSENSE/
+cd SINAPSENSE/
+gab .
+ga .
+gcam "Filtros da última versão do programa de leitura do EEG. (Python)"
+gp
+doas pacman -S octave
+ip -c r
+flatpak update
+dc .ssh
+kl
+.ssh
+chmod 600 known_hosts
+chmod 600 known_hosts.old
+ip -c a
+ssh-keygen --help
+history|rg ssh-keygen
+history|rg ssh-ke
+exit
+ssh-keygen -t ed25519 -C "allnote"
+ssh-copy-id albano@192.168.15.3
+ssh-copy-id albano@192.168.15.3 -p 6969
+ssh-copy-id -p 6969  albano@192.168.15.3
+ssh-copy-id -p 6969  192.168.15.3
+ssh-copy-id -p 6969 -i /home/albano/.ssh/allnote.pub  192.168.15.3
+ssh-copy-id -p 6969 -i allnote.pub  192.168.15.3
+ssh 192.168.15.3
+ssh -p 6969  alano@192.168.15.3
+ssh -p 6969  albano@192.168.15.3
+ssh-copy-id -p 6969 -i allnote.pub  albano@192.168.15.3
+ssh -p 6969 albano@192.168.15.3
+uname -a
+ssh -p 6969 albano@192.168.15.3
+ssh -p 6969 albano@179.187.195.199
+uname -a
+neofetch
+ssh -p 6969 albano@192.168.15.3
+ls -l
+cat known_hosts
+docker
+ls -l /proc/$BASHPID
+ls -l /proc/$BASHPID/fd
+ls -l /proc/$$/fd
+echo $LOGIN
+echo$LOGIN
+cat /etc/pacman.d/mirrorlist
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+doas lvim /etc/pacman.d/mirrorlist
+yay -Syyu
+yay -Ssss megasync
+yay -Rscnd megasync
+yay -S megasync -bin
+yay -S megasync-bin
+doas lvim /etc/pacman.d/mirrorlist
+yay -Ssss megasync
+yay -S megasync-bin
+yay -Ssss megasync
+yay -Syyu
+neofetch
+github/dotfiles/
+cd tmux/
+lvim.tm
+lvim .tmux.confm
+lvim .tmux.conf
+cd alacritty/
+cd themes2/
+lsd -l
+lvim alacritty.yml
+cd ~/.config/alacritty/
+cat Albano-Dkeg-Vw.yml
+rm themes
+rm -rf themes
+cd $OLDPWD
+rm -rf alacritty/
+cp ~/.config/alacritty .
+cp -r ~/.config/alacritty .
+ga .
+gcam "Melhorada estrutura dos arquivos de configuração e iniciado testes de thema."
+gp
+cd UFPR/TADS/
+mkdir DS252-ESII
+cd DS252-ESII/
+mkdir Docs
+mkdir DS143-EDII
+up\
+~/github/Developing/
+ga .
+git restore --staged xxx
+git restore --staged CLang/DataStructs/examples/xxx
+cd CLang/DataStructs/
+cd examples/
+lvim Ponto.h
+is
+gcc exTestPonto.c Ponto.c -o xxx
+gcc -lm exTestPonto.c Ponto.c -o xxx
+rm xxx
+bat Ponto.h
+bat Ponto.c
+lvim exTestPonto.c
+lvim Ponto.
+lvim Ponto.c
+gcc -lm  exTestPonto.c Ponto.c -o xxx
+lvim Ponto.c
+gcc -lm  exTestPonto.c Ponto.c -o xxx
+lvim Ponto.c
+gcc -lm  exTestPonto.c Ponto.c -o xxx
+rm xxx
+git restore --staged .
+mkdir Ponto
+mv ./* ./Ponto
+mv ./* ./Ponto/
+mv Ponto.{c,h} exTestPonto.c  ./Ponto/
+mv ./Ponto.{c,h} ./exTestPonto.c  Ponto/
+cd Ponto/
+gcam "Ponto example Data Structure."
+gp
+mkdir UnionFind
+cd UnionFind/
+lk
+touch UnionFind.{h,c}
+mv UnionFind.h libUnionFind.h
+cp libUnionFind.h libUnionFind.c
+lvim libUnionFind.h
+lvim libUnionFind.c
+lvim UnionFind.c
+cd github/Developing/CLang/DataStructs/examples/UnionFind/
+lvim UnionFind.c
+lvim libUnionFind.c
+rm libUnionFind.{c,h}
+lvim UnionFind.c
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/tinyUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/mediumUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/largeUF.txt
+l -h
+lsd -l
+lvim largeUF.txt
+rm largeUF.txt
+rm mediumUF.txt
+rm tinyUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/largeUF.txt
+rm largeUF.txt
+wget https://gitlab.com/ds143-alexkutzke/material/-/blob/main/01/tinyUF.txt
+cat tinyUF.txt
+rm tinyUF.txt
+cat tinyUF.txt
+cat mediumUF.txt
+cat largeUF.txt
+reset
+lvim UnionFind.c
+cd github/Developing/CLang/DataStructs/examples/
+mkdir ListaSequencial
+cd ListaSequencial/
+ga .
+touch README.md
+lvim README.md
+ga .
+git restore --staged .
+ga README.md
+gc -m "Added README of Data Structure Directory."
+ga .
+gcam "Exercise UnionFind - Data Structure II subject."
+gp
+lsd -l
+cd examples/
+cd ListaSequencial/
+touch ListaSequencial.{h,c}
+cd github/Developing/CLang/DataStructs/examples/ListaSequencial/
+lvim ListaSequencial.c
+lvim ListaSequencial.h
+lvim ListaSequencial.c
+neofetch
+cd github/
+cd Developing/CLang/DataStructs/examples/UnionFind/
+#1691437106
+lvim UnionFind.c 
+lvim UnionFind.c
+cd github/Developing/CLang/DataStructs/examples/
+cd ListaSequencial/
+bat ListaSequencial.
+bat ListaSequencial.h
+bat ListaSequencial.c
+bashtop
+ps
+nvim ~/.local/share/bash/history
+exit
+ll
+nvim ~/.local/share/bash/history
+cat ~/.local/share/bash/history
+//g'
+//g'
+//g'
+//g'
+cat ~/.local/share/bash/history
+nvim ~/.local/share/bash/history
+cat ~/.local/share/bash/history
+nvim ~/.zshrc
+l
+cat .zsh_history
+his
+history
+cat ~/.local/share/bash/history
+//g'
+cat ~/.local/share/bash/history 
+exit
+ll
+his
+history
+exit
+exit
+cat /etc/bash.bashrc
+cd /etc/bash_completion.d/
+echo $PS1
+37m\] $ \[\e[0m\]"
+cd github/
+cd Developing/CLang/
+tree
+lsd -l
+yay -Ssss pwd
+tree --help
+tree -L 0
+tree -L 1
+tree -L 1 ~
+tree -L 1 $HOME
+reset
+cd github/
+cd Developing/
+yay -Syyu
+paru -Syyu
+paru -Qi python-anytree
+paru -R python-anytree
+neofetch
+doas systemctl status
+jobs -l
+echo $PS1
+37m\] $ \[\e[0m\]"
+cd github/
+cd Developing/CLang/DataStructs/
+cd examples/
+cd UnionFind/
+lvim UnionFind.c
+his|rg sh
+his|rg ssh
+ssh -p 6969 albano@192.168.15.3
+exitt
+htop
+exit
+exit
+yay -R mawk
+neofetch
+flatpak update
+bat /etc/bash.bashr
+bat /etc/bash.bashrc
+cat  ~/.config/user-dirs.dirs
+cd github/dotfiles/
+cd bash
+cat .bashrc
+lvim ~/.bashrc
+cat .profile
+cat $HOME/.cargo/env
+cargo
+uname -a
+echo $PATH
+uname -a
+cat $HOME/.cargo/env
+.cargo/
+cd .
+rustup --help
+rustup update
+rustup show
+lvim ~/.bashrc
+cat ~/.cargo/env
+lvim ~/.cargo/env
+lvim ~/.bashrc
+ssh -p 6969 albano@192.168.15.3
+doas systemctl restart bluetooth.service
+reboot
+ssh -p 6969 albano@192.168.15.3
+doas systemctl restart bluetooth.service
+reboot
+lvim ~/.profile
+lvim ~/.bashrc
+ssh -p 6969 albano@192.168.15.3
+ssh -p 6969 albano@2804:7f4:309a:885c:80fc:7ee1:f946:fd9a
+uname -a
+neofetch 
+uname -a
+neofetch 
+lvim ~/.bashrc
+cat /proc/loadavg 
+cat /proc/loadavg | cut -d
+cat /proc/loadavg | cut -d" "
+cat /proc/loadavg | cut -d" " -f1
+cat /proc/loadavg | cut -d" " -f1-3
+upower -e
+upower -e | rg battery
+upower -i '$(upower -e | rg battery)'
+upower -i "$(upower -e | rg battery)"
+upower -i "$(upower -e | rg battery | head)"
+upower -i "$(upower -e | rg battery | head -n1)"
+upower -i $(upower -e | rg battery | head -n1)
+upower -i $(upower -e | rg battery | head -n1)|rg percentagel
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-3
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|cut -c 1-4
+upower -i $(upower -e | rg battery | head -n1)|rg percentage
+upower -i $(upower -e | rg battery | head -n1)|rg percentage\rev
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-4
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-4|rev
+cd salsa/devel/
+./prompt 
+./prompt --help
+exi
+upower -i $(upower -e | rg battery | head -n1)|rg percentage|rev|cut -c 1-4|rev
+cd salsa/devel/
+./prompt 
+./prompt --help
+exi
+nerdctl
+nerdctl --help
+docker
+yay -Ssss osx-cpu-temp
+yay -Ssss cpu-temp
+yay -Sss lm-sensors
+yay -Sss lm_sensors
+yay -Sss iostat
+iostat
+man htop
+man ip
+type -a abshtop
+type -a bashtop
+which bashtop
+type bashtop
+whoami
+who --help
+who a
+who am
+who -a
+who -am
+who -am i
+who -am -i
+who am i
+who am i | awk '{print $NF
+who am i | awk '{print $NF}'
+who am i | awk '{print $NF}' | tr -d ')''('
+eval --help
+eval "$@"
+ssh -p 6969 albano@192.168.15.3
+ssh -p 6969 albano@2804:7f4:309a:885c:80fc:7ee1:f946:fd9a
+uname -a
+neofetch 
+lvim ~/.bashrc
+cd salsa/
+rm devel/
+pl
+gl
+cd git clone git@salsa.debian.org:kretcheu/tutoriais.git
+cd ..
+ll ~/.ssh
+cat ~/.ssh/allnote.pub 
+git clone git@salsa.debian.org:kretcheu/tutoriais.git
+yay -Ssss nethogs
+rm -rf devel/
+git clone git@salsa.debian.org:kretcheu/devel.git
+cd devel/
+lvim ./prompt 
+cat abshtop
+cat babshtop
+cat bashtop
+cat $(which bashtop)
+yay -Si btop
+top
+btop
+bashtop
+cd Downloads/CursoKretcheu/
+cd cgcr/
+rm a05.mp4 
+man wge
+man wget
+pacman -S less
+doas pacman -S less
+doas pacman -R less
+lvim ~/.bashrc
+cat $(which bashtop)
+yay -Si btop
+top
+btop
+rm a05.mp4 
+cd Downloads/CursoKretcheu/
+cd cgcr/
+cd ~/github/
+cd ~/github/dotfiles/
+git config -e
+git config --global -e
+cd $OLDPWD
+bashtop
+cat | strace -f -e read,write,clone,execve,dup2,openat,close bash
+cat .bashrc | strace -f -e read,write,clone,execve,dup2,openat,close bash
+rm -rf devel/
+git clone git@salsa.debian.org:kretcheu/devel.git
+cd devel/
+lvim ./prompt 
+cat abshtop
+cat babshtop
+cat bashtop
+cat $(which bashtop)
+yay -Si btop
+top
+btop
+bashtop
+cd Cursos/
+cd Downloads/
+ll * d/
+ll  d*/
+ll -d */
+lsd -ld */
+cd CursoKretcheu/
+wget -rc https://kretcheu.com.br/
+rm -rf kretcheu.com.br/
+cd kretcheu.com.br/
+mv cgcr/* ../cgcr/
+rmdir cgcr/
+rmdir kretcheu.com.br/
+ll -h
+rm -rf 'index.*'
+rm -rf {index.*}
+rm -rf l
+nautilus .
+rm -rf *
+tldr wget
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/ -R 'index.*'
+cd cgcr/
+cd ..
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/cgcr/ -R 'index.*'
+rm -rf cgcr/
+wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,*.html,*.ico,*.tmp'
+ip -c a
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/ -R 'index.*'
+cd cgcr/
+cd ..
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/cgcr/ -R 'index.*'
+rm -rf cgcr/
+wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,*.html,*.ico,*.tmp'
+ip -c a
+github/BANTADS/
+gcam 'Atualizado as informações das configurações do Projeto.'
+git commit --amend -m 'Atualizado as informações das configurações do Projeto.'
+git push -ff
+gl
+lvim README.md 
+git commit --amend
+gp
+gp -ff
+git log
+rm -rf *
+tldr wget
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/ -R 'index.*'
+cd cgcr/
+cd ..
+wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/cgcr/ -R 'index.*'
+rm -rf cgcr/
+wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,*.html,*.ico,*.tmp'
+ip -c a
+github/
+BANTADS/
+gp
+gl
+cat README.md 
+nvm
+nvm update
+nvm list
+nvm nvm ls
+nvm install --lts
+nvm use lts
+nvm use 18.17.1
+nvm ls
+cd
+ng
+lvim ~/.bashrc
+npm instasll npm@latest -g
+npm i-v
+npm -v
+npm update -f
+npm update -g
+npm install -g @angular/cli
+npm version
+npm 
+npm -l
+npm ls
+npm --help
+npm version typescript
+nv version
+ng version
+npm install -g @typescript@latest
+npm install -g typescript@latest
+npm view typescript
+npm install -g typescript@latest
+github/BANTADS/
+npm list -global --dpth 0
+npm list -global --depth 0
+npm view typescript
+tsc --version
+npm
+npm version
+npm ls
+npm -g ls
+lvim README.md 
+gp --ff
+gp -ff
+glo
+glog
+gloga
+glol
+alias glol
+ng
+ng --help
+github/dotfiles/
+cd bash
+rm .bashrc 
+cp ~/.bashrc .
+rm ~/.bashrc
+ln -s /home/albano/github/dotfiles/bash/.bashrc /home/albano/.bashrc
+cd
+cat .bash_history 
+rm .bash_history 
+cd $OLDPWD
+github/dotfiles/
+cd archnote/
+cat .bashrc 
+cd ..
+cd bash
+cp ~/.profile 
+cp ~/.profile .
+mv .profile .profile_archlinux
+mv .bashrc .bashrc_archnote
+mv .profile_archlinux .profile_archnote
+ln -s /home/albano/github/dotfiles/bash/.bashrc_archnote /home/albano/.bashrc
+unlink ~/.bashrc
+ln -s /home/albano/github/dotfiles/bash/.bashrc_archnote /home/albano/.bashrc
+rm .h2.server.properties 
+rm package-lock.json 
+rm -rf .voltapp
+github/dotfiles/
+bash
+cd bash
+kl
+cat .bashrc_archnote 
+cat .profile_archnote 
+rm ~/.profile 
+ln -s ./.profile_archnote ~/.profile
+ll ~
+l ~
+unlink ~/.profile
+ln -s /home/albano/github/dotfiles/bash/.profile_archnote ~/.profile
+l ~
+babt ~/.profile
+bat ~/.profile
+ga .
+gc -m "Added bash configuration file and archnote profile."
+gp
+cd .
+..
+chmod 750 README.md 
+lsd -la
+chmod 650 README.md 
+chmod 750 README.md 
+lvim README.md 
+ga .
+gst -l
+gst -s
+gc -m "Updated README."
+gp
+bat README.md 
+lvim README.md 
+ga .
+glol
+glo
+gc -m "Modified README."
+gp
+cd 
+lvim ~/.bashrc
+lvim ~/.bashrc..
+cd 
+gp
+lsd -la
+lvim ~/.bashrc
+nvtop
+github/dotfiles/
+ga .
+github/dotfiles/
+git restore --staged .
+lvim ~/.bashrc
+github/dotfiles
+cd
+lvim ~/.bashrc
+exity
+ng version
+gc -m "Updated .bashrc"
+ng version
+ng --help
+nvm
+nvm list
+nvm use default 18.17.1
+nvm list
+ng version
+cd ..
+cd BANTADS/
+lvim ~/.abshrc
+lvim ~/.babshrc
+github/dotfiles/
+cd github/BANTADS/
+ng version
+github/BANTADS/
+nvm list
+nvm alias default 18.17.1
+nvm lis
+nvm list
+nvm use
+nvm insall --lts
+nvm uninstall 18.16.0
+nvm use 18.17.1
+nvm uninstall 18.16.0
+nvm lis
+nvm list
+ng new ui
+~l
+cd ui/
+ng g m cliente
+cd g m auth
+ng g m auth
+cd src/
+cd app/
+cd atu
+cd auth/
+github/BANTADS/
+ui
+gs
+git restore --staged .
+rm ui
+gs
+rm -rf ui
+gstt
+github/BANTADS/
+ng new ui
+gcam "Criado o projeto no Angular."
+ng g m cliente
+ng g m auth
+ga auth
+gc -m "Criado módulo de Autenticação."
+ga cliente
+gc -m "Criado módulo de Cliente."
+gp -ff
+glog
+alias
+glgg
+lvim README.md 
+gcam "Attualizado README."
+uname -a
+neofetch 
+lsusb
+lspci
+exitt
+gstt
+paru -Ssss gdb
+paru -S gdb
+gdb -v
+cat /etc/shells 
+csh
+tcsh
+zsh
+help
+type ls
+man -k man
+tldr man
+cat /etc/locale.conf 
+man --locate=pt_BR.UTF-8 bash
+man --locale=pt_BR.UTF-8 bash
+sudo locale.gen
+sudo lvim /ettc/locale.gen
+sudo lvim /etc/locale.gen
+sudo nvim /etc/locale.gen
+sudo locale-gen
+nvim /etc/locale.conf 
+doas nvim /etc/locale.conf 
+man --locale=pt_BR.UTF-8 ip
+echo $0
+echo $SHELL
+env
+which his
+which history
+help
+rm aliases 
+rm history 
+rmdir bash
+man tldr
+gedit profile_archnote 
+;;
+tmux
+his | rg 898
+cargo
+exity
+his|rg lvim
+his|rg lvims
+git restore --staged .
+lsd
+#1691992402
+lsd -1
+#1691992637
+gcam "Added bash_aliases,bash_functions and bash_history. Updated bashrc and my notebook profile."
+#1691993015
+git status --porcelain 
+#1691993073
+git status
+#1691993101
+update
+#1691993125
+date +'%Y'
+#1691993132
+date +'%Y'-%M
+#1691993136
+date +'%Y'-%m
+#1691993158
+date +'%Y-%m'
+#1691993162
+date +'%Y-%M'
+#1691993176
+date +'%Y-%m-%D'
+#1691993188
+date +'%Y-%m-%d'
+#1691993191
+date +'%Y-%m-%dd'
+#1691993199
+date +'%Y-%mm-%d'
+#1691993208
+date +'%Y-%mmm-%d'
+#1691993217
+date +'%Y-%m-%d'
+#1691993235
+date +'%Y-%m-%d %R'
+#1691993319
+git status --porcelain 
+#1691993430
+echo $OSTYPE 
+#1691993749
+du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
+#1691993788
+duf
+#1691993791
+dud
+#1691993795
+dust
+#1691993799
+tree
+#1691993864
+github/dotfiles/bash
+#1691994275
+launch google.com
+#1691994323
+launch vlc
+#1691994345
+xdg-open vlc
+#1691994354
+xdg-open VLC
+#1691994392
+xdg-open calculator
+#1691994397
+xdg-open Calculator
+#1691994586
+launch firefox &
+#1691994701
+[200~xdg-open 'https://meleu.sh/'~
+#1691994709
+xdg-open 'https://meleu.sh/'
+#1691994757
+xdg-open 'firefox &'
+#1691994762
+xdg-open 'firefox'
+#1691994796
+launch google.com
+#1691994807
+du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
+#1691994954
+xdg-open .bashrc
+#1691995315
+exec vlc
+#1691995330
+exec opera 
+#1691995365
+exec opera &
+#1692110527
+yay -Syyuu
+#1692114717
+gcam "Updated bash files."
+#1692110427
+ssh -p 6969 albano@192.168.15.3
+#1692486529
+nvm 
+#1692486533
+nvm ls
+#1692486656
+nvm install --lts
+#1692486666
+npm version
+#1692486783
+nvm install 'lts/*' --reinstall-packages-from=current
+#1692486834
+npm install npm@latest -g
+#1692486842
+npm version
+#1692486920
+npm install -g @angular/cli
+#1692486950
+npm version
+#1692486954
+ng
+#1692486977
+cat .bashrc
+#1692487109
+cat bash_completion 
+#1692487244
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/tmux_completion /usr/share/bash-completion/completions/tmux_completion
+#1692487262
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/doas /usr/share/bash-completion/completions/doas
+#1692487284
+ls -l doas
+#1692487288
+ls -l tmux_completion 
+#1692487318
+man tmux
+#1692488443
+ls -la
+#1692488482
+sudo apt install bash-completion 
+#1692488540
+cat /usr/share/bash-completion/completions/tmux_completion
+#1692488599
+vim profile_alldeb 
+#1692488770
+lsd -l ~/.bash*
+#1692488781
+lsd -l ~/.pro*
+#1692488792
+lsd -l ~/.prof*
+#1692488849
+vim .profile 
+#1692488923
+vim .bashrc 
+#1692489217
+gcam "Updated bashrc."
+#1692489227
+rm history_alldeb 
+#1692489262
+cp ~/.bash_history history_alldeb
+#1692489283
+gcam "Updated history_alldeb."
+#1692489309
+npm version
+#1692489343
+ud
+#1692489345
+sudo ud
+#1692584764
+ud
+#1692584801
+doas lvim /etc/apt/sources.list
+#1692584844
+ud
+#1692584955
+ll ~/.fzf
+#1692585180
+doas systemctl status ssh
+#1692585185
+doas systemctl status sshd
+#1692596447
+cat /etc/shells 
+#1692596475
+doas nala search nu
+#1692596481
+doas nala search nushel
+#1692596491
+echo $PATH
+#1692596512
+node
+#1692596527
+cargo search nu
+#1692596600
+doas nala install man-db
+#1692596623
+doas nala search shell
+#1692596766
+doas nala show ssh
+#1692596798
+doas nala show openssh
+#1692596801
+doas nala show openssh-client
+#1692596848
+cargo install --list
+#1692596861
+duf
+#1692596875
+doas nala install duf
+#1692596882
+duf
+#1692596888
+duf -a
+#1692596895
+duf -all
+#1692596918
+duf -json
+#1692596956
+duf -only-fs
+#1692596983
+duf
+#1692596998
+env
+#1692597110
+teste=(laranja morango pera uva)
+#1692597118
+echo $teste
+#1692597128
+echo ${teste}
+#1692597134
+echo ${teste[2]}
+#1692597139
+echo ${teste[1]}
+#1692597148
+echo ${teste[*]}
+#1692597151
+echo ${teste[@]}
+#1692597159
+echo ${teste[0]}
+#1692597442
+doi(){echo "Oi! Tudo bem?"}
+#1692597458
+"doi(){echo "Oi! Tudo bem?"}"
+#1692597499
+"doi() {echo "Oi! Tudo bem?"}"
+#1692597507
+"doi() { echo "Oi! Tudo bem?"}"
+#1692597520
+doo() {  echo "Consegui fazer function!"; }
+#1692597544
+doo
+#1692597563
+typeset -f
+#1692597579
+typeset -f | grep doo()
+#1692597588
+typeset -f | grep 'doo()'
+#1692597592
+typeset -f | grep 'doo\()'
+#1692597596
+typeset -f | grep 'doo\(\)'
+#1692597607
+typeset -f | less
+#1692597629
+echo $MANPAGER 
+#1692597677
+typeset -f | $(${MANPAGER})
+#1692596447
+cat /etc/shells 
+#1692596475
+doas nala search nu
+#1692596481
+doas nala search nushel
+#1692596491
+echo $PATH
+#1692596512
+node
+#1692596527
+cargo search nu
+#1692596600
+doas nala install man-db
+#1692596623
+doas nala search shell
+#1692596766
+doas nala show ssh
+#1692596798
+doas nala show openssh
+#1692596801
+doas nala show openssh-client
+#1692596848
+cargo install --list
+#1692596861
+duf
+#1692596875
+doas nala install duf
+#1692596882
+duf
+#1692596888
+duf -a
+#1692596895
+duf -all
+#1692596918
+duf -json
+#1692596956
+duf -only-fs
+#1692596983
+duf
+#1692596998
+env
+#1692597110
+teste=(laranja morango pera uva)
+#1692597118
+echo $teste
+#1692597128
+echo ${teste}
+#1692597134
+echo ${teste[2]}
+#1692597139
+echo ${teste[1]}
+#1692597148
+echo ${teste[*]}
+#1692597151
+echo ${teste[@]}
+#1692597159
+echo ${teste[0]}
+#1692597442
+doi(){echo "Oi! Tudo bem?"}
+#1692597458
+"doi(){echo "Oi! Tudo bem?"}"
+#1692597499
+"doi() {echo "Oi! Tudo bem?"}"
+#1692597507
+"doi() { echo "Oi! Tudo bem?"}"
+#1692597520
+doo() {  echo "Consegui fazer function!"; }
+#1692597544
+doo
+#1692597563
+typeset -f
+#1692597579
+typeset -f | grep doo()
+#1692597588
+typeset -f | grep 'doo()'
+#1692597592
+typeset -f | grep 'doo\()'
+#1692597596
+typeset -f | grep 'doo\(\)'
+#1692597607
+typeset -f | less
+#1692597629
+echo $MANPAGER 
+#1692597677
+typeset -f | $(${MANPAGER})
+#1692597687
+typeset -f | $(echo $MANPAGER)
+#1692597712
+typeset -f | less -s -M -Gg
+#1692597942
+typeset -f | less -N
+#1692597946
+typeset -f | less -s
+#1692597950
+typeset -f | less -S
+#1692597963
+last
+#1692597973
+last| less +F
+#1692598042
+last| less +Fs
+#1692598050
+typeset -f | less -s
+#1692598056
+typeset -f | less
+#1692598090
+info typeset
+#1692598100
+doas nala install info
+#1692598113
+doas nala install man-db
+#1692598116
+doas nala install man
+#1692598127
+doas nala install tldr
+#1692598133
+tldr less
+#1692598415
+cut -d: -f 1,3 /etc/group
+#1692598426
+cut -d: -f 1,2 /etc/group
+#1692598432
+cut -d: -f 1 /etc/group
+#1692598441
+cut -d: -f 1-3 /etc/group
+#1692598449
+cat /etc/group
+#1692598472
+cut -d: -f 1,3-4 /etc/group
+#1692598505
+uname -o
+#1692598516
+echo $OSTYPE 
+#1692598535
+os=`uname -o`
+#1692598540
+echo $os
+#1692598646
+man less
+#1692598970
+echo $MANPAGER 
+#1692598986
+cat /etc/group
+#1692598992
+cat /etc/group| less -s
+#1692599002
+cat /etc/group| less -sM
+#1692599012
+man less
+#1692599040
+cat /etc/group| less -sm
+#1692599050
+cat /etc/group| less -s
+#1692599054
+cat /etc/group| less -sM
+#1692599064
+cat /etc/group| less -sM -m
+#1692599078
+cat /etc/group| less -s -M -m
+#1692599095
+cat /etc/group| less -s -M +m
+#1692599109
+cat /etc/group| less -Mm
+#1692599143
+MANPAGER='less -sm'
+#1692599148
+man less
+#1692599190
+MANPAGER='less -sM'
+#1692599199
+man less
+#1692599226
+MANPAGER='less -s %b'
+#1692599228
+man less
+#1692599243
+MANPAGER='less -s %pB'
+#1692599245
+man less
+#1692599255
+MANPAGER='less -s +M'
+#1692599257
+man less
+#1692599263
+MANPAGER='less -sM'
+#1692599265
+man less
+#1692599321
+MANPAGER='less -P %s'
+#1692599324
+man less
+#1692599337
+man tldr
+#1692599348
+MANPAGER='less -s'
+#1692599351
+man tldr
+#1692599365
+MANPAGER='less -sm'
+#1692599366
+man tldr
+#1692599372
+man less
+#1692599401
+MANPAGER="less -sm"
+#1692599403
+man less
+#1692599417
+MANPAGER="less -s -m"
+#1692599418
+man less
+#1692599495
+MANPAGER="less -s -N"
+#1692599497
+man less
+#1692599522
+MANPAGER="less -N"
+#1692599523
+man less
+#1692601247
+mkdir salsa
+#1692601303
+docker
+#1692601341
+git clone git@salsa.debian.org:kretcheu/devel.git
+#1692601366
+./prompt 
+#1692601369
+./prompt 1
+#1692601372
+./prompt 2
+#1692601375
+./prompt 3
+#1692601377
+./prompt 4
+#1692601390
+./prompt 1
+#1692601486
+./prompt 1 2
+#1692601494
+./prompt 1 1
+#1692601496
+./prompt 1 0
+#1692601506
+./prompt 1 4
+#1692601508
+./prompt 1 3
+#1692601511
+./prompt 1 2
+#1692601513
+./prompt 1 1
+#1692601527
+./prompt
+#1692601542
+./prompt 8
+#1692601571
+./prompt 7
+#1692601575
+./prompt 1
+#1692601579
+./prompt 6
+#1692601588
+./prompt 5
+#1692601591
+./prompt 4
+#1692601597
+./prompt 3
+#1692601600
+./prompt 2
+#1692601602
+./prompt 1
+#1692601725
+./prompt 
+#1692601734
+./prompt 9
+#1692601738
+./prompt 12
+#1692601744
+./prompt 8
+#1692601747
+./prompt 7
+#1692601757
+./prompt 6
+#1692601763
+./prompt 5
+#1692601768
+./prompt 4
+#1692601772
+./prompt 3
+#1692601775
+./prompt 2
+#1692601779
+./prompt 1
+#1692601784
+./prompt 1 1
+#1692601787
+./prompt 1 2
+#1692601801
+./prompt 1 3
+#1692601805
+./prompt 1 4
+#1692601811
+./prompt 1 3
+#1692601845
+sudo /root/.bashrc
+#1692601855
+sudo lvim /root/.bashrc
+#1692601858
+sudo vim /root/.bashrc
+#1692602057
+sudo -i
+#1692602072
+sudo vim /root/.bashrc
+#1692602095
+sudo nvim /root/.bashrc
+#1692602258
+sudo -i
+#1692602290
+lvim
+#1692602562
+echo $#
+#1692602569
+lvim
+#1692602573
+echo $#
+#1692602141
+nvim prompt 
+#1692602207
+cat prompt 
+#1692602435
+sudo -i
+#1692678586
+vim .bashrc
+#1692678633
+bat /etc/profile
+#1692678674
+cat bash_completion.sh 
+#1692678806
+cat gawk.sh 
+#1692678883
+`gawk 'BEGIN {print ENVIRON["AWKPATH"]}'`
+#1692678889
+gawk 'BEGIN {print ENVIRON["AWKPATH"]}'
+#1692678930
+env|rg AWK
+#1692678938
+ud
+#1692679066
+doas systemctl enable gdm
+#1692679080
+doas systemctl start gdm
+#1692679195
+sudo -i
+#1692679264
+ls -l /
+#1692679311
+echo $UID
+#1692679313
+env
+#1692679414
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692679428
+echo -e "${PATH//:/\\n}" | sort -u | xargs
+#1692679447
+echo $PATH
+#1692679500
+echo -e "${PATH//:/\\n}"
+#1692679535
+echo -h
+#1692679583
+echo -e ${PATH//:/\\n}
+#1692679603
+echo -e "${PATH}"
+#1692679612
+echo -e "${PATH//}"
+#1692679615
+echo -e "${PATH//:}"
+#1692679634
+echo -e "${PATH//:/}"
+#1692679643
+echo -e "${PATH//:/\}"
+#1692679651
+echo -e "${PATH//:/\\n}"
+#1692679677
+echo -e "${PATH//:/\\n}" | sort -u
+#1692679689
+echo -e "${PATH//:/\\n}" | sort -u | xargs | 
+#1692679692
+echo -e "${PATH//:/\\n}" | sort -u | xargs 
+#1692679711
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692679748
+lvim
+#1692679798
+echo -e "${PATH}"
+#1692679826
+source .profile
+#1692679828
+echo -e "${PATH}"
+#1692679848
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692679870
+echo -e "${PATH//:/\\n}"
+#1692679904
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692679925
+echo $PATH
+#1692680373
+source .profile
+#1692680377
+echo $PATH
+#1692680461
+date +%d
+#1692680465
+date +%d%m
+#1692680469
+date +%d%m%Y
+#1692680473
+date +%d%m%y
+#1692680481
+date +%d%m%Y%h
+#1692680484
+date +%d%m%Y%H
+#1692680497
+date +%d%m%Y%H:%M
+#1692680507
+date +%d%m%Y-%H:%M
+#1692680552
+date
+#1692680634
+echo $PATH
+#1692680643
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692680685
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1692680687
+echo $PATH
+#1692680840
+bc
+#1692681001
+echo $PATH
+#1692681043
+his| lvim
+#1692681068
+his| grep 'lvim'
+#1692681146
+echo $PROMPT_COMMAND 
+#1692681253
+dircolors 
+#1692681282
+dircolors -b
+#1692681301
+dir
+#1692681344
+dir -l
+#1692681347
+dir -L
+#1692681354
+dir -aL
+#1692681358
+dir -aLl
+#1692681362
+dir -al
+#1692681383
+dir -1a
+#1692681405
+dir -1a l*/
+#1692681407
+dir -1a l */
+#1692681431
+dir -1a l
+#1692681437
+dir -1a l */
+#1692681440
+dir -1a d */
+#1692681448
+dir -1a d*/
+#1692681452
+dir -1a
+#1692681461
+echo $PATH
+#1692681491
+export PATH="$(echo -e \"${PATH//:/\\n}\" | sort -u | xargs | tr ' ' :)"
+#1692681506
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1692681523
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1692681545
+echo $PATH
+#1692681550
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1692681552
+echo $PATH
+#1692681560
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1692681565
+echo $PATH
+#1692681591
+nu
+#1692681598
+cargo install --list
+#1692681608
+doas nala search nu
+#1692681649
+doas nala search nu shell
+#1692681657
+doas nala search 'nu shell'
+#1692681666
+doas nala search "nu shell"
+#1692681723
+sudo nala update
+#1692682360
+sudo nala search rclone
+#1692682593
+echo ${PATH}
+#1692682603
+export PATH="$(echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
+#1692682606
+echo ${PATH}
+#1692682835
+cpuuinfo
+#1692682840
+cpuinfo
+#1692754686
+cat profile_archnote 
+#1692754758
+gsettings get org.gnome.desktop.interface gtk-theme
+#1692754794
+gsettings get org.gnome.desktop.interface gtk-theme | sed "s/'/\"/g"
+#1692754812
+echo $GTK_THEME
+#1692754847
+echo $NVM_DIR
+#1692755402
+gcam "Updated bashrc and machines profile."
+#1692754471
+ud
+#1692754648
+echo $APATH
+#1692754651
+echo $PATH
+#1692754658
+cat profile_a
+#1692754661
+cat profile_alldeb 
+#1692755418
+echo $APTH
+#1692755422
+echo $PATH
+#1692755742
+git status --porcelain 
+#1692755830
+git log --graph
+#1692755845
+git log --graph --online
+#1692755851
+git log --graph --oneline
+#1692860720
+sudo nala search opera
+#1692860808
+sudo nala search chromium-codecs-ff
+#1692860812
+sudo nala search chromium-codecs-
+#1692860825
+sudo nala search chromium-codecs
+#1692860828
+sudo nala search chromium-codec
+#1692860831
+sudo nala search chromium-
+#1692860850
+sudo nala search codecs
+#1692860951
+sudo nala install libavcodec-*
+#1692861021
+sudo nala install lm-sensors libavcodec-{dev,extra}
+#1692861040
+sudo nala install lm-sensors libavcodec-{extra}
+#1692861060
+sudo nala install libavcodec-{extra,extra60}
+#1692861094
+sudo nala install libavcodec-extra{60,50}
+#1692861100
+sudo nala install libavcodec-extra{60,59}
+#1692861147
+sudo nala search pepper
+#1692861231
+sudo apt install libwidevinecdm0
+#1692861243
+sudo apt search libwidevinecdm
+#1692861247
+sudo apt search libwidevine
+#1692861253
+sudo apt search widevine
+#1692861351
+sudo apt search libffmpeg
+#1692861384
+sudo apt install libffmpeg-nvenc-dev 
+#1692861796
+doas cp opera-beta-ffmpeg-codecs-116.0.5845.62-1-x86_64.pkg.tar.zst /usr/lib/x86_64-linux-gnu/opera/
+#1692861885
+sudo nala purge opera-stable 
+#1692862182
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+#1692862194
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+#1692862200
+doas nala update
+#1692862213
+doas nala upgrade
+#1692862227
+sudo nala search brave
+#1692862248
+doas nala install brave-browser 
+#1692862581
+doas nala install ffmpeg
+#1692864069
+flatpak
+#1692864076
+sudo apt install flatpak
+#1692864101
+flatpak search brave
+#1692864107
+flatpak search Brave
+#1692864111
+flatpak search browser
+#1692864183
+apt install gnome-software-plugin-flatpak
+#1692864187
+sudo apt install gnome-software-plugin-flatpak
+#1692864204
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+#1692864216
+cat /etc/group
+#1692864229
+doas usermod -aG _flatpak albano
+#1692864237
+flatpak search brave
+#1692864270
+sudo apt purge brave-browser 
+#1692864289
+doas rm brave-browser-release.list 
+#1692864297
+doas apt update
+#1692864337
+flatpak install com.brave.Browser
+#1692865137
+flatpak list
+#1692865156
+flatpak run com.brave.Browser
+#1692865187
+[A
+#1692865189
+flatpak run com.brave.Browser
+#1692865425
+flatpak uninstall com.brave.Browser
+#1692865454
+sudo apt install gnome-software-plugin-flatpak
+#1692865477
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+#1692865482
+sudo nala update
+#1692865498
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+#1692865501
+sudo nala update
+#1692865520
+doas nala install brave-browser 
+#1692864383
+sudo nala search openh264
+#1692864395
+sudo nala search openh265
+#1692864398
+sudo nala search openh26
+#1692864427
+sudo nala install mediastreamer2-plugin-openh264 
+#1692902612
+flatpak list
+#1692902614
+docker
+#1692902652
+flatpak search firefox
+#1692902727
+flatpak info org.mozilla.firefox
+#1692902784
+doas systemctl status ssh
+#1692902788
+doas systemctl status sshd
+#1692902872
+doas cp /etc/ssh/ssh_config{,.bak}
+#1692902922
+doas nvim ssh_config
+#1692903196
+sudo nvim sshd_config
+#1692903218
+doas cp /etc/ssh/sshd_config{,.bak}
+#1692903251
+sudo nvim sshd_config
+#1692903461
+sudo -i
+#1692903811
+his|rg .bashrc
+#1692903822
+sudo nala install ripgrep
+#1692903854
+. ~/.bashrc
+#1692903863
+his|rg .bashrc
+#1692903964
+. ~/.bashrc
+#1692904416
+:1488
+#1692905007
+chmod 700 ~/.ssh
+#1692905030
+chmod 644 authorized_keys 
+#1692905058
+chmod 644 known_hosts
+#1692905230
+ll -d ~/.ssh
+#1692905324
+vmstat 1 10
+#1692905375
+vmstat -d
+#1692905409
+ps aux
+#1692905462
+fuser -a
+#1692905477
+fuser -a ~
+#1692905482
+doas fuser -a ~
+#1692905492
+doas fuser -a /home/albano
+#1692905708
+fuser -v
+#1692905715
+fuser -v /home/albano
+#1692905723
+doas fuser -v /home/albano
+#1692905953
+echo $HISTIGNORE
+#1692906171
+sudo nala show nnn
+#1692906199
+sudo nala install nnn
+#1692906210
+nnn
+#1692906306
+cargo install --list
+#1692906313
+cargo install bat
+#1692906320
+cargo install du-dust
+#1692906325
+cargo install exa
+#1692906333
+cargo install fd-find
+#1692906339
+cargo install lfs
+#1692906344
+lfs
+#1692906352
+lfs -a
+#1692906530
+lsmod
+#1692906567
+doas systemctl list-unit --fail
+#1692906569
+doas systemctl list-unit --failed 
+#1692906574
+doas systemctl --failed 
+#1692907134
+sudo systemctl status tcsd.service | rg TCSD | read -n1
+#1692907141
+sudo systemctl status tcsd.service | rg TCSD | head -n1
+#1692907168
+sudo systemctl status tcsd.service | rg TCSD | head -n1| cut -d ': ' -f2
+#1692907178
+sudo systemctl status tcsd.service | rg TCSD | head -n1| cut -d: -f2
+#1692907191
+sudo systemctl status tcsd.service | rg TCSD | head -n1| cut -d: -f4
+#1692907228
+sudo systemctl status tcsd.service | rg TCSD | head -n1| cut -d] -f4
+#1692907230
+sudo systemctl status tcsd.service | rg TCSD | head -n1| cut -d] -f2
+#1692907293
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd[878]://'
+#1692907296
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd[878]://g'
+#1692907303
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed -i 's/Aug 24 16:32:44 alldeb tcsd[878]://g'
+#1692907308
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed -e 's/Aug 24 16:32:44 alldeb tcsd[878]://g'
+#1692907323
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd[878]://g'
+#1692907346
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd[878]://'
+#1692907380
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug//'
+#1692907387
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24//'
+#1692907396
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44//'
+#1692907403
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb//'
+#1692907410
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd//'
+#1692907426
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd \[878\]://'
+#1692907444
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd [878]://'
+#1692907449
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd//'
+#1692907474
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd//; s/[878]//'
+#1692907482
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd//; s/\[878\]//'
+#1692907508
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd\[878\]//'
+#1692907513
+sudo systemctl status tcsd.service | rg TCSD | head -n1| sed 's/Aug 24 16:32:44 alldeb tcsd\[878\]://'
+#1692907788
+sudo nala install xclip
+#1692907937
+exi
+#1692911818
+sudo nala autojump
+#1692911830
+sudo nala show autojump
+#1692912272
+bash --verion
+#1692912284
+bash --version
+#1692912561
+echo $PS0
+#1692912563
+echo $PS2
+#1692912567
+echo $PS3
+#1692912761
+infocmp 
+#1692912795
+tput setaf 2
+#1692916335
+148
+#1692916749
+make 2>&1 | sed -e 's/.*\bWARN.*/\x1b[7m&\x1b[0m/i' -e 's/.*\bERR.*/\x1b[93;41m&\x1b[0m/i'
+#1692917097
+cd..
+#1692917108
+touch tent
+#1692917114
+chmod +x tent
+#1692917132
+./tent 
+#1692917639
+$0
+#1692917643
+echo $0
+#1692917648
+echo $#
+#1692917697
+exi
+#1692917758
+echo $?
+#1692917781
+ex
+#1692917791
+exi
+#1692917803
+echo $?
+#1692917841
+W1488
+#1692917852
+exi
+#1692917863
+echo $?
+#1692918218
+exi
+#1692918221
+echo $?
+#1692918343
+exi
+#1692918375
+echo "$?"
+#1692918381
+echo $?
+#1692918386
+exi
+#1692918388
+echo $?
+#1692918426
+exi
+#1692919341
+ex
+#1692919345
+exi
+#1692919366
+sudo -i
+#1692919999
+set | grep _exit_status
+#1692920004
+env
+#1692920046
+set | grep google
+#1692920049
+set
+#1692920059
+google
+#1692920083
+cat ~/.bash_functions 
+#1692920113
+. ~/.bash_functions 
+#1692920172
+echo #home
+#1692920178
+echo $HOME
+#1692920196
+cat $HOME/.bash_functions
+#1692920224
+source ~/.bash_functions 
+#1692920710
+unset _exit_status
+#1692908377
+tmux --version
+#1692908382
+tmux -v
+#1692908384
+tmux -V
+#1692921082
+_exit_status $?
+#1692921111
+exi | _exit_status $?
+#1692921242
+./tent 
+#1692922235
+;
+#1692922255
+unlink .bash_aliases 
+#1692922269
+unlink .bash_functions 
+#1692923155
+st
+#1692923179
+date
+#1692923209
+gcam "Updated Dotfiles $(date)."
+#1692923219
+git log
+#1692923371
+set
+#1692923379
+warn 
+#1692923413
+nvm_remote_version
+#1692923430
+echo -n $?
+#1692923438
+echo $?
+#1692923442
+echo -n $?
+#1692923451
+nvm_ls
+#1692923465
+set
+#1692923563
+doas systemctl --failed
+#1692924127
+git rev-parse
+#1692924137
+git rev-parse --git-dir
+#1692924153
+git rev-parse --git-dir 2>&
+#1692924157
+git rev-parse --git-dir 2>&1
+#1692924180
+git rev-parse --show-toplevel 2>&1
+#1692924286
+export LS_COLORS='fi=37:di=1;97:ln=90:mh=90:ex=3;2;37:no=1;97:mi=90:ow=91'
+#1692924290
+ls -l
+#1692924293
+ls -la
+#1692924308
+ls --color=auto
+#1692924312
+ls -l
+#1692924457
+echo $BASH
+#1692924755
+man ip
+#1692924764
+env
+#1692924860
+gcam "Updated Dotfiles $(date)."
+#1692992035
+doas nala install tpm-tools
+#1692992053
+doas systemctl restart tcsd.service 
+#1692992070
+doas journalctl -zeu tcsd.service
+#1692992077
+doas journalctl -xeu tcsd.service
+#1692992127
+doas systemctl stop
+#1692992141
+doas systemctl stop tcsd.service
+#1692992229
+doas systemctl start tcsd.service
+#1692992237
+reboot
+#1692993488
+journalctl -xeu tcsd.service
+#1692993520
+sudo nvim /etc/fstab
+#1692993873
+sudo mkdir /ssd
+#1692993898
+cat /etc/fstab
+#1692994073
+sudo nala search trousers
+#1692994096
+sudo apt purge trousers
+#1692994114
+reboot
+#1692994264
+service
+#1692994270
+service --status-all
+#1692994328
+service ssh status
+#1692994337
+systemctl status ssh
+#1692994340
+systemctl status sshd
+#1692994400
+doas nvim /etc/ssh/sshd_config
+#1692994785
+doas systemctl restart ssh
+#1692994795
+service ssh status
+#1693122006
+gcc exCalcEuler.c -o xxx
+#1693122009
+./xxx
+#1693122027
+gcc exFloydTriangle.c -o xxx
+#1693122031
+./xxx
+#1693122090
+gcc exFloydTriangle.c -o xxx
+#1693122092
+./xxx
+#1693123450
+sudo nala update
+#1693123481
+sudo nala upgrade 
+#1693125084
+reboot
+#1693125048
+doas systemctl start gdm
+#1693134788
+lsd -1
+#1693134978
+doas lvim /etc/lightdm/lightdm.conf 
+#1693135125
+mkdir lightdm.conf.d
+#1693135127
+doas mkdir lightdm.conf.d
+#1693135315
+doas lvim 50-my-custom-config.conf
+#1693341433
+neofetch 
+#1693341445
+doas nala install bashtop
+#1693341471
+doas nala search bashtop
+#1693341490
+bat /etc/apt/sources.list
+#1693341519
+cat tmux-client-16206.log 
+#1693341542
+rm tmux-client-16206.log 
+#1693341587
+vim
+#1693341970
+vim fruits
+#1693342014
+vim fruits 
+#1693342014
+vim fruits 
+#1693675699
+vimtutor 
+#1693675770
+vim
+#1693684494
+cat ~/.bashrc 
+#1693686446
+git restore bash/bashrc 
+#1693686494
+loginctl show-session 
+#1693686524
+file /etc/systemd/system/display-manager.service 
+#1693686547
+bat /lib/systemd/system/lightdm.service 
+#1693686559
+bat /lib/systemd/system/gdm.service 
+#1693686563
+bat /lib/systemd/system/gdm3.service 
+#1693688153
+gl -f
+#1693688278
+git-pull
+#1693688299
+gl -f --show-forced-updates 
+#1693688564
+python
+#1693688586
+python3
+#1693688664
+sudo nala search venv
+#1693688748
+add
+#1693688798
+sudo nala search venv
+#1693688832
+sudo nala search pip
+#1693688874
+sudo nala install pv
+#1693688958
+sudo nala show pipenv
+#1693704158
+sudo nala install qbittorrent
+#1693704191
+sudo nala install qbittorrent qt6-qmltooling-plugins 
+#1694050546
+sudo -i 
+#1694050651
+set 
+#1694050658
+echo $PAGER
+#1694050666
+echo $MANPAGER
+#1694050704
+man
+#1694050709
+man ip
+#1694050744
+man less
+#1694051008
+PAGER="most -s"
+#1694051013
+man help
+#1694051017
+man ip
+#1694051039
+echo $MANPAGER
+#1694051050
+MANPAGER="most -s"
+#1694051052
+man ip
+#1694051058
+sudo nala install most
+#1694051065
+man ip
+#1694051077
+env
+#1694051111
+LS_OPTIONS="${LS_COLORS}"
+#1694051118
+man ip
+#1694051205
+echo $PAGER
+#1694051209
+echo $MANPAGER
+#1694051214
+man less
+#1694051228
+echo $MANPAGER
+#1694051245
+echo $PAGER
+#1694051250
+man ip
+#1694051511
+. ~/github/dotfiles/bash/bash_functions
+#1694051516
+set man
+#1694051522
+. ~/github/dotfiles/bash/bash_functions
+#1694051530
+set| grep man
+#1694051541
+set| grep -E "^man"
+#1694051546
+man ip
+#1694051879
+. ~/github/dotfiles/bash/bash_functions
+#1694051888
+man ip
+#1694051934
+echo $PAGER
+#1694051938
+echo $MANPAGER
+#1694051953
+man chmod
+#1694051965
+git restore bash_functions 
+#1694051969
+man ip
+#1694052542
+. $DOTFILES/bash/bash_functions 
+#1694052545
+man
+#1694052551
+man ip
+#1694052558
+env
+#1694052575
+source ~/github/dotfiles/bash/bash_functions 
+#1694052579
+env
+#1694052594
+export PAGER=most
+#1694052596
+env
+#1694052599
+man ip
+#1694052612
+export PAGER="most -s"
+#1694052618
+env
+#1694052621
+man ip
+#1694052688
+most -s /etc/fstab
+#1694052703
+bat /etc/fstab
+#1694052722
+export PAGER=bat
+#1694052724
+man ip
+#1694052730
+env
+#1694052741
+export MANPAGER=bat
+#1694052752
+man less
+#1694052933
+man id
+#1694052968
+man ip
+#1694053023
+github/dotfiles/bash
+#1694053031
+git restore bashrc 
+#1694053224
+uname -a 
+#1694053680
+uname -a
+#1694053683
+man man
+#1694053719
+env
+#1694053728
+man man
+#1694053830
+whatis modprobe
+#1694053835
+whatis ip
+#1694053983
+man ip
+#1694053992
+man 8 ip
+#1694054015
+info man
+#1694054022
+tldr man
+#1694054036
+man --path
+#1694054089
+whatis man
+#1694054097
+man 7 man
+#1694054140
+man modprobe
+#1694054167
+man 8 modprobe
+#1694054177
+man  modprobe.d
+#1694054244
+arch
+#1694054257
+uname -m
+#1694055470
+cal
+#1694055477
+sudo nala install cal
+#1694055494
+sudo nala search cal
+#1694055540
+sudo nala search '^cal'
+#1694055558
+sudo nala search cal | rg '^cal'
+#1694055571
+sudo nala install calendar
+#1694055578
+cal
+#1694055925
+finger albano
+#1694055933
+sudo nala install finger
+#1694055939
+finger albano
+#1694055960
+whereis finger
+#1694056160
+resolv
+#1694056180
+netstat
+#1694056193
+netstat -tulpn
+#1694056244
+cal
+#1694056251
+calendar 
+#1694056277
+calendar -h
+#1694056280
+man calendar
+#1694056366
+man -a man
+#1694056454
+man -a swaponm
+#1694056455
+man -a swapon
+#1694056481
+man -a ip
+#1694056605
+xman
+#1694056615
+xman calendar
+#1694056624
+xman ip
+#1694056638
+xman
+#1694056727
+which man
+#1694056744
+doas apt-cache show man
+#1694056757
+doas apt-cache show man-db 
+#1694056763
+doas nala show man-db 
+#1694057090
+env
+#1694057103
+env | rg PAGER
+#1694057138
+export PAGER='nvim +Man!'
+#1694057144
+env | rg PAGER
+#1694057160
+unset MANPAGER
+#1694057164
+env | rg PAGER
+#1694057168
+man ip
+#1694057224
+man 7 ip
+#1694057230
+man 8 ip
+#1694057309
+export PAGER="vim +Man!"
+#1694057314
+env | rg PAGER
+#1694057319
+man sudo
+#1694057346
+export PAGER="lvim +Man!"
+#1694057349
+man ip
+#1694057465
+source ~/.bashrc
+#1694057476
+man ip
+#1694057637
+which printf
+#1694057645
+whatis printf
+#1694057652
+whereis printf
+#1694057673
+whereis srintf
+#1694057677
+whereis sprintf
+#1694057687
+whereis vprintf
+#1694057695
+whereis fprintf
+#1694057702
+whais fprintf
+#1694057707
+whatis fprintf
+#1694057790
+printf("%'.2f", 1234567.89);
+#1694057794
+printf("%.2f", 1234567.89);
+#1694057800
+printf("% .2f", 1234567.89);
+#1694057818
+printf("%` .2f", 1234567.89);
+#1694057826
+printf("%' .2f", 1234567.89);
+#1694057850
+printf("%.2f", 1234567.89);
+#1694057865
+man printf
+#1694057893
+whatis printf
+#1694057900
+man 3 printf
+#1694058150
+man ip
+#1694058169
+env | rg PAGER
+#1694058177
+unset MANPAGER 
+#1694058180
+env | rg PAGER
+#1694058200
+export PAGER="lvim +Man!"
+#1694058204
+man man
+#1694058233
+man -f lvim
+#1694058250
+man -f vim
+#1694058297
+man -f modprobe
+#1694058324
+whatis modprobe
+#1694058441
+man -P less man
+#1694058602
+man -P less -f man
+#1694058610
+man -P less -f man {
+#1694058615
+man -P less -f man [
+#1694058622
+man -P less -f man 
+#1694058632
+man -P less -f man 2> /dev/null 
+#1694058641
+man-f man 2> /dev/null 
+#1694058644
+man -f man 2> /dev/null 
+#1694058710
+set -n man
+#1694058770
+man
+#1694058774
+man ip
+#1694058801
+export PAGER="nvim +Man!"
+#1694058804
+man
+#1694058806
+man man
+#1694058813
+unset MANPAGER 
+#1694058816
+man man
+#1694058895
+his| rg lvim
+#1694058969
+env
+#1694058976
+unset MANPAGER 
+#1694058983
+export PAGER="nvim +Man!"
+#1694058989
+man 7 man
+#1694059146
+man man
+#1694059233
+reset
+#1694059243
+env
+#1694059305
+man ip
+#1694059312
+man bash
+#1694059359
+tput cols
+#1694059402
+free
+#1694059424
+echo $TERM
+#1694059470
+man --nh --nj man
+#1694059497
+man man
+#1694059509
+man --nh --nj man
+#1694059687
+git restore bash/bash_functions 
+#1694059570
+bat /etc/manpath.config 
+#1694059702
+enf
+#1694059703
+env
+#1694059709
+man
+#1694059724
+man man
+#1694059779
+git diff bashrc
+#1694224592
+cat .gitconfig 
+#1694225748
+curl -sLf https://spacevim.org/install.sh | bash -s -- -h
+#1694225756
+curl -sLf https://spacevim.org/install.sh | bash -s -- --install vim
+#1694226022
+whatis ls
+#1694226027
+whatis ip
+#1694226066
+rm history_alldeb 
+#1694226121
+gcam "Remove history_alldeb,(not used)."
+#1694634021
+echo $PATH
+#1694634047
+source ~/.bashrc
+#1694634050
+echo $PATH
+#1694634077
+ls .profile
+#1694634114
+source .profile
+#1694634119
+echo $PATH
+#1694634193
+bash ~/.local/share/lunarvim/lvim/utils/installer/uninstall.sh
+#1694634221
+LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
+#1694634477
+gaa
+#1694634487
+glog
+#1694634541
+gcm "Update bashrc( include erasedups )."
+#1694634735
+sudo nala search mandoc
+#1694634749
+sudo nala install mandoc
+#1694634783
+sudo nala autoremove 
+#1694634999
+gaa
+#1694635009
+gc
+#1694635048
+glog
+#1694635115
+git commit --amend -m "Update bashrc( include erasedups ) and HISTIGNORE."
+#1694635118
+gp 
+#1694635139
+git pull
+#1694635167
+rm -rf dotfiles
+#1694635187
+git@github.com:allbano/dotfiles.git
+#1694635193
+git clone git@github.com:allbano/dotfiles.git
+#1694635310
+gaa
+#1694635327
+git log --oneline -5
+#1694635341
+glol -5
+#1694635410
+git commit --amend -m "Update bashrc( include erasedups ) and modified HISTIGNORE."
+#1694635437
+git pull -ff
+#1694635455
+git config --global
+#1694635459
+git config --global -l
+#1694635477
+git pull --force 
+#1694635481
+git pull --force -ff
+#1694635516
+git pull --ff
+#1694635538
+gb
+#1694635673
+chmod 770 Backup
+#1694635678
+chmod 770 Documents
+#1694635684
+chmod 770 Images/
+#1695156485
+doas nala update && doas nala upgrade
+#1695156673
+reboot
+#1694635516
+git pull --ff
+#1694635538
+gb
+#1694635673
+chmod 770 Backup
+#1694635678
+chmod 770 Documents
+#1694635684
+chmod 770 Images/
+#1695156485
+doas nala update && doas nala upgrade
+#1695156673
+reboot
+#1695157050
+flatpak update
+#1695157063
+doas nala search telegram
+#1695157077
+doas nala install telegram-desktop 
+#1695157326
+mkdir Cursos
+#1695157372
+mkdir cgof
+#1695157382
+wget https://kretcheu.com.br/cgof/a01.mp4
+#1695157518
+wget https://kretcheu.com.br/cgof/a01.odp
+#1695157522
+wget https://kretcheu.com.br/cgof/a01.pdf
+#1695157531
+wget https://kretcheu.com.br/cgof/a01.sx.mp4
+#1695157635
+sudo nala install vlc
+#1695157714
+sudo nala install vlc vlc-plugin-{fluidsynth,jackm,pipewire,svg} libdvd-pkg
+#1695157719
+sudo nala install vlc vlc-plugin-{fluidsynth,jack,pipewire,svg} libdvd-pkg
+#1695157740
+sudo nala install vlc vlc-plugin-{fluidsynth,jack,pipewire,svg} libdvd-pkg dh-make
+#1695158565
+pl
+#1695158587
+git reset HEAD
+#1695158605
+git restore bash/bashrc 
+#1695162479
+ls -l / | cut -f4
+#1695162484
+ls -l / | cut -f2
+#1695162514
+ls -l / | cut -d' ' -f2
+#1695162537
+ls -l / | cut -d ' '
+#1695162582
+ls -l / | cut -d '	' -f12
+#1695162584
+ls -l / | cut -d '	' -f1
+#1695162589
+ls -l / | cut -d ' ' -f1
+#1695162592
+ls -l / | cut -d ' ' -f2
+#1695162595
+ls -l / | cut -d ' ' -f3
+#1695162629
+ls -l / | cut -d ' ' -f4
+#1695162661
+ls -l / | cut -d ' ' -f5
+#1695162663
+ls -l / | cut -d ' ' -f6
+#1695162666
+ls -l / | cut -d ' ' -f7
+#1695162671
+ls -l / | cut -d ' ' -f8
+#1695162696
+ls -l / | cut -d ' ' -f9
+#1695162703
+ls -l / | cut -d ' ' -f10
+#1695162706
+ls -l / | cut -d ' ' -f11
+#1695162709
+ls -l / | cut -d ' ' -f12
+#1695162712
+ls -l / | cut -d ' ' -f13
+#1695162714
+ls -l / | cut -d ' ' -f14
+#1695162716
+ls -l / | cut -d ' ' -f15
+#1695162718
+ls -l / | cut -d ' ' -f16
+#1695162721
+ls -l / | cut -d ' ' -f17
+#1695162727
+ls -l /
+#1695162796
+ls -l / | cut -c1-3
+#1695162810
+ls -l / | cut -c1-10
+#1695162814
+ls -l / | cut -c1-15
+#1695162819
+
+#1695162850
+ls -l / | expand 
+#1695162875
+ls -l / | expand --tabs=4
+#1695162878
+ls -l / | expand --tabs=6
+#1695162910
+ls -l / | sed 's/ /	/'
+#1695162926
+ls -l / | sed 's/ /	/b'
+#1695162928
+ls -l / | sed 's/ /	/g'
+#1695163294
+sudo nala show asciidoc
+#1695163434
+asciidoc
+#1695163441
+which asciidoc
+#1695163470
+
+#1695165019
+sudo -i
+#1695165305
+cut -d: -f1 /etc/passwd
+#1695165310
+cut -d: -f1 /etc/passwd | sort
+#1695165314
+cut -d: -f1 /etc/passwd | sort -nr
+#1695165318
+cut -d: -f1 /etc/passwd | sort -n
+#1695165632
+ssh 
+#1695165632
+eVzwkFk99qP6dDh3hzFtZ25Pt@nyc1.tmate.io
+#1695165637
+ssh eVzwkFk99qP6dDh3hzFtZ25Pt@nyc1.tmate.io
+#1695166709
+neofetch 
+#1695166755
+uname -a 
+#1695166779
+cat /etc/doas.conf 
+#1695166783
+doas cat /etc/doas.conf 
+#1695166797
+doas lvim /etc/doas.conf 
+#1695166755
+uname -a 
+#1695166779
+cat /etc/doas.conf 
+#1695166783
+doas cat /etc/doas.conf 
+#1695166797
+doas lvim /etc/doas.conf 
+#1695166837
+doas apt update
+#1695166845
+doas apt upgrade
+#1695166895
+md5sum .bashrc 
+#1695166926
+md5sum ~/github/dotfiles/bash/bashrc 
+#1695167567
+md256sum ~/github/dotfiles/bash/bashrc 
+#1695167574
+sha256sum ~/github/dotfiles/bash/bashrc 
+#1695167580
+sha512sum ~/github/dotfiles/bash/bashrc 
+#1695167647
+doas find /boot/efi/EFI -name '*efi' -exec sha512sum {} \;
+#1695168099
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+#1695168162
+lvim install
+#1695168300
+echo $SHELL
+#1695168327
+doas nala install nushell
+#1695168339
+doas nala install nu
+#1695168354
+cargo search nushell
+#1695168437
+sudo nala openssl
+#1695168446
+doas nala install openssl
+#1695168455
+doas nala reinstall openssl
+#1695168464
+doas aptitude install openssl
+#1695168475
+doas nala install aptitude
+#1695168494
+sudo apt-get check
+#1695168564
+rustup update
+#1695168599
+rustup default stable
+#1695168612
+uname -a
+#1695168690
+sudo nala install libssl-dev
+#1695168703
+cargo install nu
+#1695168787
+nu
+#1695168902
+doas aptitude update
+#1695168917
+cat /etc/shells 
+#1695168972
+doas nala show csh
+#1695168976
+doas nala show tcsh
+#1695169042
+doas nala install tcsh
+#1695169445
+ls -l /dev/nvme*
+#1695169585
+sudo nala remove libdvd-pkg
+#1695169645
+doas nala update && doas nala upgrade
+#1695169671
+neofetch 
+#1695169680
+doas nala autoremove 
+#1695169686
+doas nala autoclean
+#1695169692
+doas apt autoclean 
+#1695169709
+./install --all
+#1695169862
+du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
+#1695170194
+du --max-depth 1 --human-readable "${@:-.}"
+#1695170224
+dust --max-depth 1
+#1695170247
+dust --depth 1
+#1695170277
+dust /ssd
+#1695170291
+dust --depth 1 /ssd
+#1695170322
+dust -r --depth 1 /ssd
+#1695170533
+doas nala install ncdu
+#1695170564
+cargo install --list
+#1695170575
+lfs
+#1695170600
+doas nala install gparted
+#1695170631
+doas nala install gparted dmraid gpart jfsutils kpartx mtools udftools libparted-dev
+#1695170643
+doas nala install gparted gpart jfsutils kpartx mtools udftools libparted-dev
+#1695170666
+doas nala install gparted gpart jfsutils kpartx mtools udftools libparted-dev udfclient
+#1695170679
+doas nala install gparted gpart jfsutils kpartx mtools udftools libparted-dev udfclient parted-doc 
+#1695170710
+doas nala search btrfs
+#1695171081
+fzf --print0 | xargs -0 -o vim
+#1695171134
+find * -type f | fzf > selected
+#1695171636
+doas nala install update
+#1695171734
+fzf --bind 'enter:become(vim {})'
+#1695172282
+doas parted -l
+#1695172856
+doas nala show fzf
+#1695172994
+vim $(fzf --height 40% --reverse)
+#1695173027
+vim $(fzf --reverse)
+#1695173432
+doas nala search man-pages
+#1695173436
+doas nala search man-
+#1695173783
+cat /usr/share/dict/words | fzf-tmux -l 20% --multi --reverse
+#1695174452
+doas blkid
+#1695174492
+fdisk -l /dev/nvme0n1
+#1695175855
+doas update-initramfs -u -k all
+#1695175895
+grub-mkconfig -o /boot/grub/grub.cfg 
+#1695175898
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+#1695175968
+efibootmgr -v
+#1710792116
+type updateDotfiles 
+#1710792123
+typeset updateDotfiles 
+#1710792945
+mkdir history
+#1710792957
+cp debianHistory archlinuxHistory ./history/
+#1710792967
+rm archlinuxHistory debianHistory 
+#1710792970
+lcd history/
+#1710793027
+lvim functionsInitBash 
+#1710793506
+date
+#1710793646
+date --date='TZ="America/Sao_Paulo"
+#1710793650
+date --date='TZ="America/Sao_Paulo"'
+#1710793709
+date -s dd/mm/YYYY
+#1710793719
+date -s dd/mm/yyyy
+#1710793722
+date -s dd/mm/yy
+#1710793826
+date +'%F'
+#1710793859
+date +'%d/%b'
+#1710793872
+date +'%d/%B'
+#1710793886
+date +'%d/%M'
+#1710793893
+date +'%d/%m'
+#1710793905
+date +'%d/%m/%y'
+#1710793908
+date +'%d/%m/%yy'
+#1710793911
+date +'%d/%m/%Y'
+#1710793950
+date +'%d/%m/%Y às %H:%M:%S'
+#1710794040
+lvim functionsInitBash 
+#1710794173
+lvim $DOTBASH/functionsInitBash 
+#1710794211
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710794704
+cat bin/functionsInitBash 
+#1710794712
+updateHistory 
+#1710794732
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710794766
+updateHistory 
+#1710794771
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710794830
+updateHistory 
+#1710794845
+cat updates 
+#1710794856
+updateHistory 
+#1710794858
+cat updates 
+#1710794984
+uname -r
+#1710794986
+uname -a
+#1710794993
+uname --machine 
+#1710794997
+uname --nodename 
+#1710795049
+echo "$(uname --nodename)-history"
+#1710795205
+NODENAME="$(uname --nodename)-history"
+#1710795209
+echo $NODENAME 
+#1710794884
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710795279
+updateHistory 
+#1710795290
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710795341
+gaa
+#1710795354
+rm archlinuxHistory 
+#1710795368
+rm debianHistory 
+#1710795372
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710795577
+updateHistory 
+#1710795590
+rm updates 
+#1710795603
+gaa
+#1710795641
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710795804
+rm all*
+#1710795821
+lvim $DOTFILES/scripts/functionsInitBash 
+#1710795828
+type -a updateHistory 
+#1710795836
+updateHistory 
+#1710795852
+cat alldeb-updates 
+#1710795858
+cat alldeb-history 
+#1710795893
+git restore .
+#1710796014
+cat alldeb-updates 
+#1710796022
+gaa 
+#1710796131
+gcm "Updated bashrc with options to update bash history automatically."
+#1710796139
+gp origin main
+#1711035511
+un
+#1711035613
+neofetch 
+#1711035615
+inxi
+#1711035670
+inxi -F
+#1711035710
+doas inxi -F
+#1711059699
+un
+#1711060588
+modular update mojo
+#1711147230
+gsty
+#1711147236
+gaa 
+#1711147302
+gcm "Included bash_history for Desktop Debian."
+#1711147304
+gpp
+#1711147311
+git pull origin main
+#1711147318
+git push origin main
+#1711147739
+/home/albano/github/dotfiles/
+#1711147778
+lvim functionsInitBash 
+#1711147677
+lvim bash_functions 
+#1711153902
+lsk
+#1711155132
+gaa
+#1711155189
+gcm "Updated bashrc and functions (bash_functions,functionsInitBash)."
+#1711155267
+grep -P "(([1-9]\d{0,2})\.){3}(?2)" <<< 177.96.83.51
+#1711155339
+curl ipinfo.io/$(grep -P "(([1-9]\d{0,2})\.){3}(?2)" <<< 177.96.83.51)
+#1711155388
+curl ipinfo.io/$(rg -P "(([1-9]\d{0,2})\.){3}(?2)" <<< 177.96.83.51)
+#1711155424
+grep -P "(([1-9]\d{0,2})\.){3}(?2)" <<< www.google.com
+#1711155430
+echo $?
+#1711155524
+bc
+#1711155793
+host "$1" | awk '/address/ { print $NF }'
+#1711155803
+host www.google.com | awk '/address/ { print $NF }'
+#1711155935
+ipawk() { host "$1" | awk '/address/ { print $NF }' }
+#1711155940
+ipawk() { host "$1" | awk '/address/ { print $NF }' };
+#1711155953
+ipawk() { host "$1" | awk '/address/ { print $NF }'; }
+#1711155971
+ipawk 
+#1711155978
+ipawk google.com
+#1711155987
+ipawk cloudflare.com
+#1711156071
+ipall=$(ipawk cloudflare.com)
+#1711156082
+echo $ipall 
+#1711156087
+echo $ipall[1] 
+#1711156097
+echo ${ipall[1]}
+#1711156119
+echo ${ipall[@]}
+#1711156123
+echo ${ipall[0]}
+#1711156152
+echo ${ipall[1]}
+#1711156180
+declare -A ipall
+#1711156204
+ipall=$(ipawk cloudflare.com)
+#1711156207
+echo ${ipall[1]}
+#1711156211
+echo ${ipall[0]}
+#1711156266
+echo $ipall
+#1711156273
+echo -n $ipall |  
+#1711156276
+echo -n $ipall
+#1711156293
+echo -n $ipall | tr ' ' '\n'
+#1711156409
+echo -e ${ipall// /\\n}
+#1711156436
+echo -e "${ipall// /\\n}"
+#1711156541
+ipawk() { $(host "$1" | awk '/address/ { print $NF }'); }
+#1711156549
+ipawk google.com
+#1711156558
+ipawk www.google.com
+#1711156568
+ipawk() { host "$1" | awk '/address/ { print $NF }'; }
+#1711156570
+ipawk www.google.com
+#1711156573
+ipawk google.com
+#1711156601
+host google.com
+#1711156626
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)"
+#1711156682
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/.[1-9]*//g'
+#1711156698
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/.[1-9]//g'
+#1711156713
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/!.[1-9]//g'
+#1711156835
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9]//g'
+#1711156846
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g'
+#1711156859
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9].//g'
+#1711156864
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9]//g'
+#1711156901
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/(([1-9]\d{0,2})\.){3}(?2)//g'
+#1711156921
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/([1-9]\d{0,2})\.){3}(?2)//g'
+#1711156933
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" 
+#1711156951
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9]//g'
+#1711156958
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g'
+#1711156962
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9\.]//g'
+#1711156968
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g'
+#1711157014
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g; s/^(.){1}//g'
+#1711157022
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g; s/^.//g'
+#1711157028
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)"
+#1711157047
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9.]//g;'
+#1711157055
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^.1-9]//g;'
+#1711157071
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^1-9]//g;'
+#1711157102
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^.1-9]//g;'
+#1711157187
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^.1-9]//; s/^\.//'
+#1711157192
+host google.com | rg -P "(([1-9]\d{0,2})\.){3}(?2)" | sed 's/[^.1-9]//g; s/^\.//g'
+#1711157255
+host google.com | awk '{print $1}'
+#1711157261
+host google.com | awk '{print $2}'
+#1711157265
+host google.com | awk '{print $3}
+#1711157271
+host google.com | awk '{print $3}'
+#1711157275
+host google.com | awk '{print $4}'
+#1711157289
+host google.com | awk '{print $4}' | head -n 12
+#1711157291
+host google.com | awk '{print $4}' | head -n 1
+#1711157355
+host google.com | awk '{print $4} NR==1'
+#1711157480
+host google.com | awk -F, -v col=4 'NR==1 {print $col}'
+#1711157486
+host google.com | awk -v col=4 'NR==1 {print $col}'
+#1711157516
+host google.com | awk 'NR==1 {print $4}'
+#1711157568
+curl ipinfo.io/$(host google.com | awk 'NR==1 {print $4}')
+#1711157858
+ipinf google.com
+#1711157866
+ipinf cloudflare.com
+#1711155735
+lvim functionsInitBash 
+#1711159390
+lvim $DOTFILES/scripts/functionsInitBash 
+#1711159436
+type -a updateDotfiles 
+#1711159449
+lvim $DOTFILES/scripts/functionsInitBash 
+#1711159505
+nvim $DOTFILES/scripts/functionsInitBash 
+#1711159512
+lvim $DOTFILES/scripts/functionsInitBash 
+#1711159588
+echo -e "${ipall// /\\n}"
+#1711159598
+echo -e "${PATH//:/\\n}"
+#1711159608
+modular update mojo
+#1711159643
+jupyter-lab --port 12000 --browser firefox
+#1711159810
+gsdt
+#1711159811
+tsa5
+#1711159818
+gaa
+#1711159883
+gcm "Update alldeb-history. Include function ipinf to API(https://ipinfo.io/)."
+#1711159893
+lbk
+#1711159899
+lsk
+#1711159905
+snap
+#1711159925
+flatpak update
+#1711383825
+un
+#1711395269
+un
+#1711395384
+updateDotfiles 
+#1711395399
+pyenv
+#1711395415
+inxi -M
+#1711395418
+inxi -Mx
+#1711395420
+inxi -Mxx
+#1711395422
+inxi -Mxxx
+#1711395426
+doas inxi -Mxxx
+#1711395434
+doas inxi -Nxxx
+#1711395455
+tldr inxi
+#1711395461
+doas inxi -r
+#1711395487
+tldr -u
+#1711395527
+tldr inxi
+#1711395533
+inxi
+#1711395537
+inxi -Fz
+#1711395637
+inxi -FZ
+#1711395641
+doas inxi -FZ
+#1711395657
+doas inxi -nx
+#1711395663
+doas inxi -nxx
+#1711395669
+doas inxi -nxxx
+#1711395739
+type -a inxi
+#1711395744
+lvim inxi
+#1711395756
+lvim $(type -p inxi)
+#1711396506
+yay -Qs xdg
+#1711396540
+doas nala show xdg-utils
+#1711396597
+xdg-settings 
+#1711396625
+xdg-settings --list
+#1711397405
+paru -Sss cmatrix
+#1711397415
+doas nala search cmatrix
+#1711397430
+doas nala install cmatrix
+#1711397442
+cmatrix
+#1711397984
+ldd
+#1711397993
+ldd $(type -p bash)
+#1711402079
+exitr
+#1711402164
+doas nala list wayland
+#1711402175
+doas nala search wayland
+#1711402317
+dkms status
+#1711402596
+cat /sys/module/nvidia_drm/parameters/modeset
+#1711402599
+doas cat /sys/module/nvidia_drm/parameters/modeset
+#1711403002
+type -a mokutil
+#1711403013
+doas mokutil --sb-state
+#1711403105
+dpkg -l nvidia-driver* |grep ii |awk '{print $2}'
+#1711403143
+dpkg -l acpid'
+#1711403146
+dpkg -l acpid
+#1711403158
+dpkg -l acpid*
+#1711403169
+doas nala install acpid
+#1711403180
+doas nala install consolekit
+#1711403230
+doas nala install dracut
+#1711403287
+doas update-grub2
+#1711403337
+doas nala show dracut
+#1711403516
+nvidia-smi
+#1711403753
+dpkg -l xwayland libxcb1 libnvidia-egl-wayland
+#1711403758
+dpkg -l xwayland libxcb1 libnvidia-egl-wayland1
+#1711403865
+doas nvim /etc/default/grub
+#1711403939
+cat /etc/default/grub
+#1711405354
+doas nala install wayland
+#1711405521
+doas nala install wayland-protocols wayland-utils
+#1711404030
+doas nvim /etc/default/grub
+#1711405668
+sudo update-initramfs 
+#1711405684
+sudo update-initramfs -k all
+#1711405687
+sudo update-initramfs -k
+#1711405695
+sudo update-initramfs -k 'all'
+#1711405701
+sudo update-initramfs -k ALL
+#1711405714
+sudo update-initramfs -u
+#1711405727
+sudo update-initramfs -uv
+#1711405767
+cat $(type -p update-grb2)
+#1711405776
+cat $(type -p update-grub2)
+#1711405798
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+#1711405885
+doas cat /sys/module/nvidia_drm/parameters/modeset
+#1711406061
+sudo nala list wayland
+#1711406070
+sudo nala list '*wayland'
+#1711406101
+sudo nala search wayland
+#1711406203
+sudo nala install wl-clipboard 
+#1711406251
+sudo nala install weston
+#1711406377
+mokutil --sb-state
+#1711406485
+cat default-display-manager 
+#1711406494
+cat Xsession.options 
+#1711406880
+doas nala list
+#1711406896
+doas nala list lightdm
+#1711406900
+doas nala list lightdm*
+#1711406926
+sudo nala search lightdm-slick
+#1711406931
+sudo nala search lightdm-
+#1711406842
+doas lvim /etc/lightdm/lightdm.conf 
+#1711406976
+cat users.conf 
+#1711407090
+echo $XDG_SESSION_TYPE
+#1711407107
+sudo nvim /etc/lightdm/lightdm.conf
+#1711407161
+weston
+#1711407214
+type -a weston
+#1711407381
+sudo nvim /etc/lightdm/lightdm.conf
+#1711407406
+sudo systemctl status gdm
+#1711407408
+sudo systemctl status gdm3
+#1711407418
+sudo systemctl disable lightdm.service 
+#1711407442
+sudo systemctl enable gdm.service 
+#1711407449
+sudo systemctl enable gdm3
+#1711407465
+doas nala install gdm
+#1711407479
+doas nala install gdm3 gdm-settings
+#1711407492
+sudo systemctl enable gdm
+#1711407505
+sudo systemctl enable gdm3
+#1711407567
+sudo systemctl start gdm
+#1711407661
+sudo dpkg-reconfigure gdm3
+#1711407706
+sudo nala reinstall gdm3
+#1711407711
+sudo nala install gdm3
+#1711407716
+sudo nala install --reinstall gdm3
+#1711407732
+sudo nala install 
+#1711407777
+sudo nala
+#1711407801
+sudo nala purge gdm3
+#1711408132
+sudo nala install gdm3
+#1711408156
+sudo nala install --install-suggests  gdm3 
+#1711408294
+sudo dpkg-reconfigure gdm3
+#1711408483
+echo $XDG_SESSION_TYPE
+#1711408537
+sudo nala list xorg-xwayland
+#1711408542
+sudo nala list xwayland
+#1711408610
+loginctl
+#1711408635
+loginctl show-session 2 -p Type
+#1711408658
+loginctl show-session $(awk '/tty/ {print $1}' <(loginctl)) -p Type | awk -F= '{print $2}'
+#1711408715
+ps aux | rg gnome-shell
+#1711408766
+find . | xargs ldd | grep wayland -B 55
+#1711408797
+find . -type f | xargs ldd | grep wayland -B 55
+#1711408917
+find . -type f | xargs ldd | rg wayland
+#1711408953
+find . -type f | xargs ldd 2> /dev/null| rg wayland
+#1711409085
+sudo dpkg-reconfigure lightdm
+#1711497394
+npx create-expo-app MyToDo
+#1711497573
+code .
+#1711500865
+expo init todo-list
+#1711500928
+npm i -g expo
+#1711501039
+npm i -g @npmcli/fs
+#1711501056
+npm i -g @babel
+#1711501290
+expo init todo-list
+#1711501333
+npx create-expo-app --template
+#1711501417
+rm -rf MyToDo/
+#1711501471
+git clone git@github.com:JefersonLucas/todo-list-mobile.git
+#1711501498
+codium .
+#1711501426
+npx create-expo-app --template
+#1711501758
+yarn init
+#1711501762
+yarn
+#1711501771
+rm package-lock.json 
+#1711501773
+yarn
+#1711501821
+code .
+#1711502142
+npx expo install expo-font @expo-google-fonts/inter
+#1711502158
+npx expo uninstall expo-font @expo-google-fonts/inter
+#1711502177
+npm uninstall expo-font @expo-google-fonts/inter
+#1711502185
+yarn add expo-font @expo-google-fonts/inter
+#1711502196
+yarn 
+#1711502212
+nvm use default
+#1711502227
+npm i -g npm@latest
+#1711502235
+npm i -g yarn@latest
+#1711502243
+yarn add expo-font @expo-google-fonts/inter
+#1711502297
+yarn expo start
+#1711503421
+yarn -D @babel/core
+#1711503491
+yarn add -D @babel/core
+#1711503537
+yarn add -D @types/react
+#1711503542
+yarn add -D @types/react-native
+#1711503567
+yarn add react-dom
+#1711503579
+yarn add react-native-web
+#1711503912
+yarn expo start
+#1711504014
+rm -rf .git
+#1711504318
+zip Albano_MyToDo.zip MyToDo
+#1711504337
+zip -l Albano_MyToDo.zip 
+#1711504357
+rm Albano_MyToDo.zip 
+#1711504362
+zip -r Albano_MyToDo.zip MyToDo
+#1711504378
+ldl
+#1711504481
+zip -r Albano_MyToDo.zip MyToDo
+#1711504510
+zip -d node_modules Albano_MyToDo.zip
+#1711504540
+zip -d MyToDo/node_modules Albano_MyToDo.zip
+#1711504600
+zip -d  Albano_MyToDo.zip MyToDo/node_modules/
+#1711504636
+ldl
+#1711504818
+un
+#1711504860
+modular update mojo
+#1711575129
+un
+#1711575575
+adivinha="/tmp/adivinha" && mkdir -p $adivinha && cd $adivinha
+#1711575596
+ns adivinha
+#1711577513
+find /home/$USER/Documents/ -type f -mtime +30
+#1711577933
+find . -type f
+#1711577941
+find / -type f
+#1711577953
+lll
+#1711577959
+ll /
+#1711577972
+find / -type f -depth 1
+#1711577975
+find / -type f -depth
+#1711577985
+find / -type f -L 1
+#1711578059
+apropos find
+#1711578068
+find / -type f -L 1
+#1711578070
+apropos find
+#1711578304
+echo LC_ALL
+#1711578309
+echo $LC_ALL
+#1711578432
+LC_ALL=pt_BR.UTF-8 man find
+#1711578831
+lbl
+#1711578834
+lbk
+#1711578841
+lsk
+#1711579068
+lsblk --output NAME,TRAN,FSTYPE,UUID,MODEL,TYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINT
+#1711579109
+lvim ~/.bash_alias
+#1711579115
+lvim ~/.bash_aliases 
+#1711579161
+lsk
+#1711579171
+gaa
+#1711579224
+gcm "Update alias lsk and update alldeb-(history,updates)."
+#1711579333
+lsk
+#1711579340
+snap
+#1711579366
+sudo nala list snap
+#1711579378
+sudo nala purge snap
+#1711579388
+sudo nala list snapd
+#1711579554
+mkdir IAs
+#1711579560
+curl -fsSL https://ollama.com/install.sh | bash
+#1711579580
+ollama
+#1711579770
+rmdir IAs/
+#1711579802
+ollama
+#1711579817
+ollama run llama2:13b
+#1711575615
+lvim adivinha 
+#1711591958
+type -a ollama
+#1711591984
+cat ollama 
+#1711591998
+curl -fsSL https://ollama.com/install.sh
+#1711592014
+reset
+#1711592028
+curl -fsSL https://ollama.com/install.sh
+#1711592092
+sudo systemctl status ollama.service 
+#1711592123
+nvidia-smi
+#1711592175
+un
+#1711592381
+sudo nala install ./Progs/fastfetch-linux-amd64.deb 
+#1711592395
+fastfetch 
+#1711592612
+ollama list
+#1711592715
+lsk
+#1711592825
+type -a adivinha
+#1711592851
+find . -type f -name adivinha
+#1711592885
+find . -type f -wholename '*adivinha$'
+#1711592891
+find . -type f -wholename '*adivinha'
+#1711592913
+lvim $(find . -type f -wholename '*adivinha')
+#1711593068
+lvim adivinha
+#1711593083
+rm adivinha 
+#1711593086
+ns adivinha
+#1711592782
+ollama run codellama:34b
+#1711593361
+ollama list
+#1711593366
+lsk
+#1711593429
+ollama list
+#1711593442
+ollama rm llama2
+#1711593448
+ollama rm llama2:13b
+#1711593453
+lsk
+#1711593528
+ollama list
+#1711593551
+ollama show codellama:34b
+#1711593576
+tldr ollama
+#1711593502
+ollama pull llama2:13b
+#1711593915
+mkdir ollama
+#1711593998
+sudo chown albano:www-data /ssh
+#1711594056
+sudo chown albano:albano /backup
+#1711594060
+ll /
+#1711594073
+lsk
+#1711594159
+ollama 
+#1711594408
+sudo apt purge snapd
+#1711594424
+lsk
+#1711594709
+docker network ls
+#1711594885
+lsk
+#1711594832
+docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711595031
+docker container ls
+#1711595033
+docker container ls --all 
+#1711595046
+docker ps
+#1711595203
+docker container stop open-webui 
+#1711595213
+docker container rm open-webui 
+#1711595222
+docker ps --all 
+#1711595251
+docker run -d --network=host -v open-webui:/app/backend/data -p 20000:8080  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711595325
+docker container stop open-webui 
+#1711595331
+docker container rm open-webui 
+#1711595423
+docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=https://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
+#1711595549
+docker run -d --network=host -v open-webui:/app/backend/data   -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711595555
+docker container stop open-webui 
+#1711595558
+docker container rm open-webui 
+#1711595567
+docker run -d --network=host -v open-webui:/app/backend/data  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711595951
+nvidia-smi
+#1711596400
+docker container stop open-webui 
+#1711596411
+docker container rm open-webui 
+#1711596473
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+#1711596691
+iptables -t nat -L -n
+#1711596696
+sudo iptables -t nat -L -n
+#1711596717
+docker network ls
+#1711596739
+docker network 
+#1711596744
+docker network inspect host
+#1711597032
+docker ps --all 
+#1711597041
+docker container stop open-webui 
+#1711597049
+docker container rm open-webui 
+#1711597102
+docker run -d -p 20000:8080 -p 11434:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+#1711597632
+docker ps --all 
+#1711597653
+docker container stop open-webui 
+#1711597656
+docker container rm open-webui 
+#1711597662
+docker network ls
+#1711598213
+git clone git@github.com:open-webui/open-webui.git
+#1711598257
+docker compose up
+#1711598261
+docker compose build
+#1711598288
+cat run-compose.sh 
+#1711598629
+chmod +x run.sh 
+#1711598638
+./run.sh 
+#1711598646
+docker ps
+#1711598648
+docker ps --all 
+#1711598653
+docker images
+#1711598762
+sudo nala search kuctl
+#1711598773
+sudo nala search kubernetes
+#1711598870
+curl -L -s https://dl.k8s.io/release/stable.txt
+#1711598896
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+#1711598921
+kubctl
+#1711598940
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+#1711598948
+echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+#1711599003
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+#1711599012
+type -a kubctl
+#1711599018
+type -a kubectl
+#1711599024
+kubectl
+#1711599044
+lvim kubectl
+#1711599066
+kubectl version --client
+#1711599476
+docker run -d --network=host -v open-webui:/app/backend/data  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711599618
+nvidia-smi
+#1711599677
+rm -rf open-webui/
+#1711599822
+docker ps
+#1711599840
+docker exec -it open-webui bash
+#1711600301
+docker network
+#1711600304
+docker network ls
+#1711600374
+docker network create -d host my-host
+#1711600531
+docker ps
+#1711600591
+ollama 
+#1711600599
+ollama list
+#1711600854
+docker network create --subnet 192.168.0.0/24 my-net
+#1711600860
+docker ps
+#1711600871
+docker container rm -f open-webui 
+#1711600873
+docker ps
+#1711600875
+docker ps --all 
+#1711600925
+docker run -d --network my-net -p 20000:8080 -v open-webui:/app/backend/data  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
+#1711601007
+docker container rm -f open-webui 
+#1711600611
+ollama run codellama:34b
+#1711601082
+nvidia-smi
+#1711593091
+lvim adivinha
+#1711738531
+glol -56
+#1711738535
+glol -5
+#1711738543
+glog -5
+#1711738546
+glo -5
+#1711738628
+git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'\''
+#1711738635
+git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'\'''
+#1711738649
+git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset''
+#1711738653
+git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
+#1711738664
+git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1711738670
+glol -5
+#1711738725
+git log --graph --pretty='%Cred%h -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1711738735
+git log --graph --pretty='%Cred% -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1711738763
+git log --graph --pretty='%Cred%h -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1711738776
+git log --graph --pretty='%Cblue%h -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1711738795
+git log --graph --pretty='%Cblue%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' -5
+#1712112572
+nvm ls
+#1712112578
+nvm install --lts
+#1712112595
+npm i -g npm@latest
+#1712112606
+nvm ls
+#1712112638
+nvm install lts/hydrogen
+#1712112647
+nvm use default
+#1712112690
+npm 
+#1712112703
+nvm ls
+#1712112711
+nvm use 18.20.0
+#1712112714
+ng
+#1712112721
+npm i -g yarn
+#1712112727
+yarn 
+#1712112736
+rm yarn.lock 
+#1712112743
+rm -rf node_modules
+#1712112849
+nvm ls
+#1712112861
+nvm use v18.20.0 
+#1712112872
+npm search ng
+#1712112886
+npm search angular
+#1712113030
+npm install -g @angular/cli^16
+#1712113050
+npm install -g @angular/cli@16
+#1712113205
+nvm ls
+#1712113219
+nvm use default 
+#1712113222
+ng
+#1712113250
+code .
+#1712113940
+flatpak update
+#1712114073
+sudo systemctl status sshd
+#1712114082
+passwd 
+#1712114112
+sudo passwd albano
+#1712114208
+expo init todo-list
+#1712114217
+npm install -g expo
+#1712114308
+npm install -g react-native
+#1712114344
+nvm ls
+#1712114366
+npm i -g @npmcli/fs
+#1712114414
+npx create-expo-app --template
+#1712114428
+expo init todo-list
+#1712114442
+npx create-expo-app
+#1712114479
+npx create-expo-app --template
+#1712114516
+npx create-expo-app --template todo-list
+#1712114522
+npx create-expo-app --template
+#1712112811
+un
+#1712114676
+sudo systemctl daemon-reload 
+#1712114710
+atd
+#1712114767
+code .
+#1712114830
+code -s
+#1712254998
+nvm ls
+#1712255001
+ng
+#1712255015
+nvm use v18.20.0 
+#1712255019
+ng
+#1712255750
+un
+#1712258364
+sudo nala search sublime
+#1712258382
+sudo nala search sublime-text
+#1712258776
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg
+#1712258821
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+#1712258865
+echo "deb https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+#1712258870
+sudo nala update
+#1712258878
+sudo nala upgrade
+#1712259026
+sudo nala install sublime-text 
+#1712259065
+sudo nala purge sublime-text 
+#1712259090
+sudo lvimm /etc/apt/sources.list.d/sublime-text.list
+#1712259093
+sudo lvim /etc/apt/sources.list.d/sublime-text.list
+#1712259101
+type -a lvim
+#1712259135
+sudo ln -sf $(type -p lvim) /usr/bin/
+#1712259138
+sudo lvim /etc/apt/sources.list.d/sublime-text.list
+#1712259164
+un
+#1712259189
+sudo nala install sublime-text 
+#1712259272
+sudo nala search android
+#1712259278
+sudo nala search android-s
+#1712259400
+javac
+#1712259412
+type -a java
+#1712259426
+sudo nala search openjdk
+#1712259484
+sudo nala install openjdk-17-{jre,jdk,doc}
+#1712259559
+sudo update-alternatives --config java
+#1712259639
+sudo nala add-repo https://dl.google.com/android/studio/binaries/stable
+#1712259647
+sudo nala
+#1712259839
+sudo nala qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+#1712259862
+sudo nala libvirt-daemon-system libvirt-clients bridge-utils
+#1712259869
+sudo nala libvirt-clients bridge-utils
+#1712259879
+sudo nala bridge-utils
+#1712259886
+sudo nala install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+#1712259909
+cat /etc/group
+#1712260247
+wget https://r6---sn-b8u-jfcy.gvt1.com/edgedl/android/studio/ide-zips/2023.2.1.23/android-studio-2023.2.1.23-linux.tar.gz?cms_redirect=yes&mh=20&mip=2804:7f4:309f:48b3:48d1:2f39:de46:9477&mm=28&mn=sn-b8u-jfcy&ms=nvh&mt=1712259858&mv=m&mvi=6&pl=38&rmhost=r4---sn-b8u-jfcy.gvt1.com&shardbypass=sd&smhost=r5---sn-b8u-jfcd.gvt1.com
+#1712260257
+rm 'android-studio-2023.2.1.23-linux.tar.gz?cms_redirect=yes' 
+#1712260261
+rm wget-log 
+#1712302526
+nvm ls
+#1712302537
+nvm use v20.11.1 
+#1712302540
+ng
+#1712302558
+nvm use v20.11.1 
+#1712302586
+env
+#1712302601
+env | rg node
+#1712302615
+nvm
+#1712302622
+nvm use default
+#1712302629
+nvm 
+#1712302651
+nvm alias default v20.11.1 
+#1712302656
+nvm use default 
+#1712302667
+ex it
+#1712302685
+ex
+#1712302727
+type -a ex
+#1712302732
+ex
+#1712302797
+sudo nala search pycharm
+#1712303038
+flatpak update
+#1712303141
+echo $?
+#1712303145
+rr
+#1712303147
+echo $?
+#1712303241
+bat ~/.bashrc
+#1712303314
+sudo nala search spyder
+#1712303706
+sudo nala install spyder
+#1712303745
+flatpak search spyder
+#1712305158
+rustup
+#1712305169
+updateHist 
+#1712305201
+lll
+#1712305209
+rm alldeb-updates 
+#1712305226
+ga alldeb-updates
+#1712305243
+gcm "Deleted alldeb-updates."
+#1712305260
+rustup
+#1712305267
+rustup update
+#1712305294
+rustc --version 
+#1712305306
+cargo install --list
+#1712305319
+cargo install du-dust
+#1712305381
+cargo install --list
+#1712305398
+cargo install bat
+#1712305405
+cargo install bottom
+#1712305413
+bottom
+#1712305416
+btm
+#1712305428
+cargo install fd-find
+#1712305569
+cargo install --list
+#1712305577
+cargo install fclones
+#1712305583
+cargo install lfs
+#1712305616
+rustup docs
+#1712305590
+cargo install nu
+#1712305835
+cargo install --list
+#1712305842
+cargo install rustlings
+#1712305864
+cargo install --list
+#1712305882
+rustlings
+#1712305902
+tree
+#1712305971
+cargo install --list
+#1712305973
+nu
+#1712306034
+lvim ~/.config/nushell/config.nu 
+#1712306069
+cargo uninstall nu
+#1712306079
+cargo install nu
+#1712306262
+find . -type d -name nushell
+#1712306271
+nu
+#1712376211
+un
+#1712378229
+dirs
+#1712378237
+jg
+#1712378286
+jupyter-lab --port 12000 --browser firefox
+#1712378439
+setterm -foreground green -background blue -store
+#1712378483
+env | rg TERM
+#1712378499
+ps aux | rg xterm
+#1712378503
+ps
+#1712378524
+alacritty
+#1712378532
+ps
+#1712378682
+julia
+#1712378705
+sudo nala show julia
+#1712378719
+sudo nala list julia\
+#1712378722
+sudo nala list julia
+#1712378735
+fd julia
+#1712378759
+find . -name julia
+#1712378776
+fd -i julia
+#1712378780
+fd -I julia
+#1712378830
+fd -u julia
+#1712378868
+fd -I -E .local  julia
+#1712378879
+fd -I -E ./.local  julia
+#1712378900
+fd -I -E ".local"  julia
+#1712378904
+fd -I -E ".local"  .julia
+#1712378913
+fd -I -E ".local" julia
+#1712378923
+fd -I julia
+#1712378928
+fd -u julia
+#1712378934
+fd -u -E .local julia
+#1712379239
+juliaup
+#1712379318
+paru -S juliaup
+#1712379342
+sudo nala search juliaup
+#1712379345
+sudo nala search julia
+#1712379369
+type -a julia
+#1712379378
+env | rg julia
+#1712379403
+lvim ~/.bash_profile 
+#1712379495
+updateHist 
+#1712379546
+mkdir -p ~/Cursos/bash && mv scripts/adivinha ~/Cursos/bash
+#1712379552
+gaa
+#1712379596
+git restore .
+#1712379608
+git restore --staged .
+#1712379619
+exity
+#1712378331
+jupyter-lab --port 12000 --browser firefox | bg
+#1712379643
+modular update moko
+#1712379645
+modular update mojo
+#1712379909
+rm -rf .julia
+#1712379923
+fd -u -E .local julia
+#1712380044
+rm -rf venv/
+#1712380050
+fd -u -E .local julia
+#1712380063
+rm -rf .SpaceVim
+#1712380076
+type -a vim
+#1712380102
+type -f vim
+#1712380108
+type -a vim
+#1712380116
+type -t vim
+#1712380122
+type -P vim
+#1712380126
+type -p vim
+#1712380717
+sudo systemctl status wpa_supplicant.service 
+#1712380726
+sudo systemctl status NetworkManager
+#1712380761
+curl -fsSL https://install.julialang.org | sh
+#1712380892
+lvim .zshrc
+#1712380958
+echo ${PATH}
+#1712381045
+git diff bash/bashrc
+#1712380980
+lvim ~/.bash_profile 
+#1712381293
+fd -u -E .local juliaup
+#1712381298
+fd -u juliaup
+#1712381325
+julia
+#1712381336
+juliaup
+#1712381340
+juliaup status
+#1712381348
+juliaup update
+#1712381356
+crontab 
+#1712381361
+crontab -e
+#1712381395
+juliaup
+#1712381400
+juliaup list
+#1712381446
+juliaup
+#1712381449
+juliaup status
+#1712381493
+juliaup completions bash
+#1712381504
+sudo juliaup completions bash
+#1712381528
+type -p juliaup
+#1712381551
+type -p juliaup | sudo $1 
+#1712381591
+sudo < $(type -p juliaup)
+#1712381606
+type -p juliaup | sudo 
+#1712381618
+type -p juliaup | sudo tee
+#1712381715
+type -p juliaup | tee >(sudo )
+#1712381724
+type -p juliaup | tee >(sudo $1
+#1712381727
+type -p juliaup | tee >(sudo $1)
+#1712381744
+type -p juliaup | tee 
+#1712381759
+type -p juliaup | sudo tee 
+#1712381798
+type -p juliaup | xargs
+#1712381802
+type -p juliaup | sudo xargs
+#1712381815
+type -p juliaup | xargs | sudo 
+#1712381872
+echo $JULIAUPBIN 
+#1712381883
+sudo $JULIAUPBIN 
+#1712381891
+sudo $JULIAUPBIN/juliaup
+#1712381930
+juliaup completions bash
+#1712381961
+juliaup completions bash > $DOTFILES/bash-completion/juliaup
+#1712381968
+bat $DOTFILES/bash-completion/juliaup
+#1712382026
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/juliaup /usr/share/bash-completion/completions/
+#1712382037
+ldl -d  /usr/share/bash-completion/completions/juliaup 
+#1712382041
+exity
+#1712382067
+juliaup default -h
+#1712382085
+juliaup status
+#1712382093
+juliaup list
+#1712382125
+juliaup default release
+#1712382140
+juliaup update release
+#1712382148
+juliaup update -h
+#1712382201
+julia
+#1712382221
+env | rg JULIA
+#1712382228
+type -a julia
+#1712382269
+cat julialauncher 
+#1712382306
+type -a julia
+#1712382318
+julia
+#1712382346
+juliaup list | rg '1.6*'
+#1712382356
+juliaup list | rg '1.6.*'
+#1712382379
+juliaup add lts
+#1712382396
+juliaup status 
+#1712382433
+juliaup api 
+#1712382444
+juliaup info
+#1712382475
+juliaup status
+#1712382497
+juliaup self update 
+#1712382525
+juliaup status
+#1712382539
+juliaup self channel release
+#1712382544
+juliaup self update
+#1712382563
+juliaup self channel lts
+#1712382587
+juliaup self update lts
+#1712382603
+juliaup list
+#1712382623
+juliaup update lts
+#1712382691
+juliaup link lts lts
+#1712382705
+juliaup link meuLTS lts
+#1712382713
+juliaup status
+#1712382731
+juliaup self channel meuLTS
+#1712382761
+juliaup gc meuLTS
+#1712382766
+juliaup status
+#1712382775
+juliaup remove meuLTS
+#1712382781
+juliaup status
+#1712382791
+juliaup default lts
+#1712382793
+julia
+#1712383016
+rm -rf SINAPSENSE/
+#1712383050
+julia 
+#1712383277
+juliaup status
+#1712383284
+juliaup default realise
+#1712383289
+juliaup default release
+#1712383294
+julia
+#1712383869
+ga bash-completion/juliaup 
+#1712383948
+gcm "Added jualiaup autocomplete file."
+#1712383967
+git diff zsh/.zshrc
+#1712384088
+jupyter-lab --port 12000 --browser firefox
+#1712384229
+py3a 
+#1712384275
+jupyter-lab --port 12000 --app-dir="$HOME"  --browser firefox
+#1712384418
+jupyter kernelspec list
+#1712384434
+jupyter kernelspec 
+#1712384449
+jupyter kernelspec uninstall julia-1.9
+#1712384469
+jupyter kernelspec install julia-1.10
+#1712384526
+pip install ipykernel
+#1712384626
+julia
+#1712385889
+docker ps 
+#1712385893
+docker ps --all 
+#1712385908
+docker container start nginx_alpine 
+#1712385937
+docker container rm nginx_alpine 
+#1712385941
+docker images
+#1712386122
+docker run --name nginx_tests --hostname nginx -d -p 80:80 -p 443:443 -p 20000:20000 nginx:alpine 
+#1712386130
+docker ps --all 
+#1712384386
+jupyter-lab --port 12000 --notebook-dir="$HOME"  --browser firefox
+#1712386862
+pip list
+#1712386869
+pip list -o
+#1712386997
+pip list -o | cut -d' ' -f1
+#1712387033
+pip list -o --help | cut -d' ' -f1
+#1712387038
+pip list -o --help 
+#1712387060
+pip list -o --format freeze
+#1712387089
+pip list -lo
+#1712387187
+py3a 
+#1712387191
+pip freeze
+#1712387199
+pip freeze -o
+#1712387247
+pip freeze -l
+#1712387294
+pip list -lo | cut -d' ' -f1
+#1712387372
+pip list -lo | cut -d' ' -f1 | sed '1.2d'
+#1712387380
+pip list -lo | cut -d' ' -f1 | sed '1,2d'
+#1712387415
+pip list -lo | cut -d' ' -f1 | sed '1,2d' | xargs pip install -U 
+#1712387526
+pip completion bash
+#1712387539
+pip completion -b
+#1712387579
+pip completions -d > $DOTFILES/bash-completion/pip
+#1712387590
+pip completion -d > $DOTFILES/bash-completion/pip
+#1712387594
+pip completion -b > $DOTFILES/bash-completion/pip
+#1712387600
+bat $DOTFILES/bash-completion/pip
+#1712387631
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/pip /usr/share/bash-completion/completions/
+#1712387647
+bat /usr/share/bash-completion/completions/pip
+#1712387672
+ga bash-completion/pip 
+#1712387683
+gcm "Added pip autocomplete file."
+#1712387701
+gaa
+#1712387850
+gcm "Updated juliaup settings in shells."
+#1712387870
+updateHist 
+#1712387885
+glol -5
+#1712387951
+lvim updateHist 
+#1712388109
+UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
+#1712388117
+echo $UPTODATE 
+#1712388135
+UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
+#1712388137
+echo $UPTODATE 
+#1712388157
+update
+#1712388198
+bat functionsInitBash 
+#1712388215
+google eu quero foder
+#1712388575
+py3a 
+#1712388581
+jupyter-lab --port 12000 --notebook-dir="$HOME"  --browser firefox
+#1712389006
+pyenv
+#1712442199
+un
+#1712442247
+docker ps
+#1712442249
+docker ps -a
+#1712442328
+mv nginx nginx_alpine
+#1712442566
+docker run -d --name node_alpine --hostname node_alpine -p 80:80 node:lts-alpine
+#1712442623
+docker ps
+#1712442628
+docker ps -a
+#1712442643
+docker container start node_alpine 
+#1712442670
+docker ps
+#1712442679
+docker ps -a
+#1712442705
+docker ps
+#1712442721
+docker container rm -f node_alpine 
+#1712442742
+sudo lvim /etc/doas.conf 
+#1712442797
+dss docker
+#1712442804
+dss podeman
+#1712442809
+dss podman
+#1712442817
+dss podman.target
+#1712442820
+dss podman.service
+#1712443170
+echo && ls -nh --color=always --group-directories-first
+#1712443211
+echo && echo $(alias | sed "s/alias/ | /" | cut -d "=" -f1) | sed "s/| //" | grep "|"
+#1712443236
+dir --color=auto
+#1712443254
+echo && egrep -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|/)"
+#1712443297
+echo && rg -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | rg "(-> deb|\[|\]|/)"
+#1712443335
+rg -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | rg "(-> deb|\[|\]|/)"
+#1712443358
+echo -e "\033[1;33m" && lspci | grep VGA | cut -d " " -f 5-
+#1712443365
+echo -e "\033[1;33m" && lspci | grep VGA
+#1712443409
+echo -e "\033[1;33m" && lspci | grep VGA | cut -d " " -f 5
+#1712443414
+echo -e "\033[1;33m" && lspci | grep VGA | cut -d " " -f 5-
+#1712443478
+echo -e "\033[1;33m" && echo $HOSTTYPE
+#1712443523
+echo $JUPYTERLAB_DIR 
+#1712443580
+ls -R /etc/apt/*.list* /etc/apt/*/*.list* | cut -d ":" -f 2 | sed -e "s/[0-9 ]*//" -e s"|/[^ ]*/| -> |" | egrep "(->)"
+#1712443615
+echo && usb-devices | sed -e "s/T: / ->/" -e "s/S:/  /" -e "s/#=  /=/" | egrep "(Dev|Bus|Product)"
+#1712443794
+doas df -Th --total
+#1712443799
+doas df -Th
+#1712443822
+doas df -T
+#1712443827
+doas df -Th
+#1712443843
+doas df -T --total
+#1712442340
+lvim Dockerfile
+#1712444102
+pwd 
+#1712444267
+dss NetworkManager
+#1712444507
+h
+#1712444576
+ls -ltcr
+#1712444601
+ls -ltcrh
+#1712444608
+ls -ltcrH
+#1712444613
+ls -ltcrh
+#1712444739
+function xtitle() {     case "$TERM" in     *term* | rxvt)         echo -en  "\e]0;$*\a" ;;     *)  ;;     esac; }
+#1712444744
+xtitle 
+#1712444773
+type -a xtitle
+#1712444778
+xtitle 
+#1712444784
+echo $TERM
+#1712444905
+find . -type f -iname '*'"$*"'*' -ls 
+#1712444936
+find . -type f -iname '*'"$*"'*'
+#1712444939
+find . -type f -iname '*'"$*"'*' -ls
+#1712445069
+echo $#
+#1712445168
+hostname
+#1712445170
+hostnamectl
+#1712445290
+cat /etc/bashrc
+#1712445301
+cat /etc/bash.bashrc 
+#1712445482
+cat /etc/shells 
+#1712445493
+dash
+#1712445527
+dash 
+#1712445532
+dash -h
+#1712445557
+docker ps
+#1712445559
+docker ps -a
+#1712445573
+docker ps
+#1712445585
+docker exec -it nginx_tests ash
+#1712445751
+docker exec -it nginx_tests bash
+#1712445870
+docker exec -it nginx_tests ash
+#1712446252
+docker container stop nginx_tests
+#1712446580
+rm -rf nginx_alpine/
+#1712446602
+nginx_alpine.dockerfile
+#1712446606
+lvim nginx_alpine.dockerfile
+#1712448978
+un
+#1712460407
+lvim nginx_alpine.dockerfile 
+#1712460511
+docker build -f ./nginx_alpine.dockerfile -t "nginx-alpine:v1.0"
+#1712460516
+docker build -f ./nginx_alpine.dockerfile -t "nginx-alpine:v1.0" .
+#1712460524
+docker images
+#1712460553
+docker commit nginx-alpine
+#1712460708
+docker run -d --name nginx-alpine --hostname nginxAlpine -p 80:80 -p 443:443 nginx-alpine:v1.0 
+#1712460712
+docker ps
+#1712460821
+docker container rm -f nginx-alpine 
+#1712460833
+docker images 
+#1712460836
+docker image ls
+#1712460863
+docker image rm nginx-alpine:v1.0 
+#1712460893
+docker container start nginx_tests 
+#1712460898
+docker ps 
+#1712460998
+docker build -f ./nginx_alpine.dockerfile -t "nginx-alpine:v1.0" .
+#1712461015
+docker image history nginx-alpine:v1.0 
+#1712461075
+docker image history
+#1712461080
+docker image
+#1712461101
+docker login
+#1712462899
+docker login --username allbano
+#1712462964
+docker login -u allbano -p All@25822513
+#1712462981
+docker login -u allbano --password-stdin 
+#1712463025
+docker login -u allbano
+#1712463145
+sudo docker login -u allbano
+#1712463300
+sudo docker logout 
+#1712463309
+docker login -u allbano
+#1712463339
+cat config.json 
+#1712463355
+cat /root/.docker/config.json 
+#1712463358
+sudo cat /root/.docker/config.json 
+#1712463409
+lvim config.json 
+#1712463439
+docker login
+#1712463493
+type -a docker
+#1712463512
+ls -d $(type -p docker)
+#1712463521
+ls -ld $(type -p docker)
+#1712463556
+sudo chown root:adm /usr/bin/docker
+#1712463559
+ls -ld $(type -p docker)
+#1712463575
+sudo chmod 775 /usr/bin/docker
+#1712463576
+ls -ld $(type -p docker)
+#1712463583
+docker login\
+#1712463585
+docker login
+#1712464029
+sudo docker login -u allbano
+#1712464045
+sudo cat /root/.docker/config.json 
+#1712464060
+cat config.json 
+#1712464088
+lvim config.json 
+#1712464121
+cat config.json 
+#1712464125
+sudo cat /root/.docker/config.json 
+#1712464135
+lvim config.json 
+#1712464173
+sudo diff /root/.docker/config.json config.json
+#1712464208
+sudo docker logout 
+#1712464213
+sudo diff /root/.docker/config.json config.json
+#1712464241
+sudo cp -r ./config.json /root/.docker/config.json
+#1712464244
+sudo diff /root/.docker/config.json config.json
+#1712464251
+sudo docker login
+#1712464296
+sudo lvim /root/.docker/config.json
+#1712464312
+sudo nvim /root/.docker/config.json
+#1712464434
+docker
+#1712464459
+sudo nvim /root/.docker/config.json
+#1712464468
+sudo cat /root/.docker/config.json
+#1712464476
+docker login -u allbano
+#1712464504
+docker image ls
+#1712464545
+docker tag
+#1712464559
+docker image ls
+#1712464606
+docker tag 0b968a788d09 allbano/testNginx:1.0
+#1712464620
+docker tag 0b968a788d09 allbano/test_nginx:1.0
+#1712464626
+docker image ls
+#1712464656
+docker push allbano/test_nginx:1.0 
+#1712465027
+docker 
+#1712465415
+docker image ls
+#1712465423
+docker pull archlinux:latest
+#1712465441
+docker image ls
+#1712465457
+docker image rm debian:latest 
+#1712465460
+docker image ls
+#1712465501
+docker image rm node:lts-alpine 
+#1712465503
+docker image ls
+#1712465518
+docker image rm archlinux:latest 
+#1712465525
+docker pull archlinux
+#1712465542
+docker image ls
+#1712465551
+docker image rm archlinux:latest 
+#1712465554
+docker image ls
+#1712465564
+docker image rm allbano/test_nginx:1.0 
+#1712465573
+docker image ls
+#1712465663
+docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 nginx:alpine 
+#1712465677
+docker container ls --all
+#1712465688
+docker container rm -f nginx_test
+#1712465693
+docker container ls --all
+#1712465702
+docker container rm 44e
+#1712460912
+docker exec -it nginx_tests bash
+#1712465709
+docker container rm -f 44e
+#1712465718
+docker image ls
+#1712465728
+docker image rm nginx:bookworm 
+#1712465732
+docker image ls
+#1712465757
+docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 alpine
+#1712465765
+docker exec -it nginx_tests bash
+#1712465773
+docker exec -it nginx_tests 
+#1712465780
+docker container ls
+#1712465782
+docker container ls -a
+#1712465797
+docker container start nginx_test 
+#1712465800
+docker container ls
+#1712465822
+docker container rm -f nginx_test 
+#1712465833
+docker container ls -a
+#1712465846
+docker image ls
+#1712465851
+docker image rm alpine:latest 
+#1712465879
+docker pull alpine:latest
+#1712465904
+docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 alpine bash
+#1712465912
+docker container ls -a
+#1712465917
+docker container ls
+#1712465929
+docker exec -it nginx_tests bash
+#1712465931
+docker exec -it nginx_tests ash
+#1712466122
+docker container ls -a
+#1712466128
+docker container rm -f nginx_test 
+#1712466136
+docker image ls
+#1712466172
+docker image history nginx-alpine:v1.0 
+#1712466190
+lvim alpine.dockerfile
+#1712466880
+lvim nginx_alpine.dockerfile 
+#1712466997
+docker build -f ./nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0" .
+#1712467012
+docker image ls
+#1712467080
+docker run -d --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712467097
+docker exec -it nginx_sinap bash
+#1712467103
+docker exec -it nginx_sinap ash
+#1712467149
+docker container rm -f nginx_sinap 
+#1712467157
+lvim nginx_alpine.dockerfile 
+#1712467326
+docker build -f ./nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0" .
+#1712467345
+docker run -it --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712467368
+docker run -d --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712467383
+docker exec -it nginx_sinap bash
+#1712467395
+docker container ls
+#1712467397
+docker container ls -a
+#1712467403
+docker container rm 7dae
+#1712467407
+docker run -d --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712467411
+docker container ls -a
+#1712467413
+docker container ls
+#1712467417
+docker exec -it nginx_sinap bash
+#1712467463
+docker image ls
+#1712467480
+docker image rm febe
+#1712467484
+docker image ls
+#1712467499
+docker image rm 4c59
+#1712467514
+docker container rm -f nginx_sinap
+#1712467520
+docker image rm 4c59
+#1712467525
+docker image ls
+#1712467534
+docker image rm alpine:latest 
+#1712467535
+docker image ls
+#1712467548
+docker image rm nginx-alpine:v1.0 
+#1712467552
+docker image ls
+#1712467576
+docker build -f ./nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0" $(pwd)
+#1712467589
+docker image ls
+#1712467606
+docker run -d --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712467612
+docker exec -it nginx_sinap bash
+#1712467690
+lvim nginx_alpine.dockerfile 
+#1712468151
+docker container rm -f nginx_sinap 
+#1712468159
+docker image ls
+#1712468165
+docker image rm allbano/sinapsense:v1.0 
+#1712468174
+lvim nginx_alpine.dockerfile 
+#1712468219
+docker build -f /home/albano/github/dotfiles/docker/nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0"
+#1712468232
+docker build -f /home/albano/github/dotfiles/docker/nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0" -
+#1712468273
+docker image ls
+#1712468301
+docker build -f ./nginx_alpine.dockerfile -t "allbano/sinapsense:v1.0" $(pwd)
+#1712468322
+docker run -d --name nginx_sinap --hostname nginxAlpine -p 80:80 -p 443:443 allbano/sinapsense:v1.0 
+#1712468329
+docker exec -it nginx_sinap bash
+#1712468373
+docker image ls
+#1712468395
+docker container rm -f nginx_sinap 
+#1712468402
+docker image rm allbano/sinapsense:v1.0 
+#1712468409
+lfs
+#1712468424
+nc
+#1712468454
+ncdu /var
+#1712468497
+sudo apt-get clean
+#1712468504
+ncdu /var
+#1712468520
+sudo apt
+#1712468527
+sudo apt clean
+#1712468531
+sudo apt autoclean
+#1712468545
+sudo apt autoremove 
+#1712468551
+un
+#1712468627
+updateHist
+#1712468673
+gaa
+#1712468679
+glol -5
+#1712468726
+gcm "Update .bashrc file (remove duplicates). Added nginx dockerfile."
+#1712468760
+lfs
+#1712468797
+dust 
+#1712468804
+dust -r
+#1712468852
+dust -r -d 1
+#1712468890
+ls -l
+#1712468901
+cat fstab 
+#1712468907
+rm fstab 
+#1712468917
+sudo rm fstab 
+#1712468929
+bat sources.list 
+#1712468933
+rm sources.list 
+#1712468937
+sudo rm sources.list 
+#1712468947
+dust -r -d 1
+#1712469131
+dust -r
+#1712469144
+lfs
+#1712469147
+duf
+#1712469186
+cat /etc/fstab
+#1712469200
+bat /etc/fstab
+#1712469361
+perl -de0
+#1712964537
+juliaup 
+#1712964543
+juliaup update
+#1712964549
+juliaup status
+#1712964569
+juliaup update release
+#1712964600
+un
+#1712964701
+cat updateHist
+#1712964711
+type -a updateHist 
+#1712964717
+type -p updateHist 
+#1712964725
+cat $(type -p updateHist)
+#1712964734
+updateHist 
+#1712964830
+uname -a
+#1712964870
+flatpak update
+#1712964969
+env | rg debian
+#1712965062
+echo && echo $(alias | sed "s/alias/ | /" | cut -d "=" -f1) | sed "s/| //" | grep "|"
+#1712965134
+echo && egrep -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|/)"
+#1712965146
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|/)"
+#1712965206
+echo && egrep -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list
+#1712965215
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |"
+#1712965234
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|/)"
+#1712965282
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\])"
+#1712965298
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|deb-src)"
+#1712965313
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | egrep "(-> deb|\[|\]|-src)"
+#1712965336
+echo && grep -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | rg "(-> deb|\[|\]|-src)"
+#1712965347
+echo && rg -Ev "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | rg "(-> deb|\[|\]|-src)"
+#1712965352
+echo && rg -v "^($|#)" /etc/apt/*.list /etc/apt/*/*.list | sed "s|/[^ ]*:|-> |" | rg "(-> deb|\[|\]|-src)"
+#1712965384
+echo && lscpu | cut -d " " -f 4- | sed "s/CPU:      /OP-Mode CPU: /" | egrep "(CPU:|-bit)"
+#1712965403
+echo && lscpu | cut -d " " -f 4 | sed "s/CPU:      /OP-Mode CPU: /" | egrep "(CPU:|-bit)"
+#1712965415
+echo && lscpu | cut -d " " -f 4- | sed "s/CPU:      /OP-Mode CPU: /" | egrep "(CPU:|-bit)"
+#1712965425
+echo && lscpu
+#1712965713
+sudo nala search axel
+#1712965723
+sudo nala install axel
+#1713036257
+lvim ~/.bash_aliases 
+#1713036313
+un
+#1713036426
+sudo chown albano:albano /ssh
+#1713036432
+sudo chown albano:albano /ssd
+#1713036465
+rm -rf '$RECYCLE.BIN'
+#1713036470
+rm -rf 'System Volume Information'
+#1713036474
+sudo rm -rf 'System Volume Information'
+#1713036504
+sudo chown -R albano:albano /ssd
+#1713036531
+find . -type d -empty 
+#1713036543
+find . -type d -empty -delete
+#1713036548
+find . -type d -empty 
+#1713036617
+duf
+#1713036856
+sudo nala search duf
+#1713036868
+duff
+#1713036879
+duf
+#1713036925
+tldr duf
+#1713036937
+duf --all
+#1713065072
+ldl
+#1713065056
+un
+#1713065258
+sudo nala list duf
+#1713065293
+duf -all
+#1713065299
+duf --all
+#1713065310
+lfs
+#1713065312
+lfs -a
+#1713065482
+lsk
+#1713065557
+bat /etc/fstab 
+#1713065562
+cat /etc/fstab 
+#1713065565
+bat /etc/fstab 
+#1713065686
+sudo nala search plasma-desktop
+#1713065707
+sudo nala show kde-plasma-desktop 
+#1713065715
+sudo nala show plasma-desktop 
+#1713065739
+sudo nala -t sid show plasma-desktop 
+#1713065745
+sudo apt -t sid show plasma-desktop 
+#1713065753
+sudo apt show -t sid plasma-desktop 
+#1713065759
+sudo apt show
+#1713130565
+pyenv
+#1713130634
+echo $PA
+#1713130637
+echo $PATH 
+#1713130653
+echo -e "${PATH//:/\\n}"
+#1713130696
+echo -e "${PATH//:/\ }"
+#1713130702
+echo -e "${PATH//:/ }"
+#1713130706
+echo -e "${PATH/:/ }"
+#1713130711
+echo -e "${PATH/:/\n }"
+#1713130719
+echo -e "${PATH/://\n}"
+#1713130727
+echo -e "${PATH/:/\\n}"
+#1713130744
+echo -e "${PATH//:/\\n}"
+#1713130769
+echo -e "${PATH\/:/\\n}"
+#1713130772
+echo -e "${PATH/:/\\n}"
+#1713130804
+echo -e "${PATH//:/\\n}"
+#1713130808
+echo -e "${PATH//:/\n}"
+#1713130819
+echo -e "${PATH//:/\\n}"
+#1713130846
+echo -e "${PATH/:/\\n}"
+#1713130851
+echo -e "${PATH//:/\\n}"
+#1713131011
+unlink .vim
+#1713131036
+rm -rf .SpaceVim.d/
+#1713131072
+tree -d
+#1713131084
+tree --helpo
+#1713131110
+tree -L1
+#1713131114
+tree -L 1
+#1713131117
+tree -L 2
+#1713131349
+curl https://pyenv.run | bash
+#1713131377
+sudo nala list pyenv
+#1713131389
+sudo nala search pyenv
+#1713131402
+un
+#1713131441
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+#1713131449
+rm -rf .pyenv/
+#1713131452
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+#1713131688
+bat bash_completion 
+#1713131825
+set
+#1713131856
+zsh
+#1713132102
+exec $SHELL
+#1713131488
+lvim ~/.bash_profile 
+#1713132184
+bat profile_archnote 
+#1713132203
+ssh-add -l
+#1713132169
+bat profile_alldeb 
+#1713132256
+lvim profile_alldeb 
+#1713132263
+lvim profile_archnote 
+#1713132784
+pyenv
+#1713133255
+un
+#1713133274
+lsk
+#1713133285
+duf
+#1713133290
+duf -a
+#1713133341
+pyenv
+#1713133357
+updateHist 
+#1713133368
+gaa
+#1713133465
+gcm "Updated bash_aliases (added humam readable option in l and ll)
+#1713133479
+git restore --staged bash/profile_a*
+#1713133484
+gcm "Updated bash_aliases (added humam readable option in l and ll)"
+#1713133489
+gaa
+#1713133586
+gcm "Updated and reorganized profile options."
+#1713727511
+un
+#1713727525
+nala list --upgradable 
+#1713727533
+fastfetch 
+#1713738458
+echo $PS1
+#1713738490
+find . -mindepth 1 -maxdepth 1 -type l
+#1713738823
+env
+#1713738828
+set
+#1713738890
+find /usr/share/bash-completion/completions/ -name tmux
+#1713738904
+find /usr/share/bash-completion/completions/ -name '*tmux'
+#1713738931
+find /usr/share/bash-completion/completions/ -name '*tmux*'
+#1713738957
+source /usr/share/bash-completion/completions/tmux_completion 
+#1713739048
+source /usr/share/bash-completion/completions/
+#1713739061
+ll tmux_completion 
+#1713739091
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/tmux_completion /usr/share/bash-completion/completions/tmux
+#1713739108
+sudo unlink tmux_completion
+#1713739111
+ll tmux_completion 
+#1713739119
+ll tmux
+#1713738977
+tmux new-session -s qt0
+#1713739164
+lvim zprofile 
+#1714002982
+pyenv
+#1714003006
+pyenv versions
+#1714003043
+pyenv virtualenvs
+#1714003045
+pyenv virtualenv
+#1714003054
+pyenv install
+#1714003056
+pyenv install -l
+#1714003076
+pyenv install 3.12.2
+#1714003198
+pyenv install 3.12.3
+#1714004055
+pyenv local 3.12.2
+#1714004069
+pyenv 
+#1714004177
+pyenv versions
+#1714004186
+pyenv global system 
+#1714004191
+pyenv versions
+#1714004197
+pyenv 
+#1714004448
+un
+#1714005473
+git diff
+#1714006985
+flatpak update 
+#1714007057
+sudo nala search eclipse
+#1714007259
+rm -rf eclipse
+#1714259494
+lvim .bashrc 
+#1714259615
+su 
+#1714259619
+su -
+#1714259689
+un
+#1714260383
+lvim systemctl 
+#1714260506
+find /usr/share/bash-completion/completions/ -name system*
+#1714260583
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/systemctl /etc/bash_completion.d/systemctl
+#1714259914
+sudo su
+#1714260599
+sudo su -
+#1714260782
+docker
+#1714260802
+lvim ~/.bash_aliases 
+#1714260881
+sct
+#1714261079
+ga bash-completion/systemctl 
+#1714261103
+ga bash/bash_aliases 
+#1714261259
+gcm "Updated the bash_aliases file and changed the dss alias to sct(sudo systemctl)."
+#1714261269
+gaa
+#1714261280
+git diff
+#1714261288
+git diff zsh/zprofile
+#1714261297
+git restore --staged .
+#1714261301
+git diff
+#1714261311
+gaa
+#1714261406
+gcm "Updated the zprofile file. Added LS_OPTIONS environment in zprofile."
+#1714261528
+un
+#1714261611
+sudo nala history 
+#1714858234
+un
+#1714870361
+gnome-shell --versions
+#1714870363
+gnome-shell --version
+#1714870407
+nvm ls
+#1714870421
+nvm
+#1714870431
+nvm versions
+#1714870471
+nvm install --lts
+#1714870479
+nvm ls
+#1714870544
+nvm uninstall v18.17.1 
+#1714870555
+nvm install
+#1714870568
+nvm install --help
+#1714870606
+nvm version-remote lts
+#1714870610
+nvm version-remote --lts
+#1714870616
+nvm version-remote
+#1714870634
+nvm ls-remote 
+#1714870662
+nvm install 18.20.2
+#1714870667
+nvm ls
+#1714870678
+nvm uninstall v18.20.0
+#1714870681
+nvm ls
+#1714870707
+nvm ls-remote 
+#1714870732
+nvm ls
+#1714870743
+nvm use 20.10.0
+#1714870765
+npm i -g npm@latest
+#1714870775
+npm --version
+#1714870788
+nvm use default
+#1714870793
+npm i -g npm@latest
+#1714870798
+npm --version
+#1714870802
+nvm use 20.10.0
+#1714870804
+ng
+#1715229673
+un
+#1715229963
+sudo nala install numlockx
+#1715230017
+sudo lvim
+#1715230056
+sudo lvim /etc/lightdm/users.conf 
+#1715230778
+sudo nala search vimix
+#1715230858
+cd /etc/init.d/
+#1715230894
+setleds 
+#1715230898
+setleds --help
+#1715230961
+sct
+#1715230969
+sct status gdm
+#1715230975
+sct status lightdm
+#1715230985
+sct disable lightdm
+#1715231001
+sct enable  gdm
+#1715231072
+sct enable gdm
+#1715231105
+sudo nala install gdm
+#1715231113
+sudo nala install gdm3
+#1715231143
+sudo nala install gdm3 --no-fix-broken 
+#1715231149
+sudo apt update
+#1715231161
+sudo apt upgrade
+#1715231205
+un
+#1715231247
+uname -a
+#1715231264
+sudo systemctl enable lightdm.service 
+#1715231272
+reboot
+#1715231317
+un
+#1715231333
+sudo nala full-upgrade 
+#1715232050
+reboot
+#1715232100
+fastfetch 
+#1715232178
+gnome-shell --version
+#1715232188
+un
+#1715232201
+sudo nala search cursor
+#1715232304
+sudo nala install bibata-cursor-theme breeze-cursor-theme chameleon-cursor-theme crystalcursors dmz-cursor-theme 
+#1715232530
+sudo nala search gns3
+#1715304430
+un
+#1715304560
+sfastf
+#1715304564
+fastfetch 
+#1715304591
+cat /etc/doas.conf 
+#1715304595
+doas cat /etc/doas.conf 
+#1715304635
+docker images
+#1715304650
+docker pull nginx:alpine
+#1715304661
+sudo docker login
+#1715304971
+docker pull nginx:alpine
+#1715304981
+docker images
+#1715305010
+docker rmi 2b70
+#1715305014
+docker images
+#1715305071
+docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 nginx:alpine 
+#1715305280
+un
+#1715305658
+ping 192.168.5.1
+#1715305674
+ssh root@192.168.5.1
+#1715305808
+sct 
+#1715305848
+doas nala autoremove
+#1715305852
+doas nala autoclean
+#1715305861
+doas apt autoclean
+#1715305877
+doas apt update
+#1715305882
+doas apt upgrade
+#1715305892
+fastfetch 
+#1715305921
+ip -c a sh enp6s0
+#1715305935
+ip -c a show enp6s0 
+#1715306780
+fastfetch 
+#1715364247
+/home/albano/.pyenv/versions/3.12.2/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
+#1715365769
+un
+#1715365837
+reboot
+#1715381052
+un
+#1715381094
+nala
+#1715381102
+nala --help\
+#1715381104
+nala --help
+#1715381132
+nala list
+#1715381140
+nala --help
+#1715381154
+nala history 
+#1715381175
+cd /etc
+#1715381474
+doas nala fetch 
+#1715381746
+cd /etc/apt/sources.list.d/
+#1715381750
+cat nala-sources.list 
+#1715381767
+sudo rm nala-sources.list 
+#1715381833
+doas apt update
+#1715381839
+time doas apt update
+#1715381845
+time doas nala update
+#1715381894
+doas nala history --installed 
+#1715381918
+doas nala history info
+#1715381931
+doas nala history info 1
+#1715382365
+doas nala search netbeans
+#1715382401
+java --version 
+#1715382586
+doas nala search spring
+#1715711084
+flatpak search netbeans
+#1715711097
+flatpak install org.apache.netbeans
+#1716751560
+flatpak
+#1716751563
+flatpak --help
+#1716751575
+flatpak --ostree-verbose 
+#1716751687
+sct
+#1716751717
+sct status zfs-import-scan.service 
+#1716751725
+sct enable zfs-import-scan.service 
+#1716751800
+sct status fwupd
+#1716751405
+un
+#1716751816
+sudo fwupd
+#1716751827
+sudo fwupdmgr 
+#1716751832
+sudo fwupdmgr --help
+#1716751872
+sudo fwupdmgr verify-update 
+#1716940700
+un
+#1716940794
+sudo apt update
+#1716940807
+sudo apt list --upgradable 
+#1716940818
+sudo apt upgrade
+#1716940833
+reboot
+#1716940889
+sudo apt update
+#1716940979
+un
+#1716941001
+sudo nala autoremove
+#1716941010
+reboot
+#1716941432
+sudo nala search spring
+#1717032775
+un
+#1717034210
+sct fstrim
+#1717034227
+sct status fstrim
+#1717034264
+sct enable fstrim
+#1717034271
+sct start fstrim
+#1717034295
+sct status fstrim
+#1717034579
+sct enable fstrim
+#1717034595
+sct status fstrim
+#1717127054
+flatpak update
+#1717127699
+cd .icons/
+#1717127634
+un
+#1717127816
+cd moblin-cursor-theme/
+#1717127817
+kl
+#1717127822
+cd cursors/
+#1717128543
+cd ..
+#1717128557
+unzip Empty-Butterfly-White-vr6-Linux.zip 
+#1717128574
+chmod 775 Empty-Butterfly-White-vr6-Linux
+#1717128580
+cd Em
+#1717128583
+cd Empty-Butterfly-White-vr6-Linux/
+#1717128589
+cd ..
+#1717128596
+chmod -R 775 Empty-Butterfly-White-vr6-Linux
+#1717128599
+cd Empty-Butterfly-White-vr6-Linux/
+#1717128599
+l;
+#1717128870
+cd ..
+#1717128888
+mv Empty-Butterfly-White-vr6-Linux ../.cursors
+#1717128893
+rm Empty-Butterfly-White-vr6-Linux.zip 
+#1717128895
+cd ..
+#1717128900
+cd .cursors/
+#1717129033
+cd ..
+#1717129044
+mv .cursors .cursor
+#1717129146
+doas find / -wholename '*bibata*' 2> /dev/null 
+#1717129228
+cd /usr/share/icons/
+#1717129352
+mv ~/.cursor/Empty-Butterfly-White-vr6 ~/.icons/
+#1717129363
+cd ~/.cursor/
+#1717129366
+cd ..
+#1717129369
+rmdir .cursor/
+#1717129373
+cd .icons/
+#1717129487
+nautilus .
+#1717130036
+sudo nala list cursors
+#1717130049
+sudo nala list 
+#1717130065
+sudo nala list --help
+#1717130105
+sudo nala list -i oxy
+#1717130122
+sudo nala list -i '*oxy*'
+#1717130141
+sudo nala purge oxygencursors 
+#1717130158
+cd /usr/share/icons/
+#1717130175
+sudo nala list -i '*chamaleon*'
+#1717130184
+sudo nala list -i '*chama*'
+#1717130200
+sudo nala list -i '*chameleon*'
+#1717130210
+sudo nala purge chameleon-cursor-theme 
+#1717130248
+sudo nala list -i '*bibata*'
+#1717130260
+sudo nala purge bibata-cursor-theme 
+#1717130273
+cd .icons/
+#1717130278
+rm -rf moblin-cursor-theme/
+#1717130318
+sudo nala list -i '*dmz*'
+#1717130337
+sudo nala purge dmz-cursor-theme 
+#1717130435
+sudo nala list -i '*crystal*'
+#1717130444
+sudo nala purge crystalcursors 
+#1717130485
+sudo nala list -i '*vintage*'
+#1717130500
+sudo nala list -i '*breeze*'
+#1717130511
+sudo nala purge breeze-cursor-theme 
+#1717629893
+ssh -T git@github.com
+#1717629925
+cd .ssh/
+#1717629941
+eval $(ssh-agent)
+#1717629950
+ssh-add -l
+#1717629993
+cat alldeb_home.pub 
+#1717630035
+ssh -T git@github.com
+#1717630115
+cat $DOTBASH/history/allarch-history 
+#1717630146
+date
+#1717630172
+timedatectl 
+#1717630185
+status
+#1717630192
+timedatectl status
+#1717630197
+timedatectl timesync-status 
+#1717630202
+un
+#1717630743
+fastfetch 
+#1717630749
+uname -a
+#1717683525
+un
+#1717694497
+jfs_mkfs 
+#1717694505
+mkfs.jfs
+#1717694518
+type -a mkfs.jfs
+#1717694528
+type -a jfs_mkfs
+#1717694536
+cd /usr/sbin/
+#1717694543
+ll mkfs
+#1717694548
+ll mkfs.jfs
+#1717694989
+nala search linux-
+#1717695974
+nala list --upgradable 
+#1717695996
+unm
+#1717695997
+un
+#1717696009
+exity
+#1717696063
+un
+#1717696076
+sct status
+#1717696380
+cd
+#1717696382
+cd ./
+#1717696384
+cd /
+#1717698873
+type -a bash
+#1717698879
+file bash
+#1717698897
+file $(type -p bash)
+#1717698913
+file $(type -p /bin/bash)
+#1717698922
+file /bin/bash
+#1717699174
+nala seach mmdebstrap
+#1717699182
+nala search mmdebstrap
+#1718130466
+un
+#1718352769
+sct status
+#1718352796
+sudo nala search fastfetch
+#1718352806
+fastfetch 
+#1718352827
+sudo nala search plasma
+#1718353442
+cat /etc/apt/sources.list
+#1718353472
+doas nala search -t unstable plasma
+#1718353479
+doas apt search -t unstable plasma
+#1718353547
+doas apt search -t unstable qt6
+#1718353608
+sudo nala autoremove 
+#1718353621
+sudo nala
+#1718353626
+sudo nala --help
+#1718353636
+sudo nala
+#1718411155
+un
+#1718411443
+reboot
+#1718411492
+un
+#1718411551
+doas nala search -t sid plasma
+#1718411564
+doas nala search  plasma
+#1718411783
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
+#1718411843
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+#1718411936
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
+#1718412103
+sudo nala search plasma-desktop
+#1718412125
+bat /etc/apt/sources.list
+#1718412145
+cargo install --list
+#1718412152
+rustup
+#1718412164
+cd .cargo/
+#1718412168
+cd ..
+#1718412190
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#1718412262
+cargo install --list
+#1718412280
+rustup default stable
+#1718412294
+rustup update stable
+#1718412305
+rustup update 
+#1718412347
+rustc --version
+#1718412359
+rustup
+#1718412369
+rustup man
+#1718412388
+rustup show
+#1718412425
+bat /etc/apt/sources.list
+#1718412455
+doas nala search virtualbox
+#1718415735
+ip -c as
+#1718416072
+pactl info
+#1718416110
+doas nala install pactl
+#1718416128
+doas nala install pulseaudio-utils 
+#1718416134
+pactl
+#1718416141
+pactl info
+#1718416191
+ls -1 /usr/lib64/pipewire-0.3/libpipewire-module* | grep cancel
+#1718416203
+ls -1 /usr/lib64/pipewire
+#1718416251
+doas nala search libpipewire
+#1718416284
+doas nala install libpipewire-0.3-*
+#1718416301
+ls -1 /usr/lib64/pipewire-0.3/libpipewire-module* | grep cancel
+#1718416329
+pactl info
+#1718416337
+sct daemon-reload 
+#1718416346
+pactl info
+#1718665853
+un
+#1718666142
+sudo update-db
+#1718666147
+sudo updatedb
+#1718666338
+cd github/
+#1718666360
+exot
+#1718666750
+docker container ls -la
+#1718666752
+docker container ls -a
+#1718666761
+docker container start nginx_test 
+#1718667174
+docker ps 
+#1718903344
+un 
+#1718903546
+nala search intellij
+#1718904301
+nala --version\
+#1718904304
+nala --version
+#1718904316
+apt show nala
+#1718904323
+nala show nala
+#1718904383
+nala show dpkg
+#1719601338
+un
+#1719601913
+reboot
+#1719602158
+fastfetch 
+#1719679922
+un
+#1719690918
+reboot
+#1719691689
+gnome-shell --version
+#1719691724
+sudo nala search gnome-shell
+#1719691767
+sudo nala search -t sid gnome-shell
+#1719691793
+sudo apt search -t sid gnome-shell
+#1719842950
+ala
+#1719853754
+un
+#1720722758
+sudo nala update
+#1720722768
+sudo nala full-upgrade
+#1720722882
+sudo dpkg --configure -a
+#1720722903
+un
+#1720722912
+reboot
+#1720723097
+un
+#1720724879
+java --version 
+#1720724966
+cd .ssh
+#1720724971
+sct status ssh
+#1720727756
+cd ..
+#1720727758
+ccd github/
+#1720727763
+cd github/
+#1720727772
+cd laundry_online/
+#1720727775
+gll
+#1720727776
+gl\\
+#1720727939
+cd github/laundry_online/
+#1720727943
+cd app
+#1720727946
+lvvim Dockerfile 
+#1720727949
+lvim Dockerfile 
+#1720728279
+cd ..
+#1720728280
+l;l
+#1720728441
+git log
+#1720732030
+cd
+#1720736533
+python --version
+#1720736543
+pyenv
+#1720736547
+pyenv versions
+#1720736556
+pyenv global system 
+#1720736559
+python --version
+#1720736565
+pyenv versions
+#1720737299
+pyenv virtualenvs
+#1720737322
+pyenv 
+#1720737328
+pyenv rehash 
+#1720737336
+python --version
+#1720737357
+pyenv global --help
+#1720737369
+pyenv global 3.12.2 system
+#1720737378
+type -a python
+#1720737399
+pyenv rehash 
+#1720737405
+pyenv versions
+#1720737421
+pyenv global --unset
+#1720737433
+pyenv global system
+#1720737463
+pyenv exec python
+#1720737481
+pyenv hooks
+#1720737493
+pyenv hooks --help
+#1720737503
+pyenv
+#1720737513
+pyenv latest 
+#1720737526
+pyenv prefix 
+#1720737536
+pyenv update
+#1720737578
+pyenv install 3.12.4
+#1720737637
+pyenv update
+#1720737653
+pyenv virtualenv 3.12.4 jupyterlab
+#1720737666
+pyenv activate jupyterlab 
+#1720737682
+cat core 
+#1720737694
+rm core 
+#1720737701
+pip list
+#1720737710
+pip install -U pip
+#1720738038
+pip install -U wheel
+#1720738057
+pip install -U jupyterlab pandas numpy
+#1720738083
+pip list
+#1720738087
+pip list -l
+#1720738241
+jupyter
+#1720738260
+jupyter --paths
+#1720738290
+sudo nala list jupyter
+#1720738300
+sudo nala purge jupyter
+#1720738317
+sudo nala list 
+#1720738325
+sudo nala list --instaledc
+#1720738327
+sudo nala list --instaled
+#1720738333
+sudo nala list --installed
+#1720738343
+sudo nala list --installed| rg jupyter
+#1720738384
+cd github/dotfiles/bash/history/
+#1720738388
+cat alldeb-history 
+#1720738402
+cat alldeb-history | wc-l
+#1720738405
+cat alldeb-history | wc -l
+#1720738415
+exity
+#1720727803
+lvim docker-compose.yml 
+#1720979358
+un
+#1720979464
+doas update-initramfs --help
+#1720979501
+doas update-initramfs -k 6.7.12-amd64 
+#1720979519
+doas update-initramfs -k 6.7.12-amd64 -vu
+#1720979540
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+#1720979602
+doas nala search linux-
+#1720979753
+sudo nala show linux-firewire-utils 
+#1720980272
+doas nala search linux-image
+#1720980316
+doas nala show linux-image-cloud-amd64
+#1720980328
+doas nala show -a linux-image-cloud-amd64
+#1720980459
+doas nala install linux-image-cloud-amd64
+#1720980497
+fastfetch 
+#1720980501
+flatpak update
+#1720980565
+sudo nala search fastfetch
+#1720981380
+un
+#1720981558
+fastfetch --version
+#1720981618
+cd github/
+#1720981684
+sudo nala purge fastfetch 
+#1720981736
+git clone https://github.com/fastfetch-cli/fastfetch.git
+#1720981740
+cd fastfetch/
+#1720981782
+cat CMakeLists.txt 
+#1720981801
+cd debian/
+#1720982723
+cat rules
+#1720982745
+cat control
+#1720982760
+cd
+#1720982770
+cd Downloads/Progs/
+#1720982780
+doas nala install ./fastfetch-linux-amd64.deb 
+#1720982788
+fastfetch 
+#1720982818
+lsk
+#1720982840
+lsku
+#1720982918
+cd /ssd/
+#1720982938
+doas nala search kde
+#1720982955
+doas nala search kde-st
+#1720982971
+doas nala show -a kde-standard 
+#1720983009
+docker 
+#1720983014
+docker update
+#1720983111
+jq
+#1720983118
+pyfiglet
+#1720983131
+doas nala install pyfiglet
+#1720983255
+fastfetch 
+#1720983320
+exi6t
+#1722137373
+exity
+#1722137509
+un
+#1722144325
+cd /media/albano/NETAC2Tb/
+#1722144327
+ls -l
+#1722144337
+ll /backup
+#1722144499
+rsync -havrP albano /backup/
+#1722144524
+diff albano /backup/
+#1722144543
+diff albano /backup/albano
+#1722144557
+diff -r albano /backup/albano
+#1722144957
+sudo nala install nemo
+#1722145071
+sudo nala 
+#1722145080
+doas nala
+#1722145083
+doas nala --help
+#1722145113
+doas nala list --installed 
+#1722145121
+uname -a
+#1722145139
+sudo update-initramfs -u
+#1722145906
+un
+#1722293395
+sudo nautilus
+#1722293447
+lsk
+#1722293457
+cd /media/albano/NETAC2Tb/
+#1722293469
+doas rm -rf albano
+#1722293602
+lsk
+#1722298810
+fdupes --help
+#1722299165
+sudo nala search fclone
+#1722299173
+doas nala search fclone
+#1722299390
+doas nala search rdfind
+#1722299657
+lsk
+#1722299873
+cargo search fclones
+#1722299883
+sudo nala search fclones
+#1722303264
+un
+#1722305584
+cd
+#1722305700
+cargo search fclones
+#1722305711
+cargo install fclones
+#1722305725
+type -a fclones
+#1722305730
+fclones --help
+#1722305768
+lsk
+#1722306216
+mkfs.xfs --help
+#1722306315
+lsk
+#1722306369
+reboot
+#1722306566
+lsk
+#1722306576
+mkfs.xfs --help
+#1722306702
+sudo mkfs.xfs -L ALL -f /dev/sdb1
+#1722306736
+lsk
+#1722395274
+cat /etc/fstab
+#1722393507
+un
+#1722398689
+doas nvim /etc/default/grub
+#1722401083
+un
+#1722401321
+nala list --upgradable 
+#1722401934
+un
+#1722401961
+reboot
+#1722458615
+un
+#1722459029
+uname -a
+#1722459127
+docker login
+#1722459144
+fastfetch 
+#1722459206
+reboot
+#1722459320
+LL
+#1722459327
+un
+#1722459361
+sudo nala full-upgrade 
+#1722459588
+un
+#1722466038
+exity
+#1722567372
+un
+#1722567526
+nala list --upgradable 
+#1722567555
+fclones
+#1722567631
+sudo find / -type d -wholename '*dashtopanel*' 2> /dev/null
+#1722567745
+sudo find / -type d -wholename '*dash*' 2> /dev/null
+#1722567756
+sudo find / -type d -wholename '*dasht*' 2> /dev/null
+#1722567811
+sudo find / -type d -wholename '*dasht-to-panel' 2> /dev/null
+#1722567841
+sudo find / -type d -wholename '*dasht-to-panel*' 2> /dev/null
+#1722567847
+sudo find / -type d -wholename '*dash-to-panel*' 2> /dev/null
+#1722567863
+cd .local/share/gnome-shell/
+#1722567865
+ls -l
+#1722567919
+cd extension
+#1722567923
+ls -ls
+#1722567939
+sudo find / -type d -wholename '*dash-to-panel*' 2> /dev/null
+#1723045539
+un
+#1723045885
+reboot
+#1723045943
+un
+#1723045955
+sudo nala full-upgrade
+#1723106308
+cd .rustup/
+#1723106309
+ls -l
+#1723105208
+un
+#1723109559
+un
+#1724160038
+fastfetch 
+#1724160270
+cd github/dotfiles/alacritty/
+#1724163006
+btop
+#1724163011
+bashtop 
+#1724163030
+sudo bashtop 
+#1724431303
+un
+#1724431627
+reboot
+#1724431726
+un
+#1724431740
+sudo nala full-upgrade 
+#1724432105
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+#1724435311
+sudo nala search fastfetch
+#1724435326
+fastfetch 
+#1724435424
+cd github/dotfiles/
+#1724435433
+git diff
+#1724435455
+git restore bash/bashrc 
+#1724435483
+cd
+#1724435517
+cd .vscode
+#1724435522
+cat argv.json 
+#1724435527
+cd cli/
+#1724435533
+cd ..
+#1724435535
+cd extensions/
+#1724435673
+sudo apt search kde
+#1724435677
+sudo apt search plasma
+#1724435708
+sudo apt search '^plasma'
+#1724435734
+sudo apt search -t experimental '^plasma'
+#1724435769
+ps
+#1724435782
+tasksel
+#1725641580
+un
+#1725652818
+nala list --upgradable 
+#1725652841
+sudo nala full-upgrade 
+#1725653713
+sudo update-initramfs -k all
+#1725653724
+sudo update-initramfs -k 'all'
+#1725653732
+sudo update-initramfs -k all
+#1725653751
+doas update-initramfs -u -k all
+#1725653787
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+#1725653850
+un
+#1725653913
+sudo nala search plasma
+#1725653942
+sudo nala search plasma-des
+#1725653953
+sudo nala search -t experimental plasma-des
+#1725653968
+sudo apt search -t experimental plasma-des
+#1725654007
+sudo apt search -t experimental kde-plasma-des
+#1725654030
+exitr
+#1726169817
+un
+#1726170160
+nala list --upgradable 
+#1726170174
+dirmgr
+#1726336779
+un
+#1726337135
+docker container ls -a
+#1726337141
+docker image ls
+#1726698164
+un
+#1727188145
+nala list --upgradable 
+#1727188169
+gnome-shell --version
+#1727188189
+gnome-tweaks --version
+#1727188223
+flatpak update 
+#1727188355
+sudo tasksel 
+#1727188394
+fastfetch 
+#1727188458
+sudo tasksel
+#1727188773
+cd .ssh
+#1727188774
+;;
+#1727188792
+ssh -T git@github.com
+#1727188887
+cat alldeb_home.pub 
+#1727188915
+ssh -T git@github.com
+#1727188929
+sudo systemctl status sshd
+#1727188949
+nvim 
+#1727188969
+sudo nvim /etc/ssh/sshd_config
+#1727189018
+sudo nvim /etc/ssh/ssh_config
+#1727189054
+sudo systemctl restart sshd
+#1727189059
+ssh -T git@github.com
+#1727190078
+sudo systemctl status docker
+#1727190163
+sudo nala 
+#1727190168
+sudo nala --help
+#1727190195
+sudo nala purge gnome
+#1727190204
+sudo nala purge gnome-desktop
+#1727190208
+sudo nala purge gnome-desktop3-data 
+#1727190242
+sudo nala purge gnome-desktop3-data gnome-shell gnome-shell-extensions gnome-tweak-tool gnome-control-center 
+#1727190262
+sudo nala purge gnome-desktop3-data gnome-shell gnome-shell-extensions gnome-tweaks gnome-control-center 
+#1727190433
+sudo nala install task-cinnamon-desktop xwayland 
+#1727190675
+sudo nala purge gnome-terminal
+#1727190702
+sudo nala search terminal
+#1727190785
+sudo nala install xfce4-terminal tio
+#1727190793
+sudo nala install xfce4-terminal
+#1727190799
+sudo nala install xfce4-terminal tio
+#1727190820
+sudo nala install tiny
+#1727190830
+sudo nala install putty
+#1727190870
+sudo nala purge putty
+#1727190885
+sudo nala purge putty gnome-menus
+#1727191526
+sudo nala install xsensors smartmontools
+#1727191539
+sensors
+#1727191542
+sudo sensors
+#1727191558
+sudo systemctl status smartd.service 
+#1727191567
+sudo systemctl status smartmontools.service 
+#1727191853
+sct
+#1727191895
+sudo find / -type f -wholename '*sct*' 2> /dev/null
+#1727191916
+sudo find /etc -type f -wholename '*sct*' 2> /dev/null
+#1727191944
+sudo find /etc -type f -wholename '*sct*'
+#1727191958
+cd github/dotfiles/bash-completion/
+#1727191971
+cat systemctl 
+#1727191982
+sudo find /etc -type f -wholename '*systemctl*'
+#1727192003
+cd /etc/bash_completion.d/
+#1727192469
+sct status docker
+#1727192479
+sudo nala search distrobox
+#1727192583
+sudo nala install docker-compose
+#1727192599
+docker-compose 
+#1727192623
+sudo nala install docker-compose
+#1727192659
+runc --help
+#1727192661
+docker
+#1727192731
+docker 
+#1727192742
+sct status docker
+#1727192759
+sct status docker.socket 
+#1727192767
+docker-compose 
+#1727192775
+docker login
+#1727198946
+sudo nala list --help
+#1727198967
+sudo nala
+#1727198971
+sudo nala --help
+#1727199053
+sudo nala list -i|rg kde
+#1727199081
+sudo tasksel 
+#1727199322
+fastfetch 
+#1727199397
+un
+#1727199439
+nala list --upgradable 
+#1727199462
+nala purge gnome-text-editor 
+#1727199466
+sudo nala purge gnome-text-editor 
+#1727199522
+sudo nala search kde
+#1727199531
+sudo nala search plasma-desktop
+#1727199545
+sudo nala search -t experimental plasma-desktop
+#1727199553
+sudo apt search -t experimental plasma-desktop
+#1727199629
+sudo dpkg -L
+#1727199632
+sudo dpkg -l
+#1727199652
+fastfetch 
+#1727199776
+sudo dpkg -l|cut -d'ii ' -f2
+#1727199783
+sudo dpkg -l|cut -d' ' -f2
+#1727199793
+sudo dpkg -l|cut -d' ' -f1
+#1727199796
+sudo dpkg -l|cut -d' ' -f2
+#1727199809
+sudo dpkg -l|cut -d' ' -f3
+#1727199831
+sudo dpkg -l|cut -d' ' -f3|rg '^kd*'
+#1727199838
+sudo dpkg -l|cut -d' ' -f3|rg '^k*'
+#1727199842
+sudo dpkg -l|cut -d' ' -f3|rg '^kd*'
+#1727199852
+sudo dpkg -l|cut -d' ' -f3|rg '^k.*'
+#1727199873
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*'
+#1727199921
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z].*'
+#1727199927
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*'
+#1727200002
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*' | xargs -n1 sudo nala purge 
+#1727200025
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*' | xargs -n1 | sudo nala purge 
+#1727200030
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*' | xargs -n1 sudo nala purge 
+#1727200049
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*'
+#1727200064
+sudo nala purge kactivities-bin 
+#1727200073
+sudo nala purge kactivitymanagerd 
+#1727200096
+sudo nala purge kbd
+#1727200117
+sudo nala purge kded5 
+#1727200153
+sudo dpkg -l|cut -d' ' -f3|rg '^k[a:z]*'
+#1727200170
+kmod --help
+#1727200194
+sudo nala show kpartx
+#1727200227
+sudo nala show krb5-
+#1727200232
+sudo nala show krb5-locales 
+#1727201513
+timedatectl 
+#1727201526
+localectl 
+#1727201538
+sudo localectl --help
+#1727201572
+sudo localectl list-keymaps 
+#1727201594
+sudo localectl set-keymap us-acentos
+#1727201602
+sudo localectl
+#1727201612
+sudo su
+#1727201673
+cat /etc/vconsole.conf 
+#1727201684
+sudo vim /etc/vconsole.conf 
+#1727201751
+doas update-initramfs -u -k all
+#1727201776
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+#1727203077
+cd .ssh
+#1727203085
+cat authorized_keys 
+#1727203365
+doas nala update && doas nala upgrade
+#1727288998
+updateHist 
+#1727289043
+un
+#1727289206
+fwupd
+#1727289210
+sudo fwupd
+#1727289225
+sudo nala search fwupd
+#1727289275
+sudo fwupdtool 
+#1727289281
+sudo fwupdmgr 
+#1727289283
+sudo fwupdmgr --help
+#1727289289
+sudo fwupdtool --help
+#1727289315
+docker ps -a
+#1727289318
+docker images
+#1727289322
+distrobox
+#1727289332
+sudo nala search distrogbox
+#1727289339
+sudo nala search distrobox
+#1727289347
+sudo nala install distrobox
+#1727289441
+docker images
+#1727289445
+docker images -a
+#1727289501
+sudo nala search docker
+#1727289597
+sudo nala purge docker-cli docker-compose docker.io 
+#1727289695
+sudo nala install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+#1727289717
+sudo nala install runc
+#1727289728
+un
+#1727289814
+docker ps
+#1727289817
+docker ps -a
+#1727289840
+docker-compose
+#1727289849
+docker
+#1727289869
+docker compose up
+#1727289878
+cd docker/
+#1727289894
+lvim docker-compose.yml
+#1727289912
+lsk
+#1727290009
+lvim docker-compose.yml
+#1727290789
+docker ps 
+#1727290062
+docker compose up
+#1727290814
+lvim docker-compose.yml 
+#1727291024
+cd ../github/laundry_online/
+#1727291037
+lvim docker-compose.yml 
+#1727291140
+asdf 
+#1727291507
+cd
+#1727291519
+ls --color=auto -lhA
+#1727291521
+ls --color=auto -lha
+#1727292305
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
+#1727292313
+cd .asdf
+#1727292321
+git switch -
+#1727292326
+git switch HEAD
+#1727292333
+git branch HEAD
+#1727292352
+git config --local
+#1727292355
+git config --local -l
+#1727292371
+git pull --set-upstream origin main
+#1727292374
+git pull --set-upstream origin/main
+#1727292385
+git pull --set-upstream master
+#1727292388
+git log
+#1727292445
+git checkout HEAD
+#1727292472
+gl origin HEAD
+#1727292482
+gl origin master
+#1727292597
+git checkout master
+#1727292610
+git branch -a
+#1727292627
+git log
+#1727292657
+git fetch --tags 
+#1727292677
+git tag
+#1727292695
+git checkout tags/v0.14.1
+#1727291549
+lvim ~/.bash_profile 
+#1727292742
+echo $PATH
+#1727292756
+cd github/dotfiles/
+#1727292844
+cd bash
+#1727292851
+lvim profile_alldeb 
+#1727292875
+asdf
+#1727292936
+cd github/dotfiles/bash/
+#1727292940
+cat profile_archnote 
+#1727292958
+lvim profile_alldeb 
+#1727293004
+asdf
+#1727293023
+ll /etc/bash_completion.d/
+#1727293055
+sudo ln -sf /home/albano/.asdf/completions/asdf.bash /etc/bash_completion.d/asdf
+#1727293059
+ll /etc/bash_completion.d/
+#1727293081
+asdf update 
+#1727293417
+echo -e "${PATH//:/\\n}"
+#1727293459
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1727293473
+echo -e "${PATH//:/\\n}"
+#1727293483
+modular update mojo
+#1727293527
+mojo
+#1727293588
+asdf plugin-list-all |rg mojo
+#1727293596
+asdf plugin-list-all
+#1727293721
+node --version
+#1727293732
+npm i -g npm@latest
+#1727293738
+npm i -g pnpm
+#1727293742
+npm i -g pnpm@latest
+#1727293804
+content_copy
+#1727293804
+npm i -g @angular/cli@17
+#1727293825
+ng
+#1727294122
+sudo timedatectl set-ntp true
+#1727294129
+un
+#1727294146
+sudo nala install seahorse
+#1727294247
+sudo apt search -t experimental plasma-desktop
+#1727294357
+sudo apt search -t sid plasma-desktop
+#1727294396
+sudo tasksel
+#1727294458
+sudo nala install task-cinnamon-desktop 
+#1727294471
+sudo tasksel
+#1727294526
+cd github/
+#1727295194
+ng new angular-17
+#1727297730
+lsk
+#1727297734
+cd /ssd
+#1727297738
+fd cv
+#1727297747
+sudo nala search fd-find 
+#1727297768
+rustup
+#1727299060
+fd cv
+#1727299080
+sudo nala search rust
+#1727299156
+sudo nala install rustup
+#1727299163
+rustup --help
+#1727299239
+rustup install stable
+#1727299262
+rustc --version
+#1727299271
+type -a rustc
+#1727299294
+cd
+#1727299296
+cd .cargo/
+#1727299301
+echo $PATH
+#1727299355
+cat env
+#1727299372
+lvim env
+#1727299441
+lvim ~/.bash_profile 
+#1727299508
+ng
+#1727299561
+lvim ~/.bash_profile 
+#1727299600
+cd $DOTFILES
+#1727299926
+cargo install fd-find
+#1727299977
+cd github/
+#1727299982
+cd angular-17/
+#1727299984
+code .
+#1727300040
+npm start
+#1727301881
+exit]
+#1727301885
+fd
+#1727314785
+un
+#1727315134
+cd github/
+#1727315138
+git clone git@github.com:allbano/TrabalhoFinalDAC.git
+#1727315148
+cd TrabalhoFinalDAC/
+#1727315155
+glo
+#1727315208
+cd ui/
+#1727315215
+code .
+#1727315345
+ng serve
+#1727315353
+npm i
+#1727315375
+npm fund
+#1727315379
+npm i
+#1727315390
+npm audit fix
+#1727316496
+inxi
+#1727316499
+tldr inxi
+#1727315530
+ng serve
+#1727376796
+cd github/dotfiles/
+#1727376804
+git restore bash/profile_alldeb 
+#1727376811
+git restore zsh/.zshrc 
+#1727376903
+echo -e "${PATH//:/\\n}"
+#1727376948
+un
+#1727376995
+nala list --upgradable 
+#1727377011
+sudo nala full-upgrade 
+#1727377528
+nvm
+#1727377542
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1727377544
+echo -e "${PATH//:/\\n}" | sort -u\
+#1727377547
+echo -e "${PATH//:/\\n}" | sort -u
+#1727377561
+echo -e "${PATH//:/\\n}"
+#1727377570
+adsf
+#1727377573
+asdf
+#1727377578
+asdf update
+#1727552581
+un
+#1727552996
+~ exit
+#1727567342
+un
+#1727568177
+ssh -T git@github.com
+#1727568182
+cd .ssh
+#1727568187
+cat authorized_keys 
+#1727569495
+teste="Eu quero ser mais"
+#1727569506
+echo ${teste}
+#1727569510
+echo ${teste[1]}
+#1727569518
+echo ${teste}
+#1727569618
+env
+#1727569620
+set
+#1727569741
+ns --help
+#1727569758
+type -a ns
+#1727569801
+cat `type -p ns`
+#1727569948
+docker
+#1727569985
+docker compose --help
+#1727570443
+ps a
+#1727570446
+ps aau
+#1727570450
+ps au
+#1727570455
+ps aux
+#1727570458
+ps ax
+#1727570462
+ps aux
+#1727570467
+ps au
+#1727570480
+ps --help
+#1727570492
+ps a
+#1727570496
+ps at
+#1727570499
+ps al
+#1727570588
+cut -d: -f 1,5 /etc/passwd | tr : \\t
+#1727570597
+cut -d: -f 1,5 /etc/passwd | tr : \t
+#1727570602
+cut -d: -f 1,5 /etc/passwd | tr : \\t
+#1727570628
+cut -d: -f 1 /etc/passwd | tr : \\t
+#1727570637
+cut -d: -f 1,2 /etc/passwd | tr : \\t
+#1727570650
+cut -d: -f 1,5 /etc/passwd
+#1727570675
+cut -d: -f 1,2 /etc/passwd | tr : \\2t
+#1727570682
+cut -d: -f 1,2 /etc/passwd | tr : \t
+#1727570687
+cut -d: -f 1,5 /etc/passwd
+#1727570698
+cut -d: -f 1,2 /etc/passwd | tr : '\t'
+#1727570705
+cut -d: -f 1,2 /etc/passwd | tr : \\t
+#1727570712
+cut -d: -f 1,3 /etc/passwd | tr : \\t
+#1727570735
+cut -d: -f 1,5 /etc/passwd | tr : '\t\t'
+#1727570744
+cut -d: -f 1,5 /etc/passwd | tr : '\t\t\t'
+#1727570747
+cut -d: -f 1,5 /etc/passwd | tr : '\t\t'
+#1727570768
+cut -d: -f 1,5 /etc/passwd | tr : '\t'
+#1727570778
+cut -d: -f 1,6 /etc/passwd | tr : '\t'
+#1727570783
+cut -d: -f 1,6 /etc/passwd
+#1727570789
+catr /etc/passwd
+#1727570792
+cat /etc/passwd
+#1727570821
+cut -d: -f 1,6 /etc/passwd
+#1727570838
+cut -d: -f 1,6 /etc/passwd | tr : \\t
+#1727571099
+cat $(type -p neofetch)
+#1727571184
+nvim $(type -p neofetch)
+#1727571447
+sudo nala search hyfetch
+#1727571465
+sudo nala install hyfetch
+#1727571477
+hyfetch 
+#1727571610
+sudo nala purge hyfetch
+#1727571618
+neofetch 
+#1727571666
+hwinfo
+#1727571671
+sudo nala search hwinfo
+#1727571678
+sudo nala install hwinfo
+#1727571691
+hwinfo
+#1727571754
+hwinfo | less
+#1727572744
+cd
+#1727572746
+cd github/
+#1727572752
+cd TrabalhoFinalDAC/
+#1727572786
+git restore ui/package-lock.json 
+#1727572795
+cd ui/.angular/
+#1727572801
+cd ..
+#1727572862
+cd..
+#1727572876
+cd ..
+#1727572884
+rm -rf TrabalhoFinalDAC/
+#1727572929
+git clone git@github.com:allbano/TrabalhoFinalDAC.git
+#1727572966
+node --version
+#1727572987
+npm i -g pnpm@latest
+#1727572994
+npm i -g npm@latest
+#1727573008
+pnpm version
+#1727573041
+cd TrabalhoFinalEDII/
+#1727573044
+cd ..
+#1727573049
+cd TrabalhoFinalEDII/
+#1727573069
+cd ..
+#1727573076
+rm -rf TrabalhoFinalEDII/
+#1727573082
+cd angular-17/
+#1727573087
+code .
+#1727573232
+npm start
+#1727575630
+cd ..
+#1727575640
+ng new angular-17-ssr
+#1727575714
+cd angular-17-ssr/
+#1727576009
+cd ..
+#1727576012
+cd angular-17
+#1727576014
+code .
+#1727576174
+npm start
+#1727576811
+fastfetch 
+#1727576824
+lsk
+#1727576846
+glog
+#1727576887
+git am --help
+#1727577052
+un
+#1727748116
+reboot
+#1727748357
+un
+#1727748422
+fastfetch 
+#1727796515
+docker compose
+#1727796616
+docker ps -a
+#1727796642
+docker container start docker-web-1 
+#1727796988
+ufw
+#1727797019
+sudo iptables -L
+#1727797127
+sudo nala search iptables
+#1727797157
+sct status firewalld.service 
+#1727797161
+sct status firewalld
+#1727797167
+sct status firewalld.service 
+#1727797190
+sudo systemctl status firewalld.service 
+#1727797194
+ss
+#1727797222
+docker ps
+#1727797239
+docker container stop docker-web-1 
+#1727797278
+docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 nginx:alpine 
+#1727797853
+exitr
+#1727807528
+un
+#1727807561
+sct
+#1727807603
+sct| rg firewal
+#1727807611
+zfs
+#1727807624
+fastfetch 
+#1727807640
+sudo nala search fastfetch 
+#1727807647
+sudo nala purge fastfetch 
+#1727807654
+sudo nala search fastfetch 
+#1727807663
+sudo nala install -y fastfetch 
+#1727807669
+fastfetch 
+#1727807679
+cat /etc/fstab
+#1727807685
+bat /etc/fstab
+#1727807696
+sudo nala install -y bat
+#1727807702
+bat /etc/fstab
+#1727807709
+type -a bat
+#1727807725
+sudo nala search bat
+#1727807739
+sudo nala search '^bat'
+#1727807778
+bat
+#1727807803
+find /usr -type f -wholename '*/bat'
+#1727807823
+cargo install --list
+#1727807828
+bat
+#1727807835
+echo $PATH
+#1727807858
+lvim ~/.bash_profile 
+#1727807906
+echo -e "${PATH//:/\\n}"
+#1727807910
+bat
+#1727807924
+env
+#1727807927
+cat
+#1727807953
+type -a cargo
+#1727807961
+cd .cargo/
+#1727807964
+cat env
+#1727807976
+lvim ~/.bash_profile 
+#1727808072
+echo -e "${PATH//:/\\n}"
+#1727808075
+bat
+#1727808085
+bat /etc/fstab
+#1727808179
+cd github/dotfiles/
+#1727808180
+l;
+#1727808183
+git branch
+#1727808192
+tldr git branch
+#1727808251
+tldr git checkout
+#1727808319
+tldr git push
+#1727808339
+git branch -a
+#1727808384
+git checkout -b debian_testing
+#1727808404
+git checkout main
+#1727808409
+git branch
+#1727808412
+git branch -a
+#1727808493
+cargo list
+#1727808497
+cargo 
+#1727808512
+cargo --list
+#1727808536
+cargo install --list
+#1727808544
+cargo install baty
+#1727808547
+cargo install bat
+#1727808561
+cargo search bat
+#1727808578
+type -a bats
+#1727808585
+sudo nala search bats
+#1727808591
+sudo nala search bat
+#1727808601
+sudo nala search '^bat$'
+#1727808607
+type -a bat
+#1727808636
+sudo nala 
+#1727808640
+sudo nala --help
+#1727808647
+sudo nala install bat
+#1727808656
+sudo nala show bat
+#1727808665
+cd /usr/bin
+#1727808669
+ll bat
+#1727808734
+cargo uninstall bat
+#1727808736
+bat
+#1727808741
+sudo nala install bat
+#1727808751
+sudo nala purge bat
+#1727808763
+sudo nala install bat
+#1727808771
+type -a bat
+#1727808776
+sudo nala purge bat
+#1727808783
+cargo install bat
+#1727808829
+bat
+#1727808839
+echo -e "${PATH//:/\\n}"
+#1727808859
+cd /usr/local/bin
+#1727808867
+kubectl --help
+#1727808879
+;ll
+#1727808886
+ollama 
+#1727808927
+docker ps -a
+#1727808934
+docker rm docker-web-1 
+#1727808948
+docker 
+#1727808958
+docker ps
+#1727808962
+docker ps -a
+#1727808987
+docker container start nginx_test
+#1727809128
+sudo nvim /etc/sysctl.conf 
+#1727809159
+docker ps -a
+#1727809163
+docker rm nginx_test 
+#1727809174
+sudo docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 nginx:alpine 
+#1727809192
+docker ps -a
+#1727809198
+doas docker ps -a
+#1727809233
+docker ps -a
+#1727809250
+sudo sysctl -p
+#1727810844
+un
+#1727810853
+cat /etc/doas.conf 
+#1727810860
+doascat /etc/doas.conf
+#1727810862
+doas cat /etc/doas.conf
+#1727810873
+doas sct
+#1727810880
+doas sct status
+#1727810898
+doas echo $PATH
+#1727810906
+doas ll
+#1727810923
+doas env
+#1727810954
+doas lvim
+#1727810960
+type -a lvim
+#1727810970
+sudo lvim
+#1727810987
+sudo nala search lvim
+#1727810997
+sudo lvim
+#1727811027
+echo -e "${PATH//:/\\n}"
+#1727859251
+un
+#1727870237
+cd $DOTFILES
+#1727870250
+git diff
+#1727870277
+git diff --help
+#1727870310
+tldr git diff
+#1727870325
+git diff --staged
+#1727870393
+gaa 
+#1727870515
+gcm "refac: Include cargo's env path."
+#1727870545
+tldr git merge
+#1727870706
+git checkout debian_testing 
+#1727870711
+git diff main
+#1727870726
+git merge main
+#1727870746
+gcm "Merge from main"
+#1727870765
+glo
+#1727870772
+glol -5
+#1727870887
+alias| rg 'git push'
+#1727870899
+gp -a
+#1727870916
+gp -v --all
+#1727870976
+cd
+#1727870998
+apt-listchanges 
+#1727871017
+sudo nala --help
+#1727871032
+sudo nala list --help
+#1727871079
+sudo nala list -V
+#1727871104
+sudo nala history
+#1727871110
+sudo apt 
+#1727871126
+sudo nala --help
+#1727871131
+sudo apt --help
+#1727929269
+fastfetch 
+#1727929256
+un
+#1727929344
+doas nala purge python-uno
+#1727929347
+doas nala purge python3-uno
+#1727929353
+un
+#1727929363
+nala list --upgradable 
+#1727929391
+doas nala full-upgrade
+#1727929737
+cd bin
+#1727929745
+ns usuarios
+#1727929850
+./usuarios 
+#1727929868
+cat /etc/passwd
+#1727929888
+cut -d: -f 1,6 /etc/passwd | tr : \\t
+#1727929894
+cut -d: -f 1,5 /etc/passwd | tr : \\t
+#1727929976
+cut -d: -f 1,5 /etc/passwd | sed 's/:/\t\t/g'
+#1727929986
+cut -d: -f 1,5 /etc/passwd | sed 's/:/\t\t\t/g'
+#1727930028
+cat /etc/passwd 
+#1727930078
+cut -d: -f 1,5 /etc/passwd
+#1727930098
+./usuarios 
+#1727930108
+cut -d: -f 1,5 /etc/passwd
+#1727930136
+cd bin
+#1727930144
+./usuarios 
+#1727930168
+cat /etc/passwd
+#1727930325
+sudo usermod --help
+#1727930343
+sudo usermod -c "Albano Maywitz" albano
+#1727930347
+cat /etc/passwd
+#1727930374
+sudo usermod -c "Libvirt Qemu" libvirt-qemu 
+#1727930376
+cat /etc/passwd
+#1727930397
+sudo usermod -c "MariaDB Server" mysql
+#1727930414
+sudo usermod -c "SSSD system user" sssd
+#1727930416
+cat /etc/passwd
+#1727930449
+sudo usermod -c "Speech Dispatcher" speech-dispatcher 
+#1727930451
+cat /etc/passwd
+#1727930509
+sudo usermod -c "Flatpak system-wide inst helper" _flatpak 
+#1727930512
+cat /etc/passwd
+#1727930555
+sudo usermod -c "NVIDIA Persistence Daemon" nvpd 
+#1727930557
+cat /etc/passwd
+#1727930587
+sudo usermod -c "colord colour management daemon" colord 
+#1727930589
+cat /etc/passwd
+#1727930608
+sudo usermod -c "RealtimeKit" rtkit 
+#1727930610
+cat /etc/passwd
+#1727930631
+sudo usermod -c "fwupd-refresh user" fwupd-refresh 
+#1727930652
+sudo usermod -c "Avahi mDNS daemon" avahi 
+#1727930654
+cat /etc/passwd
+#1727930679
+sudo usermod -c "dnsmasq" dnsmasq 
+#1727930693
+sudo usermod -c "usbmux daemon" usbmux
+#1727930696
+cat /etc/passwd
+#1727930721
+sudo usermod -c "TPM software stack" tss
+#1727930723
+cat /etc/passwd
+#1727930731
+./usuarios 
+#1727930832
+cd bin
+#1727930838
+lvim usuarios 
+#1727930847
+./usuarios 
+#1727930861
+lvim usuarios 
+#1727931449
+neofetch 
+#1727931452
+neofetch --help
+#1727931533
+neofetch 
+#1727931573
+neofetch --cpu-temp C
+#1727931586
+neofetch --cpu_temp C
+#1727931614
+docker
+#1727931714
+p3a cu
+#1727931789
+ips
+#1727931808
+ports
+#1727931829
+sudo nala show iptables
+#1727931844
+sudo nala install iptables
+#1727931864
+sudo nala autoremove 
+#1727931902
+sudo nala install nftables 
+#1727932002
+nft
+#1727932009
+nft --help
+#1727932021
+iptables --help
+#1727932053
+doas nala purge iptables
+#1727932128
+xtables-nft-multi 
+#1727932134
+xtables-nft-multi --help
+#1727932186
+nft --help
+#1727932192
+nft
+#1727932225
+doas nala install nftables links2
+#1727932238
+nft
+#1727932243
+nft --help
+#1727932264
+sct enable nftables.service 
+#1727932270
+sct start nftables.service 
+#1727932275
+sct status nftables.service 
+#1727932280
+nft
+#1727932288
+nft --help
+#1727932789
+cd github/
+#1727932801
+mkdir bd3
+#1727932805
+cd bd3
+#1727932848
+mkdir projetobdm
+#1727932853
+cd projetobdm/
+#1727932874
+lvim docker-compose.yml
+#1727932888
+cd ../..
+#1727932892
+cd bd3/
+#1727932920
+rm -rf projetobdm/
+#1727933809
+mkdir projetodw
+#1727933815
+cd projetodw
+#1727933829
+lvim docker-compose.ymlk
+#1727933850
+mv docker-compose.ymlk docker-compose.yml 
+#1727933854
+lvim docker-compose.yml 
+#1727934093
+docker images
+#1727934138
+docker pull postgres:16-alpine
+#1727934379
+lvim docker-compose.yml 
+#1727934622
+cd ..
+#1727934636
+git init
+#1727934647
+git add README.md
+#1727934652
+> README.md
+#1727934653
+git add README.md
+#1727934662
+git branch -M main
+#1727934709
+mv projetodw/docker-compose.yml ..
+#1727934712
+cd ..
+#1727934727
+mv docker-compose.yml bd3/
+#1727934730
+cd bd3/
+#1727934739
+ga docker-compose.yml 
+#1727934764
+"Primeiro commit. Adicionado README principal e docker-compose"
+#1727934770
+gcm "Primeiro commit. Adicionado README principal e docker-compose"
+#1727934783
+gp -u origin main
+#1727934799
+git remote add origin git@github.com:allbano/bd3.git
+#1727934802
+gp -u origin main
+#1727934827
+cd projetodw/
+#1727934864
+> init.sh
+#1727934872
+> init.sql
+#1727934897
+cd ..
+#1727934906
+mv BD_VAREJO.sql ~/Desktop/
+#1727934910
+gaa
+#1727934941
+gcm "Adicionado os arquivos de init do container e do banco."
+#1727931625
+lvim ~/.bash_aliases 
+#1727934970
+ldl
+#1727935056
+cat /etc/passwd
+#1727935069
+cut -d: -f1 /etc/passwd
+#1727935075
+cut -d: -f1,5 /etc/passwd
+#1727935117
+cut -d: -f1,5 /etc/passwd | tr : \|----------\|
+#1727935127
+cut -d: -f1,5 /etc/passwd | tr : ----------
+#1727935136
+cut -d: -f1,5 /etc/passwd | tr : "----------"
+#1727935158
+cut -d: -f1,5 /etc/passwd | sed 's/:/\t\t/g'
+#1727935174
+cut -d: -f1,5 /etc/passwd | sed 's/:/\t\t\t/g'
+#1727935373
+lvim usuarios 
+#1727935397
+./usuarios 
+#1727935409
+lvim usuarios 
+#1727935433
+./usuarios 
+#1727935435
+lvim usuarios 
+#1727935486
+./usuarios 
+#1727935571
+lvim usuarios 
+#1727935599
+./usuarios 
+#1727935763
+awk -F: '{printf "%-15s %s\n", $1, $5}' /etc/passwd
+#1727935834
+lvim usuarios 
+#1727935844
+awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727935961
+lvim usuarios 
+#1727935988
+./usuarios 
+#1727936023
+lvim usuarios 
+#1727936081
+cut -d: -f1,5 /etc/passwd
+#1727936122
+awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936132
+awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd | sort
+#1727936312
+type -a awk
+#1727936315
+type -a gawk
+#1727936392
+doas nala search maws
+#1727936395
+doas nala search mawk
+#1727936407
+type -a mawk
+#1727936417
+awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936420
+time awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936424
+time gawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936427
+time awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936429
+time gawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936433
+time mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936469
+time awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936471
+time gawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936474
+time mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936500
+mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd | sort
+#1727936503
+mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd | sort -u
+#1727936510
+mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd | sort
+#1727936559
+time ./usuarios 
+#1727936567
+time mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936571
+time ./usuarios 
+#1727936806
+cd bin
+#1727936814
+cat usuarios 
+#1727936858
+printf "Login: %-20s Nome Completo: %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936891
+mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936965
+printf "%-20s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727937030
+cp usuarios usuarios2
+#1727937034
+lvim usuarios2
+#1727937135
+printf "%-20s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727937151
+lvim usuarios2
+#1727937166
+time ./usuarios2
+#1727937170
+time ./usuarios
+#1727937173
+time ./usuarios2
+#1727937188
+time ./usuarios
+#1727937191
+time ./usuarios2
+#1727937229
+rm usuarios
+#1727937236
+mv usuarios2 usuarios
+#1727937239
+lvim usuarios 
+#1727937274
+gaa
+#1727937314
+gcm "Added usuarios script."
+#1727937334
+gp -v origin debian_testing
+#1727937345
+git_current_branch 
+#1727937371
+gp -a
+#1727937378
+gp --all
+#1727937391
+git checkout main 
+#1727937419
+cd $DOTFILES
+#1727937426
+gl -v
+#1727937439
+git checkout debian_testing 
+#1727937459
+cd $DOTFILES
+#1727937464
+git config -l
+#1727937497
+git push -u origin debian_testing 
+#1727937503
+git config -l
+#1727937528
+tldr git diff
+#1727937546
+git diff main..debian_testing 
+#1727937570
+git checkout main 
+#1727937576
+tldr git merge
+#1727937596
+git merge debian_testing 
+#1727937604
+gp origin main
+#1727937620
+gp -v origin main
+#1727937728
+docker compose 
+#1727937738
+lvim ~/.bash_aliases 
+#1727937807
+docker-compose 
+#1727937830
+docker-compose --help
+#1727937834
+docker-compose
+#1727937861
+cat /etc/bash_completion.d/systemctl 
+#1727937902
+cat /usr/share/bash-completion/completions/docker 
+#1727938122
+docker
+#1727938148
+docker completion docker
+#1727938157
+docker completion bash
+#1727938239
+sudo docker completion bash > /etc/bash_completion.d/docker-compose.sh
+#1727938253
+docker completion bash > sudo tee /etc/bash_completion.d/docker-compose.sh
+#1727938265
+docker completion bash | sudo tee /etc/bash_completion.d/docker-compose.sh
+#1727938274
+cat /etc/bash_completion.d/docker-compose.sh
+#1727938281
+bat /etc/bash_completion.d/docker-compose.sh
+#1727938328
+docker compose 
+#1727938410
+curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose
+#1727938577
+lvim /etc/bash_completion.d/docker-compose.sh
+#1727938727
+mv /etc/bash_completion.d/docker-compose.sh /etc/bash_completion.d/docker-compose
+#1727938730
+sudo mv /etc/bash_completion.d/docker-compose.sh /etc/bash_completion.d/docker-compose
+#1727938765
+docker
+#1727939042
+docker compose 
+#1727939153
+docker-compose 
+#1727939298
+https://raw.githubusercontent.com/docker/cli/v$(docker version --format '{{.Server.Version}}' 
+#1727939325
+https://raw.githubusercontent.com/docker/cli/v"$(docker version --format '{{.Server.Version}}')"
+#1727939391
+docker-compose version --short
+#1727939410
+curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose
+#1727939531
+apt list bash-completion 
+#1727939546
+nala list kde
+#1727939553
+nala list plasma
+#1727939563
+sudo nala list kde
+#1727939586
+sudo nala search '^kde'
+#1727939594
+sudo nala search "^kde"
+#1727939692
+sudo nala search plasma-
+#1727939725
+sudo apt search plasma-
+#1727939845
+doas rm /etc/bash_completion.d/docker-compose.sh
+#1727939846
+doas rm /etc/bash_completion.d/docker-compose
+#1727939859
+lvim ~/.bash_aliases 
+#1727939876
+cd $DOTFILES
+#1727939886
+git checkout 
+#1727939896
+git restore .
+#1727939919
+docker compose
+#1727983175
+type -a updateDotfiles 
+#1727983201
+cd $DOTFILES
+#1727983204
+gl --all
+#1727983211
+gl -v --all
+#1727983226
+git checkout debian_testing 
+#1727983242
+lsb_release 
+#1727983266
+cd scripts/
+#1727983268
+cat inf
+#1727983308
+git_current_branch 
+#1727983327
+cd ..
+#1727983330
+cd bash
+#1727983341
+cat bash_functions 
+#1727983351
+cd ..
+#1727983362
+cd bash
+#1727983431
+lvim bash_functions 
+#1727983464
+lvim functionsInitBash 
+#1727983521
+cd ..
+#1727983524
+cd scripts/
+#1727983532
+cat sp
+#1727983535
+bat sp
+#1727983543
+sp
+#1727983563
+cat updateHist 
+#1727983578
+cd github/dotfiles/scripts/
+#1727983568
+lvim updateHist 
+#1727983953
+rm updateHist 
+#1727983585
+lvim functionsInitBash 
+#1727984044
+gaa
+#1727984234
+gcm "refact: Bash functions grouped. External program functions grouped."
+#1727984246
+git checkout main
+#1727984257
+git merge main
+#1727984267
+git checkout debian_testing 
+#1727984279
+tldr git merge
+#1727984342
+gp -v
+#1727984351
+git checkout main
+#1727984355
+git merge main
+#1727984366
+git merge debian_testing 
+#1727984377
+gp -v origin main
+#1727984417
+cd $DOTFILES
+#1727984422
+git checkout debian_testing 
+#1727984442
+cd $DOTFILES
+#1727984445
+cd scripts/
+#1727984449
+lvim functionsInitBash 
+#1727984501
+cd $DOTFILES
+#1727984505
+cd scripts/
+#1727984508
+lvim functionsInitBash 
