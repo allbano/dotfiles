@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# ------------------------------------------------------------------------------- # 
+# Script      : usuarios
+# Description : 
+# Version     : 0.1
+# Author      : Albano Roberto Drescher Von Maywitz 
+# Data        : 03 de October de 2024
+# ------------------------------------------------------------------------------- # 
+# Use : 
+# ------------------------------------------------------------------------------- # 
+# Copyright (C) 2024, Albano <allbano@gmail.com>.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+# ------------------------------------------------------------------------------- #  
+#
+# Mostra os logins e nomes de usuários do sustema
+# Obs.: Lê dados do arquivo /etc/passwd
+#
+# Albano, Outubro de 2024
+# 
+# Usando agrupamento de comandos sem formatação
+#cut -d : -f 1,5 /etc/passwd | tr : \\t
+
+printf "%-20s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
