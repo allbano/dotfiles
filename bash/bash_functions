@@ -32,27 +32,5 @@ warn() {
 	echoYellow "$*" >&2
 }
 
-updateDotfiles() {
-    declare -A MSGS
-    MSGS["check"]="Verificando dotfiles..."
-    MSGS["update"]="Atualizando repositório de dotfiles..."
-    echo "${MSGS["check"]}"
-    [[ ! -d "$DOTFILES"  ]] && exit 2
-    echo "${MSGS["update"]}"
-    cd "$DOTFILES" || return
-    git pull origin main
-    cd "$HOME" || return
-}
-
-
-git_current_branch() {\
-   [[ $(git branch &>/dev/null;echo $?) -eq 0  ]] && \
-    git branch | head -n1 | colrm 1 2  | xargs -I BRANCH echo -n BRANCH  || \
-    echo "Este diretório não é um repositório git!"
-}
-
-
-
-
 
 

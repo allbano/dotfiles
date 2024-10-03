@@ -45,3 +45,46 @@ ipinf() {
   fi
 }
 
+# Git functions
+git_current_branch() {\
+   [[ $(git branch &>/dev/null;echo $?) -eq 0  ]] && \
+    git branch | head -n1 | colrm 1 2  | xargs -I BRANCH echo -n BRANCH  || \
+    echo "Este diretório não é um repositório git!"
+}
+
+updateDotfiles() {
+    local declare -A MSGS
+    MSGS["check"]="Verificando dotfiles..."
+    MSGS["update"]="Atualizando repositório de dotfiles..."
+    echo "${MSGS["check"]}"
+    [[ ! -d "$DOTFILES"  ]] && exit 2
+    echo "${MSGS["update"]}"
+    cd "$DOTFILES" || return
+    git pull origin main
+    cd "$HOME" || return
+}
+
+updateHis() {
+    local LOCALPATH="/home/$USER/github/dotfiles/bash/history"
+    local UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
+    local HISTNAME="$(uname --nodename)-history"HISTNAME="$(uname --nodename)-history" 
+
+    [[ ! -f "$LOCALPATH/$HISTNAME" ]] && touch "$LOCALPATH/$UPNAME" && echo "Arquivo de histório criado: $HISTNAME"
+    cp -f "$HOME/.bash_history" "$LOCALPATH/$HISTNAME"
+    cd "$DOTFILES" || exit 1
+    git add "$LOCALPATH/$HISTNAME"
+    git commit -m "Your bash_history on PC $(uname --nodename) was updated on $UPTODATE"
+    #git push origin main 
+    git push origin git_current_branch
+}
+
+
+
+
+
+
+
+
+
+
+
