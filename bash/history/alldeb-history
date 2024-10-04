@@ -7133,3 +7133,1577 @@ cd .ssh
 cat authorized_keys 
 #1727203365
 doas nala update && doas nala upgrade
+#1727288998
+updateHist 
+#1727289043
+un
+#1727289206
+fwupd
+#1727289210
+sudo fwupd
+#1727289225
+sudo nala search fwupd
+#1727289275
+sudo fwupdtool 
+#1727289281
+sudo fwupdmgr 
+#1727289283
+sudo fwupdmgr --help
+#1727289289
+sudo fwupdtool --help
+#1727289315
+docker ps -a
+#1727289318
+docker images
+#1727289322
+distrobox
+#1727289332
+sudo nala search distrogbox
+#1727289339
+sudo nala search distrobox
+#1727289347
+sudo nala install distrobox
+#1727289441
+docker images
+#1727289445
+docker images -a
+#1727289501
+sudo nala search docker
+#1727289597
+sudo nala purge docker-cli docker-compose docker.io 
+#1727289695
+sudo nala install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+#1727289717
+sudo nala install runc
+#1727289728
+un
+#1727289814
+docker ps
+#1727289817
+docker ps -a
+#1727289840
+docker-compose
+#1727289849
+docker
+#1727289869
+docker compose up
+#1727289878
+cd docker/
+#1727289894
+lvim docker-compose.yml
+#1727289912
+lsk
+#1727290009
+lvim docker-compose.yml
+#1727290789
+docker ps 
+#1727290062
+docker compose up
+#1727290814
+lvim docker-compose.yml 
+#1727291024
+cd ../github/laundry_online/
+#1727291037
+lvim docker-compose.yml 
+#1727291140
+asdf 
+#1727291507
+cd
+#1727291519
+ls --color=auto -lhA
+#1727291521
+ls --color=auto -lha
+#1727292305
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
+#1727292313
+cd .asdf
+#1727292321
+git switch -
+#1727292326
+git switch HEAD
+#1727292333
+git branch HEAD
+#1727292352
+git config --local
+#1727292355
+git config --local -l
+#1727292371
+git pull --set-upstream origin main
+#1727292374
+git pull --set-upstream origin/main
+#1727292385
+git pull --set-upstream master
+#1727292388
+git log
+#1727292445
+git checkout HEAD
+#1727292472
+gl origin HEAD
+#1727292482
+gl origin master
+#1727292597
+git checkout master
+#1727292610
+git branch -a
+#1727292627
+git log
+#1727292657
+git fetch --tags 
+#1727292677
+git tag
+#1727292695
+git checkout tags/v0.14.1
+#1727291549
+lvim ~/.bash_profile 
+#1727292742
+echo $PATH
+#1727292756
+cd github/dotfiles/
+#1727292844
+cd bash
+#1727292851
+lvim profile_alldeb 
+#1727292875
+asdf
+#1727292936
+cd github/dotfiles/bash/
+#1727292940
+cat profile_archnote 
+#1727292958
+lvim profile_alldeb 
+#1727293004
+asdf
+#1727293023
+ll /etc/bash_completion.d/
+#1727293055
+sudo ln -sf /home/albano/.asdf/completions/asdf.bash /etc/bash_completion.d/asdf
+#1727293059
+ll /etc/bash_completion.d/
+#1727293081
+asdf update 
+#1727293417
+echo -e "${PATH//:/\\n}"
+#1727293459
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1727293473
+echo -e "${PATH//:/\\n}"
+#1727293483
+modular update mojo
+#1727293527
+mojo
+#1727293588
+asdf plugin-list-all |rg mojo
+#1727293596
+asdf plugin-list-all
+#1727293721
+node --version
+#1727293732
+npm i -g npm@latest
+#1727293738
+npm i -g pnpm
+#1727293742
+npm i -g pnpm@latest
+#1727293804
+content_copy
+#1727293804
+npm i -g @angular/cli@17
+#1727293825
+ng
+#1727294122
+sudo timedatectl set-ntp true
+#1727294129
+un
+#1727294146
+sudo nala install seahorse
+#1727294247
+sudo apt search -t experimental plasma-desktop
+#1727294357
+sudo apt search -t sid plasma-desktop
+#1727294396
+sudo tasksel
+#1727294458
+sudo nala install task-cinnamon-desktop 
+#1727294471
+sudo tasksel
+#1727294526
+cd github/
+#1727295194
+ng new angular-17
+#1727297730
+lsk
+#1727297734
+cd /ssd
+#1727297738
+fd cv
+#1727297747
+sudo nala search fd-find 
+#1727297768
+rustup
+#1727299060
+fd cv
+#1727299080
+sudo nala search rust
+#1727299156
+sudo nala install rustup
+#1727299163
+rustup --help
+#1727299239
+rustup install stable
+#1727299262
+rustc --version
+#1727299271
+type -a rustc
+#1727299294
+cd
+#1727299296
+cd .cargo/
+#1727299301
+echo $PATH
+#1727299355
+cat env
+#1727299372
+lvim env
+#1727299441
+lvim ~/.bash_profile 
+#1727299508
+ng
+#1727299561
+lvim ~/.bash_profile 
+#1727299600
+cd $DOTFILES
+#1727299926
+cargo install fd-find
+#1727299977
+cd github/
+#1727299982
+cd angular-17/
+#1727299984
+code .
+#1727300040
+npm start
+#1727301881
+exit]
+#1727301885
+fd
+#1727314785
+un
+#1727315134
+cd github/
+#1727315138
+git clone git@github.com:allbano/TrabalhoFinalDAC.git
+#1727315148
+cd TrabalhoFinalDAC/
+#1727315155
+glo
+#1727315208
+cd ui/
+#1727315215
+code .
+#1727315345
+ng serve
+#1727315353
+npm i
+#1727315375
+npm fund
+#1727315379
+npm i
+#1727315390
+npm audit fix
+#1727316496
+inxi
+#1727316499
+tldr inxi
+#1727315530
+ng serve
+#1727376796
+cd github/dotfiles/
+#1727376804
+git restore bash/profile_alldeb 
+#1727376811
+git restore zsh/.zshrc 
+#1727376903
+echo -e "${PATH//:/\\n}"
+#1727376948
+un
+#1727376995
+nala list --upgradable 
+#1727377011
+sudo nala full-upgrade 
+#1727377528
+nvm
+#1727377542
+echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
+#1727377544
+echo -e "${PATH//:/\\n}" | sort -u\
+#1727377547
+echo -e "${PATH//:/\\n}" | sort -u
+#1727377561
+echo -e "${PATH//:/\\n}"
+#1727377570
+adsf
+#1727377573
+asdf
+#1727377578
+asdf update
+#1727552581
+un
+#1727552996
+~ exit
+#1727567342
+un
+#1727568177
+ssh -T git@github.com
+#1727568182
+cd .ssh
+#1727568187
+cat authorized_keys 
+#1727569495
+teste="Eu quero ser mais"
+#1727569506
+echo ${teste}
+#1727569510
+echo ${teste[1]}
+#1727569518
+echo ${teste}
+#1727569618
+env
+#1727569620
+set
+#1727569741
+ns --help
+#1727569758
+type -a ns
+#1727569801
+cat `type -p ns`
+#1727569948
+docker
+#1727569985
+docker compose --help
+#1727570443
+ps a
+#1727570446
+ps aau
+#1727570450
+ps au
+#1727570455
+ps aux
+#1727570458
+ps ax
+#1727570462
+ps aux
+#1727570467
+ps au
+#1727570480
+ps --help
+#1727570492
+ps a
+#1727570496
+ps at
+#1727570499
+ps al
+#1727570588
+cut -d: -f 1,5 /etc/passwd | tr : \\t
+#1727570597
+cut -d: -f 1,5 /etc/passwd | tr : \t
+#1727570602
+cut -d: -f 1,5 /etc/passwd | tr : \\t
+#1727570628
+cut -d: -f 1 /etc/passwd | tr : \\t
+#1727570637
+cut -d: -f 1,2 /etc/passwd | tr : \\t
+#1727570650
+cut -d: -f 1,5 /etc/passwd
+#1727570675
+cut -d: -f 1,2 /etc/passwd | tr : \\2t
+#1727570682
+cut -d: -f 1,2 /etc/passwd | tr : \t
+#1727570687
+cut -d: -f 1,5 /etc/passwd
+#1727570698
+cut -d: -f 1,2 /etc/passwd | tr : '\t'
+#1727570705
+cut -d: -f 1,2 /etc/passwd | tr : \\t
+#1727570712
+cut -d: -f 1,3 /etc/passwd | tr : \\t
+#1727570735
+cut -d: -f 1,5 /etc/passwd | tr : '\t\t'
+#1727570744
+cut -d: -f 1,5 /etc/passwd | tr : '\t\t\t'
+#1727570747
+cut -d: -f 1,5 /etc/passwd | tr : '\t\t'
+#1727570768
+cut -d: -f 1,5 /etc/passwd | tr : '\t'
+#1727570778
+cut -d: -f 1,6 /etc/passwd | tr : '\t'
+#1727570783
+cut -d: -f 1,6 /etc/passwd
+#1727570789
+catr /etc/passwd
+#1727570792
+cat /etc/passwd
+#1727570821
+cut -d: -f 1,6 /etc/passwd
+#1727570838
+cut -d: -f 1,6 /etc/passwd | tr : \\t
+#1727571099
+cat $(type -p neofetch)
+#1727571184
+nvim $(type -p neofetch)
+#1727571447
+sudo nala search hyfetch
+#1727571465
+sudo nala install hyfetch
+#1727571477
+hyfetch 
+#1727571610
+sudo nala purge hyfetch
+#1727571618
+neofetch 
+#1727571666
+hwinfo
+#1727571671
+sudo nala search hwinfo
+#1727571678
+sudo nala install hwinfo
+#1727571691
+hwinfo
+#1727571754
+hwinfo | less
+#1727572744
+cd
+#1727572746
+cd github/
+#1727572752
+cd TrabalhoFinalDAC/
+#1727572786
+git restore ui/package-lock.json 
+#1727572795
+cd ui/.angular/
+#1727572801
+cd ..
+#1727572862
+cd..
+#1727572876
+cd ..
+#1727572884
+rm -rf TrabalhoFinalDAC/
+#1727572929
+git clone git@github.com:allbano/TrabalhoFinalDAC.git
+#1727572966
+node --version
+#1727572987
+npm i -g pnpm@latest
+#1727572994
+npm i -g npm@latest
+#1727573008
+pnpm version
+#1727573041
+cd TrabalhoFinalEDII/
+#1727573044
+cd ..
+#1727573049
+cd TrabalhoFinalEDII/
+#1727573069
+cd ..
+#1727573076
+rm -rf TrabalhoFinalEDII/
+#1727573082
+cd angular-17/
+#1727573087
+code .
+#1727573232
+npm start
+#1727575630
+cd ..
+#1727575640
+ng new angular-17-ssr
+#1727575714
+cd angular-17-ssr/
+#1727576009
+cd ..
+#1727576012
+cd angular-17
+#1727576014
+code .
+#1727576174
+npm start
+#1727576811
+fastfetch 
+#1727576824
+lsk
+#1727576846
+glog
+#1727576887
+git am --help
+#1727577052
+un
+#1727748116
+reboot
+#1727748357
+un
+#1727748422
+fastfetch 
+#1727796515
+docker compose
+#1727796616
+docker ps -a
+#1727796642
+docker container start docker-web-1 
+#1727796988
+ufw
+#1727797019
+sudo iptables -L
+#1727797127
+sudo nala search iptables
+#1727797157
+sct status firewalld.service 
+#1727797161
+sct status firewalld
+#1727797167
+sct status firewalld.service 
+#1727797190
+sudo systemctl status firewalld.service 
+#1727797194
+ss
+#1727797222
+docker ps
+#1727797239
+docker container stop docker-web-1 
+#1727797278
+docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 nginx:alpine 
+#1727797853
+exitr
+#1727807528
+un
+#1727807561
+sct
+#1727807603
+sct| rg firewal
+#1727807611
+zfs
+#1727807624
+fastfetch 
+#1727807640
+sudo nala search fastfetch 
+#1727807647
+sudo nala purge fastfetch 
+#1727807654
+sudo nala search fastfetch 
+#1727807663
+sudo nala install -y fastfetch 
+#1727807669
+fastfetch 
+#1727807679
+cat /etc/fstab
+#1727807685
+bat /etc/fstab
+#1727807696
+sudo nala install -y bat
+#1727807702
+bat /etc/fstab
+#1727807709
+type -a bat
+#1727807725
+sudo nala search bat
+#1727807739
+sudo nala search '^bat'
+#1727807778
+bat
+#1727807803
+find /usr -type f -wholename '*/bat'
+#1727807823
+cargo install --list
+#1727807828
+bat
+#1727807835
+echo $PATH
+#1727807858
+lvim ~/.bash_profile 
+#1727807906
+echo -e "${PATH//:/\\n}"
+#1727807910
+bat
+#1727807924
+env
+#1727807927
+cat
+#1727807953
+type -a cargo
+#1727807961
+cd .cargo/
+#1727807964
+cat env
+#1727807976
+lvim ~/.bash_profile 
+#1727808072
+echo -e "${PATH//:/\\n}"
+#1727808075
+bat
+#1727808085
+bat /etc/fstab
+#1727808179
+cd github/dotfiles/
+#1727808180
+l;
+#1727808183
+git branch
+#1727808192
+tldr git branch
+#1727808251
+tldr git checkout
+#1727808319
+tldr git push
+#1727808339
+git branch -a
+#1727808384
+git checkout -b debian_testing
+#1727808404
+git checkout main
+#1727808409
+git branch
+#1727808412
+git branch -a
+#1727808493
+cargo list
+#1727808497
+cargo 
+#1727808512
+cargo --list
+#1727808536
+cargo install --list
+#1727808544
+cargo install baty
+#1727808547
+cargo install bat
+#1727808561
+cargo search bat
+#1727808578
+type -a bats
+#1727808585
+sudo nala search bats
+#1727808591
+sudo nala search bat
+#1727808601
+sudo nala search '^bat$'
+#1727808607
+type -a bat
+#1727808636
+sudo nala 
+#1727808640
+sudo nala --help
+#1727808647
+sudo nala install bat
+#1727808656
+sudo nala show bat
+#1727808665
+cd /usr/bin
+#1727808669
+ll bat
+#1727808734
+cargo uninstall bat
+#1727808736
+bat
+#1727808741
+sudo nala install bat
+#1727808751
+sudo nala purge bat
+#1727808763
+sudo nala install bat
+#1727808771
+type -a bat
+#1727808776
+sudo nala purge bat
+#1727808783
+cargo install bat
+#1727808829
+bat
+#1727808839
+echo -e "${PATH//:/\\n}"
+#1727808859
+cd /usr/local/bin
+#1727808867
+kubectl --help
+#1727808879
+;ll
+#1727808886
+ollama 
+#1727808927
+docker ps -a
+#1727808934
+docker rm docker-web-1 
+#1727808948
+docker 
+#1727808958
+docker ps
+#1727808962
+docker ps -a
+#1727808987
+docker container start nginx_test
+#1727809128
+sudo nvim /etc/sysctl.conf 
+#1727809159
+docker ps -a
+#1727809163
+docker rm nginx_test 
+#1727809174
+sudo docker run -d --name nginx_test --hostname nginxAlpine -p 80:80 -p 443:443 nginx:alpine 
+#1727809192
+docker ps -a
+#1727809198
+doas docker ps -a
+#1727809233
+docker ps -a
+#1727809250
+sudo sysctl -p
+#1727810844
+un
+#1727810853
+cat /etc/doas.conf 
+#1727810860
+doascat /etc/doas.conf
+#1727810862
+doas cat /etc/doas.conf
+#1727810873
+doas sct
+#1727810880
+doas sct status
+#1727810898
+doas echo $PATH
+#1727810906
+doas ll
+#1727810923
+doas env
+#1727810954
+doas lvim
+#1727810960
+type -a lvim
+#1727810970
+sudo lvim
+#1727810987
+sudo nala search lvim
+#1727810997
+sudo lvim
+#1727811027
+echo -e "${PATH//:/\\n}"
+#1727859251
+un
+#1727870237
+cd $DOTFILES
+#1727870250
+git diff
+#1727870277
+git diff --help
+#1727870310
+tldr git diff
+#1727870325
+git diff --staged
+#1727870393
+gaa 
+#1727870515
+gcm "refac: Include cargo's env path."
+#1727870545
+tldr git merge
+#1727870706
+git checkout debian_testing 
+#1727870711
+git diff main
+#1727870726
+git merge main
+#1727870746
+gcm "Merge from main"
+#1727870765
+glo
+#1727870772
+glol -5
+#1727870887
+alias| rg 'git push'
+#1727870899
+gp -a
+#1727870916
+gp -v --all
+#1727870976
+cd
+#1727870998
+apt-listchanges 
+#1727871017
+sudo nala --help
+#1727871032
+sudo nala list --help
+#1727871079
+sudo nala list -V
+#1727871104
+sudo nala history
+#1727871110
+sudo apt 
+#1727871126
+sudo nala --help
+#1727871131
+sudo apt --help
+#1727929269
+fastfetch 
+#1727929256
+un
+#1727929344
+doas nala purge python-uno
+#1727929347
+doas nala purge python3-uno
+#1727929353
+un
+#1727929363
+nala list --upgradable 
+#1727929391
+doas nala full-upgrade
+#1727929737
+cd bin
+#1727929745
+ns usuarios
+#1727929850
+./usuarios 
+#1727929868
+cat /etc/passwd
+#1727929888
+cut -d: -f 1,6 /etc/passwd | tr : \\t
+#1727929894
+cut -d: -f 1,5 /etc/passwd | tr : \\t
+#1727929976
+cut -d: -f 1,5 /etc/passwd | sed 's/:/\t\t/g'
+#1727929986
+cut -d: -f 1,5 /etc/passwd | sed 's/:/\t\t\t/g'
+#1727930028
+cat /etc/passwd 
+#1727930078
+cut -d: -f 1,5 /etc/passwd
+#1727930098
+./usuarios 
+#1727930108
+cut -d: -f 1,5 /etc/passwd
+#1727930136
+cd bin
+#1727930144
+./usuarios 
+#1727930168
+cat /etc/passwd
+#1727930325
+sudo usermod --help
+#1727930343
+sudo usermod -c "Albano Maywitz" albano
+#1727930347
+cat /etc/passwd
+#1727930374
+sudo usermod -c "Libvirt Qemu" libvirt-qemu 
+#1727930376
+cat /etc/passwd
+#1727930397
+sudo usermod -c "MariaDB Server" mysql
+#1727930414
+sudo usermod -c "SSSD system user" sssd
+#1727930416
+cat /etc/passwd
+#1727930449
+sudo usermod -c "Speech Dispatcher" speech-dispatcher 
+#1727930451
+cat /etc/passwd
+#1727930509
+sudo usermod -c "Flatpak system-wide inst helper" _flatpak 
+#1727930512
+cat /etc/passwd
+#1727930555
+sudo usermod -c "NVIDIA Persistence Daemon" nvpd 
+#1727930557
+cat /etc/passwd
+#1727930587
+sudo usermod -c "colord colour management daemon" colord 
+#1727930589
+cat /etc/passwd
+#1727930608
+sudo usermod -c "RealtimeKit" rtkit 
+#1727930610
+cat /etc/passwd
+#1727930631
+sudo usermod -c "fwupd-refresh user" fwupd-refresh 
+#1727930652
+sudo usermod -c "Avahi mDNS daemon" avahi 
+#1727930654
+cat /etc/passwd
+#1727930679
+sudo usermod -c "dnsmasq" dnsmasq 
+#1727930693
+sudo usermod -c "usbmux daemon" usbmux
+#1727930696
+cat /etc/passwd
+#1727930721
+sudo usermod -c "TPM software stack" tss
+#1727930723
+cat /etc/passwd
+#1727930731
+./usuarios 
+#1727930832
+cd bin
+#1727930838
+lvim usuarios 
+#1727930847
+./usuarios 
+#1727930861
+lvim usuarios 
+#1727931449
+neofetch 
+#1727931452
+neofetch --help
+#1727931533
+neofetch 
+#1727931573
+neofetch --cpu-temp C
+#1727931586
+neofetch --cpu_temp C
+#1727931614
+docker
+#1727931714
+p3a cu
+#1727931789
+ips
+#1727931808
+ports
+#1727931829
+sudo nala show iptables
+#1727931844
+sudo nala install iptables
+#1727931864
+sudo nala autoremove 
+#1727931902
+sudo nala install nftables 
+#1727932002
+nft
+#1727932009
+nft --help
+#1727932021
+iptables --help
+#1727932053
+doas nala purge iptables
+#1727932128
+xtables-nft-multi 
+#1727932134
+xtables-nft-multi --help
+#1727932186
+nft --help
+#1727932192
+nft
+#1727932225
+doas nala install nftables links2
+#1727932238
+nft
+#1727932243
+nft --help
+#1727932264
+sct enable nftables.service 
+#1727932270
+sct start nftables.service 
+#1727932275
+sct status nftables.service 
+#1727932280
+nft
+#1727932288
+nft --help
+#1727932789
+cd github/
+#1727932801
+mkdir bd3
+#1727932805
+cd bd3
+#1727932848
+mkdir projetobdm
+#1727932853
+cd projetobdm/
+#1727932874
+lvim docker-compose.yml
+#1727932888
+cd ../..
+#1727932892
+cd bd3/
+#1727932920
+rm -rf projetobdm/
+#1727933809
+mkdir projetodw
+#1727933815
+cd projetodw
+#1727933829
+lvim docker-compose.ymlk
+#1727933850
+mv docker-compose.ymlk docker-compose.yml 
+#1727933854
+lvim docker-compose.yml 
+#1727934093
+docker images
+#1727934138
+docker pull postgres:16-alpine
+#1727934379
+lvim docker-compose.yml 
+#1727934622
+cd ..
+#1727934636
+git init
+#1727934647
+git add README.md
+#1727934652
+> README.md
+#1727934653
+git add README.md
+#1727934662
+git branch -M main
+#1727934709
+mv projetodw/docker-compose.yml ..
+#1727934712
+cd ..
+#1727934727
+mv docker-compose.yml bd3/
+#1727934730
+cd bd3/
+#1727934739
+ga docker-compose.yml 
+#1727934764
+"Primeiro commit. Adicionado README principal e docker-compose"
+#1727934770
+gcm "Primeiro commit. Adicionado README principal e docker-compose"
+#1727934783
+gp -u origin main
+#1727934799
+git remote add origin git@github.com:allbano/bd3.git
+#1727934802
+gp -u origin main
+#1727934827
+cd projetodw/
+#1727934864
+> init.sh
+#1727934872
+> init.sql
+#1727934897
+cd ..
+#1727934906
+mv BD_VAREJO.sql ~/Desktop/
+#1727934910
+gaa
+#1727934941
+gcm "Adicionado os arquivos de init do container e do banco."
+#1727931625
+lvim ~/.bash_aliases 
+#1727934970
+ldl
+#1727935056
+cat /etc/passwd
+#1727935069
+cut -d: -f1 /etc/passwd
+#1727935075
+cut -d: -f1,5 /etc/passwd
+#1727935117
+cut -d: -f1,5 /etc/passwd | tr : \|----------\|
+#1727935127
+cut -d: -f1,5 /etc/passwd | tr : ----------
+#1727935136
+cut -d: -f1,5 /etc/passwd | tr : "----------"
+#1727935158
+cut -d: -f1,5 /etc/passwd | sed 's/:/\t\t/g'
+#1727935174
+cut -d: -f1,5 /etc/passwd | sed 's/:/\t\t\t/g'
+#1727935373
+lvim usuarios 
+#1727935397
+./usuarios 
+#1727935409
+lvim usuarios 
+#1727935433
+./usuarios 
+#1727935435
+lvim usuarios 
+#1727935486
+./usuarios 
+#1727935571
+lvim usuarios 
+#1727935599
+./usuarios 
+#1727935763
+awk -F: '{printf "%-15s %s\n", $1, $5}' /etc/passwd
+#1727935834
+lvim usuarios 
+#1727935844
+awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727935961
+lvim usuarios 
+#1727935988
+./usuarios 
+#1727936023
+lvim usuarios 
+#1727936081
+cut -d: -f1,5 /etc/passwd
+#1727936122
+awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936132
+awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd | sort
+#1727936312
+type -a awk
+#1727936315
+type -a gawk
+#1727936392
+doas nala search maws
+#1727936395
+doas nala search mawk
+#1727936407
+type -a mawk
+#1727936417
+awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936420
+time awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936424
+time gawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936427
+time awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936429
+time gawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936433
+time mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936469
+time awk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936471
+time gawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936474
+time mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936500
+mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd | sort
+#1727936503
+mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd | sort -u
+#1727936510
+mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd | sort
+#1727936559
+time ./usuarios 
+#1727936567
+time mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936571
+time ./usuarios 
+#1727936806
+cd bin
+#1727936814
+cat usuarios 
+#1727936858
+printf "Login: %-20s Nome Completo: %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936891
+mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727936965
+printf "%-20s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727937030
+cp usuarios usuarios2
+#1727937034
+lvim usuarios2
+#1727937135
+printf "%-20s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+#1727937151
+lvim usuarios2
+#1727937166
+time ./usuarios2
+#1727937170
+time ./usuarios
+#1727937173
+time ./usuarios2
+#1727937188
+time ./usuarios
+#1727937191
+time ./usuarios2
+#1727937229
+rm usuarios
+#1727937236
+mv usuarios2 usuarios
+#1727937239
+lvim usuarios 
+#1727937274
+gaa
+#1727937314
+gcm "Added usuarios script."
+#1727937334
+gp -v origin debian_testing
+#1727937345
+git_current_branch 
+#1727937371
+gp -a
+#1727937378
+gp --all
+#1727937391
+git checkout main 
+#1727937419
+cd $DOTFILES
+#1727937426
+gl -v
+#1727937439
+git checkout debian_testing 
+#1727937459
+cd $DOTFILES
+#1727937464
+git config -l
+#1727937497
+git push -u origin debian_testing 
+#1727937503
+git config -l
+#1727937528
+tldr git diff
+#1727937546
+git diff main..debian_testing 
+#1727937570
+git checkout main 
+#1727937576
+tldr git merge
+#1727937596
+git merge debian_testing 
+#1727937604
+gp origin main
+#1727937620
+gp -v origin main
+#1727937728
+docker compose 
+#1727937738
+lvim ~/.bash_aliases 
+#1727937807
+docker-compose 
+#1727937830
+docker-compose --help
+#1727937834
+docker-compose
+#1727937861
+cat /etc/bash_completion.d/systemctl 
+#1727937902
+cat /usr/share/bash-completion/completions/docker 
+#1727938122
+docker
+#1727938148
+docker completion docker
+#1727938157
+docker completion bash
+#1727938239
+sudo docker completion bash > /etc/bash_completion.d/docker-compose.sh
+#1727938253
+docker completion bash > sudo tee /etc/bash_completion.d/docker-compose.sh
+#1727938265
+docker completion bash | sudo tee /etc/bash_completion.d/docker-compose.sh
+#1727938274
+cat /etc/bash_completion.d/docker-compose.sh
+#1727938281
+bat /etc/bash_completion.d/docker-compose.sh
+#1727938328
+docker compose 
+#1727938410
+curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose
+#1727938577
+lvim /etc/bash_completion.d/docker-compose.sh
+#1727938727
+mv /etc/bash_completion.d/docker-compose.sh /etc/bash_completion.d/docker-compose
+#1727938730
+sudo mv /etc/bash_completion.d/docker-compose.sh /etc/bash_completion.d/docker-compose
+#1727938765
+docker
+#1727939042
+docker compose 
+#1727939153
+docker-compose 
+#1727939298
+https://raw.githubusercontent.com/docker/cli/v$(docker version --format '{{.Server.Version}}' 
+#1727939325
+https://raw.githubusercontent.com/docker/cli/v"$(docker version --format '{{.Server.Version}}')"
+#1727939391
+docker-compose version --short
+#1727939410
+curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose
+#1727939531
+apt list bash-completion 
+#1727939546
+nala list kde
+#1727939553
+nala list plasma
+#1727939563
+sudo nala list kde
+#1727939586
+sudo nala search '^kde'
+#1727939594
+sudo nala search "^kde"
+#1727939692
+sudo nala search plasma-
+#1727939725
+sudo apt search plasma-
+#1727939845
+doas rm /etc/bash_completion.d/docker-compose.sh
+#1727939846
+doas rm /etc/bash_completion.d/docker-compose
+#1727939859
+lvim ~/.bash_aliases 
+#1727939876
+cd $DOTFILES
+#1727939886
+git checkout 
+#1727939896
+git restore .
+#1727939919
+docker compose
+#1727983175
+type -a updateDotfiles 
+#1727983201
+cd $DOTFILES
+#1727983204
+gl --all
+#1727983211
+gl -v --all
+#1727983226
+git checkout debian_testing 
+#1727983242
+lsb_release 
+#1727983266
+cd scripts/
+#1727983268
+cat inf
+#1727983308
+git_current_branch 
+#1727983327
+cd ..
+#1727983330
+cd bash
+#1727983341
+cat bash_functions 
+#1727983351
+cd ..
+#1727983362
+cd bash
+#1727983431
+lvim bash_functions 
+#1727983464
+lvim functionsInitBash 
+#1727983521
+cd ..
+#1727983524
+cd scripts/
+#1727983532
+cat sp
+#1727983535
+bat sp
+#1727983543
+sp
+#1727983563
+cat updateHist 
+#1727983578
+cd github/dotfiles/scripts/
+#1727983568
+lvim updateHist 
+#1727983953
+rm updateHist 
+#1727983585
+lvim functionsInitBash 
+#1727984044
+gaa
+#1727984234
+gcm "refact: Bash functions grouped. External program functions grouped."
+#1727984246
+git checkout main
+#1727984257
+git merge main
+#1727984267
+git checkout debian_testing 
+#1727984279
+tldr git merge
+#1727984342
+gp -v
+#1727984351
+git checkout main
+#1727984355
+git merge main
+#1727984366
+git merge debian_testing 
+#1727984377
+gp -v origin main
+#1727984417
+cd $DOTFILES
+#1727984422
+git checkout debian_testing 
+#1727984442
+cd $DOTFILES
+#1727984445
+cd scripts/
+#1727984449
+lvim functionsInitBash 
+#1727984501
+cd $DOTFILES
+#1727984505
+cd scripts/
+#1727984508
+lvim functionsInitBash 
+#1727984615
+updateHis 
+#1727984624
+cd scripts/
+#1727984628
+lvim functionsInitBash 
+#1727984684
+cd $DOTFILES
+#1727984694
+git pull --all -v
+#1727984703
+cd scripts/
+#1727984706
+lvim functionsInitBash 
+#1727984757
+cd github/
+#1727984763
+cd TrabalhoFinalDAC/
+#1727984771
+gl -v --all
+#1727984793
+git branch -l
+#1727984797
+git branch -a
+#1727984828
+git checkout albano 
+#1727984832
+gl -v
+#1727984840
+gl -v origin albano
+#1727984850
+git merge main
+#1727984876
+npm i -g npm@latest
+#1727984898
+npm version 
+#1727984906
+ng verion
+#1727984910
+ng verions
+#1727984924
+npm i -g @angular/cli@17
+#1727985033
+ng add @angular/material
+#1727985045
+code ./
+#1727985056
+cd ui
+#1727985056
+ll;
+#1727985060
+code .
+#1727985065
+ng add @angular/material
+#1727985805
+gaa
+#1727985830
+gcm "Adicionado @angular/material no projeto."
+#1727985836
+glo
+#1727985894
+npm start
+#1727986065
+cd github/
+#1727986069
+lvim angular-17
+#1727986074
+cd angular-17
+#1727986081
+vscodium .
+#1727986086
+codium .
+#1727986875
+cd ..
+#1727986880
+gp -v --all
+#1727986888
+gl -v --all
+#1727987644
+code .
+#1727987656
+cd ..
+#1727987661
+cd angular-17-ssr/
+#1727987687
+cd ..
+#1727987868
+un
+#1727987711
+ng new product-store
+#1728071298
+cd $DOTFILES
+#1728071303
+gl -v --all\
+#1728071305
+gl -v --all
+#1728071329
+git pull -v
+#1728071339
+cd $DOTFILES
+#1728071353
+git diff
+#1728071369
+cd scripts/
+#1728071371
+cat functionsInitBash 
+#1728071375
+bat functionsInitBash 
+#1728071414
+git restore functionsInitBash 
+#1728071422
+gl -fv
+#1728071429
+bat functionsInitBash 
+#1728071439
+git config -l
+#1728071449
+lvim ~/.bash_aliases 
+#1728071491
+git config -l
+#1728071511
+tldr git pull
+#1728071523
+un
+#1728071547
+tldr
+#1728071557
+doas nala show tldr
+#1728071580
+doas nala purge tldr
+#1728071601
+doas apt search -t experimental tldr
+#1728071646
+doas apt install debgpt
+#1728071684
+debgpt --help
+#1728071707
+doas nala install tldr
+#1728071711
+tldr
+#1728071715
+tldr git merge
+#1728072239
+git merge --help
+#1728072598
+git diff debian_testing arcolinux
+#1728072607
+git diff arcolinux debian_testing 
+#1728072618
+git diff arcolinux..debian_testing 
+#1728072770
+git diff --cached
+#1728072778
+git checkout arcolinux 
+#1728072782
+gl -vf
+#1728072789
+cat functionsInitBash 
+#1728072808
+git checkout debian_testing 
+#1728072814
+cat functionsInitBash 
+#1728072843
+git merge -e --commit arcolinux
+#1728072930
+cd $DOTFILES
+#1728072938
+gaa
+#1728072941
+gss
+#1728073018
+gcm "refact: Update the name of the updateDotfiles function in the bashrc file."
+#1728073038
+gp -u origin debian_testing
+#1728073092
+git config -l
+#1728073176
+git config --local core.pager cat
+#1728073178
+git config -l
