@@ -7,13 +7,11 @@
 [[ -d "$HOME/.local/bin" && ! $PATH =~ "$HOME"/.local/bin  ]] &&  export PATH="$HOME/.local/bin:$PATH"
 
 # set PATH so include cargo's env
-[[ -d "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
+[[ -a "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
 
 
 [[  ! $PATH =~ /usr/sbin ]] && export PATH="$PATH:/usr/sbin"
 [[  ! $PATH =~ /sbin ]] && export PATH="$PATH:/sbin"
-# cargo in PATH
-source "$HOME/.cargo/env"
 
 #SSH Agent
 eval "$(ssh-agent &> /dev/null)"
