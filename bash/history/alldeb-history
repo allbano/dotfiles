@@ -8707,3 +8707,149 @@ git config -l
 git config --local core.pager cat
 #1728073178
 git config -l
+#1728073254
+pushHis 
+#1728073287
+type -a pushHis 
+#1728099082
+echo -e "${PATH//:/\\n}"
+#1728099096
+cd $DOTFILES
+#1728099105
+git merge -e --commit
+#1728099111
+git checkout arcolinux 
+#1728099115
+gl -v
+#1728099147
+git checkout debian_testing 
+#1728099159
+gp -v
+#1728099168
+git merge -e --commit
+#1728099173
+git merge -e --commit arcolinux 
+#1728099185
+gp -v
+#1728099492
+cd $DOTFILES
+#1728099494
+un
+#1728099797
+fastfetch 
+#1728100114
+asdf 
+#1728100124
+asdf list all
+#1728100135
+node --version
+#1728100141
+type -a node
+#1728100145
+adsf 
+#1728100169
+asdf plugin-list-all 
+#1728100177
+asdf plugin-list
+#1728100189
+cargo install --list
+#1728100192
+btmm
+#1728100200
+bottom
+#1728100216
+btm
+#1728100231
+lfs
+#1728100234
+duf
+#1728100272
+asdf plugin-update 
+#1728100276
+asdf plugin-update --all 
+#1728100284
+asdf
+#1728100320
+asdf current nodejs 
+#1728100349
+asdf install nodejs 20.18.0 
+#1728100357
+node --version
+#1728100397
+asdf global nodejs 20.18.0 
+#1728100407
+npm i -g npm@latestt
+#1728100409
+npm i -g npm@latest
+#1728100417
+npm i -g pnpm@latest
+#1728100450
+node --version
+#1728100488
+npm i -g @angular/cli@18
+#1728101125
+asdf install nodejs 18.20.4
+#1728101139
+asdf global nodejs 18.20.4 
+#1728101220
+node --version
+#1728101234
+npm i -g npm@latest
+#1728101238
+npm i -g pnpm@latest
+#1728101245
+pnpm
+#1728101590
+un
+#1728101936
+node --version
+#1728102047
+npm i -g @angular/core@15  @angular/cli@15
+#1728102279
+cd github/
+#1728102382
+mkdir crud-angular-spring
+#1728102389
+cd crud-angular-spring/
+#1728102422
+ng new crud-angular
+#1728103141
+cd crud-angular/
+#1728103147
+code .
+#1728103438
+docker ps -a
+#1728103447
+sct status docker.s
+#1728103451
+sct status docker.service 
+#1728103549
+cd ../../
+#1728103576
+git clone git@github.com:allbano/bd3.git
+#1728103581
+cd bd3/
+#1728103583
+cd ./.
+#1728103585
+cd ..
+#1728103592
+cd bd3/
+#1728103598
+gl -vf
+#1728103685
+docker compose -f docker-compose.yml up
+#1728103792
+docker compose -f docker-compose.yml up -d
+#1728103855
+find /usr/ -type f -wholename docker
+#1728103862
+find /usr/bin -type f -wholename docker
+#1728103894
+find / -type f -wholename '*/docker' 2> /dev/null
+#1728103912
+find / -type f -wholename '*/docker-compose' 2> /dev/null
+#1728103988
+sudo ln -s $(find / -type f -wholename '*/docker-compose' 2> /dev/null) /usr/local/bin/docker-compose
+#1728104004
+docker-compose --help
