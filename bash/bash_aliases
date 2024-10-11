@@ -5,7 +5,6 @@ alias his='history'
 
 
 ########## GIT
-alias g='git'
 alias ghh='git help'
 
 # Git config
