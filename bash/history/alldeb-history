@@ -10199,3 +10199,5 @@ git diff debian_testing..main
 git diff main..debian_testing 
 #1729726810
 git checkout debian_testing 
+#1729726820
+pushHis 
