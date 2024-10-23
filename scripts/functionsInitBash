@@ -17,7 +17,7 @@
 launch() {
     
     local args="$@"
-		xdg-open "$args" && bg
+		xdg-open "$args" &>/dev/null &
 
 }
 
