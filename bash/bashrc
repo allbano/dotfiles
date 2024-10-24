@@ -177,8 +177,8 @@ DES[2]="\342\234\227" # Sinal de erro
 DES[3]="\342\224\200" # Linha horizontal
 
 
-PS1="\n${FG_WHITE}${DES[0]}" # begin arrow to prompt
-PS1+="${BG_GREY10}${FG_CYAN} \u${FG_WHITE}@${FG_YELLOW}\H " # print username
+#PS1="\n${FG_WHITE}${DES[0]}" # begin arrow to prompt
+PS1="${BG_GREY10}${FG_CYAN} \u${FG_WHITE}@${FG_YELLOW}\H " # print username
 PS1+="${BG_BLUE}${FG_YELLOW} \w " # print directory
 PS1+="${BG_GREY10}${FG_WHITE} " # end DIRECTORY container / begin FILES container
 PS1+="[\$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D " # print number of folders
@@ -201,9 +201,11 @@ PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
 PS1+="\$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -I UK echo -n \" U(UK)\")" 
 PS1+="${FMT_RESET}${FG_WHITE}"
 
-PS1+="${FG_WHITE} - [${FG_YELLOW}\t${FG_WHITE}]${FMT_RESET}\n" # end last container (either FILES or BRANCH)
-PS1+="${FG_WHITE}${DES[1]} " # end arrow to prompt
-PS1+="\[\e[1;37m\]${FG_CYAN} \$ ${FMT_RESET}" # print prompt
+#PS1+="${FG_WHITE} - [${FG_YELLOW}\t${FG_WHITE}]${FMT_RESET}\n" # end last container (either FILES or BRANCH)
+PS1+="\n"
+#PS1+="${FG_WHITE}${DES[1]} " # end arrow to prompt
+#PS1+="\[\e[1;37m\]${FG_CYAN}\$ ${FMT_RESET}" # print prompt
+PS1+="\[\e[1;37m\]${FG_CYAN}⟩⟩ ${FMT_RESET}" # print prompt
 export PS1
 
 

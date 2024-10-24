@@ -56,26 +56,29 @@ pullDotfiles() {
     declare -A MSGS
     MSGS["check"]="Verificando dotfiles..."
     MSGS["update"]="Atualizando repositório de dotfiles..."
+    LOCALPATH="$(pwd)"
     echo "${MSGS["check"]}"
     [[ ! -d "$DOTFILES"  ]] && exit 2
     echo "${MSGS["update"]}"
     cd "$DOTFILES" || return
     git pull -v --all
-    cd "$HOME" || return
+    cd "$LOCALPATH" || return
 }
 
 pushHis() {
-    local LOCALPATH="/home/$USER/github/dotfiles/bash/history"
+    local LOCALPATH="$(pwd)"
+    local HPATH="/home/$USER/github/dotfiles/bash/history"
     local UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
     local HISTNAME="$(uname --nodename)-history" 
 
-    [[ ! -f "$LOCALPATH/$HISTNAME" ]] && touch "$LOCALPATH/$UPNAME" && echo "Arquivo de histório criado: $HISTNAME"
-    cp -f "$HOME/.bash_history" "$LOCALPATH/$HISTNAME"
+    [[ ! -f "$HPATH/$HISTNAME" ]] && touch "$HPATH/$UPNAME" && echo "Arquivo de histório criado: $HISTNAME"
+    cp -f "$HOME/.bash_history" "$HPATH/$HISTNAME"
     cd "$DOTFILES" || exit 1
-    git add "$LOCALPATH/$HISTNAME"
+    git add "$HPATH/$HISTNAME"
     git commit -m "Your bash_history on PC $(uname --nodename) was updated on $UPTODATE"
     #git push origin main 
     git push origin $(git_current_branch)
+    cd "$LOCALPATH" || exit 2
 }
 
 

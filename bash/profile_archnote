@@ -14,7 +14,7 @@
 [[  ! $PATH =~ /sbin ]] && export PATH="$PATH:/sbin"
 
 #SSH Agent
-eval "$(ssh-agent &> /dev/null)"
+eval "$(ssh-agent -s &> /dev/null)"
 
 # ASDF
 . "$HOME/.asdf/asdf.sh"

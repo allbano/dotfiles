@@ -18103,3 +18103,1891 @@ git apply -h
 git diff --dirstat
 #1727989897
 git diff --histogram 
+#1727989913
+updateHis 
+#1727989977
+cd scripts/
+#1727989981
+lvim functionsInitBash 
+#1727990058
+glol -1
+#1727990071
+git reset --hard HEAD~1
+#1727990093
+gl -v -f
+#1727990108
+glol -5
+#1727990161
+gl -v --all
+#1727990283
+git reset --hard 2b46868
+#1727990287
+glol -5
+#1727990298
+type -a updateHis 
+#1727989631
+lvim ~/.bash_aliases 
+#1727990460
+updateDotfiles 
+#1727990475
+type -a updateDotfiles 
+#1727990489
+cd $DOTFILES
+#1727990567
+type -a updateDotfiles 
+#1727990573
+updateDotfiles 
+#1727990584
+cd bash
+#1727990590
+cat bash_functions 
+#1727990598
+cd ..
+#1727990599
+cd scripts/
+#1727990602
+cat functionsInitBash 
+#1727990615
+git config -l
+#1727990650
+type -a updateDotfiles 
+#1727990654
+type -a updateHis 
+#1727990664
+lvim functionsInitBash 
+#1727990759
+source functionsInitBash 
+#1727990769
+type -a updateHis 
+#1727990773
+type -a updateDotfiles 
+#1727990787
+updateDotfiles 
+#1727990848
+cd bin
+#1727990852
+lvim functionsInitBash 
+#1727990908
+cd $DOTBASH
+#1727991181
+git gui -h
+#1727991542
+cd $DOTFILES
+#1727991544
+gfg
+#1727991560
+git ls-fi
+#1727991565
+git ls-files
+#1727991804
+gitk
+#1727991906
+gsps
+#1727992020
+gwch
+#1727992170
+gk
+#1727992320
+gss
+#1727992330
+gsb
+#1727992852
+gcount
+#1727992869
+git shortlog 
+#1727993113
+gg
+#1727993228
+gtl
+#1727995627
+pullDotfiles 
+#1727995636
+cd $DOTFILES
+#1727995748
+git fetch 
+#1727995756
+git fetch origin
+#1727995764
+git fetch -v origin
+#1727996053
+type -a pullDotfiles 
+#1727996060
+type -a updateHis 
+#1727996084
+cd scripts/
+#1727996086
+lvim functionsInitBash 
+#1727996146
+ga $DOTBASH/bash_aliases 
+#1727996230
+gcm "refact: Neatly organized all Git aliases."
+#1727996239
+gs
+#1727996269
+gss
+#1727996282
+gaa
+#1727996499
+gcm "refact: function names (updateDotfile >> pullDotfiles, updateHist >> pushHist) and both updated."
+#1727996511
+gp -v --all
+#1727996530
+git checkout main
+#1727996536
+git merge --help
+#1727996595
+git merge -e arcolinux 
+#1727996608
+git config
+#1727996610
+git config -l
+#1727996663
+glol -5
+#1727996686
+gp -v --all
+#1727996757
+~/github
+#1727996807
+git clone git@github.com:allbano/bd3.git ~/github/bd3
+#1727996812
+cd bd3
+#1727996914
+cd ..
+#1727996938
+rm -rf .idea
+#1727996959
+cd Julia/
+#1727996961
+cd ..
+#1727997095
+help 
+#1727997380
+cd AppMarvelAluguel/
+#1727997402
+cd Desktop/BD3/
+#1727997416
+cd ..
+#1727997423
+cd MPN/
+#1727997425
+cd .
+#1727997433
+cd ..
+#1727997440
+cd git
+#1727997442
+cd ..
+#1727997446
+cd gitlab/
+#1727997448
+cd ..
+#1727997474
+cd cd git
+#1727997477
+cd git
+#1727997488
+cd ..
+#1727997491
+cd github/
+#1727997495
+cd AppMarvelAluguel/
+#1727997502
+cd ..
+#1727997509
+cd docker/
+#1727997513
+cd postgresql/
+#1727997521
+cd SQL
+#1727997525
+cat bantads.sql 
+#1727997527
+cd ..
+#1727997542
+cd dockerfiles/
+#1727997545
+cd ..
+#1727997551
+cd alpine/
+#1727997559
+cd ..
+#1727997567
+cd docker/postgresql/
+#1727997575
+ll dbReplication/
+#1727997584
+cat ini
+#1727997589
+cd dbReplication/
+#1727997593
+cat init.sql 
+#1727998594
+cd Desktop/BD3/
+#1727998617
+lvim BD_VAREJO_postgresql.sql 
+#1727999363
+cp BD_VAREJO.sql BD_VAREJO_BAK.sql
+#1727999404
+cat entrypoint_master 
+#1727999471
+cd
+#1727999474
+cd github/AppMarvelAluguel/
+#1727999481
+cd postgresql16/
+#1727999486
+cat docker-compose.yml 
+#1727999620
+cd github/db3/
+#1727999676
+cd ..
+#1727999699
+cd db3/
+#1727999711
+cd ..
+#1727999715
+cd bd3/
+#1727999725
+cd ..
+#1727999728
+cd bd3/
+#1727999733
+cd ..
+#1727999734
+db
+#1727999738
+cd db3/
+#1727999761
+git config -l
+#1727999806
+rm -rf .git
+#1727999855
+alias| rg mkdir
+#1727999887
+mv ../db3 .
+#1727999909
+mv ../db3 Docs
+#1727999913
+mv -r ../db3 Docs
+#1727999935
+cd ../bd3/
+#1727999945
+mv ../db3 .
+#1727999967
+mv db3 Docs
+#1727999972
+gaa
+#1728000164
+gcm "Adicionado docs, incluindo o projeto de DW."
+#1728000184
+exot
+#1728000167
+gp -v
+#1728000427
+sudo cat /sys/module/nvidia_drm/parameters/modeset
+#1728000484
+sct enable nvidia-resume.service 
+#1728000611
+pullDotfiles 
+#1728000656
+cd github/bd3/
+#1728000664
+cd projetodw/
+#1728000670
+cd ..
+#1728000692
+cd TrabalhoFinalDAC/
+#1728000694
+gaa
+#1728000701
+gp -v --all
+#1728000727
+gl -v --all
+#1728000741
+cat docker-compose.yml 
+#1728000750
+cd postgresql/
+#1728000755
+cat docker-entrypoint.sh 
+#1728000788
+cat docker-entrypoint.sh > ../../bd3/projetodw/init.sh
+#1728000798
+cat init.sql 
+#1728000849
+cat init.sql > ../../bd3/projetodw/init.sql
+#1728000858
+../../bd3/projetodw/
+#1728000863
+cat init.sql 
+#1728000868
+cat init.sh
+#1728000874
+lvim init.sh
+#1728000893
+cd -
+#1728000898
+cd ..
+#1728000916
+cd github/bd3/
+#1728000919
+lvim docker-compose.yml 
+#1728001111
+docker volume ls
+#1728001115
+docker volume prune 
+#1728001119
+docker volume ls
+#1728001127
+docker volume rm empresa-aerea-mongo 
+#1728001131
+docker volume rm empresa-aerea-pg 
+#1728001135
+docker volume rm 09
+#1728001137
+docker volume rm 09bc9f0a25db7ff0bb1d2b4ab5640e4a53f70e5f4d95e10ac7ab9598563659fc 
+#1728001142
+docker ps -a
+#1728000910
+lvim docker-compose.yml 
+#1728001168
+cd projetodw/
+#1728001174
+lvim init.sh
+#1728001428
+cd ..
+#1728001431
+cd Docs/
+#1728001443
+lvim projetodw.sql
+#1728001590
+cd ..
+#1728001597
+code .
+#1728001682
+cd Docs/
+#1728014127
+cd $DOT
+#1728014130
+cd $DOTFILES
+#1728014136
+pul
+#1728014141
+pullDotfiles 
+#1728015887
+cd github/AppMarvelAluguel/
+#1728015890
+cd postgresql16/
+#1728015893
+cd ..
+#1728015906
+cd bantads/
+#1728015912
+cd db
+#1728015915
+cat init.sql 
+#1728016513
+cd
+#1728016517
+cd github/bd3/
+#1728016521
+cd projetodw/
+#1728016547
+cat ../Docs/projetodw.sql > init.sql
+#1728016553
+cat init.sh
+#1728016608
+cd ..
+#1728016629
+cd github/TrabalhoFinalDAC/
+#1728016633
+cat docker-compose.yml 
+#1728016675
+lvim docker-compose.yml 
+#1728016773
+docker-compose up
+#1728016839
+docker-compose down
+#1728016842
+docker-compose up
+#1728016863
+docker-compose down
+#1728016866
+cat
+#1728016871
+cat docker-compose.yml 
+#1728016907
+docker-compose up
+#1728017459
+docker-compose down
+#1728017462
+docker-compose up
+#1728017479
+docker-compose down
+#1728017709
+docker-compose up
+#1728017732
+cd projetodw/
+#1728017759
+ll ../../bantads/db/
+#1728017788
+chmod 755 init.sh
+#1728017812
+mv projetodw.sql projetodw-altertable.sql 
+#1728017818
+cd ..
+#1728017887
+mv Docs/projetodw_inserts.sql projetodw/
+#1728017892
+cd Docs/
+#1728017939
+rm BD_VAREJO.sql 
+#1728017975
+rm projetodw.sql 
+#1728018001
+chmod 744 * .
+#1728018014
+chmod 0744 * .
+#1728018033
+chmod 0600 * .
+#1728018039
+sudo chmod 0600 * .
+#1728018049
+sudo chmod 0600 * ./
+#1728018063
+cd ..
+#1728018078
+sudo chmod -R 0700 Docs/
+#1728018084
+cd Docs/
+#1728018091
+cd ..
+#1728018106
+sudo chmod -R 644 Docs/
+#1728018109
+cd Docs/
+#1728018130
+chmod +x Docs/
+#1728018133
+cd Docs/
+#1728018144
+cd ..
+#1728018354
+gaa
+#1728018420
+gcm "Refatorada permissões dos arquivos para as corretas e deletado arquivos duplicados."
+#1728018426
+gp -v 
+#1728018437
+cd projetodw/
+#1728018442
+cd ..
+#1728018452
+docker compose up
+#1728018465
+docker compose down
+#1728018502
+cd projetodw/
+#1728018525
+cat projetodw.sql projetodw_altertable.sql 
+#1728018531
+cat projetodw.sql > projetodw_altertable.sql 
+#1728018546
+rm projetodw-altertable.sql 
+#1728018640
+docker compose up
+#1728018649
+docker compose down
+#1728018653
+docker compose up -d
+#1728018694
+cd ..
+#1728018697
+cat docker-compose.yml 
+#1728019498
+docker compose down
+#1728019509
+lvim docker-compose.yml 
+#1728019533
+cat docker-compose.yml > docker-compose-test.yml 
+#1728019539
+lvim docker-compose-test.yml 
+#1728019588
+docker compose -f docker-compose-test.yml up -d
+#1728019623
+docker compose -f docker-compose-test.yml down
+#1728019626
+cd projetodw/
+#1728019631
+lvim init.sh
+#1728019650
+docker compose -f docker-compose-test.yml down
+#1728019653
+docker compose -f docker-compose-test.yml up -d
+#1728019673
+docker compose -f docker-compose-test.yml down
+#1728019682
+lvim projetodw/init.sh
+#1728019709
+lvim docker-compose-test.yml 
+#1728019730
+docker compose -f docker-compose-test.yml up -d
+#1728019735
+lvim docker-compose-test.yml 
+#1728019756
+docker compose -f docker-compose-test.yml up -d
+#1728029939
+cd .ssh
+#1728029952
+cat allnotebook.pub 
+#1728030012
+cd ../codeberg/
+#1728030027
+ssh -T codeberg@codeberg.org
+#1728030089
+git clone git@codeberg.org:blau_araujo/vim-keys.git
+#1728030146
+git clone https://codeberg.org/blau_araujo/vim-keys.git
+#1728030156
+cd vim-keys/
+#1728030180
+cd .ssh
+#1728030187
+cat allnotebook.pub 
+#1728030254
+ssh-keygen -t ed25519 -a 100
+#1728030276
+cat allcodeberg.pub 
+#1728030328
+sct status sshd
+#1728030336
+sct restart sshd
+#1728030353
+gl -v
+#1728030376
+git config -l
+#1728030406
+ssh -T git@codeberg.org
+#1728030514
+cd ~/.ssh
+#1728030525
+ssh -T git@codeberg.org
+#1728030660
+cat allcodeberg.pub 
+#1728030772
+echo -n '42f2408c2c63d05e2304fdc5be842e6c7fc08c4284ff66a5c36959ca172497c9' | ssh-keygen -Y sign -n gitea -f allcodeberg.pub 
+#1728030807
+cd -
+#1728030809
+cd ..
+#1728030823
+mv vim-keys vim-keys2
+#1728030828
+git clone https://codeberg.org/blau_araujo/vim-keys.git
+#1728030849
+cd vim-keys
+#1728030856
+gl -v
+#1728030866
+cd aulas/
+#1728030869
+cd 0
+#1728030878
+cd ../01
+#1728030882
+cat README.md 
+#1728030890
+glow README.md 
+#1728032066
+flatpak list
+#1728032074
+htop 
+#1728024754
+lvim alt.sql
+#1728033379
+cd projetodw/
+#1728033395
+cp init.sql ../../
+#1728033399
+cd ../..
+#1728033479
+lvim 
+#1728033905
+cd bd3/
+#1728033934
+docker compose -f docker-compose-test.yml stop
+#1728016660
+lvim docker-compose.yml 
+#1728034305
+docker compose -f docker-compose-test.yml start
+#1728035574
+lvim docker-compose.yml 
+#1728035665
+cd projetodw/
+#1728035676
+lvim projetodw_inserts.sql 
+#1728036291
+cd github/bd3/
+#1728036299
+docker compose -f docker-compose-test.yml stop
+#1728074122
+pullDotfiles 
+#1728074142
+cd $DOTFILES
+#1728074165
+git checkout arcolinux 
+#1728074187
+git merge -e --commit debian_testing 
+#1728074198
+gl -vf --all
+#1728074214
+git checkout debian_testing 
+#1728074242
+git checkout main
+#1728074295
+git checkout arcolinux 
+#1728074303
+git merge debian_testing 
+#1728074349
+git config -l
+#1728074370
+gp -uf origin arcolinux
+#1728074397
+tldr git push
+#1728074413
+tldr --version
+#1728074418
+tldr --help
+#1728074491
+cargo search tldr
+#1728074546
+cargo install tlrc
+#1728074596
+tlrc --version
+#1728074600
+tlrc
+#1728074606
+tldr
+#1728074617
+paru -Sss tldr
+#1728074624
+paru -R tldr
+#1728074635
+tldr
+#1728074641
+type -a 
+#1728074644
+type -a tldr
+#1728074652
+cargo install --list
+#1728074662
+echo -e "${PATH//:/\\n}"
+#1728074683
+cd .cargo
+#1728074702
+cd
+#1728074704
+cd .cargo
+#1728074711
+cat env
+#1728074739
+cd bin
+#1728074745
+./tldr git
+#1728074797
+git help merge
+#1728074816
+./tldr git merge
+#1728074832
+./tldr git push
+#1728074877
+mv tldr tldt
+#1728074882
+tldt
+#1728074890
+./tldt ss
+#1728074903
+cd $DOTFILES
+#1728074906
+cd bash
+#1728074913
+lvim profile_archnote 
+#1728074948
+cd $DOTBASH
+#1728074960
+test
+#1728074963
+help test
+#1728074978
+lvim profile_archnote 
+#1728075003
+echo -e "${PATH//:/\\n}"
+#1728075013
+paru -S tldr
+#1728075019
+tldr git merge
+#1728075028
+tldt git merge
+#1728075048
+fastfetch 
+#1728075108
+cd $DOTFILES
+#1728075131
+cd bash
+#1728075143
+git diff profile_alldeb profile_archnote
+#1728075174
+cd $DOTBASH
+#1728075167
+lvim profile_archnote 
+#1728075180
+lvim profile_alldeb 
+#1728075361
+gss
+#1728075366
+gaa 
+#1728075407
+gcm "refact: Updated profiles_{archnote,alldeb}, fix cargo env."
+#1728075414
+gp -v 
+#1728075442
+git checkout main
+#1728075448
+git merge arcolinux 
+#1728075464
+gp -v origin main
+#1728075483
+glol -5
+#1728075508
+lvim bashrc 
+#1728075523
+gp -v origin main
+#1728075535
+glol -10
+#1728075553
+cd github/bd3/
+#1728075584
+docker compose -f docker-compose-test.yml start 
+#1728084499
+lvim docker-compose.yml 
+#1728084680
+docker network ls
+#1728084688
+lvim docker-compose.yml 
+#1728084704
+cd projetodw/
+#1728084748
+cd ~/github/bd3/
+#1728084770
+docker compose -f docker-compose-test.yml stop
+#1728084850
+cd projetodw/
+#1728084713
+lvim init.sh
+#1728084991
+mv projetodw.sql ../Docs/
+#1728085006
+rm bd_partes.sql 
+#1728085009
+gaa
+#1728085024
+cd ..
+#1728085029
+docker ps -a
+#1728085058
+cd ..
+#1728085204
+docker compose -f docker-compose.yml up
+#1728085218
+lvim docker-compose.yml 
+#1728085232
+docker compose -f docker-compose.yml up
+#1728085242
+lvim docker-compose.yml 
+#1728085255
+docker compose -f docker-compose.yml up
+#1728085263
+lvim docker-compose.yml 
+#1728085294
+docker compose -f docker-compose.yml up
+#1728085332
+cd github/bd3/
+#1728085338
+lvim docker-compose.yml 
+#1728085322
+lvim docker-compose-test.yml 
+#1728085404
+docker compose -f docker-compose.yml up
+#1728085434
+lvim docker-compose-test.yml 
+#1728085514
+cat docker-compose.yml 
+#1728085540
+cd projetodw/
+#1728085558
+cd ..
+#1728085567
+docker compose -f docker-compose.yml down
+#1728085438
+lvim docker-compose.yml 
+#1728085681
+docker compose -f docker-compose.yml up
+#1728085695
+cd projetodw/
+#1728085712
+cat docker-compose.yml 
+#1728085700
+lvim init.sh 
+#1728085785
+docker compose -f docker-compose.yml up
+#1728085788
+cd ..
+#1728085789
+docker compose -f docker-compose.yml up
+#1728086028
+docker compose -f docker-compose.yml down
+#1728086039
+cd projetodw/
+#1728086045
+lvim init.sql
+#1728086091
+mv init.sql projetodw_init.sql
+#1728086095
+lvim init.sh 
+#1728086262
+cp projetodw_init.sql projetodw-full.sql
+#1728086287
+cat projetodw_altertable.sql >> projetodw-full.sql 
+#1728086301
+cat projetodw_inserts.sql >> projetodw-full.sql 
+#1728086308
+lvim projetodw-full.sql 
+#1728086345
+lvim init.sh 
+#1728086385
+lvim docker-compose.yml 
+#1728086439
+docker compose -f docker-compose.yml up
+#1728086512
+docker compose -f docker-compose.yml down
+#1728086517
+lvim docker-compose.yml 
+#1728086541
+gaa
+#1728086599
+gcm "Implementação do projetodw-full e do docker-compose finalizados." 
+#1728086621
+rm docker-compose-test.yml 
+#1728086638
+cd projetodw/
+#1728086662
+mv projetodw_* ../Docs/
+#1728086666
+cd ..
+#1728086688
+gaa
+#1728086722
+gcm "Removido arquivos de teste. Organizado arquivos parciais para pasta Docs."
+#1728086725
+gp -v
+#1728087249
+cd
+#1728087258
+mkdir testes
+#1728087260
+cd testes/
+#1728087263
+git clone https://github.com/allbano/bd3.git && cd bd3
+#1728087357
+cd ..
+#1728087362
+rm -rf bd3/
+#1728087370
+cd ~/github/bd3/
+#1728087373
+gaa
+#1728087398
+gcm "Incluídas as instruções para executar o projeto no README."
+#1728087402
+gp -v
+#1728167932
+asdf plugin-list
+#1728167952
+asdf
+#1728167977
+asdf info
+#1728168007
+rustup
+#1728168010
+rustup show
+#1728168052
+rustup check
+#1728168086
+rustup toolchain list
+#1728168112
+tldr rustup
+#1728168300
+cd $DOTFILES
+#1728168305
+pullDotfiles 
+#1728168329
+cd $DOTFILES
+#1728168345
+git checkout arcolinux 
+#1728168368
+git checkout debian_testing 
+#1728168372
+gl -v
+#1728168393
+git checkout arcolinux 
+#1728168399
+git merge debian_testing 
+#1728168421
+glol -5
+#1728168438
+gp -v
+#1728168470
+bat alias
+#1728168475
+bat < alias
+#1728168487
+bat <$(alias)
+#1728168492
+bat < $(alias)
+#1728168497
+bat << $(alias)
+#1728168519
+btm
+#1728168528
+echo -e "${PATH//:/\\n}"
+#1728168537
+btm
+#1728168547
+cd ~/.cargo/
+#1728168549
+cd bin
+#1728168566
+cargo search bottom
+#1728168571
+cargo search btm
+#1728168586
+cargo install bottom
+#1728168870
+cd github/dotfiles/
+#1728168876
+cd bash
+#1728168879
+cd .
+#1728168886
+cd scripts/
+#1728168889
+lvim functionsInitBash 
+#1728168987
+reset
+#1728169001
+type -a pullDotfiles 
+#1728169017
+pullDotfiles 
+#1728169036
+echo -e "${PATH//:/\\n}"
+#1728169210
+docker ps -a
+#1728169250
+cd github/bd3/
+#1728169260
+docker-compose -f docker-compose.yml down
+#1728169264
+docker ps -a
+#1728169277
+docker rm pg16
+#1728169280
+docker ps -a
+#1728169284
+docker container prune
+#1728169291
+docker container ls
+#1728169294
+docker container ls -a
+#1728169310
+docker image
+#1728169312
+docker images
+#1728169383
+docker run -it --name debian-sid -h debian_sid debian:sid 
+#1728169416
+distrobox 
+#1728169418
+distrobox ls
+#1728169424
+distrobox ls --help
+#1728169431
+sudo distrobox ls 
+#1728169446
+distrobox-list --root
+#1728169454
+env
+#1728169500
+asdf install nodejs 18.20.4
+#1728169551
+node --version
+#1728169558
+asdf 
+#1728169570
+asdf global nodejs 18.20.4 
+#1728169581
+npm i -g npm@latest
+#1728169588
+npm i -g pnpm@latest
+#1728169607
+node --version
+#1728169626
+node --help
+#1728169660
+npm i -g @angular/cli@15
+#1728171537
+cd github/bd3/
+#1728171563
+docker compose -f docker-compose-test.yml up -d
+#1728171574
+docker compose -f docker-compose.yml up -d
+#1728177075
+docker exec -it projetodw bash
+#1728177777
+docker compose -f docker-compose.yml up -d
+#1728177780
+docker exec -it projetodw bash
+#1728177804
+docker ps
+#1728177872
+docker exec -it projetodw bash
+#1728178373
+cd .
+#1728178396
+rm init.sql 
+#1728178402
+cd crud-angular-spring/
+#1728178404
+ls -l
+#1728178407
+cd crud-angular/
+#1728178419
+cat package
+#1728178421
+cat package.json 
+#1728178431
+code .
+#1728178743
+cd ../..
+#1728178758
+rm -rf crud-angular-spring/
+#1728178772
+mkdir crud-angular-spring
+#1728178774
+cd crud-angular-spring/
+#1728179082
+paru -Sss linux
+#1728178798
+ng new crud-angular
+#1728179838
+pstree
+#1728240534
+cd .ssh
+#1728240571
+ssh alldeb
+#1728240630
+ssh-copy-id -p 6969 -i /home/albano/.ssh/allnotebook.pub  192.168.15.3
+#1728240682
+ssh-copy-id -p 6969 -i /home/albano/.ssh/allnotebook.pub  192.168.15.2
+#1728240992
+cat config
+#1728241037
+lvim allnotebook.pub 
+#1728241085
+ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
+#1728241195
+cat allbano_site_aws_ec2.pem 
+#1728241213
+cat allnotebook
+#1728241269
+rm allnotebook*
+#1728241277
+rm notebook_dellg15*
+#1728241535
+cd .ssh
+#1728241543
+cat allbano_site_aws_ec2.pem 
+#1728242021
+cd /etc/ssh
+#1728242034
+nvim ssh_config
+#1728242092
+doas nvim ssh_config
+#1728242112
+sudo nvim ssh_config
+#1728242119
+doas nvim ssh_config
+#1728242122
+sudo nvim ssh_config
+#1728242149
+doas lvim ssh_config
+#1728242168
+cat ssh_config
+#1728242236
+doas lvim ssh_config
+#1728242296
+cd
+#1728241303
+ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
+#1728242462
+ssh-keygen -t ed25519 -C "allarch_dellg15"
+#1728242507
+rm id_*
+#1728242510
+ssh-keygen -t ed25519 -C "allarch_dellg15"
+#1728242837
+cat allarch_dellg15.pub 
+#1728243335
+lvim config
+#1728243478
+scr restart sshd.service
+#1728243482
+sct restart sshd.service
+#1728243493
+cat config
+#1728243497
+ssh alldeb
+#1728243518
+chmod 600 allarch_dellg15*
+#1728243520
+ssh alldeb
+#1728243586
+chmod 700 /home/albano/.ssh
+#1728243592
+chmod 600 /home/albano/.ssh/allarch_dellg15
+#1728243613
+ssh -i /home/albano/.ssh/allarch_dellg15 albano@192.168.5.2
+#1728243630
+ssh -i /home/albano/.ssh/allarch_dellg15 -p 6969 albano@192.168.5.2
+#1728243641
+ssh alldeb
+#1728243646
+lvim config
+#1728243668
+ssh alldeb
+#1728243686
+ssh noip
+#1728243693
+lvim config
+#1728243707
+ssh noip
+#1728244192
+ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
+#1728245613
+flatpak update
+#1728245619
+flatpak list
+#1728245636
+paru -Qss dbe
+#1728245663
+paru -R dbeaver dbeaver-plugin-batik dbeaver-plugin-svg-format 
+#1728245680
+flatpak search dbeaver
+#1728245733
+flatpak install io.dbeaver.DBeaverCommunity
+#1728246725
+flatpak uninstall io.dbeaver.DBeaverCommunity
+#1728246734
+paru -Sss dbeaver
+#1728246774
+paru -S dbeaver
+#1728247046
+ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
+#1728248216
+cd github/b
+#1728248220
+cd github/bd3/
+#1728248243
+git restore .
+#1728248255
+lvim docker-compose.yml 
+#1728248285
+docker compose -f docker-compose.yml up -d
+#1728248360
+glo
+#1728248362
+gaa
+#1728248395
+gcm "Corrigido path dos volumes no docker-compose."
+#1728248398
+gp -v
+#1728248445
+cd ~/.ssh
+#1728248450
+cat allarch_dellg15.pub 
+#1728248482
+ssh -T git@github.com
+#1728248498
+sct restart sshd
+#1728248502
+ssh -T git@github.com
+#1728248513
+cat config
+#1728248533
+ssh -T git@github.com
+#1728248699
+ps aux| rg ssh-agent
+#1728248705
+ssh -T git@github.com
+#1728248717
+ssh-add -l
+#1728248777
+lvim ~/.bash_profile 
+#1728249039
+cd .ssh
+#1728249043
+lvim config
+#1728249061
+sct restart sshd
+#1728249076
+ssh -T git@github.com
+#1728249238
+cd github/bd3/
+#1728249247
+gp -v 
+#1728249204
+ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
+#1728305301
+cd .ssh
+#1728305322
+cat allbano_site_aws_ec2.pem
+#1728305602
+ss
+#1728305680
+tldr ss
+#1728305697
+tldt ss
+#1728323727
+cd github/bd3/
+#1728323736
+docker compose -f docker-compose.yml up -d
+#1728324007
+lvim docker-compose.yml 
+#1728324020
+cd projetodw/
+#1728324028
+lvim init.sh 
+#1728324042
+lvim projetodw-full.sql 
+#1728324473
+cd ..
+#1728324476
+docker-compose 
+#1728324483
+lvim docker-compose.yml 
+#1728324614
+tree
+#1728324638
+pstree
+#1728324641
+ltree
+#1728324643
+tree
+#1728324666
+cd projetodw/
+#1728324878
+lvim projetodw-full.sql 
+#1728324962
+cd ..
+#1728324965
+ps -a
+#1728324968
+docker ps 
+#1728324982
+docker compose -f docker-compose.yml down
+#1728324997
+docker compose -f docker-compose.yml up -d
+#1728327906
+docker compose -f docker-compose.yml down
+#1728330547
+fastfetch 
+#1728330609
+wayland-info 
+#1728331236
+yay
+#1728331653
+cat /etc/fstab
+#1728331663
+lsk
+#1728331796
+docker
+#1728331852
+cd /var
+#1728331854
+ls -l
+#1728331857
+cd lib
+#1728331863
+cd docker/
+#1728331873
+ll docker
+#1728331879
+sudo ll docker
+#1728331899
+sudo lsd -l -d docker
+#1728331917
+sudo lsd -l docker
+#1728338874
+cd Desktop/
+#1728338879
+cd Governanca/
+#1728341860
+flatpak update 
+#1728338923
+lvim Aula_07_10_2024.txt
+#1728389571
+paru -R cpu-x 
+#1728389897
+pstree
+#1728390906
+cd .config
+#1728390951
+sudo rm spectaclerc.lock*
+#1728390964
+cat xdg-desktop-portal-kderc 
+#1728390994
+cat user-dirs.dirs 
+#1728390998
+cat user-dirs.locale 
+#1728391037
+cat systemsettingsrc 
+#1728391050
+cat systemmonitorrc 
+#1728391066
+cat QtProject.conf 
+#1728391073
+cat sddmthemeinstallerrc 
+#1728391132
+cat plasmarc
+#1728392089
+cd ..
+#1728392097
+github/crud-angular-spring/
+#1728392115
+lvim README.md
+#1728392132
+git init
+#1728392141
+git add README.md
+#1728392152
+cd crud-angular/
+#1728392161
+cd ..
+#1728392167
+cd crud-angular/
+#1728392198
+cd ..
+#1728392226
+gcm "First commit."
+#1728392244
+git remote add origin git@github.com:allbano/crud-angularspring.git
+#1728392260
+git push -u origin main
+#1728392292
+gaa
+#1728392317
+git restore crud-angular/
+#1728392330
+git restore --staged .
+#1728392340
+cd crud-angular/
+#1728392350
+npm run
+#1728392362
+npm start
+#1728392404
+gaa
+#1728392419
+glo
+#1728392489
+cd ..
+#1728392496
+rm -rf .git
+#1728392522
+git init
+#1728392532
+ga README.md 
+#1728392550
+gcm "First commit."
+#1728392568
+git remote add origin git@github.com:allbano/crud-angularspring.git
+#1728392588
+gp -u origin main
+#1728392622
+gaa
+#1728392638
+git restore --staged .
+#1728392642
+gaa
+#1728392661
+cd crud-angular/
+#1728392671
+rm -rf .git
+#1728392679
+cd ..
+#1728392688
+gaa
+#1728392713
+gcm "Added angular 15 project."
+#1728392771
+cd crud-angular/
+#1728392776
+code .
+#1728396680
+npm i -g npm@latest
+#1728396703
+npm i -g pnpm@latest
+#1728396731
+pnpm 
+#1728397085
+ng add @angular/material
+#1728398317
+cd ,,
+#1728398320
+cd ..
+#1728398323
+gaa
+#1728398333
+cd crud-angular/
+#1728398564
+cd ..
+#1728398575
+lrm -rf crud-angular/
+#1728398578
+rm -rf crud-angular/
+#1728398586
+rm -rf .git
+#1728398603
+cd ..
+#1728398621
+mv crud-angular-spring crud-angularspring/
+#1728398623
+cd crud-angularspring/
+#1728398627
+git init
+#1728398636
+git add README.md 
+#1728398647
+gcm "First commit."
+#1728398678
+git remote add origin git@github.com:allbano/crud-angularspring.git
+#1728398686
+gp -u origin main
+#1728398911
+docker ps -a
+#1728398918
+cd github/bd3/
+#1728398930
+docker compose -f docker-compose.yml up -d
+#1728399175
+docker compose -f docker-compose.yml stop
+#1728399181
+docker ps 
+#1728399184
+docker ps =a
+#1728399186
+docker ps -a
+#1728398714
+ng new crud-angular
+#1728399681
+cd crud-angular/
+#1728399718
+cd ..
+#1728399721
+gaa
+#1728399787
+gcm "Added crud-angular project."
+#1728399820
+ng add @angular/material
+#1728399824
+cd crud-angular/
+#1728399826
+ng add @angular/material
+#1728401132
+gaa
+#1728401152
+gcm "Added angular/material."
+#1728424530
+cd github/bd3/
+#1728424554
+docker-compose -f docker-compose.yml up -d
+#1728424560
+docker ps 
+#1728424731
+apropos ls
+#1728424786
+apropos compiler
+#1728425073
+cd projetodw/
+#1728425095
+> generate_client_data.py
+#1728425113
+python --version
+#1728425117
+type -a python
+#1728425138
+asdf list
+#1728425171
+/usr/bin/python --version
+#1728425200
+asdf global python 3.12.6 
+#1728433918
+cd github/bd3/
+#1728433922
+cd
+#1728433940
+docker-compose -f ~/github/bd3/docker-compose.yml up -d
+#1728434239
+npm i -g npm@latest
+#1728434267
+npm --version
+#1728435318
+cd github/bd3/
+#1728435321
+cd projetodw/
+#1728435327
+lvim generate_client_data.py 
+#1728435389
+python --version
+#1728435429
+asdf install python 3.12.7
+#1728435631
+asdf local python 3.12.7 
+#1728435639
+python --version
+#1728435669
+asdf local --help
+#1728435679
+asdf
+#1728435833
+rm .tool-versions 
+#1728435838
+python --version
+#1728435919
+cd ..
+#1728436007
+asdf global python 3.12.7 
+#1728436012
+python --version
+#1728436035
+virtualenv 3.12.7
+#1728436040
+pip
+#1728436047
+pip install -U pip
+#1728436077
+pip install -U virtualenv
+#1728436116
+virtualenv 3.12.7
+#1728436180
+diff 3.12.7/bin/activate ~/github/dotfiles/scripts/activate 
+#1728436238
+lvim github/dotfiles/scripts/activate 
+#1728436215
+lvim 3.12.7/bin/activate
+#1728436373
+. 3.12.7/bin/activate
+#1728436418
+python --version
+#1728436422
+pip install faker
+#1728436431
+pip install -U faker
+#1728436440
+cd projetodw/
+#1728436446
+lvim generate_client_data.py 
+#1728436464
+pip install -U tqdm
+#1728436471
+lvim generate_client_data.py 
+#1728436637
+pip install -U csv
+#1728436789
+python generate_data.py
+#1728436807
+python generate_client_data.py 
+#1728437032
+lvim clientes.csv 
+#1728439129
+docker-compose -f ~/github/bd3/docker-compose.yml stop
+#1728439134
+docker ps -a
+#1728439143
+cd ..
+#1728439155
+deactivate 
+#1728439158
+cd crud-angularspring/
+#1728439162
+cd crud-angular/
+#1728439165
+code .
+#1728476341
+cd github/TrabalhoFinalDAC/
+#1728476348
+ga
+#1728476364
+gl -v --all
+#1728476386
+git checkout Leandro
+#1728476393
+gl -v
+#1728476482
+git config -l
+#1728476512
+gl -v origin Leandro
+#1728476825
+git checkout main 
+#1728476847
+git diff main..Leandro
+#1728476984
+gl -v 
+#1728477005
+gl -v
+#1728477010
+gl -h
+#1728477045
+git branch
+#1728477048
+git branch -a
+#1728477147
+git diff main..Leandro_endpoint_criar_cliente
+#1728477163
+git checkout Leandro_endpoint_criar_cliente 
+#1728477173
+git diff main
+#1728477320
+git checkout main
+#1728477356
+git checkout renan 
+#1728477363
+gl -v
+#1728477396
+git checkout main
+#1728477411
+git merge -e renan
+#1728477489
+git checkout nicolas 
+#1728477571
+cd mongodb/
+#1728477571
+kl
+#1728477578
+cat init.js 
+#1728477589
+cd ..
+#1728477745
+code .
+#1728478573
+git checkout main
+#1728478618
+git checkout nicolas 
+#1728478633
+glol -5
+#1728478640
+git checkout main
+#1728478648
+git merge -e nicolas
+#1728478666
+glol -5
+#1728478735
+git branch
+#1728478752
+git checkout luizsenji 
+#1728478770
+git checkout main
+#1728478783
+git merge -e luizsenji 
+#1728478812
+glo
+#1728478821
+git checkout luizsenji 
+#1728478859
+git branch -l
+#1728478871
+git checkout albano
+#1728478972
+gaa
+#1728479049
+gcm "Arrumado código de integração do frontend."
+#1728479061
+gp -v
+#1728479070
+glol -5
+#1728479096
+glol -10
+#1728479126
+cd ui
+#1728479151
+node --versionb
+#1728479153
+node --version
+#1728479169
+asdf global nodejs 20.16.0 
+#1728479176
+node --version
+#1728479187
+npm i -g npm@latest
+#1728479193
+npm i -g pnpm@latest
+#1728479263
+asdf global nodejs 20.17.0 
+#1728479267
+npm i -g npm@latest
+#1728479273
+npm i -g pnpm@latest
+#1728479319
+asdf install nodejs 20.18.0 
+#1728479338
+asdf uninstall nodejs 20.16.0 
+#1728479377
+asdf global nodejs 20.18.0 
+#1728479385
+node --version
+#1728479410
+npm i -g npm@latest
+#1728479416
+npm i -g pnpm@latest
+#1728479429
+npm install -g @angular/cli
+#1728480287
+pnpm
+#1728480318
+npm install -g @angular/cli@18
+#1728480791
+npm uninstall -g @angular/cli
+#1728480810
+npm i -g @angular/cli@18
+#1728481881
+node --version
+#1728481904
+asdf install nodejs 20.16.0 
+#1728481930
+asdf global nodejs 20.16.0 
+#1728481934
+node --version
+#1728481947
+npm i -g npm@latest
+#1728481954
+npm i -g pnpm@latest
+#1728482003
+pnpm 
+#1728482065
+npm search angular
+#1728482134
+npm i -g @angular/cli@18
+#1728482602
+node --version
+#1728482670
+ng
+#1728482675
+ng --help
+#1728482685
+ng update
+#1728482709
+asdf global nodejs 20.18.0 
+#1728482712
+ng update
+#1728482730
+ng update @angular/cdk
+#1728482767
+cd 
+#1728482788
+ng update
+#1728482804
+npm i -g @angular/cli@18
+#1728482823
+ng update
+#1728482856
+asdf global nodejs 18.20.4 
+#1728482870
+asdf uninstall nodejs 20.16.0 
+#1728482880
+asdf global nodejs 20.17.0 
+#1728482894
+asdf uninstall nodejs 20.18.0 
+#1728482941
+asdf
+#1728482959
+asdf nodejs update
+#1728482981
+asdf list
+#1728482998
+asdf install nodejs 20.18.0 
+#1728483012
+asdf global nodejs 20.18.0 
+#1728483015
+node --version
+#1728483016
+ng
+#1728483039
+npm i -g npm@latest && npm i -g pnpm@latest
+#1728483072
+npm i -g @angular/cli@18
+#1728484246
+node --version
+#1728484259
+asdf global nodejs 18.20.4 
+#1728484265
+cd github/crud-angularspring/
+#1728484269
+cd crud-angular/
+#1728484271
+code .
+#1728499758
+cal
+#1728499763
+calendar
+#1728499766
+cal
+#1728499779
+flatpak update
+#1728499824
+docker ps 
+#1728499831
+date
+#1728499837
+uptime
+#1728499852
+uptime --help
+#1728499958
+paru -Ssss tgpt
+#1728500022
+paru -S tgpt
+#1728500078
+tgpt 
+#1728500092
+tgpt --help
+#1728500211
+tgpt -m
+#1728500286
+tgpt --help
+#1728500597
+paru -Sss warp
+#1728500610
+paru -Sss '^warp'
+#1728500632
+paru -Sss 'warp terminal'
+#1728500726
+cd Downloads/progs/
+#1728500752
+cd ..
+#1728500765
+mv warp-terminal-v0.2024.09.24.08.02.stable_01-1-x86_64.pkg.tar.zst progs/
+#1728501410
+paru -Sss obsidian
+#1728501426
+paru -Sss 'obsidian cursor'
+#1728501466
+paru -S xcursor-breeze-serie-obsidian
+#1728501607
+paru -R xcursor-breeze-serie-obsidian
