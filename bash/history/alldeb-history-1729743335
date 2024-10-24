@@ -12633,3625 +12633,2216 @@ doas touch standby.signal
 docker exec -it dbreplication bash
 #1721769850
 docker-compose -f docker-compose2.yml up --force-recreate
-#1724178960
-cp ~/github/dotfiles/bash/history/allarch-history ~/.bash_history 
-#1724179515
-echo $XDG_CONFIG_HOME 
-#1724179583
-ln -sf /home/albano/github/dotfiles/alacritty $XDG_CONFIG_HOME/alacritty
-#1724179597
-cd $XDG_CONFIG_HOME/alacritty
-#1724179683
-ln -sf /home/albano/github/dotfiles/tmux/.tmux.conf ~/.tmux.conf
-#1724179712
-cd github/dotfiles/alacritty/
-#1724179727
-nvim alacritty.toml 
-#1724179734
-paru -S neovim
-#1724179771
-aru -S wl-clip
-#1724179788
-paru -Ssss wl-clipboard
-#1724179795
-paru -S wl-clipboard
-#1724179959
-fc-cache 
-#1724179962
-fc-cache --help
-#1724179998
-fc-list
-#1724180564
-cd Downloads/
-#1724180576
-cd ...
-#1724180589
-sudo chown -R albano:albano Downloads/
-#1724180596
-cd Downloads/
-#1724181483
-cd 
-#1724181492
-cd github/dotfiles/alacritty/
-#1724179854
-nvim alacritty.toml 
-#1724181526
-paru -Ssss caskaydia
-#1724181556
-paru -Sssss caskaydia
-#1724181583
-paru -S ttf-cascadia-code-nerd 
-#1724181498
-nvim alacritty.toml 
-#1724181628
-fastfetch 
-#1724181670
-paru -S google-chrome
-#1724181705
-paru -Sss google-chrome
-#1724181744
-paru -S google-chrome
-#1724246451
-paru -S rustup
-#1724246461
-paru -S lldb
-#1724246473
-rustup 
-#1724246487
-rustup toolchain 
-#1724246506
-rustup toolchain list
-#1724246680
-rustup toolchain install --list
-#1724246723
-ls -l
-#1724246767
-rm -rf .pki
-#1724246773
-rm -rf .gtkrc-2.0 
-#1724246816
-cd Suporte/
-#1724246826
-cd ..
-#1724246914
-rustup toolchain install stable
-#1724246990
-rustup default stable
-#1724247022
-rustup
-#1724247039
-rustup check
-#1724247084
-cd .cargo
-#1724247091
-type -a cargo
-#1724247115
-cargo search dust
-#1724247136
-cargo install du-dust
-#1724247175
-cd .cargo
-#1724247202
-cd ~/github/dotfiles/
-#1724247209
-cd services/
-#1724247214
-cd ..
-#1724247226
-cd configs/
-#1724247234
-cd ..
-#1724247247
-git diff
-#1724247279
-paru -Sss pipx
-#1724247347
-echo $PATH
-#1724247350
-cd -
-#1724247357
-cd ~/.cargo
-#1724247361
-nvim env
-#1724247454
-cargo search cargo-env
-#1724247490
-cargo install cargo-env
-#1724247500
-cargo env
-#1724247860
-plasmashell --version
-#1724247871
-fastfetch 
-#1724247982
-paru -Rscndd gnome-desktop
-#1724248098
-fastfetch 
-#1724248110
-uname  -a
-#1724248236
-paru -Q
-#1724248241
-paru -Qs
-#1724248263
-paru -Qs alacritty
-#1724248273
-paru -Qs bash
-#1724248339
-zsh
-#1724249278
-cd $XDG_CONFIG_HOME/alacritty
-#1724249286
-nvim alacritty.toml
-#1724249750
-git diff
-#1724250058
-inxi -A
-#1724250095
-fastfetch 
-#1724250167
-sudo systemctl status NetworkManager
-#1724274832
-> .cargo/env
-#1724274841
-nvm
-#1724274911
-LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
-#1724274978
-paru -Ss ripgrep
-#1724274998
-paru -Ss silver
-#1724275035
-git
-#1724275328
-LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
-#1724275383
-cxd UFPR/
-#1724275387
-cd UFPR/
-#1724275393
-cd ..
-#1724275402
-echo $PATH
-#1724275455
-export PATH=/home/albano/.local/bin:$PATH
-#1724275482
-lvim .cargo/env 
-#1724275588
-cd github/dotfiles/
-#1724275613
+#1729728984
+pushHis 
+#1729729003
+cd $DOTBASH
+#1729729030
+cat history/alldeb-history 
+#1729729043
+pushHis 
+#1729729051
+cat history/alldeb-history 
+#1729729079
+cd history/
+#1729729085
+gaa
+#1729729110
+time
+#1729729114
+date
+#1729729118
+date --help
+#1729729142
+date -u
+#1729729259
+date +%s
+#1729729384
+stat -c alldeb-history 
+#1729729416
+stat -c %Y alldeb-history 
+#1729729486
+date -d @$(stat -c %Y alldeb-history)
+#1729729500
+stat alldeb-history 
+#1729729527
+type -a pushHis 
+#1729729620
+date +%s
+#1729729663
+UPTODATE=$(date +%s)
+#1729729683
+date -d $UPTODATE 
+#1729729688
+date -d @$UPTODATE 
+#1729729786
+date --help
+#1729730029
+cd $DOTBASH/history/
+#1729730058
+note="notebook-dellg15"
+#1729730071
+rm "$note"*
+#1729730083
+gaa
+#1729730117
+git restore --staged notebook-dellg15-history
+#1729729581
+lvim ~/bin/functionsInitBash 
+#1729730689
+type -a pushHis 
+#1729730703
 cd $DOTFILES
-#1724275625
-rm alacritty/alacritty.toml.bak 
-#1724275630
-cd alacritty/
-#1724275640
-cd ..
-#1724275644
+#1729730718
+pushHis 
+#1729730738
+cd bash/history/
+#1729730781
+lvim ~/bin/functionsInitBash 
+#1729730838
+. ~/bin/functionsInitBash 
+#1729730840
+pushHis 
+#1729730867
+gaa
+#1729730899
+gcm "refact: pushHis function."
+#1729730900
+gpp
+#1729731048
+cd $DOTFILES
+#1729731054
+git branch
+#1729741479
+cd biun
+#1729741491
+lvim functionsInitBash 
+#1729741737
+. ~/bin/functionsInitBash 
+#1729741746
+type -a pushHis 
+#1729741751
+pushHis 
+#1729741767
+cd $DOTBASH/history/
+#1729741821
+[[ -f "alldeb-history"* ]] && rm "${HPATH}/${HISTNAMEBASE}"*
+#1729741833
+help test
+<<<<<<<< HEAD:bash/history/alldeb-history-1729743335
+#1729741883
+[[ -e "alldeb-history"* ]] && rm "${HPATH}/${HISTNAMEBASE}"*
+#1729741914
+[[ -e "alldeb-history"* ]] && rm "alldeb-history"*
+#1729741936
+[[ -e "alldeb-history*" ]] && rm "alldeb-history"*
+#1729741959
+[[ -e "alldeb-history*" ]]
+#1729741964
+echo $?
+#1729741996
+echo alldeb-history*
+#1729742017
+help test
+#1729742082
+[[ -a "alldeb-history*" ]]
+#1729742084
+echo $?
+#1729742157
+rm alldeb-history-1729730840 
+#1729742176
+echo alldeb-history*
+#1729742222
+alldeb=$(echo "alldeb-history*")
+#1729742227
+echo $alldeb 
+#1729742252
+[[ -a "$alldeb" ]]
+#1729742258
+echo $?
+#1729742272
+cat $alldeb 
+#1729742281
+echo $alldeb 
+#1729742302
+[[ -a "${alldeb}" ]]
+#1729742308
+echo $?
+#1729742343
+[[ -a "${alldeb}" ]] && echo 'Deu certo!' || echo 'Não deu certo!'
+#1729742349
+[[ -f "${alldeb}" ]] && echo 'Deu certo!' || echo 'Não deu certo!'
+#1729742378
+if [[ -f "${alldeb}" ]] then echo 'Deu certo!'; else echo 'Não deu certo!'; fi
+#1729742385
+if [ -f "${alldeb}" ] then echo 'Deu certo!'; else echo 'Não deu certo!'; fi
+#1729742396
+if [[ -f "${alldeb}"]] then echo 'Deu certo!'; else echo 'Não deu certo!'; fi
+#1729742400
+if [[ -f "${alldeb}" ]] then echo 'Deu certo!'; else echo 'Não deu certo!'; fi
+#1729742482
+realpath ${alldeb} 
+#1729742502
+alldeb=$(echo "alldeb-history*")
+#1729742546
+alldeb=$(realpath ${alldeb})
+#1729742550
+echo $alldeb 
+#1729742557
+if [[ -f "${alldeb}" ]] then echo 'Deu certo!'; else echo 'Não deu certo!'; fi
+#1729742602
+[[ -f "${alldeb}" ]] && echo 'Deu certo!' || echo 'Não deu certo!'
+#1729742728
+alldeb=$(realpath "alldeb-history*")
+#1729742738
+echo $alldeb 
+#1729742748
+alldeb=$(realpath "alldeb-history"*)
+#1729742750
+echo $alldeb 
+#1729742772
+alldeb=$(realpath $(echo "alldeb-history"*))
+#1729742774
+echo $alldeb 
+#1729742903
+alldeb=$(realpath alldeb-history*)
+#1729742905
+echo $alldeb 
+#1729742932
+cd $DOTBASH/history/
+#1729742936
+alldeb=$(realpath alldeb-history*)
+#1729742938
+echo $alldeb 
+#1729743108
+HBN=alldeb-history && alldeb=$(realpath ${HBN}*)
+#1729743110
+echo $alldeb 
+#1729743121
+alldeb=0
+#1729743123
+HBN=alldeb-history && alldeb=$(realpath ${HBN}*)
+#1729743126
+echo $alldeb 
+#1729742625
+lvim ~/bin/functionsInitBash 
+#1729743280
+. ~/bin/functionsInitBash 
+#1729743286
+type -a pushHis 
+#1729743294
+pushHis 
+#1729743311
+glol -10
+========
+#1727874987
+glol -8
+#1727875014
+lvim ~/.tmux.conf 
+#1727875306
+sudo cat /sys/module/nvidia_drm/parameters/modeset
+#1727875741
 cd bash
-#1724275659
-git diff
-#1724275691
-git restore bashrc 
-#1724275699
-git restore profile_archnote 
-#1724275718
-cd ~/.ssh
-#1724275728
-sct
-#1724275736
-sct status
-#1724275788
-pacman -Qs extra
-#1724275823
-pacman -Ss extra/unzip
-#1724275828
-pacman -Ss unzip
-#1724275866
-pacman -Qs core
-#1724275879
-paru
-#1724275896
-paru -Qs core
-#1724275899
-paru -Qs extra
-#1724275925
-paru -Qs arcolinux-repo
-#1724275927
-paru -Qs arcolinux_repo
-#1724275934
-paru -Qs arcolinux_repo_3party
-#1724275940
-paru -Qs arcolinux_repo_xlarge
-#1724275964
-pacman -Qs arcolinux_repo
-#1724275971
-pacman -Ssss arcolinux_repo
-#1724275977
-pacman -Ss arcolinux_repo
-#1724275979
-pacman -Ss arcolinux_repo/
-#1724276123
-echo $PATH
-#1724276130
-cargo install --list
-#1724276132
-fd
-#1724276185
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-#1724276193
-cd .fzf/
-#1724276201
-./install
-#1724276232
-cd $DOTF
-#1724276234
-cd $DOTFILES
-#1724276245
-git restore bash/bashrc 
-#1724276641
-type -a python
-#1724276644
-pyenv
-#1724276676
-python --version
-#1724276686
-pyenv install 3.12.4
-#1724277063
-pipx
-#1724345755
-set
-#1724345763
-updateDotfiles 
-#1724345778
-cd .ssh
-#1724345790
-cd ..
-#1724345835
-dust -r
-#1724345841
-tree
-#1724345844
-paru -S tree
-#1724345926
-ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//──/g' -e 's/─/├/' -e '$s/├/└/'\
-#1724345928
-ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//──/g' -e 's/─/├/' -e '$s/├/└/'
-#1724345947
-tree
-#1724346294
-sudo chown --help
-#1724346319
-cd Pictures/
-#1724346336
-sudo chown -hR albano /u
-#1724346341
-sudo chown -hR albano /u .
-#1724346352
-sudo chown -hR albano:albano .
-#1724346358
-cd background/
-#1724346360
-cd ..
-#1724346364
-tree
-#1724346373
-tree --help
-#1724346382
-cd ..
-#1724346387
-cd Animes/
-#1724346390
-cd ..
-#1724346393
-cd Backup/
-#1724346396
-cd _telegram/
-#1724346398
-cd ..
-#1724346404
-cd codeberg/
-#1724346405
-cd ..
-#1724346409
-cd Containers/
-#1724346415
-cd VMs/
-#1724346419
-cd ..
-#1724346427
-rm -rf Containers/
-#1724346433
-cd Desktop
-#1724346436
-cd ..
-#1724346441
-tree -L1
-#1724346453
-cd docker/
-#1724346455
-cd ...
-#1724346458
-cd Documents/
-#1724346470
-sudo chown -hR albano:albano .
-#1724346474
-cd ..
-#1724346481
-cd Downloads/
-#1724346490
-cd ..
-#1724346493
-cd eclipse-workspace/
-#1724346496
-cd ..
-#1724346498
-cd extdrive/
-#1724346500
-cd ..
-#1724346503
-rmdir extdrive/
-#1724346508
-cd git
-#1724346510
-cd ..
-#1724346512
-cd github/
-#1724346514
-cd ..
-#1724346519
-cd gitlab/
-#1724346525
-cd ..
-#1724346528
-cd GNS3/
-#1724346530
-cd ..
-#1724346534
-cd JDKs/
-#1724346536
-cd ..
-#1724346541
-rm -rf JDKs/
-#1724346548
-cd MEGA/
-#1724346550
-cd ..
-#1724346553
-cd Music/
-#1724346569
-cd ..
-#1724346572
-cd NetBeansProjects/
-#1724346574
-cd ..
-#1724346578
-cd NPs/
-#1724346583
-cd ..
-#1724346587
-cd NetBeansProjects/
-#1724346597
-mv TesteDIO ../NPs/
-#1724346599
-cd ..
-#1724346603
-rmdir NetBeansProjects/
-#1724346610
-cd Pictures/
-#1724346612
-cd ..
-#1724346618
-cd Projects/
-#1724346620
-cd ..
-#1724346628
-cd Public/
-#1724346630
-cd ..
-#1724346634
-cd salsa/
-#1724346635
-cd ..
-#1724346638
-cd SQL/
-#1724346641
-cd ..
-#1724346644
-cd Suporte/
-#1724346683
-cd ..
-#1724346697
-mv Suporte ./Documents/
-#1724346703
-cd Test/
-#1724346709
-cat Dockerfile 
-#1724346713
-cd ..
-#1724346716
-rm -rf Test
-#1724346720
-cd Templates/
-#1724346723
-cd ..
-#1724346725
-cd Videos/
-#1724346727
-cd ..
-#1724346733
-cd VMs/
-#1724346757
-cd Pro
-#1724346761
-cd ..
-#1724346765
-cd Projects/
-#1724346766
-l;
-#1724347035
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-#1724347050
-cd ..
-#1724347054
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-#1724347079
-env
-#1724347084
-env|rg NVM
-#1724347090
-mkdir .nvm
-#1724347093
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-#1724347106
-nvm
-#1724347111
-nvm ls
-#1724347123
-nvm install --list
-#1724347137
-nvm install list-remote 
-#1724347154
-nvm install ls-remote 
-#1724347161
-nvm
-#1724347168
-nvm install --lts
-#1724347227
-npm --version
-#1724347239
-nvm
-#1724347242
-nvm ls
-#1724347252
-npm install -g @angular/cli@17
-#1724347275
-npm i -g npm
-#1724347284
-npm fund
-#1724347315
-nvm --help
-#1724347349
-nvm list-remote
-#1724347375
-nvm install v18.20.4
-#1724347385
-nvm
-#1724347401
-nvm ls
-#1724347420
-npm i -g npm
-#1724347439
-npm i -g yuarn
-#1724347443
-npm i -g yarn
-#1724347450
-nvm use v20.17.0 
-#1724347456
-npm i -g yarn
-#1724347465
-yarn
-#1724347473
-rm -rf node_modules
-#1724347477
-rm yarn.lock 
-#1724347480
-yarn --help
-#1724347492
-nvm 
-#1724347494
-nvm ls
-#1724347520
-nvm ls-remote
-#1724347547
-ps
-#1724347551
-cat .bashrc
-#1724347587
-ps -o tty= -p$$ | sed 's/pts\///'
-#1724347625
-ps -o tty=-p$$ | sed 's/pts\///'
-#1724347631
-ps -o tty= -p$$ | sed 's/pts\///'
-#1724347647
-ps
-#1724347657
-sct status
-#1724347687
-free
-#1724347690
-free -h
-#1724347718
-uname -a
-#1724348078
-sudo pacman -Ssss linux
-#1724348083
-sudo pacman -Ssss linux-
-#1724348125
-sudo pacman -R linux-cachyos
-#1724348136
-sudo pacman -Rs linux-cachyos
-#1724348140
-sudo pacman -Rscndd linux-cachyos
-#1724348151
-sudo pacman -Rscndd linux-cachyos-headers 
-#1724348165
-sudo pacman -Rscndd linux-cachyos
-#1724348172
-sudo pacman -Rsndd linux-cachyos
-#1724348179
-sudo pacman -Rcndd linux-cachyos
-#1724348192
-sudo pacman -Rscndd linux-cachyos
-#1724348210
-sudo pacman -S linux
-#1724348248
-sudo pacman -S jq linux-headers 
-#1724348396
-sudo grub-mkconfig -o /boot/grub/grub.cfg 
-#1724348408
-sudo mkinitcpio -P
-#1724348419
-sudo grub-mkconfig -o /boot/grub/grub.cfg 
-#1724349098
-ps
-#1724349111
-cat .bashrc
-#1724350009
-ps
-#1724350097
-cd .ssh
-#1724350230
-ssh-keygen -t ed25519 -C "notebook_dellg15"
-#1724350250
-cat notebook_dellg15.pub 
-#1724350283
-updateDotfiles 
-#1724350293
-ssh -T git@github.com
-#1724350308
-sct status ssh
-#1724350311
-sct status sshd
-#1724350318
-sct enable --now sshd
-#1724350332
-sct status sshd
-#1724350340
-cd /etc/ssh
-#1724350356
-sudo nvim ssh_config
-#1724350439
-sct restart sshd_config
-#1724350445
-sct restart sshd.service
-#1724372383
-fastfetch 
-#1724372690
-paru -Sss lm_sen
-#1724373535
-paru -Sss  libksysguard
-#1724373968
-fastfetch 
-#1724373980
-docker
-#1724373988
-paru -Sss docker
-#1724374127
-paru -S docker dive container-diff docker-compose python-docker
-#1724374157
-paru -S criu docker-scan docker-buildx
-#1724374181
-paru -Sss base-deve;
-#1724424248
-java --version
-#1724424254
-paru -Ssss openjdk
-#1724424269
-paru -S jre17-openjdk
-#1724424373
-paru -Ssss dbeaver
-#1724424382
-paru -S dbeaver
-#1724424442
-paru -S dbeaver-plugin-svg-format 
-#1724424995
-fastfetch 
-#1724425005
-htp
-#1724425030
-reset
-#1724445016
-paru -Sss power-profiles
-#1724445034
-paru -S power-profiles-daemon
-#1724445064
-sct status power
-#1724445079
-sudo systemctl status power-profiles-daemon.service 
-#1724445089
-sudo systemctl enable --now power-profiles-daemon.service 
-#1724445099
-sudo systemctl daemon-reload 
-#1724445178
-fastfetch 
-#1724445364
-pyenv
-#1724445372
-ng
-#1724445391
-ng versions
-#1724445475
-nvm
-#1724445478
-nvm ls
-#1724445501
-nvm use v18.20.4 
-#1724445527
-npm install -g @angular/cli@16
-#1724445572
-nvm use v20.17.0 
-#1724445577
-pyenv
-#1724445582
-pyenv versions
-#1724445674
-pyenv install --help
-#1724445678
-pyenv install -l
-#1724445734
-pyenv install 3.12.5
-#1724445819
-paru -Sss variety
-#1724446577
-pyenv versions
-#1724446607
-cd Cursos/
-#1724446612
-cd python/
-#1724446662
-pyenv virtualenv 3.12.5 jupyterlab
-#1724446672
-pyenv update
-#1724446693
-echo $PS1
-#1724446797
-echo $PS1 | sed -i 's/(jupyterlab) \n//';
-#1724446803
-echo $PS1 | sed 's/(jupyterlab) \n//';
-#1724446812
-echo $PS1 | sed 's/(jupyterlab) \n//'
-#1724446964
-echo $PS1
-#1724447045
-PS1="\[\e[97m\]\342\224\214\342\224\200\[\e[48;5;239m\]\[\e[1;36m\] \u\[\e[97m\]@\[\e[1;33m\]\H \[\e[44m\]\[\e[1;33m\] \w \[\e[48;5;239m\]\[\e[97m\] [$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D [$(find . -mindepth 1 -maxdepth 1 -type f | wc -l)]F [$(find . -mindepth 1 -maxdepth 1 -type l | wc -l)]SL \[\e[0m\]\[\e[42m\]\[\e[97m\]$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n "( BRANCH )")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^A' | wc -l | sed 's/^0//' | xargs -I AD echo -n " A(AD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^M' | wc -l | sed 's/^0//' | xargs -I MD echo -n " M(MD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/^0//' | xargs -I UD echo -n " UM(UD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -I UK echo -n " U(UK)")\[\e[0m\]\[\e[97m\]\[\e[97m\] - [\[\e[1;33m\]\t\[\e[97m\]]\[\e[0m\]\n\[\e[97m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\e[1;37m\]\[\e[1;36m\] $ \[\e[0m\]"
-#1724447151
-PS1="\[\e[97m\]\342\224\214\342\224\200\[\e[48;5;239m\]\[\e[1;36m\] \u\[\e[97m\]@\[\e[1;33m\]\H \[\e[44m\]\[\e[1;33m\] \w \[\e[48;5;239m\]\[\e[97m\] [$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D [$(find . -mindepth 1 -maxdepth 1 -type f | wc -l)]F [$(find . -mindepth 1 -maxdepth 1 -type l | wc -l)]SL \[\e[0m\]\[\e[42m\]\[\e[97m\]$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n "( BRANCH )")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^A' | wc -l | sed 's/^0//' | xargs -I AD echo -n " A(AD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^M' | wc -l | sed 's/^0//' | xargs -I MD echo -n " M(MD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/^0//' | xargs -I UD echo -n " UM(UD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -I UK echo -n " U(UK)")\[\e[0m\]\[\e[97m\]\[\e[97m\] - [\[\e[1;33m\]\t\[\e[97m\]]\[\e[0m\]\n\[\e[97m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\e[1;37m\]\[\e[1;36m\] (jupyterlab) $ \[\e[0m\] "
-#1724447182
-PS1="\[\e[97m\]\342\224\214\342\224\200\[\e[48;5;239m\]\[\e[1;36m\] \u\[\e[97m\]@\[\e[1;33m\]\H \[\e[44m\]\[\e[1;33m\] \w \[\e[48;5;239m\]\[\e[97m\] [$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D [$(find . -mindepth 1 -maxdepth 1 -type f | wc -l)]F [$(find . -mindepth 1 -maxdepth 1 -type l | wc -l)]SL \[\e[0m\]\[\e[42m\]\[\e[97m\]$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n "( BRANCH )")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^A' | wc -l | sed 's/^0//' | xargs -I AD echo -n " A(AD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^M' | wc -l | sed 's/^0//' | xargs -I MD echo -n " M(MD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/^0//' | xargs -I UD echo -n " UM(UD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -I UK echo -n " U(UK)")\[\e[0m\]\[\e[97m\]\[\e[97m\] - [\[\e[1;33m\]\t\[\e[97m\]]\[\e[0m\]\n\[\e[97m\]\342\224\224\342\224\200\342\224\200\342\225\274 (jupyterlab) \[\e[1;37m\]\[\e[1;36m\]  $ \[\e[0m\] "
-#1724447211
-PS1="\[\e[97m\]\342\224\214\342\224\200\[\e[48;5;239m\]\[\e[1;36m\] \u\[\e[97m\]@\[\e[1;33m\]\H \[\e[44m\]\[\e[1;33m\] \w \[\e[48;5;239m\]\[\e[97m\] [$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D [$(find . -mindepth 1 -maxdepth 1 -type f | wc -l)]F [$(find . -mindepth 1 -maxdepth 1 -type l | wc -l)]SL \[\e[0m\]\[\e[42m\]\[\e[97m\]$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n "( BRANCH )")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^A' | wc -l | sed 's/^0//' | xargs -I AD echo -n " A(AD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^M' | wc -l | sed 's/^0//' | xargs -I MD echo -n " M(MD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/^0//' | xargs -I UD echo -n " UM(UD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -I UK echo -n " U(UK)")\[\e[0m\]\[\e[97m\]\[\e[97m\] - [\[\e[1;33m\]\t\[\e[97m\]]\[\e[0m\]\n\[\e[97m\]\342\224\224\342\224\200\342\224\200\342\225\274 (jupyterlab)\[\e[1;37m\]\[\e[1;36m\] $ \[\e[0m\] "
-#1724447241
-pyenv versions
-#1724447254
-pyenv deactivate jupyterlab
-#1724447279
-pyenv versions
-#1724447335
-type -a pyenv activate
-#1724447393
-paru -Syyu
-#1724447994
-docker 
-#1724447999
-albano
-#1724448002
-id albano
-#1724448021
-sudo id allarch
-#1724448082
-cat /etc/group
-#1724448318
-sudo usermod -aG sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,vboxusers,gluster,docker,qemu,rtkit,git,flatpak,vboxsf,ntp,locate,input,disk,render,nvidia-persistenced,tty,games,adm albano
-#1724448321
-id albano
-#1724448395
-flatpak
-#1724448398
-id
-#1724448410
-sudo usermod -aG flatpak albano
-#1724448557
-flatpak
-#1724448560
-flatpak list
-#1724448571
-flatpak search simple-note
-#1724448576
-flatpak search simplenote
-#1724448596
-flatpak install com.simplenote.Simplenote
-#1724449091
-paru -Ssss kirigami
-#1724449115
-paru -S kirigami
-#1724450533
-docker 
-#1724450570
-docker config
-#1724450573
-docker config ls
-#1724450585
-sudo systemctl status docker
-#1724450593
-sudo systemctl enable --now docker
-#1724450596
-sudo systemctl status docker
-#1724450601
-docker config ls
-#1724450622
-sudo systemctl daemon-reload 
-#1724464049
-yay
-#1724464054
-yay -Sss octave
-#1724464060
-yay -S octave
-#1724464111
-yay -S python-matplotlib texlive-bin
-#1724464242
-yay -S python-pyqt6 texlive-binextra texlive-fontsrecommended 
-#1724464251
-yay -S python-pyqt6 texlive-binextra texlive-fontsrecommended psutils
-#1724464320
-paru -S qt6-connectivity qt6-remoteobjects
-#1724464328
-fastfetch 
-#1724464333
-fastfetch --help
-#1724464394
-paru -Sss tilix
-#1724464399
-paru -R tilix
-#1724464441
-paru -Sss qterminal
-#1724464466
-paru -S qterminal
-#1724464768
-ps
-#1724464794
-paru -S gparted
-#1724464809
-paru -Sss xfs
-#1724464852
-paru -S xfsdump
-#1724465650
-docker ps
-#1724465659
-docker images
-#1724465794
-paru -Sss fwup
-#1724465825
-paru -S fwupd{,-docs,-efi}
-#1724465855
-sudo systemctl status fwupd
-#1724465861
-sudo systemctl enable fwupd
-#1724465870
-sudo systemctl status fwupd
-#1724465890
-sudo systemctl start fwupd
-#1724465894
-sudo systemctl status fwupd
-#1724466225
-paru -Ssss nvidia
-#1724466251
-paru -S gwe
-#1724466315
-paru -S python-babel python-pygments python-pytest
-#1724467145
-pyenv versions
-#1724468190
-cargo install --list
-#1724468196
-duf
-#1724468202
-fd --help
-#1724468213
-cargo install --list
-#1724468217
-cargo env
-#1724468222
-env
-#1724468232
-env|rg RUSTUP
-#1724468242
-echo $PATH
-#1724469476
-smartctl
-#1724469491
-sudo systemctl status smartctl
-#1724469502
-sudo systemctl status smartd
-#1724469509
-sudo systemctl start smartd
-#1724469511
-sudo systemctl status smartd
-#1724469517
-sudo systemctl enable smartd
-#1724469520
-sudo systemctl status smartd
-#1724469541
-smartctl --help
-#1724469575
-sudo smartctl --all /dev/nvme1n1
-#1724476701
-paru -S ffmpeg
-#1724476900
-paru -Ssss h26
-#1724476978
-paru -S gst-plugin-openh264 
-#1724477134
-paru -S a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv opus wavpack x264 xvidcore  
-#1724477180
-paru -R vlc
-#1724477192
-paru -Rs vlc
-#1724477195
-paru -Rsc vlc
-#1724477236
-flatpak search vlc
-#1724477244
-sudo pacman -R vlc
-#1724477250
-paru -Syyu
-#1724477257
-sudo pacman -R vlc
-#1724477263
-sudo pacman -Rc vlc
-#1724478402
-paru -Syy
-#1724478416
-ip
-#1724478419
-ip -C a
-#1724478422
-ip a
-#1724478432
-ping google.com
-#1724478466
-grep "removed" /var/log/pacman.log
-#1724478495
-pacman -Syy
-#1724478500
-sudo pacman -Syy
-#1724490320
-ps
-#1724490415
-cd github/dotfiles/
-#1724490449
-echo $XDG_CONFIG_HOME 
-#1724490483
-ln -sf /home/albano/github/dotfiles/alacritty /home/albano/.config/alacritty
-#1724490485
+#1727875770
+lvim ~/github/dotfiles/bash/bash_aliases 
+#1727876111
 cd
-#1724490489
-cd .config/alacritty
-#1724490509
-paru -Sss pipx
-#1724490579
-sudo fc-cache --help
-#1724490589
-sudo fc-cache -vf
-#1724490671
-paru -Sss caskadia
-#1724490680
-paru -Sss nerd-font
-#1724490730
-paru -S ttf-cascadia-code-nerd 
-#1724490749
-cd .ssh
-#1724490759
-sudo systemctl sshd
-#1724490766
-sudo systemctl statussshd
-#1724490768
-sudo systemctl status sshd
-#1724490796
-sudo nvim /etc/ssh/ssh_config
-#1724490848
-cd .ssh
-#1724490880
-sudo systemctl restart sshd.service 
-#1724490897
-paru -Sss pipx
-#1724490903
-paru -S python-pipx
-#1724490922
-ps
-#1724492216
-cd Videos/
-#1724492235
-sudo chown -R albano:albano .
-#1724537428
-pyenv
-#1724537433
-pyenv versions
-#1724537478
-pyenv activate jupyterlab
-#1724537489
-pyenv deactivate 
-#1724537512
-pyenv activate experimentosEEG 
-#1724537517
-pyenv deactivate 
-#1724537520
-rustup
-#1724537524
-paru -S rustup
-#1724537543
-paru -S doas
-#1724537654
-paru -Ss vlc
-#1724537960
-zsh
-#1724537681
-paru -S vlc-git
-#1724538407
-paru -S lua-socket libva-vdpau-driver
-#1724538546
-flatpak
-#1724538549
-id
-#1724538553
-id allarch
-#1724538602
-docker
-#1724538607
-paru -S docker
-#1724538641
-paru -S criu docker-scan docker-buildx docker-compose
-#1724538693
-sudo nvim /etc/doas.conf
-#1724538716
-sudo chmod 0400 /etc/doas.conf
-#1724538729
-doas pacman -Syy
-#1724538746
-doas systemctl status
-#1724538781
-sudo systemctl enable docker.service 
-#1724538788
-sudo systemctl enable --now docker.service 
-#1724538801
-sudo systemctl status docker.service 
-#1724538876
-btop
-#1724538890
-cat /etc/group
-#1724539078
-sudo usermod -aG adm,sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,docker,fwupd,vboxusers,vboxsf,nvidia-persistenced,polkitd,locate,dosk,input,lock,kvm,games,log,render,git,flatpak albano
-#1724539096
-sudo usermod -aG adm,sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,docker,fwupd,vboxusers,vboxsf,nvidia-persistenced,polkitd,locate,disk,input,lock,kvm,games,log,render,git,flatpak albano
-#1724539099
-id
-#1724539134
-paru -Sss visual-studio
-#1724539170
-paru -S visual-studio-code-bin
-#1724539199
-paru -S icu69
-#1724539445
-uname -a
-#1724539452
-paru -Sss linux
-#1724539469
-paru -Sss linux-
-#1724539481
-paru -Sss '^linux-'
-#1724539553
-paru -S tmon perf linux linux-headers 
-#1724539711
-paru -S linux-cachyos linux-cachyos-headers 
-#1724539851
-paru -R linux-cachyos linux-cachyos-headers 
-#1724539874
-sudo mkinitcpio -P
-#1724539888
-sudo grub-mkconfig -o /boot/grub/grub.cfg 
-#1724540071
-paru -R vlc-git 
-#1724540096
-paru -S vlc
-#1724540181
-flatpak search vlc
-#1724540209
-flatpak install org.videolan.VLC
-#1724540613
-paru -S gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
-#1724541445
-paru -Sss kitty
-#1724541476
-paru -S kitty
-#1724541494
-paru -S python-pygments
-#1724541568
-paru -Sss warp
-#1724541669
-cd .pyenv
-#1724541671
-ls -l
-#1724541720
-rm -rf plugins/python-build/share/python-build/3.13.0b2
-#1724541727
-pyenv 
-#1724541732
-pyenv versions
-#1724541784
-paru -Sss otf-
-#1724541846
-paru -S libertinus-font otf-hasklig-nerd 
-#1724541884
-paru -Ssss ttf-
-#1724542080
-paru -S ttf-hactor ttf-anonymouspro-nerd ttf-agave-nerd ttf-arimo-nerd 
-#1724542101
-paru -Sss cosmic-terminal
-#1724542112
-paru -S cosmic-terminal
-#1724542135
-paru -R cosmic-terminal
-#1724542645
-paru -Sss vsco
-#1724542655
-paru -Qss vsco
-#1724542665
-paru -R vscodium-bin 
-#1724542728
-paru -S vscodium-bin 
-#1724542749
-vscodium .
-#1724543096
-cargo install --list
-#1724767614
-pyenv
-#1724767621
-pyenv versions
-#1724767672
-vyenv activate eegDjango
-#1724767682
-pyenv activate eegDjango
-#1724767691
-pip freeze
-#1724767715
-transform --help
-#1724767749
-paru -S dbeaver
-#1724767783
-paru -S jre17-openjdk
-#1724767823
-cat /etc/profile.d/jre.sh 
-#1724767867
-archlinux-java 
-#1724767870
-archlinux-java status
-#1724767917
-paru -S dbeaver
-#1724767933
-paru -S dbeaver-plugin-svg-format 
-#1724767977
-yay -Sss vivaldi
-#1724768003
-paru -S vivaldi vivaldi-ffmpeg-codecs 
-#1724769849
-pip list -lo
-#1724769862
-pip install -U pip
-#1724769885
-pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
-#1724798696
-ps
-#1724798674
-flatpak update
-#1724798718
-doas pacman -Qs nvidia
-#1724798748
-fastfetch 
-#1724799760
-watch -n 1
-#1724799777
-watch -n 1 sensors
-#1724799845
-paru -Sss lm_sensors
-#1724799862
-sensord --help
-#1724799888
-sudo systemctl status sensord.service 
-#1724799896
-sudo systemctl enable sensord.service 
-#1724799903
-sudo systemctl start sensord.service 
-#1724799909
-sudo systemctl status sensord.service 
-#1724799981
-paru -Sss librrd
-#1724800020
-paru -S librrd
-#1724800026
-paru -Ssss librrd
-#1724800038
-paru -Ssss rrdtool
-#1724800045
-paru -S rrdtool
-#1724800057
-paru -S ruby
-#1724800089
-paru -S ruby-stdlib 
-#1724800105
-sudo systemctl status sensord.service 
-#1724800112
-sudo systemctl restart sensord.service 
-#1724800114
-sudo systemctl status sensord.service 
-#1724805883
-sensord --help
-#1724805906
-sensord
-#1724805909
-sudo sensord
-#1724805919
-sudo sensord -i 2
-#1724805973
-sudo sensors-detect 
-#1724806038
-sensors
-#1724807197
-paru -Si zed
-#1724807266
-cd github/zed
-#1724807278
-type -a zed
-#1724807289
-cd ..
-#1724807294
-rm -rf zed
-#1724807309
-cd ~/.local/bin/
-#1724807319
-cd ..
-#1724807332
-rm -rf zed-dev.app/
-#1724807336
-cd bin/
-#1724807345
-unlink shell-genie 
-#1724807349
-unlink zed
-#1724807355
-cd
-#1724807361
-paru -Si zed
-#1724807373
-paru -Sss zed
-#1724807388
-paru -Sss '^zed'
-#1724807399
-paru -S zed
-#1724807417
-paru -S eslint pyright
-#1724807427
-npm
-#1724807439
-nvm ls
-#1724807449
-ng 
-#1724807460
-nvm ls
-#1724807463
-nvm 
-#1724807490
-nvm uninstall v20.12.2 
-#1724807496
-nvm uninstall v20.13.1 
-#1724807501
-nvm uninstall v20.14.0 
-#1724807505
-nvm ls
-#1724807520
-nvm ls-remote 
-#1724807537
-nvm use v18.20.4
-#1724807552
-ng
-#1724807590
-npm i -g @angular/cli@16
-#1724807611
-nvm use v20.17.0 
-#1724807623
-nvm ls
-#1724807630
-npm i -g @angular/cli@17
-#1724814519
-sudo sensors -f
-#1724814537
-sudo sensors
-#1724814553
-paru -Ssss psensor
-#1724814559
-paru -S psensor
-#1724814682
-paru -Ssss concky
-#1724814686
-paru -Ssss conky
-#1724814745
-paru -Ssss qterminal
-#1724814782
-paru -Ssss terminal
-#1724814810
-paru -S joshuto
-#1724814851
-paru -R joshuto
-#1724814857
-paru -Ssss terminal
-#1724815140
-paru -Sssss foot 
-#1724815149
-paru -Sssss '^foot'
-#1724815172
-paru -S foot foot-terminfo
-#1724815195
-ls -l
-#1724815509
-paru -Rs foot foot-terminfo
-#1724815538
-paru -S qterminal
-#1724850194
-flatpak update
-#1724876689
-paru -R knotes
-#1724941336
-sudo sensors
-#1724941588
-sudo watch -n 1 sensors
-#1725113310
-paru -Syy
-#1725113326
-paru -Sss tlp
-#1725113358
-paru -Sss acpi
-#1725113377
-paru -S acpi_call-dkms
-#1725113450
-paru -Sss tp-smapi
-#1725113455
-paru -Sss tp_smapi
-#1725113487
-paru -S tp_smapi-dkms
-#1725119170
-paru -Sss tlp
-#1725119190
-paru -S tlp tp_smapi-dkms 
-#1725293573
-flatpak update 
-#1725293660
-tlp
-#1725293663
-tlp --help
-#1725293729
-paru -Sss tlp
-#1725293793
-sudo sensors
-#1725293830
-inxi -Fzf
-#1725293837
-inxi -Fxz
-#1725293958
-sudo sensors
-#1725294172
-lsk
-#1725294185
-bat
-#1725294191
-bat /etc/fstab 
-#1725294243
-mount --help
-#1725294320
-df
-#1725294337
-df -h
-#1725298105
-inxi
-#1725298120
-inxi -Fxz
-#1725298179
-fastfetch 
-#1725298196
-inxi --help
-#1725298215
-inxi -mxx
-#1725299097
-docker ps -a
-#1725299100
-docker images
-#1725299178
-docker run -dvh postgre16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
-#1725299187
-docker login
-#1725299251
-docker run -dvh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
-#1725299259
-docker login
-#1725299266
-docker run -dvh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
-#1725299280
-cat /etc/group
-#1725299287
-sudo docker login
-#1725299339
-docker run -dvh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
-#1725299376
-docker login
-#1725299824
-docker run -dvh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
-#1725299836
-sudo systemctl status docker
-#1725299852
-sudo systemctl status docker.socket 
-#1725299865
-sudo systemctl restart docker 
-#1725299982
-docker run -dvh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
-#1725300078
-docker run -dvh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres
-#1725300111
-docker run -dh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres
-#1725300311
-docker run -dh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
-#1725300355
-docker images
-#1725300365
-docker image rm postgres:latest 
-#1725300378
-docker image rm postgres:16-alpine 
-#1725300382
-docker image rm postgres:latest 
-#1725300392
-docker image rm -f postgres:latest 
-#1725300414
-docker ps -a
-#1725300426
-docker container rm -f b98
-#1725300429
-docker ps -a
-#1725300435
-docker run -dh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
-#1725300645
-paru -Sss docker
-#1725300703
-paru -S docker-rootless-extras 
-#1725300744
-paru -S fuse-overlayfs
-#1725300753
-sudo sensors
-#1725301824
-docker ps -a
-#1725301830
-docker ps
-#1725301834
-docker start pg16 
-#1725301877
-docker sp
-#1725301880
-docker ps
-#1725369970
-pyenv
-#1725369974
-pyenv versions
-#1725370001
-pyenv activate eegDjango 
-#1725370095
-pyenv dectivate eegDjango 
-#1725370100
-pyenv deactivate eegDjango 
-#1725410302
-paru -Sss docker
-#1725410352
-paru -S container-diff kdocker
-#1725410496
-paru -S quota
-#1725410503
-paru -S quota-tools 
-#1725413067
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/uninstall.sh)
-#1725413734
-nvim zshrc
-#1725413741
-nvim .zshrc
-#1725414766
-nvim .config/nvim
-#1725415994
-nvim 
-#1725418748
-cd github/
-#1725418763
-git clone git@github.com:joaobibiano/kickstart.nvim.git
-#1725418774
-cd kickstart.nvim/
-#1725418784
-cd lua
-#1725418798
+#1727876210
+find /etc/ -type f -wholename '*.kwinrc
+#1727876216
+find /etc/ -type f -wholename '*.kwinrc'
+#1727876225
+sudo find /etc/ -type f -wholename '*.kwinrc'
+#1727876256
+lsmod|rg nvidia
+#1727876284
+nvidia-smi 
+#1727876340
+lvim ~/.config/kwinrc 
+#1727913235
+cd .config/nvim/
+#1727913239
+cat init.lua 
+#1727913252
+cd lua/
+#1727913255
 cd custom/
-#1725418827
-cp -r core ~/.config/nvim/lua/custom/
-#1725418840
-cp -r plugins/* ~/.config/nvim/lua/custom/plugins/
-#1725418847
-cd ~/.config/nvim/lua/custom/plugins/
-#1725418853
-cd ..
-#1725418856
-cd ../..
-#1725418858
-nvim .
-#1725421411
-fastfetch 
-#1725421422
-sudo sensors
-#1725495310
-paru -R oh-my-zsh-git 
-#1725495440
-flatpak update 
-#1725495546
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-#1725495562
-curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-#1725495610
-env | rg ZD
-#1725495613
-env
-#1725495659
-export ZSH="/home/albano/.ohmyzsh"
-#1725495661
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-#1725497287
-mux info
-#1725497290
-tmux info
-#1725497303
-reset
-#1725497337
-cd .config/alacritty/
-#1725497344
-nvim alacritty.toml 
-#1725498369
-cd ~/github/dotfiles/tmux/
-#1725498373
-cd ..
-#1725498388
+#1727913258
+cd core/
+#1727913264
+cd //
+#1727913279
+lsk
+#1727913286
 cd
-#1725498400
-cd -
-#1725498402
-cd tmux/
-#1725498409
-nvim .tmux.conf 
-#1725500255
-/home/albano/.pyenv/versions/3.11.9/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
-#1725564828
-paru -Rs
-#1725564832
-paru -R --help
-#1725564841
-paru -Rd
-#1725564861
-paru -Ru
-#1725564922
-paru -Ru kfilemetadata5
-#1725564943
-paru -Ru libkcddb5
-#1725625811
-flatpak update 
-#1725625829
-paru -Sss beuty
-#1725625833
-paru -Sss beauty
-#1725625877
-paru -S aur/beautyline
-#1725636118
-cd github/
-#1725715352
-yay -Sss linux
-#1725715365
-yay -Sss '^linux'
-#1725715441
-cat /etc/pacman.d/mirrorlist
-#1725715778
-paru -S kmon
-#1725715786
-kmon
-#1725715797
-sudo kmon
-#1725715895
-yay -Sss '^linux'
-#1725716093
-paru -Si linux-tools
-#1725716102
-paru -Si linux-tools-meta 
-#1725716116
-paru -S linux-tools-meta 
-#1725716151
-paru -Si bootconfig 
-#1725716167
-paru -Si bfp
-#1725716171
-paru -Si bpf
-#1725757971
-bluetoothctl 
-#1725758093
-bluetoothctl --help
-#1725758477
-sct
-#1725758501
-sct 
-#1725759959
-sct docker ps -a
-#1725759968
-docker ps -a
-#1725759975
-docker start pg16 
-#1725759979
-docker ps
-#1725760066
-paru -Qs tela
-#1725760087
-paru -R tela-circle-icon-theme-git 
-#1725761753
-paru -S spectacle
-#1725761772
-sudo spectacle 
-#1725761798
-sudo export $(dbus-launch)
-#1725761802
-export $(dbus-launch)
-#1725762272
-paru -Sss flameshot
-#1725762280
-paru -S flameshot
-#1725762323
-paru -S grim
-#1725763614
-paru -Qm
-#1725763628
-paru -Qe
-#1725763682
-paru -Qi 
-#1725763714
-paru -Qs zvbi
-#1725763719
-paru -SSs zvbi
-#1725763722
-paru -Ssss zvbi
-#1725763734
-fastfetch 
-#1725763754
-sudo nvim /etc/pacman.conf 
-#1725798406
-rfn
-#1725798417
-paru -Qs surf
-#1725798729
-paru -Qs fluent
-#1725798748
-paru -R fluent-icon-theme-git fluent-kde-theme-git 
-#1725799181
-sudo lshw
-#1725799244
-sudo gtk-lshw
-#1725799520
-paru -Qs archcursor
-#1725799525
-paru -Qs arch-cursor
-#1725799547
-paru -R xcursor-arch-cursor-complete 
-#1725805795
-paru -Qs surf
-#1725805814
-paru -Qs orchis
-#1725805828
-paru -R orchis-kde-theme-git 
-#1725805874
-paru -Qs surf
-#1725806285
-paru -R surfn-arc-breeze-icons-git surfn-icons-git surfn-plasma-dark-icons-git surfn-plasma-light-icons-git 
-#1725806317
-paru -R arcolinux-plasma-theme-surfn-*
-#1725806371
-paru -R arcolinux-plasma-theme-surfn-arc-dark-git arcolinux-plasma-theme-surfn-nordic-git 
-#1725806377
-paru -R surfn-arc-breeze-icons-git surfn-icons-git surfn-plasma-dark-icons-git surfn-plasma-light-icons-git 
-#1725822437
-echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
-#1725822444
-echo -e "${PATH//:/\\n}" | sort -u
-#1725822727
-lvim ~/.bash_profile 
-#1725824541
-/home/albano/.pyenv/versions/3.11.9/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
-#1725825506
-cd git/projetosEEG/eegDjango/
-#1725825515
-zed .
-#1725840848
-fastfetch 
-#1725845751
-cd github/
-#1725845755
-git clone git@github.com:fgsamuel/exemplo_inline_form.git
-#1725845761
-cd exemplo_inline_form/
-#1725845773
-pyenv versions
-#1725845802
-pyenv virtualenv 3.11.9 inline_form
-#1725845815
-pyenv activate inline_form 
-#1725845825
-pip install -U pip
-#1725845833
-pip freeze 
-#1725845840
-pip install -U django
-#1725845883
-pip install -r requirements.txt 
-#1725845892
-pip list -l
-#1725845914
-manage.py makemigrations
-#1725845925
-./manage.py makemigrations
-#1725845968
-chmod 755 manage.py 
-#1725845972
-manage.py makemigrations
-#1725845979
-manage.py migrate
-#1725845988
-manage.py runserver
-#1725846048
-codium .
-#1725846073
-manage.py runserver
-#1725906502
-fastfetch 
-#1725906515
-uname -a
-#1725906913
-docker container ls
-#1725907194
-cd Desktop/
-#1725907327
-paru -Sss dbeaver
-#1725907377
-docker ps
-#1725907393
-docker exec -it pg16 bash
-#1725907702
-exi
-#1725911777
-paru -S google-chrome
-#1725911804
-paru -Qs google-chrome
-#1725911811
-paru -Rs google-chrome
-#1725913194
-paru -S google-chrome
-#1725913555
-exity
-#1725986223
-/home/albano/.pyenv/versions/3.11.9/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/deactivate/bash/envVars.txt
-#1726007863
-paru -Sss cachyos
-#1726018907
-flatpak update 
-#1726019100
-/home/albano/.pyenv/versions/3.11.9/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/deactivate/bash/envVars.txt
-#1726019986
-cd git/projetosEEG/eegDjango/
-#1726019992
-vscoium .
-#1726019995
-vscodium .
-#1726034755
-pip list -lo
-#1726034773
-pip install -U pip
-#1726034778
-pip install -U django
-#1726034813
-pip install -U pillow
-#1726034827
-pip install -U python-dateutil
-#1726034832
-six
-#1726034839
-pip install -U six
-#1726034850
-pip list -l
-#1726034879
-manage.py runserver
-#1726035098
-cd git/projetosEEG/eegDjango/
-#1726035106
-manage.py shell
-#1726035122
-manage.py createsuperuser
-#1726035875
-manage.py makemigrations
-#1726035901
-rm db.sqlite3 
-#1726035904
-manage.py makemigrations
-#1726036532
-manage.py migrate
-#1726036602
-manage.py makemigrations
-#1726036605
-manage.py migrate
-#1726036616
-manage.py createsuperuser
-#1726036655
-manage.py runserver
-#1726037978
-manage.py createsuperuser
-#1726038507
-manage.py makemigrations
-#1726038698
-manage.py migrate
-#1726038704
-manage.py makemigrations
-#1726038775
-manage.py migrate
-#1726038786
-manage.py makemigrations
-#1726038788
-manage.py migrate
-#1726038802
-rm db.sqlite3 
-#1726038805
-manage.py migrate
-#1726038811
-manage.py makemigrations
-#1726038822
-manage.py createsuperuser
-#1726038860
-manage.py runserver
-#1726042894
-/home/albano/.pyenv/versions/3.11.9/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/deactivate/bash/envVars.txt
-#1726059109
-cd Cursos/python/
-#1726059125
-pip list -l
-#1726059158
-pip install -U jupyterlab
-#1726059302
-cd Cursos/python/
-#1726059312
-pip install -U json
-#1726059319
-pip install -U datetime
-#1726059333
-pip install -U pandas
-#1726059345
-pip install -U numpy
-#1726059355
-pip install -U matplotlib
-#1726059365
-pip install -U scipy
-#1726059206
-jupyter-lab --port 15000 --notebook-dir $(pwd)  --browser firefox 
-#1726168574
-paru -Sss power-profiles
-#1726168602
-paru -S power-profiles-daemon
-#1726168630
-sudo systemctl status power-profiles-daemon.service 
-#1726168641
-sudo systemctl enable power-profiles-daemon.service 
-#1726173309
-flatpak update
-#1726173319
-flatpak-coredumpctl 
-#1726173338
-gdb --help
-#1726173407
-cd Desktop/
-#1726173417
-mv Desktop ICs
-#1726173427
-cd ICs/
-#1726174160
-echo $ID
-#1726174187
-. /etc/os-release
-#1726174191
-bat /etc/os-release
-#1726174202
-echo $ID
-#1726184273
-fastfetch 
-#1726191609
-ip --help
-#1726193091
-paru -Ssss postman
-#1726193103
-flatpak search postman
-#1726195865
-flatpak install com.getpostman.Postman
-#1726197675
-localectl 
-#1726197695
-localedef 
-#1726197699
-localedef --help
-#1726197711
-locale
-#1726197739
-lvim /etc/locale.gen
-#1726197756
-sudo locale-gen 
-#1726197774
-paru -Sss libreoffice
-#1726197799
-paru -Sss libreoffice-still-pt
-#1726197813
-paru -S libreoffice-still-pt-br 
-#1726197856
-paru -S libreoffice-extension-texmaths 
-#1726197883
-paru -S libreoffice-extension-languagetool 
-#1726218596
-paru -r libreoffice-extension-languagetool 
-#1726218603
-paru -R libreoffice-extension-languagetool 
-#1726314142
-vlc
-#1726333491
-UA
-#1726333767
-cat /etc/pass
-#1726333770
-cat /etc/passwd
-#1726333785
-flatpak update
-#1726336618
-exitr
-#1726419604
-cd github
-#1726419655
-git clone git@github.com:allbano/TrabalhoFinalDAC.git
-#1726419676
-cd TrabalhoFinalEDII/
-#1726419740
-gcm "Delete cnu/all and main/README.
-#1726419745
-gcm "Delete cnu/all and main/README."
-#1726419749
-gaa
-#1726419750
-gcm "Delete cnu/all and main/README."
-#1726419757
-cd .
-#1726419759
-.cd ..
-#1726419761
-cd ..
-#1726419768
-rm -rf TrabalhoFinalEDII/
-#1726419772
-cd TrabalhoFinalDAC/
-#1726419788
-mkdir ui
-#1726419794
-mkdir gateway
-#1726419801
-mkdir backend
-#1726419822
-mkdir rabbitmq
-#1726419830
-mkdir postgresql
-#1726419839
-mkdir mongodb
-#1726419859
-> ui/Dockerfile
-#1726419869
-> rabbitmq/Dockerfile
-#1726419873
-tree
-#1726419883
-> postgresql/Dockerfile
-#1726419892
-> mongodb/Dockerfile
-#1726419899
-> gateway/Dockerfile
-#1726419901
-tree
-#1726419909
-> backend/Dockerfile
-#1726419928
-> README.md
-#1726419931
-gaa
-#1726419947
-git branch main
-#1726420034
-gcm "Primeiro Commit. Adicionado README e estrutura de diretórios com os Dockerfiles vazios."
-#1726420044
-git logh
-#1726420046
-git log
-#1726420092
-paru -Ssss brmodelo
-#1726420122
-paru -S brmodelo
-#1726420297
-sudo sensors
-#1726490972
-paru -Qs teams
-#1726490984
-paru -Rs teams
-#1726490997
-flatpak search teams
-#1726491043
-flatpak install com.github.IsmaelMartinez.teams_for_linux
-#1726491113
-paru -Ssss teams
-#1726491310
-flatpak UNinstall com.github.IsmaelMartinez.teams_for_linux
-#1726491316
-flatpak uninstall com.github.IsmaelMartinez.teams_for_linux
-#1726491335
-paru -S teams_for_linux
-#1726491346
-paru -S teams-for-linux
-#1726492770
-cd github/TrabalhoFinalDAC/
-#1726492775
-cd ui
-#1726494505
-nvm ls
-#1726494521
-npm i -g npm
-#1726494560
-npm i -g @typescript@latest
-#1726494569
-npm i -g typescript
-#1726494589
-npm i -g @angular/cli
-#1726494613
-npm
-#1726494637
-npm ui -g @angular/cli
-#1726494642
-npm un -g @angular/cli
-#1726494660
-npm i -g @angular/cli17
-#1726494696
-npm i -g @angular/cli@17
-#1726509343
-fd "capa ufpr
-#1726509346
-fd "capa ufpr"
-#1726509354
-fd "capa ufpr" ~
-#1726533870
-tk
-#1726533873
-tk --help
-#1726533886
-tkmib --help
-#1726533906
-paru -Ssss yk
-#1726533911
-paru -Ssss tk
-#1726533921
-paru -Ssss '^tk'
-#1726533935
-tkmib --help
-#1726533942
-tkconch 
-#1726533945
-tkconch --help
-#1726533957
-sudo tkconch --help
-#1726533972
-tkmib --help
-#1726533983
-sudo perl -MCPAN -e 'install Tk'
-#1726534064
-perl
-#1726534071
-perl --help
-#1726534077
-perl -MCPAN -e 'install Tk'
-#1726534147
-sudo rm -rf /root/.cpan
-#1726534156
-sudo rm -rf .cpan
-#1726575448
-cd github/TrabalhoFinalDAC/
-#1726575468
-cd backend/
-#1726575476
-cd dac-server/
-#1726575511
-cd ..
-#1726575513
-cd documents/
-#1726575532
-cat PostgreSQL.txt 
-#1726575588
-cd ..
-#1726575594
-gaa
-#1726575622
-cd ..
-#1726575659
-du -h docs
-#1726575689
-git restore --staged docs
-#1726575754
-cd backend/
-#1726575758
-cd documents/
-#1726575765
-cd ..
-#1726575775
-mv documents ../postgresql/
-#1726575788
-mv dac-server/* ..
-#1726575805
-cd ..
-#1726575834
-git restore *
-#1726575849
-git restore backend/*
-#1726575905
-git mv .mvn backend/
-#1726575921
-mv .mvn backend/
-#1726575939
-mv mvn* backend/
-#1726575950
-mv pom.xml backend/
-#1726575967
-mv src backend/
-#1726576844
-gaa
-#1726577243
-cd backend/
-#1726577250
-cd dac-server/
-#1726577257
-cd ..
-#1726577263
-git rm dac-server
-#1726577268
-git rm -r dac-server
-#1726577340
-gcm "Organizada a pasta backend. Movido a pasta documents para postgresql."
-#1726577353
-cd ..
-#1726577356
-cd postgresql/
-#1726577360
-cd documents/
-#1726577465
-paru -Sssss cachyos
-#1726577586
-uname -a
-#1726578174
-paru -Ssss linux-cachyos
-#1726578281
-paru -S aur/linux-cachyos aur/linux-cachyos-headers
-#1726578367
-paru -Qi bps
-#1726578374
-paru -Qi bpf
-#1726578397
-paru -Rs bpf
-#1726578407
-paru -Rs scx-sheds bpf
-#1726578415
-paru -Rs scx-scheds bpf
-#1726578432
-paru -R scx-scheds bpf
-#1726578440
-jq
-#1726578451
-jq --help
-#1726578471
-paru -S jq
-#1726580015
-docker exec -it pg16 bash
-#1726580900
-docker container rm -f pg16 
-#1726581098
-docker system prune -a
-#1726581107
-docker images
-#1726581109
-docker images -a
-#1726581118
-docker run -dh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
-#1726581386
-docker ps
-#1726581434
-docker exec -it pg16 bash
-#1726583644
-cd
-#1726583653
-cd docker/
-#1726583659
-cd postgresql/
-#1726583679
-lvim appmarvel
-#1726583687
-lvim appmarvel-postgres16.yml 
-#1726583711
-cd dbReplication/
-#1726583713
-cd ..
-#1726583723
-cd dbReplication/
-#1726583726
-cat entrypoint_master 
-#1726583740
-cat init.sql 
-#1726583756
-cd ..
-#1726583761
-cd appmarvel/
-#1726583764
-cd ..
-#1726583780
-rm postgresql-16.3.tar.bz2 
-#1726583785
-cd postgresql16.3_github/
-#1726583795
-cat docker-ensure-initdb.sh 
-#1726712776
-seq 0 $(($(lvs | wc -l) - 1)) | xargs -I% mkdir -p /mnt/vol%/conf
-#1726712795
-lvs
-#1726712798
-sudo lvs
-#1726712804
-sudo lvs --help
-#1726713273
-cd github/laundry_online/
-#1726713278
-cd ui/
-#1726713319
-lvim package.json 
-#1726713328
-cd ../..
-#1726713333
-cd TrabalhoFinalDAC/
-#1726713342
-nvm ls
-#1726713351
-ng new ui
-#1726713818
-rm -rf ui
-#1726713834
-ng new ui
-#1726714453
-cat .gitignore 
-#1726714482
-cd u
-#1726714490
-> Dockerfile
-#1726714528
-cd ..
-#1726714537
-cat .gitignore 
-#1726714564
-cat ui/.gitignore 
-#1726714577
-lvim .gitignore 
-#1726714595
-cat ui/.gitignore >> .gitignore 
-#1726714598
-lvim .gitignore 
-#1726714679
-rm ui/.gitignore 
-#1726714693
-gaa
-#1726714764
-gcm "Adicionado Projeto Angular."
-#1726714801
-cd docker/
-#1726714809
-cd dockerfiles/
-#1726714812
-cd ..
-#1726714851
-cd postgresql/
-#1726714863
-cd SQL/
-#1726714869
-cat bantads.sql 
-#1726714872
-cd ..
-#1726714877
-cd template/
-#1726714880
-cd ..
-#1726714889
-cd appmarvel/
-#1726714899
-cd ..
-#1726714906
-rm -rf appmarvel
-#1726714911
-cat appmarvel-postgres16.yml 
-#1726714925
-cd ..
-#1726714943
-rm autosave.chc 
-#1726714965
-sidp rm Ajuda.brMh 
-#1726714982
-rm config.chc 
-#1726715000
-cd Cursos/
-#1726715016
-cd ..
-#1726715043
-cd github/bantads/
-#1726715051
-cat docker-compose-step-
-#1726715054
-cat docker-compose-step-0.yml 
-#1726715082
-/home/albano/.pyenv/versions/3.11.9/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/deactivate/bash/envVars.txt
-#1726715139
-cd db/
-#1726715144
-cat init.sql 
-#1726715175
-cd github/laundry_online/
-#1726715183
-bat docker-compose.yml 
-#1726715281
-cd postgres/
-#1726715281
-;
-#1726715285
-cd ..
-#1726715288
-rm -rf postgres
-#1726715293
-cat docker-entrypoint.sh 
-#1726715335
-cat master.dockerfile 
-#1726715415
-> docker-compose.yml
-#1726715434
-cat docker-compose.yml 
-#1726715450
-cat docker-compose.yml >> ../TrabalhoFinalDAC/docker-compose.yml 
-#1726715460
-cat docker-compose.yml
-#1726715562
-cd ..
-#1726715567
-cat docker-compose-step-0.yml 
-#1726715463
-lvim docker-compose.yml 
-#1726715753
-cd postgresql/
-#1726715768
-git mv Dockerfile pg16.dockerfile
-#1726715799
-cat dac_script.sql 
-#1726715926
-cd db
-#1726715940
-cat init.sql 
-#1726715976
-cat master.dockerfile 
-#1726716210
-cat pg16.dockerfile 
-#1726716214
-cd ..
-#1726716218
-lvim docker-compose.yml 
-#1726716578
-docker container ls -a
-#1726716587
-docker container rm pg16 
-#1726716590
-docker container ls -a
-#1726716626
-cat docker-entrypoint.sh 
-#1726716642
-cat init.sql
-#1726717038
-cp docker-entrypoint.sh ../../TrabalhoFinalDAC/postgresql/
-#1726717044
-cd ..
-#1726717049
-cd TrabalhoFinalDAC/
-#1726717058
-cd postgresql/
-#1726717066
-nvim docker-entrypoint.sh 
-#1726717226
-cd ..
-#1726717231
-cd postgresql/
-#1726716596
-lvim docker-compose.yml 
-#1726717496
-cd github/TrabalhoFinalDAC/
-#1726717533
-cd postgresql/
-#1726717501
-lvim docker-compose.yml 
-#1726717622
-docker-compose up --force-recreate -d
-#1726717641
-tree postgresql/
-#1726717670
-lvim docker-compose.yml 
-#1726717755
-docker-compose up --force-recreate -d
-#1726717820
-docker-compose down
-#1726717831
-docker-compose up
-#1726717952
-lvim docker-compose.yml 
-#1726717971
-docker-compose up
-#1726717996
-docker-compose down
-#1726718005
-docker system prune -a
-#1726718016
-docker-compose up -d
-#1726718067
-docker-compose down
-#1726718087
+#1727913288
+cd //
+#1727913291
+ls -l
+#1727913299
+cat version 
+#1727913308
+sudo rm version
+#1727913313
 cd 
-#1726718091
-cd github/laundry_online/
-#1726718076
-lvim docker-compose.yml 
-#1726718239
-docker-compose up -d
-#1726718256
-docker-compose down
-#1726718258
-lvim docker-compose.yml 
-#1726718274
-docker-compose up -d
-#1726718339
-docker-compose down
-#1726718344
-cd postgresql/
-#1726718348
-lvim doc
-#1726718355
-lvim docker-entrypoint.sh 
-#1726718435
-lvim docker-compose.yml 
-#1726718439
-cd ..
-#1726718440
-lvim docker-compose.yml 
-#1726718461
-docker volume 
-#1726718463
-docker volume ls
-#1726718468
-docker volume prune
-#1726718471
-docker volume ls
-#1726718484
-docker volume rm trabalhofinaldac_empresa-area 
-#1726718097
-lvim docker-compose.yml 
-#1726718496
-cd ..
-#1726718498
-cd bantads/
-#1726718504
-cat docker-compose-step-0.yml 
-#1726718537
-cat docker-compose-step-1.yml 
-#1726718621
-lvim docker-compose.yml 
-#1726718788
-cd github/TrabalhoFinalDAC/
-#1726719107
-ps aux | rg alacr
-#1726719124
-killall --help
-#1726718791
-lvim docker-compose.yml 
-#1726719300
-docker volume ls
-#1726719305
-cd github/TrabalhoFinalDAC/
-#1726719308
-lvim docker-compose.yml 
-#1726719370
-docker-compose up -d
-#1726719414
-docker-compose down
-#1726719417
-docker-compose up
-#1726719431
-docker-compose down
-#1726719436
-docker volume ls
-#1726719439
-docker volume rm trabalhofinaldac_empresa-area 
-#1726719444
-docker-compose up
-#1726719655
-docker-compose down
-#1726719677
-docker volume rm trabalhofinaldac_empresa-area 
-#1726719688
-lvim docker-compose.yml 
-#1726719731
-cd postgresql/
-#1726719732
-;
-#1726719740
-cat init_corrected.sql 
-#1726719769
-cd ..
-#1726719774
-lvim docker-compose.yml 
-#1726719808
-cd postgresql/
-#1726719817
-rm init.sql 
-#1726719825
-mv init_corrected.sql init.sql
-#1726719843
-lvim docker-entrypoint.sh 
-#1726719880
-lvim init.sql 
-#1726719918
-lvim doc
-#1726719925
-lvim docker-entrypoint.sh 
-#1726719931
-lvim init.sql 
-#1726719945
-docker-compose up
-#1726720078
-docker-compose down
-#1726720086
-docker volume rm trabalhofinaldac_empresa-area 
-#1726720090
-docker volume rm ls
-#1726720095
-docker volume ls
-#1726720106
-lvim docker-entrypoint.sh 
-#1726720134
-lvim init.sql 
-#1726720142
-cd ..
-#1726720179
-cd github/TrabalhoFinalDAC/
-#1726720185
-lvim docker-compose.yml 
-#1726720270
-cd postgresql/
-#1726720276
-rm dac_script.sql 
-#1726720280
-rm pg16.dockerfile 
-#1726720284
-gaa
-#1726720358
-gcm "Adicionado docker-compose ao projeto (primeiro container de banco de dados)."
-#1726720152
-docker-compose up
-#1726720593
-docker-compose up -d
-#1726720631
-code .
-#1726720647
-cd ..
-#1726720655
-cd AppMarvelAluguel/
-#1726720660
-vscodium .
-#1726721550
-gaa
-#1726721589
-gcm "Alterado README da raiz do projeto com as últimas alterações."
-#1726721934
-cd postgresql/
-#1726722830
-cd ..
-#1726722837
-docker-compose down
-#1726723997
-docker volume ls
-#1726724045
-docker volume rm trabalhofinaldac_empresa-area 
-#1726724054
-cat docker-compose.yml 
-#1726724118
-docker volume create empresa-area
-#1726724128
-docker-compose up -d
-#1726724133
-docker volume ls
-#1726724146
-docker-compose down
-#1726724150
-docker volume ls
-#1726724154
-docker volume rm trabalhofinaldac_empresa-area 
-#1726724161
-lvim docker-compose.yml 
-#1726724192
-docker-compose up -d
-#1726724195
-docker volume ls
-#1726724207
-docker volume prune 
-#1726724212
-docker volume ls
-#1726724219
-docker volume rm empresa-area 
-#1726724225
+#1727913315
+cd /
+#1727913341
 docker ps -a
-#1726724228
-docker ps
-#1726724233
-docker-compose down
-#1726766164
-cat /etc/mkinitcpio.conf
-#1726766242
-cd /etc/mkinitcpio.conf.d/
-#1726766245
-cd ..
-#1726766250
-cd /etc/mkinitcpio.d
-#1726766259
-cat linux-cachyos.preset.pacsave 
-#1726766296
-sudo nvim linux-cachyos.preset.pacsave 
-#1726766328
-sudo nvim linux.preset 
-#1726766363
-sudo mkinitcpio -P
-#1726766386
-sudo grub-mkconfig -o /boot/grub/grub.cfg 
-#1726766398
-flatpak update 
-#1726766562
-paru -Sss "spring suite"
-#1726766570
-paru -Sss "spring tools"
-#1726766581
-paru -Sss "sts"
-#1726766650
-paru -Sss "spring"
-#1726766673
-paru -S aur/spring-tools-suite
-#1726766683
-paru -S aur/spring-tool-suite
-#1726766696
-java
-#1726766701
-paru -S aur/spring-tool-suite
-#1726766828
-cd /opt
-#1726766842
-rm -rf sts
-#1726766845
-rm -rf sts4
-#1726766854
-paru -S aur/spring-tool-suite
-#1726772229
-yay
-#1726772257
-sudo pacman -Sss paru 
-#1726772285
-yay -Sss paru
-#1726772293
-yay -R paru-git 
-#1726772315
-yay -S paru-git 
-#1726772336
-paru -S devtools
-#1726772415
-paru -Si nvchecker
-#1726779796
-tree --help
-#1726779801
-tree -L1
-#1726779804
-tree -L2
-#1726779839
-tree -dL2
-#1726779859
-docker 
-#1726779873
-paru -Qs docker
-#1726779902
-cd github/\
-#1726779905
-cd github/
-#1726779907
-cd TrabalhoFinalDAC/
-#1726779935
-git branch -l
-#1726779943
-git branch 
-#1726779946
-git branch --help
-#1726779957
-git branch -a
-#1726779984
-git pull --help
-#1726780026
-git diff docker-compose.yml
-#1726780033
-docker volume ls
-#1726780046
-gaa 
-#1726780083
-gcm "Fix: corrigido problema com nome de volume."
-#1726780951
-uname -a
-#1726780959
-paru -Ssss linux
-#1726780972
-paru -Ssss "^linux"
-#1726781064
-paru -Ssss linux-tools
-#1726781113
-paru -S linux-tools-meta 
-#1726781154
-bpf --help
-#1726781174
-paru -Qi bpf
-#1726783595
-cd github/TrabalhoFinalDAC/
-#1726783604
-git branch -a
-#1726783620
-git checkout Leandro 
-#1726783631
-glo
-#1726783651
-git branch -a
-#1726783663
-git branch luizsenji
-#1726783689
-git branch main
-#1726783700
-git checkout luizsenji
-#1726783732
-gl -u origin luizsenji
-#1726783768
-git pull -u origin luizsenji
-#1726783785
-git pull --set-upstream origin luizsenji
-#1726783806
-git pull --set-upstream origin main
-#1726783816
-git checkout main
-#1726783833
-git branch
-#1726783842
-git branch --help
-#1726783883
-git branch -a
-#1726783889
-git checkout renan
-#1726783909
-cd gateway/
-#1726783909
-k
-#1726783940
-git checkout luizsenji 
-#1726783963
-cd ..
-#1726783970
-git log
-#1726784002
-git checkout main
-#1726784038
-git branch -a
-#1726784264
-git checkout luizsenji 
-#1726784293
-git checkout renan 
-#1726784303
-git log
-#1726784332
-git branch
-#1726784355
-git checkout luizsenji 
-#1726784402
-cat docker-compose.yml 
-#1726784425
-cd ui
-#1726784431
-lglol
-#1726784452
-cd ..
-#1726784454
-cd backend/
-#1726784467
-git checkout Leandro 
-#1726784478
-ls 
-#1726784482
-cd src
-#1726784486
-cd main/
-#1726784490
-cd java/
-#1726784492
-cd dac
-#1726784497
-cd controller/
-#1726784517
-git checkout renan 
-#1726784524
-cd ../../../..
-#1726784528
-cd ../..
-#1726784531
-cd gateway/
-#1726784545
-cat index.js 
-#1726784558
-git checkout luizsenji 
-#1726784936
+#1727988142
+cd $DOTFILES
+#1727988151
+gl -v --all
+#1727988176
 git checkout main 
-#1726784939
-cd ..
-#1726784943
-cat docker-compose.yml 
-#1726784978
-cat postgresql/init.sql 
-#1726785851
-git merge origin/renan 
-#1726785884
-git merge origin/Leandro 
-#1726785903
-git branch -a
-#1726795851
-paru -Ssss libertinus
-#1726795875
-flatpak update
-#1726795952
-cd github/TrabalhoFinalDAC/
-#1726795960
-git checkout luizsenji 
-#1726796032
-git pull origin main
-#1726796167
-git pull origin main --no-ff
-#1726796192
-cat docker-compose.yml 
-#1726796243
-git checkout main
-#1726796265
-git merge origin/luizsenji 
-#1726796428
-git checkout --help
-#1726796508
-git checkout -B albano
-#1726796518
-git branch -l
-#1726796521
-git branch -a
-#1726796569
-cd github/laundry_online/
-#1726796573
-cd ui/
-#1726796579
-bat Dockerfile 
-#1726796632
-nvm ls
-#1726796638
-nvm
-#1726796671
-nvm ls-remote 
-#1726796533
-lvim docker-compose.yml 
-#1726796781
-cd mongodb/
-#1726797155
-cd ..; cat docker-compose.yml
-#1726797672
-cd ..
-#1726797909
-paru -Sss compass
-#1726797675
-lvim docker-compose.yml 
-#1726798452
-cd postgresql/
-#1726798458
-lvim docker-entrypoint.sh 
-#1726798586
-cd ..
-#1726798588
-lvim docker-compose.yml 
-#1726799996
-cd postgresql/
-#1726799996
-;
-#1726800004
-lvim docker-entrypoint.sh 
-#1726800026
-cd ..
-#1726800034
-docker-compose up -d
-#1726800046
-docker volume ls
-#1726800049
-docker volume rm empresa-aerea 
-#1726800054
-docker-compose up -d
-#1726800060
-lvim docker-compose.yml 
-#1726800080
-docker-compose up -d
-#1726800114
-ghst
-#1726800142
-cd postgresql/
-#1726800143
-l;
-#1726800147
-cat docker-entrypoint.sh 
-#1726800153
-cd ..
-#1726800158
-lvim docker-compose.yml 
-#1726800213
-docker ps 
-#1726800247
-paru -Sss compass
-#1726800261
-paru -S mongodb-compass
-#1726800453
-paru -Sss brmodelo
-#1726800687
-cd mongodb/
-#1726800708
-ns mongo-init.sh
-#1726800831
-rm Dockerfile 
-#1726800835
-cd ..
-#1726800838
-lvim docker-compose.yml 
-#1726801075
-cd mongodb/
-#1726801079
-rm -rf mongo-init.sh 
-#1726801093
-lvim init.js
-#1726801165
-cd ..
-#1726801168
-lvim docker-compose.yml 
-#1726801232
-docker-compose down
-#1726801238
-docker network ls
-#1726801249
-docker volume ls
-#1726801255
-docker volume prune
-#1726801259
-docker volume ls
-#1726801264
-docker volume rm empresa-aerea-*
-#1726801268
-docker volume rm empresa-aerea-mongo 
-#1726801272
-docker volume rm empresa-aerea-pg 
-#1726801276
-docker volume ls
-#1726801285
-lvim docker-compose.yml 
-#1726801338
-docker-compose up -d
-#1726801372
-docker ps -a
-#1726801445
-cat docker-compose.yml 
-#1726801597
-gaa
-#1726801602
-docker-compose down
-#1726801685
-gcm "Adicionado nosql mongo no docker-compose e inicializado com auth/usuario."
-#1726801699
+#1727988203
+git checkout debian_testing 
+#1727988208
+gl -v
+#1727988227
 git checkout main 
-#1726801709
-git merge origin albano
-#1726801717
-git merge albano main
-#1726801741
-git checkout albano
-#1726801772
-gp -u origin albano
-#1726801807
-git checkout main
-#1726801814
-gp -u origin main
-#1726801827
-bat docker-compose.yml 
-#1726801963
-cd mongodb/
-#1726801966
-cat init.js 
-#1726801972
-lvim init.js 
-#1726802138
-cd ..
-#1726802188
-exity
-#1726838015
-paru -R kdocker 
-#1726841850
-rg /etc/passwd
-#1726841877
-cat /etc/passwd
-#1726841968
-rg daemon /etc/passwd
-#1726841999
-grep daemon /etc/passwd
-#1726842007
-rg daemon /etc/passwd
-#1726842065
-wc -l < /etc/passwd
-#1726861180
-flatpak update 
-#1726861190
-flatpak-coredumpctl --help
-#1726861211
-flatpak --help
-#1726861243
-flatpak list
-#1726861327
-help
-#1726861336
-dirs
-#1726861340
-dirs -v
-#1726926537
--ua
-#1726927102
-flatpak update 
-#1726931916
-help
-#1726932003
-type -a pwd
-#1726932022
-pwd --help
-#1726932031
-pwd -L
-#1726932034
-pwd -LP
-#1726932044
-pwd -P
-#1726932060
-/usr/bin/pwd --help
-#1726932132
-shopt
-#1726932187
-trap --help
-#1726932245
-trap -l
-#1726932251
-trap -p
-#1726932387
-help cd
-#1726932394
-help pwd
-#1726960217
-paru -S qbittorrent
-#1726962842
-docker ps -a
-#1726962955
-docker run -dh postgres16 --name postgres16 -p 45432:5432 -e POSTGRES_PASSWORD=testing postgres
-#1726962991
-docker images
-#1726963005
-docker ps
-#1726972271
-mkdir ssdext
-#1726972389
-id
-#1726972413
-sudo mount -o uid=1001,gid=1001 /dev/sda1 ~/ssdext
-#1727013888
-docker ps -a
-#1727013899
-docker container start postgres16 
-#1727017494
-cd Desktop/BD3/
-#1727048397
-inxi
-#1727048402
-inxi --help
-#1727048408
-inxi -Mx
-#1727048410
-inxi -Mxx
-#1727048411
-inxi -Mxxx
-#1727048418
-sudo inxi -Mxxx
-#1727053224
-paru -Sss distrobox
-#1727054357
-subl --version
-#1727054976
-cd github/
-#1727054981
-cd TrabalhoFinalDAC/
-#1727054984
-subl .
-#1727055198
-paru -Sss sublime
-#1727055262
-paru -R sublime-text-4 
-#1727055280
-paru -S aur/sublime-text-dev
-#1727055775
-rm -rf ~/.config/sublime-text
-#1727101365
-cairo --help
-#1727101371
-paru -Qi cairo
-#1727101401
-flatpak update
-#1727101714
-omz 
-#1727101951
-paru -Ssss distrobox
-#1727101959
-paru -S distrobox
-#1727101973
-paru -S podman
-#1727102011
-paru -S podman-compose podman-docker
-#1727102024
-paru -S podman-compose
-#1727102047
-paru -S python-dotenv ipython
-#1727102073
-paru -S python-dotenv
-#1727102093
-fastfetch 
-#1727102138
-distrobox --help
-#1727102158
-distrobox ls
-#1727102175
-paru -Qs run
-#1727102177
-paru -Qs runc
-#1727102262
-distrobox --help 
-#1727102266
-distrobox list
-#1727102300
-sudo systemctl enable podman
-#1727102306
-sudo systemctl start podman
-#1727102311
-sudo systemctl status podman
-#1727102321
-sudo systemctl status docker
-#1727102553
-distrobox create --help
-#1727102577
-distrobox create -i Alpine:3.19
-#1727102642
-paru -S runc
-#1727102650
-distrobox create -i Alpine:3.19
-#1727102668
-runc --version
-#1727102678
-distrobox --version
-#1727102725
-docker
-#1727102732
-sudo systemctl status docker
-#1727102743
-docker 
-#1727102770
-distrobox
-#1727102777
-distrobox version
-#1727102794
-distrobox create -i Alpine:3.19
-#1727102995
-ls -l $(which runc)
-#1727103026
-docker info | grep Runtimes
-#1727103095
-set |rg DIS
-#1727103265
-podman info | grep Runtimes
-#1727103289
-paru -R podman{,-compose}
-#1727103300
-docker info | grep Runtimes
-#1727103305
-distrobox create -i Alpine:3.19
-#1727103444
-distrobox-create --name Alpine -i alpine:latest
-#1727113165
-ala
-#1727115010
-docker container start postgres16 
-#1727119158
-distrobox-list 
-#1727119176
-distrobox-enter --help
-#1727119262
-distrobox-enter Alpine
-#1727119365
-apk
-#1727119375
-apk add fastfetch
-#1727119382
-sudo apk add fastfetch
-#1727119389
-fastfetch 
-#1727119341
-distrobox-enter Alpine -- bash -l
-#1727119413
-fastfetch 
-#1727120665
-cd git
-#1727120669
-cd test
-#1727120673
-cd testes/
-#1727120677
-cd ..
-#1727120683
-cd testAngular17/
-#1727120692
-subl .
-#1727121043
-code .
-#1727121107
-cd ..
-#1727121118
-rm -rf testAngular17
-#1727121133
-cat notas.txt 
-#1727129103
-cd Desktop/Governanca/
-#1727129126
-lvim Atividade4_Ate.txt
-#1727134536
-mv Atividade4_Ate.txt Aula23_09_2024_Atividade4.txt
-#1727210790
-sudo ln -sf /etc/bash_completion.d/systemctl /home/albano/github/dotfiles/bash-completion/systemctl 
-#1727210876
-sudo find /usr/share/bash-completion/completions/ -name 'tmux*' 2> /dev/null -exec source {} \;
-#1727210903
-ll /usr/share/bash-completion/completions/
-#1727210909
-ll /usr/share/bash-completion/completions/t*
-#1727210952
-sudo ln -sf /usr/share/bash-completion/completions/tmux /home/albano/github/dotfiles/bash-completion/tmux_completion 
-#1727210969
-sudo ln -sf /usr/share/bash-completion/completions/doas /home/albano/github/dotfiles/bash-completion/doas
-#1727210983
-ll /usr/share/bash-completion/completions/glow*
-#1727210991
-glow 
-#1727210994
-glow --help
-#1727210999
-paru -Si glow
-#1727211005
-paru -S glow
-#1727211013
-glow --help
-#1727211055
-pip --version
-#1727211125
-paru -Sss gns3
-#1727211169
-paru -S gns3-server gns3-gui gns3-converter
-#1727211298
-paru -Sss python-cx
-#1727211321
-paru -Sss python-cx-freeze-git
-#1727211326
-paru -S python-cx-freeze-git
-#1727211375
-pyenv versions
-#1727211408
-paru -Qs gns
-#1727211543
-pyenv versions
-#1727211548
-python --version
-#1727211646
-fastfetch 
-#1727211652
-distrobox --help
-#1727211658
-distrobox list
-#1727212289
-distrobox-rm Alpine
-#1727212305
-distrobox-list 
-#1727212310
-docker ps -a
-#1727212320
-docker container start postgres16 
-#1727212497
-distrobox-create --root --name alpine -i alpine:latest
-#1727212534
-distrobox-enter --root alpine
-#1727212599
-distrobox-enter --root alpine bash
-#1727212619
-distrobox-create --root --name alpine -i alpine:latest
-#1727212665
-fastfetch
-#1727212674
-apk search fastfetch
-#1727212680
-apk add fastfetch
-#1727212684
-sudo apk add fastfetch
-#1727212691
-fastfetch
-#1727212638
-distrobox enter --root alpine
-#1727212759
-source ~/.bashrc
-#1727212770
-echo $PS1
-#1727212796
-PS1=$PS1
-#1727212801
-uname -a
-#1727212803
-fastfetch 
-#1727213794
-chsh --help
-#1727213799
-chsh -l
-#1727213944
-sudo chsh -s /usr/bin/zsh
-#1727213950
-chsh -s /usr/bin/zsh
-#1727215111
-distrobox-enter --help
-#1727215126
-distrobox-list
-#1727215134
-distrobox-enter -n alpine
-#1727215171
-distrobox-enter --help
-#1727215190
-distrobox --help
-#1727215231
-fastfetch 
-#1727215223
-distrobox enter alpine
-#1727215624
-chsh
-#1727215811
-fastfetch 
-#1727215825
-cd github/dotfiles/
-#1727215836
-git diff
-#1727215923
-git diff alacritty/alacritty.toml alacritty/alacritty.toml.bak
-#1727215932
-rm  alacritty/alacritty.toml.bak
-#1727215943
-git diff bash/bashrc
-#1727215964
-git diff bash/profile_archnote
-#1727215969
-asdf
-#1727215999
-cat bash/profile_alldeb 
-#1727216011
-cat bash/profile_archnote 
-#1727216034
-git restore bash/bashrc 
-#1727216049
-git diff bash/profile_archnote
-#1727216063
-git restore bash/profile_archnote 
-#1727216094
-git restore bash-completion/*
-#1727216102
-git diff
-#1727216120
-cd github/
-#1727216173
-cd
-#1727216174
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
-#1727219774
-rm -rf .asdf
-#1727219777
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
-#1727219790
-cd .asdf
-#1727219803
-git switch -
-#1727219812
-git branch
-#1727219816
-git branch --list
-#1727219836
-paru -Qs asdf
-#1727219845
-git branch -a
-#1727219916
-git checkout -b v0.14.1
-#1727219924
-cd ..
-#1727219928
-rm -rf .asdf
-#1727219935
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
-#1727219967
-cd .asdf
-#1727219981
-git branch -a
-#1727220085
-git branch
-#1727220088
-git branch --help
-#1727220238
-git clone git@github.com:asdf-vm/asdf.git ~/.asdf --branch v0.14.1
-#1727220244
-rm -rf .asdf
-#1727220246
-git clone git@github.com:asdf-vm/asdf.git ~/.asdf --branch v0.14.1
-#1727220265
-rm -rf .asdf
-#1727220270
-git clone git@github.com:asdf-vm/asdf.git ~/.asdf --branch asdf:v0.14.1
-#1727220289
-git clone git@github.com:asdf-vm/asdf.git ~/.asdf
-#1727220297
-cd .asdf/
-#1727220305
-git branch -l
-#1727220307
-git branch -a
-#1727220390
-lvim ~/.bash_profile 
-#1727220409
-asdf
-#1727220420
-lvim ~/.bash_profile 
-#1727220444
-cat .asdf/completions/asdf.bash 
-#1727220511
-cd /usr/share/bash-completion/
-#1727220514
-cd completions/
-#1727220524
-ll do*
-#1727220542
-cd /etc/bash_completion.d/
-#1727220556
-sudo ln --help
-#1727220608
-sudo ln -sf /home/albano/github/dotfiles/bash-completion/tmux_completion /etc/bash_completion.d/tmux
-#1727220617
-sudo ln -sf /home/albano/github/dotfiles/bash-completion/doas /etc/bash_completion.d/doas
-#1727220635
-sudo ln -sf /home/albano/github/dotfiles/bash-completion/systemctl /etc/bash_completion.d/systemctl
-#1727220650
-sudo ln -sf /home/albano/github/dotfiles/bash-completion/glow /etc/bash_completion.d/glow
-#1727220677
-sudo ln -sf /home/albano/github/dotfiles/bash-completion/pip /etc/bash_completion.d/pip
-#1727220780
-ps
-#1727220869
-ps aux | rg bash
-#1727220911
-kill -9 
-#1727220916
-kill -9 3351
-#1727220997
-ps
-#1727221002
-ps aux | rg bash
-#1727221020
-ps
-#1727221045
-kill -9 6476 
-#1727221049
-ps aux | rg bash
-#1727221097
-ps
-#1727221137
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727221200
-cat ~/github/dotfiles/alacritty/alacritty.toml 
-#1727221301
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727221378
-ps
-#1727221424
-echo $XDG_CONFIG_HOME 
-#1727221436
-echo $XDG_CONFIG_HOME/alacritty/
-#1727221448
-cat $XDG_CONFIG_HOME/alacritty/alacritty.toml 
-#1727221464
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727221687
-pts
-#1727221690
-ps
-#1727221702
-ps aux | rg bash
-#1727221728
-pts
-#1727221731
-ps
-#1727221747
-bash --help
-#1727221775
-ps
-#1727221791
-xit
-#1727221772
-bash --login
-#1727221724
-bash -l
-#1727221808
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727221816
-cd .config/alacritty
-#1727221847
-rm Albano-Dkeg-Vw.yml 
-#1727221867
-rm alacritty.yml 
-#1727221874
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727221892
-rm default.yml 
-#1727221897
-cat default.toml 
-#1727221915
-cat /home/albano/.config/alacritty/themes2/Gnometerm.yml
-#1727221985
-rm config.chc autosave.chc 
-#1727221999
-ps
-#1727222010
-cd github/dotfiles/alacritty/
-#1727222017
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727222136
-ps
-#1727222242
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727222343
-ps
-#1727222436
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727222687
-tmux --help
-#1727222787
-tmux list-sessions 
-#1727222944
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727223083
-ps
-#1727223272
-tmux
-#1727223301
-sct status tmp.mount 
-#1727223312
-sct status tlp.service 
-#1727223334
-tmux list-windows 
-#1727223370
-cd github/dotfiles/alacritty/
-#1727223379
-git restore *
-#1727223396
-git restore alacritty.yml 
-#1727223402
-git restore default.yml 
-#1727223412
-git restore Albano-Dkeg-Vw.yml 
-#1727223417
-cat Albano-Dkeg-Vw.yml 
-#1727223427
-lvim alacritty.yml 
-#1727223511
-bash --help
-#1727223629
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727223246
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727223670
-ps
-#1727223694
-lvim ~/github/dotfiles/alacritty/alacritty.yml 
-#1727223733
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727223804
-ps
-#1727223813
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727223884
-ps
-#1727223887
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727223904
-ps
-#1727223916
-cat ~/github/dotfiles/alacritty/alacritty.toml 
-#1727224077
-ps
-#1727224079
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727224102
-ps
-#1727224155
-lvim ~/github/dotfiles/alacritty/alacritty.toml 
-#1727224258
-ps
-#1727224461
+#1727988240
+git merge debian_testing 
+#1727988895
+git checkout arcolinux
+#1727988899
+git merge debian_testing 
+#1727988913
+gp -v --all
+#1727988944
+gcm "Merge debian_testing"
+#1727989006
+git diff main..arcolinux 
+#1727989010
+git diff main..debian_testing 
+#1727989018
+git diff debian_testing..arcolinux 
+#1727989033
+type -a updateDotfiles 
+#1727989210
 updateDotfiles 
+#1727989229
+cd $DOTFILES/scripts/
+#1727989233
+lvim functionsInitBash 
+#1727989325
+cd $DOTFILES
+#1727989331
+cd scripts/
+#1727989333
+lvim functionsInitBash 
+#1727989503
+type -a git_current_branch 
+#1727989508
+type -a updateDotfiles 
+#1727989516
+updateDotfiles 
+#1727989532
+cd $DOTFILES/scripts/
+#1727989536
+lvim functionsInitBash 
+#1727989563
+git config -l
+#1727989586
+gp -v -u origin arcolinux
+#1727989752
+cd $DOTFILES
+#1727989759
+git am --help
+#1727989786
+git am -h
+#1727989827
+git apply -h
+#1727989889
+git diff --dirstat
+#1727989897
+git diff --histogram 
+#1727989913
+updateHis 
+#1727989977
+cd scripts/
+#1727989981
+lvim functionsInitBash 
+#1727990058
+glol -1
+#1727990071
+git reset --hard HEAD~1
+#1727990093
+gl -v -f
+#1727990108
+glol -5
+#1727990161
+gl -v --all
+#1727990283
+git reset --hard 2b46868
+#1727990287
+glol -5
+#1727990298
+type -a updateHis 
+#1727989631
+lvim ~/.bash_aliases 
+#1727990460
+updateDotfiles 
+#1727990475
+type -a updateDotfiles 
+#1727990489
+cd $DOTFILES
+#1727990567
+type -a updateDotfiles 
+#1727990573
+updateDotfiles 
+#1727990584
+cd bash
+#1727990590
+cat bash_functions 
+#1727990598
+cd ..
+#1727990599
+cd scripts/
+#1727990602
+cat functionsInitBash 
+#1727990615
+git config -l
+#1727990650
+type -a updateDotfiles 
+#1727990654
+type -a updateHis 
+#1727990664
+lvim functionsInitBash 
+#1727990759
+source functionsInitBash 
+#1727990769
+type -a updateHis 
+#1727990773
+type -a updateDotfiles 
+#1727990787
+updateDotfiles 
+#1727990848
+cd bin
+#1727990852
+lvim functionsInitBash 
+#1727990908
+cd $DOTBASH
+#1727991181
+git gui -h
+#1727991542
+cd $DOTFILES
+#1727991544
+gfg
+#1727991560
+git ls-fi
+#1727991565
+git ls-files
+#1727991804
+gitk
+#1727991906
+gsps
+#1727992020
+gwch
+#1727992170
+gk
+#1727992320
+gss
+#1727992330
+gsb
+#1727992852
+gcount
+#1727992869
+git shortlog 
+#1727993113
+gg
+#1727993228
+gtl
+#1727995627
+pullDotfiles 
+#1727995636
+cd $DOTFILES
+#1727995748
+git fetch 
+#1727995756
+git fetch origin
+#1727995764
+git fetch -v origin
+#1727996053
+type -a pullDotfiles 
+#1727996060
+type -a updateHis 
+#1727996084
+cd scripts/
+#1727996086
+lvim functionsInitBash 
+#1727996146
+ga $DOTBASH/bash_aliases 
+#1727996230
+gcm "refact: Neatly organized all Git aliases."
+#1727996239
+gs
+#1727996269
+gss
+#1727996282
+gaa
+#1727996499
+gcm "refact: function names (updateDotfile >> pullDotfiles, updateHist >> pushHist) and both updated."
+#1727996511
+gp -v --all
+#1727996530
+git checkout main
+#1727996536
+git merge --help
+#1727996595
+git merge -e arcolinux 
+#1727996608
+git config
+#1727996610
+git config -l
+#1727996663
+glol -5
+#1727996686
+gp -v --all
+#1727996757
+~/github
+#1727996807
+git clone git@github.com:allbano/bd3.git ~/github/bd3
+#1727996812
+cd bd3
+#1727996914
+cd ..
+#1727996938
+rm -rf .idea
+#1727996959
+cd Julia/
+#1727996961
+cd ..
+#1727997095
+help 
+#1727997380
+cd AppMarvelAluguel/
+#1727997402
+cd Desktop/BD3/
+#1727997416
+cd ..
+#1727997423
+cd MPN/
+#1727997425
+cd .
+#1727997433
+cd ..
+#1727997440
+cd git
+#1727997442
+cd ..
+#1727997446
+cd gitlab/
+#1727997448
+cd ..
+#1727997474
+cd cd git
+#1727997477
+cd git
+#1727997488
+cd ..
+#1727997491
+cd github/
+#1727997495
+cd AppMarvelAluguel/
+#1727997502
+cd ..
+#1727997509
+cd docker/
+#1727997513
+cd postgresql/
+#1727997521
+cd SQL
+#1727997525
+cat bantads.sql 
+#1727997527
+cd ..
+#1727997542
+cd dockerfiles/
+#1727997545
+cd ..
+#1727997551
+cd alpine/
+#1727997559
+cd ..
+#1727997567
+cd docker/postgresql/
+#1727997575
+ll dbReplication/
+#1727997584
+cat ini
+#1727997589
+cd dbReplication/
+#1727997593
+cat init.sql 
+#1727998594
+cd Desktop/BD3/
+#1727998617
+lvim BD_VAREJO_postgresql.sql 
+#1727999363
+cp BD_VAREJO.sql BD_VAREJO_BAK.sql
+#1727999404
+cat entrypoint_master 
+#1727999471
+cd
+#1727999474
+cd github/AppMarvelAluguel/
+#1727999481
+cd postgresql16/
+#1727999486
+cat docker-compose.yml 
+#1727999620
+cd github/db3/
+#1727999676
+cd ..
+#1727999699
+cd db3/
+#1727999711
+cd ..
+#1727999715
+cd bd3/
+#1727999725
+cd ..
+#1727999728
+cd bd3/
+#1727999733
+cd ..
+#1727999734
+db
+#1727999738
+cd db3/
+#1727999761
+git config -l
+#1727999806
+rm -rf .git
+#1727999855
+alias| rg mkdir
+#1727999887
+mv ../db3 .
+#1727999909
+mv ../db3 Docs
+#1727999913
+mv -r ../db3 Docs
+#1727999935
+cd ../bd3/
+#1727999945
+mv ../db3 .
+#1727999967
+mv db3 Docs
+#1727999972
+gaa
+#1728000164
+gcm "Adicionado docs, incluindo o projeto de DW."
+#1728000184
+exot
+#1728000167
+gp -v
+#1728000427
+sudo cat /sys/module/nvidia_drm/parameters/modeset
+#1728000484
+sct enable nvidia-resume.service 
+#1728000611
+pullDotfiles 
+#1728000656
+cd github/bd3/
+#1728000664
+cd projetodw/
+#1728000670
+cd ..
+#1728000692
+cd TrabalhoFinalDAC/
+#1728000694
+gaa
+#1728000701
+gp -v --all
+#1728000727
+gl -v --all
+#1728000741
+cat docker-compose.yml 
+#1728000750
+cd postgresql/
+#1728000755
+cat docker-entrypoint.sh 
+#1728000788
+cat docker-entrypoint.sh > ../../bd3/projetodw/init.sh
+#1728000798
+cat init.sql 
+#1728000849
+cat init.sql > ../../bd3/projetodw/init.sql
+#1728000858
+../../bd3/projetodw/
+#1728000863
+cat init.sql 
+#1728000868
+cat init.sh
+#1728000874
+lvim init.sh
+#1728000893
+cd -
+#1728000898
+cd ..
+#1728000916
+cd github/bd3/
+#1728000919
+lvim docker-compose.yml 
+#1728001111
+docker volume ls
+#1728001115
+docker volume prune 
+#1728001119
+docker volume ls
+#1728001127
+docker volume rm empresa-aerea-mongo 
+#1728001131
+docker volume rm empresa-aerea-pg 
+#1728001135
+docker volume rm 09
+#1728001137
+docker volume rm 09bc9f0a25db7ff0bb1d2b4ab5640e4a53f70e5f4d95e10ac7ab9598563659fc 
+#1728001142
+docker ps -a
+#1728000910
+lvim docker-compose.yml 
+#1728001168
+cd projetodw/
+#1728001174
+lvim init.sh
+#1728001428
+cd ..
+#1728001431
+cd Docs/
+#1728001443
+lvim projetodw.sql
+#1728001590
+cd ..
+#1728001597
+code .
+#1728001682
+cd Docs/
+#1728014127
+cd $DOT
+#1728014130
+cd $DOTFILES
+#1728014136
+pul
+#1728014141
+pullDotfiles 
+#1728015887
+cd github/AppMarvelAluguel/
+#1728015890
+cd postgresql16/
+#1728015893
+cd ..
+#1728015906
+cd bantads/
+#1728015912
+cd db
+#1728015915
+cat init.sql 
+#1728016513
+cd
+#1728016517
+cd github/bd3/
+#1728016521
+cd projetodw/
+#1728016547
+cat ../Docs/projetodw.sql > init.sql
+#1728016553
+cat init.sh
+#1728016608
+cd ..
+#1728016629
+cd github/TrabalhoFinalDAC/
+#1728016633
+cat docker-compose.yml 
+#1728016675
+lvim docker-compose.yml 
+#1728016773
+docker-compose up
+#1728016839
+docker-compose down
+#1728016842
+docker-compose up
+#1728016863
+docker-compose down
+#1728016866
+cat
+#1728016871
+cat docker-compose.yml 
+#1728016907
+docker-compose up
+#1728017459
+docker-compose down
+#1728017462
+docker-compose up
+#1728017479
+docker-compose down
+#1728017709
+docker-compose up
+#1728017732
+cd projetodw/
+#1728017759
+ll ../../bantads/db/
+#1728017788
+chmod 755 init.sh
+#1728017812
+mv projetodw.sql projetodw-altertable.sql 
+#1728017818
+cd ..
+#1728017887
+mv Docs/projetodw_inserts.sql projetodw/
+#1728017892
+cd Docs/
+#1728017939
+rm BD_VAREJO.sql 
+#1728017975
+rm projetodw.sql 
+#1728018001
+chmod 744 * .
+#1728018014
+chmod 0744 * .
+#1728018033
+chmod 0600 * .
+#1728018039
+sudo chmod 0600 * .
+#1728018049
+sudo chmod 0600 * ./
+#1728018063
+cd ..
+#1728018078
+sudo chmod -R 0700 Docs/
+#1728018084
+cd Docs/
+#1728018091
+cd ..
+#1728018106
+sudo chmod -R 644 Docs/
+#1728018109
+cd Docs/
+#1728018130
+chmod +x Docs/
+#1728018133
+cd Docs/
+#1728018144
+cd ..
+#1728018354
+gaa
+#1728018420
+gcm "Refatorada permissões dos arquivos para as corretas e deletado arquivos duplicados."
+#1728018426
+gp -v 
+#1728018437
+cd projetodw/
+#1728018442
+cd ..
+#1728018452
+docker compose up
+#1728018465
+docker compose down
+#1728018502
+cd projetodw/
+#1728018525
+cat projetodw.sql projetodw_altertable.sql 
+#1728018531
+cat projetodw.sql > projetodw_altertable.sql 
+#1728018546
+rm projetodw-altertable.sql 
+#1728018640
+docker compose up
+#1728018649
+docker compose down
+#1728018653
+docker compose up -d
+#1728018694
+cd ..
+#1728018697
+cat docker-compose.yml 
+#1728019498
+docker compose down
+#1728019509
+lvim docker-compose.yml 
+#1728019533
+cat docker-compose.yml > docker-compose-test.yml 
+#1728019539
+lvim docker-compose-test.yml 
+#1728019588
+docker compose -f docker-compose-test.yml up -d
+#1728019623
+docker compose -f docker-compose-test.yml down
+#1728019626
+cd projetodw/
+#1728019631
+lvim init.sh
+#1728019650
+docker compose -f docker-compose-test.yml down
+#1728019653
+docker compose -f docker-compose-test.yml up -d
+#1728019673
+docker compose -f docker-compose-test.yml down
+#1728019682
+lvim projetodw/init.sh
+#1728019709
+lvim docker-compose-test.yml 
+#1728019730
+docker compose -f docker-compose-test.yml up -d
+#1728019735
+lvim docker-compose-test.yml 
+#1728019756
+docker compose -f docker-compose-test.yml up -d
+#1728029939
+cd .ssh
+#1728029952
+cat allnotebook.pub 
+#1728030012
+cd ../codeberg/
+#1728030027
+ssh -T codeberg@codeberg.org
+#1728030089
+git clone git@codeberg.org:blau_araujo/vim-keys.git
+#1728030146
+git clone https://codeberg.org/blau_araujo/vim-keys.git
+#1728030156
+cd vim-keys/
+#1728030180
+cd .ssh
+#1728030187
+cat allnotebook.pub 
+#1728030254
+ssh-keygen -t ed25519 -a 100
+#1728030276
+cat allcodeberg.pub 
+#1728030328
+sct status sshd
+#1728030336
+sct restart sshd
+#1728030353
+gl -v
+#1728030376
+git config -l
+#1728030406
+ssh -T git@codeberg.org
+#1728030514
+cd ~/.ssh
+#1728030525
+ssh -T git@codeberg.org
+#1728030660
+cat allcodeberg.pub 
+#1728030772
+echo -n '42f2408c2c63d05e2304fdc5be842e6c7fc08c4284ff66a5c36959ca172497c9' | ssh-keygen -Y sign -n gitea -f allcodeberg.pub 
+#1728030807
+cd -
+#1728030809
+cd ..
+#1728030823
+mv vim-keys vim-keys2
+#1728030828
+git clone https://codeberg.org/blau_araujo/vim-keys.git
+#1728030849
+cd vim-keys
+#1728030856
+gl -v
+#1728030866
+cd aulas/
+#1728030869
+cd 0
+#1728030878
+cd ../01
+#1728030882
+cat README.md 
+#1728030890
+glow README.md 
+#1728032066
+flatpak list
+#1728032074
+htop 
+#1728024754
+lvim alt.sql
+#1728033379
+cd projetodw/
+#1728033395
+cp init.sql ../../
+#1728033399
+cd ../..
+#1728033479
+lvim 
+#1728033905
+cd bd3/
+#1728033934
+docker compose -f docker-compose-test.yml stop
+#1728016660
+lvim docker-compose.yml 
+#1728034305
+docker compose -f docker-compose-test.yml start
+#1728035574
+lvim docker-compose.yml 
+#1728035665
+cd projetodw/
+#1728035676
+lvim projetodw_inserts.sql 
+#1728036291
+cd github/bd3/
+#1728036299
+docker compose -f docker-compose-test.yml stop
+#1728074122
+pullDotfiles 
+#1728074142
+cd $DOTFILES
+#1728074165
+git checkout arcolinux 
+#1728074187
+git merge -e --commit debian_testing 
+#1728074198
+gl -vf --all
+#1728074214
+git checkout debian_testing 
+#1728074242
+git checkout main
+#1728074295
+git checkout arcolinux 
+#1728074303
+git merge debian_testing 
+#1728074349
+git config -l
+#1728074370
+gp -uf origin arcolinux
+#1728074397
+tldr git push
+#1728074413
+tldr --version
+#1728074418
+tldr --help
+#1728074491
+cargo search tldr
+#1728074546
+cargo install tlrc
+#1728074596
+tlrc --version
+#1728074600
+tlrc
+#1728074606
+tldr
+#1728074617
+paru -Sss tldr
+#1728074624
+paru -R tldr
+#1728074635
+tldr
+#1728074641
+type -a 
+#1728074644
+type -a tldr
+#1728074652
+cargo install --list
+#1728074662
+echo -e "${PATH//:/\\n}"
+#1728074683
+cd .cargo
+#1728074702
+cd
+#1728074704
+cd .cargo
+#1728074711
+cat env
+#1728074739
+cd bin
+#1728074745
+./tldr git
+#1728074797
+git help merge
+#1728074816
+./tldr git merge
+#1728074832
+./tldr git push
+#1728074877
+mv tldr tldt
+#1728074882
+tldt
+#1728074890
+./tldt ss
+#1728074903
+cd $DOTFILES
+#1728074906
+cd bash
+#1728074913
+lvim profile_archnote 
+#1728074948
+cd $DOTBASH
+#1728074960
+test
+#1728074963
+help test
+#1728074978
+lvim profile_archnote 
+#1728075003
+echo -e "${PATH//:/\\n}"
+#1728075013
+paru -S tldr
+#1728075019
+tldr git merge
+#1728075028
+tldt git merge
+#1728075048
+fastfetch 
+#1728075108
+cd $DOTFILES
+#1728075131
+cd bash
+#1728075143
+git diff profile_alldeb profile_archnote
+#1728075174
+cd $DOTBASH
+#1728075167
+lvim profile_archnote 
+#1728075180
+lvim profile_alldeb 
+#1728075361
+gss
+#1728075366
+gaa 
+#1728075407
+gcm "refact: Updated profiles_{archnote,alldeb}, fix cargo env."
+#1728075414
+gp -v 
+#1728075442
+git checkout main
+#1728075448
+git merge arcolinux 
+#1728075464
+gp -v origin main
+#1728075483
+glol -5
+#1728075508
+lvim bashrc 
+#1728075523
+gp -v origin main
+#1728075535
+glol -10
+#1728075553
+cd github/bd3/
+#1728075584
+docker compose -f docker-compose-test.yml start 
+#1728084499
+lvim docker-compose.yml 
+#1728084680
+docker network ls
+#1728084688
+lvim docker-compose.yml 
+#1728084704
+cd projetodw/
+#1728084748
+cd ~/github/bd3/
+#1728084770
+docker compose -f docker-compose-test.yml stop
+#1728084850
+cd projetodw/
+#1728084713
+lvim init.sh
+#1728084991
+mv projetodw.sql ../Docs/
+#1728085006
+rm bd_partes.sql 
+#1728085009
+gaa
+#1728085024
+cd ..
+#1728085029
+docker ps -a
+#1728085058
+cd ..
+#1728085204
+docker compose -f docker-compose.yml up
+#1728085218
+lvim docker-compose.yml 
+#1728085232
+docker compose -f docker-compose.yml up
+#1728085242
+lvim docker-compose.yml 
+#1728085255
+docker compose -f docker-compose.yml up
+#1728085263
+lvim docker-compose.yml 
+#1728085294
+docker compose -f docker-compose.yml up
+#1728085332
+cd github/bd3/
+#1728085338
+lvim docker-compose.yml 
+#1728085322
+lvim docker-compose-test.yml 
+#1728085404
+docker compose -f docker-compose.yml up
+#1728085434
+lvim docker-compose-test.yml 
+#1728085514
+cat docker-compose.yml 
+#1728085540
+cd projetodw/
+#1728085558
+cd ..
+#1728085567
+docker compose -f docker-compose.yml down
+#1728085438
+lvim docker-compose.yml 
+#1728085681
+docker compose -f docker-compose.yml up
+#1728085695
+cd projetodw/
+#1728085712
+cat docker-compose.yml 
+#1728085700
+lvim init.sh 
+#1728085785
+docker compose -f docker-compose.yml up
+#1728085788
+cd ..
+#1728085789
+docker compose -f docker-compose.yml up
+#1728086028
+docker compose -f docker-compose.yml down
+#1728086039
+cd projetodw/
+#1728086045
+lvim init.sql
+#1728086091
+mv init.sql projetodw_init.sql
+#1728086095
+lvim init.sh 
+#1728086262
+cp projetodw_init.sql projetodw-full.sql
+#1728086287
+cat projetodw_altertable.sql >> projetodw-full.sql 
+#1728086301
+cat projetodw_inserts.sql >> projetodw-full.sql 
+#1728086308
+lvim projetodw-full.sql 
+#1728086345
+lvim init.sh 
+#1728086385
+lvim docker-compose.yml 
+#1728086439
+docker compose -f docker-compose.yml up
+#1728086512
+docker compose -f docker-compose.yml down
+#1728086517
+lvim docker-compose.yml 
+#1728086541
+gaa
+#1728086599
+gcm "Implementação do projetodw-full e do docker-compose finalizados." 
+#1728086621
+rm docker-compose-test.yml 
+#1728086638
+cd projetodw/
+#1728086662
+mv projetodw_* ../Docs/
+#1728086666
+cd ..
+#1728086688
+gaa
+#1728086722
+gcm "Removido arquivos de teste. Organizado arquivos parciais para pasta Docs."
+#1728086725
+gp -v
+#1728087249
+cd
+#1728087258
+mkdir testes
+#1728087260
+cd testes/
+#1728087263
+git clone https://github.com/allbano/bd3.git && cd bd3
+#1728087357
+cd ..
+#1728087362
+rm -rf bd3/
+#1728087370
+cd ~/github/bd3/
+#1728087373
+gaa
+#1728087398
+gcm "Incluídas as instruções para executar o projeto no README."
+#1728087402
+gp -v
+#1728167932
+asdf plugin-list
+#1728167952
+asdf
+#1728167977
+asdf info
+#1728168007
+rustup
+#1728168010
+rustup show
+#1728168052
+rustup check
+#1728168086
+rustup toolchain list
+#1728168112
+tldr rustup
+#1728168300
+cd $DOTFILES
+#1728168305
+pullDotfiles 
+#1728168329
+cd $DOTFILES
+#1728168345
+git checkout arcolinux 
+#1728168368
+git checkout debian_testing 
+#1728168372
+gl -v
+#1728168393
+git checkout arcolinux 
+#1728168399
+git merge debian_testing 
+#1728168421
+glol -5
+#1728168438
+gp -v
+#1728168470
+bat alias
+#1728168475
+bat < alias
+#1728168487
+bat <$(alias)
+#1728168492
+bat < $(alias)
+#1728168497
+bat << $(alias)
+#1728168519
+btm
+#1728168528
+echo -e "${PATH//:/\\n}"
+#1728168537
+btm
+#1728168547
+cd ~/.cargo/
+#1728168549
+cd bin
+#1728168566
+cargo search bottom
+#1728168571
+cargo search btm
+#1728168586
+cargo install bottom
+#1728168870
+cd github/dotfiles/
+#1728168876
+cd bash
+#1728168879
+cd .
+#1728168886
+cd scripts/
+#1728168889
+lvim functionsInitBash 
+#1728168987
+reset
+#1728169001
+type -a pullDotfiles 
+#1728169017
+pullDotfiles 
+#1728169036
+echo -e "${PATH//:/\\n}"
+#1728169210
+docker ps -a
+#1728169250
+cd github/bd3/
+#1728169260
+docker-compose -f docker-compose.yml down
+#1728169264
+docker ps -a
+#1728169277
+docker rm pg16
+#1728169280
+docker ps -a
+#1728169284
+docker container prune
+#1728169291
+docker container ls
+#1728169294
+docker container ls -a
+#1728169310
+docker image
+#1728169312
+docker images
+#1728169383
+docker run -it --name debian-sid -h debian_sid debian:sid 
+#1728169416
+distrobox 
+#1728169418
+distrobox ls
+#1728169424
+distrobox ls --help
+#1728169431
+sudo distrobox ls 
+#1728169446
+distrobox-list --root
+#1728169454
+env
+#1728169500
+asdf install nodejs 18.20.4
+#1728169551
+node --version
+#1728169558
+asdf 
+#1728169570
+asdf global nodejs 18.20.4 
+#1728169581
+npm i -g npm@latest
+#1728169588
+npm i -g pnpm@latest
+#1728169607
+node --version
+#1728169626
+node --help
+#1728169660
+npm i -g @angular/cli@15
+#1728171537
+cd github/bd3/
+#1728171563
+docker compose -f docker-compose-test.yml up -d
+#1728171574
+docker compose -f docker-compose.yml up -d
+#1728177075
+docker exec -it projetodw bash
+#1728177777
+docker compose -f docker-compose.yml up -d
+#1728177780
+docker exec -it projetodw bash
+#1728177804
+docker ps
+#1728177872
+docker exec -it projetodw bash
+#1728178373
+cd .
+#1728178396
+rm init.sql 
+#1728178402
+cd crud-angular-spring/
+#1728178404
+ls -l
+#1728178407
+cd crud-angular/
+#1728178419
+cat package
+#1728178421
+cat package.json 
+#1728178431
+code .
+#1728178743
+cd ../..
+#1728178758
+rm -rf crud-angular-spring/
+#1728178772
+mkdir crud-angular-spring
+#1728178774
+cd crud-angular-spring/
+#1728179082
+paru -Sss linux
+#1728178798
+ng new crud-angular
+#1728179838
+pstree
+#1728240534
+cd .ssh
+#1728240571
+ssh alldeb
+#1728240630
+ssh-copy-id -p 6969 -i /home/albano/.ssh/allnotebook.pub  192.168.15.3
+#1728240682
+ssh-copy-id -p 6969 -i /home/albano/.ssh/allnotebook.pub  192.168.15.2
+#1728240992
+cat config
+#1728241037
+lvim allnotebook.pub 
+#1728241085
+ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
+#1728241195
+cat allbano_site_aws_ec2.pem 
+#1728241213
+cat allnotebook
+#1728241269
+rm allnotebook*
+#1728241277
+rm notebook_dellg15*
+#1728241535
+cd .ssh
+#1728241543
+cat allbano_site_aws_ec2.pem 
+#1728242021
+cd /etc/ssh
+#1728242034
+nvim ssh_config
+#1728242092
+doas nvim ssh_config
+#1728242112
+sudo nvim ssh_config
+#1728242119
+doas nvim ssh_config
+#1728242122
+sudo nvim ssh_config
+#1728242149
+doas lvim ssh_config
+#1728242168
+cat ssh_config
+#1728242236
+doas lvim ssh_config
+#1728242296
+cd
+#1728241303
+ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
+#1728242462
+ssh-keygen -t ed25519 -C "allarch_dellg15"
+#1728242507
+rm id_*
+#1728242510
+ssh-keygen -t ed25519 -C "allarch_dellg15"
+#1728242837
+cat allarch_dellg15.pub 
+#1728243335
+lvim config
+#1728243478
+scr restart sshd.service
+#1728243482
+sct restart sshd.service
+#1728243493
+cat config
+#1728243497
+ssh alldeb
+#1728243518
+chmod 600 allarch_dellg15*
+#1728243520
+ssh alldeb
+#1728243586
+chmod 700 /home/albano/.ssh
+#1728243592
+chmod 600 /home/albano/.ssh/allarch_dellg15
+#1728243613
+ssh -i /home/albano/.ssh/allarch_dellg15 albano@192.168.5.2
+#1728243630
+ssh -i /home/albano/.ssh/allarch_dellg15 -p 6969 albano@192.168.5.2
+#1728243641
+ssh alldeb
+#1728243646
+lvim config
+#1728243668
+ssh alldeb
+#1728243686
+ssh noip
+#1728243693
+lvim config
+#1728243707
+ssh noip
+#1728244192
+ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
+#1728245613
+flatpak update
+#1728245619
+flatpak list
+#1728245636
+paru -Qss dbe
+#1728245663
+paru -R dbeaver dbeaver-plugin-batik dbeaver-plugin-svg-format 
+#1728245680
+flatpak search dbeaver
+#1728245733
+flatpak install io.dbeaver.DBeaverCommunity
+#1728246725
+flatpak uninstall io.dbeaver.DBeaverCommunity
+#1728246734
+paru -Sss dbeaver
+#1728246774
+paru -S dbeaver
+#1728247046
+ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
+#1728248216
+cd github/b
+#1728248220
+cd github/bd3/
+#1728248243
+git restore .
+#1728248255
+lvim docker-compose.yml 
+#1728248285
+docker compose -f docker-compose.yml up -d
+#1728248360
+glo
+#1728248362
+gaa
+#1728248395
+gcm "Corrigido path dos volumes no docker-compose."
+#1728248398
+gp -v
+#1728248445
+cd ~/.ssh
+#1728248450
+cat allarch_dellg15.pub 
+#1728248482
+ssh -T git@github.com
+#1728248498
+sct restart sshd
+#1728248502
+ssh -T git@github.com
+#1728248513
+cat config
+#1728248533
+ssh -T git@github.com
+#1728248699
+ps aux| rg ssh-agent
+#1728248705
+ssh -T git@github.com
+#1728248717
+ssh-add -l
+#1728248777
+lvim ~/.bash_profile 
+#1728249039
+cd .ssh
+#1728249043
+lvim config
+#1728249061
+sct restart sshd
+#1728249076
+ssh -T git@github.com
+#1728249238
+cd github/bd3/
+#1728249247
+gp -v 
+#1728249204
+ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
+#1728305301
+cd .ssh
+#1728305322
+cat allbano_site_aws_ec2.pem
+#1728305602
+ss
+#1728305680
+tldr ss
+#1728305697
+tldt ss
+#1728323727
+cd github/bd3/
+#1728323736
+docker compose -f docker-compose.yml up -d
+#1728324007
+lvim docker-compose.yml 
+#1728324020
+cd projetodw/
+#1728324028
+lvim init.sh 
+#1728324042
+lvim projetodw-full.sql 
+#1728324473
+cd ..
+#1728324476
+docker-compose 
+#1728324483
+lvim docker-compose.yml 
+#1728324614
+tree
+#1728324638
+pstree
+#1728324641
+ltree
+#1728324643
+tree
+#1728324666
+cd projetodw/
+#1728324878
+lvim projetodw-full.sql 
+#1728324962
+cd ..
+#1728324965
+ps -a
+#1728324968
+docker ps 
+#1728324982
+docker compose -f docker-compose.yml down
+#1728324997
+docker compose -f docker-compose.yml up -d
+#1728327906
+docker compose -f docker-compose.yml down
+#1728330547
+fastfetch 
+#1728330609
+wayland-info 
+#1728331236
+yay
+#1728331653
+cat /etc/fstab
+#1728331663
+lsk
+#1728331796
+docker
+#1728331852
+cd /var
+#1728331854
+ls -l
+#1728331857
+cd lib
+#1728331863
+cd docker/
+#1728331873
+ll docker
+#1728331879
+sudo ll docker
+#1728331899
+sudo lsd -l -d docker
+#1728331917
+sudo lsd -l docker
+#1728338874
+cd Desktop/
+#1728338879
+cd Governanca/
+#1728341860
+flatpak update 
+#1728338923
+lvim Aula_07_10_2024.txt
+#1728389571
+paru -R cpu-x 
+#1728389897
+pstree
+#1728390906
+cd .config
+#1728390951
+sudo rm spectaclerc.lock*
+#1728390964
+cat xdg-desktop-portal-kderc 
+#1728390994
+cat user-dirs.dirs 
+#1728390998
+cat user-dirs.locale 
+#1728391037
+cat systemsettingsrc 
+#1728391050
+cat systemmonitorrc 
+#1728391066
+cat QtProject.conf 
+#1728391073
+cat sddmthemeinstallerrc 
+#1728391132
+cat plasmarc
+#1728392089
+cd ..
+#1728392097
+github/crud-angular-spring/
+#1728392115
+lvim README.md
+#1728392132
+git init
+#1728392141
+git add README.md
+#1728392152
+cd crud-angular/
+#1728392161
+cd ..
+#1728392167
+cd crud-angular/
+#1728392198
+cd ..
+#1728392226
+gcm "First commit."
+#1728392244
+git remote add origin git@github.com:allbano/crud-angularspring.git
+#1728392260
+git push -u origin main
+#1728392292
+gaa
+#1728392317
+git restore crud-angular/
+#1728392330
+git restore --staged .
+#1728392340
+cd crud-angular/
+#1728392350
+npm run
+#1728392362
+npm start
+#1728392404
+gaa
+#1728392419
+glo
+#1728392489
+cd ..
+#1728392496
+rm -rf .git
+#1728392522
+git init
+#1728392532
+ga README.md 
+#1728392550
+gcm "First commit."
+#1728392568
+git remote add origin git@github.com:allbano/crud-angularspring.git
+#1728392588
+gp -u origin main
+#1728392622
+gaa
+#1728392638
+git restore --staged .
+#1728392642
+gaa
+#1728392661
+cd crud-angular/
+#1728392671
+rm -rf .git
+#1728392679
+cd ..
+#1728392688
+gaa
+#1728392713
+gcm "Added angular 15 project."
+#1728392771
+cd crud-angular/
+#1728392776
+code .
+#1728396680
+npm i -g npm@latest
+#1728396703
+npm i -g pnpm@latest
+#1728396731
+pnpm 
+#1728397085
+ng add @angular/material
+#1728398317
+cd ,,
+#1728398320
+cd ..
+#1728398323
+gaa
+#1728398333
+cd crud-angular/
+#1728398564
+cd ..
+#1728398575
+lrm -rf crud-angular/
+#1728398578
+rm -rf crud-angular/
+#1728398586
+rm -rf .git
+#1728398603
+cd ..
+#1728398621
+mv crud-angular-spring crud-angularspring/
+#1728398623
+cd crud-angularspring/
+#1728398627
+git init
+#1728398636
+git add README.md 
+#1728398647
+gcm "First commit."
+#1728398678
+git remote add origin git@github.com:allbano/crud-angularspring.git
+#1728398686
+gp -u origin main
+#1728398911
+docker ps -a
+#1728398918
+cd github/bd3/
+#1728398930
+docker compose -f docker-compose.yml up -d
+#1728399175
+docker compose -f docker-compose.yml stop
+#1728399181
+docker ps 
+#1728399184
+docker ps =a
+#1728399186
+docker ps -a
+#1728398714
+ng new crud-angular
+#1728399681
+cd crud-angular/
+#1728399718
+cd ..
+#1728399721
+gaa
+#1728399787
+gcm "Added crud-angular project."
+#1728399820
+ng add @angular/material
+#1728399824
+cd crud-angular/
+#1728399826
+ng add @angular/material
+#1728401132
+gaa
+#1728401152
+gcm "Added angular/material."
+#1728424530
+cd github/bd3/
+#1728424554
+docker-compose -f docker-compose.yml up -d
+#1728424560
+docker ps 
+#1728424731
+apropos ls
+#1728424786
+apropos compiler
+#1728425073
+cd projetodw/
+#1728425095
+> generate_client_data.py
+#1728425113
+python --version
+#1728425117
+type -a python
+#1728425138
+asdf list
+#1728425171
+/usr/bin/python --version
+#1728425200
+asdf global python 3.12.6 
+#1728433918
+cd github/bd3/
+#1728433922
+cd
+#1728433940
+docker-compose -f ~/github/bd3/docker-compose.yml up -d
+#1728434239
+npm i -g npm@latest
+#1728434267
+npm --version
+#1728435318
+cd github/bd3/
+#1728435321
+cd projetodw/
+#1728435327
+lvim generate_client_data.py 
+#1728435389
+python --version
+#1728435429
+asdf install python 3.12.7
+#1728435631
+asdf local python 3.12.7 
+#1728435639
+python --version
+#1728435669
+asdf local --help
+#1728435679
+asdf
+#1728435833
+rm .tool-versions 
+#1728435838
+python --version
+#1728435919
+cd ..
+#1728436007
+asdf global python 3.12.7 
+#1728436012
+python --version
+#1728436035
+virtualenv 3.12.7
+#1728436040
+pip
+#1728436047
+pip install -U pip
+#1728436077
+pip install -U virtualenv
+#1728436116
+virtualenv 3.12.7
+#1728436180
+diff 3.12.7/bin/activate ~/github/dotfiles/scripts/activate 
+#1728436238
+lvim github/dotfiles/scripts/activate 
+#1728436215
+lvim 3.12.7/bin/activate
+#1728436373
+. 3.12.7/bin/activate
+#1728436418
+python --version
+#1728436422
+pip install faker
+#1728436431
+pip install -U faker
+#1728436440
+cd projetodw/
+#1728436446
+lvim generate_client_data.py 
+#1728436464
+pip install -U tqdm
+#1728436471
+lvim generate_client_data.py 
+#1728436637
+pip install -U csv
+#1728436789
+python generate_data.py
+#1728436807
+python generate_client_data.py 
+#1728437032
+lvim clientes.csv 
+#1728439129
+docker-compose -f ~/github/bd3/docker-compose.yml stop
+#1728439134
+docker ps -a
+#1728439143
+cd ..
+#1728439155
+deactivate 
+#1728439158
+cd crud-angularspring/
+#1728439162
+cd crud-angular/
+#1728439165
+code .
+#1728476341
+cd github/TrabalhoFinalDAC/
+#1728476348
+ga
+#1728476364
+gl -v --all
+#1728476386
+git checkout Leandro
+#1728476393
+gl -v
+#1728476482
+git config -l
+#1728476512
+gl -v origin Leandro
+#1728476825
+git checkout main 
+#1728476847
+git diff main..Leandro
+#1728476984
+gl -v 
+#1728477005
+gl -v
+#1728477010
+gl -h
+#1728477045
+git branch
+#1728477048
+git branch -a
+#1728477147
+git diff main..Leandro_endpoint_criar_cliente
+#1728477163
+git checkout Leandro_endpoint_criar_cliente 
+#1728477173
+git diff main
+#1728477320
+git checkout main
+#1728477356
+git checkout renan 
+#1728477363
+gl -v
+#1728477396
+git checkout main
+#1728477411
+git merge -e renan
+#1728477489
+git checkout nicolas 
+#1728477571
+cd mongodb/
+#1728477571
+kl
+#1728477578
+cat init.js 
+#1728477589
+cd ..
+#1728477745
+code .
+#1728478573
+git checkout main
+#1728478618
+git checkout nicolas 
+#1728478633
+glol -5
+#1728478640
+git checkout main
+#1728478648
+git merge -e nicolas
+#1728478666
+glol -5
+#1728478735
+git branch
+#1728478752
+git checkout luizsenji 
+#1728478770
+git checkout main
+#1728478783
+git merge -e luizsenji 
+#1728478812
+glo
+#1728478821
+git checkout luizsenji 
+#1728478859
+git branch -l
+#1728478871
+git checkout albano
+#1728478972
+gaa
+#1728479049
+gcm "Arrumado código de integração do frontend."
+#1728479061
+gp -v
+#1728479070
+glol -5
+#1728479096
+glol -10
+#1728479126
+cd ui
+#1728479151
+node --versionb
+#1728479153
+node --version
+#1728479169
+asdf global nodejs 20.16.0 
+#1728479176
+node --version
+#1728479187
+npm i -g npm@latest
+#1728479193
+npm i -g pnpm@latest
+#1728479263
+asdf global nodejs 20.17.0 
+#1728479267
+npm i -g npm@latest
+#1728479273
+npm i -g pnpm@latest
+#1728479319
+asdf install nodejs 20.18.0 
+#1728479338
+asdf uninstall nodejs 20.16.0 
+#1728479377
+asdf global nodejs 20.18.0 
+#1728479385
+node --version
+#1728479410
+npm i -g npm@latest
+#1728479416
+npm i -g pnpm@latest
+#1728479429
+npm install -g @angular/cli
+#1728480287
+pnpm
+#1728480318
+npm install -g @angular/cli@18
+#1728480791
+npm uninstall -g @angular/cli
+#1728480810
+npm i -g @angular/cli@18
+#1728481881
+node --version
+#1728481904
+asdf install nodejs 20.16.0 
+#1728481930
+asdf global nodejs 20.16.0 
+#1728481934
+node --version
+#1728481947
+npm i -g npm@latest
+#1728481954
+npm i -g pnpm@latest
+#1728482003
+pnpm 
+#1728482065
+npm search angular
+#1728482134
+npm i -g @angular/cli@18
+#1728482602
+node --version
+#1728482670
+ng
+#1728482675
+ng --help
+#1728482685
+ng update
+#1728482709
+asdf global nodejs 20.18.0 
+#1728482712
+ng update
+#1728482730
+ng update @angular/cdk
+#1728482767
+cd 
+#1728482788
+ng update
+#1728482804
+npm i -g @angular/cli@18
+#1728482823
+ng update
+#1728482856
+asdf global nodejs 18.20.4 
+#1728482870
+asdf uninstall nodejs 20.16.0 
+#1728482880
+asdf global nodejs 20.17.0 
+#1728482894
+asdf uninstall nodejs 20.18.0 
+#1728482941
+asdf
+#1728482959
+asdf nodejs update
+#1728482981
+asdf list
+#1728482998
+asdf install nodejs 20.18.0 
+#1728483012
+asdf global nodejs 20.18.0 
+#1728483015
+node --version
+#1728483016
+ng
+#1728483039
+npm i -g npm@latest && npm i -g pnpm@latest
+#1728483072
+npm i -g @angular/cli@18
+#1728484246
+node --version
+#1728484259
+asdf global nodejs 18.20.4 
+#1728484265
+cd github/crud-angularspring/
+#1728484269
+cd crud-angular/
+#1728484271
+code .
+#1728499758
+cal
+#1728499763
+calendar
+#1728499766
+cal
+#1728499779
+flatpak update
+#1728499824
+docker ps 
+#1728499831
+date
+#1728499837
+uptime
+#1728499852
+uptime --help
+#1728499958
+paru -Ssss tgpt
+#1728500022
+paru -S tgpt
+#1728500078
+tgpt 
+#1728500092
+tgpt --help
+#1728500211
+tgpt -m
+#1728500286
+tgpt --help
+#1728500597
+paru -Sss warp
+#1728500610
+paru -Sss '^warp'
+#1728500632
+paru -Sss 'warp terminal'
+#1728500726
+cd Downloads/progs/
+#1728500752
+cd ..
+#1728500765
+mv warp-terminal-v0.2024.09.24.08.02.stable_01-1-x86_64.pkg.tar.zst progs/
+#1728501410
+paru -Sss obsidian
+#1728501426
+paru -Sss 'obsidian cursor'
+#1728501466
+paru -S xcursor-breeze-serie-obsidian
+#1728501607
+paru -R xcursor-breeze-serie-obsidian
+>>>>>>>> arcolinux:bash/history/archlinux-dellg15-history
