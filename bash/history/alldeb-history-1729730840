@@ -12639,3 +12639,65 @@ pushHis
 cd $DOTBASH
 #1729729030
 cat history/alldeb-history 
+#1729729043
+pushHis 
+#1729729051
+cat history/alldeb-history 
+#1729729079
+cd history/
+#1729729085
+gaa
+#1729729110
+time
+#1729729114
+date
+#1729729118
+date --help
+#1729729142
+date -u
+#1729729259
+date +%s
+#1729729384
+stat -c alldeb-history 
+#1729729416
+stat -c %Y alldeb-history 
+#1729729486
+date -d @$(stat -c %Y alldeb-history)
+#1729729500
+stat alldeb-history 
+#1729729527
+type -a pushHis 
+#1729729620
+date +%s
+#1729729663
+UPTODATE=$(date +%s)
+#1729729683
+date -d $UPTODATE 
+#1729729688
+date -d @$UPTODATE 
+#1729729786
+date --help
+#1729730029
+cd $DOTBASH/history/
+#1729730058
+note="notebook-dellg15"
+#1729730071
+rm "$note"*
+#1729730083
+gaa
+#1729730117
+git restore --staged notebook-dellg15-history
+#1729729581
+lvim ~/bin/functionsInitBash 
+#1729730689
+type -a pushHis 
+#1729730703
+cd $DOTFILES
+#1729730718
+pushHis 
+#1729730738
+cd bash/history/
+#1729730781
+lvim ~/bin/functionsInitBash 
+#1729730838
+. ~/bin/functionsInitBash 
