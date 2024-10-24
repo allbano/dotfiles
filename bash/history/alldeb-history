@@ -12633,3 +12633,9 @@ doas touch standby.signal
 docker exec -it dbreplication bash
 #1721769850
 docker-compose -f docker-compose2.yml up --force-recreate
+#1729728984
+pushHis 
+#1729729003
+cd $DOTBASH
+#1729729030
+cat history/alldeb-history 
