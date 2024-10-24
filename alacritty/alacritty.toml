@@ -1,3 +1,4 @@
+[general]
 live_config_reload = true
 import = [
   "/home/albano/.config/alacritty/default.toml",
@@ -33,6 +34,6 @@ multiplier = 3
 [selection]
 save_to_clipboard = false
 
-[shell]
+[terminal.shell]
 program = "/usr/bin/bash"
 args = ["-c","tmux new-ses -s al0"]
