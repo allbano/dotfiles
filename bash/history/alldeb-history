@@ -8853,3 +8853,1351 @@ find / -type f -wholename '*/docker-compose' 2> /dev/null
 sudo ln -s $(find / -type f -wholename '*/docker-compose' 2> /dev/null) /usr/local/bin/docker-compose
 #1728104004
 docker-compose --help
+#1728104018
+pushHis 
+#1728104041
+type -a pushHis 
+#1728104128
+cd docker/
+#1728104130
+cd ..
+#1728104137
+cd bash-completion/
+#1728104299
+cd docker/
+#1728104417
+docker-compose --help
+#1728104371
+flatpak update
+#1728104484
+curl -L https://raw.githubusercontent.com/docker/compose/1.26.2/contrib/completion/bash/docker-compose
+#1728104492
+curl -L https://raw.githubusercontent.com/docker/compose/1.26.2/contrib/completion/bash/docker-compose > docker-compose
+#1728104499
+bat docker-compose 
+#1728104542
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/docker-compose /etc/bash_completion.d/docker-compose
+#1728104705
+docker-compose -f ~/github/bd3/docker-compose.yml stop
+#1728104791
+docker images
+#1728104845
+docker ps 
+#1728104848
+docker ps -a
+#1728104862
+docker-compose -f ~/github/bd3/docker-compose.yml down
+#1728104870
+docker ps -a
+#1728104877
+docker images -a
+#1728105087
+docker-compose --help
+#1728105140
+sudo find / -type f -wholename '*/docker-compose' 2> /dev/null
+#1728105154
+sudo find / -type f -wholename '*/docker' 2> /dev/null
+#1728105171
+sudo find / -type f -wholename '*/docker*' 2> /dev/null
+#1728105458
+docker-compose --version
+#1728105471
+docker compose --version
+#1728105497
+docker compose version
+#1728105504
+reset
+#1728105597
+cd $DOTFILES
+#1728105603
+gaa
+#1728105689
+gcm "Added docker-compose to bash-completion files."
+#1728105693
+gp -v
+#1728105704
+gp --help
+#1728105764
+un
+#1728240196
+fastfetch 
+#1728240209
+sudo nala show nginxc
+#1728240211
+sudo nala show nginx
+#1728240313
+netstat -tnlp
+#1728242970
+cd .ssh
+#1728242975
+cat authorized_keys 
+#1728243025
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBPIJ4TB5kcihl1pE3Ki+m71T3q7oGBtqPi8Ga2gQ2FQ allarch_dellg15" > ~/.ssh/authorized_keys 
+#1728243045
+chmod 600 authorized_keys 
+#1728243057
+rm --help 
+#1728243062
+rm ./--help 
+#1728243085
+sct status sshd
+#1728243095
+sct restart sshd.service 
+#1728243116
+sct status sshd.service 
+#1728243128
+sudo lvim
+#1728243146
+sudo lvim /etc/ssh/ssh_config
+#1728243188
+sudo lvim /etc/ssh/sshd_config
+#1728243291
+sct restart sshd.service 
+#1728243920
+sct daemon-reload 
+#1728250612
+un
+#1728250630
+sct status nginx
+#1728250640
+docker ps
+#1728250642
+docker ps -a
+#1728250648
+docker images
+#1728250725
+cd .ssh/
+#1728320963
+un
+#1728321690
+journalctl -f
+#1728321711
+journalctl -b 0
+#1728486039
+un
+#1728496886
+type -a lvim
+#1728496893
+sudo lvim
+#1728496906
+sudo lvim /etc/apt/sources.list
+#1728496935
+un
+#1728497003
+sudo nala full-upgrade 
+#1728497041
+fsatf
+#1728497046
+fastfetch 
+#1728497099
+inxi
+#1728497107
+tldr inxi
+#1728497116
+cargo install --list
+#1728497127
+cargo search tld
+#1728497139
+cargo search tldr
+#1728497189
+cargo install tlrc
+#1728497230
+clang --version
+#1728497240
+sudo nala install clang
+#1728497261
+clang --version
+#1728497271
+sudo nala install build-essential 
+#1728497287
+gcc --version
+#1728497293
+g++ --version
+#1728498035
+asdf
+#1728498051
+type -a asdf
+#1728498179
+cal
+#1728498186
+calendar 
+#1728498197
+calendar --help
+#1728498208
+calendar -h
+#1728498213
+calendar -a
+#1728498219
+calendar -l
+#1728498237
+groups
+#1728498243
+chfn
+#1728498254
+chfn --help
+#1728498305
+sudo nala search plasma
+#1728498532
+finger
+#1728498538
+finger albano
+#1728499478
+un
+#1728577306
+$DOTFILES/
+#1728577350
+git checkout arcolinux 
+#1728577365
+git diff arcolinux..debian_testing 
+#1728577411
+glol -10
+#1728577450
+git checkout debian_testing 
+#1728577556
+git cherry-pick 097a555
+#1728577568
+glol -5
+#1728577600
+gll
+#1728577652
+cd bash
+#1728577657
+lvim profile_alldeb 
+#1728577680
+~/.ssh
+#1728577692
+lvim config
+#1728577840
+sct restart sshd
+#1728577848
+ssh -T git@github.com
+#1728577856
+lvim config
+#1728577867
+ssh -T git@github.com
+#1728577872
+lvim config
+#1728577891
+ssh -T git@github.com
+#1728577908
+lvim config
+#1728577916
+ssh -T git@github.com
+#1728577980
+chmod 600 config
+#1728577984
+lvim config
+#1728577999
+cat authorized_keys 
+#1728578024
+un
+#1728578105
+sudo nala search zed
+#1728578117
+zfs
+#1728578414
+cd -
+#1728578425
+git diff
+#1728578440
+gaa
+#1728578542
+gcm "refact: Remove ssh-agent."
+#1728578545
+gp -v
+#1728578589
+cd ..
+#1728578595
+cd vim
+#1728578608
+ln --help
+#1728578636
+ln -sf ~/github/dotfiles/vim/.vimrc ~/.vimrc
+#1728578657
+vim --help
+#1728578661
+vim --version
+#1728578782
+sudo nala show neovim
+#1728578801
+sudo nala show ctags
+#1728578836
+type -a nvim
+#1728578857
+sudo rm $(type -p nvim)
+#1728578879
+asdf plugin-add neovim
+#1728578887
+asdf list
+#1728578919
+python --version
+#1728578923
+python3 --version
+#1728578937
+asdf install python 3.12.6
+#1728579140
+sudo nala search lzma
+#1728579151
+sudo nala install lzma
+#1728579163
+asdf uninstall python 3.12.6
+#1728579168
+asdf install python 3.12.6
+#1728579252
+sudo nala install tk
+#1728579319
+sudo nala install sqlite3 sqlite3-tools sqlite3-doc sqlite-utils 
+#1728579333
+asdf uninstall python 3.12.6
+#1728579380
+sct status nginx
+#1728579386
+docker ps -a
+#1728579339
+asdf install python 3.12.6
+#1728579392
+docker images
+#1728579444
+asdf global python 3.12.6 
+#1728579450
+type -a python
+#1728579455
+python3 --version
+#1728579463
+python --version
+#1728579477
+type -a pip
+#1728579563
+sudo nala install libsqlite3-dev 
+#1728579586
+sudo apt install libpython3-dev
+#1728579646
+pip install -U virtualenv
+#1728579651
+pip list
+#1728579672
+asdf install python 3.12.5
+#1728579771
+adsf list
+#1728579775
+asdf list
+#1728579803
+asdf install neovim 0.9.5
+#1728579823
+asdf global neovim 0.9.5 
+#1728579846
+asdf install neovim 0.10.2
+#1728579852
+asdf global neovim 0.10.2 
+#1728579867
+asdf global neovim 0.9.5 
+#1728579884
+asdf global neovim 0.10.2 
+#1728580065
+~/.config/
+#1728580071
+mkdir nvim
+#1728580075
+cd nvim
+#1728580080
+config.lua
+#1728580085
+lvim config.lua
+#1728580227
+mv config.lua init.lua
+#1728580240
+lvim init.lua 
+#1728580318
+cd
+#1728580338
+rm .vimrc_back 
+#1728580347
+cd .vim_back/
+#1728580360
+cd ..
+#1728580367
+rm -rf .vim_back/
+#1728580379
+cat .viminfo 
+#1728580383
+rm .viminfo 
+#1728580405
+rm -rf .yarn
+#1728580408
+rm -rf .yarnrc 
+#1728580430
+cat .profile 
+#1728580435
+rm .profile 
+#1728580457
+rm .lesshst 
+#1728580465
+cat .jupyter
+#1728580468
+cat .jupyter_install_packages 
+#1728580471
+rm .jupyter_install_packages 
+#1728580489
+dm
+#1728580494
+dmstats 
+#1728580507
+rm .node_repl_history 
+#1728580510
+reset
+#1728580649
+cd .config/nvim/
+#1728580658
+vim init.lua 
+#1728580805
+asdf list
+#1728580816
+asdf uninstall neovim 0.9.5 
+#1728580832
+lvim init.lua 
+#1728580869
+vim init.lua 
+#1728581485
+cd ..
+#1728581515
+rm -rf ~/.local/share/nvim{,.bak}
+#1728581524
+rm -rf ~/.local/state/nvim{,.bak}
+#1728581531
+rm -rf ~/.cache/nvim{,.bak}
+#1728581543
+rm -rf ~/.config/nvim{,.bak}
+#1728581552
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+#1728581566
+rm -rf ~/.config/nvim/.git
+#1728581759
+cd nvim
+#1728581771
+cd lua/
+#1728581774
+cd config/
+#1728581776
+lvim options.lua 
+#1728581788
+nvim options.lua 
+#1728582324
+cat lazy.lua 
+#1728582341
+cd ..
+#1728582347
+lvim init.lua 
+#1728582356
+vim init.lua 
+#1728582369
+cd lua/
+#1728582375
+cd config/
+#1728582385
+cd ../..
+#1728582392
+cat lazyvim.json 
+#1728582402
+cat stylua.toml 
+#1728582421
+bat README.md 
+#1728582482
+cat init.lua 
+#1728582584
+nvim 
+#1728582694
+cd lua/
+#1728582697
+cd plugins/
+#1728582702
+vim example.lua 
+#1728582758
+cd ..
+#1728582760
+cd config/
+#1728582764
+lvim autocmds.lua 
+#1728582772
+vim keymaps.lua 
+#1728582778
+vim lazy.lua 
+#1728582826
+nvim lazy.lua 
+#1728582841
+nvim options.lua 
+#1728583613
+nvim -u NONE
+#1728583628
+vim options.lua 
+#1728583643
+vim lazy.lua 
+#1728583699
+cd ..
+#1728583702
+cd ../..
+#1728583708
+rm -rf nvim/
+#1728584166
+lvim +LvimUpdate +qall
+#1728584450
+cd
+#1728584452
+cd github/
+#1728584487
+exiot
+#1728584553
+rm -rf ~/.local/share/nvim/parsers
+#1728584624
+lvium
+#1728584909
+un
+#1728585312
+rm -rf ~/.local/share/lunarvim
+#1728585317
+rm -rf ~/.config/lvim
+#1728585359
+bash ~/.local/share/lunarvim/lvim/utils/installer/uninstall.sh
+#1728585377
+rm -rf ~/.local/share/nvim/site/pack
+#1728585384
+sudo rm /usr/local/bin/lvim
+#1728585394
+rm -rf ~/.local/state/nvim
+#1728585414
+type -a lvim
+#1728585441
+sudo rm /usr/bin/lvim
+#1728585444
+sudo rm /bin/lvim
+#1728585447
+type -a lvim
+#1728585460
+rm $(type -p lvim)
+#1728585462
+type -a lvim
+#1728585472
+echo -e "${PATH//:/\\n}"
+#1728585486
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+#1728585500
+node --version
+#1728585536
+sudo nala search bun
+#1728585541
+sudo nala search bunjs
+#1728585548
+sudo nala search '^bun'
+#1728585599
+asdf global nodejs 20.18.0 
+#1728585610
+asdf global nodejs system 
+#1728585616
+type -a node 
+#1728585623
+sudo nala search nodejs
+#1728585659
+sudo nala install nodejs
+#1728585678
+npm
+#1728585692
+asdf global nodejs system 
+#1728585695
+npm
+#1728585701
+node --version
+#1728585709
+asdf
+#1728585714
+asdf update
+#1728585742
+node --version
+#1728585747
+type -a node
+#1728585757
+asdf global nodejs system 
+#1728585761
+node --version
+#1728585770
+asdf list
+#1728585785
+npm
+#1728585797
+sudo nala search npm
+#1728585807
+sudo nala search pnpm
+#1728585827
+sudo nala install node-corepack
+#1728585876
+sudo nala install npm
+#1728585936
+sudo nala purge nodejs
+#1728585954
+asdf global nodejs 20.18.0 
+#1728585957
+node --version
+#1728585965
+npm i -g npm@latest
+#1728585973
+npm i -g pnpm@latest
+#1728586017
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+#1728586111
+cd .cache/
+#1728586121
+rm -rf lvim
+#1728586124
+rm -rf lvim.old/
+#1728586131
+ll l*
+#1728586140
+ll -d l*
+#1728586150
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+#1728586657
+cd
+#1728586659
+un
+#1728586742
+cd github/
+#1728586751
+rm -rf crud-angular-spring
+#1728586761
+rm -rf fastfetch
+#1728586769
+rm -rf neovim
+#1728586773
+sudo rm -rf neovim
+#1728586789
+cd git/
+#1728586792
+cd ..
+#1728586794
+cd git
+#1728586803
+cat README.md 
+#1728586808
+cd ..
+#1728586821
+rm -rf vimix-gtk-themes
+#1728586828
+cd myscripts/
+#1728586834
+cd ..
+#1728586838
+rm -rf myscripts/
+#1728586876
+git clone git@github.com:allbano/crud-angularspring.git
+#1728586881
+node --version
+#1728586885
+cd crud-angularspring/
+#1728586886
+l;
+#1728586897
+asdf local nodejs 18.20.4 
+#1728601408
+un
+#1728601437
+cd .ssh
+#1728601446
+lvim config
+#1728601555
+> allbano_site_aws_ec2.pem
+#1728601572
+lvim allbano_site_aws_ec2.pem 
+#1728601585
+chmod 600 allbano_site_aws_ec2.pem 
+#1728601595
+chmod 400 allbano_site_aws_ec2.pem 
+#1728601735
+sct status
+#1728601748
+un
+#1728601758
+fastfetch 
+#1728601770
+echo $TERM 
+#1728601782
+tmux
+#1729017050
+un
+#1729017279
+doas systemctl reboot 
+#1729017387
+$DOTFILES/
+#1729017395
+git checkout arcolinux 
+#1729017416
+glol -10
+#1729017475
+git config --global -l
+#1729017480
+git config -l
+#1729017509
+git diff arcolinux..debian_testing 
+#1729017549
+cd bash
+#1729017553
+lvim profile_archnote 
+#1729017588
+gl -v
+#1729017697
+git diff profile_archnote profile_alldeb
+#1729017708
+lvim profile_alldeb 
+#1729017813
+git diff arcolinux debian_testing profile_alldeb
+#1729017824
+git diff arcolinux debian_testing profile_archnote
+#1729017842
+glo -10
+#1729017876
+alias| rg 'git checkout'
+#1729017901
+gco debian_testing
+#1729018038
+git cherry-pick a3a11e5
+#1729018045
+gss
+#1729018049
+gp -v
+#1729018056
+glol -10
+#1729018089
+$DOTFILES/
+#1729018110
+git diff arcolinux debian_testing bash/bashrc
+#1729018156
+git diff arcolinux debian_testing -- bash/bashrc
+#1729018194
+gco arcolinux
+#1729018197
+git diff arcolinux debian_testing -- bash/bashrc
+#1729018209
+gl -u origin arcolinux
+#1729018216
+gl origin arcolinux
+#1729018268
+un
+#1729018279
+nala list --upgradable 
+#1729018302
+doas apt search -t experimental plasma-desktop
+#1729018313
+doas apt search plasma-desktop
+#1729018345
+doas nala show -t experimental plasma-desktop
+#1729018351
+doas nala show plasma-desktop
+#1729018410
+doas nala show -a plasma-desktop
+#1729018675
+fastfetch 
+#1729020426
+un
+#1729020441
+doas systemctl status
+#1729021295
+ssh -T git@github.com
+#1729021300
+cd .ssh
+#1729021305
+bat config
+#1729021330
+cat allbano_site_aws_ec2.pem 
+#1729023706
+if
+#1729023709
+id
+#1729023741
+who
+#1729023750
+ps
+#1729023757
+w
+#1729023766
+w --help
+#1729023816
+users
+#1729023821
+users --help
+#1729023848
+last
+#1729023878
+who
+#1729023890
+sct status
+#1729023967
+tmux
+#1729063571
+un
+#1729063603
+hostname
+#1729063608
+hostnamectl 
+#1729063729
+asdf
+#1729063735
+asdf list
+#1729063975
+cd .config/
+#1729063992
+mkdir nvim
+#1729063994
+cd nvim
+#1729064010
+nvim init.lua
+#1729185822
+un
+#1729185874
+sct status podman
+#1729185890
+sct status fwupd
+#1729185899
+sct status fwupd-refresh.service 
+#1729185910
+sudo fwupd
+#1729185914
+sudo fwupdmgr 
+#1729185917
+sudo fwupdmgr --help
+#1729185948
+sudo fwupdmgr get-devices
+#1729186211
+un
+#1729186224
+nala list --upgradable 
+#1729186252
+sudo nala full-upgrade
+#1729186560
+sudo systemctl reboot
+#1729186654
+sudo su
+#1729186740
+fastfetch 
+#1729186763
+sudo nala search kde
+#1729186826
+sudo nala search plasma-desktop
+#1729186860
+sudo nala search experimental plasma-desktop
+#1729186936
+sudo nala search -t experimental plasma-desktop
+#1729186950
+sudo nala search --help
+#1729186989
+sudo nala search -q plasma-desktop
+#1729186994
+sudo nala search -a plasma-desktop
+#1729187449
+fastfetch 
+#1729187475
+sudo apt search -t experimental plasma-desktop
+#1729187483
+sudo apt search -t experimental kde-plasma-desktop
+#1729187495
+sudo apt show -t experimental kde-plasma-desktop
+#1729187501
+sudo apt show  kde-plasma-desktop
+#1729187515
+sudo nala show  kde-plasma-desktop
+#1729187542
+sudo nala show  kde-plasma-desktop/experimental
+#1729187553
+sudo nala show --help
+#1729189891
+echo $AGER
+#1729189893
+echo $PAGER
+#1729189969
+PAGER="most -s"
+#1729189972
+sudo nala show --help
+#1729189992
+export PAGER="most -s"
+#1729189993
+sudo nala show --help
+#1729190015
+nala show --help
+#1729190052
+nala show -h
+#1729190067
+nala show -a plasma-desktop
+#1729190153
+apt -h
+#1729190177
+sudo apt install -t experimental kde-full 
+#1729190277
+sudo lvim /etc/apt/sources.list
+#1729190295
+type -a lvim
+#1729190349
+sudo ln -sf $(type -p lvim) /usr/bin/lvim
+#1729190352
+type -a lvim
+#1729190362
+sudo lvim /etc/apt/sources.list
+#1729190384
+asdf list
+#1729190416
+sudo nala show neovim
+#1729190434
+type -a nvim
+#1729190480
+sudo ln -sf /home/albano/.asdf/shims/nvim /usr/bin/nvim
+#1729190485
+type -a nvim
+#1729190492
+sudo nvim 
+#1729190507
+asdf
+#1729190517
+asdf reshim neovim *0.10.2 
+#1729190519
+sudo nvim 
+#1729190561
+sudo exec nvim 
+#1729190569
+sudo command nvim 
+#1729190580
+sudo command vim
+#1729190640
+sudo echo $PATH
+#1729190667
+cat .tool-versions 
+#1729190709
+sudo ln -sf /home/albano/.tool-versions /root/.tool-versions
+#1729190712
+sudo nvim
+#1729190757
+unlink /usr/bin/nvim 
+#1729190760
+sudo unlink /usr/bin/nvim 
+#1729190765
+type -a nvim
+#1729190792
+cd .asdf/installs/neovim/0.10.2/bin/
+#1729190842
+sudo ln -sf $(pwd)/nvim /usr/bin/nvim
+#1729190844
+sudo nvim
+#1729190852
+doas nvim
+#1729190864
+doas echo $PATH
+#1729190873
+sudo type -a nvim
+#1729190884
+sudo bash -c type -a nvim
+#1729190895
+cd
+#1729190898
+sudo nvim
+#1729190909
+sudo lvim
+#1729190936
+sudo lvim /etc/apt/sources.list
+#1729190997
+sudo nala update
+#1729191024
+sudo lvim /etc/apt/sources.list
+#1729191058
+sudo apt update
+#1729191073
+sudo lvim /etc/apt/sources.list
+#1729191101
+sudo apt update
+#1729191169
+bat
+#1729191175
+bat /etc/environment
+#1729191195
+bat /etc/profile
+#1729191204
+sudo su -
+#1729352699
+un
+#1729363620
+doas systemctl poweroff 
+#1729633482
+un
+#1729633942
+fastfetch 
+#1729633962
+apt
+#1729650394
+un]
+#1729650395
+un
+#1729717069
+fastfetch 
+#1729717493
+sct reboot
+#1729717605
+un
+#1729717685
+tty -s
+#1729717690
+echo $$
+#1729717693
+echo $?
+#1729717714
+tty -s
+#1729717715
+echo $?
+#1729717717
+tty -s
+#1729717719
+echo $?
+#1729717871
+help bash
+#1729717880
+info bash
+#1729717897
+info help
+#1729717903
+info --help
+#1729717936
+info vim buffers
+#1729717943
+info vim buffers 
+#1729717958
+help
+#1729717989
+expr
+#1729718013
+help exec
+#1729718062
+exec firefox
+#1729718102
+type -a sh
+#1729718111
+type -p sh
+#1729718129
+l -d $(type -p sh)
+#1729718139
+l -d $(type -p dash)
+#1729718152
+cd /usr/bin/sh
+#1729718164
+please
+#1729718191
+sudo unlink /usr/bin/dash 
+#1729718198
+l -d $(type -p sh)
+#1729718204
+type -a sh
+#1729718232
+sudo ln -sf /usr/bin/bash /usr/bin/sh
+#1729718236
+type -a sh
+#1729718519
+cd git
+#1729718528
+mkdir others
+#1729718531
+cd others/
+#1729718533
+git clone https://git.savannah.gnu.org/git/bash.git
+#1729718845
+cd bash/
+#1729718861
+glol -50
+#1729718912
+bash --version
+#1729719098
+echo $0
+#1729719161
+type -a $0
+#1729719234
+env
+#1729719288
+echo $SHLVL 
+#1729719314
+alacritty --help
+#1729719350
+alacritty --working-directory 
+#1729719505
+type -a tmux
+#1729719424
+lvim ~/.config/alacritty/alacritty.toml 
+#1729719626
+ex it
+#1729719650
+rm sudo
+#1729719659
+ps
+#1729719921
+echo $-
+#1729720024
+help -m help
+#1729720042
+help -m echo
+#1729720049
+help -m help
+#1729720200
+ls /dev/fd
+#1729720682
+if tty -s; then echo 'Sucesso!' else echo 'Erro!' fi
+#1729720692
+if tty -s; then echo 'Sucesso!' else echo 'Erro!' fi;
+#1729720707
+if tty -s; then echo 'Sucesso!'; else echo 'Erro!'; fi
+#1729720767
+cd $DOTBASH
+#1729720835
+asdf
+#1729720842
+echo -e "${PATH//:/\\n}"
+#1729720848
+modular update mojo
+#1729720884
+type -a modular5
+#1729720885
+type -a modular
+#1729720891
+modular --help
+#1729720912
+sudo apt purge modular 
+#1729720927
+lvim profile_alldeb 
+#1729720943
+ga profile_alldeb 
+#1729720966
+git restore ~/github/dotfiles/alacritty/alacritty.toml 
+#1729721004
+gcm "Exclude modular path to the profile_alldeb file."
+#1729721074
+git reset --hard HEAD~1
+#1729721092
+gp origin arcolinux --force
+#1729721114
+git checkout debian_testing 
+#1729721123
+git checkout arcolinux 
+#1729721133
+git checkout debian_testing 
+#1729721144
+cat profile_alldeb 
+#1729721149
+lvim profile_a
+#1729721153
+lvim profile_alldeb 
+#1729721163
+ga profile_alldeb 
+#1729721168
+gcm "Exclude modular path to the profile_alldeb file."
+#1729721202
+type -a pullDotfiles 
+#1729721331
+cd ../scripts/
+#1729721334
+lvim functionsInitBash 
+#1729721363
+pullDotfiles 
+#1729721439
+bat templates 
+#1729721697
+false 
+#1729721701
+echo $?
+#1729721715
+bat templates 
+#1729721808
+type -a pushHis 
+#1729721966
+xdg-open "www.google.com"
+#1729721979
+xdg-open firefox
+#1729722015
+xdg-open "https://www.google.com"
+#1729722091
+google ivete sangalo
+#1729722165
+type -a launch
+#1729721925
+lvim functionsInitBash 
+#1729722319
+cd $DOTFILES
+#1729722330
+type -a launch
+#1729722338
+cd bash
+#1729722357
+. scripts/functionsInitBash 
+#1729722360
+type -a launch
+#1729722371
+google últimas notícias
+#1729722399
+LVIM scripts/functionsInitBash 
+#1729722402
+lvim scripts/functionsInitBash 
+#1729722425
+. scripts/functionsInitBash 
+#1729722437
+. $DOTFILES/scripts/functionsInitBash 
+#1729722444
+google últimas notícias
+#1729722467
+lvim $DOTFILES/scripts/functionsInitBash 
+#1729722501
+cat $DOTFILES/scripts/functionsInitBash 
+#1729722750
+$DOTFILES/
+#1729722976
+git config
+#1729722984
+git config --get-all 
+#1729723018
+git config --system -kl
+#1729723020
+git config --system -l
+#1729723042
+git config --worktree -l
+#1729723073
+git config --global -l
+#1729723099
+git config -l
+#1729723298
+CD
+#1729723301
+cd 
+#1729723303
+git
+#1729723306
+cd git
+#1729723312
+cd others/bash/
+#1729723322
+git log --decorate
+#1729723369
+git shortlog
+#1729723417
+git shortlog -sn
+#1729723439
+git log --graph 
+#1729723490
+cd
+#1729723496
+cd $DOTFILES
+#1729723502
+git log
+#1729723510
+git log -5
+#1729723539
+git show c9ae
+#1729724725
+git remote -v
+#1729725192
+git log --help
+#1729725366
+git diff debian_testing..main
+#1729725478
+git diff
+#1729725487
+gaa 
+#1729725522
+gcm "Update launch function."
+#1729725537
+git checkout main
+#1729725552
+git diff main..debian_testing 
+#1729725677
+alias| rg 'git log'
+#1729725683
+glg -5
+#1729725686
+alias| rg 'git log'
+#1729725699
+glgga
+#1729725705
+alias| rg 'git log'
+#1729725712
+glgm
+#1729725715
+alias| rg 'git log'
+#1729725726
+glo -10
+#1729725740
+gloga
+#1729725766
+glod
+#1729725853
+git merge
+#1729725861
+git merge debian_testing 
+#1729725868
+glo -10
+#1729725872
+glol -10
+#1729725896
+git merge -e debian_testing 
+#1729725905
+git merge -h
+#1729725921
+git merge -e --commit debian_testing 
+#1729725959
+git merge -m debian_testing 
+#1729726046
+git merge --abort
+#1729726059
+glol -10
+#1729726086
+git revert -m 1 95aa7
+#1729726099
+glol -10
+#1729726125
+git merge -e --commit debian_testing 
+#1729726136
+glol -10
+#1729726146
+git reset --hard 24ba
+#1729726152
+glol -10
+#1729726170
+git reset --hard 24ba
+#1729726177
+glol 10
+#1729726181
+glol -10
+#1729726217
+git reset --hard 95aa
+#1729726222
+glol -10
+#1729726240
+gp origin main --force
+#1729726328
+git checkout debian_testing 
+#1729726344
+cd bash
+#1729726353
+git diff profile_archnote profile_alldeb
+#1729726360
+diff profile_archnote profile_alldeb
+#1729726367
+diff --git profile_archnote profile_alldeb
+#1729726378
+git diff
+#1729726381
+git diff --help
+#1729726431
+diff --color profile_archnote profile_alldeb
+#1729726480
+ssh-add -l
+#1729726512
+gdiff --color profile_archnote profile_alldeb
+#1729726546
+cat profile_archnote 
+#1729726549
+cat profile_alldeb 
+#1729726781
+git checkout main
+#1729726792
+git diff debian_testing..main
+#1729726798
+git diff main..debian_testing 
+#1729726810
+git checkout debian_testing 
+#1729726820
+pushHis 
