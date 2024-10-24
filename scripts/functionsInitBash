@@ -68,6 +68,7 @@ pullDotfiles() {
 pushHis() {
     local LOCALPATH="$(pwd)"
     local HPATH="/home/$USER/github/dotfiles/bash/history"
+<<<<<<< HEAD
     local UPTODATE="$(date +%s)"
     local HISTNAMEBASE="$(uname --nodename)-history" 
     local HISTNAME="${HISTNAMEBASE}-${UPTODATE}"
@@ -81,6 +82,19 @@ pushHis() {
     #git push origin main 
     git push origin $(git_current_branch)
     cd "${LOCALPATH}" || exit 2
+=======
+    local UPTODATE="$(date +'%d/%m/%Y às %H:%M:%S')"
+    local HISTNAME="$(uname --nodename)-history" 
+
+    [[ ! -f "$HPATH/$HISTNAME" ]] && touch "$HPATH/$UPNAME" && echo "Arquivo de histório criado: $HISTNAME"
+    cp -f "$HOME/.bash_history" "$HPATH/$HISTNAME"
+    cd "$DOTFILES" || exit 1
+    git add "$HPATH/$HISTNAME"
+    git commit -m "Your bash_history on PC $(uname --nodename) was updated on $UPTODATE"
+    #git push origin main 
+    git push origin $(git_current_branch)
+    cd "$LOCALPATH" || exit 2
+>>>>>>> arcolinux
 }
 
 

@@ -1,4 +1,9 @@
 [colors]
+line_indicator = { foreground = "#181818", background = "#ac4242" }
+
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
 
 [colors.bright]
 black = "#555753"
@@ -10,9 +15,9 @@ red = "#ef2929"
 white = "#eeeeec"
 yellow = "#fce94f"
 
-[colors.cursor]
-cursor = "#ffffff"
-text = "#000000"
+#[colors.cursor]
+#cursor = "#ffffff"
+#text = "#000000"
 
 [colors.normal]
 black = "#000000"
@@ -24,6 +29,3 @@ red = "#cc0000"
 white = "#d3d7cf"
 yellow = "#c4a000"
 
-[colors.primary]
-background = "#000000"
-foreground = "#ffffff"
