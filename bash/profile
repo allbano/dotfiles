@@ -13,20 +13,14 @@
 [[  ! $PATH =~ /usr/sbin ]] && export PATH="$PATH:/usr/sbin"
 [[  ! $PATH =~ /sbin ]] && export PATH="$PATH:/sbin"
 
-#SSH Agent
-eval "$(ssh-agent &> /dev/null)"
+# SSH Agent
+# eval "$(ssh-agent &> /dev/null)"
 
 # ASDF
 . "$HOME/.asdf/asdf.sh"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
-
-# set PATH so it includes user's private MODULAR_HOME if it exists
-export MODULAR_HOME="$HOME/.modular"
-if [ -d "$MODULAR_HOME" ] ; then
-    export PATH="$PATH:$MODULAR_HOME:/home/albano/.modular/pkg/packages.modular.com_mojo/bin"
-fi
 
 # Init bashrc
 [ -f "$HOME/.bashrc" ] &&  . "$HOME/.bashrc"
