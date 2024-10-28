@@ -79,7 +79,7 @@ pushHis() {
     ALLDEB=$(realpath "${HIST}")
     [[ -f "${ALLDEB}" ]] && rm "${ALLDEB}"
     cp -p "${HOME}/.bash_history" "${HPATH}/${HISTNAME}"
-    git add "${HPATH}"/*
+    git add "${HPATH}"
     git commit -m "Your bash_history on PC \"${HOSTNAME}\" was updated on $(date -d @"${UPTODATE}")"
     git push origin "$(git_current_branch)"
     cd "${LOCALPATH}" || exit 2
