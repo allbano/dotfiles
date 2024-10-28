@@ -23,7 +23,7 @@ export XDG_CONFIG_HOME="/home/$USER/.config"
 # Exports and User Configs 
 ###############################################################################
 export EDITOR="nvim"
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
 export PAGER="less -s -M -Gg"
 export MANPAGER="lvim +Man!"
 export LS_OPTIONS="--color=auto"
@@ -68,7 +68,7 @@ export DOTBASH="/home/$USER/github/dotfiles/bash"
 # ignoreboth - Enable both ignoredups and ignorespace
 # erasedups - eliminate duplicates from the whole list (I don't use it)
 # export HISTCONTROL="$HISTCONTROL:erasedups"
-export HISTCONTROL="ignoreboth:erasedups"
+export HISTCONTROL=ignoreboth:erasedups
 
 # show a timestamp in the history command output
 export HISTTIMEFORMAT="%F %T$ "
@@ -79,30 +79,31 @@ export HISTTIMEFORMAT="%F %T$ "
 IGNORE="..:~:/etc:/usr:/var"
 IGNORE="$IGNORE:github/dotfiles/"
 # Ls/exa/lsd ignore
-IGNORE="$IGNORE:ls:lsd:lsd -l:lsd -la:exa:ll:l:x:xx:ll ~:l ~"
+#IGNORE="$IGNORE:ls:lsd:lsd -l:lsd -la:exa:ll:l:x:xx:ll ~:l ~"
 # git's ignore
-IGNORE="$IGNORE:gst:ga .:gp:gl:glol:glob"
+#IGNORE="$IGNORE:gst:ga .:gp:gl:glol:glob"
 # Vim, lvim, nvim ignore
-IGNORE="$IGNORE:lvim:lvim ~/.bashrc:vim:vim ~/.bashrc:nvim:nvim ~/.bashrc"
+#IGNORE="$IGNORE:lvim:lvim ~/.bashrc:vim:vim ~/.bashrc:nvim:nvim ~/.bashrc"
 # Commands ignore
-IGNORE="$IGNORE:history:history *:his:his *"
-IGNORE="$IGNORE:pwd:bg:fg:ua:ud:uy:ur:exit:man *"
-IGNORE="$IGNORE:htop:nvtop:bashtop:du:ncdu:dust:cargo:ip -c a"
-IGNORE="$IGNORE:neofetch:lspci:lsusb:lsblk:lsblk -f"
-IGNORE="$IGNORE:alias:alias *:. ~/.bashrc"
-IGNORE="$IGNORE:doas systemctl status *"
+#IGNORE="$IGNORE:history:history *:his:his *"
+#IGNORE="$IGNORE:pwd:bg:fg:ua:ud:uy:ur:exit:man *"
+#IGNORE="$IGNORE:htop:nvtop:bashtop:du:ncdu:dust:cargo:ip -c a"
+#IGNORE="$IGNORE:neofetch:lspci:lsusb:lsblk:lsblk -f"
+#IGNORE="$IGNORE:alias:alias *:. ~/.bashrc"
+#IGNORE="$IGNORE:doas systemctl status *"
 # compilation ignore
-IGNORE="$IGNORE:make:make *"
+#IGNORE="$IGNORE:make:make *"
 # python ignore
 IGNORE="$IGNORE:py3a:py3d"
 # frameworks ignore
-IGNORE="$IGNORE:nvm version:ng version:npm version"
+#IGNORE="$IGNORE:nvm version:ng version:npm version"
 export HISTIGNORE="$IGNORE"
 
 # append last command to the history right before next prompt
 #[[ "${PROMPT_COMMAND[*]}" != *'history -a'* ]] \
 #  && export PROMPT_COMMAND+=('history -a')
-PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND" # immeditely write on history
+#PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND" # immeditely write on history
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND" # immeditely write on history
 
 # Warning: This file is sinchronized with the file
 # in the directory $HOME/github/dotfiles/bash/history_archnote
@@ -119,7 +120,7 @@ export HISTFILESIZE=
 shopt -s histappend histreedit histverify
 shopt -s expand_aliases
 shopt -s checkwinsize
-shopt -s autocd # change to named directory
+#shopt -s autocd # change to named directory
 shopt -s cdspell # autocorrects ced misspellings
 shopt -s cmdhist # save multi-line commands in history as single line
 # If set, the pattern "**" used in a pathname expansion context will
@@ -184,6 +185,7 @@ PS1+="${BG_GREY10}${FG_WHITE} " # end DIRECTORY container / begin FILES containe
 PS1+="[\$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D " # print number of folders
 PS1+="[\$(find . -mindepth 1 -maxdepth 1 -type f | wc -l)]F " # print number of files
 PS1+="[\$(find . -mindepth 1 -maxdepth 1 -type l | wc -l)]SL " # print number of symlinks
+#PS1+="${BG_BLUE}${FG_YELLOW} \${OLDPWD} " # print directory
 PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
 PS1+="\$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n \"( BRANCH )\")" 
 #PS1+="\$(git branch --show-current 2> /dev/null | xargs -I BRANCH echo -n \"( BRANCH )\")"
@@ -205,7 +207,9 @@ PS1+="${FMT_RESET}${FG_WHITE}"
 PS1+="\n"
 #PS1+="${FG_WHITE}${DES[1]} " # end arrow to prompt
 #PS1+="\[\e[1;37m\]${FG_CYAN}\$ ${FMT_RESET}" # print prompt
-PS1+="\[\e[1;37m\]${FG_CYAN}⟩⟩ ${FMT_RESET}" # print prompt
+#PS1+="\[\e[1;37m\]${FG_CYAN}⟩⟩ ${FMT_RESET}" # print prompt
+PS1+="$([[ $(echo $?) -eq 0 ]] && echo -n "${FG_CYAN}⟩⟩ ${FMT_RESET}" || echo -n "${FG_RED}⟩⟩ ${FMT_RESET}")"
+
 export PS1
 
 
@@ -234,6 +238,8 @@ fi
 # PIPX
 eval "$(register-python-argcomplete pipx)"
 
+# SSH Agent
+eval "$(ssh-agent -s &> /dev/null)"
 
 # My Functions Config
 BLVL="$(ps -o tty= -p$$ | sed 's/pts\///')"
