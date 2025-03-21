@@ -13,8 +13,11 @@
 [[  ! $PATH =~ /usr/sbin ]] && export PATH="$PATH:/usr/sbin"
 [[  ! $PATH =~ /sbin ]] && export PATH="$PATH:/sbin"
 
-# ASDF
-. "$HOME/.asdf/asdf.sh"
+# GO PATH
+[[ -d "$HOME/go/bin" && ! $PATH =~ "$HOME"/go/bin  ]] &&  export PATH="$HOME/go/bin:$PATH"
+
+# ASDF PATH AND AUTOCOMPLETION
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
