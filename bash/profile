@@ -15,9 +15,10 @@
 
 # GO PATH
 [[ -d "$HOME/go/bin" && ! $PATH =~ "$HOME"/go/bin  ]] &&  export PATH="$HOME/go/bin:$PATH"
+complete -C /home/albano/go/bin/gocomplete go
 
-# ASDF PATH AND AUTOCOMPLETION
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# ASDF/MISE PATH AND AUTOCOMPLETION
+. <(mise completion bash)
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
@@ -26,3 +27,4 @@ source <(ng completion script)
 [ -f "$HOME/.bashrc" ] &&  . "$HOME/.bashrc"
 
 
+eval "$(/home/albano/.local/bin/mise activate bash)"
