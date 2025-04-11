@@ -1,7 +1,9 @@
-live_config_reload = true
+[general]
 import = [
   "/home/albano/.config/alacritty/default.toml",
 ]
+live_config_reload = true
+working_directory = "None"
 
 [colors]
 draw_bold_text_with_bright_colors = true
@@ -33,6 +35,11 @@ multiplier = 3
 [selection]
 save_to_clipboard = false
 
-[shell]
-program = "/usr/bin/bash"
-args = ["-c","tmux new-ses -s al0"]
+#[terminal.shell]
+#program = "/usr/bin/bash"
+#args = ["-c","tmux new-ses -s al0"]
+
+[terminal]
+shell = { program = "/usr/bin/tmux", args = ["new-session", "-s", "al0"] }
+
+
