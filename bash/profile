@@ -18,7 +18,8 @@
 complete -C /home/albano/go/bin/gocomplete go
 
 # ASDF/MISE PATH AND AUTOCOMPLETION
-. <(mise completion bash)
+#. <(mise completion bash)
+eval "$(/home/albano/.local/bin/mise activate bash)"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
@@ -27,4 +28,3 @@ source <(ng completion script)
 [ -f "$HOME/.bashrc" ] &&  . "$HOME/.bashrc"
 
 
-eval "$(/home/albano/.local/bin/mise activate bash)"
