@@ -23,4 +23,4 @@
 # Usando agrupamento de comandos sem formatação
 #cut -d : -f 1,5 /etc/passwd | tr : \\t
 
-printf "%-20s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-20s %s\n", $1, $5}' /etc/passwd
+printf "%-30s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-30s %s\n", $1, $5}' /etc/passwd
