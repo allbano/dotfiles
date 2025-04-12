@@ -7,7 +7,7 @@
 [[ -d "$HOME/.local/bin" && ! $PATH =~ "$HOME"/.local/bin  ]] &&  export PATH="$HOME/.local/bin:$PATH"
 
 # set PATH so include cargo's env
-[[ -a "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
+[[ ! ${PATH} =~ ${HOME}/.cargo/bin ]] && export PATH="$PATH:${HOME}/.cargo/bin"
 
 
 [[  ! $PATH =~ /usr/sbin ]] && export PATH="$PATH:/usr/sbin"
