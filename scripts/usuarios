@@ -2,7 +2,7 @@
 
 # ------------------------------------------------------------------------------- # 
 # Script      : usuarios
-# Description : 
+# Description : Lê os logins e nomes de usuários do siste,a
 # Version     : 0.1
 # Author      : Albano Roberto Drescher Von Maywitz 
 # Data        : 03 de October de 2024
@@ -18,9 +18,40 @@
 # Mostra os logins e nomes de usuários do sustema
 # Obs.: Lê dados do arquivo /etc/passwd
 #
+# Versão 1: Mostra os usuários e nomes separados por TAB
+# Versão 2: Adiciona suporte à opção -h
+# Versão 3: Adicionando suporte à opção -V e opções inválidas
+#
 # Albano, Outubro de 2024
 # 
 # Usando agrupamento de comandos sem formatação
-#cut -d : -f 1,5 /etc/passwd | tr : \\t
 
-printf "%-30s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-30s %s\n", $1, $5}' /etc/passwd
+MENSAGEM_USO="
+Uso: $(basename -s "$0") [-h | -v]
+
+  -h    Mostra esta tela de ajuda e sai
+  -v    Mostra a versão do programa e sai
+"
+
+# Tratamento das opções de linha de comando
+case "$1" in
+  -h)
+    echo "${MENSAGEM_USO}"
+    exit 0
+  ;;
+  -v)
+    echo "${0} - Versão 3"
+    exit 0
+  ;;
+  *)
+    if test -n "$1"; then
+      echo "Opção Inválida: $1"
+      exit 1
+    fi
+esac
+
+
+# Processamento
+cut -d : -f 1,5 /etc/passwd | tr : \\t
+
+#printf "%-30s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-30s %s\n", $1, $5}' /etc/passwd
