@@ -243,6 +243,7 @@ eval "$(ssh-agent -s &> /dev/null)"
 
 # My Functions Config
 #BLVL="$(ps -o tty= -p$$ | sed 's/pts\///')"
-[[ $SHLVL -eq "1" ]] && pullDotfiles 
+#[[ $SHLVL -eq "1" ]] && pullDotfiles 
+[[ $SHLVL -eq "1" && $(ps -o tty= -p$$ | sed 's/pts\///') -eq "2" ]] && pullDotfiles
 
 
