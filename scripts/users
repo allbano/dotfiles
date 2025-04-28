@@ -25,49 +25,73 @@
 #           -V extraindo direto dos cabeçalhos,
 #           adicionadas opções --help e --version
 # Versão 5: Adicionadas opções -s e --sorte
+# Versão 6: Adicionadas opções -r, --reverse, -u, --uppercase,
+#           leitura de múltiplas opções (loop)
 #
 # Albano, Outubro de 2024
 # 
 # Usando agrupamento de comandos sem formatação
 
-ordenar=0
+NAME=$(basename "$(type -p users)")
+ORDENAR=0
+INVERTER=0
+MAIUSCULAS=0
 
 MENSAGEM_USO="
-Uso: $(basename "$(type -p usuarios)") [-h | -v]
+Uso: $NAME [OPTIONS]
 
-  -s, --sorte    Ordena a listagem alfabeticamente
-  -h, --help     Mostra esta tela de ajuda e sai
-  -v, --version  Mostra a versão do programa e sai
+  -r, --reverse   Inverte a listagem
+  -s, --sorte     Ordena a listagem alfabeticamente
+  -u, --uppercase Mostra a listagem em MAIÚSCULAS
+  -h, --help      Mostra esta tela de ajuda e sai
+  -v, --version   Mostra a versão do programa e sai
 "
 
-# Tratamento das opções de linha de comando
-case "$1" in
-  -s | --sort)
-    ordenar=1
-  ;;
-  -h | --help)
-    echo "${MENSAGEM_USO}"
-    exit 0
-  ;;
-  -v | --version)
-    echo -n $(basename $(type -p usuarios))
-    grep '^# Versão ' "$0" | tail -1 | cut -d : -f1 | tr -d \#
-    exit 0
-  ;;
-  *)
-    if test -n "$1"; then
-      echo "Opção Inválida: $1"
-      exit 1
-    fi
-esac
+versionop() {
+  echo "${MENSAGEM_USO}"
+  exit 0
+}
+helpop() {
+  echo -n "$NAME"
+  grep '^# Versão ' "$0" | tail -1 | cut -d : -f1 | tr -d \#
+  exit 0
+}
 
+invalid_option() {
+  if test -n "$1"; then
+    echo "Opção Inválida: $1"
+    exit 1
+  fi
+}
+
+# Tratamento das opções de linha de comando
+while test -n "$1"
+  do
+    case "$1" in
+      -s | --sort     ) ORDENAR=1             ;;
+      -r | --reverse  ) INVERTER=1            ;;
+      -u | --uppercase) MAIUSCULAS=1          ;;
+      -h | --help     ) versionop             ;;
+      -v | --version  ) helpop                ;;
+      *               ) invalid_option "$1"   ;;
+    esac
+  shift
+done
 
 # Processamento
 # Extrai listagem
 lista=$(cut -d : -f 1,5 /etc/passwd)
 
 # Ordena a listagem (se necessário)
-[[ ${ordenar} = 1 ]] && lista=$(echo "$lista" | sort)
+[[ ${ORDENAR} = 1 ]] && lista=$(echo "$lista" | sort)
+
+# Inverte a listagem (se necessário)
+[[ ${INVERTER} = 1 ]] && lista=$(echo "$lista" | tac)
+
+# Converte para maiúsculas (se necessário)
+[[ ${MAIUSCULAS} = 1 ]] && lista=$(echo "$lista" | tr '[:lower:]' '[:upper:]')
+
+
 
 # Mostra o resultado para o usuário
 echo "$lista" | tr : \\t
