@@ -21,26 +21,37 @@
 # Versão 1: Mostra os usuários e nomes separados por TAB
 # Versão 2: Adiciona suporte à opção -h
 # Versão 3: Adicionando suporte à opção -V e opções inválidas
+# Versão 4: Arrumado bug quando não tem opções, basename no nome do programa,
+#           -V extraindo direto dos cabeçalhos,
+#           adicionadas opções --help e --version
+# Versão 5: Adicionadas opções -s e --sorte
 #
 # Albano, Outubro de 2024
 # 
 # Usando agrupamento de comandos sem formatação
 
-MENSAGEM_USO="
-Uso: $(basename -s "$0") [-h | -v]
+ordenar=0
 
-  -h    Mostra esta tela de ajuda e sai
-  -v    Mostra a versão do programa e sai
+MENSAGEM_USO="
+Uso: $(basename "$(type -p usuarios)") [-h | -v]
+
+  -s, --sorte    Ordena a listagem alfabeticamente
+  -h, --help     Mostra esta tela de ajuda e sai
+  -v, --version  Mostra a versão do programa e sai
 "
 
 # Tratamento das opções de linha de comando
 case "$1" in
-  -h)
+  -s | --sort)
+    ordenar=1
+  ;;
+  -h | --help)
     echo "${MENSAGEM_USO}"
     exit 0
   ;;
-  -v)
-    echo "${0} - Versão 3"
+  -v | --version)
+    echo -n $(basename $(type -p usuarios))
+    grep '^# Versão ' "$0" | tail -1 | cut -d : -f1 | tr -d \#
     exit 0
   ;;
   *)
@@ -52,6 +63,13 @@ esac
 
 
 # Processamento
-cut -d : -f 1,5 /etc/passwd | tr : \\t
+# Extrai listagem
+lista=$(cut -d : -f 1,5 /etc/passwd)
+
+# Ordena a listagem (se necessário)
+[[ ${ordenar} = 1 ]] && lista=$(echo "$lista" | sort)
+
+# Mostra o resultado para o usuário
+echo "$lista" | tr : \\t
 
 #printf "%-30s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-30s %s\n", $1, $5}' /etc/passwd
