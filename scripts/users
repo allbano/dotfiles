@@ -24,9 +24,10 @@
 # Versão 4: Arrumado bug quando não tem opções, basename no nome do programa,
 #           -V extraindo direto dos cabeçalhos,
 #           adicionadas opções --help e --version
-# Versão 5: Adicionadas opções -s e --sorte
+# Versão 5: Adicionadas opções -s e --sort
 # Versão 6: Adicionadas opções -r, --reverse, -u, --uppercase,
 #           leitura de múltiplas opções (loop)
+# Versão 7: Adicionadas opções -d e --DELIMiter
 #
 # Albano, Outubro de 2024
 # 
@@ -36,16 +37,21 @@ NAME=$(basename "$(type -p users)")
 ORDENAR=0
 INVERTER=0
 MAIUSCULAS=0
+DELIM='\t'
 
 MENSAGEM_USO="
-Uso: $NAME [OPTIONS]
+Uso: $NAME [OPÇÕES]
 
-  -r, --reverse   Inverte a listagem
-  -s, --sorte     Ordena a listagem alfabeticamente
-  -u, --uppercase Mostra a listagem em MAIÚSCULAS
-  -h, --help      Mostra esta tela de ajuda e sai
-  -v, --version   Mostra a versão do programa e sai
+  -d, --delimiter C     Usa o caractere C como delimitador
+  -r, --reverse         Inverte a listagem
+  -s, --sort            Ordena a listagem alfabeticamente
+  -u, --uppercase       Mostra a listagem em MAIÚSCULAS
+  -h, --help            Mostra esta tela de ajuda e sai
+  -v, --version         Mostra a versão do programa e sai
 "
+# MENSAGENS DE ERRO
+err[0]="Opção[ões] Inválida[s]!!!"
+err[1]="Faltou o argumento depois da opção -d"
 
 versionop() {
   echo "${MENSAGEM_USO}"
@@ -57,23 +63,26 @@ helpop() {
   exit 0
 }
 
-invalid_option() {
-  if test -n "$1"; then
-    echo "Opção Inválida: $1"
+die() {
+    echo ${err[$1]} 
     exit 1
-  fi
 }
 
 # Tratamento das opções de linha de comando
 while test -n "$1"
   do
     case "$1" in
-      -s | --sort     ) ORDENAR=1             ;;
-      -r | --reverse  ) INVERTER=1            ;;
-      -u | --uppercase) MAIUSCULAS=1          ;;
-      -h | --help     ) versionop             ;;
-      -v | --version  ) helpop                ;;
-      *               ) invalid_option "$1"   ;;
+      -d | --DELIMiter) 
+                        shift
+                        DELIM="$1"
+                        [[ -z "$DELIM" ]] && die 1
+                                                ;;
+      -s | --sort     ) ORDENAR=1               ;;
+      -r | --reverse  ) INVERTER=1              ;;
+      -u | --uppercase) MAIUSCULAS=1            ;;
+      -h | --help     ) versionop               ;;
+      -v | --version  ) helpop                  ;;
+      *               ) [[ -n "$1" ]] && die 0  ;;
     esac
   shift
 done
@@ -94,6 +103,6 @@ lista=$(cut -d : -f 1,5 /etc/passwd)
 
 
 # Mostra o resultado para o usuário
-echo "$lista" | tr : \\t
+echo "$lista" | tr : "$DELIM"
 
 #printf "%-30s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-30s %s\n", $1, $5}' /etc/passwd
