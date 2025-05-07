@@ -1,0 +1,108 @@
+#!/usr/bin/env bash
+
+# ------------------------------------------------------------------------------- # 
+# Script      : usuarios
+# Description : Lê os logins e nomes de usuários do siste,a
+# Version     : 0.1
+# Author      : Albano Roberto Drescher Von Maywitz 
+# Data        : 03 de October de 2024
+# ------------------------------------------------------------------------------- # 
+# Use : 
+# ------------------------------------------------------------------------------- # 
+# Copyright (C) 2024, Albano <allbano@gmail.com>.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+# ------------------------------------------------------------------------------- #  
+#
+# Mostra os logins e nomes de usuários do sustema
+# Obs.: Lê dados do arquivo /etc/passwd
+#
+# Versão 1: Mostra os usuários e nomes separados por TAB
+# Versão 2: Adiciona suporte à opção -h
+# Versão 3: Adicionando suporte à opção -V e opções inválidas
+# Versão 4: Arrumado bug quando não tem opções, basename no nome do programa,
+#           -V extraindo direto dos cabeçalhos,
+#           adicionadas opções --help e --version
+# Versão 5: Adicionadas opções -s e --sort
+# Versão 6: Adicionadas opções -r, --reverse, -u, --uppercase,
+#           leitura de múltiplas opções (loop)
+# Versão 7: Adicionadas opções -d e --DELIMiter
+#
+# Albano, Outubro de 2024
+# 
+# Usando agrupamento de comandos sem formatação
+
+NAME=$(basename "$(type -p users)")
+ORDENAR=0
+INVERTER=0
+MAIUSCULAS=0
+DELIM='\t'
+
+MENSAGEM_USO="
+Uso: $NAME [OPÇÕES]
+
+  -d, --delimiter C     Usa o caractere C como delimitador
+  -r, --reverse         Inverte a listagem
+  -s, --sort            Ordena a listagem alfabeticamente
+  -u, --uppercase       Mostra a listagem em MAIÚSCULAS
+  -h, --help            Mostra esta tela de ajuda e sai
+  -v, --version         Mostra a versão do programa e sai
+"
+# MENSAGENS DE ERRO
+err[0]="Opção[ões] Inválida[s]!!!"
+err[1]="Faltou o argumento depois da opção -d"
+
+versionop() {
+  echo "${MENSAGEM_USO}"
+  exit 0
+}
+helpop() {
+  echo -n "$NAME"
+  grep '^# Versão ' "$0" | tail -1 | cut -d : -f1 | tr -d \#
+  exit 0
+}
+
+die() {
+    echo ${err[$1]} 
+    exit 1
+}
+
+# Tratamento das opções de linha de comando
+while test -n "$1"
+  do
+    case "$1" in
+      -d | --DELIMiter) 
+                        shift
+                        DELIM="$1"
+                        [[ -z "$DELIM" ]] && die 1
+                                                ;;
+      -s | --sort     ) ORDENAR=1               ;;
+      -r | --reverse  ) INVERTER=1              ;;
+      -u | --uppercase) MAIUSCULAS=1            ;;
+      -h | --help     ) versionop               ;;
+      -v | --version  ) helpop                  ;;
+      *               ) [[ -n "$1" ]] && die 0  ;;
+    esac
+  shift
+done
+
+# Processamento
+# Extrai listagem
+lista=$(cut -d : -f 1,5 /etc/passwd)
+
+# Ordena a listagem (se necessário)
+[[ ${ORDENAR} = 1 ]] && lista=$(echo "$lista" | sort)
+
+# Inverte a listagem (se necessário)
+[[ ${INVERTER} = 1 ]] && lista=$(echo "$lista" | tac)
+
+# Converte para maiúsculas (se necessário)
+[[ ${MAIUSCULAS} = 1 ]] && lista=$(echo "$lista" | tr '[:lower:]' '[:upper:]')
+
+
+
+# Mostra o resultado para o usuário
+echo "$lista" | tr : "$DELIM"
+
+#printf "%-30s %s\n" "Login: " "Nome Completo: ";mawk -F: '{printf "%-30s %s\n", $1, $5}' /etc/passwd

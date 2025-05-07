@@ -1,38 +1,64 @@
 ##### STANDARD CONFIG #####
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    export PATH="$HOME/bin:$PATH"
+# Add user's local bin directories to PATH
+typeset -U PATH path
+path=(
+  "$HOME/bin"
+  "$HOME/.local/bin"
+  "$HOME/.cargo/bin"
+  $path
+)
+
+# GO PATH
+if [[ -d "$HOME/go/bin" ]]; then
+  path+=("$HOME/go/bin")
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    export PATH="$HOME/.local/bin:$PATH"
+# Enable bash-style completions
+autoload -Uz compinit bashcompinit
+compinit
+bashcompinit
+
+# GO complete
+complete -C /home/albano/go/bin/gocomplete go
+
+# ASDF/MISE PATH AND AUTOCOMPLETION
+if [[ -x "$HOME/.local/bin/mise" ]]; then
+  eval "$("$HOME/.local/bin/mise" activate zsh)"
 fi
 
-. "$HOME/.cargo/env"
-export PATH="$PATH:/usr/sbin:/sbin"
+# PYENV
+export PYENV_ROOT="$HOME/.pyenv"
+if [[ -d "$PYENV_ROOT/bin" ]]; then
+  path+=("$PYENV_ROOT/bin")
+fi
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
+
+# Angular CLI autocompletion
+if command -v ng 1>/dev/null 2>&1; then
+  source <(ng completion script)
+fi
+
+# Extra PATH settings
+path+=(
+  /usr/sbin
+  /sbin
+)
+
+# Export the updated path
+export PATH
+
+# Enable color support for ls and similar
 export LS_OPTIONS="--color=auto"
 
-# set PATH so it includes user's private MODULAR_HOME if it exists
-export MODULAR_HOME="$HOME/.modular"
-if [ -d "$MODULAR_HOME" ] ; then
-    export PATH="$PATH:$MODULAR_HOME:/home/albano/.modular/pkg/packages.modular.com_mojo/bin"
-fi
-
-# set PATH so it includes user's private MODULAR_HOME if it exists
-export JULIABIN="$HOME/.julia/bin"
-if [ -d "$JULIABIN" ] ; then
-    export PATH="$PATH:$JULIABIN"
-fi
-
-# Load NVM Cli
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
-# Init bashrc
-[ -f "$HOME/.zshrc" ] &&  . "$HOME/.zshrc"
+# Init zshrc if it exists
+[[ -f "$HOME/.zshrc" ]] && source "$HOME/.zshrc"

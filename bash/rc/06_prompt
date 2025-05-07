@@ -1,0 +1,69 @@
+# PS1 Construction 
+###############################################################################
+FMT_BOLD="\[\e[1m\]"
+FMT_DIM="\[\e[2m\]"
+FMT_RESET="\[\e[0m\]"
+FMT_UNBOLD="\[\e[22m\]"
+FMT_UNDIM="\[\e[22m\]"
+# Foreground Colors
+FG_BLACK="\[\e[1;30m\]"
+FG_RED="\[\e[1;31m\]"
+FG_GREEN="\[\e[1;32m\]"
+FG_YELLOW="\[\e[1;33m\]"
+FG_BLUE="\[\e[1;34m\]"
+FG_PURPLE="\[\e[1;35m\]"
+FG_CYAN="\[\e[1;36m\]"
+FG_WHITE="\[\e[97m\]"
+FG_AZUL_VIVO="\[\e[1;96m\]"
+
+#FG_WHITE="\[\e[97m\]"
+# Background Colors
+BG_BLACK="\[\e[40m\]"
+BG_BLUE="\[\e[44m\]"
+BG_CYAN="\[\e[46m\]"
+BG_GREEN="\[\e[42m\]"
+BG_MAGENTA="\[\e[45m\]"
+BG_YELLOW="\[\e[43m\]"
+BG_GREY="\[\e[48;5;242m\]"
+BG_GREY10="\[\e[48;5;239m\]"
+
+DES[0]="\342\224\214\342\224\200" # Linha de canto
+DES[1]="\342\224\224\342\224\200\342\224\200\342\225\274" # Linha e ponto
+DES[2]="\342\234\227" # Sinal de erro
+DES[3]="\342\224\200" # Linha horizontal
+
+
+#PS1="\n${FG_WHITE}${DES[0]}" # begin arrow to prompt
+PS1="${BG_GREY10}${FG_CYAN} \u${FG_WHITE}@${FG_YELLOW}\H " # print username
+PS1+="${BG_BLUE}${FG_YELLOW} \w " # print directory
+PS1+="${BG_GREY10}${FG_WHITE} " # end DIRECTORY container / begin FILES container
+PS1+="[\$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D " # print number of folders
+PS1+="[\$(find . -mindepth 1 -maxdepth 1 -type f | wc -l)]F " # print number of files
+PS1+="[\$(find . -mindepth 1 -maxdepth 1 -type l | wc -l)]SL " # print number of symlinks
+#PS1+="${BG_BLUE}${FG_YELLOW} \${OLDPWD} " # print directory
+PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
+PS1+="\$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n \"( BRANCH )\")" 
+#PS1+="\$(git branch --show-current 2> /dev/null | xargs -I BRANCH echo -n \"( BRANCH )\")"
+PS1+="${FMT_RESET}${FG_WHITE}" # print current git branch
+PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
+PS1+="\$(git status -s 2> /dev/null | grep '^A' | wc -l | sed 's/^0//' | xargs -I AD echo -n \" A(AD)\")" 
+PS1+="${FMT_RESET}${FG_WHITE}" # print current git branch
+PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
+PS1+="\$(git status -s 2> /dev/null | grep '^M' | wc -l | sed 's/^0//' | xargs -I MD echo -n \" M(MD)\")"
+PS1+="${FMT_RESET}${FG_WHITE}" # print current git branch
+PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
+PS1+="\$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/^0//' | xargs -I UD echo -n \" UM(UD)\")" 
+PS1+="${FMT_RESET}${FG_WHITE}"
+PS1+="${FMT_RESET}${BG_GREEN}${FG_WHITE}"
+PS1+="\$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -I UK echo -n \" U(UK)\")" 
+PS1+="${FMT_RESET}${FG_WHITE}"
+
+#PS1+="${FG_WHITE} - [${FG_YELLOW}\t${FG_WHITE}]${FMT_RESET}\n" # end last container (either FILES or BRANCH)
+PS1+="\n"
+#PS1+="${FG_WHITE}${DES[1]} " # end arrow to prompt
+#PS1+="\[\e[1;37m\]${FG_CYAN}\$ ${FMT_RESET}" # print prompt
+#PS1+="\[\e[1;37m\]${FG_CYAN}⟩⟩ ${FMT_RESET}" # print prompt
+PS1+="$([[ $(echo $?) -eq 0 ]] && echo -n "${FG_CYAN}⟩⟩ ${FMT_RESET}" || echo -n "${FG_RED}⟩⟩ ${FMT_RESET}")"
+
+export PS1
+

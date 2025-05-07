@@ -37,11 +37,18 @@ _exit_status() {
 }
 
 ipinf() { 
-  if rg -P "(([1-9]\d{0,2})\.){3}(?2)" <<< "$1"; then
-	 curl ipinfo.io/"$1"
+  local target="$1"
+  if [[ "$target" =~ ^((25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})\.){3}(25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})$ ]]; then
+	    curl -s "https://ipinfo.io/$target"
     else
-	  ipawk=$(host "$1" | awk 'NR==1 {print $4}')
-	  curl ipinfo.io/${ipawk[1]}
+      local resolved_ip
+      resolved_ip=$(host "$target" 2>/dev/null | awk '/has address/ {print $4; exit}')
+      if [[ -n "$resolved_ip" ]]; then
+        curl -s "https://ipinfo.io/$resolved_ip"
+      else
+        echo "Erro: Não foi possível resolver o domínio '$target'" >&2
+        return 1
+      fi
   fi
 }
 

@@ -1,0 +1,1 @@
+[[ $SHLVL -eq 1 && $(ps -o tty= -p$$ | sed 's/pts\///') -eq 2 ]] && pullDotfiles

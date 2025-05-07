@@ -1,0 +1,5 @@
+# Shell Functions
+###############################################################################
+[ -r "$DOTBASH/functions/00_init_functions" ] && source "$DOTBASH/functions/00_init_functions"
+[ -r "$DOTBASH/functions/functionsInitBash" ] && source "$DOTBASH/functions/functionsInitBash"
+

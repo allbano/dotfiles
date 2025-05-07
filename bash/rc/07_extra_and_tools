@@ -1,0 +1,38 @@
+# pipx autocomplete
+eval "$(register-python-argcomplete pipx)"
+
+# ssh-agent (quiet)
+eval "$(ssh-agent -s &>/dev/null)"
+
+# enable color support of ls and also add handy aliases
+###############################################################################
+eval "$(dircolors)"
+
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
+
+# Fuzzy Finder - fzf
+[ -f "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"
+
+# GO PATH
+[[ -d "$HOME/go/bin" && ! $PATH =~ "$HOME"/go/bin  ]] &&  export PATH="$HOME/go/bin:$PATH"
+complete -C /home/albano/go/bin/gocomplete go
+
+# ASDF/MISE PATH AND AUTOCOMPLETION
+#. <(mise completion bash)
+eval "$(/home/albano/.local/bin/mise activate bash)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+eval "$(pyenv virtualenv-init -)"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Load Angular CLI autocompletion.
+if command -v ng &>/dev/null; then
+  source <(ng completion script)
+fi

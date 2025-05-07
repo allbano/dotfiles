@@ -1,0 +1,13 @@
+##### STANDARD CONFIGS PATH #####
+
+# set PATH so it includes user's private bin if it exists
+[[ -d "$HOME/bin" && ! $PATH =~ "$HOME"/bin ]] &&  export PATH="$HOME/bin:$PATH"
+
+# set PATH so it includes user's private bin if it exists
+[[ -d "$HOME/.local/bin" && ! $PATH =~ "$HOME"/.local/bin  ]] &&  export PATH="$HOME/.local/bin:$PATH"
+
+[[  ! $PATH =~ /usr/sbin ]] && export PATH="$PATH:/usr/sbin"
+
+[[  ! $PATH =~ /sbin ]] && export PATH="$PATH:/sbin"
+
+
