@@ -1,0 +1,23 @@
+# Modified xdg-user-dirs
+###############################################################################
+[ -f "$HOME/.config/user-dirs.dirs" ] && \
+    source "$HOME/.config/user-dirs.dirs"
+export XDG_DATA_HOME="/home/$USER/.local/share"
+export XDG_CONFIG_HOME="/home/$USER/.config"
+
+
+# Exports and User Configs 
+###############################################################################
+export EDITOR="nvim"
+#export TERM="xterm-256color"
+export PAGER="less -s -M -Gg"
+export MANPAGER="lvim +Man!"
+export LS_OPTIONS="--color=auto"
+export JUPYTERLAB_DIR="$HOME/.local/share/jupyter/lab"
+
+# This is the Dotfiles directory PATH
+export DOTFILES="/home/$USER/github/dotfiles"
+export DOTBASHCN="/home/$USER/github/dotfiles/bash-completion"
+export DOTBASH="/home/$USER/github/dotfiles/bash"
+
+
