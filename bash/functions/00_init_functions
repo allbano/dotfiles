@@ -12,6 +12,16 @@
 # ---------------------------------------------------------------------- #
 #set -euo pipefail
 
+# Function return prompt error
+prompt_status() {
+  if [[ $? -eq 0 ]]; then
+    SYMBOL=$(echo -ne "\e[1;36m⟩⟩ \e[0m")
+    export SYMBOL
+  else
+    SYMBOL=$(echo -ne "\e[1;31m⟩⟩ \e[0m")
+    export SYMBOL
+  fi
+}
 
 # launch(): Open the file/URL with the default application.
 launch() {
