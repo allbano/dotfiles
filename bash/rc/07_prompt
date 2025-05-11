@@ -59,11 +59,12 @@ PS1+="\$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -
 PS1+="${FMT_RESET}${FG_WHITE}"
 
 #PS1+="${FG_WHITE} - [${FG_YELLOW}\t${FG_WHITE}]${FMT_RESET}\n" # end last container (either FILES or BRANCH)
+# PS1+="\n\$(update_prompt_symbol)${PS_SYMBOL}"
 PS1+="\n"
 #PS1+="${FG_WHITE}${DES[1]} " # end arrow to prompt
 #PS1+="\[\e[1;37m\]${FG_CYAN}\$ ${FMT_RESET}" # print prompt
 #PS1+="\[\e[1;37m\]${FG_CYAN}⟩⟩ ${FMT_RESET}" # print prompt
-PS1+="$([[ $(echo $?) -eq 0 ]] && echo -n "${FG_CYAN}⟩⟩ ${FMT_RESET}" || echo -n "${FG_RED}⟩⟩ ${FMT_RESET}")"
+PS1+="\$([[ \$SYMBOL -eq 0 ]] && echo -n \"${FG_CYAN}⟩⟩ ${FMT_RESET}\" || echo -n \"${FG_RED}⟩⟩ ${FMT_RESET}\")"
 
 export PS1
 

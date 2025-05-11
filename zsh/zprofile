@@ -58,7 +58,7 @@ path+=(
 export PATH
 
 # Enable color support for ls and similar
-export LS_OPTIONS="--color=auto"
+# export LS_OPTIONS="--color=auto"
 
 # Init zshrc if it exists
 [[ -f "$HOME/.zshrc" ]] && source "$HOME/.zshrc"
