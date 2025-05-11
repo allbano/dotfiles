@@ -64,8 +64,7 @@ PS1+="\n"
 #PS1+="${FG_WHITE}${DES[1]} " # end arrow to prompt
 #PS1+="\[\e[1;37m\]${FG_CYAN}\$ ${FMT_RESET}" # print prompt
 #PS1+="\[\e[1;37m\]${FG_CYAN}⟩⟩ ${FMT_RESET}" # print prompt
-# PS1+="\$([[ $(echo $?) -eq 0 ]] && echo -n \"${FG_CYAN}⟩⟩ ${FMT_RESET}\" || echo -n \"${FG_RED}⟩⟩ ${FMT_RESET}\") \${RETVAL}"
-PS1+="\$SYMBOL"
+PS1+="\$([[ \$SYMBOL -eq 0 ]] && echo -n \"${FG_CYAN}⟩⟩ ${FMT_RESET}\" || echo -n \"${FG_RED}⟩⟩ ${FMT_RESET}\")"
 
 export PS1
 
