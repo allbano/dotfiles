@@ -16,7 +16,6 @@ date +'%y-%m-%d %r'
 git status --porcelain 
 du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
 dud
-tree
 github/dotfiles/bash
 launch google.com
 launch vlc
@@ -110,7 +109,6 @@ diff .bash_completion ~/github/dotfiles/bash-completion/tmux_completion
 source ~/github/dotfiles/bash-completion/tmux_completion 
 gcam "updated bashrc and tmux_completion."
 tmux exit
-df -h
 yay -sssss qditstat
 yay -sssss qdirstat
 yay -s qdirstat
@@ -198,7 +196,6 @@ rm -rf .gitignore
 ng g c courses/courses
 exirt
 builtin cd -- node_modules/di
-git config -l
 set -u
 ./install help
 ll .fzf
@@ -231,7 +228,6 @@ cat profile_archnote
 echo $path
 export path="$(echo -e "${path//:/\\n}" | sort -u | xargs | tr ' ' :)"
 echo $path
-flatpak update
 git branch 
 cat .metadata/
 subl .
@@ -249,7 +245,6 @@ g
 st
 cat karma.conf.js 
 ca bash_functions 
-cat bash_functions 
 google vai e a merda
 google
 source ~/.bash_functions 
@@ -319,7 +314,6 @@ doas pacman -qi vim
 vim
 echo $vim
 cat archlinux.vim 
-;
 cat archlinux.vim 
 cat /etc/vimrc
 yay -ssss vim-
@@ -388,7 +382,6 @@ gcc ponto.c extestponto.c -o xxx
 gcc -o3 -lm -wall  ponto.c extestponto.c -o xxx
 ./xxx
 l -h
-tree
 tree ..
 gcc -o3 -lm -wall  ponto.c extestponto.c -o xxx
 ./xxx 
@@ -397,7 +390,6 @@ exi
 rm xxx 
 git restore extestponto.c 
 gcm "updated bashrc."
-git config -l
 bat /lib/systemd/system/gdm.service 
 echo $bash_source 
 echo ${bash_source-}
@@ -473,7 +465,6 @@ mkdir bash-completion
 doas lvim /usr/share/bash-completion/bash_completion 
 mkdir nvim
 l nvim
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
 echo $xdg_data_dirs 
 doas pacman -s neovim
 rm -rf nvim.bak
@@ -777,7 +768,6 @@ doas archlinux-java
 doas archlinux-java get
 doas archlinux-java set java-8-openjdk
 flatpak updat3e
-flatpak update
 flatpak search git
 git log --follow bashrc
 git log --follow ./bashrc
@@ -803,7 +793,6 @@ git config --worktree -l
 git config --local -l
 git config -g -l
 git config --global -l
-git config -l
 git help config
 cat ~/.bash_history > archlinuxhistory
 git status -s
@@ -818,23 +807,17 @@ which archlinux-java
 lsd -dl $(which archlinux-java)
 exa -dl $(which archlinux-java)
 cargo insall --list
-cargo install --list
 cargo update exxa
 cargo update exa
 cargo install exa
 cargo install exa --force
-cargo install --list
 cargo build sd
 cargo build 
-cargo install --list
 cargo install --force bat
-cargo install --list
 btm
 choose
 mcfly
-cargo install --list
 fd
-cargo install --list
 doas lvim /etc/doas.conf 
 sudo lvim /etc/doas.conf 
 sudo nvim /etc/doas.conf 
@@ -924,7 +907,6 @@ doas mkinitcpio -p
 doas grub-mkconfig -o /boot/grub/grub.cfg 
 neofetch 
 flatpak list
-flatpak update
 lsk
 lvim ~/.bash_aliases
 ss -ntp
@@ -1102,7 +1084,6 @@ google eu sei que vou te amar
 type -a google
 google eu sei que vou te amar
 lvim $(pwd)/bash_functions
-nvm
 cat test 
 ggfind 
 ggfind eu sei que vou te amar
@@ -1113,7 +1094,6 @@ echo -e "${path//:/\\n}" | sort -u | xargs | tr ' ' :)"
 echo -e "${path//:/\\n}" | sort -u | xargs | tr ' ' :
 echo -e "${path//:/\\n}" | sort -u | xargs
 echo -e "${path//:/\\n}"
-nvm
 ss -tan
 zsh
 glow
@@ -1126,7 +1106,6 @@ cat discoclient.properties
 rm discoclient.properties 
 cat .tool-versions 
 rm .tool-versions 
-tree
 cat ./test 
 ggfind 
 ggfind eu n�o vou mais reclamar
@@ -1149,14 +1128,11 @@ google evanescence
 paru -sss fjo
 rustup update
 echo -e "${path//:/\\n}"
-nvm
 nvm use default
 type -a yarn
-cargo install --list
 cargo --list
 cargo tree fjo
 cargo tree -p fjo
-cargo install --list
 cargo tree -p bat
 cargo install bat
 cargo install bottom
@@ -1165,21 +1141,17 @@ cargo install du-dust
 cargo install lfs
 cargo install sd
 cargo install mdbook
-cargo install --list
 cargo install mdbook-course
 cargo uninstall mdbook-course
-cargo install --list
 cargo uninstall mdbook-exerciser
 cargo uninstall mdbook-i18n-helpers
 cargo uninstall mdbook-svgbob
-cargo install --list
 mdbook
 sd
 cargo install fjo
 cargo search fjo
 git clone git@codeberg.org:voidd/fjo.git
 cargo install --path .
-cargo install --list
 fjo
 type -a fjo
 fjo auth login
@@ -1322,11 +1294,8 @@ nvidia-settings -q all |rg sli-mode
 nvidia-settings -q all |rg sli
 nvidia-settings -q all
 paru -s blueman
-gh
 gh auth login --scopes use,repo,workflow
-gh
 gh auth login --scopes use,repo,workflow
-gh
 gh runs
 gh auth --status
 gh auth status
@@ -1355,7 +1324,6 @@ paru -s pyenv
 pyenv global
 pyenv latest
 pyenv version
-pyenv versions
 pyenv whence
 pyenv commands 
 echo -e "${path//:/\\n}"
@@ -1375,18 +1343,14 @@ lvim ~/.bash_profile
 pyenv update
 echo -e "${path//:/\\n}"
 pyenv root
-pyenv versions
 pyenv install --list
 pyenv install 3.12.2
 python --versin
-pyenv versions
 pip list
 pip list -l
 pip list -l | rg jupyter
 pyenv install pypy3.10-7.3.15 anaconda3-2023.09-0
-pyenv versions
 pyenv virtualenv pypy3.10-7.3.15 pypy --upgrade-deps
-pyenv versions
 pyenv virtualenv 3.12.2 pypy --upgrade-deps
 pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
 pyenv activate py3.12 
@@ -1403,37 +1367,29 @@ lvim pyenv-virtualenv
 lvim pyenv-sd-activate 
 lvim pyenv-sh-activate 
 lvim activate 
-pyenv versions
 pyenv virtualenv-delete py3.12 
 pyenv virtualenv-delete pypy
-pyenv versions
 pyenv virtualenv-delete py3.12 
 pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
-pyenv versions
 pyenv activate py3.12 
 pyenv deactivate py3.12 
 pyenv virtualenv-delete py3.12 
 /home/albano/.pyenv/plugins/pyenv-virtualenv/bin/
 lvim pyenv-sh-activate 
 jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
-pyenv versions
 pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
 pyenv virtualenv-delete py3.12 
 pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
-pyenv versions
 pyenv activate py3.12 
 pyenv deactivate py3.12 
 pyenv virtualenv-delete py3.12 
 /home/albano/.pyenv/plugins/pyenv-virtualenv/bin/
 lvim pyenv-sh-activate 
-pyenv versions
 pyenv virtualenv 3.12.2 py3.12.2 --upgrade-deps
-pyenv versions
 pyenv activate py3.12.2 
 pyenv dectivate py3.12.2 
 pyenv deactivate py3.12.2 
 pyenv virtualenv-delete py3.12.2 
-pyenv versions
 pyenv 
 pyenv which 3.12.2
 pyenv which
@@ -1452,10 +1408,8 @@ pip list -l | rg '(^jupyter|^jupyterlab)'
 pip list -l | rg '(^jupyter|^jupyterlab)' | cut -d' ' -f1
 pip list -l | rg '(^jupyter|^jupyterlab)' | cut -f1
 pip list -l | rg '(^jupyter|^jupyterlab)' | cut -d' ' -f1
-pyenv versions
 pyenv virtualenv pypy3.10-7.3.15 pypy3.10-7.3.15 --upgrade-deps
 pyenv virtualenv-delete anaconda3-2023.09-0 
-pyenv versions
 pyenv virtualenv pypy3.10-7.3.15 pypy3.10-7.3.15 --upgrade-deps
 pyenv virtualenv pypy3.10-7.3.15 pypy --upgrade-deps
 pyenv activate pypy
@@ -1507,7 +1461,6 @@ jupyter kernelspec uninstall julia-1.9
 jupyter kernelspec uninstall mojo-jupyter-kernel
 jupyter kernelspec list
 docker container ls
-docker images
 docker image ls
 docker pull alpine
 mv dom cursos/javascript/
@@ -1532,9 +1485,7 @@ docker container stop alp-prog-test
 docker container rm alp-prog-test
 docker container rm 236
 docker container ls --all 
-docker images
 docker rmi alpine
-docker images
 docker run --name nginx_alpine_test -d -p 80:80 -p 15000:15000 nginx:alpine
 docker exec -it nginx_alpine_test bash
 docker exec -it nginx_alpine_test sh
@@ -1604,7 +1555,6 @@ lvim allarch-history
 neofetch 
 paru -sss fastfetch
 paru -s fastfetch
-fastfetch 
 paru -s ddcutil chafa
 cat main.js
 cat main.jl
@@ -1693,7 +1643,6 @@ updatehist
 lvim updatehist 
 updatehist 
 tty -s
-echo $?
 lvim updatehist 
 updatehist 
 lvim updatehist 
@@ -1716,7 +1665,6 @@ uname --nodename
 update
 lvim templates 
 lvim updatehist 
-docker images
 docker ps --all 
 ollama
 paru -sss ollama
@@ -1835,7 +1783,6 @@ sudo modprobe btusb
 sudo insmod btusb
 sudo modinfo btusb
 btrtl
-docker images
 docker container ls --all 
 docker run --name test_py --hostname test -d -p 80:80 -p 20000:20000 nginx:alpine
 docker exec -it test_py sh
@@ -1914,7 +1861,6 @@ ng update @angular/core
 npm i -g @angular/cli
 ng new crud-angular2
 nvm use default 
-nvm
 nvm ls-remote lts
 nvm ls lts
 nvm ls --lts
@@ -1950,7 +1896,6 @@ sudo lvim users.conf
 sudo lvim keys.conf 
 sudo lvim 20-optimus-manager.conf 
 sudo lvim /sbin/prime-offload 
-type -a python
 sudo lvim /sbin/prime-offload 
 cat /sbin/prime-offload 
 paru -qs lick
@@ -1990,7 +1935,6 @@ curl https://ohmyposh.dev/install.sh
 curl https://ohmyposh.dev/install.sh > install.sh
 bat install.sh 
 docker ps
-docker ps -a
 docker container start test_py 
 su 
 echo $0
@@ -1998,7 +1942,6 @@ docker exec -it test_py bash
 lvim ~/.bash_profile 
 $dotfiles/
 echo $ps1
-sudo su
 fail
 suggest
 echo $ps1
@@ -2140,7 +2083,6 @@ type -a yt-dlp.sh
 sudo find / -type f -wholename '*yt-dlp*'
 sudo ln -sf /usr/share/bash-completion/completions/yt-dlp /usr/share/bash-completion/completions/yd
 sudo unlink /usr/share/bash-completion/completions/yd
-flatpak update
 paru -sss plasma-desktop
 ls |rg improved
 eza
@@ -2154,7 +2096,6 @@ dust -h
 dust -d
 dust -h
 dust -db
-tree
 dust -db
 dust -dbr
 dust -dbr
@@ -2166,7 +2107,6 @@ dust -h
 dust -rd
 du -h
 paru -r npm
-nvm
 nvm ls
 nvm use default
 nvm alias default v20.12.0 
@@ -2259,46 +2199,33 @@ lvim ~/.bash_profile
 echo -e "${path//:/\\n}"
 pyenv update
 pyenv version
-pyenv versions
-type -a python
 pyenv whence
 pyenv doctor
 pyenv version
-pyenv versions
 pyenv global
 pyenv global pypy
-pyenv deactivate 
 pyenv deactivate pypy
 deactivate
 pyenvdeactivate
 pyenv deactivate
 pyenv 
-pyenv versions
 pyenv deactivate
 pyenv shims 
 pyenv virtualenvs
 source deactivate
-pyenv versions
 pyenv activate system
 pyenv virtualenv-delete pypy
 pyenv version
-pyenv versions
 pyenv rehas
 pyenv rehash 
-pyenv versions
 pyenv global system
 pyenv verions
-pyenv versions
 pyenv virtualenv pypy3.10-7.3.15 pypy
-pyenv versions
 pyenv update
-pyenv versions
 pyenv activate pypy
 pyenv dectivate pypy
 pyenv deactivate pypy
-pyenv versions
 pyenv activate pypy
-pyenv versions
 pip list -l | sed '1,2d'
 pip list -l | sed '1,2d' | cut -d' ' -f1
 pip list -l | sed '1,2d' | cut -d' ' -f1 > pacotespy3.txt
@@ -2310,20 +2237,16 @@ pip list -l
 cat pacotespy3.txt
 pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1
 pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -u 
-pyenv versions
 pyenv activate pypy
 pip list -l
 cat pacotespy3.txt 
 python --versiuon
 uname -a
-git diff
 paru -sss pypy
 pyenv 
 pyenv verions
-pyenv versions
 pyenv virtualenv latest 3.12.2 
 pyenv virtualenv 3.12.2 latest
-pyenv versions
 pyenv activate latest 
 pip list -l
 pip install -u setuptools
@@ -2346,9 +2269,7 @@ pyenv deactivate latest
 rm -rf pythonproject
 rm -rf main.py 
 pip freeze -
-type -a python
 type -a python3
-type -a pip
 deactivate
 pip freeze
 django-admin startproject mysite
@@ -2462,19 +2383,14 @@ pip install -u jupyter-lab
 pip install -u jupyterlab
 jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
 pyenv deactivate latest
-pyenv versions
 pyenv virtualenv-delete pypy
-pyenv versions
 pyenv virtualenv pypy3.10
-pyenv versions
 pyenv virtualenv pypy3
 pyenv uninstall pypy3.10-7.3.15 
-pyenv versions
 pyenv whence
 pyenv hooks 
 pyenv install --list
 pyenv install anaconda3-2024.02-1
-pyenv versions
 ./manage.py startapp polls
 pyenv activate latest 
 ./manage.py startapp polls
@@ -2484,7 +2400,6 @@ bridge
 bridge monitor
 sudo pacman -syyu
 pyenv 
-pyenv versions
 pyenv virtualenv testpyapi
 pyenv virtualenv-delete testpyapi
 pyenv virtualenv testpyapi 3.12.2
@@ -2495,7 +2410,6 @@ pyenv install 3.12.3
 sudo btrfs su list /
 pyenv install --list
 pyenv update
-pyenv versions
 pyenv global 3.12.2
 pip install --list
 pip list -l
@@ -2506,7 +2420,6 @@ pip install -u poetry
 pip freeze
 poetry
 pyenv verions
-pyenv versions
 pyenv virtualenv 
 pyenv virtualenv anaconda3-2024.02-1 testanac
 pyenv activate testanac
@@ -2514,14 +2427,12 @@ pip list -l
 pip install -u pip
 pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -u 
 pip list -l
-type -a python
 pyenv global anaconda3-2024.02-1
 pip list
 pyenv deactivate testanac
 pyenv global 3.12.2
 pyenv global anaconda3-2024.02-1
 pyenv global 3.12.2
-pyenv versions
 pyenv activate testanac
 pip list -k
 pip list -l
@@ -2535,13 +2446,10 @@ pyenv activate testanac
 poetry
 lvim .inputrc
 pyenv activate testanac
-poetry 
-fastfetch 
 zsh
 pyenv activate testanac
 doas ln -sf /home/albano/github/dotfiles/bash-completion/poetry /usr/share/bash-completion/completions/poetry
 paru -qi bash-completion
-docker images
 docker
 docker image pull 
 docker image pull nginx:alpine
@@ -2558,7 +2466,6 @@ docker ps
 docker ps --all 
 docker container rm test_py
 docker ps --all 
-docker images
 docker pull nginx
 docker
 docker -d
@@ -2584,11 +2491,8 @@ yt-dlp
 pyenv 
 pyenv root
 pyenv version
-pyenv versions
 pyenv global system
-pyenv versions
 pyenv version
-pyenv versions
 pyenv activate testanac
 python -v
 pyenv global anaconda3-2024.02-1/envs/testanac 
@@ -2613,7 +2517,6 @@ pip version
 pip list
 poetry
 pyenv deactivate testanac
-pyenv deactivate 
 pyenv deactivate anaconda3-2024.02-1/envs/testanac
 pyenv local
 pyenv local --unset
@@ -2667,7 +2570,6 @@ rm 'aula 2 ｜ pystack week 10 [ov2ekt4lacy].webm'
 yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=ov2ekt4lacy&t=1s&ab_channel=pythonando
 yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=m0qfwmy2uyq&t=2s&ab_channel=pythonando
 nvm ls
-nvm
 nvm install --lts
 npm i -g npm@latest
 nvm ls
@@ -2680,7 +2582,6 @@ lsk
 sudo btrfs sub show /
 sudo btrfs sub list /
 yay -syyuu
-pyenv versions
 pyenv version-origin
 pyenv version
 pyenv update
@@ -2689,11 +2590,9 @@ pyenv virtualenvs
 pyenv commands
 pyenv install --list
 pyenv virtualenvs
-pyenv versions
 pyenv virtualenvs
 mkdir healing
 pyenv virtualenvs
-pyenv versions
 pyenv virtualenv 3.12.3 healing
 pyenv virtualenvs
 pyenv activate healing
@@ -2718,10 +2617,8 @@ pip install blue
 blue .
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envvars.txt
 sudo mkinitcpio -p
-flatpak update
 sudo pacman -syyu
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envvars.txt
-systemctl status
 pyenv activate healing 
 pip list -l
 pip list -lo
@@ -2733,7 +2630,6 @@ flatpak raicast
 flatpak search raicast
 flatpak search raycast
 flatpak search raykast
-git diff
 gst -s
 gaa
 git restore --staged bash-completion/poetry 
@@ -2741,7 +2637,6 @@ gcm "updated archnote profile and zshrc."
 gaa
 gsgt
 gcm "added portry autocomplete."
-poetry 
 pyenv deactivate healing 
 paru -r nodejs
 paru -r yarn
@@ -2753,7 +2648,6 @@ paru -r semver
 paru -r nodejs
 paru -r nodejs-nopt
 paru -r nodejs
-fastfetch 
 neofetch 
 paru -rscdd neofetch 
 sudo btrfs filesystem show
@@ -2802,11 +2696,9 @@ gaa
 gcm "updated lsk alias and added lsku alias."
 btn
 top
-cargo install --list
 btm
 exot
 btm
-fastfetch 
 yt-dlp 
 cat /etc/pacman.conf
 cat /etc/pacman.d/mirrorlist
@@ -2818,7 +2710,6 @@ npm view
 npm 
 npm i -g nextjs
 paru -s yt-dlp-git
-pyenv versions
 yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=vxfoumya9dm&ab_channel=pythonando
 exi
 paru -sss xpdf
@@ -2845,15 +2736,12 @@ sudo lpadmin -u
 sudo lpadmin -u allow:all
 yt-dlp -u
 pyenv 
-pyenv versions
 pyenv local 3.12.3
-pyenv versions
 pyenv 
 pyenv latest
 pyenv which
 pyenv local
 pyenv local --unset 
-pyenv versions
 sudo pacman 
 sudo pacman -h
 sudo pacman -q
@@ -2906,7 +2794,6 @@ tt
 echo -e "${path//:/\\n}"
 lvim ~/.bash_profile 
 tt
-echo $?
 echo -e "${path//:/\\n}"
 ps au | grep bash
 ps au | grep '[b]ash'
@@ -2928,7 +2815,6 @@ echo ${hg%/*}
 echo ${hg##*/}
 echo ${hg%/*} #dirname
 echo ${hg##*/} #basename
-pyenv versions
 pyenv virtualenvs
 pyenv virtualenv 3.12.3 cadusers
 pyenv activate cadusers
@@ -2962,7 +2848,6 @@ python manage.py migrate
 python manage.py runserver
 pyenv deactivate cadusers
 pyenv virtualenv-delete cadusers
-pyenv versions
 yt-dlp
 paru -qs yt-dlp
 paru -rscdd yt-dlp
@@ -3006,7 +2891,6 @@ sudo rm /etc/xdg/autostart/blueman.desktop
 sudo systemctl disable gdm.service 
 sudo systemctl enable lightdm.service 
 paru -sss gns3
-fastfetch 
 paru -sss gns3
 paru -s gns3-{gui,server}
 lvim ~/.bash_aliases 
@@ -3032,14 +2916,12 @@ git clone git@github.com:joaov1821/marvel-app.git
 cd marvel-app/
 cd git/projetoseeg/eegdjango/
 pyenv version
-pyenv versions
 cd git/projetoseeg/eegdjango/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
 exir
 exitr
 exirt
 exitr
-flatpak update
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
 cd git/pythonando/healing/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
@@ -3109,7 +2991,6 @@ gn --help
 gn all
 paru -si gn
 sudo pacman -rs xmlto zeitgeist 
-fastfetch 
 pacman -qdt
 pacman -qdtq
 pacman -qdtq |rg '^ttf-.*'
@@ -3205,7 +3086,6 @@ paru -si patchutils
 paru -si plymouth
 sudo pacman -s --asexplicit lld appstream-glib blas64-openblas boost cbindgen ccache check cppunit dmraid dump_syms electron electron29 extra-cmake-modules ffmpeg git-lfs gn gnome-common go gperf hlint imake gperf ldns lhasa libguestfs libsmbios libunrar libupnp libmatroska libkate libdvdpsi lld nawk onednn openlibm optipng patchutils wayland-protocols wayland-utils webrtc-audio-processing 
 sudo pacman -s --asexplicit lld appstream-glib blas64-openblas boost cbindgen ccache check cppunit dmraid dump_syms electron electron29 extra-cmake-modules ffmpeg git-lfs gn gnome-common go gperf hlint imake gperf ldns lhasa libguestfs libsmbios libunrar libupnp libmatroska libkate lld nawk onednn openlibm optipng patchutils wayland-protocols wayland-utils webrtc-audio-processing 
-fastfetch 
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
 cd git/pythonando/healing/
 cd github/curso-django-projeto1/
@@ -3276,7 +3156,6 @@ cd api_rest/
 rm -rf api_rest
 cd bantads/
 git checkout 2899
-git restore .
 git checkout 2899
 git_current_branch 
 type -a git_current_branch 
@@ -3299,19 +3178,16 @@ time git_current_branch
 git branch 2> /dev/null | grep '^*' | colrm 1 2  | xargs -i branch echo -n branch
 time git branch 2> /dev/null | grep '^*' | colrm 1 2  | xargs -i branch echo -n branch
 time git branch 2> /dev/null | head -n1 | colrm 1 2  | xargs -i branch echo -n branch
-git checkout main 
 cd jogodavelha/
 git_current_branch 
 type -a git_current_branch 
 time git branch 2> /dev/null | head -n1 | colrm 1 2  | xargs -i branch echo -n branch
 git branch 2> /dev/null | head -n1 | colrm 1 2  | xargs -i branch echo -n branch
 git checkout ad2f
-git diff
 cd sinap-eeg/
 git checkout 58a1
 git branch 2> /dev/null | head -n1 | colrm 1 2  | xargs -i branch echo -n branch
 git branch 2> /dev/null | head -n1  | xargs -i branch echo -n branch
-git checkout main 
 lvim $dotfiles/bash/bash_functions 
 ps
 cd $dotfiles
@@ -3321,9 +3197,7 @@ cd -
 git_current_branch 
 git branch 2>/dev/null
 git branch 
-echo $?
 git branch 2>/dev/null
-echo $?
 lvim $dotfiles/bash/bash_functions 
 cd $dotfiles
 git_current_branch 
@@ -3347,7 +3221,6 @@ rep=$(git branch);[[ -z rep  ]] && echo "deu certo" || echo "n�o deu certo"
 [[ $(git branch &>/dev/null) -eq "0"  ]] && echo "deu certo" || echo "n�o deu certo"
 [[ $(git branch &>/dev/null) -eq 0  ]] && echo "deu certo" || echo "n�o deu certo"
 git branch
-echo $?
 [[ $(git branch &>/dev/null) -eq 128  ]] && echo "deu certo" || echo "n�o deu certo"
 [[ $(git branch &>/dev/null) -eq "128"  ]] && echo "deu certo" || echo "n�o deu certo"
 cd -
@@ -3379,7 +3252,6 @@ git branch 2>/dev/null
 git branch
 decho $?
 git branch
-echo $?
 git branch; echo $?
 git branch 2>/dev/null; echo $?
 [[ $(git branch 2>/dev/null;echo $?) -eq 0  ]] && echo "deu certo" || echo "n�o deu certo"
@@ -3427,7 +3299,6 @@ flatpak run com.vscodium.codium .
 python manage runserver
 cd git/projetoseeg/eegdjango/
 pyenv 
-pyenv versions
 pyenv local eegdjango
 flatpak list
 flatpak list | rg datagrip
@@ -3524,7 +3395,6 @@ paru -s cfitsio
 paru -si zig
 paru -si clang
 paru -si llvm
-docker images
 code --version
 cd github/
 cd zed/
@@ -3563,7 +3433,6 @@ jupyter labextension uninstall tabnine
 pip uninstall jupyterlab_tabnine
 jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
 pyenv local --unset 
-pyenv versions
 pyenv virtualenv-delete jupyters 
 pyenv virtualenv 3.12.4 jupyterlab
 pyenv local jupyterlab 
@@ -3664,12 +3533,10 @@ docker container rm -f open-webui
 docker volume rm open-webui 
 docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
 docker container rm -f open-webui 
-docker images
 docker images rm c
 docker images rm c26a
 docker image rm c2
 docker image rm 3d
-docker images
 cd github/
 git clone git@github.com:open-webui/open-webui.git
 cd open-webui/
@@ -3734,9 +3601,7 @@ find . -type d -empty -rint
 find . -type d -empty -print
 lsk
 diff -r /home/albano/ufpr/ /run/media/albano/netac2tb/ufpr/
-pyenv versions
 pyenv uninstall 3.12.2
-pyenv versions
 pyenv virtualenv 3.12.4 testes
 cd git
 cd test
@@ -3755,7 +3620,6 @@ django-admin startproject djangomodels
 cd djangomodels/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.8.1/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.8.1/python_files/deactivate/bash/envvars.txt
 django-admin startapp exemplo
-docker images
 docker images -a
 manage.py migrete
 pip install psycopg2-binary
@@ -3834,7 +3698,6 @@ docker run -p 4200:4200 angular-docker
 docker ps
 docker container stop b9
 docker container rm b9
-docker images
 docker image rm angular-docker
 ng serve
 yarn
@@ -3844,13 +3707,11 @@ docker build -t angular-docker .
 docker run -dp 4200:4200 angular-docker
 docker container rm -f eager_lederberg 
 docker ps 0a
-docker ps -a
 docker build -t angular-docker .
 docker run --name node_nginx -dp 80:80 angular-docker
 docker ps
 docker rm -f 4e
 docker
-docker images
 docker rmi 79
 docker rmi 8
 paru -ssss distrobox
@@ -3879,20 +3740,16 @@ yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/live/lfxh
 unzip aula_3_python_ia-20240711t020034z-001.zip 
 mv 'aula 3 - python ia' aula_3_python_ia
 pyenv virtualenvs
-pyenv versions
 cd aula_3_python_ia/
 pyenv activate jupyterlab 
 jupyter-lab --port 15000 --notebook-dir .  --browser firefox 
 cd downloads/jornadapython/
 cd aula_3_python_ia/
-pyenv versions
 pyenv virtualenvs
 pyenv activate jupyterlab 
 pip list -lo
-fastfetch 
 cd .py
 cd .pyenv/
-git diff
 git diff .
 pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -u 
 pip list -lo
@@ -3916,15 +3773,9 @@ ame remove modular
 ame remove yay-debug
 yay -syu
 ame remove modular-debug
-fastfetch 
 ame
 ame --help
 ame upgrade
-fastfetch 
-flatpak update
-pyenv versions
-python --version
-type -a python
 /bin/python --version
 echo .
 echo *
@@ -3942,7 +3793,6 @@ echo -e '^a*'
 echo a*
 echo *a*
 echo .a*
-pyenv versions
 pyenv activate jupyterlab 
 cd cursos/python/
 cd estudos
@@ -3961,7 +3811,6 @@ cd agenda-django/
 cat notas.txt 
 mkdir ola_django
 cd ola_django/
-pyenv versions
 pyenv virtualenv-delete agenda
 pyenv virtualenv-delete aulasdjango 
 pyenv virtualenv aulasdjango 
@@ -3988,22 +3837,15 @@ cd agenda
 django-admin startproject agenda .
 cd agenda
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.10.0-linux-x64/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.10.0-linux-x64/python_files/deactivate/bash/envvars.txt
-docker images
 docker pull postgresql:alpine
 docker pull postgres:alpine
-docker images
 docker pull postgres
-docker images
 docker rmi f2
 docker run --name postgresql16 -h postgre16 -dp 55432:5432 postgres:alpine 
 docker ps
-docker ps -a
 docker rm -f df
-docker ps -a
 docker run --name postgresql16 -h postgre16 -dp 35000:5432 postgres:alpine 
-docker ps -a
 docker rm -f e8
-docker ps -a
 docker run --name postgresql16 -h postgre16 -p 35000:5432 postgres:alpine 
 cd docker/
 cd postgresql/
@@ -4021,12 +3863,9 @@ docker exec -it bash jovial_hofstadter
 docker exec -it jovial_hofstadter bash
 docker rm -f jovial_hofstadter 
 docker rm -f postgresql16 
-docker ps -a
-docker images
 docker run -dh postgre16 --name postgre16alpine -p 55432:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" -e postgres_password=testing postgres:alpine 
 docker exec -it postgre16alpine bash
 docker rm -f postgre16alpine 
-docker ps -a
 docker run -dh postgre16 --name postgre16alpine -p 55432:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" -e postgres_password=testing postgres:alpine 
 sct daemon-reload 
 cd github/laundry_online/
@@ -4123,12 +3962,10 @@ paru -s notion
 notion
 sudo notion
 paru -r notion
-flatpak update
 ntop
 fd top
 find /usr/bin -wholename '*top'
 slabtop
-cargo install --list
 btm
 whatis tty
 pipewire --version
@@ -4150,7 +3987,6 @@ cd dbreplication/
 cd master/
 mv dockerfile master.dockerfile
 lvim master.dockerfile 
-docker ps -a
 docker start postgre16alpine 
 docker exec -it postgre16alpine bash
 docker exec -it postgre16alpine bash
@@ -4159,9 +3995,7 @@ cd laundry_online/
 cd postgres
 cd docker/postgresql/
 cd dbreplication/
-docker ps -a
 docker rm 61
-docker ps -a
 cd master/
 lvimlvim  docker-compose.yml
 lvim  docker-compose.yml
@@ -4171,20 +4005,15 @@ lvim  docker-compose.yml
 docker-compose up -d
 lvim  docker-compose.yml
 docker-compose up -d
-docker ps -a
 docker rm -f cb
-docker ps -a
-docker images
 docker rmi -f 75
 lvim  docker-compose.yml
 lvim master.dockerfile 
 docker-compose up -d
 docker ps
-docker ps -a
 docker start dbmaster 
 paru -qs gnome-user-share
 docker-compose up -d
-docker ps -a
 lvim master.dockerfile 
 cd docker/postgresql/
 cd dbreplication/
@@ -4200,8 +4029,6 @@ docker volume ls
 docker volume rm open-webui 
 docker volume rm marvel_postgre16 
 docker rm -f dbmaster 
-docker ps -a
-docker images
 docker rmi 75
 docker image ls
 docker pull postgres:alpine
@@ -4213,38 +4040,27 @@ lvim master.dockerfile
 docker-compose up -d
 lvim master.dockerfile 
 docker-compose up -d
-docker ps -a
 docker rm dbmaster 
-docker images
 lvim master.dockerfile 
 docker-compose up -d
-docker ps -a
 lvim docker-compose.yml 
 docker rm dbmaster 
-docker images
 docker rmi 4c
-docker images
 docker volume ls
 docker volume prune 
 docker volume ls
 lvim docker-compose.yml 
 docker-compose up -d
-docker ps -a
 docker start 92
-docker images
 lvim docker-compose.yml 
-docker ps -a
 docker logs
 docker logs 92
 lvim docker-compose.yml 
 docker-compose up -d
-docker ps -a
 docker start dbmaster 
 docker logs 042
 docker rm -f 04
-docker ps -a
 docker image
-docker images
 docker rmi 22
 lvim docker-compose.yml 
 docker volume 
@@ -4252,7 +4068,6 @@ docker volume ls
 docker volume rm master_postgre_master 
 lvim docker-compose.yml 
 docker-compose up -d
-docker ps -a
 docker start dbmaster 
 docker logs 4a
 docker rm -f 4a
@@ -4263,7 +4078,6 @@ lvim docker-compose.yml
 docker-compose up -d
 docker volume ls
 docker rm -f dbmaster 
-docker images
 docker rmi 22
 docker volume ls
 docker volume prune
@@ -4272,13 +4086,10 @@ docker volume rm master_postgre_master
 lvim docker-compose.yml 
 lvim master.dockerfile 
 lvim init.sql
-docker images
 docker-compose up -d
-docker ps -a
 docker logs b7
 docker exec -it dbmaster bash
 docker rm -f dbmaster 
-docker images
 docker rmi 92
 docker volume ls
 docker rm 08 master_postgre_master
@@ -4290,14 +4101,12 @@ docker volume rm 08df3a30a37818a941a92b872eb3c3274e720406cf8f4d79d454f08ae504876
 docker volume ls
 lvim init.sql 
 docker-compose up -d
-docker ps -a
 docker logs e8
 lvim init.sql 
 lvim master.dockerfile 
 lvim init.sql 
 docker rm dbmaster 
 docker rm -f dbmaster 
-docker images
 docker rmi f
 docker volume prune
 docker volume rm master_postgre_master 
@@ -4305,7 +4114,6 @@ docker volume ls
 docker-compose up -d
 docker exec -it dbmaster bash
 docker rm -f dbmaster 
-docker images
 docker rmi 0f
 docker volume ls
 docker volume rm master_postgre_master 
@@ -4324,15 +4132,12 @@ docker-compose up -d
 docker exec -it dbmaster bash
 cat master.dockerfile 
 lvim master.dockerfile 
-docker images
 docker rm -f dbmaster && docker rmi c96
-docker images
 docker volume rm master_postgre_master 36
 docker volume rm master_postgre_master 36142ca0ba72c28e3b457ac812fb001ffca858000cfec8993bfdc8851f41965a 
 docker volume ls
 docker-compose up -d
 docker exec -it dbmaster bash
-docker images
 docker rm -f dbmaster && docker rmi 8f
 docker volume rm master_postgre_master 
 docker volume rm d89a3c987d5fd508caea9783f21045170f94a8f3b10a80d258ebad7d031ef718 
@@ -4355,7 +4160,6 @@ docker-compose up -d
 rm master.dockerfile 
 lvim pg_hba.conf 
 docker rm -f dbmaster 
-docker images
 lvim docker-compose.yml 
 lvim init.sql 
 docker-compose up -d
@@ -4405,7 +4209,6 @@ docker exec -it dbmaster bash
 docker rm -f db*
 docker rm -f dbmaster dbreplication 
 docker-compose up --force-recreate -d 
-docker ps -a
 docker logs 3d
 docker rm -f dbmaster dbreplication 
 lvim entrypoint
@@ -4421,7 +4224,6 @@ docker volume ls
 docker volume rm master_dbmaster master_dbreplication 
 docker-compose up --force-recreate -d
 docker ps
-docker ps -a
 docker logs e7
 docker volume rm master_dbmaster master_dbreplication 
 docker rm -f dbmaster dbreplication 
@@ -4438,14 +4240,12 @@ lvim init.sql
 lvim entrypoint2
 docker-compose up --force-recreate
 lvim docker-compose.yml 
-docker ps -a
 docker volume rm master_dbmaster master_dbreplication 
 docker rm -f dbmaster dbreplication 
 docker volume rm master_dbmaster master_dbreplication 
 docker volume prune
 docker volume ls
 docker ps -a 
-docker images
 lvim docker-compose.yml 
 docker-compose up --force-recreate
 docker rm -f dbmaster dbreplication 
@@ -4456,8 +4256,6 @@ lvim docker-compose.yml
 cd docker/postgresql/dbreplication/master/
 lvim entrypoint2
 lvim entrypoint
-docker ps -a
-docker images
 docker volume ls
 lvim docker-compose.yml 
 docker-compose up --force-recreate
@@ -4465,17 +4263,13 @@ docker rm -f dbmaster dbreplication
 docker volume rm master_master master_replication 
 docker volume prune 
 docker volume ls
-docker ps -a
 lvim docker-compose.yml 
 docker volume ls
-docker ps -a
 docker-compose up --force-recreate -d
 docker-compose --help
-docker ps 
 docker-compose stop
 lvim docker-compose.yml 
 docker-compose up --force-recreate -d
-docker ps -a
 docker logs 85
 docker logs 84
 cp docker-compose.yml docker-compose2.yml 
@@ -4494,7 +4288,6 @@ rmdir replica/
 rm -rf master/
 lvim docker-compose.yml 
 docker-compose up --force-recreate
-docker ps -a
 docker rm -f dbmaster dbreplication 
 docker volume prune
 docker volume rm master_master master_replication 
@@ -4508,7 +4301,6 @@ sudo rm -rf master
 sudo rm -rf replication/
 docker volume ls
 docker volume prune 
-docker ps -a
 lvim pg_hba.conf 
 cd docker/postgresql/dbreplication/
 lvim docker-compose
@@ -4546,11 +4338,9 @@ lvim entrypoint2
 lvim docker-compose.yml 
 docker-compose up --force-recreate
 docker-compose up --force-recreate -d
-docker ps -a
 docker-compose up --force-recreate
 lvim docker-compose.yml 
 doas rm -rf master replication
-docker ps -a
 docker rm -f dbmaster dbreplication 
 lvim docker-compose.yml 
 docker-compose up --force-recreate
@@ -4574,7 +4364,6 @@ lvim postgresql.conf
 lvim docker-compose
 lvim docker-compose.yml 
 lvim postgresql.conf 
-docker ps -a
 doas lvim postgresql.conf 
 sudo lvim postgresql.conf 
 docker-compose up --force-recreate
@@ -4635,7 +4424,6 @@ lvim entrypoint
 lvim docker-compose.yml 
 docker-compose up --force-recreate -d
 docker ps a
-docker ps -a
 docker-compose down
 doas rm -rf master replication
 lvim docker-compose.yml 
@@ -4670,7 +4458,6 @@ lvim docker-compose.yml
 lvim entrypoint
 cp docker-compose.yml docker-compose2.yml 
 lvim docker-compose.yml 
-docker ps -a
 docker-compose up --force-recreate -d
 docker-compose down
 lvim docker-compose.yml 
@@ -4699,10 +4486,8 @@ docker exec -it dbmaster bash
 lvim entrypoint
 docker-compose down
 lvim docker-compose.yml 
-docker ps -a
 docker-compose up --force-recreate -d
 docker exec -it dbmaster bash
-docker ps -a
 docker rm -f dbmaster 
 lvim docker-compose.yml 
 lvim entrypoint
@@ -4757,58 +4542,44 @@ lvim entrypoint3
 lvim mas
 lvim master.dockerfile 
 docker build -f ./master.dockerfile -t dbmaster .
-docker images
 docker run -p 55532:5432 --name dbmaster -h dbname dbmaster:latest 
 docker ps
-docker ps -a
 docker rm 32
 docker ps -a 
-docker images
 docker run -dp 55532:5432 --name dbmaster -h dbname dbmaster:latest 
 docker exec -it dbmaster bash
 docker rm -f dbmaster 
 docker image ls
 docker image rm cb
-docker images
 lvim master.dockerfile 
 lvim entrypoint3
 cat entrypoint
 docker build -f ./master.dockerfile -t dbmaster .
 docker run -dh dbmaster --name dbmaster -p 55532:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" dbmaster:latest 
 docker rm -f dbmaster 
-docker ps -a
 lvim entrypoint3
 lvim master.dockerfile 
 docker build -f ./master.dockerfile -t dbmaster .
 docker run -dh dbmaster --name dbmaster -p 55532:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" dbmaster:latest 
 docker exec -it dbmaster bash
 docker rm -f bd
-docker ps -a
 lvim master.dockerfile 
 cat entrypoint3
 lvim docker-compose
 lvim docker-compose.yml 
-docker images
 docker rmi 35 56
-docker images
 lvim docker-compose.yml 
 docker-compose up --force-recreate
 lvim docker-compose.yml 
 docker-compose up --force-recreate
-docker ps -a
 docker-compose down
-docker ps -a
 lvim docker-compose.yml 
 doas rm -rf master
-docker images
 docker rmi 00
-docker images
 lvim docker-compose.yml 
 docker-compose up --force-recreate 
 docker-compose down
-docker images
 docker rmi 00
-docker images
 lvim master
 doas rm -rf master
 lvim master.dockerfile
@@ -4817,7 +4588,6 @@ lvim docker-compose.yml
 docker-compose up --force-recreate 
 docker-compose down
 lvim docker-compose.yml 
-docker images
 docker rmi 00
 doas rm -rf master
 docker-compose up --build
@@ -4828,73 +4598,54 @@ cat entrypoint3
 lvim entrypoint3
 lvim init.sql 
 lvim entrypoint3
-docker images
 docker rmi 00
-docker images
 lvim docker-compose
 lvim docker-compose.yml 
 docker-compose up 
 docker-compose down
-docker images
 docker image rm dd
-docker images
 docker-compose up
 docker volume ls
 docker volume prune 
 docker volume ls
-docker ps -a
 docker rm -f dbmaster 
 docker volume ls
 docker volume prune 
 docker volume ls
-docker ps -a
-docker images
 docker image rm dd
-docker images
 doas rm -rf master
 docker-compose up
 docker-compose down
 docker volume ls
 docker volume prune
 doas rm -rf master
-docker images
 docker rmi dd
-docker images
 docker-compose up --build
 lvim docker-compose.yml 
 docker-compose up --force-recreate
 doas rm -rf master
-docker images
 docker rmi dd
 docker-compose down
 docker rmi dd
 docker volume ls
 docker volume rm 3b
-docker ps -a
-docker images
 docker volume prune
 docker build -f ./master.dockerfile -t dbmaster .
 docker run -dh dbmaster --name dbmaster -p 55532:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" dbmaster:latest 
 docker container prune
 docker image prune
 docker image prune -a
-docker images
 docker network prune
 docker system prune
-docker images
 docker image rm dbmaster
 docker image rm 06a
 docker image rm -f 06a
 docker rm -f dbmaster 
-docker images
 docker rmi dbmaster
 docker build -f ./master.dockerfile -t dbmaster .
 dicker images
-docker images
 docker run -dh dbmaster --name dbmaster -p 55532:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" dbmaster:latest 
 docker rm -f 93
-docker ps -a
-docker images
 docker rmi dbmaster
 docker system prune --volumes -f
 lvim docker-compose.yml 
@@ -4902,9 +4653,7 @@ docker-compose up --build .
 docker-compose up --build
 docker-compose down
 docker system prune --volumes -f
-docker images
 docker rmi cec
-docker images
 docker system prune -a
 docker pull postgres16:alpine
 doas docker login
@@ -4912,25 +4661,20 @@ docker pull postgres16:alpine
 lvim docker-compose.yml 
 docker login
 docker pull postgres:16-alpine
-docker images
 cd docker/postgresql/dbreplication/
 doas rm -rf master
 lvim master.dockerfile 
-docker images
 lvim master.dockerfile 
 lvim docker-compose.yml 
-docker images
 lvim master.dockerfile 
 mv entrypoint3 entrypoint_master
 lvim entrypoint_master 
-docker images
 lvim master.dockerfile 
 lvim docker-compose.yml 
 docker network ls
 docker network prune
 docker network ls
 docker imagees
-docker images
 rm entrypoint
 rm entrypoint2
 cat entrypoint_master 
@@ -4941,11 +4685,9 @@ docker exec -it dbmaster bash
 docker-compose up --build --force-recreate
 docker-compose down
 docker volume ls
-docker images
 docker rmi 4e
 ls -l
 doas rm -rf master
-docker ps -a
 ls -l
 docker volume ls
 lvim master.dockerfile 
@@ -4956,12 +4698,9 @@ docker-compose down
 doas rm -rf master
 lll
 docker volume ls
-docker images
 docker rmi dbmaster
-docker ps -a
 lvim master.dockerfile 
 lvim docker-compose.yml 
-docker images
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up -d 
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
 doas rm -rf master
@@ -4970,21 +4709,15 @@ lvim docker-compose.yml
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
 docker-compose down
 doas rm -rf master
-docker ps -a
-docker images
 docker rmi dbmaster
-docker images
 docker volume ls
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
 docker-compose down
 doas rm -rf master
 docker system prune -a
-docker images
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
 docker-compose down
 docker system prune -a
-docker images
-docker ps -a
 docker volume ls
 rm -rf master
 doas rm -rf master
@@ -5000,7 +4733,6 @@ docker-compose down
 doas rm -rf master
 docker system prune -a
 docker system prune -a --volumes -f
-docker images
 lvim master.dockerfile 
 lvim entrypoint_master 
 lvim master.dockerfile 
@@ -5011,74 +4743,55 @@ docker-compose down
 docker system prune -a
 lvim master.dockerfile 
 lvim entrypoint_master 
-docker ps -a
 docker images -a
 docker exec -it dbmaster bash
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
 docker-compose down
-docker images
 docker rmi dbmaster
-docker ps -a
 docker images -a
 lvim postgresql.conf 
 lvim docker-ensure-initdb.sh 
 lvim docker-entrypoint.sh 
 lvim postgres16alpine.dockerfile 
-docker images
 docker build -f postgres16alpine.dockerfile -t pg16:alpine .
-docker images
 lvim postgres16alpine.dockerfile 
-docker images
 docker rmi pg16
 docker rmi a7
-docker images
 docker pull alpine
 docker system prune -a
 docker pull alpine:stable
 docker pull alpine:latest
 docker run alpine:latest 
 docker ps
-docker ps -a
 docker rm -f bc
-docker ps -a
 docker run --name alpine -dh alpinepg -p 25000:25000 alpine:latest
-docker ps -a
 docker ps
 docker rm -f modest_pascal 
 docker start alpine 
-docker images
 docker rmi alpine
-docker ps -a
 docker rm -f alpine 
-docker ps -a
 docker rmi alpine
 lvim dockerfile
 docker build -f ./dockerfile -t alpine:latest .
-docker images
 docker run --name alpine -dh alpinepg alpine:latest
 docker run --name alpine -it -dh alpinepg alpine:latest
 docker ps -a 
 docker rm -f alpine 
 docker build -f ./dockerfile -t alpine:latest .
 docker run --name alpinepg -dh alpinepg alpine:latest
-docker ps -a
 docker rm -f alpinepg 
-docker images
 docker rmi alpine
 docker pull alpine:latest
-docker images
 docker run --name alpinepg -h alpinepg -it alpine:latest
 docker start  alpinepg 
 docker exec -it alpinepg 
 docker exec -it alpinepg bash
 docker rm alpinepg 
 docker rm -f alpinepg 
-docker images
 docker rmi a6
 lvim dockerfile 
 docker build -f ./dockerfile -t alpine:3.17-pg16 .
 docker build -f ./dockerfile -t alpine:3.19-pg16 .
-docker ps -a
 docker images -a
 lvim dockerfile 
 docker build -f ./dockerfile -t alpine:3.19-pg16 .
@@ -5088,36 +4801,27 @@ lvim dockerfile
 docker build -f ./dockerfile -t alpine:3.19-pg16 .
 lvim dockerfile 
 docker build -f ./dockerfile -t alpine:3.19-pg16 .
-docker images
 docker run --name alpinepg -h alpinepg -it alpine:3.19-pg16 
-docker ps -a
 docker rm alpinepg 
-docker ps -a
-docker images
 docker rmi 30
 rm alpine-minirootfs-3.20.1-x86_64.tar.gz 
 lvim postgres16alpine.dockerfile 
 lvim docker-ensure-initdb.sh 
 lvim postgres16alpine.dockerfile 
 lvim master.dockerfile 
-docker images
 docker images -a
 cd docker/postgresql/dbreplication/
 lvim postgres16alpine.dockerfile 
 docker build -f postgres16alpine.dockerfile -t pg16:alpine .
-docker images
 docker-compose up --force-recreate 
-docker images
 lvim docker-compose.yml 
 docker-compose up --force-recreate 
 lvim docker-compose.yml 
 docker login
 docker-compose up --force-recreate 
-docker ps -a
 docker start dbmaster 
 docker rm dbmaster 
 docker-compose down
-docker images
 docker rmi pg16
 docker rmi pg16:alpine
 lvim master.dockerfile 
@@ -5128,32 +4832,25 @@ lvim docker-entrypoint.sh
 docker images 
 docker system prune -a
 docker build -f postgres16alpine.dockerfile -t alpine3.19:pg16 .
-docker images
 lvim entrypoint_master 
-docker images
 lvim docker-compose.yml 
 docker-compose up --force-recreate
 docker-compose down
 docker images 
 docker rmi 9
 lvim postgres16alpine.dockerfile 
-docker ps -a
 docker images -a
 docker system prune -a
 docker build -f postgres16alpine.dockerfile -t alpine3.19:pg16 .
 lvim master.dockerfile 
 docker build -f master.dockerfile -t pg16 .
-docker images
 doas rm -rf master
 lvim docker-compose.yml 
-docker images
 docker-compose up --force-recreate
 docker-compose down
 doas rm -rf master
 docker system prune -a
-docker images
 docker images -a
-docker ps -a
 rm docker-ensure-initdb.sh 
 rm docker-entrypoint.sh 
 rm dockerfile 
@@ -5161,25 +4858,19 @@ rm postgres16alpine.dockerfile
 lvim master.dockerfile 
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
 docker login
-docker images
 docker rmi dbmaster
-docker images
 lvim docker-compose.yml 
 docker exec -it dbmaster bash
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
 docker-compose up
 docker-compose start
 docker-compose down
-docker images
-docker ps -a
 docker system prune -a
-docker images
 cd docker/postgresql/dbreplication/
 lvim master.dockerfile 
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
 docker imagesll
 docker-compose down
-docker images
 doas rm -rf master
 lvim master.dockerfile 
 ln --help
@@ -5188,12 +4879,10 @@ docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --
 docker system prune -a
 lvim master.dockerfile 
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate -d
-docker ps -a
 docker-compose up --force-recreate 
 docker-compose down
 doas rm -rf master
 lvim master.dockerfile 
-docker images
 docker rmi dbmaster
 docker system prune -a
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate -d
@@ -5204,21 +4893,17 @@ lvim entrypoint_master
 lvim master.dockerfile 
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate -d
 docker-compose down
-docker images
 docker pa -a
-docker ps -a
 docker system  prune -a
 lvim master.dockerfile 
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate -d
 docker-compose down
 lvim entrypoint_master 
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate -d
-docker images
 docker build -f ./master.dockerfile -t dbmaster:latest .
 sct daemon-reload 
 docker login
 docker images -a
-docker ps -a
 docker volume ls
 docker build -f ./master.dockerfile -t dbmaster:latest .
 lvim entrypoint_master 
@@ -5232,8 +4917,6 @@ lvim master.dockerfile
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate -d
 docker exec -it dbmaster bash
 docker compose down
-docker ps -a
-docker images
 doas rm -rf master
 docker compose up --force-recreate -d
 lvim docker-compose.yml 
@@ -5241,22 +4924,18 @@ docker exec -it dbmaster bash
 docker compose down
 doas rm -rf master
 docker ps -a 
-docker images
 lvim entrypoint_master 
 lvim master.dockerfile 
 lvim init.sql 
 lvim master.dockerfile 
 lvim entrypoint_master 
 docker ps -a 
-docker images
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate -d
-docker ps -a
 docker logs ed
 lvim entrypoint_master 
 lvim docker-compose.yml 
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate -d
 docker-compose down
-docker images
 docker rmi b7
 docker rmi d7
 docker rmi a4
@@ -5265,8 +4944,6 @@ lvim docker-compose.yml
 docker exec -it dbmaster bash
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate
 docker-compose down
-docker images
-docker ps -a
 docker rmi dbmaster
 doas rm -rf master
 ns postinit_master
@@ -5278,22 +4955,16 @@ lvim docker-compose.yml
 docker-compose down
 docker-compose up --force-recreate -d
 docker-compose down
-docker images
 docker system prune -a
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate -d
 docker-compose down
-docker ps -a
 docker rm -f 3e
-docker ps -a
-docker images
 docker rmi db
 docker rmi 88
-docker images
 docker images -a
 doas rm -rf master
 docker system prune -a
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate -d
-docker ps -a
 docker-compose down
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate
 docker-compose --help
@@ -5304,7 +4975,6 @@ docker-compose restart
 docker-compose start 
 docker-compose down
 docker system prune -a
-docker ps -a
 docker images -a
 lvim docker-compose.yml 
 docker-compose -up --force-recreate -d
@@ -5324,29 +4994,23 @@ docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --
 docker exec -it dbmaster bash
 docker pull postgres:16
 docker run -dh postgre16 --name postgres16 -h postgres16 -p 55432:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" -e postgres_password=testing postgres:16
-docker ps -a
 docker start postgres16 
 docker start -v postgres16 
 docker start postgres16 
-docker ps -a
 docker rm postgres16 
 xit
 docker-compose down
 docker system prune
 docker login
-docker images
 docker rmi dbmaster
 docker rmi postgresql
 whatis tty
 docker login
 docker
 docker ps -0a
-docker ps -a
-docker images
 docker run --help
 docker run --rm -it postgres:16 
 docker run -dh postgre16 --name postgres16 -h postgres16 -p 55532:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" -e postgres_password=testing postgres:16 
-docker ps -a
 docker rm -f postgres16 
 docker run -dh postgre16 --name postgres16 -h postgres16 -p 55532:5432 -e lang=pt_br.utf-8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" -e postgres_password=testing postgres:16 
 docker rm -f postgres16 
@@ -5366,7 +5030,6 @@ docker run -h pg16 --name pg16 -p 55432:5432 -e postgres_initdb_args="--locale-p
 docker rm -f pg16 
 docker run -h postgre16 --name pg16 -p 55432:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" -e postgres_password=testing postgres:16 
 docker run -dh postgre16 --name pg16 -p 55432:5432 -e postgres_password=testing postgres:16-alpine
-docker ps -a
 docker rm -f pg16 
 docker run -dvh postgre16 --name pg16 -p 55532:5432 -e postgres_password=testing postgres:16-alpine
 docker login
@@ -5377,9 +5040,7 @@ lvim master.dockerfile
 docker build -f ./master.dockerfile -t pg16alpine:master-1.0 .
 lvim master.dockerfile 
 docker build -f ./master.dockerfile -t pg16alpine:master-1.0 .
-docker images
 docker rmi postgres:16
-docker images
 docker run -dh pg16master --name pg16master -p 55532:5432 -e postgres_password=testing pg16alpine:master-1.0 
 docker exec -it pg16 bash
 docker exec -it pg16master bash
@@ -5396,27 +5057,20 @@ docker container commit pg16alpine allbano:pg16master
 docker image list
 docker rmi allbano
 docker rmi allbano:pg16master
-docker images
 docker container commit pg16alpine pg16alpine:master-1.0
 docker push pg16alpine:master-1.0 
 docker login
 docker push pg16alpine:master-1.0 
 sudo docker push pg16alpine:master-1.0 
 sudo docker push allbano/pg16alpine:master-1.0 
-docker images
-docker ps -a
 docker rm pg16master 
-docker images
 docker rmi 2e
 docker container commit 
 docker container commit --help
 docker container commit pg16alpine allbano/pg16alpine:master-1.0
 docker push 
-docker images
 docker push allbano/pg16alpine:master-1.0 
-docker images
 docker rmi 737
-docker images
 docker rmi allbano/pg16alpine
 docker rmi allbano/pg16alpine:master-1.0
 docker pull allbano/pg16master
@@ -5424,31 +5078,21 @@ docker build -f ./master.dockerfile -t pg16master:0.1 .
 docker system prune -a
 docker login
 docker build -f ./master.dockerfile -t pg16master:0.1 .
-docker images
 docker run -dh pg16master --name pg16master -p 55532:5432 -e postgres_password=testing pg16master:0.1 
 docker exec -it pg16master bash
-docker images
 docker tag --help
 tldr docker tag
-docker images
 docker tag  pg16master:0.1 
 docker tag fea  pg16master:0.1 
 docker push allbano/pg16master
 docker push allbano/pg16master:0.1
 docker ps
 docker stop 5d
-docker ps -a
-docker images
 docker commit 5d98e7e31c5f allbano/pg16master:0.1
-docker images
 docker rmi 5ce
-docker ps -a
 docker commit 5d98e7e31c5f allbano/pg16master:latest
-docker images
 docker rmi eb
-docker images
 docker commit 5d98e7e31c5f pq16master:latest
-docker images
 docker tag pg16master:latest allbano/pg16mater:v0.1
 docker rmi prune
 docker rmi --help
@@ -5459,14 +5103,12 @@ docker image rm fea
 docker image ls
 docker image rm fea
 docker image rm -f fea
-docker images
 docker images -a
 docker commit 5d98e7e31c5f dbmaster
 docker commit 5d98e7e31c5f dbmaster:latest
 docker system prune -a
 docker login
 docker ps
-docker images
 docker pull postgres:16-alpine
 docker run -dh pg16alpine --name pg16alpine -p 55532:5432 -e postgres_password=testing postgres:16-alpine 
 docker ps
@@ -5474,41 +5116,28 @@ docker exec -it pg16alpine bash
 docker ps
 docker stop pg16alpine 
 docker commit da5dc0106006 pg16master:v0.1
-docker images
 docker login
 docker push pg16master:v0.1 
 docker push allbano/pg16master:v0.1 
 docker tag pg16master:v0.1 allbano/pgmaster:v0.1
 docker push allbano/pg16master:v0.1 
 docker push pg16master:v0.1 
-docker images
 docker rmi a202
 docker rmi pg16master:v0.1
-docker images
 docker rmi a205
 docker commit da5dc0106006 templatepg
-docker images
 docker tag templatepg:latest allbano/pg16alpine-master
-docker images
 docker login
-docker images
 docker push allbano/pg16alpine-master
-docker ps -a
 docker rm pg16alpine 
-docker ps -a
-docker images
 docker rmi ad8
 docker rmi allbano/pg16alpine-master
 docker rmi ad8
 docker ps
-docker ps -a
 docker images -a
 docker pull allbano/pg16alpine-master
-docker images
 docker run -dh pg16master --name pg16master -p 55532:5432 -e postgres_password=testing allbano/pg16alpine-master:latest 
-docker ps -a
 docker rm -f pg16master 
-docker images
 docker rmi ad8
 lvim master
 doas rm -rf master
@@ -5516,43 +5145,31 @@ lvim master.dockerfile
 docker build -f ./master.dockerfile -t allbano/pg16master .
 docker tag allbano/pg16master:latest allbano/pg16alpine-master
 docker push allbano/pg16alpine-master
-docker images
 docker rmi allbano/pg16alpine-master
 docker tag allbano/pg16master:latest allbano/pg16master:v0.1
-docker images
 docker push allbano/pg16master:v0.1
 docker system prune -a
-docker images
-docker ps -a
 docker pull allbano/pg16master
 docker pull allbano/pg16master:v0.1
 docker login
-docker images
 docker ps -=a
-docker ps -a
 docker run -dh pg16master --name pg16master -p 55532:5432 -e postgres_password=testing allbano/pg16master:v0.1 
 docker exec -it pg16master bash
 docker rm -f pg16master 
-docker images
 docker run -dh pg16master --name pg16master -p 55532:5432 -e postgres_password=testing allbano/pg16master:v0.1 
 cat master.dockerfile 
 docker exec -it pg16master bash
 lvim master.dockerfile 
-docker images
 docker rm -f pg16master 
-docker images
 docker build -f ./master.dockerfile -t allbano/pg16master .
-docker images
 docker run -dh pg16master --name pg16master -p 55532:5432 -e postgres_password=testing allbano/pg16master:latest 
 docker run -h pg16master --name pg16master -p 55532:5432 -e postgres_password=testing allbano/pg16master:latest 
-docker ps -a
 docker rm -f pg16master 
 docker run -h pg16master --name pg16master -p 55532:5432 -e postgres_password=testing allbano/pg16master:latest 
 docker prune -a
 docker system prune -a
 docker build -f ./master.dockerfile -t allbano/pg16master:v0.1 .
 docker run -h pg16master --name pg16master -p 55532:5432 -e postgres_password=testing allbano/pg16master:latest 
-docker images
 docker rmi 19
 cd docker/postgresql/dbreplication/
 cat postinit_master 
@@ -5570,30 +5187,20 @@ docker run -h pg16master --name pg16master -p 55532:5432 -e postgres_password=te
 docker start pg16master 
 docker exec -it pg16master bash
 docker rm -f pg16master 
-docker ps -a
-docker images
 docker pull debian
 docker run -it --name debian -h debian debian:latest 
 docker rm -f debian 
-docker images
-docker ps -a
 docker run -it --name alpine -h alpine alpine:latest 
-docker ps -a
 cd docker/postgresql/dbreplication/
-docker images
 docker rmi ca1
 docker rmi 324
 docker rm -f alpine 
-docker images
 docker build -f ./master.dockerfile -t template-master .
-docker images
 cd docker/postgresql/dbreplication/
 cat master.dockerfile 
 lvim docker-compose.yml 
 docker-compose up --force-recreate -d
 docker exec -it dbmaster bash
-docker images
-docker ps -a
 docker rm -f dbmaster 
 docker rmi template-master
 docker build -f ./master.dockerfile -t template-master . && docker-compose up -d
@@ -5611,7 +5218,6 @@ docker rm -f dbmaster
 docker rmi template-master
 doas rm -rf master
 lvim master.dockerfile 
-docker ps -a
 docker images -a
 docker build -f ./master.dockerfile -t template-master . && docker-compose up -d
 docker exec -it dbmaster bash
@@ -5641,16 +5247,13 @@ cat history/alldeb-history
 cd history/
 gaa
 time
-date
 date --help
 date -u
-date +%s
 stat -c alldeb-history 
 stat -c %y alldeb-history 
 date -d @$(stat -c %y alldeb-history)
 stat alldeb-history 
 type -a pushhis 
-date +%s
 uptodate=$(date +%s)
 date -d $uptodate 
 date -d @$uptodate 
@@ -5685,21 +5288,17 @@ help test
 [[ -e "alldeb-history"* ]] && rm "alldeb-history"*
 [[ -e "alldeb-history*" ]] && rm "alldeb-history"*
 [[ -e "alldeb-history*" ]]
-echo $?
 echo alldeb-history*
 help test
 [[ -a "alldeb-history*" ]]
-echo $?
 rm alldeb-history-1729730840 
 echo alldeb-history*
 alldeb=$(echo "alldeb-history*")
 echo $alldeb 
 [[ -a "$alldeb" ]]
-echo $?
 cat $alldeb 
 echo $alldeb 
 [[ -a "${alldeb}" ]]
-echo $?
 [[ -a "${alldeb}" ]] && echo 'deu certo!' || echo 'n�o deu certo!'
 [[ -f "${alldeb}" ]] && echo 'deu certo!' || echo 'n�o deu certo!'
 if [[ -f "${alldeb}" ]] then echo 'deu certo!'; else echo 'n�o deu certo!'; fi
@@ -5757,13 +5356,10 @@ cat version
 sudo rm version
 cd 
 cd /
-docker ps -a
 cd $dotfiles
 gl -v --all
-git checkout main 
 git checkout debian_testing 
 gl -v
-git checkout main 
 git merge debian_testing 
 git checkout arcolinux
 git merge debian_testing 
@@ -5784,7 +5380,6 @@ type -a updatedotfiles
 updatedotfiles 
 cd $dotfiles/scripts/
 lvim functionsinitbash 
-git config -l
 gp -v -u origin arcolinux
 cd $dotfiles
 git am --help
@@ -5808,10 +5403,8 @@ cd $dotfiles
 type -a updatedotfiles 
 updatedotfiles 
 cd bash
-cat bash_functions 
 cd scripts/
 cat functionsinitbash 
-git config -l
 type -a updatedotfiles 
 type -a updatehis 
 lvim functionsinitbash 
@@ -5857,7 +5450,6 @@ git checkout main
 git merge --help
 git merge -e arcolinux 
 git config
-git config -l
 gp -v --all
 ~/github
 git clone git@github.com:allbano/bd3.git ~/github/bd3
@@ -5899,8 +5491,6 @@ cd bd3/
 cd bd3/
 db
 cd db3/
-git config -l
-rm -rf .git
 alias| rg mkdir
 mv ../db3 .
 mv ../db3 docs
@@ -5941,7 +5531,6 @@ docker volume rm empresa-aerea-mongo
 docker volume rm empresa-aerea-pg 
 docker volume rm 09
 docker volume rm 09bc9f0a25db7ff0bb1d2b4ab5640e4a53f70e5f4d95e10ac7ab9598563659fc 
-docker ps -a
 lvim docker-compose.yml 
 cd projetodw/
 lvim init.sh
@@ -6037,7 +5626,6 @@ cat allcodeberg.pub
 sct status sshd
 sct restart sshd
 gl -v
-git config -l
 ssh -t git@codeberg.org
 cd ~/.ssh
 ssh -t git@codeberg.org
@@ -6059,7 +5647,6 @@ lvim alt.sql
 cd projetodw/
 cp init.sql ../../
 cd ../..
-lvim 
 cd bd3/
 docker compose -f docker-compose-test.yml stop
 lvim docker-compose.yml 
@@ -6071,14 +5658,11 @@ cd github/bd3/
 docker compose -f docker-compose-test.yml stop
 pulldotfiles 
 cd $dotfiles
-git checkout arcolinux 
 git merge -e --commit debian_testing 
 gl -vf --all
 git checkout debian_testing 
 git checkout main
-git checkout arcolinux 
 git merge debian_testing 
-git config -l
 gp -uf origin arcolinux
 tldr git push
 tldr --version
@@ -6093,7 +5677,6 @@ paru -r tldr
 tldr
 type -a 
 type -a tldr
-cargo install --list
 echo -e "${path//:/\\n}"
 cd .cargo
 cd .cargo
@@ -6117,7 +5700,6 @@ echo -e "${path//:/\\n}"
 paru -s tldr
 tldr git merge
 tldt git merge
-fastfetch 
 cd $dotfiles
 cd bash
 git diff profile_alldeb profile_archnote
@@ -6146,7 +5728,6 @@ lvim init.sh
 mv projetodw.sql ../docs/
 rm bd_partes.sql 
 gaa
-docker ps -a
 docker compose -f docker-compose.yml up
 lvim docker-compose.yml 
 docker compose -f docker-compose.yml up
@@ -6207,10 +5788,8 @@ tldr rustup
 cd $dotfiles
 pulldotfiles 
 cd $dotfiles
-git checkout arcolinux 
 git checkout debian_testing 
 gl -v
-git checkout arcolinux 
 git merge debian_testing 
 gp -v
 bat alias
@@ -6234,17 +5813,13 @@ lvim functionsinitbash
 type -a pulldotfiles 
 pulldotfiles 
 echo -e "${path//:/\\n}"
-docker ps -a
 cd github/bd3/
 docker-compose -f docker-compose.yml down
-docker ps -a
 docker rm pg16
-docker ps -a
 docker container prune
 docker container ls
 docker container ls -a
 docker image
-docker images
 docker run -it --name debian-sid -h debian_sid debian:sid 
 distrobox 
 distrobox ls
@@ -6325,7 +5900,6 @@ ssh noip
 lvim config
 ssh noip
 ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
-flatpak update
 flatpak list
 paru -qss dbe
 paru -r dbeaver dbeaver-plugin-batik dbeaver-plugin-svg-format 
@@ -6337,7 +5911,6 @@ paru -s dbeaver
 ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
 cd github/b
 cd github/bd3/
-git restore .
 lvim docker-compose.yml 
 docker compose -f docker-compose.yml up -d
 gaa
@@ -6374,18 +5947,14 @@ lvim init.sh
 lvim projetodw-full.sql 
 docker-compose 
 lvim docker-compose.yml 
-tree
 pstree
 ltree
-tree
 cd projetodw/
 lvim projetodw-full.sql 
 ps -a
-docker ps 
 docker compose -f docker-compose.yml down
 docker compose -f docker-compose.yml up -d
 docker compose -f docker-compose.yml down
-fastfetch 
 wayland-info 
 yay
 cat /etc/fstab
@@ -6431,7 +6000,6 @@ cd crud-angular/
 npm run
 npm start
 gaa
-rm -rf .git
 git init
 ga readme.md 
 gcm "first commit."
@@ -6441,7 +6009,6 @@ gaa
 git restore --staged .
 gaa
 cd crud-angular/
-rm -rf .git
 gaa
 gcm "added angular 15 project."
 cd crud-angular/
@@ -6454,7 +6021,6 @@ gaa
 cd crud-angular/
 lrm -rf crud-angular/
 rm -rf crud-angular/
-rm -rf .git
 mv crud-angular-spring crud-angularspring/
 cd crud-angularspring/
 git init
@@ -6462,13 +6028,10 @@ git add readme.md
 gcm "first commit."
 git remote add origin git@github.com:allbano/crud-angularspring.git
 gp -u origin main
-docker ps -a
 cd github/bd3/
 docker compose -f docker-compose.yml up -d
 docker compose -f docker-compose.yml stop
-docker ps 
 docker ps =a
-docker ps -a
 ng new crud-angular
 cd crud-angular/
 gaa
@@ -6480,13 +6043,10 @@ gaa
 gcm "added angular/material."
 cd github/bd3/
 docker-compose -f docker-compose.yml up -d
-docker ps 
 apropos ls
 apropos compiler
 cd projetodw/
 > generate_client_data.py
-python --version
-type -a python
 /usr/bin/python --version
 cd github/bd3/
 docker-compose -f ~/github/bd3/docker-compose.yml up -d
@@ -6495,11 +6055,7 @@ npm --version
 cd github/bd3/
 cd projetodw/
 lvim generate_client_data.py 
-python --version
-python --version
 rm .tool-versions 
-python --version
-python --version
 virtualenv 3.12.7
 pip
 pip install -u pip
@@ -6509,7 +6065,6 @@ diff 3.12.7/bin/activate ~/github/dotfiles/scripts/activate
 lvim github/dotfiles/scripts/activate 
 lvim 3.12.7/bin/activate
 . 3.12.7/bin/activate
-python --version
 pip install faker
 pip install -u faker
 cd projetodw/
@@ -6521,8 +6076,6 @@ python generate_data.py
 python generate_client_data.py 
 lvim clientes.csv 
 docker-compose -f ~/github/bd3/docker-compose.yml stop
-docker ps -a
-deactivate 
 cd crud-angularspring/
 cd crud-angular/
 cd github/trabalhofinaldac/
@@ -6530,9 +6083,7 @@ ga
 gl -v --all
 git checkout leandro
 gl -v
-git config -l
 gl -v origin leandro
-git checkout main 
 git diff main..leandro
 gl -v 
 gl -v
@@ -6608,9 +6159,6 @@ cd crud-angular/
 cal
 calendar
 cal
-flatpak update
-docker ps 
-date
 uptime
 uptime --help
 paru -ssss tgpt
@@ -6638,16 +6186,12 @@ cargo search du
 cargo search dust
 paru -Sss tree
 paru -S tree
-tree --help
-tree -L2
-tree --help
 duf --all
 paru -Sss dust
 git tag --help
 cd /usr
 cd /run
 sudo systemctl status bluetooth
-tree
 git
 git push
 git pull
@@ -6656,7 +6200,6 @@ cit
 ga bash/bashrc 
 gcm "refact: bash history and HISTIGNORE."
 tree 
-tree -L1
 duf --help
 git diff 
 git diff profile
@@ -6697,14 +6240,10 @@ ps
 sct
 sct status
 docker ps
-docker ps -a
-docker images
 git rm *
 git checkout .
 node --version
 gcm "refact: update pushHis function."
-pushHis 
-type -a pushHis 
 git reset --hard HEAD~1
 git checkout 3f4
 git checkout 3f4d
@@ -6712,7 +6251,6 @@ git diff functionsInitBash HEAD
 git diff -- functionsInitBash HEAD
 git diff -- functionsInitBash
 cat functionsInitBash 
-git checkout main 
 lvim functionsInitBash 
 paru -Ss go
 paru -S doas
@@ -6756,7 +6294,6 @@ paru -Sss grub-theme
 ll GRUB_THEME="/boot/grub/themes/Vimix/theme.txt"
 ll /boot/grub/themes/Vimix/theme.txt
 sudo nvim /boot/grub/grub.cfg 
-python
 paru -Sss nordic
 paru -S mi
 sudo nvim /etc/pacman.d/mirrorlist
@@ -6783,7 +6320,6 @@ git config --global user.name "Albano Maywitz"
 git config --global user.email "allbano@gmail.com"
 gl --ff
 gcm "merge: On Home PC."
-git checkout arcolinux 
 paru -S man
 paru -S man-db 
 git push --help
@@ -6809,7 +6345,6 @@ ln -sf $HOME/.cargo/bin/usage /home/albano/bin/
 mise use -g usage
 unlink usage 
 type -a usage
-cargo install --list
 cargo uninstall usage-cli
 paru -Sss pacmac
 cargo install lfs
@@ -6844,7 +6379,6 @@ mise install python
 mise use -g python@system
 mise deactivate python
 mise unuse python@3.13.3
-rustup default stable
 rustup update 
 rustc --version
 cargo --version
@@ -6877,7 +6411,6 @@ mise unset MISE_DISABLE_TOOLS
 rm mise.toml 
 mise set 
 mise set --help
-type -a python
 mise set -g MISE_DISABLE_TOOLS=python
 mise unset -g MISE_DISABLE_TOOLS=python
 set MISE_DISABLE_TOOLS 
@@ -6903,7 +6436,6 @@ env|rg PIP
 mise unset -g MISE_DISABLE_TOOLS
 mise use -g python@3.13.3
 pipx
-type -a pip
 pip
 cd agenda/
 virtualenv venvagenda
@@ -6952,7 +6484,6 @@ poetry list --help
 poetry
 poetry env use venvagenda
 cat pyproject.toml 
-poetry env
 poetry env remove --all
 pip l
 poetry add django
@@ -6998,7 +6529,6 @@ find ~ -type d -wholename "*gitk*"
 paru -R git
 paru -Si git2
 paru -Si git
-echo -e "${PATH//:/\\n}"
 type -a gitk
 gitk
 gke
@@ -7028,13 +6558,11 @@ sudo mkinitcpio -P
 paru -Ssss akonadi
 bat /etc/fstab 
 sudo lvim /etc/fstab
-flatpak update
 cd github/agenda/
 pl
 paru -Ssss teams
 paru -S teams
 cd $DFFOTF
-git checkout archlinux 
 cd bin
 cat usuarios 
 lvim
@@ -7053,7 +6581,6 @@ cd SQLAlchemy/
 poetry init
 poetry env infop
 poetry env use
-python --version
 pip list -l
 poetryu add sqlalcchemy
 poetry add sqlalcchemy
@@ -7075,15 +6602,12 @@ rm pyproject.toml
 poetry new sqlalchemy
 mv sqlalchemy ..
 rmdir SQLAlchemy
-poetry env activate
 poetry env show
 poetry run pip install -u sqlalchemy
 poetry run pip install -U sqlalchemy
 poetry addsqlalchemy
 poetry add sqlalchemy
-bat pyproject.toml 
 paru -S visual-studio-code-bin
-mise
 mise listy
 mise list
 paru -S vscodium
@@ -7105,33 +6629,22 @@ poetry run python core_select.py
 poetry run python core_update.py 
 python core_update.py
 python core_delete.py 
-deactivate 
-pipx ensurepath
 poetry self add poetry-plugin-shell
 poetry show
-lvim pyproject.toml 
 lvim __init__.py 
 lvim app.py
 mv app.py fast_zero/
 cd fast_zero/
-python
 poetry run python
 python app.py 
 type -p python
-python --version
 pipx install ignr
 ignr
-deactivate 
 . /home/albano/.cache/pypoetry/virtualenvs/fast-zero-YYcnojcB-py3.13/bin/activate
 exit1
-poetry env 
 poetry env use --help
 poetry env use $(type -p python)
-poetry env list
 poetry run pip list -l
-poetry install
-poetry shell
-tree
 lvim .
 update
 cd /etc/pacman.d/
@@ -7182,7 +6695,6 @@ wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,
 github/
 BANTADS/
 cat README.md 
-nvm
 nvm update
 nvm list
 nvm nvm ls
@@ -7277,7 +6789,6 @@ git restore --staged .
 github/dotfiles
 gc -m "Updated .bashrc"
 ng --help
-nvm
 nvm list
 nvm use default 18.17.1
 nvm list
@@ -7477,7 +6988,6 @@ diff .bash_completion ~/github/dotfiles/bash-completion/tmux_completion
 source ~/github/dotfiles/bash-completion/tmux_completion 
 gcam "Updated bashrc and tmux_completion."
 tmux exit
-df -h
 yay -Sssss qditstat
 yay -Sssss qdirstat
 yay -S qdirstat
@@ -7609,7 +7119,6 @@ g
 st
 cat karma.conf.js 
 ca bash_functions 
-cat bash_functions 
 google vai e a merda
 google
 source ~/.bash_functions 
@@ -7676,7 +7185,6 @@ doas pacman -Si vim
 doas pacman -Qi vim
 echo $VIM
 cat archlinux.vim 
-;
 cat archlinux.vim 
 cat /etc/vimrc
 yay -Ssss vim-
@@ -7786,7 +7294,6 @@ doas pacman -S terminology
 tycat wallpaper-2161256.jpg 
 echo $0
 sudo -i
-. ~/.BASHRC
 bat aula_01.md 
 bat --pager=cat aula_01.md 
 bat --pager cat aula_01.md 
@@ -7815,7 +7322,6 @@ mkdir bash-completion
 doas lvim /usr/share/bash-completion/bash_completion 
 mkdir nvim
 l nvim
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
 echo $XDG_DATA_DIRS 
 doas pacman -S neovim
 rm -rf nvim.bak
@@ -8410,7 +7916,6 @@ google eu sei que vou te amar
 type -a google
 google eu sei que vou te amar
 lvim $(pwd)/bash_functions
-nvm
 cat test 
 ggfind 
 ggfind eu sei que vou te amar
@@ -8420,7 +7925,6 @@ cat ./test
 echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :)"
 echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
 echo -e "${PATH//:/\\n}" | sort -u | xargs
-nvm
 ss -tan
 zsh
 glow
@@ -8451,7 +7955,6 @@ lvim $DOTBASH/bash_functions
 google evanescence
 paru -Sss fjo
 rustup update
-nvm
 nvm use default
 type -a yarn
 cargo --list
@@ -8605,11 +8108,8 @@ nvidia-settings -q all |rg SLI-Mode
 nvidia-settings -q all |rg SLI
 nvidia-settings -q all
 paru -S blueman
-gh
 gh auth login --scopes use,repo,workflow
-gh
 gh auth login --scopes use,repo,workflow
-gh
 gh runs
 gh auth --status
 gh auth status
@@ -8637,7 +8137,6 @@ paru -S pyenv
 pyenv global
 pyenv latest
 pyenv version
-pyenv versions
 pyenv whence
 pyenv commands 
 type -a pyenv
@@ -8653,17 +8152,13 @@ rm -rf .pyenv
 curl https://pyenv.run | bash
 pyenv update
 pyenv root
-pyenv versions
 pyenv install --list
 pyenv install 3.12.2
 python --versin
-pyenv versions
 pip list -l
 pip list -l | rg jupyter
 pyenv install pypy3.10-7.3.15 anaconda3-2023.09-0
-pyenv versions
 pyenv virtualenv pypy3.10-7.3.15 pypy --upgrade-deps
-pyenv versions
 pyenv virtualenv 3.12.2 pypy --upgrade-deps
 pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
 pyenv activate py3.12 
@@ -8680,37 +8175,29 @@ lvim pyenv-virtualenv
 lvim pyenv-sd-activate 
 lvim pyenv-sh-activate 
 lvim activate 
-pyenv versions
 pyenv virtualenv-delete py3.12 
 pyenv virtualenv-delete pypy
-pyenv versions
 pyenv virtualenv-delete py3.12 
 pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
-pyenv versions
 pyenv activate py3.12 
 pyenv deactivate py3.12 
 pyenv virtualenv-delete py3.12 
 /home/albano/.pyenv/plugins/pyenv-virtualenv/bin/
 lvim pyenv-sh-activate 
 jupyter-lab --port 12000 --notebook-dir /home/albano  --browser firefox 
-pyenv versions
 pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
 pyenv virtualenv-delete py3.12 
 pyenv virtualenv 3.12.2 py3.12 --upgrade-deps
-pyenv versions
 pyenv activate py3.12 
 pyenv deactivate py3.12 
 pyenv virtualenv-delete py3.12 
 /home/albano/.pyenv/plugins/pyenv-virtualenv/bin/
 lvim pyenv-sh-activate 
-pyenv versions
 pyenv virtualenv 3.12.2 py3.12.2 --upgrade-deps
-pyenv versions
 pyenv activate py3.12.2 
 pyenv dectivate py3.12.2 
 pyenv deactivate py3.12.2 
 pyenv virtualenv-delete py3.12.2 
-pyenv versions
 pyenv 
 pyenv which 3.12.2
 pyenv which
@@ -8729,10 +8216,8 @@ pip list -l | rg '(^jupyter|^jupyterlab)'
 pip list -l | rg '(^jupyter|^jupyterlab)' | cut -d' ' -f1
 pip list -l | rg '(^jupyter|^jupyterlab)' | cut -f1
 pip list -l | rg '(^jupyter|^jupyterlab)' | cut -d' ' -f1
-pyenv versions
 pyenv virtualenv pypy3.10-7.3.15 pypy3.10-7.3.15 --upgrade-deps
 pyenv virtualenv-delete anaconda3-2023.09-0 
-pyenv versions
 pyenv virtualenv pypy3.10-7.3.15 pypy3.10-7.3.15 --upgrade-deps
 pyenv virtualenv pypy3.10-7.3.15 pypy --upgrade-deps
 pyenv activate pypy
@@ -8964,7 +8449,6 @@ updateHist
 lvim updateHist 
 updateHist 
 tty -s
-echo $?
 lvim updateHist 
 updateHist 
 lvim updateHist 
@@ -9153,7 +8637,6 @@ ng update @angular/core@latest
 ng update @angular/core
 ng new crud-angular2
 nvm use default 
-nvm
 nvm ls-remote lts
 nvm ls lts
 nvm ls --lts
@@ -9225,11 +8708,8 @@ echo $PS1
 fail
 suggest
 echo $PS1
-. ~/.BASHRC
 xit
-. ~/.BASHRC
 github/dotfiles
-. ~/.BASHRC
 source ~/.bashrc
 git restore bash/bashrc 
 source ~/.bashrc
@@ -9378,7 +8858,6 @@ dust -h
 dust -RD
 du -h
 paru -R npm
-nvm
 nvm ls
 nvm use default
 nvm alias default v20.12.0 
@@ -9445,45 +8924,33 @@ rm .gtkrc-2.0
 cat .gitconfig 
 pyenv update
 pyenv version
-pyenv versions
 pyenv whence
 pyenv doctor
 pyenv version
-pyenv versions
 pyenv global
 pyenv global pypy
-pyenv deactivate 
 pyenv deactivate pypy
 deactivate
 pyenvdeactivate
 pyenv deactivate
 pyenv 
-pyenv versions
 pyenv deactivate
 pyenv shims 
 pyenv virtualenvs
 source deactivate
-pyenv versions
 pyenv activate system
 pyenv virtualenv-delete pypy
 pyenv version
-pyenv versions
 pyenv rehas
 pyenv rehash 
-pyenv versions
 pyenv global system
 pyenv verions
-pyenv versions
 pyenv virtualenv pypy3.10-7.3.15 pypy
-pyenv versions
 pyenv update
-pyenv versions
 pyenv activate pypy
 pyenv dectivate pypy
 pyenv deactivate pypy
-pyenv versions
 pyenv activate pypy
-pyenv versions
 pip list -l | sed '1,2d'
 pip list -l | sed '1,2d' | cut -d' ' -f1
 pip list -l | sed '1,2d' | cut -d' ' -f1 > pacotesPy3.txt
@@ -9494,7 +8961,6 @@ pip list -l
 cat pacotesPy3.txt
 pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1
 pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
-pyenv versions
 pyenv activate pypy
 pip list -l
 cat pacotesPy3.txt 
@@ -9502,10 +8968,8 @@ python --versiuon
 paru -Sss pypy
 pyenv 
 pyenv verions
-pyenv versions
 pyenv virtualenv latest 3.12.2 
 pyenv virtualenv 3.12.2 latest
-pyenv versions
 pyenv activate latest 
 pip list -l
 pip install -U setuptools
@@ -9529,7 +8993,6 @@ rm -rf pythonProject
 rm -rf main.py 
 pip freeze -
 type -a python3
-type -a pip
 deactivate
 pip freeze
 django-admin startproject mysite
@@ -9641,19 +9104,14 @@ pip install -U jupyter-lab
 pip install -U jupyterlab
 jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
 pyenv deactivate latest
-pyenv versions
 pyenv virtualenv-delete pypy
-pyenv versions
 pyenv virtualenv pypy3.10
-pyenv versions
 pyenv virtualenv pypy3
 pyenv uninstall pypy3.10-7.3.15 
-pyenv versions
 pyenv whence
 pyenv hooks 
 pyenv install --list
 pyenv install anaconda3-2024.02-1
-pyenv versions
 ./manage.py startapp polls
 pyenv activate latest 
 ./manage.py startapp polls
@@ -9662,7 +9120,6 @@ pyenv deactivate latest
 bridge
 bridge monitor
 pyenv 
-pyenv versions
 pyenv virtualenv testPyAPI
 pyenv virtualenv-delete testPyAPI
 pyenv virtualenv testPyAPI 3.12.2
@@ -9673,7 +9130,6 @@ pyenv install 3.12.3
 sudo btrfs su list /
 pyenv install --list
 pyenv update
-pyenv versions
 pyenv global 3.12.2
 pip install --list
 pip list -l
@@ -9683,7 +9139,6 @@ pip install -U poetry
 pip freeze
 poetry
 pyenv verions
-pyenv versions
 pyenv virtualenv 
 pyenv virtualenv anaconda3-2024.02-1 testAnac
 pyenv activate testAnac
@@ -9695,7 +9150,6 @@ pyenv deactivate testAnac
 pyenv global 3.12.2
 pyenv global anaconda3-2024.02-1
 pyenv global 3.12.2
-pyenv versions
 pyenv activate testAnac
 pip list -k
 pip list -l
@@ -9709,7 +9163,6 @@ pyenv activate testAnac
 poetry
 lvim .inputrc
 pyenv activate testAnac
-poetry 
 zsh
 pyenv activate testAnac
 doas ln -sf /home/albano/github/dotfiles/bash-completion/poetry /usr/share/bash-completion/completions/poetry
@@ -9752,11 +9205,8 @@ yt-dlp
 pyenv 
 pyenv root
 pyenv version
-pyenv versions
 pyenv global system
-pyenv versions
 pyenv version
-pyenv versions
 pyenv activate testAnac
 python -V
 pyenv global anaconda3-2024.02-1/envs/testAnac 
@@ -9780,7 +9230,6 @@ pip versions
 pip version
 poetry
 pyenv deactivate testAnac
-pyenv deactivate 
 pyenv deactivate anaconda3-2024.02-1/envs/testAnac
 pyenv local
 pyenv local --unset
@@ -9834,7 +9283,6 @@ rm 'AULA 2 ｜ PYSTACK WEEK 10 [OV2EKT4lACY].webm'
 yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=OV2EKT4lACY&t=1s&ab_channel=pythonando
 yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=m0QFwMY2uyQ&t=2s&ab_channel=pythonando
 nvm ls
-nvm
 nvm install --lts
 nvm ls
 paru -Scccc
@@ -9843,7 +9291,6 @@ rm -rf ./*
 sudo btrfs sub show /
 sudo btrfs sub list /
 yay -Syyuu
-pyenv versions
 pyenv version-origin
 pyenv version
 pyenv update
@@ -9852,11 +9299,9 @@ pyenv virtualenvs
 pyenv commands
 pyenv install --list
 pyenv virtualenvs
-pyenv versions
 pyenv virtualenvs
 mkdir healing
 pyenv virtualenvs
-pyenv versions
 pyenv virtualenv 3.12.3 healing
 pyenv virtualenvs
 pyenv activate healing
@@ -9881,7 +9326,6 @@ pip install blue
 blue .
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
-systemctl status
 pyenv activate healing 
 pip list -l
 pip list -lo
@@ -9898,7 +9342,6 @@ git restore --staged bash-completion/poetry
 gcm "Updated archnote profile and zshrc."
 gsgt
 gcm "Added portry autocomplete."
-poetry 
 pyenv deactivate healing 
 paru -R nodejs
 paru -R yarn
@@ -9957,7 +9400,6 @@ npm view
 npm 
 npm i -g nextjs
 paru -S yt-dlp-git
-pyenv versions
 yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=vxfouMYa9dM&ab_channel=pythonando
 exi
 paru -Sss xpdf
@@ -9983,15 +9425,12 @@ sudo lpadmin -u
 sudo lpadmin -u allow:all
 yt-dlp -U
 pyenv 
-pyenv versions
 pyenv local 3.12.3
-pyenv versions
 pyenv 
 pyenv latest
 pyenv which
 pyenv local
 pyenv local --unset 
-pyenv versions
 sudo pacman 
 sudo pacman -h
 sudo pacman -Q
@@ -10037,7 +9476,6 @@ rciy
 tt
 tt
 tt
-echo $?
 ps au | grep bash
 ps au | grep '[b]ash'
 expr
@@ -10057,7 +9495,6 @@ echo ${HG%/*}
 echo ${HG##*/}
 echo ${HG%/*} #dirname
 echo ${HG##*/} #basename
-pyenv versions
 pyenv virtualenvs
 pyenv virtualenv 3.12.3 cadUsers
 pyenv activate cadUsers
@@ -10091,7 +9528,6 @@ python manage.py migrate
 python manage.py runserver
 pyenv deactivate cadUsers
 pyenv virtualenv-delete cadUsers
-pyenv versions
 yt-dlp
 paru -Qs yt-dlp
 paru -Rscdd yt-dlp
@@ -10146,7 +9582,6 @@ git clone git@github.com:JoaoV1821/marvel-app.git
 cd marvel-app/
 cd git/projetosEEG/eegDjango/
 pyenv version
-pyenv versions
 cd git/projetosEEG/eegDjango/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
 exir
@@ -10376,7 +9811,6 @@ cd API_REST/
 rm -RF API_REST
 cd BANTADS/
 git checkout 2899
-git restore .
 git checkout 2899
 git_current_branch 
 type -a git_current_branch 
@@ -10414,9 +9848,7 @@ git_current_branch
 git_current_branch 
 git branch 2>/dev/null
 git branch 
-echo $?
 git branch 2>/dev/null
-echo $?
 lvim $DOTFILES/bash/bash_functions 
 git_current_branch 
 type -a git_current_branch 
@@ -10437,7 +9869,6 @@ rep=$(git branch);[[ -z rep  ]] && echo "Deu certo" || echo "Não deu certo"
 [[ $(git branch &>/dev/null) -eq "0"  ]] && echo "Deu certo" || echo "Não deu certo"
 [[ $(git branch &>/dev/null) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
 git branch
-echo $?
 [[ $(git branch &>/dev/null) -eq 128  ]] && echo "Deu certo" || echo "Não deu certo"
 [[ $(git branch &>/dev/null) -eq "128"  ]] && echo "Deu certo" || echo "Não deu certo"
 [[ $(git branch &>/dev/null) -eq "128"  ]] && echo "Deu certo" || echo "Não deu certo"
@@ -10466,7 +9897,6 @@ git branch 2>/dev/null
 git branch
 decho $?
 git branch
-echo $?
 git branch; echo $?
 git branch 2>/dev/null; echo $?
 [[ $(git branch 2>/dev/null;echo $?) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
@@ -10511,7 +9941,6 @@ flatpak run com.vscodium.codium .
 python manage runserver
 cd git/projetosEEG/eegDjango/
 pyenv 
-pyenv versions
 pyenv local eegDjango
 flatpak list
 flatpak list | rg DataGrip
@@ -10636,7 +10065,6 @@ jupyter labextension uninstall tabnine
 pip uninstall jupyterlab_tabnine
 jupyter-lab --port 15000 --notebook-dir /home/albano  --browser firefox 
 pyenv local --unset 
-pyenv versions
 pyenv virtualenv-delete jupyters 
 pyenv virtualenv 3.12.4 jupyterlab
 pyenv local jupyterlab 
@@ -10784,9 +10212,7 @@ diff -r /home/albano/UFPR /run/media/albano/NETAC2Tb/UFPR
 find . -type d -empty -rint
 find . -type d -empty -print
 diff -r /home/albano/UFPR/ /run/media/albano/NETAC2Tb/UFPR/
-pyenv versions
 pyenv uninstall 3.12.2
-pyenv versions
 pyenv virtualenv 3.12.4 testes
 cd git
 cd test
@@ -10916,13 +10342,11 @@ yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/live/LFXH
 unzip Aula_3_Python_IA-20240711T020034Z-001.zip 
 mv 'Aula 3 - Python IA' Aula_3_Python_IA
 pyenv virtualenvs
-pyenv versions
 cd Aula_3_Python_IA/
 pyenv activate jupyterlab 
 jupyter-lab --port 15000 --notebook-dir .  --browser firefox 
 cd Downloads/JornadaPython/
 cd Aula_3_Python_IA/
-pyenv versions
 pyenv virtualenvs
 pyenv activate jupyterlab 
 pip list -lo
@@ -10954,7 +10378,6 @@ ame remove modular-debug
 ame
 ame --help
 ame upgrade
-pyenv versions
 /bin/python --version
 echo .
 echo *
@@ -10972,7 +10395,6 @@ echo -e '^a*'
 echo a*
 echo *a*
 echo .a*
-pyenv versions
 pyenv activate jupyterlab 
 cd Cursos/python/
 cd Estudos
@@ -10991,7 +10413,6 @@ cd agenda-django/
 cat notas.txt 
 mkdir ola_django
 cd ola_django/
-pyenv versions
 pyenv virtualenv-delete agenda
 pyenv virtualenv-delete aulasDjango 
 pyenv virtualenv aulasDjango 
@@ -11369,7 +10790,6 @@ docker rm -f dbmaster dbreplication
 docker volume rm master_master master_replication 
 lvim docker-compose.yml 
 docker-compose up --force-recreate -d
-docker ps 
 lvim docker-compose.yml 
 docker-compose up --force-recreate -d
 docker logs 85
@@ -12237,7 +11657,6 @@ rm -rf .pki
 rm -rf .gtkrc-2.0 
 cd Suporte/
 rustup toolchain install stable
-rustup default stable
 rustup check
 cd .cargo
 type -a cargo
@@ -12255,7 +11674,6 @@ cargo env
 plasmashell --version
 paru -Rscndd gnome-desktop
 uname  -a
-paru -Q
 paru -Qs
 paru -Qs alacritty
 paru -Qs bash
@@ -12265,7 +11683,6 @@ nvim alacritty.toml
 inxi -A
 sudo systemctl status NetworkManager
 > .cargo/env
-nvm
 LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
 paru -Ss ripgrep
 paru -Ss silver
@@ -12313,7 +11730,6 @@ sudo chown -hR albano /u
 sudo chown -hR albano /u .
 sudo chown -hR albano:albano .
 cd background/
-tree --help
 cd Animes/
 cd Backup/
 cd _telegram/
@@ -12359,19 +11775,15 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 env|rg NVM
 mkdir .nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-nvm
 nvm ls
 nvm install --list
 nvm install list-remote 
 nvm install ls-remote 
-nvm
 nvm install --lts
-nvm
 nvm ls
 nvm --help
 nvm list-remote
 nvm install v18.20.4
-nvm
 nvm ls
 npm i -g yuarn
 npm i -g yarn
@@ -12431,17 +11843,14 @@ sct status power
 sudo systemctl status power-profiles-daemon.service 
 sudo systemctl enable --now power-profiles-daemon.service 
 ng versions
-nvm
 nvm ls
 nvm use v18.20.4 
 npm install -g @angular/cli@16
 nvm use v20.17.0 
-pyenv versions
 pyenv install --help
 pyenv install -l
 pyenv install 3.12.5
 paru -Sss variety
-pyenv versions
 cd Cursos/
 cd python/
 pyenv virtualenv 3.12.5 jupyterlab
@@ -12455,9 +11864,7 @@ PS1="\[\e[97m\]\342\224\214\342\224\200\[\e[48;5;239m\]\[\e[1;36m\] \u\[\e[97m\]
 PS1="\[\e[97m\]\342\224\214\342\224\200\[\e[48;5;239m\]\[\e[1;36m\] \u\[\e[97m\]@\[\e[1;33m\]\H \[\e[44m\]\[\e[1;33m\] \w \[\e[48;5;239m\]\[\e[97m\] [$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D [$(find . -mindepth 1 -maxdepth 1 -type f | wc -l)]F [$(find . -mindepth 1 -maxdepth 1 -type l | wc -l)]SL \[\e[0m\]\[\e[42m\]\[\e[97m\]$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n "( BRANCH )")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^A' | wc -l | sed 's/^0//' | xargs -I AD echo -n " A(AD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^M' | wc -l | sed 's/^0//' | xargs -I MD echo -n " M(MD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/^0//' | xargs -I UD echo -n " UM(UD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -I UK echo -n " U(UK)")\[\e[0m\]\[\e[97m\]\[\e[97m\] - [\[\e[1;33m\]\t\[\e[97m\]]\[\e[0m\]\n\[\e[97m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\e[1;37m\]\[\e[1;36m\] (jupyterlab) $ \[\e[0m\] "
 PS1="\[\e[97m\]\342\224\214\342\224\200\[\e[48;5;239m\]\[\e[1;36m\] \u\[\e[97m\]@\[\e[1;33m\]\H \[\e[44m\]\[\e[1;33m\] \w \[\e[48;5;239m\]\[\e[97m\] [$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D [$(find . -mindepth 1 -maxdepth 1 -type f | wc -l)]F [$(find . -mindepth 1 -maxdepth 1 -type l | wc -l)]SL \[\e[0m\]\[\e[42m\]\[\e[97m\]$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n "( BRANCH )")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^A' | wc -l | sed 's/^0//' | xargs -I AD echo -n " A(AD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^M' | wc -l | sed 's/^0//' | xargs -I MD echo -n " M(MD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/^0//' | xargs -I UD echo -n " UM(UD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -I UK echo -n " U(UK)")\[\e[0m\]\[\e[97m\]\[\e[97m\] - [\[\e[1;33m\]\t\[\e[97m\]]\[\e[0m\]\n\[\e[97m\]\342\224\224\342\224\200\342\224\200\342\225\274 (jupyterlab) \[\e[1;37m\]\[\e[1;36m\]  $ \[\e[0m\] "
 PS1="\[\e[97m\]\342\224\214\342\224\200\[\e[48;5;239m\]\[\e[1;36m\] \u\[\e[97m\]@\[\e[1;33m\]\H \[\e[44m\]\[\e[1;33m\] \w \[\e[48;5;239m\]\[\e[97m\] [$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)]D [$(find . -mindepth 1 -maxdepth 1 -type f | wc -l)]F [$(find . -mindepth 1 -maxdepth 1 -type l | wc -l)]SL \[\e[0m\]\[\e[42m\]\[\e[97m\]$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n "( BRANCH )")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^A' | wc -l | sed 's/^0//' | xargs -I AD echo -n " A(AD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^M' | wc -l | sed 's/^0//' | xargs -I MD echo -n " M(MD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^ M' | wc -l | sed 's/^0//' | xargs -I UD echo -n " UM(UD)")\[\e[0m\]\[\e[97m\]\[\e[0m\]\[\e[42m\]\[\e[97m\]$(git status -s 2> /dev/null | grep '^?' | wc -l | sed 's/^0//' | xargs -I UK echo -n " U(UK)")\[\e[0m\]\[\e[97m\]\[\e[97m\] - [\[\e[1;33m\]\t\[\e[97m\]]\[\e[0m\]\n\[\e[97m\]\342\224\224\342\224\200\342\224\200\342\225\274 (jupyterlab)\[\e[1;37m\]\[\e[1;36m\] $ \[\e[0m\] "
-pyenv versions
 pyenv deactivate jupyterlab
-pyenv versions
 type -a pyenv activate
 paru -Syyu
 docker 
@@ -12508,7 +11915,6 @@ sudo systemctl status fwupd
 paru -Ssss nvidia
 paru -S gwe
 paru -S python-babel python-pygments python-pytest
-pyenv versions
 fd --help
 cargo env
 env|rg RUSTUP
@@ -12556,11 +11962,8 @@ paru -Sss pipx
 paru -S python-pipx
 cd Videos/
 sudo chown -R albano:albano .
-pyenv versions
 pyenv activate jupyterlab
-pyenv deactivate 
 pyenv activate experimentosEEG 
-pyenv deactivate 
 paru -S rustup
 paru -S doas
 paru -Ss vlc
@@ -12605,7 +12008,6 @@ paru -Sss warp
 cd .pyenv
 rm -rf plugins/python-build/share/python-build/3.13.0b2
 pyenv 
-pyenv versions
 paru -Sss otf-
 paru -S libertinus-font otf-hasklig-nerd 
 paru -Ssss ttf-
@@ -12618,7 +12020,6 @@ paru -Qss vsco
 paru -R vscodium-bin 
 paru -S vscodium-bin 
 vscodium .
-pyenv versions
 vyenv activate eegDjango
 pyenv activate eegDjango
 pip freeze
@@ -12721,7 +12122,6 @@ inxi -Fxz
 sudo sensors
 bat
 mount --help
-df -h
 inxi
 inxi -Fxz
 inxi --help
@@ -12754,7 +12154,6 @@ paru -S fuse-overlayfs
 sudo sensors
 docker start pg16 
 docker sp
-pyenv versions
 pyenv activate eegDjango 
 pyenv dectivate eegDjango 
 pyenv deactivate eegDjango 
@@ -12853,7 +12252,6 @@ cd git/projetosEEG/eegDjango/
 zed .
 git clone git@github.com:fgsamuel/exemplo_inline_form.git
 cd exemplo_inline_form/
-pyenv versions
 pyenv virtualenv 3.11.9 inline_form
 pyenv activate inline_form 
 pip freeze 
@@ -13111,7 +12509,6 @@ cat docker-compose-step-0.yml
 cd db/
 cat init.sql 
 cd postgres/
-;
 rm -rf postgres
 cat docker-entrypoint.sh 
 cat master.dockerfile 
@@ -13165,7 +12562,6 @@ lvim docker-compose.yml
 docker volume rm trabalhofinaldac_empresa-area 
 docker volume rm trabalhofinaldac_empresa-area 
 lvim docker-compose.yml 
-;
 cat init_corrected.sql 
 lvim docker-compose.yml 
 rm init.sql 
@@ -13218,8 +12614,6 @@ yay -R paru-git
 yay -S paru-git 
 paru -S devtools
 paru -Si nvchecker
-tree --help
-tree -L2
 tree -dL2
 docker 
 paru -Qs docker
@@ -13295,7 +12689,6 @@ git checkout -B albano
 git branch -l
 git branch -a
 nvm ls
-nvm
 nvm ls-remote 
 lvim docker-compose.yml 
 cd mongodb/
@@ -13304,7 +12697,6 @@ paru -Sss compass
 lvim docker-compose.yml 
 lvim docker-entrypoint.sh 
 lvim docker-compose.yml 
-;
 lvim docker-entrypoint.sh 
 docker volume rm empresa-aerea 
 lvim docker-compose.yml 
@@ -13312,7 +12704,6 @@ ghst
 l;
 cat docker-entrypoint.sh 
 lvim docker-compose.yml 
-docker ps 
 paru -Sss compass
 paru -S mongodb-compass
 paru -Sss brmodelo
@@ -13397,7 +12788,6 @@ paru -S python-dotenv
 distrobox --help
 distrobox ls
 paru -Qs run
-paru -Qs runc
 distrobox --help 
 distrobox list
 sudo systemctl enable podman
@@ -13460,9 +12850,7 @@ paru -S gns3-server gns3-gui gns3-converter
 paru -Sss python-cx
 paru -Sss python-cx-freeze-git
 paru -S python-cx-freeze-git
-pyenv versions
 paru -Qs gns
-pyenv versions
 distrobox --help
 distrobox list
 distrobox-rm Alpine
@@ -13668,7 +13056,6 @@ docker run -dvh alpinepg16 --name alpinepg16 -p 45432:5432 -e POSTGRES_PASSWORD=
 sct restart docker.service 
 docker run -dvh alppg16 --name alppg16 -p 45432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
 docker run -dh alppg16 --name alppg16 -p 45432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
-docker ps 
 distrobox create --image debian:testing --root --name debian-testing --hostname distro-debian --nvidia
 distrobox enter --root debian-testing 
 sudo apt update
@@ -13821,7 +13208,6 @@ distro
 lsb_release 
 sudo lsb_release 
 cat /etc/os-release 
-nvm
 echo $PATH
 export PATH=/home/albano/.local/bin:$PATH
 echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
@@ -14293,7 +13679,6 @@ updateDotfiles
 type -a updateDotfiles 
 type -a updateDotfiles 
 updateDotfiles 
-cat bash_functions 
 type -a updateDotfiles 
 type -a updateHis 
 type -a updateHis 
@@ -14362,7 +13747,6 @@ cd bd3/
 cd bd3/
 db
 cd db3/
-rm -rf .git
 alias| rg mkdir
 mv ../db3 .
 mv ../db3 Docs
@@ -14470,7 +13854,6 @@ htop
 lvim alt.sql
 cp init.sql ../../
 cd ../..
-lvim 
 cd bd3/
 docker compose -f docker-compose-test.yml stop
 lvim docker-compose.yml 
@@ -14666,7 +14049,6 @@ paru -Sss dbeaver
 paru -S dbeaver
 ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
 cd github/b
-git restore .
 lvim docker-compose.yml 
 docker compose -f docker-compose.yml up -d
 gcm "Corrigido path dos volumes no docker-compose."
@@ -14694,7 +14076,6 @@ pstree
 ltree
 lvim projetodw-full.sql 
 ps -a
-docker ps 
 docker compose -f docker-compose.yml down
 docker compose -f docker-compose.yml up -d
 docker compose -f docker-compose.yml down
@@ -14731,20 +14112,17 @@ git push -u origin main
 git restore crud-angular/
 git restore --staged .
 npm run
-rm -rf .git
 git init
 ga README.md 
 gcm "First commit."
 git remote add origin git@github.com:allbano/crud-angularspring.git
 gp -u origin main
 git restore --staged .
-rm -rf .git
 gcm "Added angular 15 project."
 pnpm 
 ng add @angular/material
 lrm -rf crud-angular/
 rm -rf crud-angular/
-rm -rf .git
 mv crud-angular-spring crud-angularspring/
 git init
 git add README.md 
@@ -14753,7 +14131,6 @@ git remote add origin git@github.com:allbano/crud-angularspring.git
 gp -u origin main
 docker compose -f docker-compose.yml up -d
 docker compose -f docker-compose.yml stop
-docker ps 
 docker ps =a
 ng new crud-angular
 gcm "Added crud-angular project."
@@ -14761,7 +14138,6 @@ ng add @angular/material
 ng add @angular/material
 gcm "Added angular/material."
 docker-compose -f docker-compose.yml up -d
-docker ps 
 apropos ls
 apropos compiler
 > generate_client_data.py
@@ -14838,8 +14214,6 @@ cd github/crud-angularspring/
 cal
 calendar
 cal
-docker ps 
-date
 uptime
 uptime --help
 paru -Ssss tgpt
@@ -15019,7 +14393,6 @@ XIT
 docker-compose -f ./docker-compose2.yml up
 cat docker-compose2.yml 
 bat docker-compose2.yml 
-docker ps 
 bat ../docker-compose2.yml 
 bat backup-full.sql 
 docker-compose -f ./docker-compose2.yml up
@@ -15082,7 +14455,6 @@ docker exec -it lojadevarejo bash
 docker-compose -f docker-compose.yml down
 lvim projetodw.dockerfile
 lvim docker-compose2.yml 
-docker ps 
 docker-compose -f docker-compose.yml up
 docker-compose -f docker-compose.yml down
 docker-compose -f docker-compose2.yml down
@@ -15108,7 +14480,6 @@ docker-compose -f docker-compose2.yml down
 lvim docker-compose2.yml 
 docker-compose -f docker-compose2.yml up
 docker-compose -f docker-compose2.yml up -d lojadevarejo
-docker ps 
 lvim projetodw.sh 
 docker exec -it lojadevarejo bash
 docker exec -it projetodw bash
@@ -15225,7 +14596,6 @@ docker-compose -f docker-compose2.yml up -d --force-recreate projetodw
 docker-compose -f docker-compose2.yml down
 docker-compose -f docker-compose2.yml up -d --force-recreate lojadevarejo
 docker-compose -f docker-compose2.yml up -d --force-recreate projetodw
-docker ps 
 rm -rf 3.12.7
 lll
 rm backup-full.sql.bak 
@@ -15286,7 +14656,6 @@ paru -S linux-cachyos linux-cachyos-headers
 paru -Qs bluez
 paru -Qt bluez
 paru -Qst bluez
-paru -Q
 paru -Qd
 paru -Qm
 paru -Qe
@@ -15513,7 +14882,6 @@ rm archlinux-dellg15-history
 echo alldeb*
 uname --nodename 
 echo $HOSTNAME 
-date +%s
 date -d 1729754811
 date -d @1729754811
 TODAY=$(date +%s)
@@ -15650,7 +15018,6 @@ pacman -Sl arcolinux_repo_3party | rg '\[installed\]$' # Esse é o certo!!!
 docker 
 docker scout
 paru -Sss docker-sc
-alacritty --version
 cd .config/alacritty
 lvim alacritty.toml
 ag PWD < env
@@ -15768,10 +15135,8 @@ lvim prompt
 ./prompt 1 4
 lvim prompt 
 cd bin
-echo $?
 [[ $(echo $?) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
 [[ $(echo $?) -eq 0  ]] && echo "Deu certo" || echo "Não deu certo"
-echo $?
 PS1='[\u@\h \W $(echo $?) ]\$ '
 PS1='[\u@\h \W $([[ echo $?]] && \e[31m || \e[32m) ]\$ '
 PS1='[\u@\h \W \$([[ echo $?]] && \e[31m || \e[32m) ]\$ '
@@ -15789,15 +15154,12 @@ PS1="[\u@\h \W ] $([[ `echo $?` -eq 0 ]] && echo -n '\e[31m' || echo -n '\e[32m'
 ciyt
 PS1="[\u@\h \W ] [[ `echo $?` -eq 0 ]] && echo -n '\e[31m' || echo -n '\e[32m' \$ \e[0m "
 PS1="[\u@\h \W ] $([[ `echo $?` -eq 0 ]] && echo -n '\e[31m' || echo -n '\e[32m') \$ \e[0m "
-echo $?
 PS1="[\u@\h \W ] $([[ \$(echo $?) -eq 0 ]] && echo -n '\e[31m' || echo -n '\e[32m') \$ \e[0m "
 PS1="[\u@\h \W ] $([[ \$(echo $?) -eq 0 ]] && echo -n '\e[31m' || echo -n '\e[32m') \$ \[\e[0m\] "
 PS1="[\u@\h \W ] $([[ $(echo $?) -eq 0 ]] && echo -n '\e[31m' || echo -n '\e[32m') \$ \[\e[0m\] "
-echo $?
 help test
 PS1="[\u@\h \W ] $([[ $(echo $?) -ne 0 ]] && echo -n '\e[31m' || echo -n '\e[32m') \$ \[\e[0m\] "
 PS1="[\u@\h \W ] $([[ `echo $?` -ne 0 ]] && echo -n '\e[31m' || echo -n '\e[32m') \$ \[\e[0m\] "
-echo $?
 PS1="[\u@\h \W ] $([[ `echo $?` -eq 0 ]] && echo -n '\e[31m' || echo -n '\e[32m') \$ \[\e[0m\] "
 cd bin
 cd /home/albano/.local/share/lunarvim/site/pack/lazy/opt/
@@ -15834,10 +15196,8 @@ find ~ -type d -wholename "*lvim*"
 xit
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 paru -S bash-language-server 
-lvim 
 sadf list
 type -a nvim
-lvim 
 cd .config/
 cd nvim.backup/
 tldr git config set
@@ -15880,17 +15240,13 @@ ll -d n*
 ll -d N*
 cd .config
 git clone git@github.com:joaobibiano/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
-rm -rf nvim
 git clone git@github.com:joaobibiano/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 cd .config
 cd nvim/
 cd nvim/
-rm -rf nvim
-rm -rf nvim
 git clone git@github.com:joaobibiano/kickstart.nvim.git ~/.config/nvim
 lvim .tool-versions 
 cd .config
-rm -rf nvim
 cd nvim
 git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 cd nvim
@@ -15899,7 +15255,6 @@ rm -rf ~/.local/share/nvim
 cd .config/nvim/
 git config --local
 git config --local -l
-rm -rf nvim
 rm -rf ~/.local/share/nvim
 git clone git@github.com:joaobibiano/kickstart.nvim.git ~/.config/nvim
 paru -Sss luarocks
@@ -15942,11 +15297,9 @@ lvim init.lua
 cd lua
 cd custom/
 cd core
-lvim init.lua 
 lvim commands.lua 
 cd .config
 rm -rf ~/.local/share/nvim
-rm -rf nvim
 pip
 pip intall -U pip
 pip install -U pynvim
@@ -15994,7 +15347,6 @@ sudo chown albano:users -R DADOS
 paru -Ssss kotlin
 mount
 mount --help
-df -h
 df -Th
 findmnt
 df -a
@@ -16013,15 +15365,11 @@ cargo search du
 cargo search dust
 paru -Sss tree
 paru -S tree
-tree --help
-tree -L2
-tree --help
 duf --all
 git tag --help
 cd /usr
 cd /run
 sudo systemctl status bluetooth
-tree
 git
 git push
 df --help
@@ -16029,7 +15377,6 @@ cd
 ga bash/bashrc 
 gcm "refact: bash history and HISTIGNORE."
 tree 
-tree -L1
 duf --help
 git diff 
 git diff profile
@@ -16070,8 +15417,6 @@ sct status
 git rm *
 git checkout .
 gcm "refact: update pushHis function."
-pushHis 
-type -a pushHis 
 git reset --hard HEAD~1
 git checkout 3f4
 git checkout 3f4d
@@ -16079,8 +15424,6 @@ git diff functionsInitBash HEAD
 git diff -- functionsInitBash HEAD
 git diff -- functionsInitBash
 cat functionsInitBash 
-git checkout main 
-git checkout arcolinux 
 docker attach --help
 cat Dockerfile 
 cat Dockerfile \n
@@ -16115,7 +15458,6 @@ docker pull postgres:16.4-alpine3.20
 docker pull postgres:16.4-alpine3.19
 cd ui/
 bat Dockerfile 
-nvim 
 docker network create --help
 paru -Sss wireshark
 paru -S wireshark
@@ -16252,7 +15594,6 @@ cd ui
 lvim Dockerfile 
 cd crud-angularspring/
 git config
-git config -l
 gl -v
 npm i -g @angular/cli@15
 npm update 
@@ -16351,7 +15692,6 @@ paru -Ssss kwin
 prime-run firefox
 sct stop nvidia-persistenced.service 
 nvidia-smi
-btop
 bashtop
 docker pull apache/hadoop:3.4.1
 docker rmi bbba
@@ -16413,7 +15753,6 @@ rm dados.py
 rm dados_gerados.csv 
 docker-compose -d up
 docker volume ls
-docker images
 docker-compose up -d --force-recreate
 nvim dados_0.csv 
 cd github/bd3/bigdata
@@ -16503,7 +15842,6 @@ pip install faker
 cd dados/
 cd github/bd3/bigdata/dados/
 source ~/github/bd3/bigdata/3.11.9/bin/activate
-python
 pip install -U ulid
 rm dados.py 
 python dados2.py 
@@ -16527,11 +15865,9 @@ sed -n '7500000p' dados_0.csv
 sed -n '10000000p' dados_0.csv 
 docker ps
 docker-compose up -d
-deactivate 
 bat docker-compose.yml 
 docker-compose stop
 cd github/bd3/bigdata/
-docker ps -a
 docker-compose up
 paru -R archlinux-kernel-manager 
 paru -R archlinux-logout-git 
@@ -16665,7 +16001,6 @@ gocomplete --help
 gocomplete
 cat profile 
 lvim bashrc 
-git diff
 paru -Si go
 go --version
 go version
@@ -16673,7 +16008,6 @@ cd .asdf
 > .tool-versions
 cat .tool-versions 
 cd Downloads/
-python --version
 npm
 npm i -g npm@latest && npm i -g pnpm@latest && npm i -g yarn@latest
 npm install -g @angular/cli
@@ -16757,7 +16091,6 @@ lexit
 mise 
 npm --version
 npm rum ng
-mise --help
 mise use system
 mise deactive python
 mise deactivate python
@@ -16849,7 +16182,6 @@ npm i -g @angular/cli@17
 mise use -g node@21.7.3
 mise i node@20.19.0
 mise rm node@21.7.3
-mise
 mise u node@21.7.3
 mise uninstall node@21.7.3
 lvim ~/.config/mise/config.toml 
@@ -16873,7 +16205,6 @@ npm i -g pnpm@latest
 npm i -g yarn@latest
 kotlinc --version
 kotlinc -version
-type -a python
 paru -Sss intellij
 paru -S intellij-idea-community-edition
 cd agenda
@@ -16890,7 +16221,6 @@ lfs --help
 lfs -a
 mdbook 
 cargo install mdbook
-cargo install --list
 cargo install tlrc
 tldt
 type -a tldt
@@ -16947,7 +16277,6 @@ rm package*
 lvim
 . ~/.fzf.bash 
 lvim ~/.fzf.bash 
-echo -e "${PATH//:/\\n}"
 type -a fzf
 fzf --version
 fzf --help
@@ -16970,7 +16299,6 @@ lvim Resumo\ da\ Reunião\ de\ Levantamento\ Requisitos\ -\ Dashboard\ TecnoAgin
 cat reuniao_tcc_07042025.md 
 paru -Sss astah
 ss
-flatpak update
 rsync -haAXvP --info=progress2 --progress /ssd /run/media/albano/NETAC2Tb/Backup/ | pv -petar
 rsync -haAXvP --info=progress2 --progress /run/media/albano/ssd/all /run/media/albano/ALL/ | pv -petar
 ll -d /run/media/albano/ssd/all /run/media/albano/ALL/
@@ -17105,14 +16433,12 @@ sudo lvim /etc/ssh/ssh_config.d/
 man ssh_config 
 sudo lvim /etc/ssh/ssh_config.d/10-ssh-albano-personal-v1.conf 
 pullDotfiles 
-sudo su
 git restore bash/history/notebook-dellg15-history-1744223826 
 agaa
 gaa
 gst
 gcm "add: ssh and sshd config files."
 cd .ssh
-fastfetch 
 uname -f
 uname -a
 paru -S simplenote-electron-bin
@@ -17129,8 +16455,6 @@ sudo fwupdmgr --help
 sudo fwupdmgr update 
 paru -S sshfs
 cd github/fast_zero/
-poetry env info
-pyenv
 paru -Ssss astah
 yay -S astah-uml 
 sudo archlinux-java 
@@ -17181,9 +16505,770 @@ clang --help
 llvm --help
 paru -S llvm
 mkdir -p logs/firefox
-nohup prime-run firefox 2>$HOME/logs/firefox/errors > $HOME/logs/firefox/firefox &
 nohup prime-run google-chrome-stable 2>$HOME/logs/chrome/errors > $HOME/logs/firefox/chrome &
-nohup prime-run google-chrome-stable 2>$HOME/logs/chrome/errors > $HOME/logs/chrome/chrome &
-nohup prime-run telegram-desktop 2>$HOME/logs/telegram/errors > $HOME/logs/telegram/telegram &
 cd $DOTFILES
 cd bash/history/
+pushHis 
+glol -5
+type -a pushHis 
+date
+date -d @1746706554
+date +%s
+man paru
+cd ../rc/
+git diff
+cat 06_prompt 
+lvim 06_prompt 
+lbim 04_history_options 
+PS_SYMBOL="${FG_CYAN}⟩⟩ ${FMT_RESET}"
+kit
+diff 06_prompt 07_prompt 
+rm 06_prompt 
+sudo su
+update_prompt_symbol 
+. ~/.BASHRC
+RETVAL=$?
+lvim 03_functions 
+echo $?
+env |rg SYMBOL
+set |rg SYMBOL
+lvim 04_history_options 
+lvim 07_prompt 
+paru -S gconf
+paru -Si gconf
+paru -Qi gconf
+paru -Qs gconf
+type -a pip
+type -a pipx
+python --version
+lvim $DOTBASHRC/04
+type _mise_hook 
+type _pyenv_virtualenv_hook 
+rm .zshrc.bak 
+java -h
+git config -l
+git fetch upstream 
+git pull upstream 
+git pull upstream main
+tree -L1
+tree -L2
+tree --help
+tree -L2 -h
+nvim 04_history_options 
+nvim 03_functions 
+nvim 00_init_functions 
+tree -L1 -h
+:x
+lvim $DOTBASHRC/99_custom_startup 
+lvim 00_init_functions 
+ffmpeg -i 'Only_Fans_–_Jan_TheJanAndOnly_&_Michael_DestroyBoy.mp4' -c:v libx265 -crf 28 -c:a copy -progress - -nostats saida_hevc.mkv
+ffmpeg -i "Bareback Latinoz - Love to Fuck s2.mp4" -c:v libx265 crf 28 -c:a libopus "Bareback Latinoz - Love to Fuck s2.mkv" 
+ffmpeg -i "Bareback Latinoz - Love to Fuck s2.mp4" -c:v libx265 crf 28 -c:a libopus Bareback_Latinoz_-_Love_to_Fuck_s2.mkv
+ffmpeg -i "Bareback Latinoz - Love to Fuck s2.mp4" -c:v libx265 crf 28 -c:a copy Bareback_Latinoz_-_Love_to_Fuck_s2.mkv
+ffmpeg -i "Bareback Latinoz - Love to Fuck s2.mp4" -c:v libx265 crf 28 -c:a libopus -b:a 189k -preset medim Bareback_Latinoz_-_Love_to_Fuck_s2.mkv
+ffmpeg -i "Bareback Latinoz - Love to Fuck s2.mp4" -c:v libx265 -crf 28 -c:a libopus -b:a 189k -preset medim Bareback_Latinoz_-_Love_to_Fuck_s2.mkv
+ffmpeg -i "Bareback Latinoz - Love to Fuck s2.mp4" -c:v libx265 -crf 28 -c:a libopus -b:a 189k Bareback_Latinoz_-_Love_to_Fuck_s2.mkv
+ffmpeg -i "Bareback Latinoz - Love to Fuck s2.mp4" -c:v hevc_nvenc -preset p5 -tune hq -rc vbr -cq 24 -b:v 0 -c:a libopus -b:a 189k "Bareback_Latinoz_-_Love_to_Fuck_s2_nvenc.mkv"
+rm Bareback_Latinoz_-_Love_to_Fuck_s2.mkv 
+tree -hL1
+nohup prime-run vlc Bareback_Latinoz_-_Love_to_Fuck_s2_nvenc.mkv &
+rm Bareback*
+nohup prime-run vlc psrafi.mp4 &
+gcm "refact: Load bashrc in modules (finished)."
+btop
+mkdir Projetos
+mkdir spotify_clone
+yt-dlp -f 'bv*+ba' https://www.youtube.com/watch?v=_RCLPj2x11g&t=1s
+mkdir DataClasses
+lvim dataclasses_pessoa.py
+lvim dataclasses_pessoa.py 
+nohup prime-run vlc 'Jornada Full Stack - Aula 3' &
+nohup prime-run vlc 'Jornada Full Stack - Aula 2： Javascript e React - Front End inteligente [cmk7DTjwhtc].mkv' &
+nohup prime-run vlc 'Jornada Full Stack - Aula 3： Interatividade e Player Dinâmico [gg3xBYR95Fo].mkv' &
+nohup prime-run vlc 'Jornada Full Stack - Aula 4： Backend com Node e Express + Banco de Dados [v6y0krP865s].mkv' &
+LL
+yt-dlp -f 'bv*+ba' https://www.youtube.com/watch?v=Ft1eS6c11w0&t=1s
+yt-dlp -f 'bv*+ba' https://www.youtube.com/watch?v=Ft1eS6c11w0&t=1s
+nohup prime-run vlc 'Aula Bônus 4： GitHub e Deploy do Projeto [Ft1eS6c11w0].webm' &
+ffmpeg -i "Aula Bônus 4： GitHub e Deploy do Projeto [Ft1eS6c11w0].webm" -c:v hevc_nvenc -preset p5 -tune hq -rc vbr -cq 24 -b:v 0 -c:a libopus -b:a 189k "Aula Bônus 4： GitHub e Deploy do Projeto [Ft1eS6c11w0].mkv'"
+ffmpeg -i 'Aula Bônus 4： GitHub e Deploy do Projeto [Ft1eS6c11w0].webm' 
+echo $PRO
+cd-
+-
+echo $PROMPT_COMMAND 
+type -a _pyenv
+type -a _pyenv_virtualenv_hook 
+type -a prompt_status 
+echo $SYMBOL 
+rm -rf __pycache__
+pyenv activate testes
+reset
+bat dataclasses_pessoa.py 
+lvim dataclasses_pessoa.py 
+mise
+nvm
+pyenv --help
+mise --help
+mv DataTests tests2
+bash --version
+echo "$PS1" | od -c | grep 033
+lvim $DOTBASHRC/04_history_options 
+echo $SYMBOL
+lvim $DOTBASH/functions/00_init_functions 
+lvim $DOTBASHRC/07_prompt 
+gcm "fix: update bashrc modules, now everything works."
+git checkout main 
+git merge -e archlinux 
+go
+git checkout arcolinux 
+git checkout archlinux 
+cp dataclasses_pessoa.py dataclasses_pessoa2.py 
+lvim dataclasses_pessoa2.py 
+cat dataclasses_pessoa2.py 
+python
+paru -Qs wire
+paru -Qs pipeware
+paru -Qs pulse
+paru -Qs pipewire
+paru -Ssss easyeffects
+paru -S easyeffects calf lsp-plugins-lv2 mda.lv2 yelp
+paru -S easyeffects
+systemctl --user status dbus
+systemctl --user status wireplumber
+paru -S pipewire-pulse
+sudo pacman -S pipewire-pulse
+sudo pacman -Rns pulseaudio pulseaudio-bluetooth pulseaudio-alsa pulseaudio-qt plasma-pa
+sudo pacman -Rns plasma-meta
+sudo pacman -Rns pulseaudio pulseaudio-bluetooth pulseaudio-alsa plasma-pa
+sudo pacman -S pipewire pipewire-audio pipewire-pulse wireplumber
+sudo pacman -S pipewire-bluetooth
+sudo pacman -S pipewire-audio 
+sudo pacman -S plasma-pa
+sudo pacman -S pulseaudio-bluetooth 
+sudo pacman -S pipewire pipewire-audio pipewire-pulse wireplumber bluez bluez-utils libldac libfreeaptx 
+systemctl --user status pipewire-pulse.s
+systemctl --user status pipewire-pulse.service 
+systemctl status pipewire-pulse.service 
+systemctl --user status pipewire
+pactl info
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
+sudo systemctl enable --now bluetooth.service
+sudo systemctl restart bluetooth.service
+exi5t
+nvim dataclasses_pessoa2.py 
+pyenv activate testes 
+nvim dataclasses_pessoa.py 
+git restore .
+lvim mason-tool-installer.lua 
+cargo install clippy
+rustup default stable
+rustup component add clippy
+type -a clippy
+cargo new clippy_test
+nvim src/main.rs 
+nvim astrolsp.lua 
+> null-ls.lua
+lvim null-ls.lua 
+ll -d null-ls.lua 
+rm null-ls.lua 
+pyenv deactivate 
+uya
+NVIM_APPNAME=astronvim_v5 nvim
+rm ~/.local/share/nvim; rm ~/.local/state/nvim; rm ~/.cache/nvim; rm ~/.config/nvim
+rm -rf ~/.local/share/nvim; rm -rf ~/.local/state/nvim; rm -rf ~/.cache/nvim; rm -rf ~/.config/nvim
+mv ~/.local/share/nvim.bak ~/.local/share/nvim; mv ~/.local/state/nvim.bak ~/.local/state/nvim; mv ~/.cache/nvim.bak ~/.cache/nvim; mv ~/.config/nvim.bak ~/.config/nvim
+paru -Ssss ghost
+paru -S ghostty
+lvim aula_09042025_CO.md 
+paru -Ssss kitty
+alacritty --help
+alacritty --version
+pipx list
+pipx ensurepath
+pyenv
+gh
+paru -Ssss torrent
+mv DTorrents Torrents
+rm .dbc5f4c8dcb09e2df6d16e8708e5a0684771655b.parts 
+;
+nohup prime-run vlc 'A Profecia da Lua 2024 WEB-DL 1080p x264 DUAL 5.1.mkv' &
+rm nohup.out 
+cat TorrentsDosFilmes.TO.url 
+mv 'A Roda do Tempo S03 2025 WEB-DL 1080p x264 DUAL 5.1' ~/Torrents/Downloads/
+pipx inject poetry poetry-plugin-shell
+poetry new --flat fast_zero
+poetry python list
+poetry env --help
+type -a python
+pyenv versions
+nvim pyproject.toml 
+poetry lock
+poetry install
+poetry add fastapi[standard]
+lvim pyproject.toml 
+paru -S crun
+sudo cp /etc/containers/containers.conf ~/.config/containers/containers.conf
+sudo cp /etc/containers/containers.conf ~/.config/containers/
+mkdir -p ~/.config/containers; sudo cp /etc/containers/containers.conf ~/.config/containers/
+lvim ~/.config/containers/
+l ~/.config/containers/containers.conf 
+systemctl --user enable --now podman.service 
+sudo systemctl restart podman.service 
+systemctl status podman.service 
+podman run --rm --runtime=crun alpine echo "Olá do container rootless"
+systemctl status podman
+systemctl status podman.socket 
+systemctl status podman-auto-update.service 
+sudo systemctl disable --now podman.service 
+sudo systemctl enable --now podman.service 
+sudo systemctl daemon-reload 
+sudo lvim /etc/containers/containers.conf
+cat /etc/group | grep podman
+cat /etc/group | grep pod
+cat /etc/group
+paru -S slirp4netns
+journalctl --user -xeu drkonqi-coredump-pickup.service
+journalctl --user -xeu podman.service
+journalctl --user -xeu kwalletmanager5
+journalctl --user -xeu app-kwalletmanager5@542536cf65354c5bad1213663f17b495.service 
+podman
+podman --help
+systemctl --user restart app-kwalletmanager5@7e635e5c7e5546e899f40a7941d49095.service
+systemctl --user restart app-kwalletmanager5@542536cf65354c5bad1213663f17b495.service 
+systemctl --user status app-kwalletmanager5@b5e08d7c15464bcbb728bd649cf87b53.service 
+systemctl --user disable --now app-kwalletmanager5@542536cf65354c5bad1213663f17b495.service 
+paru -Qs kwaller
+paru -Qs kwalle
+paru -R kwallet5 
+paru -R kde-sdk-meta
+paru -R umbrello
+paru -R kparts5 cervisia kig ktexteditor5 rocs
+paru -R kparts5
+paru -R kio5 kwallet5 
+paru -R kio5 kwallet5 kalzium kamoso kdeclarative5 kinit knewstuff5 purpose5 step
+paru -R kio5 kwallet5 kalzium kamoso kdeclarative5 kinit knewstuff5 purpose5 step artikulate kcmutils5
+paru -R kio5 kwallet5 kalzium kamoso kdeclarative5 kinit knewstuff5 purpose5 step artikulate kcmutils5 ktouch
+paru -S  ktouch
+paru -S kwalletmanager
+dbus-send --session --dest=org.freedesktop.secrets --type=method_call --print-reply /org/freedesktop/secrets org.freedesktop.DBus.Introspectable.Introspect
+busctl --user get-name-owner org.freedesktop.secrets
+busctl --user list
+systemctl --user edit app-kwalletmanager5@8ee9546af24c4cc9a93b138a2232ead5.service 
+systemctl status app-kwalletmanager5@8ee9546af24c4cc9a93b138a2232ead5.service
+systemctl --user status app-kwalletmanager5@8ee9546af24c4cc9a93b138a2232ead5.service
+systemctl --user list-units | grep kwallet
+systemctl
+ls ~/.config/autostart/ | grep kwallet
+ls ~/.config/autostart/
+ll ~/.config/autostart/
+ls ~/.config/systemd/user/
+ls ~/.local/share/systemd/user/
+ll ~/.local/share/systemd/user/
+systemctl daemon-reexec
+systemctl status
+paru -Ss kwalletmanager
+paru -Qs kwalletmanager
+systemctl --user daemon-reexec
+systemctl --user daemon-reload
+systemctl --user cat app-kwalletmanager5@bdc128ddefbe4292830d23a7697e40ba.service 
+systemctl --user status app-kwalletmanager5@bdc128ddefbe4292830d23a7697e40ba.service 
+systemctl --user --failed
+fd kwalletmanager5
+sudo find / -type f -wholename "*kwalletmanager5*"
+paru -Qs kwallet
+paru -Rns kwallet{,manager,-pam}
+paru -Rs kwallet{,manager,-pam} drkonqi
+paru -Rdd kwallet{,manager,-pam} drkonqi
+nohup prime-run telegram-desktop 2>$HOME/logs/telegram/errors > $HOME/logs/telegram/telegram &
+nohup prime-run firefox 2>$HOME/logs/firefox/errors > $HOME/logs/firefox/firefox &
+paru -Ssss kwallet
+paru -S kwallet
+paru -S kwallet-pam
+l k*
+l ./k*
+l -d ./k*
+l -d ./k.*
+rm -rf kwalletmanagerrc kwalletrc 
+file 'Data Structures and Algorithm Analysis in C - Mark Allen Weiss.kchmviewer' 
+file  'Data Structures and Algorithm Analysis in C - Mark Allen Weiss.kchmviewer' 
+lvim 'Data Structures and Algorithm Analysis in C - Mark Allen Weiss.kchmviewer' 
+rm -rf .kchmviewer/
+rm -rf .kchmviewer
+rm -rf .local/share/kwalletd
+file $(type -p fastfetch)
+duf
+df
+df -h
+cargo install --list
+echo -e "${PATH//:/\\n}"
+cat bash_profile 
+cat bash_functions 
+cat 02_aliases 
+flatpak update
+fastfetch 
+paru -Q
+systemctl --user enable --now podman.socket
+systemctl --user status podman.socket
+paru -Qs crn
+paru -Qs crun
+paru -Qs runc
+podman info | grep -A5 "ociRuntime"
+podman info
+systemctl --user status podman
+systemctl --user status podman.service 
+systemctl --user reload
+systemctl --user daemon-reload 
+podman info --debug | grep -A5 ociRuntime
+lvim ~/.config/containers/containers.conf
+lvim ~/.config/containers/containers.confua
+paru -Si k8
+mv ~/.config/containers/containers.conf .
+rm containers.conf 
+lvim /etc/containers/containers.conf
+cp /etc/containers/containers.conf ~/.config/containers/
+lvim containers.conf
+lvim mounts.conf 
+lvim registries.
+lvim registries.conf
+podman
+podman list
+podman ls
+podman container ls
+podman container 
+sudo podman container ls -a
+nohup prime-run google-chrome-stable 2>$HOME/logs/chrome/errors > $HOME/logs/chrome/chrome &
+podman run --rm alpine echo "Olá do container rootless"
+sudo podman run --rm alpine echo "Olá do container rootless"
+crun
+crun --help
+which crun
+lvim ~/.config/containers/containers.conf 
+systemctl --user status
+systemctl --user restart podman.service 
+systemctl --user restart podman.socket 
+podman info --format '{{.Host.OCIRuntimes}}'
+podman --runtime crun run --rm alpine echo "Olá do container rootless"
+cp -r ~/github/fastapi ~/git
+poetry 
+poetry python install 3.13.3
+poetry env
+poetry env use 
+poetry env use 3.13.3
+poetry env activa
+poetry env activate
+poetry shell
+pytest --cov=fastapi -vv
+pytest --cov=fast_zero -vv
+git remote remove origin
+git config -l
+gss
+gcm "Atualizado: até a 2 aula do Curso FastAPI Dunosauro"
+nvim pyproject.toml
+poetry run task lint
+nvim pyproject.toml 
+git config -l
+nvim .
+bat .gitignore 
+poetry list
+rm schemas.py 
+poetry env list
+poetry env 
+poetry env info | cut -f1 -d' '
+poetry env info | cut -f2 -d' '
+poetry env info | head 
+poetry env info | head -n5
+poetry env info | 
+poetry env info | awk "{print $2}"
+poetry env info | awk '/^Path/ {print $2}'
+poetry env info | rg -m1 Path
+poetry env info | 
+poetry env info | awk '/^Path/ {print $2}; exit'
+poetry env info
+poetry env info | awk '/^Path/ {print $2; exit}'
+. $(poetry env info | awk '/^Path/ {print $2; exit}')
+nvim 
+task run
+nvim fast_zero/app.py 
+task format
+lvim 
+bat pyproject.toml 
+task pre_test
+task lint
+task test
+gcm "Atualizado: exercícios aula 2"
+docker images
+docker rmi alpine:edge 
+docker rmi alpine:latest 
+deactivate 
+paru -S kwalletmanager
+dbus-send --session --dest=org.freedesktop.secrets --type=method_call --print-reply /org/freedesktop/secrets org.freedesktop.DBus.Introspectable.Introspect
+busctl --user get-name-owner org.freedesktop.secrets
+busctl --user list
+systemctl --user edit app-kwalletmanager5@8ee9546af24c4cc9a93b138a2232ead5.service 
+systemctl status app-kwalletmanager5@8ee9546af24c4cc9a93b138a2232ead5.service
+systemctl --user status app-kwalletmanager5@8ee9546af24c4cc9a93b138a2232ead5.service
+systemctl --user list-units | grep kwallet
+systemctl
+ls ~/.config/autostart/ | grep kwallet
+ls ~/.config/autostart/
+ll ~/.config/autostart/
+ls ~/.config/systemd/user/
+ls ~/.local/share/systemd/user/
+ll ~/.local/share/systemd/user/
+systemctl daemon-reexec
+systemctl status
+paru -Ss kwalletmanager
+paru -Qs kwalletmanager
+systemctl --user daemon-reexec
+systemctl --user daemon-reload
+systemctl --user cat app-kwalletmanager5@bdc128ddefbe4292830d23a7697e40ba.service 
+systemctl --user status app-kwalletmanager5@bdc128ddefbe4292830d23a7697e40ba.service 
+systemctl --user --failed
+fd kwalletmanager5
+sudo find / -type f -wholename "*kwalletmanager5*"
+paru -Qs kwallet
+paru -Rns kwallet{,manager,-pam}
+paru -Rs kwallet{,manager,-pam} drkonqi
+paru -Rdd kwallet{,manager,-pam} drkonqi
+nohup prime-run telegram-desktop 2>$HOME/logs/telegram/errors > $HOME/logs/telegram/telegram &
+nohup prime-run firefox 2>$HOME/logs/firefox/errors > $HOME/logs/firefox/firefox &
+paru -Ssss kwallet
+paru -S kwallet
+paru -S kwallet-pam
+l k*
+l ./k*
+l -d ./k*
+l -d ./k.*
+rm -rf kwalletmanagerrc kwalletrc 
+file 'Data Structures and Algorithm Analysis in C - Mark Allen Weiss.kchmviewer' 
+file  'Data Structures and Algorithm Analysis in C - Mark Allen Weiss.kchmviewer' 
+lvim 'Data Structures and Algorithm Analysis in C - Mark Allen Weiss.kchmviewer' 
+rm -rf .kchmviewer/
+rm -rf .kchmviewer
+rm -rf .local/share/kwalletd
+file $(type -p fastfetch)
+duf
+df
+df -h
+cargo install --list
+echo -e "${PATH//:/\\n}"
+cat bash_profile 
+cat bash_functions 
+cat 02_aliases 
+flatpak update
+fastfetch 
+paru -Q
+systemctl --user enable --now podman.socket
+systemctl --user status podman.socket
+paru -Qs crn
+paru -Qs crun
+paru -Qs runc
+podman info | grep -A5 "ociRuntime"
+systemctl --user status podman
+systemctl --user status podman.service 
+systemctl --user reload
+systemctl --user daemon-reload 
+podman info --debug | grep -A5 ociRuntime
+lvim ~/.config/containers/containers.conf
+lvim ~/.config/containers/containers.confua
+paru -Si k8
+mv ~/.config/containers/containers.conf .
+rm containers.conf 
+lvim /etc/containers/containers.conf
+cp /etc/containers/containers.conf ~/.config/containers/
+lvim containers.conf
+lvim mounts.conf 
+lvim registries.
+lvim registries.conf
+podman list
+podman ls
+podman container ls
+podman container 
+sudo podman container ls -a
+nohup prime-run google-chrome-stable 2>$HOME/logs/chrome/errors > $HOME/logs/chrome/chrome &
+podman run --rm alpine echo "Olá do container rootless"
+sudo podman run --rm alpine echo "Olá do container rootless"
+crun
+crun --help
+which crun
+systemctl --user status
+systemctl --user restart podman.service 
+systemctl --user restart podman.socket 
+podman info --format '{{.Host.OCIRuntimes}}'
+cp -r ~/github/fastapi ~/git
+poetry 
+poetry python install 3.13.3
+poetry env
+poetry env use 
+poetry env use 3.13.3
+poetry env activa
+poetry env activate
+poetry shell
+pytest --cov=fastapi -vv
+pytest --cov=fast_zero -vv
+git remote remove origin
+git config -l
+gss
+gcm "Atualizado: até a 2 aula do Curso FastAPI Dunosauro"
+nvim pyproject.toml
+poetry run task lint
+nvim pyproject.toml 
+git config -l
+nvim .
+bat .gitignore 
+poetry list
+rm schemas.py 
+poetry env list
+poetry env 
+poetry env info | cut -f1 -d' '
+poetry env info | cut -f2 -d' '
+poetry env info | head 
+poetry env info | head -n5
+poetry env info | 
+poetry env info | awk "{print $2}"
+poetry env info | awk '/^Path/ {print $2}'
+poetry env info | rg -m1 Path
+poetry env info | 
+poetry env info | awk '/^Path/ {print $2}; exit'
+poetry env info
+poetry env info | awk '/^Path/ {print $2; exit}'
+. $(poetry env info | awk '/^Path/ {print $2; exit}')
+task run
+bat pyproject.toml 
+task format
+nvim 
+glo
+gcm "Atualizado: até a 3 aula do Curso FastAPI"
+glog
+gloga
+glols
+glow
+deactivate 
+task lint
+task test
+gcm "Atualizado: exercícios aula 2"
+gcm "Atualizado: exercícios aula 2"
+paru -Sss gvproxy
+paru -S gvproxy-bin 
+podman run hello-world
+pacman -Ql podman | grep gvproxy
+find /usr -name gvproxy 2>/dev/null
+ll /run/libpod/
+sudo ll /run/libpod/
+sudo ldl -l /run/libpod/
+sudo lsd -l /run/libpod/
+export CONTAINERS_HELPER_BINARIES_DIR=/usr/libexec/podman
+rm ~/.config/containers/containers.conf 
+podman init
+podman machine init
+podman machine start
+podman info
+podman
+podman --help
+sudo cp /etc/containers/containers.conf ~/.config/containers/
+ll -d ~/.config/containers/
+sudo chown albano:albano ~/.config/containers/containers.conf 
+ll -d ~/.config/containers/containers.conf 
+podman --runtime crun run --rm alpine echo "Olá do container rootless"
+lvim ~/.config/containers/containers.conf 
+docker ps 
+docker ps -a
+docker ps 
+docker ps -a
+cd 
+pwd
+apk list
+apk
+apk search fd
+apk search fd-find
+apk search fdfind
+apk add fd
+sudo apk add fd
+nvim
+sudo apk add bash-completion
+exit
+exit
+apk list
+apk
+apk search fd
+apk search fd-find
+apk search fdfind
+apk add fd
+sudo apk add fd
+nvim
+sudo apk add bash-completion
+bash --version
+sudo apk list |rg bash-com
+sudo apk list |rg bash-completion
+sudo apk list |rg '^bash-completion'
+ls
+cat .local/
+cd .local/
+cd share
+cd ../..
+cd .cache
+cd //
+cd .config/
+ls -l
+cd .config/nvim/
+l
+pwd
+cd
+ls -la
+echo $PS1
+PS1="\u@\h \w]\$
+PS1="\u@\h \w]\$"
+exit
+sudo apk add bash-completion
+cd
+pwd
+sudo apk
+help
+type -a sh
+type -p sh
+which sh
+ls -ld $9which sh)
+ls -ld $(which sh)
+bash
+exit
+distrobox enter alpine 
+ffmpeg -i 'IoMacho How Deep is Your Fuck.mp4' 
+ffmpeg -i "IoMacho How Deep is Your Fuck.mp4" -c:v libx265 -crf 28 -c:a libopus -b:a 128k 'IoMacho How Deep is Your Fuck.mkv' 
+ffmpeg -i "IoMacho How Deep is Your Fuck.mp4" -c:v hevc_nvenc -preset p5 -tune hq -rc vbr -cq 24 -b:v 0 -c:a libopus -b:a 128k 'IoMacho How Deep is Your Fuck.mkv' 
+rm 'IoMacho How Deep is Your Fuck.mp4' 
+rm 'IoMacho How Deep is Your Fuck.mkv' 
+ll 'IoMacho How Deep is Your Fuck.mkv' 
+ll 'IoMacho How Deep is Your Fuck.*' 
+ll'IoMacho How Deep is Your Fuck
+ll IoMacho How Deep is Your Fuck
+ll "IoMacho How Deep is Your Fuck.m*"
+ll IoMacho\ How\ Deep\ is\ Your\ Fuck.m*
+rm IoMacho\ How\ Deep\ is\ Your\ Fuck.mp4 
+nohup prime-run vlc "IoMacho How Deep is Your Fuck.mkv"  2>&1 > $HOME/logs/vlc_teste  &
+which sh
+ls -ld $9which sh)
+ls -ld $(which sh)
+bash
+echo $PS1
+PS1="📦[\u@\h \w]$"
+cd
+PS1="📦[\u@\h \w]\$ "
+ls -la
+lsd -l
+apk add lsd
+sudo apk add lsd
+sudo apk search lsd
+sudo apk search exa
+sudo apk search eza
+sudo apk add eza
+eza
+eza -l
+eza -la
+apk
+cd .config/nvim/
+nvim
+exit
+upower
+upower --help
+upower -i 
+sudo upower --show-info
+sudo upower -e
+sudo upower -e | rg BAT
+sudo upower -i $(sudo upower -e | rg BAT)
+paru -S acpi
+sudo acpi -b
+acpi --help
+acpi -b
+acpi -b 1
+acpi
+acpi -t
+sudo acpi -i
+sudo acpi -f
+sudo acpi -s
+sudo acpi -V
+sudo acpi -t
+paru -Qs tlp
+paru -S tlp-rdw
+sudo systemctl status tlp.service
+paru -S powertop
+sudo powertop
+paru -Qs tp-
+paru -S tp-smapi
+paru -Sssss tp-smapi
+paru -Sssss tp-s
+paru -Sssss tp-
+paru -Sssss tlp-
+paru -Qs acpi
+paru -Ssss acpi_call
+paru -S acpi_call-dkms 
+paru -Ssss acpi_call
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
+rm -rf ~/.config/nvim/.git
+rm -rf plugins
+,,
+rm -rf user
+mv noice.lua lua/plugins/
+rm -rf nvim
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+rm -rf .git
+nvi 
+cp lua/plugins/noice.lua ~/.config/nvim.bak/lua/plugins/
+rm -rf user
+cp ~/.config/nvim.bak/lua/plugins/rainbow-delimiters.lua .
+cp ~/.config/nvim.bak/lua/plugins/tokyonight.lua .
+cp ~/.config/nvim.bak/lua/plugins/transparent.lua .
+lvim user.lua 
+cp ~/.config/nvim.bak/lua/plugins/which-key.lua .
+lvim user.lua 
+lvim which-key.lua 
+cp ~/.config/nvim.bak/lua/plugins/nvim-lint.lua .
+lvim which-key.lua 
+cp ~/.config/nvim.bak/lua/plugins/nvim-ufo.lua .
+lvim none-ls.lua 
+cp ~/.config/nvim.bak/lua/plugins/neo-tree.lua .
+lvim neo-tree.lua 
+lvim astrolsp.lua 
+rm astrolsp.lua 
+cp ~/.config/nvim.bak/lua/plugins/astrolsp.lua .
+lvim astroui.lua 
+lvim astroui.lua 
+lvim init.lua 
+bat neovim.yml 
+bat selene.toml 
+bat neovim.yml 
+bat neovim.yml 
+lvim lazy_setup.lua 
+lvim community.lua 
+lvim polish.lua 
+lvim polish.lua 
+lvim astro
+lvim astrocore.lua 
+lvim astro
+cp ~/.config/nvim.bak/lua/plugins/cmp.lua .
+cp ~/.config/nvim.bak/lua/plugins/cmp.lua .
+cp ~/.config/nvim.bak/lua/plugins/lspkind.lua .
+lvim lspkind.lua 
+lvim lspkind.lua 
+lvim mason.lua 
+cp -r ~/.config/nvim.bak/.git .
+cp -r ~/.config/nvim.bak/.gitignore .
+gcm "feat: updated AstroVim v5"
+. $(poetry env info | awk '/^Path/ {print $2; exit}')/bin/activate
+rm -rf ~/.local/state/nvim/swap
+NVIM
+nnvim
+tree
+cd..
+nvim config.lua 
+bat lazy-lock.json 
+lvim init.lua
+bat cmp_luasnip.md 
+bat stylua.toml 
+lvim 
+lvim --headless +'lua require("lvim.utils").generate_settings()'
+lvim --headless +'lua require("lvim.utils").generate_settings()' +qa
+cat lv-settings.lua 
+rm lv-settings.lua 
