@@ -19,6 +19,10 @@ fi
 [[ -d "$HOME/go/bin" && ! $PATH =~ "$HOME"/go/bin  ]] &&  export PATH="$HOME/go/bin:$PATH"
 complete -C /home/albano/go/bin/gocomplete go
 
+ # set PATH so it includes user's private bin if it exists
+   [[ -d "$HOME/.cargo/bin" && ! $PATH =~ "$HOME"/.cargo/bin  ]] &&  export PATH="$PATH:$HOME/.cargo/bin"
+
+
 # ASDF/MISE PATH AND AUTOCOMPLETION
 #. <(mise completion bash)
 eval "$(/home/albano/.local/bin/mise activate bash)"
