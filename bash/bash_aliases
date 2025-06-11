@@ -242,26 +242,24 @@ alias lsku='lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,FSUSE%,FSAV
 
 ########## ARCHLINUX SYSTEM
 alias ua='paru -Syu' 
-alias ur='sudo reflector --verbose -p hhtp,https --sort rate -n 10 --save /etc/pacman.d/mirrorlist && paru -Syyuu' 
-alias uy='yay -Syyu'
+alias uay='paru -Syyu' 
+alias ur='sudo reflector --verbose -p https --sort rate -n 10 --save /etc/pacman.d/mirrorlist && paru -Syyuu' 
+alias uy='yay -Syu'
+alias uyy='yay -Syyu'
 
 ########## DEBIAN SYSTEM
 alias ud='sudo apt update && sudo apt upgrade'
-alias un='doas nala update && doas nala upgrade'
+alias un='sudo nala update && sudo nala upgrade'
 
 ########## REDE
 alias ports='sudo netstat -tulanp'
 alias ips='ip -c -br a'
 
+########## Aliases
+alias nba="nvim $DOTBASH/bash_aliases"
 
-
-########## Neovim
-alias nba='nvim ~/.bash_aliases'
-
-
-######### Python
-alias py3a=" . /home/albano/.py3env/bin/activate"
-alias py3d=' deactivate'
+######### Fastfetch
+alias ff="fastfetch"
 
 ######### Yt-dlp ( Youtube )
 alias yd=yt-dlp
@@ -273,5 +271,4 @@ alias tz="tmux new /usr/bin/zsh"
 ######## SYSTEMCTL
 alias sct="sudo systemctl "
 
-######## SSH
-alias sshw='eval "$(ssh-agent -s)"'
+
