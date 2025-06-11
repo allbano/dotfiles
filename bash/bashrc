@@ -12,7 +12,7 @@ case $- in
       *) return;;
 esac
 
-# Modularização
+# Modularization
 # 00_env_vars.sh"
 # 01_paths.sh
 # 02_aliases.sh

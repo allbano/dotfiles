@@ -1,3 +1,4 @@
 [[ $SHLVL -eq 1 && $(ps -o tty= -p$$ | sed 's/pts\///') -eq 2 ]] && pullDotfiles
 
 PROMPT_COMMAND="prompt_status; $PROMPT_COMMAND"
+export JAVA_HOME=/usr/lib/jvm/default/bin
