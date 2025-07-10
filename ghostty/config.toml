@@ -45,7 +45,7 @@
 font-family = "CaskaydiaCove Nerd Font"
 font-size = 12
 
-background-opacity = 0.8 
+background-opacity = 0.8
 
 shell-integration-features = no-cursor,sudo,title
 cursor-style = block
@@ -54,9 +54,9 @@ cursor-style-blink = false
 
 theme = "/home/albano/github/dotfiles/ghostty/themes/Aura_all"
 
-window-padding-balance = true
+#window-padding-balance = true
 window-save-state = always
-macos-titlebar-style = transparent
+#macos-titlebar-style = transparent
 maximize = true
 
 window-decoration = none
