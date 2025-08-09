@@ -14,7 +14,6 @@ date +'%y-%mmm-%d'
 date +'%y-%m-%d'
 date +'%y-%m-%d %r'
 git status --porcelain 
-du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
 dud
 github/dotfiles/bash
 launch google.com
@@ -28,7 +27,6 @@ xdg-open 'https://meleu.sh/'
 xdg-open 'firefox &'
 xdg-open 'firefox'
 launch google.com
-du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
 xdg-open .bashrc
 exec vlc
 exec opera 
@@ -332,7 +330,6 @@ yay -ssss jump
 help
 vim ~/.bashrc
 lvim
-cat /etc/fstab 
 tldr make
 man make
 man makefiles 
@@ -2423,7 +2420,6 @@ docker pull nginx:alpine
 docker login
 sudo docker login
 docker pull nginx:alpine
-sudo systemctl daemon-reload 
 docker pull nginx:alpine
 docker pull nginx
 sudo docker login
@@ -2663,7 +2659,6 @@ yt-dlp -f 'bv*[ext=mp4]+ba/best[ext=mp4]/best' https://www.youtube.com/watch?v=v
 exi
 paru -sss xpdf
 paru -s xpdf
-sudo systemctl daemon-reload 
 paru -s cups-pdf
 sudo systemctl restart cups.service 
 sudo systemctl restart cups.socket 
@@ -2807,7 +2802,6 @@ paru -r python-async_generator
 sct status
 tmux new-ses -s tty0
 sct status
-sudo systemctl daemon-reload 
 sct status
 sct
 sct status
@@ -2864,9 +2858,7 @@ pyenv version
 cd git/projetoseeg/eegdjango/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
 exir
-exitr
 exirt
-exitr
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
 cd git/pythonando/healing/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
@@ -6800,7 +6792,6 @@ date +'%Y-%m-%d'
 date +'%Y-%m-%d %R'
 git status --porcelain 
 echo $OSTYPE 
-du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
 dud
 github/dotfiles/bash
 launch google.com
@@ -6815,7 +6806,6 @@ xdg-open 'https://meleu.sh/'
 xdg-open 'firefox &'
 xdg-open 'firefox'
 launch google.com
-du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
 xdg-open .bashrc
 exec vlc
 exec opera 
@@ -7102,7 +7092,6 @@ which ppupshd
 which pushd
 yay -Ssss jump
 vim ~/.bashrc
-cat /etc/fstab 
 tldr make
 man make
 man makefiles 
@@ -9462,9 +9451,7 @@ pyenv version
 cd git/projetosEEG/eegDjango/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
 exir
-exitr
 exirt
-exitr
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
 cd git/pythonando/healing/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
@@ -11741,7 +11728,6 @@ sudo id allarch
 sudo usermod -aG sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,vboxusers,gluster,docker,qemu,rtkit,git,flatpak,vboxsf,ntp,locate,input,disk,render,nvidia-persistenced,tty,games,adm albano
 id albano
 flatpak
-id
 sudo usermod -aG flatpak albano
 flatpak
 flatpak list
@@ -11837,7 +11823,6 @@ zsh
 paru -S vlc-git
 paru -S lua-socket libva-vdpau-driver
 flatpak
-id
 id allarch
 paru -S docker
 paru -S criu docker-scan docker-buildx docker-compose
@@ -11850,7 +11835,6 @@ sudo systemctl enable --now docker.service
 sudo systemctl status docker.service 
 sudo usermod -aG adm,sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,docker,fwupd,vboxusers,vboxsf,nvidia-persistenced,polkitd,locate,dosk,input,lock,kvm,games,log,render,git,flatpak albano
 sudo usermod -aG adm,sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,docker,fwupd,vboxusers,vboxsf,nvidia-persistenced,polkitd,locate,disk,input,lock,kvm,games,log,render,git,flatpak albano
-id
 paru -Sss visual-studio
 paru -S visual-studio-code-bin
 paru -Sss linux
@@ -12216,7 +12200,6 @@ paru -R libreoffice-extension-languagetool
 vlc
 cat /etc/pass
 cat /etc/passwd
-exitr
 cd github
 git clone git@github.com:allbano/TrabalhoFinalDAC.git
 cd TrabalhoFinalEDII/
@@ -12611,7 +12594,6 @@ help pwd
 paru -S qbittorrent
 docker run -dh postgres16 --name postgres16 -p 45432:5432 -e POSTGRES_PASSWORD=testing postgres
 mkdir ssdext
-id
 sudo mount -o uid=1001,gid=1001 /dev/sda1 ~/ssdext
 docker container start postgres16 
 cd Desktop/BD3/
@@ -14113,7 +14095,6 @@ id albano
 sudo usermod -aG adm,sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,docker,fwupd,vboxusers,vboxsf,nvidia-persistenced,polkitd,locate,disk,input,lock,kvm,games,log,render,git,flatpak albano
 paru -S fwupd
 sudo usermod -aG adm,sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,docker,fwupd,vboxsf,nvidia-persistenced,polkitd,locate,disk,input,lock,kvm,games,log,render,git,flatpak albano
-id
 docker-compose -f ~/github/bd3/docker-compose.yml up -d
 paru -S lapce
 paru -S zed
@@ -14206,7 +14187,6 @@ exirt
 exir
 doas systemctl status
 sudo lvim /etc/doas.conf
-id
 sudo chown -c root:root /etc/doas.conf && sudo chmod -c 0400 /etc/doas.conf
 doas systemctl status
 sudo lvim /etc/doas.conf
@@ -16118,7 +16098,6 @@ lsblk -f
 mkdir backup
 mount -a
 sudo mount -a
-sudo systemctl daemon-reload 
 lsblk
 sudo mount -o uid=1000,gid=1000 -U f7117e9d-2b4e-4322-8c2f-83e9d52afb75 /home/albano/ALL
 lsblk -f
@@ -16134,7 +16113,6 @@ sudo rm -rf '$RECYCLE.BIN'/
 sudo rm -rf 'System Volume Information'/
 sudo chmod 770 UFPR
 rsync -haAXvP --info=progress2 --exclude=all /ssd/ /home/albano/ALL/
-bat /etc/fstab
 bat /etc/pacman.conf
 alias|rg systemctl
 sct status ssh
@@ -16216,12 +16194,10 @@ sudo firewall-config
 sudo firewall-cmd --add-port=6969/tcp --permanent
 sudo firewall-cmd --remove-service=ssh --permanent
 sudo lvimm /etc/firewalld/services/ssh-alt.xml
-sudo lvim /etc/firewalld/services/ssh-alt.xml
 sudo firewall-cmd --add-service=ssh-alt --permanent
 sudo firewall-cmd --reload 
 sudo firewall-cmd --remove-port=6969/tcp --permanent
 sudo firewall-cmd --reload
-sudo firewall-cmd --list-all
 sudo systemctl enable nvidia-persistenced.service 
 sudo systemctl start nvidia-persistenced.service 
 sudo systemctl status nvidia-persistenced.service 
@@ -16393,7 +16369,6 @@ type -a prompt_status
 echo $SYMBOL 
 rm -rf __pycache__
 pyenv activate testes
-reset
 bat dataclasses_pessoa.py 
 lvim dataclasses_pessoa.py 
 mise
@@ -16504,7 +16479,6 @@ systemctl status podman.socket
 systemctl status podman-auto-update.service 
 sudo systemctl disable --now podman.service 
 sudo systemctl enable --now podman.service 
-sudo systemctl daemon-reload 
 sudo lvim /etc/containers/containers.conf
 cat /etc/group | grep podman
 cat /etc/group | grep pod
@@ -17303,7 +17277,6 @@ sudo rm -rf /usr/lib/firmware/nvidia/ad*
 paru -Syuy
 uname -a
 paru -Syu
-reboot
 sudo  ln --symbolic --force /usr/share/icons/cursor_theme_name ~/.local/share/icons/default
 sudo rm -rf Vimix-*
 ln -sf $HOME/.icons/Obsidian/cursors/hand ./9d800788f1b08800ae810202380a0822
@@ -17313,9 +17286,7 @@ ll l*
 rm e29285e634086352946a0e7090d73106 
 ln -sf $HOME/.icons/Obsidian/cursors/hand ./e29285e634086352946a0e7090d73106
 rm 73135-Obsidian.tar 
-bat /etc/fstab 
 sudo lvim /etc/fstab 
-lsk
 paru -Sy
 paru -Ssss pyshell
 paru -Ssss python-shell
@@ -17332,7 +17303,6 @@ git pull --help
 git push -ff
 git push -f origin main
 git fetch
-ff
 exit\
 sudo su
 sudo usermod -aG wheel matheus
@@ -17346,11 +17316,80 @@ cat 20-systemd-userdb.conf
 userdbctl --help
 sudo userdbctl ssh-authorized-keys root
 cat authorized_keys 
-sudo systemctl status sshd.service 
 sudo systemctl start ssh-access.target 
-sudo systemctl status ssh-access.target 
 cat 10-ssh-albano-personal-v1.conf 
 bat ssh_config
 cat moduli 
 lsblk 
 sudo umount /run/media/albano/ALL
+pushHis
+sudo mount -o defaults,users /dev/sdb1 /home/albano/DADOS
+lssblk -f
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,compress=zstd,users /dev/sdb1 $HOME/DADOS 
+sudo mount -o defaults,noatime,users /dev/sdb1 $HOME/DADOS 
+sudo mount -o defaults,noatime,users /dev/sdc1 $HOME/DADOS 
+sudo chown -R albano:albano $HOME/DADOS
+sudo umodunt /dev/sdc1
+sudo umount /dev/sdc1
+sudo mount -o defaults,noatime,users /dev/sdc1 $HOME/ALL
+ls -ld $HOME/ALL
+rsync -ahP --info=progress2 /ssd /home/albano/ALL
+rsync -ahP --info=progress2 /ssd/ /home/albano/ALL
+sudo rsync -ahP --info=progress2 /ssd/ /home/albano/ALL
+lvim kitty.conf 
+ll Aura
+ll Aura*
+git fetch 
+git pull origin archlinux
+bat /etc/fstab
+sudo firewall-cmd --list-all
+sudo lvim /etc/firewalld/services/ssh-alt.xml
+ll /etc/firewalld/services/
+exitr
+paru -Ssss ventoy
+id
+id matheus
+sudo systemctl status ssh
+sudo systemctl status ssh-access.target 
+sudo systemctl disable sshdgenkeys.service 
+sudo systemctl disable --now sshdgenkeys.service 
+sudo systemctl stop sshdgenkeys.service 
+sudo systemctl status sshdgenkeys.service 
+sudo systemctl daemon-reload 
+sudo systemctl status
+sudo systemctl status sshd.service 
+reboot
+balooctl6 --help
+sudo balooctl6 disable
+cat /etc/fstab 
+b\at /etc/fstab 
+bat /etc/fstab 
+ll -i
+lsd --help
+ldl -i
+ldl -iN
+ldl -ih
+ldl -id --tree
+alias ldl
+lsd -lid --tree --depth 2
+lsd -li --tree --depth 2
+lsd -i --tree --depth 2
+du -h /
+du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
+du --help
+ff
+lsk
+alias lsk
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS'
+lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS
+git pull origin archlinux 
+btrfs --help
+btrfs su --help
+btrfs filesystem du /
+sudo btrfs filesystem du /
+sudo btrfs filesystem --help
+sudo btrfs filesystem du /ssd
+sudo btrfs filesystem du --hellp
+sudo btrfs filesystem du --help
+sudo btrfs fi du --human-readable /ssd
+reset
