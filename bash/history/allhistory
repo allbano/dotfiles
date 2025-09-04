@@ -30664,6 +30664,12 @@ paru -Sss 'obsidian cursor'
 paru -S xcursor-breeze-serie-obsidian
 #1728501607
 paru -R xcursor-breeze-serie-obsidian
+<<<<<<< HEAD:bash/history/archlinux-dellg15-history
+<<<<<<< HEAD
+=======
+>>>>>>>> arcolinux:bash/history/archlinux-dellg15-history
+>>>>>>> debian_testing
+=======
 #1729071852
 paru -S pipx
 #1729071865
@@ -35896,3 +35902,4 @@ cd github/fast_zero/
 poetry env info
 #1745044428
 his
+>>>>>>> 3ac7436d9da58128b99079525ccf73def9261a69:bash/history/notebook-dellg15-history-1744223826
