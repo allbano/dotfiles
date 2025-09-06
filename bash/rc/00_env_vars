@@ -20,4 +20,6 @@ export DOTFILES="/home/$USER/github/dotfiles"
 export DOTBASHCN="/home/$USER/github/dotfiles/bash-completion"
 export DOTBASH="/home/$USER/github/dotfiles/bash"
 
+# This Docker's enviromment
+ export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 
