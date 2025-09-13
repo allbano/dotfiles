@@ -28,10 +28,11 @@ set linebreak
 set nolist
 set listchars=tab:›-,space:·,trail:◀,eol:↲
 " -----------------------------------------------------------------------------
-" set relativenumber
-set number 
+set relativenumber
+" set number 
 set scrolloff=10
 set cursorline
+set cursorcolumn
 " -----------------------------------------------------------------------------
 let &t_SI="\e[6 q"
 let &t_EI="\e[2 q"
