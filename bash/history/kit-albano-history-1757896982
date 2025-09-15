@@ -1,0 +1,913 @@
+sudo systemctl status dkms.service 
+sudo update-initramfs -k
+sudo update-initramfs -k all
+sudo update-initramfs -u
+sudo nala install linux-headers-amd64 
+sudo update-initramfs -u
+sudo reboot
+tree
+sudo nala install tree
+sudo systemctl status nvidia-persistenced.service 
+sudo nala install nvidia-driver-full
+sudo nala reinstall nvidia-driver-full
+sudo nala 
+sudo nala purge nvidia-driver-full
+sudo nala clean 
+sudo nala autoremove
+sudo nala autopurge 
+sudo systemctl disable sddm.service 
+sudo reboot
+sudo systemctl status nvidia-persistenced.service 
+sudo systemctl status dkms.service 
+sudo systemctl status ssdm
+sudo nala upgrade
+sudo nala search flatpak
+lsblk -f
+lsblk -f
+lsblk -f
+lsblk -f
+sudo mkfs.btrfs -f /dev/sda2
+sudo nala install btrfs-progs btrfs-assistant btrfs-compsize btrfs-heatmap 
+sudo mkfs.btrfs -f /dev/sda2
+lsblk -f
+sudo nala search google
+sudo nala search '^google' 
+cd Downloads/
+sudo apt install ./google-chrome-stable_current_amd64.deb 
+lsblk -f
+sudo nala install arch-install-scripts debootstrap 
+sudo debootstrap --help
+lsblk -f
+lsblk -f
+sudo btrfs su --help
+sudo btrfs su list
+sudo btrfs su list /debian
+sudo btrfs su list
+sudo btrfs su list /debian
+lsblk -f
+sudo umount /debian
+sudo fdisk /dev/sdba
+lsblk -f
+lsblk -f
+sudo mkfs.btrfs -f /dev/sda2
+sudo mkfs.ext4 /dev/sda3
+sudo mkfs.ext4 -f /dev/sda3
+sudo mkfs.btrfs /dev/sda4
+lsblk -f
+sudo smartctl /dev/sda
+sudo smartctl -a /dev/sda
+lsblk -f
+]sudo mount -o defauts,autodefrag,space_cache=v2,noatime,compress=zstd /dev/sda2 /debian
+sudo mount -o defauts,autodefrag,space_cache=v2,noatime,compress=zstd /dev/sda2 /debian
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,compress=zstd /dev/sda2 /debian
+lsblk -f
+mkdir -p /debian/boot/efi
+sudo mkdir -p /debian/var/cache
+sudo mkdir -p /debian/var/log
+sudo btrfs su --help
+sudo btrfs su list /debian
+cd /debian
+rmdir /boot
+sudo rmdir /boot
+sudo rmdir /boot/efi
+sudo rmdir /boot
+cd boot/
+sudo rmdir efi
+ls
+cd ..
+sudo rmdir /debian/var/
+sudo rmdir /debian/var/log/
+sudo rmdir /debian/var/cache/
+cd
+lsblk -f
+lsblk -f
+sudo mount /debian
+/debian
+lsblk -f
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,compress=zstd /dev/sda2 /debian
+sudo mkdir -p /debian/boot-efi
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,compress=zstd /dev/sda4 /debian/home
+sudo mount /dev/sda4 /debian/var
+lsblk -f
+sudo mount /dev/sda1 /debian/boot
+cd /debian/
+sudo rmdir boot-efi/
+sudo mkdir -p boot/efi
+cd
+lsblk -f
+sudo mount /dev/sda1 /debian/boot/efi/
+lsblk -f
+lsblk -f
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,compress=zstd /dev/sda2 /debian
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,compress=zstd /dev/sda4 /debian/home
+lsblk -f
+sudo mount -o defaults,noatime /dev/sda3 /debian/var
+lsblk -f
+sudo mount -o defaults,umask=0077 /dev/sda1 /debian/boot/efi/
+lsblk -f
+sudo debootstrap trixie /debian https://deb.debian.org/debian/
+sudo mount --bind /dev /mnt/debian/dev
+sudo mount --bind /dev /debian/dev
+sudo mount --bind /proc /mnt/debian/proc
+sudo mount --bind /proc /debian/proc
+sudo mount --bind /sys /debian/sys
+sudo chroot /debian/
+lsblk -f
+exit
+sudo nala search font
+exit
+lsblk -f
+sudo mount /dev/nvme0n1p1
+sudo mount /dev/nvme0n1p1 /mnt
+lsblk -f
+cd /mnt
+cd
+sudo mount /dev/nvme0n1p1 /mnt
+lsblk -f
+sudo mount /dev/nvme0n1p7 /mnt
+cd /mnt
+cd @
+cd /etc/
+cat fstab
+cd -
+cd etc
+cat fstabn
+cat fstab
+sudo nala search font
+sudo nala install xfonts-utils ttf-mscorefonts-installe gftools 
+sudo nala install ttf-mscorefonts-installe gftools 
+sudo nala install ttf-mscorefonts-installer gftools 
+exit
+sudo systemctl status
+exit
+lsblk -f
+sudo nala search smart
+sudo nala install smart-notifier 
+reset
+. /usr/share/bash-completion/bash_completion 
+find /usr -type f -wholena '*smart*'
+find /usr -type f -wholename '*smart*'
+sudo nala search smart
+sudo nala install smartmontools
+\smartmontools
+smartmontools
+smartctl
+sudo systemctl status smartmontools.service 
+sudo systemctl status smartd.service 
+exit
+sudo nala install ntpupdate
+sudo nala install ntpdate
+sudo nala search ntpdate
+sudo nala search ntpsec-ntpdate
+sudo nala install ntpsec-ntpdate
+timedatectl status
+timedatectl --help
+timedatectl set-ntp true
+sudo timedatectl set-ntp true
+timedatectl set-local-rtc true
+sudo timedatectl status 
+sudo timedatectl set-local-rtc false
+sudo timedatectl status 
+sudo ntpdate pool.ntp.org
+sudo timedatectl set-ntp true
+sudo timedatectl status 
+sudo timedatectl --help
+sudo timedatectl show-timesync 
+sudo systemctl status systemd-timedated.service 
+sudo systemctl enable systemd-timedated.service 
+sudo systemctl start systemd-timedated.service 
+sudo systemctl status systemd-timedated.service 
+sudo nala show xfsprogs 
+sudo nala install xfsprogs 
+lsblk -f
+sudo nala search ghost
+mkdir github
+cd github/
+git clone https://github.com/ghostty-org/ghostty
+cd ghostty/
+git tag
+git checkout v1.1.3
+sudo nala install zig
+sudo nala search zig
+curl https://mise.run | sh
+nvim ~/.bashrc
+exit
+mise search zig
+mise ls-remote zig
+mise 
+mise completion bash
+sudo mise completion bash >> sudo tee /usr/share/bash-completion/completions/mise
+mise completion bash >> sudo tee /usr/share/bash-completion/completions/mise
+tee --help
+sudo tee --help
+mise completion bash >> sudo tee /usr/share/bash-completion/completions/mise
+mise completion bash >> mise
+cat ./mise
+sudo mv ./mise /usr/share/bash-completion/completions/
+ll
+rm sudo
+ll
+ls la
+. /usr/share/bash-completion/completions/mise 
+mise 
+exit
+cd ghostty-deps/
+mise mise use -g usage
+mise 
+mise use -g zig@0.15.1
+zig --version
+cd github/ghostty/
+git tab
+git tag
+git checkout v1.1.3
+zig build -Doptimize=ReleaseFast
+nvim build.zig.zon
+zig build -Doptimize=ReleaseFast
+nvim build.zig.zon
+cat build.zig.zon
+mv build.zig.zon build.zig.zon.bak
+nvim build.zig.zon
+zig build -Doptimize=ReleaseFast
+nvim build.zig.zon
+zig build --fetch
+rm build.zig.zon
+mv build.zig.zon.bak build.zig.zon
+zig build --fetch
+nvim build.zig.zon
+zig build --fetch
+zig build -Doptimize=ReleaseFast
+history | grep mise
+mise use -g zig@0.15.1
+mise use -g zig@0.14.1
+zig --version
+zig version
+zig build -Doptimize=ReleaseFast
+nvim build.zig.zon
+cat build.zig.zon
+zig build -Doptimize=ReleaseFast
+git5 tag
+git tag
+git checkout v1.1.3
+git checkout HEAD
+git branch 
+git checkout main 
+git branch 
+git status
+git tab
+git tag
+zig version
+zig build -Doptimize=ReleaseFast
+ping -c3 codeberg.com
+ping -c3 codeberg.org
+sudo nala install eza
+cat build.zig.zon
+mkdir ghostty-deps
+mv ~/Downloads/zig-wayland-f3c5d503e540ada8cbcb056420de240af0c094f7.tar.gz ./ghostty-deps/
+ls -lh ./ghostty-deps/
+nvim build.zig.zon
+zig build -Doptimize=ReleaseFast
+nvim build.zig.zon
+zig build -Doptimize=ReleaseFast
+nvim build.zig.zon
+zig build -Doptimize=ReleaseFast
+nvim build.zig.zon
+zig build -Doptimize=ReleaseFast
+git status
+ll
+cd ..
+rm -rf ghostty
+cd
+exit
+sudo nala search font
+sudo nala search ttf-font
+sudo nala search ttf-
+sudo nala search '^ttf-'
+sudo nala search bat
+bat /etc/fstab
+lsblk -f
+exit
+cd ~/Downloads/
+mv zig-wayland-f3c5d503e540ada8cbcb056420de240af0c094f7.tar.gz f3c5d503e540ada8cbcb056420de240af0c094f7.tar.gz 
+cd ~/github/ghostty/
+git checkout v1.1.3
+nvim build.zig.zon
+exit
+ghostty 
+cd github/
+git clone https://github.com/ghostty-org/ghostty
+git checkout tip
+git tag
+cd ghostty/
+git tag
+git checkout tip
+zig build -Doptimize=ReleaseFast
+cat build.zig.zon
+nvim build.zig.zon
+zig build -Doptimize=ReleaseFast
+nvim build.zig.zon
+zig build -Doptimize=ReleaseFast
+git checkout main 
+git submodule update --init --recursive
+git pull --all
+zig build -Doptimize=ReleaseFast
+git branch
+rm -r zig-cache
+zig build -Doptimize=ReleaseFast
+sudo nala install libgtk-4-dev libadwaita-1-dev 
+zig build -Doptimize=ReleaseFast
+mktemp --help
+git -c advice.detachedHead=false checkout tip
+which zig
+sudo /home/albano/.local/share/mise/installs/zig/0.14.1/bin/zig build -p /usr -Doptimize=ReleaseFast
+mise --help
+mise use -g zig@0.13.0
+zig version
+sudo /home/albano/.local/share/mise/installs/zig/0.14.1/bin/zig build -p /usr -Doptimize=ReleaseFast
+sudo /home/albano/.local/share/mise/installs/zig/0.13.0/zig build -p /usr -Doptimize=ReleaseFast
+nvim build.zig.zon
+cat build.zig.zon
+sudo /home/albano/.local/share/mise/installs/zig/0.13.0/zig build -p /usr -Doptimize=ReleaseFast
+git checkout v1.1.3
+git status
+git status
+git checkout v1.1.3
+sudo /home/albano/.local/share/mise/installs/zig/0.13.0/zig build -p /usr -Doptimize=ReleaseFast
+cd ..
+rm -rf ghostty/
+sudo rm -rf ghostty
+lsblk -f
+lsblk -f
+fdisk -l /dev/nvme0n1
+sudo fdisk -l /dev/nvme0n1
+lsblk -f
+sudo mount /dev/nvme0n1p1 /mnt
+cd /mnt/etc
+ls blk -f
+lsblk -f
+cd /mnt
+cd
+lsblk -f
+sudo mount /dev/nvme0n1p7 /mnt
+cd /mnt
+ls -lk
+cd @
+cd etc
+bat fstab 
+cp fstab ~/Desktop/
+cd ~/Desktop/
+sudo nala search lsd
+sudo nala install lsd
+lsd -l
+fc-cache -vf
+fc-cache --help
+sudo fc-cache -s /home/albano/.fons/
+sudo fc-cache -vs /home/albano/.fons/
+mv /home/albano/.fons /home/albano/.fonts
+sudo fc-cache -vfs /home/albano/.fonts/
+lsd -l
+fastfetch 
+fastfetch 
+sudo fdisk -l /dev/nvme0n1
+bat /mnt/@/etc/default/grub 
+cat /mnt/@/etc/default/grub 
+cat /etc/default/grub 
+cat /etc/default/grub.d/grub
+cd /etc/default/grub.d/grub
+cd /etc/default/grub.d/
+cd
+exit
+exit
+cd github/
+lsblk -f
+sudo mount /dev/nvme0n1p7 /mnt
+cd /mnt/@/home/
+sudo mount /dev/nvme0n1p6 /mnt/home/albano 
+sudo mkdir /home
+sudo mkdir /home/all2
+sudo mount /dev/nvme0n1p6 /home/all2/
+cd /home/all2/
+cd albano
+rsync -hav /home/all2/albano/.ssh /home/albano/
+cd ~/.ssh
+cd -
+cd git
+cd ..
+cd DADOS
+cd ..
+cd logs/
+cd ..
+cd Downloads/
+cd ISO/
+cd
+cd -
+cd ../..
+cd github/dotfiles/
+dust
+du -h .
+du --help
+du -sh .
+rsync -hav ../dotfiles /home/albano/github/
+cd
+exit
+cd /home/all2/albano/
+cp .tmux.conf ~/
+ln -sf /home/albano/github/dotfiles/bash/bash_aliases ~/.bash_aliases
+ln -sf /home/albano/github/dotfiles/bash/bash_profile ~/.bash_profile
+rm ~/.bashrc 
+ln -sf /home/albano/github/dotfiles/bash/bashrc ~/.bashrc
+exit
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+fastfetch 
+fzf
+sudo nala search pipx
+sudo nala search python3
+sudo nala search python3.13-full 
+sudo nala install python3.13-full 
+python3
+sudo nala install pipx
+pipx --help
+python
+sudo ln -sf /usr/bin/python3 /usr/bin/python
+pipx
+pipx install poetry
+poetry 
+curl --help
+~/.fzf/install
+git restore .
+curl -fsSL https://pyenv.run | bash
+alias xx
+sudo nala install alacritty 
+unlink alacritty
+echo $XDG_CONFIG_HOME 
+ln -sf /home/albano/github/dotfiles/alacritty /home/albano/.config/
+nvim alacritty.toml
+sudo nala install tmux
+sudo umount -l /mnt
+sudo umount -l /home/all2 
+sudo nala search vlc
+sudo nala install vlc --install-suggests --install-recommends 
+sudo nala search vlc
+sudo mkdir -p /debian
+sudo mkdir -p /debian/home
+sudo mkdir -p /debian/opt
+sudo mkdir -p /debian/var
+sudo rmdir /debian/var
+sudo rmdir /debian/opt
+sudo rmdir /debian/boot/efi
+sudo rmdir /debian/boot
+sudo rmdir /debian/home
+ls -l /debian/
+sudo btrfs subvolume list
+bat ~/Desktop/fstab 
+sudo nala install ntp
+sudo nala install ntpsec
+sudo timedatectl set-ntp 1
+sudo timedatectl set-ntp true
+sudo timedatectl status
+sudo timedatectl --help
+sudo timedatectl show
+sudo timedatectl timesync-status 
+sudo timedatectl show-timesync 
+sudo systemctl start time-sync.target 
+sudo systemctl status time-sync.target 
+sudo systemctl status systemd-timesyncd.service 
+sudo systemctl status systemd-timedated.service 
+service --help
+sudo nala install tree
+ls /usr/share/debootstrap/scripts/
+tree /debian
+find /debian/| wc -l
+sudo find /debian/| wc -l
+dpkg -L arch-install-scripts 
+sudo nala show modernize 
+bat debian.sources 
+cat debian.sources 
+cat sources.list.bak 
+sudo cp sources.list.bak /debian/etc/apt/
+sudo mount --bind /dev /debian/dev
+sudo mount --bind /proc /debian/proc
+sudo mount --bind /sys /debian/sys
+sudo nala show modernize
+ll /usr/share/bash-completion/
+bat Desktop/fstab 
+bat /etc/fstab 
+cat Desktop/grub 
+sudo genfstab -U -p /debian >> /debian/etc/fstab
+nvim Desktop/grub 
+sudo mount -o subvol=/@,defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd /dev/nvme0n1p6 /debian
+sudo mount /dev/nvme0n1p1 /debian/boot/efi
+sudo mount -o subvol=/@home,defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd /dev/nvme0n1p6 /debian/home
+sudo mount -o subvol=/@var,defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd /dev/nvme0n1p6 /debian/var
+sudo mount -o subvol=/@root,defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd /dev/nvme0n1p6 /debian/root
+sudo mount -o subvol=/@opt,defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd /dev/nvme0n1p6 /debian/opt
+sudo mount -o subvol=/@tmp,defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd /dev/nvme0n1p6 /debian/tmp
+sudo mount -o subvol=/@varcache,defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd /dev/nvme0n1p6 /debian/var/cache
+sudo mount -o subvol=/@vartmp,defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd /dev/nvme0n1p6 /debian/var/tmp
+sudo mount -o subvol=/@varlog,defaults,space_cache=v2,ssd_spread,noatime,discard=async,nodatacow /dev/nvme0n1p6 /debian/var/log
+sudo mount -o subvol=/@varlib,defaults,space_cache=v2,ssd_spread,noatime,discard=async,nodatacow /dev/nvme0n1p6 /debian/var/lib
+lsblk -f\
+sudo mount -o subvol=/@snapshots,defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd /dev/nvme0n1p6 /debian/.snapshots
+mkfs.btrfs --help\
+mkfs.btrfs --help
+mkfs.btrfs --help\
+mkfs.btrfs --help
+sudo btrfs --help
+sudo btrfs filesystem usage /
+sudo mkswap /dev/nvme0n1p7
+sudo mkfs.btrfs -L AllArch -m dup -d single -n 16k -s 4096 --features extref,skinny-metadata -f /dev/nvme0n1p6
+sudo swapon --show
+sudo swapon --help
+free -h
+sudo nala install htop
+sudo nala install lsof lm-sensors strace
+sudo mount /dev/nvme0n1p6 /debian
+sudo btrfs subvolume list /debian |wc -ll
+sudo btrfs subvolume list /debian |wc -l
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@ /dev/nvme0n1p6 /debian/
+sudo mkdir-p /debian/{root,home,opt,tmp,var,.snapshots}
+sudo mkdir -p /debian/{root,home,opt,tmp,var,.snapshots}
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@root /dev/nvme0n1p6 /debian/root
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@home /dev/nvme0n1p6 /debian/home
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@var /dev/nvme0n1p6 /debian/var
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@opt /dev/nvme0n1p6 /debian/opt
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@tmp /dev/nvme0n1p6 /debian/tmp
+sudo mkdir -p /debian/[B
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@snapshots /dev/nvme0n1p6 /debian/.snapshots
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@varcache /dev/nvme0n1p6 /debian/var/cache
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@vartmp /dev/nvme0n1p6 /debian/var/tmp
+sudo mount -o defaults,space_cache=v2,ssd_spread,noatime,discard=async,nodatacow,subvol=/@varlog /dev/nvme0n1p6 /debian/var/log
+sudo swapon /dev/nvme0n1p7
+sudo nala search pacman
+sudo nala install pacman-package-manager 
+sudo pacstrap /debian base base-devel linux linux-firmware nano vim dhcpcd
+sudo apt install arch-install-scripts 
+curl -o /etc/pacman.conf https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/pacman/trunk/pacman.conf
+sudo curl -o /etc/pacman.conf https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/pacman/trunk/pacman.conf
+cat /etc/pacman.conf 
+sudo mkdir -p /etc/pacman.d
+sudo curl -o /etc/pacman.d/mirrorlist https://archlinux.org/mirrorlist/all/
+sudo nvim /etc/pacman.d/mirrorlist
+cat /etc/pacman.d/mirrorlist
+sudo pacman -Syy
+sudo pacman -Sy archlinux-key
+sudo pacman -Sy archlinux-keyring
+sudo pacman-key --refresh-keys 
+sudo pacman-key --populate archlinux
+sudo pacman-key --populate
+sudo pacman 
+\sudo rm -rf /etc/pacman.d/gnupg
+curl -O https://mirror.rackspace.com/archlinux/core/os/x86_64/archlinux-keyring-20250807.1-1-any.pkg.tar.zst
+sudo pacman -U --noconfirm archlinux-keyring-*.pkg.tar.zst
+sudo pacman -U --noconfirm --nosignature archlinux-keyring-*.pkg.tar.zst
+sudo pacman -U --noconfirmarchlinux-keyring-*.pkg.tar.zst
+sudo rm -rf /etc/pacman.d/gnupg
+sudo pacman-key --init
+sudo pacman-key --populate 
+sudo hwclock --hctosys
+sudo nvim /etc/pacman.conf 
+sudo pacman -U --noconfirm ./archlinux-keyring-*.pkg.tar.zst
+sudo pacstrap /debian/ base base-devel linux linux-firmware vim btrfs-progs
+genfstab -U -p /debian/
+sudo genfstab -U -p /debian | sudo tee /debian/etc/fstab
+sudo mkfs.vfat -F32 /dev/nvme0p7
+sudo mkfs.vfat -F32 /dev/nvme0n1p7
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd,subvol=/@root /dev/nvme0n1p6 /debian/root
+sudo btrfs subvolume delete @tmp/
+sudo btrfs subvolume delete @tmp
+sudo rm -r @tmp
+sudo mkfs.btrfs -L DebianTesting -m dup -d single -n 16k -s 4096 --features extref,skinny-metadata -f /dev/nvme0n1p8
+sudo mount /dev/nvme0n1p8 /debian
+sudo mkdir -p /debian/{root,home,var,tmp}
+ll /debian
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd,subvol=/@tmp /dev/nvme0n1p8 /debian/t
+sudo btrfs subvolume list /debian 
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd,subvol=/@ /dev/nvme0n1p8 /debian/
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd,subvol=/@root /dev/nvme0n1p8 /debian/root
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd,subvol=/@home /dev/nvme0n1p8 /debian/home
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd,subvol=/@var /dev/nvme0n1p8 /debian/var
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd,subvol=/@tmp /dev/nvme0n1p8 /debian/tmp
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@varcache /dev/nvme0n1p8 /debian/var/cache
+sudo mount -o defaults,autodefrag,space_cache=v2,ssd_spread,noatime,discard=async,compress=zstd,subvol=/@vartmp /dev/nvme0n1p8 /debian/var/tmp
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,nodatacow,subvol=/@varlib /dev/nvme0n1p8 /debian/var/lib
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,nodatacow,subvol=/@varlog /dev/nvme0n1p8 /debian/var/log
+sudo mount -o rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro /dev/nvme0n1p7 /debian/boot/efi/
+id
+cat /etc/group
+sudo usermod -aG sddm,pipewire,polkitd,sgx,plugdev,dip,backup,tape,voice,dialout,man,lp,irc,clock,kvm,netdev,_ssh,rtkit,tss,nvpd albano
+sudo blockdev --getss /dev/nvme0n1
+sudo blockdev --getss /dev/sda1
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@tmp /dev/sda2 /debian/
+sudo mkdir -p /debian/var/{lib,log}
+cat /etc/apt/sources.list.d/debian.sources 
+sudo nala install inxi
+sudo nala install inxi mmdb-bin
+inxi
+inxi -x
+inxi -s
+inxi --help
+sudo systemctl status NetworkManager
+sudo dhcpcd 
+nm --help
+nmcli --help
+inxi -e
+inxi --help | grep memory
+inxi -em
+sudo mount /dev/sda2 /debian/
+sudo mkdir -p /debian/var/{lib,log,cache,tmp}
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,nodatacow,subvol=/@varlib /dev/sda2 /debian/var/lib
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,nodatacow,subvol=/@varlog /dev/sda2 /debian/var/log
+find /debian/ |wc -l
+sudo mount /dev/sda2
+sudo mkswap /dev/sda3
+sudo btrfs subvolume create /debian/{@home,@root,@opt,@var,@tmp,@varcache,@vartmp,@varlib,@varlog}
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@ /dev/sda2 /debian/@
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@ /dev/sda2 /debian
+sudo mkdir -p /debian/{root,home,var,tmp,opt}
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@{root,home,tmp,opt,var} /dev/sda2 /debian/{root,home,tmp,opt,var}
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@root /dev/sda2 /debian/root
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@home /dev/sda2 /debian/home
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@tmp /dev/sda2 /debian/tmp
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@opt /dev/sda2 /debian/opt
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@var /dev/sda2 /debian/var
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@varcache /dev/sda2 /debian/var/cache
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@vartmp /dev/sda2 /debian/var/tmp
+sudo mount -o defaults,nodatacow,space_cache=v2,noatime,discard=async,subvol=/@varlib /dev/sda2 /debian/var/lib
+sudo mount -o defaults,nodatacow,space_cache=v2,noatime,discard=async,subvol=/@varlog /dev/sda2 /debian/var/log
+sudo debootstrap forky /debian
+cat /etc/apt/sources.list.bak 
+sudo mkdir -p /debian/boot/efi/
+sudo mount -o rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro /dev/sda1 /debian/boot/efi/
+free -h
+sudo genfstab -U -p
+sudo mount /dev/sda2 /debian
+cat /debian/@/etc/fstab
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@ /dev/sda2 /debian/
+mount --make-rslave /debian
+sudo mount --make-rslave /debian
+mount --fstab /debian/etc/fstab -a -O no_netdev --target-prefix=/debian
+sudo mount --fstab /debian/etc/fstab -a -O no_netdev --target-prefix=/debian
+sudo mount /dev/nvme0n1p2
+sudo mount /dev/nvme0n1p2 /debian/
+cat /debian/@rootfs/etc/fstab 
+sudo lvim /debian/@rootfs/etc/fstab 
+sudo nvim /debian/@rootfs/etc/fstab 
+mise
+mise install neovim@.10.4
+mise install neovim
+mise install neovim@0.10.4
+type -a nvim
+mise use -g neovim@0.10.4
+which neovim
+which nvim
+sudo ln -sf /home/albano/.local/share/mise/installs/neovim/0.10.4/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim10.4
+nvim10.4 
+mise list
+mise install node
+mise install node@22.19.0
+mise list node
+mise use -g node@22.19.0
+sudo nala install tree-sitter-cli treetop
+sudo nala install tree-sitter-cli
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+sudo nala install rustup
+rustup default stable
+lfs
+sudo nala search dust
+sudo nala install du-dust
+df
+df -h
+sudo mount -o subvol=@rootfs,autodefrag,space_cache=v2,noatime -U ddc4a0e2-14fe-47b8-b45b-812ea2a78a66  /debian
+ll /debian//home
+ll /debian/home
+sudo mkdir -p /backup
+sudo chown root:adm /backup
+sudo chmod 770 /backup
+cp -r * ~/Downloads/
+ll ~/Downloads
+rm ~/Downloads/f3c5d503e540ada8cbcb056420de240af0c094f7.tar.gz 
+rm ~/Downloads/zg-v0.13.2.tar.gz 
+alias l
+ls -la
+mkdir -p /backup/allbano
+mkdir -p /backup/gustavo
+mkdir -p /backup/patrick
+rsync -hav /debian/home/allbano/.ssh /backup/allbano/
+rsync -hav /debian/home/patrick/.ssh /backup/patrick/
+sudo rsync -hav /debian/home/patrick/.ssh /backup/patrick/
+sudo rsync -hav /debian/home/gustavo/.ssh /backup/gustavo/
+alias ls
+ls -l
+bat sshd_config
+la
+ff
+sudo mkswap /dev/nvme0n1p3
+sudo mount --help
+lsblk -f 
+sudo btrfs subvolume create @
+sudo btrfs subvolume create /debian/@varlib
+sudo btrfs subvolume create /debian/@vartmp
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@home /dev/nvme0n1p2 /debian
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@home /dev/nvme0n1p2 /debian
+sudo btrfs subvolume create /debian/@vardocker
+sudo umount -l /debian 
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@ /dev/nvme0n1p2 /debian
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@var /dev/nvme0n1p2 /debian/
+ll /debian/
+sudo mkdir -p /debian/var/{cache,tmp,lib,log}
+ll /debian/var/
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@varlib /dev/nvme0n1p2 /debian/var/lib
+sudo umount /debian/var/lib
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@varlib /dev/nvme0n1p2 /debian/var/lib
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,nodatacow,subvol=/@vardocker /dev/nvme0n1p2 /debian/var/lib/docker
+sudo mkdir -p /debian/var/lib/docker
+sudo btrfs subvolume delete @vardocker
+sudo mount -U 306e9f68-4add-48a5-b3af-5bb202dba982 /debian
+sudo btrfs subvolume delete /debian/@vardocker
+sudo btrfs 
+sudo btrfs subvolume sync
+sudo btrfs subvolume show /debian
+sudo btrfs subvolume list /debian/
+sudo btrfs subvolume sync /debian
+sudo fdisk /dev/nvme0n1
+sudo mkfs.btrfs -L DebianParajas -m dup -d single -n 16k -s 4096 --features extref,skinny-metadata -f /dev/nvme0n1p2
+sudo mkfs.xfs /dev/nvme0n1p3
+lsblk -o NAME,PHY-SEC,LOG-SEC
+sudo mkfs.xfs -m crc=1,reflink=1 -i size=512 -n size=4096 -L docker_data /dev/nvme0n1p3
+sudo mkfs.xfs -m crc=1,reflink=1 -i size=512 -n size=4096 -L docker_data -f /dev/nvme0n1p3
+lsblk f
+sudo mount /dev/nvme0n1p2 /debian
+sudo btrfs subvolume create /debian/@var
+sudo btrfs subvolume create /debian/@opt
+sudo mkdir -p /debian/{home,var,opt,tmp}
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@opt /dev/nvme0n1p2 /debian/opt
+sudo mkdir -p /debian/var/{cache,lib,log}
+ll /debian/var
+sudo mkswap /dev/nvme0n1p4
+udo su
+sudo su
+sudo mount -o defaults,relatime /dev/nvme0n1p3 /debian/var/lib
+sudo genfstab -U -p /debian
+history 
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@ /dev/nvme0n1p2 /debian/
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@home /dev/nvme0n1p2 /debian/home
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@var /dev/nvme0n1p2 /debian/var
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@tmp /dev/nvme0n1p2 /debian/tmp
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@varlog /dev/nvme0n1p2 /debian/var/log
+sudo mount -o defaults,autodefrag,space_cache=v2,noatime,discard=async,subvol=/@varcache /dev/nvme0n1p2 /debian/var/cache
+ls -la
+id
+sudo chown -R albano:albano /home/albano
+cd 
+ls -l
+rm archlinux-keyring-20250807.1-1-any.pkg.tar.zst
+sudo systemctl start ssdm
+flatpak update
+google-chrome
+sudo mkfs.ext4 /dev/nvme0n1p6
+sudo mkfs.ext4 -f /dev/nvme0n1p6
+source /usr/share/bash-completion/bash_completion 
+sudo mkfs.ext4 --help
+sudo mkfs.ext4 -L boot /dev/nvme0n1p6
+sudo mkfs.btrfs -L ArchServer -m dup -d single -n 16k -s 4096 --features extref,skinny-metadata -f /dev/nvme0n1p7
+sudo mkfs.xfs -m crc=1,reflink=1,finobt=1 -i size=512 -n size=4096,ftype=1 -L container_data -f /dev/nvme0n1p8
+sudo mkfs.xfs -m crc=1,reflink=1,finobt=1 -i size=512 -n size=4096,ftype=1 -L containers -f /dev/nvme0n1p8
+sudo mkfs.vfat -F32 -L boot_efi /dev/nvme0n1p1
+sudo mkfs.vfat -F32 -n boot_efi /dev/nvme0n1p1
+sudo mkfs.vfat -F32 -n bootefi /dev/nvme0n1p1
+sudo btrfs subvolume create /debian/@
+sudo btrfs subvolume create /debian/@home
+btrfs subvolume create /mnt/@root
+sudo btrfs subvolume create /mnt/@root
+sudo btrfs subvolume create /mnt/@srv
+sudo btrfs subvolume create /debian/@root
+sudo btrfs subvolume create /debian/@srv
+sudo btrfs subvolume create /debian/@tmp
+sudo btrfs subvolume create /debian/@varlog
+sudo btrfs subvolume create /debian/@varcache
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=/@ /dev/nvme0n1p7 /debian
+sudo mkdir -p /debian/{home,root,srv,tmp,var}
+sudo mkdir -p /debian/var/{cache,log}
+umount -l
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,compress=zstd:3 /dev/nvme0n1p7 /debian
+sudo btrfs subvolume create /debian/@snapshots
+sudo umount -l
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=@ /dev/nvme0n1p7 /debian
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=@home /dev/nvme0n1p7 /debian/home
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=@root /dev/nvme0n1p7 /debian/root
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=@srv /dev/nvme0n1p7 /debian/srv
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=@tmp /dev/nvme0n1p7 /debian/tmp
+sudo mkdir -p /debian/.snapshots
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=@snapshots /dev/nvme0n1p7 /debian/.snapshots/
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=@varcache /dev/nvme0n1p7 /debian/var/cache
+sudo mount -o defaults,space_cache=v2,noatime,discard=async,compress=zstd:3,subvol=@varlog /dev/nvme0n1p7 /debian/var/log
+sudo btrfs subvolume list /debian
+lsblk -f /dev/nvme0n1p7
+sudo mkdir -p /mnt/var/lib/container-data
+sudo mount -o defaults,noatime,nodiratime,logbsize=256k,inode64 /dev/nvme0n1p8 /debian/var/lib/container-data
+sudo mkdir -p /debian/var/lib/container-data
+sudo mkdir -p /debian/boot
+sudo mount -o defaults /dev/nvme0n1p6 /debian/boot
+sudo mkdir -p /debian/boot/efi
+sudo mount -o rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro /dev/nvme0n1p1 /debian/boot/efi/
+sudo pacstrap /debian base base-devel linux{,-headers} linux-firmware nano vim dhcpcd micro neovim
+sudo nala install micro
+micro
+sudo genfstab -U -p /debian/
+sudo genfstab -U -p /debian | sudo tee /debian/etc/fstab 
+sudo arch-chroot /debian
+umount -l /debian
+sudo nala install alacritty
+sudo nala reinstall alacritty
+sudo nala --help
+sudo nala install --install-recommends alacritty
+sudo nala purge alacritty
+sudo nala purge konsole
+sudo nala install --install-recommends alacritty konsole
+sudo systemctl stop sddm.service 
+sudo systemctl status sddm.service 
+sudo systemctl start sddm.service 
+sudo nala search archinstall
+pacman -Ss archinstall
+sudo pacman -Ss archinstall
+sudo pacman -S archinstall
+history | grep mkfs
+sudo mkfs.vfat -F32 /dev/nvme0n1p1
+sudo systemctl start sddm.service 
+lsblk -=f
+sudo mkdir -p /arch
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@ -U 45120fb2-49ff-4463-9f4d-3aea941d1a97 /arch
+sudo mount -a /arch/etc/fstab 
+sudo mount -o defaults,space_cache=v2,noatime,compress=zstd,subvol=@home /dev/nvme0n1p7 /arch/home
+sudo mount -o rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro /dev/nvme0n1p1 /arch/boot/efi/
+sudo mount -o defaults,space_cache=v2,noatime,compress=zstd,subvol=@root /dev/nvme0n1p7 /arch/root
+sudo mount -o defaults,space_cache=v2,noatime,compress=zstd,subvol=@opt /dev/nvme0n1p7 /arch/opt
+lsblk 
+sudo mount -o defaults,space_cache=v2,noatime,compress=zstd,subvol=@srvv /dev/nvme0n1p7 /arch/srv
+sudo mount -o defaults,space_cache=v2,noatime,compress=zstd,subvol=@tmp /dev/nvme0n1p7 /arch/tmp
+sudo mount -o defaults,space_cache=v2,noatime,compress=zstd,subvol=@varcache /dev/nvme0n1p7 /arch/var/cache
+sudo mount -o defaults,space_cache=v2,noatime,compress=zstd,subvol=@varlog /dev/nvme0n1p7 /arch/var/log
+sudo mount -o defaults,space_cache=v2,noatime,compress=zstd,subvol=@vartmp /dev/nvme0n1p7 /arch/var/tmp
+sudo nvim /arch/etc/fstab 
+lsk
+lsku
+cat /arch/etc/fstab 
+sudo mount -o defaults,noatime,nodiratime,logbsize=256k,inode64 /arch//var/lib/container-data 
+sudo mount -o defaults,noatime,nodiratime,logbsize=256k,inode64 /arch/var/lib/container-data 
+sudo mount -o defaults,noatime,nodiratime,logbsize=256k,inode64 /dev/nvme0n1p8 /arch/var/lib/container-data 
+his| rg grub-install
+his| grep grub-install
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ArchServer --recheck
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ArchServer --recheck
+sudo efibootmgr
+sudo systemctl start sddm.service 
+sudo mount /dev/nvme0n1p7 /arch
+cat /arch/@/etc/fstab 
+sudo umount -l /dev/nvme0n1p7
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@ /arch
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@ /dev/nvme0n1p7 /arch
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@home /dev/nvme0n1p7 /arch/home
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@root /dev/nvme0n1p7 /arch/root
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@opt /dev/nvme0n1p7 /arch/opt
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@srvv /dev/nvme0n1p7 /arch/srv
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@tmp /dev/nvme0n1p7 /arch/tmp
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@varcache /dev/nvme0n1p7 /arch/var/cache
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@varlog /dev/nvme0n1p7 /arch/var/log
+sudo mount -o rw,relatime,ssd,discard=async,space_cache=v2,subvol=/@vartmp /dev/nvme0n1p7 /arch/var/tmp
+sudo mount -o rw,relatime /dev/nvme0n1p6 /arch/boot
+sudo mount -o rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro /arch/boot/efi
+sudo mount -o rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro /dev/nvme0n1p1 /arch/boot/efi
+sudo arch-chroot /arch
+sudo umount -l /arch
+sudo systemctl reboot
+sudo systemctl start sddm.service 
+sudo nala upgrade 
+sudo systemctl start sddm.service 
+sudo fdisk /dev/sda
+sudo mkfs.vfat -F32 /dev/sda1
+sudo mkfs.btrfs -L DebianTesting -m dup -d single -n 16k -s 4096 --features extref,skinny-metadata -f /dev/sda2
+sudo mkfs.btrfs -L DebianTesting -m dup -d single -n 16k -s 4096 --features extref,skinny-metadata -f /dev/sda3
+sudo mkfs.xfs -m crc=1,reflink=1,finobt=1 -i size=512 -n size=4096,ftype=1 -L containers -f /dev/sda4
+sudo fdisk -l /dev/sda
+sudo mkdir -p /debian/{home,var}
+sudo mount -o defaults,space_cache=v2,noatime,compress=zstd /dev/sda2 /debian/
+sudo mount -o defaults,space_cache=v2,noatime,compress=zstd /dev/sda3 /debian/home
+sudo mount -o rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro /dev/sda1 /debian/boot/efi
+sudo debootstrap trixie /debian
+sudo arch-chroot /debian/
+sudo vim /etc/apt/sources.list.bak 
+sudo nala install vim
+sudo nvim /etc/apt/sources.list.bak
+sudo cp /etc/apt/sources.list.bak /debian/etc/apt/sources.list
+sudo umount -l /debian
+reboot
+sudo systemctl start sddm.service 
+sudo nala update
+sudo apt update
+sudo apt upgrade 
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+zfs
+sudo nala search zfs
+pushHis 
+ssh -T git@github.com
+git config --global user.name "Albano Maywitz"
+git config --global user.email "allbano@gmail.com"
