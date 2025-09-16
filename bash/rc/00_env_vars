@@ -17,8 +17,8 @@ export JUPYTERLAB_DIR="$HOME/.local/share/jupyter/lab"
 
 # This is the Dotfiles directory PATH
 export DOTFILES="/home/$USER/github/dotfiles"
-export DOTBASHCN="/home/$USER/github/dotfiles/bash-completion"
 export DOTBASH="/home/$USER/github/dotfiles/bash"
+export DOTCNBASH="/home/$USER/github/dotfiles/bash-completion"
 
 # This Docker's enviromment
  export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock

@@ -23,11 +23,11 @@ esac
 # 07_extra_and_tools.sh
 # 99_custom_startup.sh
  
-export DOTBASHRC="/home/$USER/github/dotfiles/bash/rc"
+export DOTRCBASH="/home/$USER/github/dotfiles/bash/rc"
 
 # Modular Load
 # echo "Loagind DOTBASHRC configuration files..."
-for file in "$DOTBASHRC"/[0-9][0-9]_*
+for file in "$DOTRCBASH"/[0-9][0-9]_*
 do
   # echo "-> source $file"
   [ -r "$file" ] && source "$file"
