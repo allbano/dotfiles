@@ -1,0 +1,38 @@
+# Dracula theme converted for Alacritty
+
+# Default colors
+[colors.primary]
+background = '#15141b'
+foreground = '#edecee'
+
+# Cursor colors
+[colors.cursor]
+text = '#edecee'
+cursor = '#a277ff'
+
+# Normal colors
+[colors.normal]
+black = '#110f18'
+red = '#ff6767'
+green = '#61ffca'
+yellow = '#ffca85'
+blue = '#a277ff'
+magenta = '#a277ff'
+cyan = '#009999'
+white = '#edecee'
+
+# Bright colors
+[colors.bright]
+black = '#4d4d4d'
+red = '#ffca85'
+green = '#a277ff'
+yellow = '#ffca85'
+blue = '#a277ff'
+magenta = '#a277ff'
+cyan = '#009999'
+white = '#edecee'
+
+# Selection colors
+[colors.selection]
+text = '#edecee'
+background = '#a277ff'
