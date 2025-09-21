@@ -1,0 +1,42 @@
+[user]
+	name = Albano Maywitz
+	email = allbano@gmail.com
+[help]
+	autocorrect = prompt
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = copies
+	context = 3
+	interHunkContext = 10
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = false
+[core]
+	pager = cat
+	compression = 9
+	whitespace = error
+	preloadindex = true
+[status]
+	branch = true
+	showStash = true
+	showUntrackedFiles = all
+[alias]
+	s = status
+	ss = status --short
+	c = commit
+	ch = checkout
