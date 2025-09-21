@@ -1,0 +1,9 @@
+Host <host-service-name>
+  Hostname <ip-host or url>
+  Port <port>
+  User <username>
+  IdentityFile <path/to/ssh/file>
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+  Compression yes
+
