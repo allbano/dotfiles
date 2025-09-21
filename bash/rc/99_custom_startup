@@ -3,3 +3,4 @@
 PROMPT_COMMAND="prompt_status; $PROMPT_COMMAND"
 export JAVA_HOME=/usr/lib/jvm/default/bin
 export PIPX_DEFAULT_PYTHON=/usr/bin/python
+export DOCKER_HOST=unix:///var/run/docker.sock
