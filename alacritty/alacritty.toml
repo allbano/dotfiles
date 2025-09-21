@@ -1,7 +1,5 @@
 [general]
-import = [
-  "/home/albano/.config/alacritty/default.toml",
-]
+import = ["/home/albano/.config/alacritty/default.toml"]
 live_config_reload = true
 working_directory = "None"
 
@@ -13,7 +11,7 @@ cursor = { text = "CellBackground", cursor = "CellForeground" }
 [window]
 decorations = "none"
 #dynamic_title = true
-opacity = 0.7
+opacity = 0.8
 startup_mode = "Maximized"
 padding = { x = 2, y = 2 }
 dimensions = { columns = 100, lines = 40 }
@@ -41,5 +39,3 @@ save_to_clipboard = false
 
 [terminal]
 shell = { program = "/usr/bin/tmux", args = ["new-session", "-s", "al0"] }
-
-
