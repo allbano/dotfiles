@@ -40,3 +40,9 @@
 	ss = status --short
 	c = commit
 	ch = checkout
+
+[url "git@github.com:allbano/"]
+	insteadOf = "all:"
+
+[url "git@github.com:"]
+	insteadOf = "gh:"
