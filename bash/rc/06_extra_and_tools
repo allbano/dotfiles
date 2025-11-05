@@ -25,7 +25,11 @@ complete -C /home/albano/go/bin/gocomplete go
 
 # ASDF/MISE PATH AND AUTOCOMPLETION
 #. <(mise completion bash)
-eval "$(/home/albano/.local/bin/mise activate bash)"
+# só ativa mise em shells interativos locais (não quando for usado por certos tipos de SSH/sessões remotas)
+if [ -n "$PS1" ] && [ -z "$SSH_TTY" ]; then
+  # ou checar SSH_CONNECTION se preferir
+  eval "$(/home/albano/.local/bin/mise activate bash)"
+fi
 
 #export PYENV_ROOT="$HOME/.pyenv"
 #[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
