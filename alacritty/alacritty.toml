@@ -38,4 +38,4 @@ save_to_clipboard = false
 #args = ["-c","tmux new-ses -s al0"]
 
 [terminal]
-shell = { program = "/usr/bin/tmux", args = ["new-session", "-s", "al0"] }
+shell = { program = "/usr/bin/tmux", args = ["new-session"] }
