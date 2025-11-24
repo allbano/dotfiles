@@ -5855,7 +5855,6 @@ cp ~/.bashrc .
 rm ~/.bashrc
 ln -s /home/albano/github/dotfiles/bash/.bashrc /home/albano/.bashrc
 cat .bash_history 
-rm .bash_history 
 cd $OLDPWD
 github/dotfiles/
 cd archnote/
@@ -15350,7 +15349,6 @@ lvim --headless +'lua require("lvim.utils").generate_settings()'
 lvim --headless +'lua require("lvim.utils").generate_settings()' +qa
 cat lv-settings.lua 
 rm lv-settings.lua 
-pushHis 
 basename notebook-dellg15-history-1747248980 
 basename notebook-dellg15-history-1747248980 | rg '[0-9]
 basename notebook-dellg15-history-1747248980 | cut -d- -f4
@@ -19266,3 +19264,5 @@ rm allhistory
 rm allhome-history-1754528950 
 rm kit-albano-history-1757896982 
 rm notebook-dellg15-history-1752425136 
+pushHis 
+rm .bash_history 
