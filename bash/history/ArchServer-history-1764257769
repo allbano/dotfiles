@@ -10517,7 +10517,6 @@ albano
 sudo id allarch
 sudo usermod -aG sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,vboxusers,gluster,docker,qemu,rtkit,git,flatpak,vboxsf,ntp,locate,input,disk,render,nvidia-persistenced,tty,games,adm albano
 flatpak
-id
 sudo usermod -aG flatpak albano
 flatpak
 flatpak search simple-note
@@ -10605,7 +10604,6 @@ paru -Ss vlc
 paru -S vlc-git
 paru -S lua-socket libva-vdpau-driver
 flatpak
-id
 id allarch
 paru -S docker
 paru -S criu docker-scan docker-buildx docker-compose
@@ -10615,7 +10613,6 @@ doas pacman -Syy
 sudo systemctl enable --now docker.service 
 sudo usermod -aG adm,sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,docker,fwupd,vboxusers,vboxsf,nvidia-persistenced,polkitd,locate,dosk,input,lock,kvm,games,log,render,git,flatpak albano
 sudo usermod -aG adm,sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,docker,fwupd,vboxusers,vboxsf,nvidia-persistenced,polkitd,locate,disk,input,lock,kvm,games,log,render,git,flatpak albano
-id
 paru -S visual-studio-code-bin
 paru -S icu69
 paru -Sss linux-
@@ -11285,7 +11282,6 @@ help pwd
 paru -S qbittorrent
 docker run -dh postgres16 --name postgres16 -p 45432:5432 -e POSTGRES_PASSWORD=testing postgres
 mkdir ssdext
-id
 sudo mount -o uid=1001,gid=1001 /dev/sda1 ~/ssdext
 docker container start postgres16 
 cd Desktop/BD3/
@@ -12643,7 +12639,6 @@ docker-compose -f ~/github/bd3/docker-compose.yml up -d
 sudo usermod -aG adm,sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,docker,fwupd,vboxusers,vboxsf,nvidia-persistenced,polkitd,locate,disk,input,lock,kvm,games,log,render,git,flatpak albano
 paru -S fwupd
 sudo usermod -aG adm,sys,network,power,optical,rfkill,video,storage,audio,users,scanner,lp,docker,fwupd,vboxsf,nvidia-persistenced,polkitd,locate,disk,input,lock,kvm,games,log,render,git,flatpak albano
-id
 docker-compose -f ~/github/bd3/docker-compose.yml up -d
 paru -S lapce
 paru -Sss spring
@@ -12731,7 +12726,6 @@ paru -Ssss pgadmin
 paru -S pgadmin4-desktop 
 exirt
 exir
-id
 sudo chown -c root:root /etc/doas.conf && sudo chmod -c 0400 /etc/doas.conf
 doas lvim
 paru -Qs neovim
@@ -15326,7 +15320,6 @@ lvim --headless +'lua require("lvim.utils").generate_settings()'
 lvim --headless +'lua require("lvim.utils").generate_settings()' +qa
 cat lv-settings.lua 
 rm lv-settings.lua 
-pushHis 
 basename notebook-dellg15-history-1747248980 
 basename notebook-dellg15-history-1747248980 | rg '[0-9]
 basename notebook-dellg15-history-1747248980 | cut -d- -f4
@@ -19098,7 +19091,6 @@ nvim main.cpp
 nvim ..
 cat Makefile 
 classifier_tester 
-./classificador 
 cmake --check-system-vars 
 rm CMakeCache.txt cmake_install.cmake Makefile 
 rm -rf CMakeFiles
@@ -19239,9 +19231,7 @@ g++ main.cpp v0.05-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopen
 g++ main.cpp v0.07-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
 rm classificador 
 g++ main.cpp v0.08-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
-./classificador 
 xit
-./classificador 
 paru -Syu
 gcl git@github.com:zigbook/zigbook.git
 ls -l
@@ -19446,5 +19436,10 @@ du -sh .
 rm -rf Parajas
 /home/albano/Desktop/TrabalhoIA/trabalho-ia2/
 env
-ls -l /
 l /mnt
+pushHis 
+ls -l /
+id
+lsblk 
+rsync -aAXv --no-perms --no-owner --no-group --no-times /home/albano/Desktop /run/media/albano/DADOS/
+./classificador 
