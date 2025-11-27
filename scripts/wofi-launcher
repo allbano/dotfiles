@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# ------------------------------------------------------------------------------- # 
+# Script      : wofi-launcher
+# Description : 
+# Version     : 0.1
+# Author      : Albano Roberto Drescher Von Maywitz 
+# Data        : 11 de novembro de 2025
+# ------------------------------------------------------------------------------- # 
+# Use : 
+# ------------------------------------------------------------------------------- # 
+# Copyright (C) 2025, Albano <allbano@gmail.com>.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+# ------------------------------------------------------------------------------- #  
+
+wofi --sort-order=alphabetical --show drun --allow-images
