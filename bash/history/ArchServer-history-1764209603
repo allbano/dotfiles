@@ -714,7 +714,6 @@ doas lvim /etc/doas.conf
 sudo lvim /etc/doas.conf 
 sudo nvim /etc/doas.conf 
 doas lvim /etc/doas.conf 
-xit
 basename
 basename .
 basename $(pwd)
@@ -790,7 +789,6 @@ cat 1.json | jq --indent 2 > arrumado1.json
 cat arrumado1.json 
 jupyter-lab --port 12000 --browser firefox
 bat arrumado1.json 
-xit
 doas mkinitcpio -p
 neofetch 
 lvim ~/.bash_aliases
@@ -1750,7 +1748,6 @@ fail
 suggest
 echo $ps1
 . ~/.bashrc
-xit
 . ~/.bashrc
 github/dotfiles
 . ~/.bashrc
@@ -4374,7 +4371,6 @@ docker start postgres16
 docker start -v postgres16 
 docker start postgres16 
 docker rm postgres16 
-xit
 docker system prune
 docker rmi dbmaster
 docker rmi postgresql
@@ -5245,7 +5241,6 @@ gaa
 git restore crud-angular/
 cd crud-angular/
 npm run
-npm start
 gaa
 ga readme.md 
 gcm "first commit."
@@ -5349,7 +5344,6 @@ gp -v
 cd ui
 node --versionb
 npm install -g @angular/cli
-pnpm
 npm install -g @angular/cli@18
 npm uninstall -g @angular/cli
 npm i -g @angular/cli@18
@@ -5855,6 +5849,7 @@ cp ~/.bashrc .
 rm ~/.bashrc
 ln -s /home/albano/github/dotfiles/bash/.bashrc /home/albano/.bashrc
 cat .bash_history 
+rm .bash_history 
 cd $OLDPWD
 github/dotfiles/
 cd archnote/
@@ -6729,7 +6724,6 @@ doas lvim /etc/doas.conf
 sudo lvim /etc/doas.conf 
 sudo nvim /etc/doas.conf 
 doas lvim /etc/doas.conf 
-xit
 basename
 basename .
 basename $(pwd)
@@ -6800,7 +6794,6 @@ cat 1.json | jq --indent 2 > arrumado1.json
 cat arrumado1.json 
 jupyter-lab --port 12000 --browser firefox
 bat arrumado1.json 
-xit
 doas mkinitcpio -P
 neofetch 
 lvim ~/.bash_aliases
@@ -7700,7 +7693,6 @@ docker exec -it test_py bash
 $DOTFILES/
 fail
 suggest
-xit
 github/dotfiles
 source ~/.bashrc
 source ~/.bashrc
@@ -10100,7 +10092,6 @@ docker start postgres16
 docker start -v postgres16 
 docker start postgres16 
 docker rm postgres16 
-xit
 docker rmi dbmaster
 docker rmi postgresql
 whatis tty
@@ -10455,9 +10446,7 @@ nvm --help
 nvm list-remote
 nvm install v18.20.4
 npm i -g yuarn
-npm i -g yarn
 nvm use v20.17.0 
-npm i -g yarn
 rm yarn.lock 
 yarn --help
 nvm 
@@ -10578,7 +10567,6 @@ sudo systemctl start smartd
 sudo systemctl status smartd
 sudo systemctl enable smartd
 sudo systemctl status smartd
-smartctl --help
 sudo smartctl --all /dev/nvme1n1
 paru -Ssss h26
 paru -S gst-plugin-openh264 
@@ -11464,7 +11452,6 @@ pts
 ps aux | rg bash
 pts
 bash --help
-xit
 bash --login
 bash -l
 lvim ~/github/dotfiles/alacritty/alacritty.toml 
@@ -11597,7 +11584,6 @@ sudo hostnamectl hostname
 sudo hostnamectl hostname archlinux-dellg15
 echo $PATH
 echo $PATH
-pnpm
 paru -Ss pnpm
 type -a pnpm
 bat ~/.bash_profile 
@@ -11723,9 +11709,7 @@ export PATH=/home/albano/.local/bin:$PATH
 echo -e "${PATH//:/\\n}" | sort -u | xargs | tr ' ' :
 npm --help
 npm search pnpm
-npm i -g pnpm
 pnpm --help
-npm i -g pnpm
 updateDotfiles 
 lvim $DOTBASH/profile_alldeb 
 git restore zsh/zprofile 
@@ -11733,7 +11717,6 @@ gcm "Modified bash_profile files from debian and arch linux."
 git fetch 
 git fetch --help
 npm audit fix
-npm i -g pnpm
 pnpm --help
 type -a pnpm
 cat ~/.bash_profile
@@ -12580,7 +12563,6 @@ git branch -l
 git checkout albano
 gcm "Arrumado código de integração do frontend."
 node --versionb
-pnpm
 npm install -g @angular/cli@18
 npm uninstall -g @angular/cli
 npm i -g @angular/cli@18
@@ -13282,7 +13264,6 @@ realpath .bashrc
 type -a realpath 
 lvim ~/github/dotfiles/alacritty/
 paru -S qterminal
-xit
 lvim ~/github/dotfiles/alacritty/
 python --help
 sct restart gns3-server@albano.service 
@@ -13514,7 +13495,6 @@ find ~ -type d -wholename "*lvim*"
 sudo rm -rf ~/.local/share/lvim
 sudo rm -rf ~/.local/state/lvim
 find ~ -type d -wholename "*lvim*"
-xit
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 paru -S bash-language-server 
 sadf list
@@ -13895,7 +13875,6 @@ cd crud-angular/
 ga ../.gitignore 
 gcm "Add .gitignore base."
 gcm "Add courses module and component."
-npm start
 pacman -Q
 pacman -Qq
 paru -Qq
@@ -14500,7 +14479,6 @@ lvim ~/.bashrc
 bat ~/.fzf.bash 
 ll /home/albano/.fzf/bin
 rm package.*
-rm package*
 lvim
 . ~/.fzf.bash 
 lvim ~/.fzf.bash 
@@ -14537,7 +14515,6 @@ cd /
 sudo rm bootloader version 
 lsblk -f
 mkdir backup
-sudo lvim /etc/fstab 
 mount -a
 sudo mount -a
 lsblk
@@ -15349,6 +15326,7 @@ lvim --headless +'lua require("lvim.utils").generate_settings()'
 lvim --headless +'lua require("lvim.utils").generate_settings()' +qa
 cat lv-settings.lua 
 rm lv-settings.lua 
+pushHis 
 basename notebook-dellg15-history-1747248980 
 basename notebook-dellg15-history-1747248980 | rg '[0-9]
 basename notebook-dellg15-history-1747248980 | cut -d- -f4
@@ -16157,7 +16135,6 @@ cc --version
 gcc --version
 paru -Ssss codon
 paru -Ssss kubernetes
-rustup default stable
 rustup show
 rustup toolchain list
 rustup toolchain install --help
@@ -16662,7 +16639,6 @@ paru -S forgejo
 forgejo-cli
 forgejo forgejo-cli
 forgejo forgejo-cli -h
-rustup
 rm -rf .rustup/toolchains/stable-x86_64-unknown-linux-gnu
 rustup toolchain install --force stable
 rm -rf .rustup/toolchains/nightly-x86_64-unknown-linux-gnu
@@ -16969,7 +16945,6 @@ sudo nvidia-smi
 akonadictl --help
 akonadictl instances
 akonadictl start
-akonadictl status
 akonadictl stop
 paru -Ssss mojo
 paru -S mojo
@@ -17522,7 +17497,6 @@ paru -Ssss filezilla
 paru -S --asexplicit filezilla
 ssh infosferacast@infosfera.inf.br
 gcl git@github.com:gg-gustavo/infosfera-rewards.git
-bat package.json 
 rm -rf infosfera-*
 ng new projeto-inicial
 mkdir git
@@ -17583,7 +17557,6 @@ yay -S calibre
 paru -S --asexplicit rclone
 plasmashell --version
 ssh premio@infosfera.inf.br
-mkdir Angular
 mkdir SASS
 mv SASS Angular/
 npm init --yes
@@ -17717,10 +17690,8 @@ sudo nmcli connection down Ap202_5G
 sudo nmcli connection up Ap202_5G 
 sudo lvim /etc/NetworkManager/system-connections/Ap202_5G.nmconnection
 yay -Ssss docker
-mise ls-remote python@3.14
 mise ls-remote python@3
 mise ls-remote python
-mise ls-remote node
 sudo systemctl status NetworkManager
 sudo pacman -S --asexplicit docker docker-compose docker-buildx docker-rootless-extras docker-machine
 sudo pacman -S --needed --asexplicit docker docker-compose docker-buildx docker-rootless-extras docker-machine net-tools pigz crio distrobox
@@ -18011,7 +17982,6 @@ sudo fwupdmgr get-bios-setting
 sudo fwupdmgr get-blocked-firmware 
 sudo fwupdmgr get-devices 
 tree --helpo
-tree --help
 tree -L1 --du .
 tree -L1 .
 tree -L1 --help
@@ -18239,10 +18209,8 @@ axel https://archlinux.c3sl.ufpr.br/iso/2025.11.01/archlinux-2025.11.01-x86_64.i
 lsd /tmp
 mkdir -p /tmp/iso/arch
 npm i npm
-ng new projeto-angular
 npm install tailwincss @tailwincss/postcss postcss
 npm install tailwindcss @tailwindcss/postcss postcss
-npm i @angular/material
 git commit -e
 ng g c components/shared/page --skip-tests 
 ng g c components/shared/menu --skip-tests 
@@ -18336,7 +18304,6 @@ lvim 99_custom_startup
 lvim 06_extra_and_tools 
 exit6
 mise
-echo -e "${PATH//:/\\n}"
 git commit -m 'fix: update mise environment. Mise's path OK in ssh."
 git commit -m "fix: update mise environment. Mise's path OK in ssh."
 git switch main 
@@ -18358,7 +18325,6 @@ git commit -m "Aula 55 - Finalizada"
 cp -r prj-secao-5/  prj-secao-5-57
 npm i 
 git commit -m "Aula 57 - Início"
-rm -rf node_modules
 git commit -m "Aula 57 - Finalizada"
 cp -r projeto-components/  prj-secao-5-59
 git commit -m "Commit da Seção 4 e anteriores que faltaram."
@@ -18409,7 +18375,6 @@ mv cgcr kretcheu/
 paru -Sua aur/zen-browser-bin
 sudo mount -o loop ~/Downloads/ISOs/AlmaLinux-10.0-x86_64-boot.iso /mnt
 ls 
-du -sh .
 du -sh
 sudo mount -o loop ~/Downloads/ISOs/AlmaLinux-10.0-x86_64-dvd.iso /mnt
 wc -l
@@ -18463,7 +18428,6 @@ zig build -Doptimize=ReleaseFast install --prefix /home/albano/.local/
 paru -S cpufetch
 cpuf
 sudo pacman -S plasma-keyboard 
-mise use -g python@3.14.0
 mkdir sqlalchemy
 lk
 mkdir LuizOtavio
@@ -18489,7 +18453,6 @@ mkdir TypeHints
 rm -rf TypeHints
 poetry new TypeHints
 mise where python@3.14.0
-which python
 mise env info
 mv .vscode ../TypeHints/
 cp -r .vscode ../TypeHints/
@@ -18533,7 +18496,6 @@ clear ; python -u "/home/albano/Cursos/dunossauro/LivePython/258/SQLAlchemy-v2/s
 nohup google-chrome-beta 2>$HOME/logs/zen-browser/errors > $HOME/logs/chromeexit &
 nohup prime-run google-chrome-beta 2>$HOME/logs/chrome/errors > $HOME/logs/chrome/chrome &
 nohup google-chrome-beta 2>$HOME/logs/chrome/errors > $HOME/logs/chrome/chrome &
-git branch
 paru -S --asexplicit dbeaver
 python -u src/sqlalchemy_v2/wip.py 
 python src/sqlalchemy_v2/wip.py 
@@ -18857,7 +18819,6 @@ git commit -m "Aula 423 - Incicio/Final - AngularMaterialModule"
 UA
 mv Tests tests
 mv venv jlab/
-pip install -U jupyterlab
 jupyter lab --version
 jupyter lab --help
 pip install jupyterlab-lsp
@@ -18964,7 +18925,6 @@ sudo pacman -Ss linux-
 sudo pacman -S --asexplicit erofs-utils 
 sudo pacman -S --asexplicit erofs-utils erofsfuse
 sudo pacman -R intel-speed-select 
-cpufetch 
 cpufreq-bench
 sudo cpufreq-bench
 paru -Sss visual-studio
@@ -19009,7 +18969,6 @@ nvim 02-parametros
 ./02-parametros 
 ./02-parametros João
 ./02-parametros João da Silva
-env
 paru -S whois
 whois devs.dev.br
 ssh-agent --help
@@ -19021,7 +18980,6 @@ ssh-add --help
 sudo systemctl status sshd.service 
 ssh -Tv git@github.com
 duf
-bat /etc/fstab 
 ping -c2 200.17.199.216
 ping -c2 200.17.199.198
 git stash 
@@ -19042,7 +19000,6 @@ ng g c primeiro --type=Component
 git commit -m "Aula 439 - Início (Angular v20/ type: component)"
 ng g c primeiro
 ng g c segundo
-node --version
 gst\
 git commit -m "Aula 444 - Final - RouterLinkActive"
 ng g c base
@@ -19068,7 +19025,6 @@ ng g c components/about
 ng g c components/logout
 ng g c components/home
 1-roteamento-standalone/
-code-insiders .
 ng g c inicial
 git commit -m "Aula 449 - Incicio/Final - Path Vazio(Inicial)"
 ng g c pagina-nao-encontrada
@@ -19081,9 +19037,7 @@ docker
 docker ps -a
 docker images
 npm i -g @angular/cli
-npm i -g npm
 git restore src/app/components/inicial 
-ng serve
 clear
 gst"
 git commit -m "Aula 453 - Incicio - Criando os componentes. Organizando o projeto."
@@ -19103,23 +19057,18 @@ rm ./--help
 source venv/bin/activate
 lkk
 ccd PythonRodrigo/
-source .venv/bin/activate
 pip liost
 pip listy
-pip list
 python
 clear
 cat 7-slice.py 
 bat 7-slice.py 
 python 7-slice.py 
-deactivate 
 pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip install -U 
 jupyter lab build
 jupyter-lab --port 15000
 jupyter lab --help
 source /home/albano/Courses/PythonRodrigo/fundamentos/.venv/bin/activate
-jupyter lab --core-mode --port 15000
-deactivate 
 mkdir -p implementation
 > main.cpp
 > Makefile
@@ -19130,7 +19079,6 @@ mv implementation/trabalho-ia
 mv implementation trabalho-ia
 mkdir -p tests
 mkdir -p {benchmarks,build}
-tre
 nvim ~/Desktop/TrabalhoIA/trabalho-ia/include/trabalho-ia/utils.hpp
 nvim ~/Desktop/TrabalhoIA/trabalho-ia/include/trabalho-ia/neural_network.hpp
 nvim ~/Desktop/TrabalhoIA/trabalho-ia/include/trabalho-ia/text_processor.hpp
@@ -19222,7 +19170,6 @@ git rm --cached .qtcreator
 rm -rf build/*
 rm -rf .qtcreator
 rm src/main.cpp.bak 
-tree
 lvim .gitignore
 git rm -r --cached .
 ga .gitignore README.md 
@@ -19230,14 +19177,12 @@ git commit -m "Inicial commit. Adiciona gitignore e README."
 git commit -m "feat: Adiciona o projeto C++ utilizando MLP para RP. Não funcional (acurácia ruim)."
 git remote add origin git@github.com:allbano/trabalho-ia-rp.git
 git push --set-upstream origin main
-ls -l
 mkdir docs
 cp $HOME/Desktop/TrabalhoIA/Trabalho2025_02/Requisitos_Trabalho_IA1.pdf 
 cp $HOME/Desktop/TrabalhoIA/Trabalho2025_02/Requisitos_Trabalho_IA1.pdf ./docs/
 antigravity .
 antigravity . &
 nvim .
-code .
 ga docs/Requisitos_Trabalho_IA1.pdf 
 git commit -m "docs: Adiciona arquivo de Requisitos do Trabalho de IA 1."
 git commit -m "feat: Adiciona função para normalização matemática."
@@ -19253,16 +19198,253 @@ cmake --build .
 wc -l < PALAVRASpc.txt 
 tail -n20 CLtx.dat 
 tail -n20 WWRDpc.dat 
-paru -Syu
 paru -S mlpack 
 mise unuse python@3.14.0
-mise ls
 ssh parajas
 ssh parajas2
+paru -S --asexplicit rio
+paru -R rio
+paru -Ssss 'terminal emulator'
+cat .config/kitty/kitty.conf 
+cat .config/kitty/themes/Aura.conf 
+fllf
+mkdir trabalho-ia2
+nvim trabalho-ia.hpp
+mv trabalho-ia.hpp trabalho-ia.cpp 
+nvim trabalho-ia.cpp 
+rm trabalho-ia.cpp 
+> main.cpp
+rm SentimentAnalyzer.cpp
+nvim main.cpp
+nvim SentimentAnalyzer.hpp
+nvim SentimentAnalyzer.cpp
+cp -r ../Trabalho2025_02/DADOS/* .
+g++ main.cpp SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -lmlpack -fopenmp
+tail -50 PALAVRASpc.txt 
+head -50 PALAVRASpc.txt 
+rm SentimentAnalyzer.cpp 
+nvim SentimentAnalyzer.cpp 
+g++ main.cpp SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
+mv SentimentAnalyzer.hpp v0.01-SentimentAnalyzer.hpp 
+mv SentimentAnalyzer.cpp v0.01-SentimentAnalyzer.cpp 
+rm Version-0.1-SentimentAnalyzer.cpp 
+nvim v0.02-SentimentAnalyzer.hpp
+> v0.02-SentimentAnalyzer.cpp
+g++ main.cpp v0.02-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
+g++ main.cpp v0.04-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
+g++ main.cpp v0.06-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
+rm v0.06-SentimentAnalyzer.hpp 
+rm ./classificador 
+g++ main.cpp v0.05-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
+g++ main.cpp v0.07-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
+rm classificador 
+g++ main.cpp v0.08-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
+./classificador 
+xit
+./classificador 
+paru -Syu
+gcl git@github.com:zigbook/zigbook.git
+ls -l
+bat package.json 
+node --version
+mise ls-remote node
+pnpm
+npm i -g yarn
+npm i -g pnpm
+npm i -g npm@stable
+npm i -g npm
+pnpm i
+pnpm build
+pnpm start
+du -su .
+du -sh node_modules/
+git branch
+git branch --all
+java --version
+lvim 06_extra_and_tools 
+lvim bash/bashrc
+lvim bashrc
+git restore bashrc 
+pipi
+pixi
+pixi --help
+pixi self-update
+pip install -U jupyterlab
+which python
+git restore bash/rc/06_extra_and_tools 
+rm -rf .pixi
+mise use -g python@3.14.0
+mise ls-remote python@3.14
+source .venv/bin/activate
+pip list
+jupyter lab --core-mode --port 15000
+/home/albano/Courses/PythonRodrigo/fundamentos/.venv/bin/python /home/albano/Courses/PythonRodrigo/fundamentos/13-dicionario.py
+deactivate 
+mise ls
+bat /etc/fstab 
+sudo lvim /etc/fstab 
+mkdir Angular
+rm -rf projeto-angular
+ng new projeto-angular
+code .
+npm i @angular/material
+kk
+ng g c components/shared/menu --skip-tests
+ng g c components/shared/menu
+ng g c screens/home
+ng g c screens/counter
+sudo systemctl statu
+ng g c components/shared/menu-item
+ng g c components/shared/title
+cpufetch 
+sudo pacman -Ssss netplan
+akonadictl 
+akonadictl status
+akonadictl fsck
+pacman -Sss tre
+pacman -Sss 'tre$'
+sudo pacman -S --asexplicit tre
+tred --help
+yay -Ssss tre-co
+cargo install tre-command
+rustup
+paru -S --asexplicit rustup
+rustup default stable
+echo -e "${PATH//:/\\n}"
+paru -S --asexplicit rustup lldb
+yay -S --asexplicit tre-command
+tre .
+tre . | less
+rm -rf node_modules
+rm package
+rm package*
+tre
+tre --helpk
+tre --help
+tre -d
+tre -a
+yay -R tre-command
+tree
+tree --help
+kscreen-doctor --outputs
+ng update @angular/cli @angular/core
+rm -rf node_modules
+code-insiders .
+cat node_modules/@angular/core/package.json
+cat node_modules/@angular/ssr/package.json
+grep -r "provideServerRouting" node_modules/@angular/ssr
+grep -r "resource" node_modules/@angular/core | grep ".d.ts" | head -n 5
+npm run build
+npm install zone.js
+npm run build
+npm run build
+npm run build
+rm src/app/app.routes.server.ts
+npm run build
+npm run build
+npm run build
+npm run build
+cat node_modules/@angular/ssr/types/ssr.d.ts
+cat node_modules/@angular/platform-server/index.d.ts
+npm run build
+npm run build
+npm run build
+grep -r "MaybeAsync" node_modules/@angular/router
+npm run build
+npm run build
+npm test -- --watch=false --browsers=ChromeHeadless
+npm test -- --watch=false --browsers=ChromeHeadless
+npm test -- --watch=false --browsers=ChromeHeadless
+npm test -- --watch=false --browsers=ChromeHeadless
+npm run build
+curl "http://localhost:4200/api/search?q=@kipperdev"
+cp .env.example .env
+npm run build
+curl "http://localhost:4200/api/search?q=@kipperdev"
+cat node_modules/@angular/platform-server/types/platform-server.d.ts
+cat node_modules/@angular/platform-browser/index.d.ts
+cat node_modules/@angular/platform-browser/types/platform-browser.d.ts
+ls -l .env
+npm start -- --port 4201
+curl "http://localhost:4201/api/search?q=@kipperdev"
+curl -v "http://localhost:4201/api/search?q=@kipperdev"
+curl -v "http://localhost:4201/api/search?q=@kipperdev"
+curl "http://localhost:4200/api/search?q=@cod3r"
+curl -I "http://localhost:4200/"
+curl "http://localhost:4201/api/search?q=@kipperdev"
+npm install dotenv
+npm start -- --port 4201
+npm start -- --port 4201
+curl "http://localhost:4201/api/search?q=@kipperdev"
+cat .env
+grep -r "AIzaSyCudQYu3E64PFnhBHAvACDHanG5jnOZJps" .
+cat .env.example
+cp .env.example .env
+echo "YT_API_KEY=AIzaSyDHx7nt2WxLoe8yCeoxKpOfoRPC3NgJdXc" > .env && echo "YT_CLIENT_ID=social-yt-channels-comparer" >> .env
+npm start -- --port 4201
+npm run build
+grep -r "provideServerRouting" node_modules/@angular/ssr
+grep -r "RenderMode" node_modules/@angular/ssr
+npm run build
+npx ts-node src/api-server.ts
+npm start -- --port 4201
+cat .env
+npm start -- --port 4201 --ssr
+grep -r "provide" node_modules/@angular/ssr | head -n 20
+npm start -- --port 4201
+echo "YT_API_KEY=YOUR_API_KEY_HERE" > .env
+echo "YT_API_KEY=AIzaSyDHx7nt2WxLoe8yCeoxKpOfoRPC3NgJdXc
+YT_CLIENT_ID=social-yt-channels-comparer" > .env
+npm run build
+cat node_modules/@angular/ssr/fesm2022/ssr.mjs | head -n 100
+rm src/app/app.routes.server.ts
+rm -rf social-media-comparer
+yay -Ssss insomnia
+yay -S --asexplicit insomnia
+gcl git@github.com:Fernanda-Kipper/social-media-comparer.git
+npm start
+smartctl 
+smartctl --help
+smartctl --all /dev/nvme0n1
+sudo smartctl --all /dev/nvme0n1
+ng serve
+npm install
+ls node_modules/@angular/ssr
+grep -r "provideServerRouting" node_modules/@angular/ssr
+grep -r "export declare function resource" node_modules/@angular/core
+grep "provideServerRouting" node_modules/@angular/platform-server/fesm2022/platform-server.mjs
+grep -A 20 "function resource" node_modules/@angular/core/fesm2022/core.mjs
+cat node_modules/@angular/core/index.d.ts | grep -A 30 "export declare function resource"
+cat node_modules/@angular/ssr/index.d.ts
+cat node_modules/@angular/core/package.json
+cat node_modules/@angular/ssr/package.json
+grep -A 30 "export declare function resource" node_modules/@angular/core/types/core.d.ts
+cat node_modules/@angular/ssr/types/ssr.d.ts
+grep -n -i "resource" node_modules/@angular/core/types/core.d.ts | head -n 20
+grep -r "provideServerRouting" node_modules/@angular
+cat node_modules/@angular/core/types/core.d.ts | head -n 5600 | tail -n 50
+cat node_modules/@angular/core/types/_api-chunk.d.ts | grep -A 20 "interface ResourceOptions"
+cat node_modules/@angular/core/types/_api-chunk.d.ts | grep -A 20 "interface PromiseResourceOptions"
+grep -A 20 "interface BaseResourceOptions" node_modules/@angular/core/types/_api-chunk.d.ts
+grep -A 10 "type ResourceLoader" node_modules/@angular/core/types/_api-chunk.d.ts
+grep -A 10 "interface ResourceLoaderParams" node_modules/@angular/core/types/_api-chunk.d.ts
+npm run build
+grep -A 20 "declare function withRoutes" node_modules/@angular/ssr/types/ssr.d.ts
+npm run build
+npm run build
+npm run build
+npm run build
+ls -a .env*
+npm start
+cat .env
+npm start
+npm start
+paru -Ssss neow
+paru -Ssss neofetch
 ff
-rm allhistory 
-rm allhome-history-1754528950 
-rm kit-albano-history-1757896982 
-rm notebook-dellg15-history-1752425136 
-pushHis 
-rm .bash_history 
+du -sh .
+rm -rf Parajas
+/home/albano/Desktop/TrabalhoIA/trabalho-ia2/
+env
+ls -l /
+l /mnt
