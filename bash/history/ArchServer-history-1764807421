@@ -328,7 +328,6 @@ systemctl --user status pipewire.service wireplumber.service
 paru -R linux-lts{,-headers}
 paru -S linux-cachyos{,-headers}
 sudo vim /etc/default/grub
-sudo lvim /etc/default/grub
 paru -Rscdn sublime-text-4 
 fd subl
 nohup prime-run google-chrome-beta 2>$HOME/logs/chrome/errors > $HOME/logs/chrome/chrome &
@@ -355,7 +354,6 @@ paru -R linux-rt{,-headers}
 bat /etc/fstab
 sudo lvim /etc/fstab
 sudo mkinitcpio --automods -P
-doas grub-mkconfig -o /boot/grub/grub.cfg 
 sudo passwd
 sudo pacman -S git
 sudo pacman -S man
@@ -471,7 +469,6 @@ uname -n
 uname -m
 uname -i
 up
-us
 yay -ssss bind
 yay -ssss bind9
 vis
@@ -6295,7 +6292,6 @@ tree -L 1 .
 tree -L 2 .
 yay -Ssss vim-git
 yay -Sii vim-git
-us
 yay -Rscnd ytdlp-gui 
 yay -Scccc
 pl
@@ -6448,7 +6444,6 @@ LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 gst .
 gcam "Updated bashrc."
 p
-us
 whatis ip
 paru -S ip
 which ip
@@ -6485,7 +6480,6 @@ uname -n
 uname -m
 uname -i
 up
-us
 yay -Ssss bind
 yay -Ssss bind9
 vis
@@ -10490,7 +10484,6 @@ htp
 paru -Sss power-profiles
 paru -S power-profiles-daemon
 sct status power
-sudo systemctl status power-profiles-daemon.service 
 sudo systemctl enable --now power-profiles-daemon.service 
 ng versions
 nvm use v18.20.4 
@@ -10789,7 +10782,6 @@ cd .config/alacritty/
 nvim alacritty.toml 
 cd ~/github/dotfiles/tmux/
 cd tmux/
-nvim .tmux.conf 
 /home/albano/.pyenv/versions/3.11.9/bin/python /home/albano/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
 paru -Rs
 paru -R --help
@@ -10911,7 +10903,6 @@ pip install -U matplotlib
 pip install -U scipy
 paru -Sss power-profiles
 paru -S power-profiles-daemon
-sudo systemctl status power-profiles-daemon.service 
 sudo systemctl enable power-profiles-daemon.service 
 gdb --help
 mv Desktop ICs
@@ -13560,7 +13551,6 @@ echo $TERM
 paru -Sss stylua
 paru -S stylua
 cd ~/github/dotfiles/tmux/
-nvim .tmux.conf 
 paru -S python-pip
 paru -S python-keyring python-xdg
 lvim ~/github/dotfiles/tmux/.tmux.conf 
@@ -14210,7 +14200,6 @@ gstaa
 alias |rg git
 alias |rg 'git status'
 gsb
-git stash
 git stash list
 git stash show
 git stash --help
@@ -14827,7 +14816,6 @@ pipx ensurepath
 paru -Ssss torrent
 mv DTorrents Torrents
 rm .dbc5f4c8dcb09e2df6d16e8708e5a0684771655b.parts 
-;
 nohup prime-run vlc 'A Profecia da Lua 2024 WEB-DL 1080p x264 DUAL 5.1.mkv' &
 cat TorrentsDosFilmes.TO.url 
 mv 'A Roda do Tempo S03 2025 WEB-DL 1080p x264 DUAL 5.1' ~/Torrents/Downloads/
@@ -15512,7 +15500,6 @@ nohup prime-run vlc 'Aula Bônus 4： GitHub e Deploy do Projeto [Ft1eS6c11w0].w
 cargo search zed
 paru -R zed
 git clone git@github.com:allbano/zed.git
-git branch 
 rm -rf zed
 paru -Sss zed
 paru -Sss --regex '^zed'
@@ -15771,7 +15758,6 @@ git-shel
 git-shell 
 type -a git-shell 
 git2 --help
-git
 paru -Sss git
 paru -Qss git
 lazygit --help
@@ -16499,7 +16485,6 @@ poetry python --help
 pyenv --help
 tar --zstd --preserve-permissions --atime-preserve --acls --xattrs --cvpf animes.tar.zst *
 tar --zstd --preserve-permissions --atime-preserve --acls --xattrs -cvpf animes.tar.zst *
-git stash
 git stash show
 pipx siege
 poetry shell 
@@ -16707,7 +16692,6 @@ paru -Sss smartmon
 flatpak search gsmartcontrol
 paru -Sss diskmonitor
 paru -S diskmonitor
-paru -Scccc
 paru -R kactivities5 kdeclarative5 kio5 kwallet5 kwayland5 plasma-framework5 
 paru -Sccccc
 paru -S gsmartcontrol
@@ -16773,7 +16757,6 @@ cat /usr/lib/systemd/system/ead.service;
 bat /usr/lib/systemd/system/ead.service;
 sudo systemctl enable docker.service 
 sudo systemctl disable docker.service 
-git pull origin main
 git fetch
 nvim docker-compose-pg-full.yml 
 docker run -dv --hostname pg17bookworm --name pg17bookworm -p 45432:5432 -e POSTGRES_PASSWORD=testing postgres:17.5-bookworm
@@ -16875,7 +16858,6 @@ paru -S pipewire-jack-client
 rm 10-disable-hsp.conf 
 nvim 60-bluetooth-policy.conf 
 systemctl --user restart pipewire.service wireplumber.service pipewire-pulse.socket
-sudo systemctl daemon-reload 
 paru -R ncdu
 sleep
 sleep --help
@@ -17308,7 +17290,6 @@ systemctl --user status pipewire.service wireplumber.service
 paru -R linux-lts{,-headers}
 paru -S linux-cachyos{,-headers}
 sudo vim /etc/default/grub
-sudo lvim /etc/default/grub
 paru -Rscdn sublime-text-4 
 fd subl
 nohup prime-run google-chrome-beta 2>$HOME/logs/chrome/errors > $HOME/logs/chrome/chrome &
@@ -17335,7 +17316,6 @@ paru -R linux-rt{,-headers}
 bat /etc/fstab
 sudo lvim /etc/fstab
 sudo mkinitcpio --automods -P
-doas grub-mkconfig -o /boot/grub/grub.cfg 
 git checkout HEAD 
 unlink ~/.bash_history
 cp bash/history/notebook-dellg15-history-1752425136 ~/.bash_history
@@ -17376,7 +17356,6 @@ sudo pacman -S --needed --asexplicit cmake make git{u,ui,lab,-lfs,-extras,g,hub-
 sudo python3 darkmatter-theme.py -u
 sudo python3 darkmatter-theme.py -i
 sudo nvim /etc/default/grub
-git checkout archlinux 
 sudo ./install.sh 
 sudo nvim /etc/locale.gen
 sudo locale-gen
@@ -17429,7 +17408,6 @@ paru -S --needed --asexplicit electron trash-cli
 paru -S --needed --asexplicit aur/visual-studio-code-bin
 paru -S --needed --asexplicit 
 code --disable-gpu
-sudo htop
 which code
 command -v code
 ldd $(which code)
@@ -17645,7 +17623,6 @@ cat /etc/group| rg vlc
 rm ~/.config/vlc
 paru -Ssss vlc
 paru -S mpv
-yay -Syu
 wget ALGORITMOS - TEORIA E PRATICA
 wget https://z-lib.fm/dl/5728305/a4a3b2
 ip -c r
@@ -17786,7 +17763,6 @@ paru -Sssss ghostty
 paru -Rscd ghostty-terminfo ghostty-shell-integration 
 mise ls-remote ghostty
 gcl git@github.com:ghostty-org/ghostty.git
-git checkout tip
 git checkout main 
 git branch --a
 git branch --all 
@@ -17906,7 +17882,6 @@ git clone ~/Tests/bare/dotfiles.git
 git remote add backup ~/Tests/bare/dotfiles.git
 git remote -v
 git push backup main 
-git push backup archlinux 
 mise ls node
 ng add @angular/material
 git commit -m "feat: Instalado angular material(ng add @angular/material)."
@@ -18054,7 +18029,6 @@ sudo systemctl status docker.service docker.socket
 sudo lsd -l docker/
 ln -sf /home/albano/github/dotfiles/vim/.vimrc $HOME/
 dmesg | grep 'module verification failed'
-sudo dmesg | grep 'module verification failed'
 yt-dlp -f 'bv*+ba' https://youtu.be/TS-oOy0w6cM?si=RP1tt8Mfrta1ZXq8
 paru -Qs yt-dlp
 yt-dlp -U
@@ -18121,7 +18095,6 @@ which nohup
 which nohup
 jobs --help
 top
-jobs
 fg 1
 bzip2
 cat log.txt 
@@ -18291,7 +18264,6 @@ chmod 600 infojus-i7-IP198*
 chmod 644 infojus-i7-IP198.pub 
 lvim config 
 lvim config 
-git pull origin archlinux 
 lvim 07_prompt 
 lvim 99_custom_startup 
 lvim 06_extra_and_tools 
@@ -18299,17 +18271,13 @@ exit6
 mise
 git commit -m 'fix: update mise environment. Mise's path OK in ssh."
 git commit -m "fix: update mise environment. Mise's path OK in ssh."
-git switch main 
 git merge archlinux
-git push --help
 git push -h
-git push --all
 sudo reboot
 sudo shutdown now
 cp -r prj-secao-5-ate-54
 cp -r prj-secao-5-ate-54 .
 cp -r prj-secao-5/  prj-secao-5-ate-54/
-l;l
 cp -r prj-secao-5/  prj-secao-5-55/
 git add .
 git commit -m "Aula 55 - Início"
@@ -18332,7 +18300,6 @@ git commit -m "Aula 62 - Finalizada"
 mv prj-secao-5-59 prj-secao-5-59_62
 ng new prj-secao-5-64
 mise ls-remote python
-git log
 git commit -m "Aula 64 - Início"
 git commit -m "Aula 64 - Finalizada"
 ng g c components/card
@@ -18361,7 +18328,6 @@ wget -rc -np -nH --directory-prefix=. https://kretcheu.com.br/cgcr/ -R 'index.*,
 echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 sudo echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 sudo nano /etc/systemd/system/cpufreq.service
-sudo systemctl daemon-reload 
 cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 mkdir kretcheu
 mv cgcr kretcheu/
@@ -18388,14 +18354,12 @@ paru -S --asexplicit xterm
 git checkout -b debian
 git push origin debian
 git push origin main
-git switch archlinux 
 rm activate 
 git branch -h
 git branch -D main
 paru -Sua
 paru -Syua
 bootctl
-which ghostty
 $(which ghostty
 ll $(which ghostty)
 man ghostty
@@ -18407,17 +18371,13 @@ bat Makefile
 rm $(which ghostty)
 mise use -g zig@0.15.2
 git switch main
-git branch -a
 git pull --h
-git pull --all
 git checkout tip 
 rm -rf .zig-cache .cache
 ll /home/albano/.local/share/mise/installs/zig/0.15.2/zig
 lsd -la /home/albano/.local/share/mise/installs/zig/0.15.2/zig
 lsd -la /home/albano/.local/share/mise/installs/zig/0.15.2/lib
-mise unuse python
 blueprint-compiler --version
-zig build -Doptimize=ReleaseFast install --prefix /home/albano/.local/
 paru -S cpufetch
 cpuf
 sudo pacman -S plasma-keyboard 
@@ -18455,7 +18415,6 @@ poetry add --group dev pytest-xdist
 poetry list
 which dmypy
 rmdir sqlalchemy/
-rm -rf dotfiles
 rm -rf vite
 mkdir EduardoMendes
 rmdir EduardoMendes/
@@ -18554,7 +18513,6 @@ paru -Si icu
 paru -S --asexplicit qemu-full brltty harfbuzz-icu libphonenumber raptor freerdp
 sudo grub-mkconfig -o /boot/grub/grub.cfg 
 paru -S --asexplicit spring-tools-for-eclipse 
-paru -Syyu
 paru -Ssss teams
 paru -S teams-for-linux
 mkdir ProgLhama
@@ -18645,7 +18603,6 @@ lvim alacritty.toml
 fd *.desktop /usr/share
 fd alacritty /usr/share
 cat /usr/share/applications/Alacritty.desktop
-man tmux
 man --html firefox tmux
 man --html=firefox tmux
 bash -c '[[ -z "$TMUX" ]] && tmux new-session -A -s main || bash'
@@ -18668,7 +18625,6 @@ sudo pacman -Q --help
 sudo pacman -Qttdq
 sudo pacman -Rs electron37
 sudo pacman -Rs flatpak-kcm 
-flatpak update
 sudo pacman -Qi sddm-kcm
 sudo pacman -S --asexplicit sddm-kcm
 sudo pacman -Qi kwrited 
@@ -18685,7 +18641,6 @@ sudo pacman -Rs plasma-thunderbolt
 sudo pacman -S --asexplicit print-manager 
 sudo ./remove-orphans 
 sudo pacman -S --asexplicit plasma-firewall 
-cat /etc/group
 sudo su -
 zsh
 rm nohup.out 
@@ -18715,8 +18670,6 @@ tmux list-commands
 rm .gitignore 
 git restore .gitignore 
 docker info | grep "Docker Root Dir"
-lsk
-lsku
 poetry env
 poetry env use $(type -p python)
 poetry show
@@ -18724,7 +18677,6 @@ poetry install
 git add ghostty/config 
 git add kitty/kitty.conf 
 git commit -m "chore: update ghostty & kitty execution command."
-git push origin archlinux 
 paru -Si doas
 paru -Si opendoas
 paru -Si opendoas-git
@@ -18767,7 +18719,6 @@ yt-dlp --list-formats https://youtu.be/_dh6dpaiTrY?si=HQLEVwb7ibqM_4c5
 yt-dlp -f 248+251 https://youtu.be/_dh6dpaiTrY?si=HQLEVwb7ibqM_4c5
 mise use -g node@18.20.8
 mise ls-remote node@18
-ghostty --version
 ghostty --help
 ghostty --font-family="FiraCode Nerd Fond"
 ghostty --font-family="FiraCode Nerd Font"
@@ -18980,7 +18931,6 @@ git pull origin main
 git stash pop
 git stash push
 exity
-pullDotfiles 
 lvim bashrc
 echo $SHLVL 
 mv Cursos Courses
@@ -19101,7 +19051,6 @@ nvim ~/Desktop/TrabalhoIA/trabalho-ia/include/trabalho-ia/utils.hpp
 mv ~/Desktop/TrabalhoIA/trabalho-ia/src/main.cpp ./src/main.cpp.bak
 nvim ~/Desktop/TrabalhoIA/trabalho-ia/src/main.cpp 
 lll
-mkdir data
 cp -r ~/Desktop/TrabalhoIA/Trabalho2025_02/DADOS/ .
 mv DADOS/* .
 rmdir DADOS/
@@ -19150,7 +19099,6 @@ file CLtx.dat
 rm -rf trabalhoia/
 rm -rf trabalho-ia-gpt
 mv trabalho-ia-gemini trabalho-ia
-git config -l
 echo "# trabalho-ia-rp" >> README.md
 git init
 git add --all
@@ -19192,8 +19140,6 @@ tail -n20 CLtx.dat
 tail -n20 WWRDpc.dat 
 paru -S mlpack 
 mise unuse python@3.14.0
-ssh parajas
-ssh parajas2
 paru -S --asexplicit rio
 paru -R rio
 paru -Ssss 'terminal emulator'
@@ -19232,9 +19178,7 @@ g++ main.cpp v0.07-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopen
 rm classificador 
 g++ main.cpp v0.08-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
 xit
-paru -Syu
 gcl git@github.com:zigbook/zigbook.git
-ls -l
 bat package.json 
 node --version
 mise ls-remote node
@@ -19248,7 +19192,6 @@ pnpm build
 pnpm start
 du -su .
 du -sh node_modules/
-git branch
 git branch --all
 java --version
 lvim 06_extra_and_tools 
@@ -19270,13 +19213,11 @@ pip list
 jupyter lab --core-mode --port 15000
 /home/albano/Courses/PythonRodrigo/fundamentos/.venv/bin/python /home/albano/Courses/PythonRodrigo/fundamentos/13-dicionario.py
 deactivate 
-mise ls
 bat /etc/fstab 
 sudo lvim /etc/fstab 
 mkdir Angular
 rm -rf projeto-angular
 ng new projeto-angular
-code .
 npm i @angular/material
 kk
 ng g c components/shared/menu --skip-tests
@@ -19314,7 +19255,6 @@ tre --help
 tre -d
 tre -a
 yay -R tre-command
-tree
 tree --help
 kscreen-doctor --outputs
 ng update @angular/cli @angular/core
@@ -19397,7 +19337,6 @@ smartctl
 smartctl --help
 smartctl --all /dev/nvme0n1
 sudo smartctl --all /dev/nvme0n1
-ng serve
 npm install
 ls node_modules/@angular/ssr
 grep -r "provideServerRouting" node_modules/@angular/ssr
@@ -19431,15 +19370,264 @@ npm start
 npm start
 paru -Ssss neow
 paru -Ssss neofetch
-ff
-du -sh .
 rm -rf Parajas
 /home/albano/Desktop/TrabalhoIA/trabalho-ia2/
 env
 l /mnt
-pushHis 
 ls -l /
 id
 lsblk 
 rsync -aAXv --no-perms --no-owner --no-group --no-times /home/albano/Desktop /run/media/albano/DADOS/
 ./classificador 
+pushHis 
+git commit -m "feat: add wofi-laucher configs"
+git push --all
+git push origin archlinux 
+git pull origin debian 
+fish
+zig
+;
+git switch main 
+git pull origin main
+git pull --all
+which ghostty
+git checkout tip
+mise unuse python
+zig build -Doptimize=ReleaseFast install --prefix /home/albano/.local/
+ghostty --version
+ng serve
+sudo systemctl enable --now power-profiles-daemon.service 
+lsk
+lsku
+nu -sh /home
+du -sh /home
+nvim .tmux.conf 
+tmux list-window -a | fzf --sync --tmux center | awk "{print \$1}" | xargs tmux switch-client -t
+tmux list-window -a -F | fzf --sync --tmux center | awk "{print \$1}" | xargs tmux switch-client -t
+tmux list-window -a -F "##S:##I ##W ##P ##D" | fzf --sync --tmux center | awk "{print \$1}" | xargs tmux switch-client -t
+tmux list-window -a -F "##S:##I ##W ##P ##D"
+man tmux
+tmux list-windows 
+tmux list-windows -a
+tmux list-windows -a -F
+tmux list-windows -a -F "##S:##I"
+tmux list-windows -a -F "##S:#I"
+tmux list-windows -a -F "#S:#I"
+tmux list-windows -a -F "##S:##I ##W ##P ##D"
+tmux list-windows -a -F "#S:#I #W #P #D"
+tmux list-window -a -F "#S:#I #W #P #D" | fzf --sync --tmux center
+tmux list-window -a -F "#S:#I #W #P #D" | fzf --sync --tmux center | awk "{print \$1}"
+tmux list-window -a -F "#S:#I #W #P #D" | fzf --sync --tmux center | awk "{print \$1}" | xargs tmux switch-client -t
+tmux list-window -a -F "#S:#I #W #P #D" | fzf --sync --tmux center | awk '{print $1}' | xargs tmux switch-client -t
+tmux list-windows -a -F "#S:#I #W #P #D" | fzf --sync --tmux center | awk "{print \$1}" | xargs tmux switch-client -t
+exiut
+which fzf
+sudo ln -sf /home/albano/.fzf/bin/fzf /usr/bin/fzf
+ssh parajas
+ssh parajas2
+code .
+nvim ~/.tmux.conf 
+sudo dmesg | grep 'module verification failed'
+sudo mokutil 
+mokutil 
+sudo systemctl status sleep.target 
+sudo systemctl status suspend.target 
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
+virsh 
+locate services
+sudo updatedb 
+find
+find --help
+paru -S codeblocks
+sudo mokutil --sb-state 
+sudo mokutil
+sudo mokutil --all
+cat /etc/group
+ls /lib/modules/$(uname -r)/kernel/drivers/cpufreq | grep amd
+sudo lvim /etc/default/grub
+sudo systemctl restart power-profiles-daemon
+cat /sys/devices/system/cpu/cpu0/cpufreq/energy_performance_preference\
+sudo htop
+sudo pacman -S --asexplicit codeblocks
+codeblocks
+sudo pacman -R codeblocks
+flatpak search codeblocks
+flatpak install org.codeblocks.codeblocks
+cat /sys/devices/system/cpu/cpufreq/boost 2>/dev/null
+ls /sys/devices/system/cpu/cpufreq/policy11
+ls /sys/devices/system/cpu/cpufreq/policy0
+echo balance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference
+sudo lvim /sys/devices/system/cpu/cpu0/cpufreq/energy_performance_preference
+echo power | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference
+cat /sys/devices/system/cpu/cpu0/cpufreq/energy_performance_preference
+echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference
+sudo lvim /etc/power-profiles-daemon.conf
+sudo PPD_LOG=1 /usr/lib/power-profiles-daemon --verbose
+grep -R "" /etc/power-profiles-daemon.conf
+journalctl -u power-profiles-daemon -b --no-pager --output=short-full
+sudo systemctl edit power-profiles-daemon
+sudo lvim /usr/lib/systemd/system/power-profiles-daemon.service
+sudo systemctl edit power-profiles-daemon.service
+sudo systemctl daemon-reload 
+systemctl status tlp auto-cpufreq
+ff
+sudo systemctl status power-profiles-daemon.service 
+systemctl cat power-profiles-daemon
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_driver
+powerprofilesctl 
+powerprofilesctl --help
+powerprofilesctl list
+powerprofilesctl list-actions 
+powerprofilesctl get
+rsync -aAXv --no-perms --no-owner --no-group --no-times /home/albano/Courses /run/media/albano/DADOS/
+git stash
+git pull origin archlinux 
+git pull origin debian
+git branch
+git switch archlinux 
+git lfs -h
+git lfs --help
+git lfs install
+pullDotfiles 
+git remote -l
+git remote show
+git remote update
+git push backup archlinux
+git switch debian 
+git push backup debian 
+git push --help
+git push --h
+git push backup archlinux 
+ls -l
+git config -l
+gcl /home/albano/tests/bare/dotfiles.git/
+git log
+git branch 
+git branch -a
+git checkout archlinux 
+dh -sh .
+du -sh .
+rm -rf dotfiles
+git
+git --work-tree --help
+git --help
+yay -Syu
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+paru -Syu
+paru -R tre-command-debug 
+paru -R kubo-git 
+paru -Ssss antigravity
+paru -R antigravity-bin 
+paru -S --asexplicit antigravity 
+paru -Syyu
+autoupdate 
+wchi autoupdate 
+which autoupdate 
+lvim $(which autoupdate )
+aucat
+aucat --help
+autoupdate --help
+info autoconf
+paru -S --edit mlpack
+paru -S --asexplicit mlpack
+paru -Scccc
+yay -S --asexplicit mlpack
+mise ls
+yay -S --editmenu --asexplicit mlpack
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp -o classificador -larmadillo -lmlpack
+pkg-config --cflags --libs mlpack 2>&1 || echo "mlpack not found via pkg-config"
+ls -la /usr/include/ | grep -i mlpack || echo "mlpack headers not found in /usr/include"
+ls -la /usr/local/include/ | grep -i mlpack || echo "mlpack headers not found in /usr/local/include"
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+./classificador
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+./classificador 2>&1 | head -200
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+./classificador 2>&1 | head -200
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+./classificador 2>&1 | head -200
+find /usr/include -name "dropout.hpp"
+find /usr/include -name "leaky_relu.hpp"
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+./classificador 2>&1 | head -200
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+./classificador 2>&1 | head -200
+find /usr/include -name "*rbf*"
+find /usr/include -name "*radial*"
+cat /usr/include/mlpack/methods/ann/layer/radial_basis_function.hpp
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+./classificador 2>&1 | head -300
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+./classificador 2>&1 | head -300
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+./classificador 2>&1 | head -300
+g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
+./classificador 2>&1 | head -200
+flatpak update
+g++ -std=c++17 -O2 -I/usr/include -lmlpack -larmadillo -pthread *.cpp -o sentiment_app
+g++ -std=c++17 -O2 -I/usr/include -lmlpack -larmadillo -pthread *.cpp -o sentiment_app
+./sentiment_app
+g++ -std=c++17 -O2 -I/usr/include -lmlpack -larmadillo -pthread main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.08-SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzerAdapter.cpp -o sentiment_app
+find /usr -name "libmlpack.so*" 2>/dev/null
+g++ -std=c++17 -O2 -I/usr/include -larmadillo main.cpp v0.02-MLP_SentimentAnalyzerAdapter.cpp v0.02-MLP_SentimentAnalyzer.cpp -o sentiment_app
+g++ -std=c++17 -O2 -I/usr/include -larmadillo main.cpp v0.02-MLP_SentimentAnalyzerAdapter.cpp v0.02-MLP_SentimentAnalyzer.cpp -o sentiment_app
+./sentiment_app
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o classificador -larmadillo -fopenmp
+rm main
+mv classificador class
+./class
+rm class 
+./sentiment_app 
+rm sentiment_app 
+make build 
+l;l
+male clean
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.08-SentimentAnalyzer.cpp -o main -lmlpack -larmadillo -fopenmp
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.08-SentimentAnalyzer.cpp -o main -lmlpack -larmadillo -fopenmp
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.08-SentimentAnalyzer.cpp -o main -lmlpack -larmadillo -fopenmp
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.08-SentimentAnalyzer.cpp -o main -lmlpack -larmadillo -fopenmp
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -lmlpack -larmadillo -fopenmp
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -lmlpack -larmadillo -fopenmp
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -lmlpack -larmadillo -fopenmp
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -lmlpack -larmadillo -fopenmp
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -lmlpack -larmadillo -fopenmp
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -larmadillo -fopenmp
+./main
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -larmadillo -fopenmp && ./main
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -larmadillo -fopenmp && ./main
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -larmadillo -fopenmp && ./main
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -larmadillo -fopenmp && ./main
+./main
+g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -larmadillo -fopenmp && ./main
+tree
+paru -S fast-cpp-csv-parser
+paru -Ssss fast-cpp-csv-parser
+paru -Ssss fast-cpp-csv-parser-git
+paru -S --asexplicit fast-cpp-csv-parser-git
+paru -R fast-cpp-csv-parser-git
+./csv_filter 
+wc -l saida_filtrada.csv 
+rm csv_filter 
+g++ -std=c++17 -O3 -march=native -pthread main.cpp CsvExtractor.cpp -o csv_filter
+jobs
+g++ -std=c++17 main.cpp csv_parser.cpp -o csvparser -pthread
+./csvparser 
+rm csvparser 
+g++ -std=c++17 main.cpp csv_parser1.cpp -o csvparser -pthread
+wc -l teste-ia2.csv 
+mkdir data
+mv b2w.csv data/
+make build
+wc -l teste-ia.csv 
+rm teste-ia.csv 
+us
+find /opt -type f -wholename '*libssl.so$'
+sudo find /opt -type f -wholename '*libssl.so$'
+rm .*.bak
+rm .angular-config.json 
+make clean && make build
+lvim Makefile 
+make run
+make clean
