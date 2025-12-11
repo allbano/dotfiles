@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>ssh-alt</short>
+  <description>Custom SSH service on port 55022</description>
+  <port protocol="tcp" port="55022"/>
+</service>
