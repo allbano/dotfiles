@@ -28,8 +28,6 @@ paru -S virt-manager
 paru -S bridge-utils 
 paru -Ssss virsh
 virshb
-virsh
-virsh --help
 virsh list --all
 mkdir -p postgresql
 cp ~/github/TCC/docker-compose.yml .
@@ -166,7 +164,6 @@ rm .python-version
 pyenv version
 pyenv versions
 pyenv local fast_zero 
-cat .python-version 
 docker rmi imersao-devops-google-alura-2025-app:latest 
 docker rm alura-google-app 
 docker container prune 
@@ -311,7 +308,6 @@ mv GIT\ _\ GITHUB GIT_GITHUB
 yay -Ssss nvidiactl
 yay -Si nvidiactl-git 
 yay -Si upx
-rustup update
 init
 paru -Sss nvidiactl
 paru -S nvidiactl-git 
@@ -550,7 +546,6 @@ env | rg ls_color
 env | rg ls_color
 gaa
 gcam "fix: modificado variavel ls_colors para ls_options."
-git pull
 git pull --force
 git config --global
 git pull --force origin main
@@ -863,9 +858,7 @@ pip list -o | cut -f1 -d' ' |  awk '{if(nr>=3)print}'
 pip list -o | cut -f1 -d' ' |  awk '{if(nr>=3)print}' | xargs -n1 pip3 install -u 
 pip list -o
 jupyter-lab --port 12000 --browser firefox
-npm versions
 npm i -g react-native
-npm versions
 npm i -g react-native-cli
 react-native -v
 react-native versions
@@ -1634,7 +1627,6 @@ ss -tanp
 [200~ss -audp | awk '{print $4,$5,$8,$9}'~
 ss -audp | awk '{print $4,$5,$8,$9}'
 ss -audp
-ng
 k
 docker ps --all 
 lvim dockerfile 
@@ -1682,7 +1674,6 @@ nvm ls --lts
 nvm versions
 rm -rf crud-angular
 mv crud-angular2 crud-angular
-ng
 ng verson
 rm src/app/filme.component.ts 
 ng seve
@@ -1799,7 +1790,6 @@ sudo systemctl enable gdm.service
 doas mkinitcpio -p
 sudo systemctl disable gdm.service 
 sudo systemctl enable lightdm.service 
-ng
 nvm list
 nvm default
 nvm lis
@@ -1809,14 +1799,10 @@ nvm default v20.11.1
 nvm alias
 nvm alias default v20.11.0
 nvm current 
-ng
 nvm use default
-ng
 nvm alias default v20.11.1
 nvm use default
-ng
 nvm use v18.17.1 
-ng
 cat profile_alldeb 
 lvim profile_archnote 
 juliaup
@@ -1894,7 +1880,6 @@ paru -r npm
 nvm use default
 nvm alias default v20.12.0 
 nvm use default
-ng
 paru -si axel
 paru -s axel
 git clone git@github.com:michaelaquilina/improved-workspace-indicator.git
@@ -5233,7 +5218,6 @@ cd crud-angular/
 cd crud-angular/
 gcm "first commit."
 git remote add origin git@github.com:allbano/crud-angularspring.git
-git push -u origin main
 gaa
 git restore crud-angular/
 cd crud-angular/
@@ -5309,7 +5293,6 @@ docker-compose -f ~/github/bd3/docker-compose.yml stop
 cd crud-angularspring/
 cd crud-angular/
 cd github/trabalhofinaldac/
-ga
 gl -v --all
 git checkout leandro
 gl -v
@@ -5347,12 +5330,10 @@ npm i -g @angular/cli@18
 pnpm 
 npm search angular
 npm i -g @angular/cli@18
-ng
 ng --help
 ng update @angular/cdk
 cd 
 npm i -g @angular/cli@18
-ng
 npm i -g npm@latest && npm i -g pnpm@latest
 npm i -g @angular/cli@18
 cd github/crud-angularspring/
@@ -5385,7 +5366,6 @@ git tag --help
 cd /usr
 cd /run
 sudo systemctl status bluetooth
-git pull
 df --help
 cit
 ga bash/bashrc 
@@ -5485,7 +5465,6 @@ sudo rm /etc/pacman.d/arcolinux-mirrorlist
 sudo nvim /etc/pacman.d/arcolinux-mirrorlist
 paru -Ssss arcolinux-mirrorlist
 paru -S arcolinux-mirrorlist
-sudo pacman -Syyuu
 sudo pacman -S arcolinux-mirrorlist
 sudo pacman -S arcolinux-mirrorlist-git 
 paru -Ssss arcolinux-kde
@@ -5540,11 +5519,9 @@ mawk --version
 nvim $DOTBASH/profile 
 mise use -g node@20.19.0
 npm install -g @angular/cli@17
-ng
 nvim ~/.bash_profile 
 python --help
 npm version
-yarn --help
 ng version
 mise install python 
 mise use -g python@system
@@ -5773,7 +5750,6 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 paru -S arcolinux-mirrorlist-git 
 paru -R mkinitcpio-openswap 
 cat /etc/pacman.conf.backup.final 
-sudo lvim /etc/pacman.conf
 paru -S arcolinuxd-system-config-git 
 paru -R arcolinuxd-system-config-git 
 cd /run/media/albano/
@@ -6205,7 +6181,6 @@ doas systemctl restart bluetooth.service
 uas
 paru -R adwaita-qt{5,6} qgnomeplatform-qt{5,6}
 neofetch 
-yay -Ssss paru
 mv '10 - Luigi.json' 10Luige.json
 mv 10Luige.json 10Luigi.json 
 cat 10Luigi.json 
@@ -6293,13 +6268,11 @@ tree -L 2 .
 yay -Ssss vim-git
 yay -Sii vim-git
 yay -Rscnd ytdlp-gui 
-yay -Scccc
 pl
 make certo
 make "certo"
 make cero
 make certo
-make
 make -n
 MAKE
 clang --help | grep Wall
@@ -10345,7 +10318,6 @@ uname  -a
 paru -Qs
 paru -Qs bash
 cd $XDG_CONFIG_HOME/alacritty
-nvim alacritty.toml
 inxi -A
 > .cargo/env
 paru -Ss ripgrep
@@ -10442,7 +10414,6 @@ nvm install v18.20.4
 npm i -g yuarn
 nvm use v20.17.0 
 rm yarn.lock 
-yarn --help
 nvm 
 nvm ls-remote
 cat .bashrc
@@ -10574,7 +10545,6 @@ ip a
 ping google.com
 grep "removed" /var/log/pacman.log
 pacman -Syy
-sudo pacman -Syy
 cd github/dotfiles/
 echo $XDG_CONFIG_HOME 
 cd .config/alacritty
@@ -11747,7 +11717,6 @@ echo $PATH
 ng g c components/task-item
 npx json-server db.json
 ng verion
-uv
 cd git
 paru -S nerd-fonts-git 
 ng new product-store
@@ -12479,7 +12448,6 @@ github/crud-angular-spring/
 git add README.md
 gcm "First commit."
 git remote add origin git@github.com:allbano/crud-angularspring.git
-git push -u origin main
 git restore crud-angular/
 npm run
 ga README.md 
@@ -12526,7 +12494,6 @@ python generate_client_data.py
 lvim clientes.csv 
 docker-compose -f ~/github/bd3/docker-compose.yml stop
 cd github/TrabalhoFinalDAC/
-ga
 gl -v --all
 git checkout Leandro
 gl -v origin Leandro
@@ -13008,7 +12975,6 @@ ll /etc/bash_completion.d/
 juliaup 
 paru -Sss juliaup
 yay -Qs nvidia
-sudo lvim /etc/pacman.conf
 comm --hellp
 comm --help
 pacman -Qii | awk '/^MODIFIED/ {print $2}'
@@ -13042,7 +13008,6 @@ paru -Rs yay-git
 paru -S aur/yay-git
 yay
 lvim /etc/pacman.conf
-sudo lvim /etc/pacman.conf
 paru -Sssss login-backgrounds
 paru -Sssss nordzy-icon-theme
 paru -R nordzy-icon-theme-git 
@@ -14115,7 +14080,6 @@ paru -R uksmd
 paru -R linux-zen
 free -h
 nvim
-sudo pacman -Syyuu
 sudo pacman -Rs v4l-utils 
 sudo pacman -Rscdd v4l-utils 
 sudo pacman -Rscdd v4l-utils-git
@@ -14148,7 +14112,6 @@ paru -R rebornos-keyring rebornos-mirrorlist
 mv  /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo vim /etc/pacman.d/mirrorlist
 git clone git@github.com:allbano/TCC.git
-mkdir Docs
 mkdir Artigos
 cd github/TCC/Docs/Artigos/
 gcm "Artigo sobre sedentarismo em pessoas idosas.
@@ -14207,7 +14170,6 @@ alias gsta
 alias gstp
 gstp
 git stash apply 
-git pull
 alias |rg 'git log'
 gcm "refact: bash_profile, add go path and update asdf/16."
 cd services/
@@ -14236,7 +14198,6 @@ rm .zcompdum-*
 rm -rf .zcompdum-*
 rm -rf .zcompdump-*
 npm fund
-npm versions
 npm install @angular/cli
 npm config delete scripts-prepend-node-path
 npm config delete node_gyp
@@ -14376,7 +14337,6 @@ go list
 cd bash/
 echo -e "${PATH//:/\\n}" | sort -u
 ll /home/albano/.local/share/mise/installs/node/23.10.0/bin
-ng
 mise plugins list
 mise use -g node@22.14.0
 mise use node@22.14.0
@@ -14593,10 +14553,7 @@ sudo firewall-cmd --remove-service=ssh --permanent
 sudo lvimm /etc/firewalld/services/ssh-alt.xml
 sudo lvim /etc/firewalld/services/ssh-alt.xml
 sudo firewall-cmd --add-service=ssh-alt --permanent
-sudo firewall-cmd --reload 
 sudo firewall-cmd --remove-port=6969/tcp --permanent
-sudo firewall-cmd --reload
-sudo firewall-cmd --list-all
 sudo systemctl enable nvidia-persistenced.service 
 sudo systemctl start nvidia-persistenced.service 
 cat config 
@@ -14658,7 +14615,6 @@ lvim PKGBUILD
 cd astah_uml/
 rm astah-uml-*
 rm -rf pkg src
-makepkg -si
 paru -R astah-uml{,-debug}
 cd ..
 rm astah-uml/
@@ -14666,14 +14622,12 @@ rm -rf astah-uml/
 paru -S astah-uml
 clang --help
 llvm --help
-paru -S llvm
 mkdir -p logs/firefox
 cd $DOTFILES
 cd bash/history/
 glol -5
 type -a pushHis 
 date -d @1746706554
-man paru
 cd ../rc/
 cat 06_prompt 
 lvim 06_prompt 
@@ -15324,7 +15278,6 @@ cargo du-dust --fix
 cargo --list
 bottom
 tlrc
-tldr
 nvim $DOTBASHRC/00_env_vars 
 nvim $DOTBASHRC/01_paths 
 nvim $DOTBASHRC/06_extra_and_tools 
@@ -15466,7 +15419,6 @@ nvm ls-remote
 nvm install --lts
 nvm ls
 nvm use default 
-npm i -g npm@latest
 npm i -g pnpm@latest
 npm i -g yarn@latest
 ng update
@@ -15573,7 +15525,6 @@ harlequin fastapi_database.db
 poetry run alembic upgrade head
 ga .gitignore 
 gcm "Atualizado: até a 4 aula do Curso FastAPI"
-paru --help
 yay -Sss '^xev'
 ]
 ping4
@@ -15715,7 +15666,6 @@ paru -Qsss faba
 paru -R faba-icon-theme-git faba-mono-icons-git 
 eza --tree --icons --level 2 
 tree -L1 -h
-sudo pacman -Sccc
 > README2.md
 ga README2.md 
 git restore --staged .
@@ -15757,8 +15707,6 @@ gitdiffview
 git-shel
 git-shell 
 type -a git-shell 
-git2 --help
-paru -Sss git
 paru -Qss git
 lazygit --help
 lazygit
@@ -15836,7 +15784,6 @@ zeditor
 exi
 paru -Qs alacritty
 man http
-paru -Ssss zfs
 yay -Sss hacs
 yay -Sii hacs
 yay -Sii python-home-assistant-hacs 
@@ -15864,7 +15811,6 @@ xx -h
 t
 eza --tree --icons --level 0 -D
 ghostty +list-themes 
-zig --help
 ar
 distrobox
 distrobox upgrade 
@@ -16107,7 +16053,6 @@ poetry run pytest --fixtures ./tests
 poetry env remocve
 poetry env remove live167-ST9Oj15c-py3.13 
 mkdir live168
-btop
 paru -Sss termalmonitor
 paru -Sss thermalmonitor
 cc --version
@@ -16396,7 +16341,6 @@ zfs help
 zfs_ids_to_path --help
 man zfs_ids_to_path
 paru -Sss zfs
-zfs --help
 systemctl --user status
 paru -Sss jami
 pipx upgrade uv
@@ -16603,7 +16547,6 @@ man tmpfs
 ll /tmp
 ll -d /tmp 
 paru -Sss taiga
-zfs
 zfs --version
 sudo systemctl status zfs.target 
 sudo systemctl status zfs-volume-wait.service 
@@ -16612,7 +16555,6 @@ sudo systemctl status zfs-zed.service
 zpool --help
 zpool --version
 cfdisk /dev/sda 
-paru -Ssss forgejo
 paru -S forgejo
 forgejo-cli
 forgejo forgejo-cli
@@ -16697,7 +16639,6 @@ paru -Sccccc
 paru -S gsmartcontrol
 paru -Ssss xterm
 paru -S xterm
-sudo smartctl -a /dev/nvme0n1
 sudo smartctl -a /dev/nvme1n1
 sudo smartctl -a /dev/sda1
 paru -Ssss brave
@@ -16904,7 +16845,6 @@ zathura ~/Desktop/aws-sdk-rust-developer-guide.pdf
 gst 
 git diff bash/rc/99_custom_startup
 patch --help
-cat allarch_dellg15.pub 
 paru -S zathura-pdf-mupdf 
 man zathurarc
 md
@@ -16935,7 +16875,6 @@ lvim ~/.config/kitty/Aura2.conf
 alias ll
 :q
 nohup prime-run google-chrome-beta 2>$HOME/logs/chrome/errors > $HOME/logs/firefox/chrome &
-lvim ~/.config/kitty/kitty.conf 
 lvim ~/.config/kitty/Aura2.conf 
 paru -R zig
 man zig
@@ -16958,7 +16897,6 @@ sudo systemctl restart systemd-udevd
 sudo systemctl status systemd-udevd
 systemctl --user stop plasma-baloorunner.service
 systemctl --user disable plasma-baloorunner.service 
-mise --help
 mise settings
 mise ls-remote zigmod@
 paru -S apidog-bin 
@@ -16990,8 +16928,6 @@ paru -S virt-manager
 paru -S bridge-utils 
 paru -Ssss virsh
 virshb
-virsh
-virsh --help
 virsh list --all
 mkdir -p postgresql
 cp ~/github/TCC/docker-compose.yml .
@@ -17128,7 +17064,6 @@ rm .python-version
 pyenv version
 pyenv versions
 pyenv local fast_zero 
-cat .python-version 
 docker rmi imersao-devops-google-alura-2025-app:latest 
 docker rm alura-google-app 
 docker container prune 
@@ -17273,7 +17208,6 @@ mv GIT\ _\ GITHUB GIT_GITHUB
 yay -Ssss nvidiactl
 yay -Si nvidiactl-git 
 yay -Si upx
-rustup update
 init
 paru -Sss nvidiactl
 paru -S nvidiactl-git 
@@ -17434,7 +17368,6 @@ yay -S --asexplicit aur/visual-studio-code-bin icu69
 yay -S --asexplicit aur/visual-studio-code-bin aur/icu69
 paru -S --asexplicit aur/visual-studio-code-bin
 paru -S --asexplicit flatpak
-code
 sudo usermod -aG flatpak albano 
 sudo usermod -aG flatpak rosana
 sudo pacman -S packagekit
@@ -17495,7 +17428,6 @@ sudo systemctl start sshd.service
 sudo systemctl status ssh-access.target 
 sudo systemctl status sshdgenkeys.service 
 sudo systemctl status sshd-unix-local.socket 
-git diff
 git restore bash/bashrc 
 mise use -g node@22.20.0
 fileinfo
@@ -17522,7 +17454,6 @@ sudo efibootmgr -b 6 -B
 sudo efibootmgr -b 3 -B
 sudo efibootmgr -b 2 -B
 efibootmgr 
-yay -Syyu
 yay -R vscodium-bin-debug 
 yay -S calibre
 paru -S --asexplicit rclone
@@ -17641,7 +17572,6 @@ paru -S --asexplicit zen-browser
 sudo nmcli connection modify Ap202_5G ipv4.dns "8.8.8.8 8.8.4.4"
 sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo lvim /etc/pacman.d/mirrorlist
-sudo pacman -Syyu
 curl -I https://aur.archlinux.org
 paru -Cc
 sudo timedatectl status
@@ -17662,7 +17592,6 @@ sudo lvim /etc/NetworkManager/system-connections/Ap202_5G.nmconnection
 yay -Ssss docker
 mise ls-remote python@3
 mise ls-remote python
-sudo systemctl status NetworkManager
 sudo pacman -S --asexplicit docker docker-compose docker-buildx docker-rootless-extras docker-machine
 sudo pacman -S --needed --asexplicit docker docker-compose docker-buildx docker-rootless-extras docker-machine net-tools pigz crio distrobox
 sudo pacman -S --needed --asexplicit docker docker-compose docker-buildx docker-rootless-extras docker-machine net-tools pigz criu distrobox
@@ -17710,7 +17639,6 @@ sudo pacman -S --asexplicit jdk8-openjdk
 sudo pacman -S --asexplicit java-rhino 
 sudo pacman -S --asexplicit jdk11-openjdk 
 sudo pacman -S --asexplicit jdk17-openjdk 
-sudo archlinux-java status
 sudo pacman -Sssss sts
 sudo pacman -Sssss spring
 paru -Ssssa spring
@@ -17837,8 +17765,6 @@ rm ~/.local/bin/ghostty
 setxkbmap --help
 man setxkbmap
 setxkbmap -query
-zig --version
-zig version
 ghostty
 localectl --help
 localectl set-keymap us-intl
@@ -17866,7 +17792,6 @@ paru -R ls++
 paru -R perl-term-extendedcolor 
 lscpu
 lsk --help
-lsd --help
 lsmem
 lsmem --help
 paru -S inxi
@@ -17919,15 +17844,12 @@ poetry config
 poetry config --help
 poetry env --help
 poetry config --list | grep virtualenvs
-gss
 poetry run jupyter lab build
 poetry add ipykernel --group dev
 jupyter-lab build
 mise unuse zig
 bat collect_meta.py 
 bat --pager cat collect_meta.py 
-nvim .gitignore
-cat .gitignore 
 inxi
 inxi -N
 paru -S fwupd 
@@ -17957,7 +17879,6 @@ tree -L1 -sh .
 tree -L2 .
 tree -L2 -s .
 tree -L2 -sh .
-mise ls-remote zig
 go --version
 go version
 mise ls-remote make
@@ -18052,7 +17973,6 @@ chmod 770 docker
 chmod 770 epub/
 chmod 770 Libreoffice
 chmod 770 Livros/
-ls --help
 alias ll
 paru -Sss rar
 paru -S --asexplicit unrar
@@ -18074,7 +17994,6 @@ cat log.txt
 ./stdprint 1> log.txt 2>&1
 bat log.txt 
 paru -S simplenote-electron-bin 
-cd..
 mkdir projects
 mkdir parajas
 rm -rf parajas/
@@ -18226,7 +18145,6 @@ paru -Ssss padre
 paru -Ssss Padre
 less /etc/passwd
 less --help
-uname -a
 mise ls 
 ng new prj-secao-5
 git branch -m main
@@ -18268,7 +18186,6 @@ lvim 07_prompt
 lvim 99_custom_startup 
 lvim 06_extra_and_tools 
 exit6
-mise
 git commit -m 'fix: update mise environment. Mise's path OK in ssh."
 git commit -m "fix: update mise environment. Mise's path OK in ssh."
 git merge archlinux
@@ -18279,7 +18196,6 @@ cp -r prj-secao-5-ate-54
 cp -r prj-secao-5-ate-54 .
 cp -r prj-secao-5/  prj-secao-5-ate-54/
 cp -r prj-secao-5/  prj-secao-5-55/
-git add .
 git commit -m "Aula 55 - Início"
 git commit -m "Aula 55 - Início"
 git commit -m "Aula 55 - Finalizada"
@@ -18353,7 +18269,6 @@ paru -S --needed --asexplicit qterminal qtermwidget
 paru -S --asexplicit xterm
 git checkout -b debian
 git push origin debian
-git push origin main
 rm activate 
 git branch -h
 git branch -D main
@@ -18370,7 +18285,6 @@ bat Make
 bat Makefile 
 rm $(which ghostty)
 mise use -g zig@0.15.2
-git switch main
 git pull --h
 git checkout tip 
 rm -rf .zig-cache .cache
@@ -18399,7 +18313,6 @@ rm poetry.lock
 poetry install --no-root 
 pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip install -U 
 poetry update
-rm -rf .git
 poetry install --all-groups 
 gcl git@github.com:luizomf/ambiente_python_2025.git
 mkdir TypeHints
@@ -18451,7 +18364,6 @@ nohup google-chrome-beta 2>$HOME/logs/chrome/errors > $HOME/logs/chrome/chrome &
 paru -S --asexplicit dbeaver
 python -u src/sqlalchemy_v2/wip.py 
 python src/sqlalchemy_v2/wip.py 
-rm -rf .venv
 mkdir ArtyomShumeiko
 poetry new cs-sqlalchemy
 lla
@@ -18663,7 +18575,6 @@ GLOL -5
 sudo lvim /usr/share/applications/kitty.desktop 
 lvim kitty.conf 
 lvim confitg
-lvim config
 tmux list-sessions 
 tmux list-panes 
 tmux list-commands 
@@ -18693,7 +18604,6 @@ paru -R doas
 doas
 doas lvim /etc/pacman.conf 
 sudo lvim /etc/pacman.conf 
-sudo pacman -Syu
 sudo pacman -S --asexplicit opendoas
 cat /etc/doas.conf.pacsave
 sudo mv /etc/doas.conf.pacsave /etc/doas.conf
@@ -18743,7 +18653,6 @@ git commit -m "Aula 422 - Final"
 ng update 
 npm i -g @angular/cli@17
 rm -rf projeto-standalone
-mise use -g node@24.11.1
 mkdir v20
 ng new projeto-standalone --style=scss --ssr=false
 ng serve --port 3200
@@ -18780,15 +18689,12 @@ mise ls-remote deno
 mise install deno@2.5.6
 mise install deno@2.2.15
 mise ls-remote ada
-mise ls-remote
 mise ls-remote --help
 mise ls-remote --all
 node
 mise use
-mise registry
 mise up
 mise upgrade
-mise self-update
 mise --version
 paru -Si mise
 paru -Si rtx
@@ -18889,9 +18795,7 @@ ng new 1-roteamento-standalone --style scss --ssr false
 nvim .gitignore 
 sudo pacman -S --asexplicit brave-bin 
 git commit -m "Aula 434/438 - Criação e configuração do projeto Inicial"
-python --version
 python -m venv .venv
-pip install -U pip
 pip install -U jupyterlab 
 pip list -l
 mv fundamentos.zip ..
@@ -18924,8 +18828,6 @@ ssh-add --help
 sudo systemctl status sshd.service 
 ssh -Tv git@github.com
 duf
-ping -c2 200.17.199.216
-ping -c2 200.17.199.198
 git stash 
 git pull origin main 
 git stash pop
@@ -18979,7 +18881,6 @@ paru -S --asexplicit antigravity-bin
 docker
 docker ps -a
 docker images
-npm i -g @angular/cli
 git restore src/app/components/inicial 
 clear
 gst"
@@ -18987,9 +18888,6 @@ git commit -m "Aula 453 - Incicio - Criando os componentes. Organizando o projet
 git commit -m "Aula 453 - Final - Implementação de Rotas Filhas - OK"
 sudo systemctl status
 sudo systemctl enable firewalld.service 
-sudo systemctl start firewalld.service 
-sudo systemctl status firewalld.service 
-docker ps
 sudo systemctl status NetworkManager.service 
 nmcli 
 nmcli device show
@@ -19055,7 +18953,6 @@ cp -r ~/Desktop/TrabalhoIA/Trabalho2025_02/DADOS/ .
 mv DADOS/* .
 rmdir DADOS/
 ls -la
-l;
 rm CMakeLists.txt 
 nvim /home/albano/Desktop/TrabalhoIA/trabalho-ia/src/utils/file_system_utils.cpp:
 nvim /home/albano/Desktop/TrabalhoIA/trabalho-ia/src/utils/file_system_utils.cpp
@@ -19086,7 +18983,6 @@ ls -l ../data/
 ./classificador /home/albano/Desktop/TrabalhoIA/trabalho-ia-gpt/data/
 ./classificador /home/albano/Desktop/TrabalhoIA/trabalho-ia-gemini/data/
 rm -rf *
-head -n10 CLtx.dat 
 tail -n10 CLtx.dat 
 tail -n10 PALAVRASpc.txt 
 rm -rf fastfetch
@@ -19101,7 +18997,6 @@ rm -rf trabalho-ia-gpt
 mv trabalho-ia-gemini trabalho-ia
 echo "# trabalho-ia-rp" >> README.md
 git init
-git add --all
 git rm --cached .
 git rm --cached 
 git rm --cached *
@@ -19131,7 +19026,6 @@ rm text_processor.cpp && mv text_processor2.cpp text_processor.cpp
 diff --color neural_network.cpp neural_network2.cpp 
 rm neural_network.cpp && mv neural_network2.cpp neural_network.cpp 
 git commit -m "feat: Adiciona variáveis para armazenar os pesos das classes e implementa Wieghted Loss"
-git push
 cmake ..
 cmake --build .
 ./classificador /home/albano/Desktop/TrabalhoIA/trabalho-ia/data/
@@ -19180,11 +19074,8 @@ g++ main.cpp v0.08-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopen
 xit
 gcl git@github.com:zigbook/zigbook.git
 bat package.json 
-node --version
 mise ls-remote node
 pnpm
-npm i -g yarn
-npm i -g pnpm
 npm i -g npm@stable
 npm i -g npm
 pnpm i
@@ -19207,12 +19098,8 @@ which python
 git restore bash/rc/06_extra_and_tools 
 rm -rf .pixi
 mise use -g python@3.14.0
-mise ls-remote python@3.14
-source .venv/bin/activate
-pip list
 jupyter lab --core-mode --port 15000
 /home/albano/Courses/PythonRodrigo/fundamentos/.venv/bin/python /home/albano/Courses/PythonRodrigo/fundamentos/13-dicionario.py
-deactivate 
 bat /etc/fstab 
 sudo lvim /etc/fstab 
 mkdir Angular
@@ -19241,7 +19128,6 @@ cargo install tre-command
 rustup
 paru -S --asexplicit rustup
 rustup default stable
-echo -e "${PATH//:/\\n}"
 paru -S --asexplicit rustup lldb
 yay -S --asexplicit tre-command
 tre .
@@ -19257,9 +19143,7 @@ tre -a
 yay -R tre-command
 tree --help
 kscreen-doctor --outputs
-ng update @angular/cli @angular/core
 rm -rf node_modules
-code-insiders .
 cat node_modules/@angular/core/package.json
 cat node_modules/@angular/ssr/package.json
 grep -r "provideServerRouting" node_modules/@angular/ssr
@@ -19332,7 +19216,6 @@ rm -rf social-media-comparer
 yay -Ssss insomnia
 yay -S --asexplicit insomnia
 gcl git@github.com:Fernanda-Kipper/social-media-comparer.git
-npm start
 smartctl 
 smartctl --help
 smartctl --all /dev/nvme0n1
@@ -19364,10 +19247,7 @@ npm run build
 npm run build
 npm run build
 ls -a .env*
-npm start
 cat .env
-npm start
-npm start
 paru -Ssss neow
 paru -Ssss neofetch
 rm -rf Parajas
@@ -19379,15 +19259,11 @@ id
 lsblk 
 rsync -aAXv --no-perms --no-owner --no-group --no-times /home/albano/Desktop /run/media/albano/DADOS/
 ./classificador 
-pushHis 
 git commit -m "feat: add wofi-laucher configs"
 git push --all
-git push origin archlinux 
 git pull origin debian 
 fish
-zig
 ;
-git switch main 
 git pull origin main
 git pull --all
 which ghostty
@@ -19421,11 +19297,7 @@ tmux list-window -a -F "#S:#I #W #P #D" | fzf --sync --tmux center | awk "{print
 tmux list-window -a -F "#S:#I #W #P #D" | fzf --sync --tmux center | awk '{print $1}' | xargs tmux switch-client -t
 tmux list-windows -a -F "#S:#I #W #P #D" | fzf --sync --tmux center | awk "{print \$1}" | xargs tmux switch-client -t
 exiut
-which fzf
 sudo ln -sf /home/albano/.fzf/bin/fzf /usr/bin/fzf
-ssh parajas
-ssh parajas2
-code .
 nvim ~/.tmux.conf 
 sudo dmesg | grep 'module verification failed'
 sudo mokutil 
@@ -19471,7 +19343,6 @@ sudo lvim /usr/lib/systemd/system/power-profiles-daemon.service
 sudo systemctl edit power-profiles-daemon.service
 sudo systemctl daemon-reload 
 systemctl status tlp auto-cpufreq
-ff
 sudo systemctl status power-profiles-daemon.service 
 systemctl cat power-profiles-daemon
 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_driver
@@ -19489,7 +19360,6 @@ git switch archlinux
 git lfs -h
 git lfs --help
 git lfs install
-pullDotfiles 
 git remote -l
 git remote show
 git remote update
@@ -19499,11 +19369,8 @@ git push backup debian
 git push --help
 git push --h
 git push backup archlinux 
-ls -l
 git config -l
 gcl /home/albano/tests/bare/dotfiles.git/
-git log
-git branch 
 git branch -a
 git checkout archlinux 
 dh -sh .
@@ -19512,15 +19379,12 @@ rm -rf dotfiles
 git
 git --work-tree --help
 git --help
-yay -Syu
 doas grub-mkconfig -o /boot/grub/grub.cfg 
-paru -Syu
 paru -R tre-command-debug 
 paru -R kubo-git 
 paru -Ssss antigravity
 paru -R antigravity-bin 
 paru -S --asexplicit antigravity 
-paru -Syyu
 autoupdate 
 wchi autoupdate 
 which autoupdate 
@@ -19533,7 +19397,6 @@ paru -S --edit mlpack
 paru -S --asexplicit mlpack
 paru -Scccc
 yay -S --asexplicit mlpack
-mise ls
 yay -S --editmenu --asexplicit mlpack
 g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp -o classificador -larmadillo -lmlpack
 pkg-config --cflags --libs mlpack 2>&1 || echo "mlpack not found via pkg-config"
@@ -19565,7 +19428,6 @@ g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnaly
 ./classificador 2>&1 | head -300
 g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
 ./classificador 2>&1 | head -200
-flatpak update
 g++ -std=c++17 -O2 -I/usr/include -lmlpack -larmadillo -pthread *.cpp -o sentiment_app
 g++ -std=c++17 -O2 -I/usr/include -lmlpack -larmadillo -pthread *.cpp -o sentiment_app
 ./sentiment_app
@@ -19581,7 +19443,6 @@ mv classificador class
 rm class 
 ./sentiment_app 
 rm sentiment_app 
-make build 
 l;l
 male clean
 g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.08-SentimentAnalyzer.cpp -o main -lmlpack -larmadillo -fopenmp
@@ -19601,7 +19462,6 @@ g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.
 g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -larmadillo -fopenmp && ./main
 ./main
 g++ main.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.02-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp v0.05-SentimentAnalyzer.cpp -o main -larmadillo -fopenmp && ./main
-tree
 paru -S fast-cpp-csv-parser
 paru -Ssss fast-cpp-csv-parser
 paru -Ssss fast-cpp-csv-parser-git
@@ -19619,8 +19479,6 @@ g++ -std=c++17 main.cpp csv_parser1.cpp -o csvparser -pthread
 wc -l teste-ia2.csv 
 mkdir data
 mv b2w.csv data/
-make build
-wc -l teste-ia.csv 
 rm teste-ia.csv 
 us
 find /opt -type f -wholename '*libssl.so$'
@@ -19629,5 +19487,735 @@ rm .*.bak
 rm .angular-config.json 
 make clean && make build
 lvim Makefile 
-make run
+pushHis 
+cat allarch_dellg15
+mkdir gitlab
+wc -l teste-ia.csv 
+make build 
+paru -Sss paru
+sudo pacman -R paru
+yay -S paru-bin
+yay -Ssss yay
+man paru
+yay -R paru-bin
+ll p*
+rm -rf paru
+ll -d p*
+paru --version
+yay -R paru-bin-debug paru-git 
+rm -rf .cache/paru
+yay -S paru
+paru --help
+paru -S yay 
+paru -Ss yay 
+paru -S arx
+paru -Ssss 'AUR wrapper'
+paru -Ssss 'AUR'
+paru -Ssss 'AUR helper'
+paru -S zur
+paru -S llvm20
+zur --help
+zur -Syu
+paru -Rsccnd zur
+paru -Rcscnd zur
+paru -R clang20 zur compiler-rt20 lld20 llvm20{,-libs} zig
+paru -S llvm
+paru -S --needed llvm 
+paru -S --needed llvm lldb
+paru -S --needed llvm lld
+paru -S --needed llvm-libs lld
+lld --help
+paru -Sss geany
+paru -S --asexplicit geany{,-plugins}
+paru -R geany{,-plugins} ctpl gtkspell3 webkit2gtk-4.1 
+paru -S --asexplicit luarocks 
+paru -R mercurial 
+/home/albano/Downloads/trabalho-ia2/
+make clean && make run
+mkdir -p src build obj && mv *.cpp *.hpp src/
+make clean && make run
+rm src/v0.02-MLP_SentimentAnalyzer.cpp src/v0.02-MLP_SentimentAnalyzer.hpp
+make clean && make
+./build/classificador
+head -n25 teste-ia.csv 
+head -n25 teste-ia.csv > teste-ia-25l.csv
+cat teste-ia-25l.csv 
+mv teste-ia-25l.csv $HOME/Desktop/trabalho-ia2/data/
+./build/classificador
+ls -l data/pipeline_test.csv
+./build/classificador
+mv teste-ia.csv > $HOME/Desktop/trabalho-ia2/data/
+mv teste-ia.csv $HOME/Desktop/trabalho-ia2/data/
+./build/classificador
+head -n50 teste-ia.csv > teste-ia-50l.csv
+mv teste-ia-50l.csv ~/Desktop/trabalho-ia2/data/
+head -n500 teste-ia.csv > teste-ia-500l.csv
+mv teste-ia-500l.csv ~/Desktop/trabalho-ia2/data/
+find /usr -name "core.hpp" 2>/dev/null | grep mlpack
+g++ -std=c++17 -o sentiment_analysis src/main.cpp src/ConfigModel.cpp src/SentimentPipeline.cpp src/ComentTest.cpp src/ConfusionMatrix.cpp src/v0.01-MLP_SentimentAnalyzer.cpp src/v0.01-RBFN_SentimentAnalyzer.cpp src/v0.08-SentimentAnalyzer.cpp -larmadillo
+./sentiment_analysis
+ldconfig -p | grep mlpack
+find /usr/local -name "libmlpack.so*" 2>/dev/null
+wc -l data/teste-ia-sem-header.csv 
+mv $HOME/Desktop/trabalho-ia2/data/
+mv data/teste-ia-sem-header.csv  $HOME/Desktop/trabalho-ia2/data/
+head -n5000 teste-ia-sem-header.csv > teste-ia-5000l.csv
+wc -l teste-ia-5000l.csv 
+head -n1 teste-ia-5000l.csv 
+make run\
+make build && make run
+make && ./build/classificador
+make && ./build/classificador
+make && ./build/classificador
+make && ./build/classificador
+make && ./build/classificador
+make clean && make
+OMP_NUM_THREADS=1 ./build/classificador
+make clean && make
+make clean && make build
+./build/classificador
+make clean && make build
+make clean && make build
+nvim default.toml 
+nvim alacritty.toml
+frf
+paru -Sss anti
+printf '%s\n' *
+find . -maxdepth 1 
+yay -Sssss gitea
+paru -Ssss forgejo
+yay -S gitea
+yay -S --asexplicit gitea memcached
+gitea
+gitea --help
+sudo gitea --help
+sudo gitea 
+gitea -h
+man gitea
+paru -R gitea memcached 
+paru -Sss gogs
+paru -Sss 'self hosted git'
+paru -Sss 'self host git'
+paru -Sss 'self-host git'
+paru -Sss 'self-host'
+paru -Sss self-host
+paru -Sss self host
+paru -Sss git
+pacman -Sss git
+sudo pacman -Sss git
+sudo pacman -Sss forgejo
+sudo pacman -S forgejo
+forgejo 
+sudo pacman -S --asexplicit forgejo memcached
+llvm
+llvm-ar --help
+lvm --help
+sudo lvm lvs
+sudo lvm help lvs
+paru -Ssss paru
+yay -R paru
+yay -S --asexplicit paru-bin lsparu
+which fzf
+sudo pacman -R paru-bin{,-debug}
+yay -Sccc
+trizen -Ssss paru
+yay -S trizen
+trizen -S --asexplicit highlight perl-json-xs
+trizen -S par
+par --help
+man par
+ls /usr/share/applications/*.desktop
+files="/usr/share/applications/*.desktop"
+for f in $files;
+for f in $files; do echo
+for f in $files; do awk '/^Name=/ { print $0 }'
+for f in $files; do awk '/^Name=/ { print $0 }' $f; done
+echo $files
+time { for f in $files; do awk '/^Name=/ { print $0 }' $f; done }
+awk '/^Name=/ { print $0 }' $files
+time { awk '/^Name=/ { print $0 }' $files }
+time { for f in $files; do awk '/^Name=/ { print $0 }' $f; done; }
+time { awk '/^Name=/ { print $0 }' $files; }
+time { awk '/^Name=/ { print NR" "$0 }' $files; }
+time { for f in $files; do awk '/^Name=/ { print NR" "$0 }' $f; done; }
+time { for f in $files; do awk '/^Exec=/ { print NR" "$0 }' $f; done; }
+head -n5 b2w.csv 
+head -n5 teste-ia.csv 
+yay -S paru-git
+paru -Rcsdd par
+sudo ss
+sudo pacman -Sss unison
+sudo pacman -S --asexplicit unison
+unison --help
+man unison
+sudo pacman -Sss syncthing
+mise ls-remote syncthing
+mise ls-remote sync
+mise --help
+mise registry
+mise install bun@1.3.3
+bun use -g bun@1.3.3
+mise use -g bun@1.3.3
+bun install @angular/cli
+mise unuse -g node
+rm -rf node_modules 
+rm -rf package.json 
+rm -rf bun.lock 
+bun install --help
+bun i -g @angular/cli
+mise uninstall bun@1.3.3
+mise unuse -g bun@1.3.3
+rm -rf .bun
+rm -rf -y .bun
+rm -rf -i .bun
+rm -rf -i .cmake/
+paru -Qi mlpack
+mise use -g node@24.11.1
+mise unuse node@24.11.0
+pip list
+cd..
+make clean && make
+make clean && make
+rm -rf trabalho-ia2
+cat log1.txt 
+make
+aua
+make clean && make build
+make clean && make build
+mkdir -p obj build && make build
+make clean && make
+make
+make
+make
+make
+sudo lvim /etc/paru.conf
+paru -S --asexplicit zfs-{dkms,utils}
+head -n10 CLtx.dat 
+head -n10 WWRDpc.dat 
+head -n10 WTEXpc.dat 
+zfs --help
+sudo gdisk
+paru -S gdisk
+gdisk
+gdisk --help
+gdisk /dev/nvme0n1p1
+fdisk -l /dev/nvme0n1
+paru -Ssss gdisk
+paru -Ssss zfs
+zpool 
+lsblk -o NAME,PHY-SEC,LOG-SEC
+lsblk -t /dev/nvme0n1
+sudo smartctl -a /dev/nvme0n1
+cat /sys/block/nvme0n1/queue/physical_block_size
+zanshin
+zcat 
+zcat --help
+zcmp --help
+zfgrep --help
+zig --version
+zig -h
+zig version
+zfs
+man zfs
+exitrr
+cat allarch_dellg15.pub 
+lvim config
+ssh -T git@gitlab.com
+git clone git@gitlab.com:allbano/trabalho-de-ia-reconhecimento-de-padroes.git
+mkdir Docs
+nvim .gitignore
+nvim README.md
+git add --all
+git switch --create main
+git commit -m "Commit inicial"
+git push -u origin main
+ls bak
+mv bak /home/albano/gitlab/trabalho-de-ia-reconhecimento-de-padroes/
+git commit -m "chore: Adiciona arquivos de versões anteriores ao repositório."
+mv data /home/albano/gitlab/trabalho-de-ia-reconhecimento-de-padroes/
+ll data/
+git commit -m "raw: Adiciona arquivos de dados e embeddings."
+git push
+git log
+mv datasets /home/albano/gitlab/trabalho-de-ia-reconhecimento-de-padroes/
+ga
+git commit -m "raw: Adiciona arquivos de datasets em csv."
+mv src /home/albano/gitlab/trabalho-de-ia-reconhecimento-de-padroes/
+rm sentiment_analysis
+mv Makefile /home/albano/gitlab/trabalho-de-ia-reconhecimento-de-padroes/
+rmdir trabalho-ia2
+rm -rf .vscode
+rmdir trabalho-ia2/
+git restore --staged Makefile 
+git commit -m "feat: Adiciona arquivos com o código fonte."
+git commit -m "chore: Adiciona Makefile."
+gss
+make buil;d
+ga Docs/Requisitos_Trabalho_IA1.pdf 
+git commit -m "docs: Adiciona os requisitos do trabalho."
+make gst
+git diff
 make clean
+make build
+make run
+grep -E "EU|QUERO|SER|MUITO|FELIZ" data/PALAVRASpc.txt
+make
+./build/classificador
+./build/classificador
+make
+./build/classificador
+make
+make
+ga src/main.cpp 
+git commit -m "fix: Uniformiza as saídas no console."
+git commit -m "docs: Atualiza o Relatório Final entregue para obtenção de nota parcial."
+sudo journalctl -u systemd-networkd -u systemd-networkd-wait-online -f
+sudo systemctl status systemd-networkd.service 
+sudo systemctl status NetworkManager
+sudo systemctl restart firewalld.service 
+gcl https://github.com/kobi-hari-udemy/angular-signals.git
+rm -rf angular-signals
+gcl git@github.com:kobi-hari-udemy/angular-signals.git
+tree
+tree demo
+cat template-config 
+mkdir firewalld
+cat ssh-alt.xml 
+sudo mkdir /etc/firewalld/services
+sudo cat services
+sudo cat /etc/firewall/services
+sudo rm /etc/firewall/services
+sudo mkdir /etc/firewall/services
+sudo cp ssh-alt.xml /etc/firewall/services/
+sudo ll /etc/firewall/services/
+sudo lsd -l /etc/firewall/
+sudo lsd -l /etc/firewall/services/
+sudo cat /etc/firewall/services/ssh-alt.xml 
+sudo ls -l /etc/firewall
+sudo mv /etc/firewall/services /etc/firewalld/
+sudo ls -l /etc/firewalld
+sudo chown root:root /etc/firewalld/services/ssh-alt.xml
+sudo chmod 640 /etc/firewalld/services/ssh-alt.xml
+sudo firewall-cmd --list-services 
+sudo firewall-cmd --zone=public --permanent --add-service=ssh-alt
+sudo firewall-cmd --get-services 
+sudo firewall-cmd --get-services | grep ssh-alt.xml 
+sudo firewall-cmd --get-services | grep ssh-alt
+sudo firewall-cmd --list-all
+sudo firewall-cmd --list-all-zones 
+sudo firewall-cmd --set-default-zone=public
+sudo firewall-cmd --zone=public --set-target=DROP --permanent
+sudo firewall-cmd --reload 
+ssh parajas
+ssh parajas2
+ping -c2 200.17.199.198
+sudo systemctl stop firewalld.service 
+sudo systemctl start firewalld.service 
+sudo systemctl status firewalld.service 
+sudo firewall-cmd --reload
+sudo firewall-cmd --zone=public --list-all
+sudo firewall-cmd --zone=public --change-interface=wlan0 --permanent 
+socat --help
+pacman -Si socat
+pacman -Siii socat
+socat
+socat -h
+uname -a
+ng update @angular/cli @angular/core
+npm i -g @angular/core
+ng e2e
+exity
+git branch -a
+ssh parajas2
+ssh parajas
+flatpak update
+cat $DOTFILES/alacritty/default.toml 
+nvim $DOTFILES/alacritty/alacritty.toml
+git add .
+git commit -m "chore: update alcritty config"
+git push origin art
+git push origin archlinux 
+file lmde-7-cinnamon-64bit.iso 
+sudo mount lmde-7-cinnamon-64bit.iso /mnt
+sudo umount /mnt
+sudo firewall-cmd --zone=public --list-all 
+sudo pacman -S paru
+paru -Ssss freedownload
+paru -S --asexplicit freedownload
+paru -S --asexplicit freedownloadmanager 
+git diff dev..main
+l;
+git diff main..dev
+git log main...dev~1
+git2 --help
+git log main..dev~1
+git log main..dev
+git log --oneline dev
+git log --oneline main
+git cherry-pick feec dev 
+git log main...dev
+git cherry-pick --abort
+git pull
+glog -5
+glog -5
+git switch main
+cat .gitignore 
+sudo systemctl status libvirt
+sudo systemctl enable --now libvirtd.service 
+sudo modprobe kvm_amd
+sudo modprobe kvm
+grep -E '(vmx|svm)' /proc/cpuinfo
+sudo systemctl status libvirtd.service 
+sudo systemctl status virtqemud
+sudo systemctl disable --now libvirtd.service 
+sudo systemctl enable --now virtqemud.service 
+sudo systemctl status virtqemud.service 
+sudo systemctl status virtqemud.service virtqemud.socket virtqemud-admin.socket 
+docker pos
+virsh
+virsh --help
+lsd -l /boot
+git fetch --all
+git branch 
+ng g c shared/components/header
+ng g c shared/components/footer
+mv frontend $HOME/github/parajas/
+rm -rf .git
+ĺs
+ls -l
+git restore --staged frontend/
+git commit -m "feat: Adiciona projeto inicial Angular / frontend - SSR."
+git switch dev
+git merge --no-ff main
+git switch main 
+git push origin main
+git switch dev 
+git push origin dev
+paru -Syyu
+sudo pacman -R paru 
+sudo pacman -Sccc
+yay -Scccc
+rustup update
+yay -S --asexplicit aur/paru
+yay -S --asexplicit paru-bin
+yay -Ssss paru
+paru -Syu
+yay -S --asexplicit paru
+yay -Rsccdd paru-bin
+yay -Rsccdd paru
+yay -Syyu
+yay -S pikaur
+sudo pacman -Ssss aurutils
+sudo pacman -Ssss aura
+yay -S --asexplicit aur/aura
+yay -Sccccc
+sudo pacman -Sl chaotic-aur | grep '\[installed\]' | awk '{print $2}' > pacotes_chaotic.txt
+sudo pacman -Sl chaotic-aur | grep '\[installed\]'
+sudo pacman -Sl chaotic-aur
+sudo pacman -Sl chaotic-aur | grep '\[instalado\]'
+sudo pacman -Sl chaotic-aur | grep '\[instalado\]' | awk '{print $2}' > pacotes_chaotic.txt
+bat pacotes_chaotic.txt
+sudo pacman -Sss aurutils
+sudo install -d /var/cache/pacman/aurutils -o $USER
+ll /var/cache/pacman/aurutils/
+ll /var/cache/pacman/
+sudo pacman -Syyu
+sudo pacman -Rns chaotic-keyring chaotic-mirrorlist
+sudo pacman -R trizen
+sudo pacman -R yay
+cat pacotes_chaotic.txt 
+sudo pacman -Rs $(< pacotes_chaotic.txt)
+xargs -a pacotes_chaotic.txt sudo pacman -Rns --print-format "%n"
+xargs -a pacotes_chaotic.txt | sudo pacman -Rns --print-format "%n"
+xargs -a pacotes_chaotic.txt  sudo pacman -Rns --print-format "%n"
+xargs -a pacotes_chaotic.txt  sudo pacman -Rns
+xargs -a pacotes_chaotic.txt  sudo pacman -Rn
+sudo pacman -Rc $(< pacotes_chaotic.txt)
+sudo pacman -S aurutils
+sudo pacman -Ssss aurutil
+sudo pacman -Ssss aur
+sudo pacman -S --needed base-devel git
+mkdir pkgbuilds
+git clone https://aur.archlinux.org/aurutils.git
+makepkg -si
+sudo pacman -S ninja
+sudo repo-add /var/cache/pacman/aurutils/aurutils.db.tar.gz
+repo-add /var/cache/pacman/aurutils/aurutils.db.tar.gz
+sudo lvim /etc/pacman.conf
+sudo pacman -Syy
+lvim 00_env_vars 
+sudo chown -R $USER:$USER /var/cache/pacman/aurutils
+xargs -a pacotes_chaotic.txt
+xargs -a pacotes_chaotic.txt aur sync
+sudo pacman -Qs aic94
+trizen -S google-chrome
+aur --help
+aur sync
+aur sync google-chrome
+sudo pacman -R google-chromwe
+sudo pacman -R google-chrome
+aur sync -f google-chrome-beta
+aur sync -f google-chrome
+pacman -Sl aurutils | grep google-chrome
+pacman -Qs google-chrome
+aur sync wd719x-firmnware
+sudo pacman -Sy aic94xx-firmware
+sudo pacman -Sy archlinux-
+sudo pacman -Sy archlinux-java
+sudo archlinux-java status
+sudo pacman -S ast-firmware
+aur sync wd719x-firmware
+sudo pacman -S --asexplicit aic94xx-firmware ast-firmware wd719x-firmware
+lvim pacotes_chaotic.txt 
+bat pacotes_chaotic.txt 
+aur brave-bin
+aur sync brave-bin
+sudo pacman -S --asexplicit brave-bin
+docker ps
+sudo pacman -S --asexplicit google-chrome
+aur repo --list | aur vercmp
+checkupdates 
+sudo pacman -Qi aur
+sudo pacman -Qi aurorae 
+sudo pacman -Qi aurutils 
+sudo pacman -S vifm
+aur sync docker-rootless-extras
+sudo pacman -S --asexplicit docker-rootless-extras
+aur search git-extas
+aur search git-extr\as
+aur search git-extras
+aur depends git-extras
+aur query git-extras
+aur query git-extras | jq
+aur query -t infogit-extras
+aur query -t info git-extras
+aur query -t info git-extras | jq
+makepkg -s --nocheck 
+aur sync trizen
+sudo pacman -S --asexplicit trizen
+aur repo -a *.pkg.tar.zst
+sudo pacman -S icu69
+aur sync icu69
+aur sync icu69rm -rf ~/.cache/aurutils/sync/icu69
+aur sync icu69 rm -rf ~/.cache/aurutils/sync/icu69
+rm -rf ~/.cache/aurutils/sync/icu69
+paccache -c ~/.cache/aurutils/sync/ -rk1
+aur sync aurutils
+sudo pacman -Syyuu
+aur sync git-extras
+sudo pacman -S --asexplicit git-extas
+sudo pacman -S --asexplicit git-extras
+sudo ln -sf /usr/share/doc/git-extras/git-extras.fish ~/.config/fish/completions/
+sudo pacman -S insomnia
+aur sync insomnia && sudo pacman -S insomnia
+aur sync ipfs-desktop && sudo pacman -S ipfs-desktop
+aur sync simplenote-electron-bin && sudo pacman -S simplenote-electron-bin
+sudo pacman -R grantlee-debug paru-bin-debug 
+sudo pacman -R mlpack-debug 
+sudo pacman -Qi mlpack 
+sudo pacman -R mlpack 
+aur search mlpack 
+aur sync mlpack 
+aur search mlpack 
+sudo pacman -S --asexplicit ttf-ms-fonts
+aur sync vscodium && sudo pacman -S vscodium 
+aur sync upd72020x-fw && sudo pacman -S upd72020x-fw
+aur sync zen-browser-bin && sudo pacman -S zen-browser-bin
+aur sync visual-studio-code-bin && sudo pacman -S visual-studio-code-bin
+sudo pacman -Ssss only
+sudo pacman -Ssss onlyoffice
+flatpak search onlyoffice
+flatpak install org.onlyoffice.desktopeditors
+aur sync onlyoffice-bin && sudo pacman -S --asexplicit onlyoffice-bin
+aur search teams
+aur search "^teams"
+aur sync teams-for-linux && sudo pacman -S --asexplicit teams-for-linux
+sudo pacman -R zed-preview-bin 
+aur sync zed-preview-bin && sudo pacman -S --asexplicit zed-preview-bin
+aur sync antigravity && sudo pacman -S --asexplicit antigravity
+sudo pacman -R antigravity
+aur search netcat
+aur sync gnu-netcat | sudo pacman -S --asexplicit gnu-netcat
+sudo pacman -R gnu-netcat 
+aur sync gnu-netcat
+sudo pacman -S --asexplicit gnu-netcat
+sudo pacman -Si grantlee
+sudo pacman -Qi grantlee
+sudo pacman -R grantlee
+sudo pacman -R python-tree-sitter{,-tmux}
+sudo pacman -R spring-tools-for-eclipse 
+aur search python-tree-sitter
+sudo pacman -Ssss tree-sitter
+sudo pacman -S --asexplicit tree-sitter-{bash,cli,javascript,rust}
+sudo pacman -S --asexplicit zed
+pacman -Qmq | sort
+aur sync visual-studio-code-insiders-bin 
+aur sync visual-studio-code-insiders-bin && sudo pacman -S --asexplicit visual-studio-code-insiders-bin 
+sudo pacman -S mlpack
+sudo pacman -Qs free
+sudo pacman -Qs freed
+yay -Syu
+trizen -Syu
+rm -rf /home/albano/.cache/aurutils/sync/freedownloadmanager
+rm -rf 'IPFS Desktop'
+sudo rm -rf 'IPFS Desktop'
+sudo pacman -Ssss vivaldi
+sudo pacman -Ssss zen
+sudo pacman -S freedownloadmanager
+aur search aurman
+aur sync -u
+aur sync --help
+aur sync -h
+aur sync -ff
+aur sync -f
+aur sync -fu
+man aur sync
+aur sync --verify 
+tldr
+sudo pacman -S --asexplicit tldr
+tldr aur
+aur repo --list
+aur repo -l
+aur repo -li
+aur repo -l -i
+aur repo --list-attr 
+aur repo --list-repo 
+aur view
+aur pkglist 
+tldr aur sync
+mise self-update
+mise ls-remote zig
+mise ls-remote zls
+mise ls-remote zls@0.15.1
+mise install zls@0.15.1
+zig --help
+mise use -g zls@0.15.1
+zls
+zls --version
+zls --help
+zls env
+zig
+mise ls-remote node@24
+mise use node@24.12.0
+ng
+npm i -g npm@latest
+npm i -g @angular/cli
+npm i -g yarn
+npm i -g pnpm
+npm versions
+mise rm node@24.11.1
+mise rm node@25.0.0
+mise remove node@20.19.5
+mise rm -g deno@2.2.15
+mise ls-remote python@3.14
+mise install python@3.14.2
+mise uninstall python@3.14.0
+mise uninstall node@20.19.5
+misels
+mise uninstall deno@2.2.15
+mise ls-remote bun
+mise install bun@1.3.4
+mise use -g bun@1.3.4+
+mise use -g bun@1.3.4
+bun
+bun info
+mise uninstall python@3.13.9
+mise uninstall zig@0.14.1
+mise ls-remote
+mise
+mise tool bun
+mise tool python
+man aur
+sudo pacman -Sss uv
+alias gcl
+gcl git@github.com:luizomf/typehints_python.git
+uv i
+cat uv.lock 
+mise use -g python 3.14.2
+mise use -g python@3.14.2
+rm -rf .venv
+sudo pacman -R uv
+pip install -U pip
+pip install uv
+echo -e "${PATH//:/\\n}"
+l /home/albano/.local/share/mise/installs/python/3.14.2/bin
+/home/albano/.local/share/mise/installs/python/3.14.2/bin/uv
+uv --help
+pip uninstall uv
+sudo pacman -S --asexplicit uv
+pip install -U uv
+uv
+uv python lislt
+uv python dir
+uv python pin --global 3.14.2
+uv python
+uv python ls
+uv python pin --global 3.14
+rm -rf .venv/
+uv python pin 3.14
+uv venv
+code
+uv sync
+cat .python-version 
+uv add mypy
+ruff
+uv add ruff
+pullDotfiles 
+mise ls
+node --version
+pnpm version
+yarn --help
+yarn version
+yarn versions
+alias l
+echo $LS_
+echo $LS_OPTIONS 
+echo $LS_COLORS 
+lsd --help
+ls --help
+lsd -I 
+lsd -i
+yt-projeto-v20-design-patterns-frontend/
+ng new frontend
+npm start
+ng new devlucas-ssr
+code-insiders .
+sudo pacman -R visual-studio-code-insiders-bin 
+aur search visual-studio-code 
+aur sync visual-studio-code-insiders-bin
+sudo pacman -S --asexplicit visual-studio-code-insiders-bin 
+lvim ~/.config/kitty/kitty.conf 
+source .venv/bin/activate
+rm -rf 'Code - OSS'
+rm -rf ~/.config/Code\ -\ Insiders/Cache/*
+printenv > "/tmp/tmp-1432211h72pvmK86cm.txt"
+rm -rf ~/.config/Code\ -\ Insiders/CachedData/*
+rm -rf ~/.config/Code\ -\ Insiders/CachedExtensions/*
+rm -rf ~/.config/Code\ -\ Insiders/CachedExtensionVSIXs/*
+mkdir -p ~/.config/Code\ -\ Insiders/User/globalStorage/vscodevim.vim/
+touch ~/.config/Code\ -\ Insiders/User/globalStorage/vscodevim.vim/.registers
+chmod -R 755 ~/.config/Code\ -\ Insiders/
+chmod -R 755 ~/.vscode-insiders/
+rm -rf ~/.vscode-insiders/extensions/github.copilot-chat-* 2>/dev/null
+rm -rf ~/.vscode-insiders
+sudo systemctl restart firewalld
+sudo systemctl status firewalld
+rm -rf 'Code - Insiders'
+rm -rf Code
+rm -rf ~/.vscode
+rm -rf ~/.vscode-oss/
+source /home/albano/github/typehints_python/.venv/bin/activate
+printenv > "/tmp/tmp-172100lz4FC0fsMHSa.txt"
+printenv > "/tmp/tmp-181198SMMoRE0LEPAw.txt"
+code .
+deactivate 
+ping -c2 200.17.199.216
+btop
+python --version
+mise unuse python@3.14.2
+systemctl status NetworkManager
+diff /home/albano/projects/angular/ "/home/albano/projects/angular (copy)/"
+diff -r /home/albano/projects/angular/ "/home/albano/projects/angular (copy)/"
+aur sync --upgrades 
+sudo pacman -Syu
+ff
