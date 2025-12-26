@@ -23,3 +23,5 @@ export DOTCNBASH="/home/$USER/github/dotfiles/bash-completion"
 # This Docker's enviromment
  export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 
+ export AUR_PAGER="nvim"
+
