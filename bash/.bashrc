@@ -52,7 +52,7 @@ path_append "$HOME/bin"
 path_append "$HOME/.local/bin"
 path_append "$HOME/go/bin"
 path_append "$HOME/.cargo/bin"
-path_append "/usr/sbin"
+#path_append "/usr/sbin"
 path_append "/sbin"
 
 # 5. CONFIGURAÇÕES DO BASH (OPTIONS)
