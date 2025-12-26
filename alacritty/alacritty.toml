@@ -31,9 +31,8 @@ multiplier = 3
 [selection]
 save_to_clipboard = false
 
-#[terminal.shell]
-#program = "/usr/bin/bash"
-#args = ["-c","tmux new-ses -s al0"]
-
 [terminal]
-shell = { program = "/usr/bin/tmux", args = ["new-session"] }
+shell = { program = "/usr/bin/bash", args = ["--login"] }
+
+#[terminal]
+#shell = { program = "/usr/bin/tmux", args = ["new-session"] }
