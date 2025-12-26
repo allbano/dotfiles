@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone>
+  <short>Public</short>
+  <description>For use in public areas. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description>
+  <service name="ssh-alt"/>
+  <icmp-block name="echo-request"/>
+  <rule>
+    <service name="ssh"/>
+    <accept>
+      <limit value="3/m" burst="0"/>
+    </accept>
+  </rule>
+  <rule family="ipv4">
+    <port port="55020-55040" protocol="tcp"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <port port="55020-55040" protocol="udp"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <port port="55022" protocol="tcp"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <port port="55022" protocol="tcp"/>
+    <log prefix="SSH_BRUTEFORCE " level="info">
+      <limit value="4/m" burst="0"/>
+    </log>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="200.17.199.244"/>
+    <port port="55022" protocol="tcp"/>
+    <accept/>
+  </rule>
+  <icmp-block-inversion/>
+</zone>

@@ -7,7 +7,7 @@ endif
 " -----------------------------------------------------------------------------
 filetype plugin indent on
 syntax on
-set title
+" set title
 set encoding=utf-8
 set backspace=indent,eol,start
 set noerrorbells

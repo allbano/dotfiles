@@ -217,8 +217,8 @@ alias gwtrm='git worktree remove'
 
 ########## LS
 alias ls='ls $LS_OPTIONS'
-alias ll='ls $LS_OPTIONS -lh'
-alias l='ls $LS_OPTIONS -lhA'
+alias l='ls $LS_OPTIONS -lh'
+alias la='ls $LS_OPTIONS -lhA'
 
 ########## GREP
 alias grep='grep $LS_OPTIONS'
@@ -228,13 +228,13 @@ alias egrep='grep -E $LS_OPTIONS'
 alias dir='dir $LS_OPTIONS'
 
 ########## LSD
-alias ldl='lsd -l'
-alias lda='lsd -lA'
+alias ll='lsd -l'
+alias lla='lsd -lA'
 
 
 ########## eza 
-alias x='eza --icons -lga'
-alias xx='eza --icons -lg'
+alias ea='eza --icons -lga'
+alias e='eza --icons -lg'
 
 ########## LSBLK
 alias lsk='lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,FSUSE%,FSAVAIL,SIZE'
