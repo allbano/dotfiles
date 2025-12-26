@@ -319,7 +319,6 @@ man nvidiactl
 sudo systemctl status nvidiactl.service 
 paru -Sss nvidia
 paru -S cuda{,-tools} cudnn ffnvcodec-headers libnvidia-container
-flatpak update 
 systemctl --user status pipewire.service wireplumber.service 
 paru -R linux-lts{,-headers}
 paru -S linux-cachyos{,-headers}
@@ -3310,7 +3309,6 @@ docker container stop b9
 docker container rm b9
 docker image rm angular-docker
 yarn
-ng build
 docker build -t angular-docker .
 docker run -dp 4200:4200 angular-docker
 docker container rm -f eager_lederberg 
@@ -4745,7 +4743,6 @@ gk
 gsb
 gcount
 git shortlog 
-gg
 gtl
 pulldotfiles 
 cd $dotfiles
@@ -6008,9 +6005,7 @@ glg
 cronie
 crontab
 crontab -e
-l .bash*
 unlink .bash_history 
-l .bash*
 touch texto.txt
 cat /etc/passwd
 cat /etc/passwd | tail -n 10
@@ -8483,30 +8478,25 @@ wc -l < { pacman -Qdtq }
 wc -l < {pacman -Qdtq}
 pacman -Qk gnome
 pacman -Qk gnome-shell
-pacman -Qdt
 pacman -Qdtq
 pacman -Qe
 pacman -Qet
 pactree gnome-shell
-pacman -Qdt
 yasm
 yasm --help
 pacman -Si yasm
 pacman -Rs yasm
 sudo pacman -Rs yasm
-pacman -Qdt
 sudo pacman -Rs xmlto zeitgeist 
 pacman -Si xapian-core
 sudo paccache -r
 type -a paccache
 type -p paccache
 cat $(type -p paccache)
-pacman -Qdt
 gn --help
 gn all
 paru -Si gn
 sudo pacman -Rs xmlto zeitgeist 
-pacman -Qdt
 pacman -Qdtq
 pacman -Qdtq |rg '^ttf-.*'
 pacman -Qs python-flask
@@ -9109,7 +9099,6 @@ docker run -p 4200:4200 angular-docker
 docker container stop b9
 docker container rm b9
 docker image rm angular-docker
-ng build
 docker build -t angular-docker .
 docker run -dp 4200:4200 angular-docker
 docker container rm -f eager_lederberg 
@@ -11388,7 +11377,6 @@ ll do*
 cd /etc/bash_completion.d/
 sudo ln --help
 sudo ln -sf /home/albano/github/dotfiles/bash-completion/tmux_completion /etc/bash_completion.d/tmux
-sudo ln -sf /home/albano/github/dotfiles/bash-completion/doas /etc/bash_completion.d/doas
 sudo ln -sf /home/albano/github/dotfiles/bash-completion/systemctl /etc/bash_completion.d/systemctl
 sudo ln -sf /home/albano/github/dotfiles/bash-completion/glow /etc/bash_completion.d/glow
 sudo ln -sf /home/albano/github/dotfiles/bash-completion/pip /etc/bash_completion.d/pip
@@ -11706,7 +11694,6 @@ ng g c components/tasks
 npm i json-server
 cd git/listaDeTarefasAngular/
 paru -S nerd-fonts-git 
-json-server db.json
 npm i json-server
 json-server --help
 npm --help
@@ -11715,7 +11702,6 @@ npx json-server db.hson
 ng generate service services/task
 echo $PATH
 ng g c components/task-item
-npx json-server db.json
 ng verion
 cd git
 paru -S nerd-fonts-git 
@@ -11740,7 +11726,6 @@ gcm "feat: Adicionado componente para listar produtos."
 gcm "fix: adicionado router-outlet ao AppComponent."
 gcm "feat: centraliza conteudo de router-outlet."
 > db.json
-npx json-server db.json
 cd git/product-store/
 ga angular.json 
 ga db.json proxy_config.json 
@@ -11806,7 +11791,6 @@ gcm "feat: adicionado funcionalidade de salvar produto."
 glos
 glods
 glods
-npx json-server db.json
 rm -rf laundry_online/
 git clone git@github.com:allbano/laundry_online.git
 cd laundry_online/
@@ -12096,7 +12080,6 @@ gwch
 gk
 gcount
 git shortlog 
-gg
 gtl
 git fetch 
 git fetch origin
@@ -13336,11 +13319,9 @@ cat 256-colors
 cat $(type -p 256-colors)
 cd salsa/
 cd devel/
-./prompt 
 lvim prompt 
 ./prompt 0
 ./prompt -h
-./prompt 
 git pull origin master 
 ssh -T git@salsa.debian.org 
 cd salsa/devel/
@@ -14639,7 +14620,6 @@ rm 06_prompt
 update_prompt_symbol 
 . ~/.BASHRC
 RETVAL=$?
-lvim 03_functions 
 echo $?
 env |rg SYMBOL
 set |rg SYMBOL
@@ -15436,7 +15416,6 @@ type -p java
 type -a java
 type -a javac
 type -a jar
-echo $JAVA_HOME/
 mv 'The Best Of Violin that You Should Listen to Once In Your Life(Vivaldi, Bach, Paganinini..).opus' maio
 yt-dlp --extract-audio --audio-format opus --audio-quality 0 https://youtu.be/EkqJMrUd604?si=NyTQhHs6rG3HZab7
 yt-dlp --extract-audio --audio-format opus --audio-quality 0 https://youtu.be/cOjIhKGkQIc?si=9rm1ceT3Jv9YBxKP
@@ -15532,7 +15511,6 @@ ping
 ping --help
 ping -c3 200.17.204.160
 duf --version
-duf -a
 duf --all
 ifconfig
 ifconfig --help
@@ -15545,7 +15523,6 @@ nvim example01.py
 man 2 syscall
 man gdb
 type -a zed
-type -a zeditor 
 paru -S zed
 yay --help
 yay --help| rg pkgbuild
@@ -15780,7 +15757,6 @@ man kitten
 yt-dlp -F --list-formats https://www.youtube.com/watch?v=p3jRgSXWAj4
 yt-dlp -f 'bv*+ba' https://www.youtube.com/watch?v=p3jRgSXWAj4
 zed
-zeditor 
 exi
 paru -Qs alacritty
 man http
@@ -15801,7 +15777,6 @@ dust
 nmcli help
 nmcli general status
 nohup prime-run firefox 2>$HOME/logs/firefox/errors > $HOME/logs/firefox/firefox &
-duf --help
 sudo systemctl --user status pipewire.service 
 systemctl --user status pipewire-pulse.service 
 fc-cache --help
@@ -15843,8 +15818,6 @@ cat /usr/share/ghostty/themes/Aura
 cat Dracula.conf 
 cat Dracula.conf > Aura.conf
 kitty +kitten themes
-lvim 04_history_options 
-lvim 05_bash_options 
 cat Aura.conf 
 lvim ~/github/kitty-themes/themes/Aura.conf
 cp ~/.config/ghostty/config ghostty/
@@ -15910,7 +15883,6 @@ paru -R linux{,-headers}
 paru -R linux{,-headers} virtualbox-host-modules-arch 
 paru -R linux{,-headers} virtualbox{,-guest-iso,-host-modules-arch}
 paru -S linux-cachyos-lts{,-headers}
-sudo su
 sudo dmesg | rg acpi
 sudo pacman -Q
 sudo pacman -Qd
@@ -16305,7 +16277,6 @@ gdu -t .
 gdu -t 
 gdu -t 15 .
 gdu --show-disks
-lfs
 cargo install diskus
 paru -Sss diskus
 paru -S diskus
@@ -16491,7 +16462,6 @@ cp -r ~/github/minimal-nvim/nvim/plugin .
 cp -r ~/github/minimal-nvim/nvim/.settings .
 bat run.sh 
 lvim Dockerfile 
-git restore .
 lvim build.sh 
 > config.lua
 rm lazy-lock.json
@@ -16816,7 +16786,6 @@ paru -S ladybird
 paru -R ladybird
 paru -R ladybird-git 
 dust -r --only-dir --ignore-hidden --depth 1
-cargo install --list
 cargo install du-dust
 cargo install bottom
 cargo install dua-cli
@@ -16857,10 +16826,6 @@ paru -Qi molequeue
 paru -R molequeue 
 nvidia-smi
 sudo nvidia-smi
-akonadictl --help
-akonadictl instances
-akonadictl start
-akonadictl stop
 paru -Ssss mojo
 paru -S mojo
 paru -R mojo
@@ -16888,7 +16853,6 @@ envycontrol
 man envycontrol
 paru -Ssss apidog
 paru -R envycontrol 
-doas pacman --help
 doas pacman -Qq
 doas pacman -Qq | wc -l
 udevadm --help
@@ -17219,7 +17183,6 @@ man nvidiactl
 sudo systemctl status nvidiactl.service 
 paru -Sss nvidia
 paru -S cuda{,-tools} cudnn ffnvcodec-headers libnvidia-container
-flatpak update 
 systemctl --user status pipewire.service wireplumber.service 
 paru -R linux-lts{,-headers}
 paru -S linux-cachyos{,-headers}
@@ -17473,7 +17436,6 @@ du -sh dist
 npm i --save-dev copyfiles
 copyfiles --help
 npm run copyfiles --help
-node --help
 rm -rf src
 npm run build:sass 
 npm run build:html 
@@ -17820,7 +17782,6 @@ git commit -m "feat: Aula 39 - Assistida e executada (:host)."
 git commit -m "feat: Aula 40 - Assistida e executada."
 git commit -m "feat: Aula 43 - Assistida e executada(mat-slider)."
 git commit -m "feat: Aula 44 - Assistida e executada(ViewEncapsulation)."
-flatpak list
 yay -Ssss onlyoffice
 yay -S onlyoffice-bin 
 yay -S ttf-ms-fonts
@@ -18086,7 +18047,6 @@ ssh --help
 users
 users --help
 ls /dev/
-bat config
 rm known_hosts.old 
 paru -Qs axel
 paru -S --needed --asexplicit axel wget curl aria2 
@@ -18182,9 +18142,6 @@ chmod 600 infojus-i7-IP198*
 chmod 644 infojus-i7-IP198.pub 
 lvim config 
 lvim config 
-lvim 07_prompt 
-lvim 99_custom_startup 
-lvim 06_extra_and_tools 
 exit6
 git commit -m 'fix: update mise environment. Mise's path OK in ssh."
 git commit -m "fix: update mise environment. Mise's path OK in ssh."
@@ -18553,7 +18510,6 @@ sudo pacman -Rs plasma-thunderbolt
 sudo pacman -S --asexplicit print-manager 
 sudo ./remove-orphans 
 sudo pacman -S --asexplicit plasma-firewall 
-sudo su -
 zsh
 rm nohup.out 
 bluetoothctl 
@@ -18597,7 +18553,6 @@ paru -S aur/doas
 doas pacman -R opendoas
 paru -S --asexplicit  aur/doas
 sudo lvim /etc/doas.conf
-doas pacman -Syu
 sudo systemctl status 
 paru -Si  aur/doas
 paru -R doas
@@ -18661,7 +18616,6 @@ git commit -m "Aula 427 - Incicio/Final - Criaçao do Projeto"
 git commit -m "Aula 428 - Incicio/Final - @If[Not *ngif]"
 clear
 ng g p transform-text --skip-tests true
-git restore .
 git restore --staged --all
 git restore --staged .
 git commit --amend -m "Aula 429 - Incio - Pipes Standalone"
@@ -18691,7 +18645,6 @@ mise install deno@2.2.15
 mise ls-remote ada
 mise ls-remote --help
 mise ls-remote --all
-node
 mise use
 mise up
 mise upgrade
@@ -18827,13 +18780,8 @@ ssh-keyscan
 ssh-add --help
 sudo systemctl status sshd.service 
 ssh -Tv git@github.com
-duf
 git stash 
 git pull origin main 
-git stash pop
-git stash push
-exity
-lvim bashrc
 echo $SHLVL 
 mv Cursos Courses
 ;;
@@ -19085,9 +19033,7 @@ du -su .
 du -sh node_modules/
 git branch --all
 java --version
-lvim 06_extra_and_tools 
 lvim bash/bashrc
-lvim bashrc
 git restore bashrc 
 pipi
 pixi
@@ -19116,8 +19062,6 @@ ng g c components/shared/menu-item
 ng g c components/shared/title
 cpufetch 
 sudo pacman -Ssss netplan
-akonadictl 
-akonadictl status
 akonadictl fsck
 pacman -Sss tre
 pacman -Sss 'tre$'
@@ -19142,7 +19086,6 @@ tre -d
 tre -a
 yay -R tre-command
 tree --help
-kscreen-doctor --outputs
 rm -rf node_modules
 cat node_modules/@angular/core/package.json
 cat node_modules/@angular/ssr/package.json
@@ -19252,7 +19195,6 @@ paru -Ssss neow
 paru -Ssss neofetch
 rm -rf Parajas
 /home/albano/Desktop/TrabalhoIA/trabalho-ia2/
-env
 l /mnt
 ls -l /
 id
@@ -19271,7 +19213,6 @@ git checkout tip
 mise unuse python
 zig build -Doptimize=ReleaseFast install --prefix /home/albano/.local/
 ghostty --version
-ng serve
 sudo systemctl enable --now power-profiles-daemon.service 
 lsk
 lsku
@@ -19379,7 +19320,6 @@ rm -rf dotfiles
 git
 git --work-tree --help
 git --help
-doas grub-mkconfig -o /boot/grub/grub.cfg 
 paru -R tre-command-debug 
 paru -R kubo-git 
 paru -Ssss antigravity
@@ -19487,7 +19427,6 @@ rm .*.bak
 rm .angular-config.json 
 make clean && make build
 lvim Makefile 
-pushHis 
 cat allarch_dellg15
 mkdir gitlab
 wc -l teste-ia.csv 
@@ -19719,13 +19658,11 @@ zfs
 man zfs
 exitrr
 cat allarch_dellg15.pub 
-lvim config
 ssh -T git@gitlab.com
 git clone git@gitlab.com:allbano/trabalho-de-ia-reconhecimento-de-padroes.git
 mkdir Docs
 nvim .gitignore
 nvim README.md
-git add --all
 git switch --create main
 git commit -m "Commit inicial"
 git push -u origin main
@@ -19754,7 +19691,6 @@ make buil;d
 ga Docs/Requisitos_Trabalho_IA1.pdf 
 git commit -m "docs: Adiciona os requisitos do trabalho."
 make gst
-git diff
 make clean
 make build
 make run
@@ -19806,8 +19742,6 @@ sudo firewall-cmd --list-all-zones
 sudo firewall-cmd --set-default-zone=public
 sudo firewall-cmd --zone=public --set-target=DROP --permanent
 sudo firewall-cmd --reload 
-ssh parajas
-ssh parajas2
 ping -c2 200.17.199.198
 sudo systemctl stop firewalld.service 
 sudo systemctl start firewalld.service 
@@ -19824,17 +19758,13 @@ uname -a
 ng update @angular/cli @angular/core
 npm i -g @angular/core
 ng e2e
-exity
 git branch -a
-ssh parajas2
-ssh parajas
 flatpak update
 cat $DOTFILES/alacritty/default.toml 
 nvim $DOTFILES/alacritty/alacritty.toml
 git add .
 git commit -m "chore: update alcritty config"
 git push origin art
-git push origin archlinux 
 file lmde-7-cinnamon-64bit.iso 
 sudo mount lmde-7-cinnamon-64bit.iso /mnt
 sudo umount /mnt
@@ -19855,7 +19785,6 @@ git log --oneline main
 git cherry-pick feec dev 
 git log main...dev
 git cherry-pick --abort
-git pull
 glog -5
 glog -5
 git switch main
@@ -19919,7 +19848,6 @@ sudo pacman -Sss aurutils
 sudo install -d /var/cache/pacman/aurutils -o $USER
 ll /var/cache/pacman/aurutils/
 ll /var/cache/pacman/
-sudo pacman -Syyu
 sudo pacman -Rns chaotic-keyring chaotic-mirrorlist
 sudo pacman -R trizen
 sudo pacman -R yay
@@ -19942,8 +19870,6 @@ sudo pacman -S ninja
 sudo repo-add /var/cache/pacman/aurutils/aurutils.db.tar.gz
 repo-add /var/cache/pacman/aurutils/aurutils.db.tar.gz
 sudo lvim /etc/pacman.conf
-sudo pacman -Syy
-lvim 00_env_vars 
 sudo chown -R $USER:$USER /var/cache/pacman/aurutils
 xargs -a pacotes_chaotic.txt
 xargs -a pacotes_chaotic.txt aur sync
@@ -19974,7 +19900,6 @@ sudo pacman -S --asexplicit brave-bin
 docker ps
 sudo pacman -S --asexplicit google-chrome
 aur repo --list | aur vercmp
-checkupdates 
 sudo pacman -Qi aur
 sudo pacman -Qi aurorae 
 sudo pacman -Qi aurutils 
@@ -20000,7 +19925,6 @@ aur sync icu69rm -rf ~/.cache/aurutils/sync/icu69
 aur sync icu69 rm -rf ~/.cache/aurutils/sync/icu69
 rm -rf ~/.cache/aurutils/sync/icu69
 paccache -c ~/.cache/aurutils/sync/ -rk1
-aur sync aurutils
 sudo pacman -Syyuu
 aur sync git-extras
 sudo pacman -S --asexplicit git-extas
@@ -20024,8 +19948,6 @@ aur sync zen-browser-bin && sudo pacman -S zen-browser-bin
 aur sync visual-studio-code-bin && sudo pacman -S visual-studio-code-bin
 sudo pacman -Ssss only
 sudo pacman -Ssss onlyoffice
-flatpak search onlyoffice
-flatpak install org.onlyoffice.desktopeditors
 aur sync onlyoffice-bin && sudo pacman -S --asexplicit onlyoffice-bin
 aur search teams
 aur search "^teams"
@@ -20055,7 +19977,6 @@ sudo pacman -S mlpack
 sudo pacman -Qs free
 sudo pacman -Qs freed
 yay -Syu
-trizen -Syu
 rm -rf /home/albano/.cache/aurutils/sync/freedownloadmanager
 rm -rf 'IPFS Desktop'
 sudo rm -rf 'IPFS Desktop'
@@ -20063,9 +19984,6 @@ sudo pacman -Ssss vivaldi
 sudo pacman -Ssss zen
 sudo pacman -S freedownloadmanager
 aur search aurman
-aur sync -u
-aur sync --help
-aur sync -h
 aur sync -ff
 aur sync -f
 aur sync -fu
@@ -20081,7 +19999,6 @@ aur repo -l -i
 aur repo --list-attr 
 aur repo --list-repo 
 aur view
-aur pkglist 
 tldr aur sync
 mise self-update
 mise ls-remote zig
@@ -20098,7 +20015,6 @@ zig
 mise ls-remote node@24
 mise use node@24.12.0
 ng
-npm i -g npm@latest
 npm i -g @angular/cli
 npm i -g yarn
 npm i -g pnpm
@@ -20137,14 +20053,12 @@ rm -rf .venv
 sudo pacman -R uv
 pip install -U pip
 pip install uv
-echo -e "${PATH//:/\\n}"
 l /home/albano/.local/share/mise/installs/python/3.14.2/bin
 /home/albano/.local/share/mise/installs/python/3.14.2/bin/uv
 uv --help
 pip uninstall uv
 sudo pacman -S --asexplicit uv
 pip install -U uv
-uv
 uv python lislt
 uv python dir
 uv python pin --global 3.14.2
@@ -20161,8 +20075,6 @@ uv add mypy
 ruff
 uv add ruff
 pullDotfiles 
-mise ls
-node --version
 pnpm version
 yarn --help
 yarn version
@@ -20177,9 +20089,7 @@ lsd -I
 lsd -i
 yt-projeto-v20-design-patterns-frontend/
 ng new frontend
-npm start
 ng new devlucas-ssr
-code-insiders .
 sudo pacman -R visual-studio-code-insiders-bin 
 aur search visual-studio-code 
 aur sync visual-studio-code-insiders-bin
@@ -20210,12 +20120,552 @@ printenv > "/tmp/tmp-181198SMMoRE0LEPAw.txt"
 code .
 deactivate 
 ping -c2 200.17.199.216
-btop
-python --version
 mise unuse python@3.14.2
 systemctl status NetworkManager
 diff /home/albano/projects/angular/ "/home/albano/projects/angular (copy)/"
 diff -r /home/albano/projects/angular/ "/home/albano/projects/angular (copy)/"
+pushHis 
+git diff bash/rc/00_env_vars
+git restore  bash/rc/00_env_vars
+aur sync -u
+git diff
+git add --all
+git commit -m "chore: update kitty config - remove bell"
+git push origin archlinux 
+bashtop 
+sudo pacman -R bashtop 
+sudo pacman -S --asexplicit btop
+sudo pacman -S --asexplicit btop rocm-smi-lib 
+btop
+pacman -Qtq
+doas pacman -R gulp
+doas pacman -R http-parser
+doas pacman -R lhasa
+doas pacman -R nvm
+doas pacman -R libxcrypt-compat python-distutils-extra python-pytest-runner python-setuptools-scm sdl2_ttf txt2man yarn
+sudo ln -sf /home/albano/github/dotfiles/bash-completion/doas /etc/bash_completion.d/doas
+doas pacman --sync 
+doas pacman --help
+doas pacman --sync --refresh 
+doas pacman --sync --refresh --recursive 
+doas pacman --sync --refresh --verbose 
+checkupdates 
+doas checkupdates 
+pacman -Qdt
+pacman -Qi intltool
+doas pacman -R intltool
+flatpak search onlyoffice
+flatpak install org.onlyoffice.desktopeditors
+env
+env| grep LC_*
+git stash push
+cat kali2 
+rm kali2 
+git pull
+git stash pop
+git restore .
+./prompt 
+./prompt 2 1
+./prompt 2 2
+cat /proc/loadavg 
+./prompt 6 2
+aur 
+aur view -a
+aur pkglist 
+aur
+aur query
+aur query 
+aur vercmp
+aur repo
+pacman -Q -t aurutils
+npm start
+code-insiders .
+ng build
+npm install -g json-server
+~/tests/devlucas-ssr/dist/devlucas-ssr/
+~/tests/devlucas-ssr/
+npm run server
+rm -rf user
+ng g c user
+rm -rf component
+ng g c component/user
+rm -rf service
+ng generate interface models/user --type=model
+ng g s service/user
+npm start
+flatpak update 
+ng serve
+npx json-server db.json
+json-server db.json
+npx json-server db.json --port 3000
+aur sync antigravity-bin
+doas pacman -S --asexplicit antigravity-bin
+npm start
+npx
+npx --version
+npx --help
+npm install --save-dev prettier-plugin-angular
+aur search windsurf
+aur sync windsurf
+sudo pacman -S --asexplicit windsurf
+aur search trae
+aur search void
+sudo pacman -Ssss 'void editor'
+aur search 'void editor'
+aur sync void-bin
+sudo pacman -S --asexplicit void-bin
+sudo pacman -Rns void-bin
+doas pacman -Syu
+python --version
+sudo echo -e "${PATH//:/\\n}"
+sudo su
+echo $JAVA_HOME/
+df -h / /home 2>/dev/null | tail -n +2
+df -h /
+df --si
+df --block-size
+df --block-size --human-readable --all 
+df --block-size --human-readable
+df --block-size /dev/nvme0
+df --block-size /dev/nvme0n1
+df --block-size /dev/nvme0n1p1
+df
+df -h
+df --human-readable --exclude-type=tmpfs,dev
+df --human-readable --exclude-type=tmpfs run
+df --help
+df --human-readable --type=dev
+df --human-readable --type=fstype
+df --human-readable --local 
+df --human-readable --exclude-type=tmpfs,run
+df --human-readable --exclude-type=tmpfs
+df --human-readable --exclude-type="tmpfs","run"
+df --human-readable --exclude-type="tmpfs"
+df --human-readable --local
+df --human-readable
+df --human-readable --print-type 
+df --human-readable --print-type --exclude-type=tmpfs
+df --human-readable --print-type --exclude-type=tmpfs --exclude-type=dev
+df --human-readable --print-type --exclude-type=tmpfs --exclude-type=devtmpfs
+sudo su -
+df --human-readable --print-type --exclude-type=tmpfs --exclude-type=devtmpfs --exclude-type=efivarfs
+lfs
+echo -e "${PATH//:/\\n}"
+cargo install --list
+sudo pacman -Sss dysk
+sudo pacman -S dysk
+duf --help
+duf -a
+duf -all
+duf
+dysk
+dysk -a
+dysk --help
+dysk -c +inodes
+dysk -s free
+dysk .
+for i in {20320..20313}; do history -d $i; done
+history -a
+history | grep pydf | awk '{print $1}' | sort -rn
+akonadictl 
+akonadictl staus
+akonadictl status
+akonadictl stop
+lvim ~/.config/akonadi
+akonadictl --help
+akonadictl restart
+akonadictl start
+akonadictl instances
+whois 200.17.199.216
+whois 200.17.199.198
+host 200.17.199.198
+kscreen-doctor --outputs
+sudo pacman -Ssss nvidia
 aur sync --upgrades 
-sudo pacman -Syu
+aur search nvidia-dkms
+aur search nvidia-
+sudo pacman -Syyy
+sudo pacman -R linux-hardened{,-headers}
+sudo pacman -R linux-hardened{,-headers} usbctl
+sudo pacman -Syu nvidia-dkms
+doas dkms autoinstall
+dkms status
+sudo pacman -R nvidia-utils 
+sudo pacman -Ssss nvidia-dkms
+which zeditor 
+zeditor 
+type -a zeditor 
+aur search zed-preview
+doas pacman -R zed-preview-bin 
+aur sync zed-preview-bin
+aur sync --upgrades zed-preview-bin4
+doas pacman -S --asexplicit zed-preview-bin 
+npm i -g eslint
+npm i -g npm@latest
+type -a uv
+mise ls
+doas pacman -S --asexplicit uv
+uv
+node --version
+node
+node --help
+ll .vim
+l .vim
+cat .vim/.netrwhist 
+sudo pacman -Sss vim
+sudo pacman -Sss "^vim"
+sudo pacman -R vifm
+lvim bashrc
+lvim 99_custom_startup 
+lvim 07_prompt 
+lvim 06_extra_and_tools 
+lvim 05_bash_options 
+lvim 04_history_options 
+lvim 03_functions 
+lvim 02_aliases 
+lvim 01_paths 
+lvim 00_env_vars 
+aur sync --clean
+pacman -Qm
+pacman -Qem
+aur sync aurutils
+aur search aurutils
+aur -S --help
+aur sync -S --help
+aur sync --cleanbuild --
+aur sync --help
+man aur-sync
+pacman -Qs aurutils
+flatpak list
+flatpak uninstall org.onlyoffice.desktopeditors
+sudo pacman -Rs void-bin void-electron-latest-bin
+aur repo-filter -d aurutils
+aur repo-filter
+repo-remove void-bin
+repo-remove --help
+repo-remove /var/cache/pacman/aurutils/aurutils.db.tar.gz void-bin
+repo-remove /var/cache/pacman/aurutils/aurutils.db.tar.gz /var/cache/pacman/aurutils/void-bin-1.99.30044-1-x86_64.pkg.tar.zst 
+repo-remove /var/cache/pacman/aurutils/aurutils.db.tar.gz /var/cache/pacman/aurutils/void-bin
+repo-remove /var/cache/pacman/aurutils/aurutils.db.tar.gz void-electron-latest-bin
+pacsync 
+pacsync --help
+rm /var/cache/pacman/aurutils/void-bin-*.pkg.tar.zst
+rm /var/cache/pacman/aurutils/void-electron-latest-bin-*.pkg.tar.zst
+aur repo -d aurutils --list
+aur repo -d aurutils --list | sort
+comm -23 <(aur repo -d aurutils --list | sort)
+comm -23 <(aur repo -d aurutils --list | sort) <(pacman -Qq | sort)
+pacman -Qq | sort
+paccache -r -k0 -c .
+aur sync --cleanbuild aurutils
+aur sync --cleanbuild --force aurutils
+aur sync --cleanbuild --force aic94xx-firmware
+aur search antigravity
+pacman -Qs antigravity
+sudo pacman -R antigravity-bin 
+sudo pacman -R antigravity-bin; aur sync --clean --cleanbuild antigravity
+repo-remove /var/cache/pacman/aurutils/aurutils.db.tar.gz antigravity-bin
+rm -f /var/cache/pacman/aurutils/antigravity-bin-*.pkg.tar.zst 
+aur sync --clean --cleanbuild antigravity
+aur sync --clean --cleanbuild --force antigravity
+aur sync --clean --cleanbuild antigravity-bin
+sudo pacman -Qs antigravity
+sudo pacman -S --asexplicit antigravity
+sudo pacman -S --asexplicit antigravity-bin 
+netcat --help
+sudo repo-remove /var/cache/pacman/aurutils/aurutils.db.tar.gz windsurf-electron-latest
+sudo pacman -Syy
+pacman -Sl aurutils
+sudo pacman -Syyu
+mkdir -p compact_videos
+tar -I "zstd -T0 -4" -cvf compact_videos/filmes.tar.zst 'Jurassic_World_Rebirth_2025_1080p_AMZN_WEBrip_AAC2_0_H264_forced.mp4' 
+tar -I "zstd -T0 -115" -cvf compact_videos/filmes.tar.zst 'Jurassic_World_Rebirth_2025_1080p_AMZN_WEBrip_AAC2_0_H264_forced.mp4' 
+tar -I "zstd -T0 -10" -cvf compact_videos/filmes.tar.zst 'Jurassic_World_Rebirth_2025_1080p_AMZN_WEBrip_AAC2_0_H264_forced.mp4' 
+tar -cvf 'Jurassic_World_Rebirth_2025_1080p_AMZN_WEBrip_AAC2_0_H264_forced.mp4' | zstd -T0 -10 > compact_videos/filmes.tar.zst
+tar -cvf - 'Jurassic_World_Rebirth_2025_1080p_AMZN_WEBrip_AAC2_0_H264_forced.mp4' | zstd -T0 -10 > compact_videos/filmes.tar.zst
+lsd -l compact_videos/filmes.tar.zst 
+rm compact_videos/filmes.tar.zst 
+rm -rf compact_videos/
+sudo cp /root/.bashrc .
+sudo chown albano:albano .bashrc 
+pacman -Qs termin
+pacman -Qs "^termin"
+pacman -Qs '^termin'
+pacman -Qs '^termina'
+ssh parajas
+ssh parajas2
+bat config
+lvim config
+ssh parajas198 
+ssh parajas216 
+sudo pacman -S --asexplicit linux-hardened{,-docs,-headers}
+aur sync --cleanbuild --database aurutils --upgrades 
+lsd -l /var/cache/pacman/aurutils/aurutils.db.tar.gz
+sudo chown albano:albano /var/cache/pacman/aurutils/aurutils.db.tar.gz
+aur sync --cleanbuild --upgrades 
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+exity
+aur sync --cleanbuild --clean --database aurutils --upgrades 
+sudo pacman -Sl aurutils
+sha256sum debian-13.2.0-amd64-DVD-1.iso 
 ff
+gg
+alias gg
+lvim .bashrc 
+vim ~/.vimrc
+lvim debian.sources
+lvim debian-backports.sources
+sudo pacman -Syu
+mv .bashrc .bashrc_root
+lvim .bashrc
+unlink .bashrc 
+sudo ln -sf /home/albano/github/dotfiles/bash/.bashrc $HOME/
+l .bash*
+lvim .bashrc
+less .bashrc 
+lvim .bashrc
+less .bashrc 
+sudo pacman -Syu
+aur sync --cleanbuild --clean --database aurutils --upgrades 
+aur search nvidia
+ff
+cpufetch 
+cpufreq-bench
+flatpak update
+bluetoothctl 
+bluetoothctl --help
+bluetoothctl list
+bluetoothctl show 
+lspci
+lspci | ag bluetooth
+env
+env | ag AUR
+git diff bash/rc/00_env_vars
+nvim ~/.bashrc
+aur query 
+aur query google
+aur query google-chrome
+aur search google
+sudo pacman -Ssss pygmentize
+pygmentize
+l
+lvim 00_env_vars 
+lvim .bashrc
+lvim ~/.bashrc
+sudo pacman -Qi ghostty
+git switch main 
+git pull --all
+git branch 
+ghostty --version
+mise ls
+python --version
+mise install python@3.12.12
+mise install python@3.11.14
+mise ls
+x
+zig build -Doptimize=ReleaseFast install --prefix /home/albano/.local/
+which ghostty
+ghostty --version
+exity
+aur sync --cleanbuild --clean --database aurutils --upgrades 
+aur search spring
+aur sync --clean --cleanbuild spring-tools-for-eclipse
+sudo pacman -S --asexplicit spring-tools-for-clipse
+aur sync --clean --cleanbuild spring-tools-for-eclipse
+aur sync --clean --cleanbuild --force spring-tools-for-eclipse
+sudo pacman -Sy spring-tools-for-eclipse
+archlinux-java status
+lsd -l /var/cache/pacman/aurutils/aurutils.db.tar.gz
+lsd -l /var/cache/pacman/aurutils/
+sudo pacman -Ss pacman-contrib
+paccache -c /var/cache/pacman/aurutils/ -k 2
+sudo paccache -d -c /var/cache/pacman/aurutils/ -k 2
+sudo paccache -d -c /var/cache/pacman/aurutils/ -k 1
+aur sync --cleanbuild --clean --database aurutils --upgrades 
+aur sync --cleanbuild --clean --upgrades 
+aur sync --upgrades 
+aur sync --cleanbuild --clean --database aurutils --upgrades 
+paclist aurutils
+pacman -Q
+pacman -Sl aurutils
+pacman -Slq aurutils
+sudo pacman -Syu
+sudo pacman -Ssss linux
+pacman -Si xdm-archlinux 
+sudo pacman -S --asexplicit usbctl
+sudo pacman -S --asexplicit scx-scheds 
+sudo pacman -S --asexplicit scx-scheds scx-tools 
+vim ~/.vimrc
+l
+lvim $DOTFILES/tmux/.tmux.conf 
+exit\
+xit
+doas pacman -Syu
+dysk
+duf
+dmidecode 
+doas dmidecode 
+inxi
+inxi -s
+inxi -M
+sudo inxi -Mxxx
+inxi -A
+inxi -Fzf
+inxi -Fzz
+doas inxi -Fzz
+doas inxi -Fzf
+doas pacman -Sssss zfs
+aur search zfs
+aur sync --clean --cleanbuild zfs-dkms
+sudo pacman-key --refresh-keys 
+lvim $DOTFILES/tmux/.tmux.conf 
+aur sync --clean --cleanbuild zfs-dkms
+gpg --keyserver keyserver.ubuntu.com --recv-keys 6AD860EED4598027
+aur sync --clean --cleanbuild zfs-dkms
+sudo pacman -S --asexplicit zfs-dkms zfs-utils
+pushd --help
+dirs -v
+dirs
+dir
+tr
+ldl
+ree --prune -a -C 
+tree --prune -a -C 
+sudo du --summarize --human-readable
+pd
+pp
+mv bashrc rc/
+l
+mv .bashrc_root backup/
+mv rc backup/
+ga backup
+git restore --staged backup/.bashrc_root 
+glol -5
+git add .bashrc
+git commit -m "refact: update bashrc - migrated from modular to monolithic(.bashrc)"
+git push origin archlinux 
+ggst
+mv backup/.bashrc_root backup/.bashrc_root_pc
+git add backup/.bashrc_root_pc 
+git commit -m "raw: add backup root's bashrc file."
+git push origin archlinux 
+git add --all 
+git commit -m "chore: update the bashrc module for the backup folder."
+git push origin archlinux 
+mise ls
+glol
+dir -l
+dir --help
+lvim ~/.bashrc
+lvim $DOTFILES/tmux/.tmux.conf 
+lvim $DOTFILES/tmux/.tmux.conf 
+git commit -m "feat: add popup keybinds tmux."
+git push origin archlinux 
+tmux ls
+tree --prune -a -C 
+tree --prune -a -C -L2
+tree
+tree --prune -a -C -L2
+tree
+tree --prune -a -C -L2
+tree --prune -a -C
+tree
+tree -d
+lvim $DOTFILES/tmux/.tmux.conf 
+tmux list-sessions 
+tmux kill-session gt0
+tmux kill-session 0
+tmux kill-session
+rm pacotes_chaotic.txt 
+tmux kill-session --help
+nvim  $HOME/github/dotfiles/tmux/.tmux.conf 
+aur sync --cleanbuild --clean --database aurutils --upgrades 
+sudo pacman -Syu
+ua
+sudo pacman -Syu
+mise ls
+mise unuse --global bun@1.3.4
+mise ls
+mise unuse --global bun@1.3.4 --yes
+mise ls
+mise use --global bun@1.3.4 --yes
+mise ls
+bash --help
+lvim ~/.config/alacritty/alacritty.toml
+exot
+l
+unzip '12-10 - Freela de Python - Projeto de R$930 - Automação com IA-20251226T005127Z-3-001.zip' 
+mv '12-10 - Freela de Python - Projeto de R$930 - Automação com IA' FreelaPython930pilas
+cat 
+ln -sf $HOME/github/dotfiles/scripts $HOME/bin
+cat ./ns
+command --help
+command -v ng
+test
+test --help
+help test
+lsd -d */
+lsd -dl */
+lsd -d */
+which ng
+type -a ng
+type -p ng
+lvim ~/.bashrc
+tmux
+ssh parajas198
+ssh parajas216 
+sudo pacman -Syu
+aur sync --cleanbuild --clean --database aurutils --upgrades 
+lvim ~/.bashrc
+l
+cat .python_history 
+cat .PKGINFO 
+rm .PKGINFO 
+rm .BUILDINFO 
+l
+rm .angular-config.json 
+l
+sudo pacman -Qs xterm
+sudo pacman -Rsnddc xterm
+aur sync --cleanbuild --clean --database aurutils --upgrades 
+sudo pacman -Syy
+sudo pacman -Sl aurutils
+sudo pacman -Slq aurutils 
+sudo pacman -Sl aurutils 
+pacman -Sl aurutils | grep -v '\[installed\]' | awk '{print $2}'
+pacman -Sl aurutils | grep -v '\[installed\]'
+grep --help
+rg --help
+pacman -Sl aurutils | rg -v '\[installed\]'
+pacman -Sl aurutils | rg -v '\[installed\]' | awk '{print $2}'
+pacman -Qi pacman-contrib 
+lvim ~/.bashrc
+echo $PROMPT_COMMAND 
+sudo pacman -Syu
+lvim ~/.bashrc
+his
+his
+lvim ~/.bashrc
+his
+exitr
+exit
+his
+his
+l
+his
+lsd -d */
+lsd -dl */
+his
+help test
+his
+ll
+his
+command --help
+help command
+his
+tac ~/.bash_history 
+tac ~/.bash_history | aws '!seem[$0]++'
+tac ~/.bash_history | awk '!seem[$0]++'
+tac ~/.bash_history | awk '!seem[$0]++' | wc -l
+tac ~/.bash_history | awk '!seem[$0]++' | tac > ~/.bash_history_limpo
+exit
