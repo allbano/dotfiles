@@ -131,7 +131,7 @@ fi
 [[ -r "$DOTBASH/functions/functionsInitBash" ]] && source "$DOTBASH/functions/functionsInitBash"
 
 # Custom Startup (Lógica do arquivo 99_custom_startup)
-[[ $SHLVL -eq 1 || $(ps -o tty= -p$$ | sed 's/pts\///') -eq 0 ]] && pullDotfiles
+[[ $SHLVL -eq 1 && $(ps -o tty= -p$$ | sed 's/pts\///') -eq 0 ]] && pullDotfiles
 
 # 9. ATIVAÇÃO DO PROMPT
 # =========================================================================== #
