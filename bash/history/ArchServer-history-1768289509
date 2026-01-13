@@ -4998,7 +4998,6 @@ pipx uninstall poetry
 pipx uninstall ignr 
 pipx uninstall httpx
 pip lis
-pip list 
 pipx uninstall httpie 
 cat /home/albano/.local/pipx/logs/cmd_2025-06-24_11.53.24_pip_errors.log
 curl -fsSL https://pyenv.run | bash
@@ -5043,7 +5042,6 @@ eza --long --show-symlinks --absolute --follow-symlinks
 pipx inject poetry poetry-plugin-shell
 poetry new --flat fastapi
 pipx upgrade-all 
-pipx list
 poetry python --help
 pyenv --help
 tar --zstd --preserve-permissions --atime-preserve --acls --xattrs --cvpf animes.tar.zst *
@@ -5355,7 +5353,6 @@ docker-compose -f ./docker-compose.yml up -d
 docker container ls
 docker container logs 
 docker container logs  postgrescourse 
-docker compose -f docker-compose.yml down
 docker compose -f docker-compose.yml up -d
 docker compose -f docker-compose.yml up --force-recreate  -d
 bat docker-compose.yml 
@@ -7213,7 +7210,6 @@ l /home/albano/.local/share/mise/installs/python/3.14.2/bin
 /home/albano/.local/share/mise/installs/python/3.14.2/bin/uv
 uv --help
 pip uninstall uv
-sudo pacman -S --asexplicit uv
 pip install -U uv
 uv python lislt
 uv python pin --global 3.14.2
@@ -7846,7 +7842,6 @@ cd $dot
 sudo chmod -r 0700 docs/
 sudo chmod -r 644 docs/
 chmod +x docs/
-cd docs/
 ssh -t codeberg@codeberg.org
 ssh -t git@codeberg.org
 cat readme.md 
@@ -9543,7 +9538,6 @@ cd src
 cd main/
 cd java/
 cd dac
-cd ../../../..
 cat index.js 
 git merge origin/renan 
 git merge origin/Leandro 
@@ -11827,7 +11821,6 @@ mkdir kretcheu
 mv cgcr kretcheu/
 paru -Sua aur/zen-browser-bin
 du -sh
-EXIT
 paru -Ssss tshark
 tere 
 paru -R tere
@@ -11982,7 +11975,6 @@ jupyter server --generate-config
 bat jupyter_server_config.py 
 paru -R deno
 mise use
-mise upgrade
 paru -Si mise
 paru -Si rtx
 sudo pacman -Si rtx
@@ -12100,7 +12092,6 @@ java --version
 git restore bashrc 
 pipi
 pixi
-which python
 rm -rf .pixi
 mise use -g python@3.14.0
 bat /etc/fstab 
@@ -12301,8 +12292,6 @@ sudo modprobe kvm
 grep -E '(vmx|svm)' /proc/cpuinfo
 docker pos
 virsh
-ng g c shared/components/header
-ng g c shared/components/footer
 mv frontend $HOME/github/parajas/
 rm -rf .git
 git restore --staged frontend/
@@ -12410,7 +12399,6 @@ man aur
 sudo pacman -Sss uv
 uv i
 mise use -g python 3.14.2
-sudo pacman -R uv
 rm -rf .venv/
 uv python pin 3.14
 code
@@ -12652,11 +12640,9 @@ cd /usr
 pipx
 pipx upgrade poetry 
 mise 
-mise use -g python@3.14.2
 python -m venv .venv
 rm -rf .venv
 python -m venv venv
-deactivate
 source .bashrc
 echo $VIRTUAL_ENV
 VIRTUAL_ENV=''
@@ -12667,8 +12653,6 @@ git restore bash/.bashrc
 git restore bash/bash_functions 
 cat .tmux.conf 
 python
-pp
-awk
 rustup update 
 rustup
 rustup show
@@ -12710,7 +12694,6 @@ mkdir foot
 cd foot/
 cd /etc/xdg/foot/
 cat foot.ini 
-cd -
 cat /etc/xdg/foot/foot.ini > foot.ini
 nvim foot.ini 
 cd Courses/Rust_brazuca/
@@ -12732,43 +12715,36 @@ cd github/typehints_python/
 uv init
 uv sync 
 uv venv
-source .venv/bin/activate
 git restore ghostty/config 
 btop
 tcsh
 cd $DOTFILES
 git diff
-exit
 history -d 12813
 history -d 12808
 history -d 12785
 pushHis 
-exit
+tac ~/.bash_history | awk '!seen[$0]++' | tac > ~/.bash_history_limpo
+grep -E "^.{4,}$" ~/.bash_history_limpo > ~/.bash_history_temp && mv ~/.bash_history_temp ~/.bash_history_limpo
 wc -l 0 $HOME/.bash_history_limpo 
 wc -l $HOME/.bash_history_limpo 
 cd angular-signals/
 cd practice/
 cd "03. fun-with-signals"/
 rm -rf node_modules/
-rm -rf node_modules/
 npm i
-exit
-exit
 history -d 12828
 cd Courses/Angular/v21/angular-signals/projects/
 cd secao3_aula16/
 rm -rf secao3_12.linked-signal/
 ng new secao3_12.linked-signal
-exit
 cd Courses/Angular/v21/angular-signals/
 cd projects/
 cd secao3_12.linked-signal/
-exit
 export CLICOLOR_FORCE=1
 export MISE_COLOR=true
 cd .config/mise/
 lvim config.toml 
-exit
 lvim .config/mise/config.toml 
 export CLICOLOR=1
 export FORCE_COLOR=1
@@ -12777,19 +12753,13 @@ export MISE_COLOR=1
 export MISE_COLOR=0
 mise --help
 mise --version
-exit
 his -d 12868
-exit
 cd Courses/Angular/v21
 ng new projeto-angular
 cd projeto-angular/
-npm i @angular/materialk
 yt-dlp -f 248+251 https://youtu.be/_dh6dpaiTrY?si=OxWNe4BVUFE6X-c0
-exit
 npm i @angular/materialk
 ng g c components/shared/page
-ng g c components/shared/menu
-exit
 ng g c components/shared/menu
 ng g c screens/counter
 ng g c screens/todos
@@ -12797,38 +12767,25 @@ ng g c components/shared/menu-item
 ng g c components/shared/title
 ng g s services/todos
 ng generate class model/todo
-ng generate class model/todo
-ng g s services/todo.service
 ng g s services/todo.service
 npm install uuid
-npm install uuid
-npm install -D @types/uuid
 npm install -D @types/uuid
 cp -r projeto-angular projeto-angular-bak
 cd projeto-angular-bak/
-exit
-exit
 kded6 --help
 kded5 --help
 kdecp --help
-exit
-exit
 history -d 12900
 history -d 12863
-exit
 cd Courses/PythonRodrigo/
 cd fundamentos/
 source venv/bin/activate
 pip list -lo
-pip list -l
 jupyter lab --core-mode --port 15000
 deactivate 
-exit
 sudo passwd rosana
-exit
 ssh parajas21
 ssh parajas216 
-exit
 cd Videos/
 cd Music/
 mkdir 2026
@@ -12840,13 +12797,11 @@ yt-dlp -x --audio-format opus --audio-quality 0 https://youtu.be/TYrRJ7Spn90?si=
 mise use -g deno@2.5.6
 mise
 mise up 
-exit
 mise use deno@2.6.3
 mise unuse deno
 mise use -g deno@2.6.3
 which deno
 echo -e "${PATH//:/\\n}"
-exit
 cd Music/2026
 yt-dlp -x --audio-format opus --audio-quality 0 https://www.youtube.com/watch?v=HA6nSQawROM
 yt-dlp -x --audio-format opus --audio-quality 0 https://www.youtube.com/watch?v=FtukH_bCDHg
@@ -12855,7 +12810,6 @@ git pull -v origin main
 cat .gitignore 
 ng update
 ng update @angular/cli @angular/core
-gaa
 git commit -m "chore: Atualiza pacotes(angular,typescript,etc)."
 cd src/app/
 mv domains features
@@ -12872,16 +12826,11 @@ tree --dirsfirst
 tree --dirsfirst -D
 npm i @angular/material
 ng g c shared/components/page
-exit
 cd github/parajas
-mv frontend ~/projects/angular/
 diff --recursive angular 'angular (copy)'
 rm -rf 'angular (copy)'
 mv frontend ~/projects/angular/
-cde
-cd 
 cd projects/angular/
-ng serve
 ng serve
 mv frontend $HOME/github/parajas
 cd $HOME/github/parajas
@@ -12890,7 +12839,6 @@ git commit -m "chore: Atualiza pacotes"
 git switch main 
 git switch dev
 git diff 
-ol
 alias l
 cd shared/
 cd components/
@@ -12906,15 +12854,11 @@ git commit -m "raw: Adiciona favicons do projeto."
 git add frontend/src/app/shared/components/header
 git commit -m "feat: Adiciona o componente compartilhado header."
 ng g c shared/components/footer
-exit
 git commit -m "feat: Adiciona o componente compartilhado menu."
 git add shared/components/menu-item
 git commit -m "feat: Adiciona o componente compartilhado menu-item."
 git add ../../public/favicon.ico 
 git commit -m "raw: Corrige favicon - aparece na barra de título."
-git push -v origin dev 
-exit
-exit
 npm startt
 ip -c a
 ping -c2 127.0.0.1
@@ -12940,17 +12884,13 @@ git add src/app/screens/policies/
 git commit -m "feat: Adiciona o componente de conteúdo do item Políticas(/policies)."
 git add src/app/screens/about/
 git commit -m "feat: Adiciona o componente de conteúdo do item Sobre(/about)."
-git add .
 git commit -m "feat: Adiciona os routerlinks para carregamento dinâmico dos itens do menu(Parajás/Coleções/Políticas/Sobre)."
-gst
 free -f
 free -h
 sudo systemctl enable --now smartd.service 
 sudo systemctl status smartd.service 
 sudo systemctl status udisks2.service 
 smartctl --help
-exit
-exit
 gcl git@github.com:parajas-ufpr/parajas.git parajas-main
 ll parajas*
 rm -rf parajas_frontend
@@ -12964,20 +12904,15 @@ git pull -v origin main\
 git switch dev 
 cd frontend/
 npm star
-exit
 npm install element-plus-ng
 rm -rf test-navbars/
-exit
-ff
 his -d 13024
 his -d 13000
 alias gs
 update
-ps
 tty 
 tty --help
 tty -s
-tty
 basename $(tty)
 cd Courses/Angular/
 tree
@@ -12985,13 +12920,11 @@ tree -d
 tree -dL1
 tree -L1
 mise self-update
-mise up
 tree -L2
 cat mise.toml 
 mise use node@22.21.1
 rm -rf desafio-roteamento-simples
 mise use node@18.20.8
-exit
 cd Courses/Angular/v17/
 rm mise.toml 
 mise uninstall 22.21.1
@@ -12999,7 +12932,6 @@ mise uninstall node@22.21.1
 mise install node@20.19.6
 mise use -g node@20.19.6
 npm i -g npm
-ls
 mise reshim
 cd v17
 ls -l
@@ -13013,20 +12945,12 @@ ng serve --port 18000
 npm start 18000
 ng sp 18000
 npm sp 18000
-exit
 git commit -m "feat: Atualiza o item selecionado e o header/footer para barra fixa."
 git push -v origin dev
 npm run sp 18000
-exit
-exit
 cd github/parajas/frontend/
-npm start
-exit
-npm start
-exit
 ssh parajas198 
 ssh parajas216
-exit
 nvim convert_xlx_to_json.py
 deactivate
 mise up
@@ -13038,29 +12962,21 @@ source .venv/bin/activate
 pip list 
 pip list -l
 python convert_xlx_to_json.py 
-exit
-exit
 docker compose -f docker-compose.yml down
 uv python list -v
 pipx list
 sudo pacman -Qs uv
 sudo pacman -R uv
 sudo pacman -S --asexplicit uv
-uvb
 uv self
-gst
 git add .
 git commit -m 'chore: Atualiza docker-compose do banco de dados #funcional'
 git push -v origin dev 
-exit
-exit
-exit
 sudo pacman -R freedownloadmanager 
 sudo pacman -Syy
 sudo pacman -Rns freedownloadmanager 
 sudo rm -rf /var/cache/pacman/pkg/download-*
 sudo pacman -Scccc
-exit
 sudo repo-remove /var/cache/pacman/aurutils/aurutils.db.tar.gz freedownloadmanager
 cd /var/cache/pacman/aurutils/
 cd ..
@@ -13077,24 +12993,15 @@ ln -sf aurutils.db.tar.gz aurutils.db
 sudo unlink.files
 sudo unlink aurutils.files
 ln -sf aurutils.files.tar.gz aurutils.files
-exit
-uv
 uv python
 uv python list
 uv python dir
 mise ls-remote uv
 uv --version
 uv python install --help
-exit
-exit
-exit
-tmux
 ng g c components/counter
 npm start
-exit
-exit
 tmux
-exit
 cd github/
 git push -v origin main
 git remote -v
@@ -13104,8 +13011,6 @@ GTK_IM_MODULE=xim ghostty
 GTK_IM_MODULE=wayland ghostty
 killall ghostty
 lvim ~/.bashrc
-exit
-exit
 nohup GTK_IM_MODULE=gtk-im-context-simple ghostty &>/home/albano/logs/ &
 cd logs/
 mkdir ghostty
@@ -13114,24 +13019,18 @@ nohup GTK_IM_MODULE=gtk-im-context-simple ghostty &>/home/albano/logs/ghostty/gh
 nohup "GTK_IM_MODULE=gtk-im-context-simple ghostty" &>/home/albano/logs/ghostty/ghostty_logs &
 cd ghostty/
 bat ghostty_logs 
-exit
-exit
 cd /
 fd ghostty.desktop
-cd
 cd .local/share/applications/
 rm com.mitchellh.ghostty
 sudo rm com.mitchellh.ghostty-debug.desktop 
 sudo rm com.mitchellh.ghostty.desktop 
 vim ghostty.desktop 
 lvim ghostty.desktop 
-exit
-exit
 nc bin/ghostty
 nc $HOME/bin/ghostty
 cd bin
 ns ghostty
-env
 env | grep GTK
 touch  ~/logs/ghostty/ghostty_logs
 rm ~/logs/ghostty/ghostty_logs; > ~/logs/ghostty/ghostty_logs
@@ -13139,22 +13038,16 @@ cat ~/logs/ghostty/ghostty_logs
 lvim ghostty 
 rm ghostty 
 lvim ~/.local/share/applications/ghostty.desktop 
-lvim ~/.local/share/applications/ghostty.desktop 
-exit
-exit
 GTK_IM_MODULE=gtk-im-context-simple ghostty
 GTK_IM_MODULE=gtk-im-context-simple ghostty &
 nohup GTK_IM_MODULE=gtk-im-context-simple ghostty &
 rm nohup.out 
 pacman -Sl aurutils 
-exit
-ghostty --version
 ghostty --version
 python --version
 mise install python@3.13.11
 mise uninstall python@3.14.2
 mise ls
-bun
 deno
 deno --version
 deno --help
@@ -13167,19 +13060,13 @@ code .
 exit
 nohup bash -c "GTK_IM_MODULE=gtk-im-context-simple ghostty" &>/home/albano/logs/ghostty/ghostty_logs &
 sudo pacman -Syu
-sudo pacman -Syu
 aur sync --cleanbuild --clean --database aurutils --upgrades 
 zeditor --version
-l
-ll
-la
 sudo systemctl status
 his -d 13181
 his -d 13180
 his -d 13174
 his -d 13182
+his -d 11824
+his -d 13070
 his
-tac ~/.bash_history | awk '!seen[$0]++' | tac > ~/.bash_history_limpo
-# Mantém apenas linhas com 4 ou mais caracteres
-grep -E "^.{4,}$" ~/.bash_history_limpo > ~/.bash_history_temp && mv ~/.bash_history_temp ~/.bash_history_limpo
-wc -l ~/.bash_history_limpo 
