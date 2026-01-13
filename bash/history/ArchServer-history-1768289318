@@ -3973,7 +3973,6 @@ lvim ~/.config/mise/config.toml
 mis ls
 mise uninstall node@23.10.0
 lvim mise.toml 
-rm mise.toml 
 lvim profile 
 rm package.json package-lock.json 
 npm i npm@latest
@@ -4723,7 +4722,6 @@ ln -sf $DOTFILES/ghostty/config.toml $HOME/.config/ghostty/config
 unlink config.toml 
 lvim $HOME/.config/kitty/kitty.conf
 l $HOME
-lvim config.toml 
 lvim Aura_all 
 lvim Aura.conf 
 lvim $DOTBASHRC/07_prompt 
@@ -6019,7 +6017,6 @@ ls --directory -l
 ls -l d*/
 sudo ls -l d*/
 chmod 770 Apostilas
-alias ll
 paru -S --asexplicit unrar
 cat log
 vim log.txt 
@@ -6403,7 +6400,6 @@ git commit -m "Aula 420 - Final / Atualiza Estrutura."
 git commit -m "Aula 421 - Início / Estrutura"
 git commit -m "Aula 421 - Final / Carregamentos"
 git commit -m "Aula 422 - Final"
-npm i -g @angular/cli@17
 rm -rf projeto-standalone
 ng new projeto-standalone --style=scss --ssr=false
 git commit -m "Aula 427 - Incicio/Final - Criaçao do Projeto"
@@ -6463,7 +6459,6 @@ pip install -U jupyterlab-qtconsole
 pip install -U qtconsole 
 pip install -U jupyter-qtconsole 
 pip install --upgrade pip
-pip list -lo
 pip install --upgrade "jupyverse[auth,jupyterlab]"
 rm -rf /home/albano/.local/share/jupyter/lab/schemas/nbdime-jupyterlab/
 pip install -U nbdime
@@ -6505,7 +6500,6 @@ ng new 1-roteamento-standalone --style scss --ssr false
 sudo pacman -S --asexplicit brave-bin 
 git commit -m "Aula 434/438 - Criação e configuração do projeto Inicial"
 pip install -U jupyterlab 
-pip list -l
 ns --help
 ./02-parametros João da Silva
 ssh-agent --help
@@ -6535,7 +6529,6 @@ paru -S --asexplicit antigravity-bin
 git restore src/app/components/inicial 
 git commit -m "Aula 453 - Incicio - Criando os componentes. Organizando o projeto."
 git commit -m "Aula 453 - Final - Implementação de Rotas Filhas - OK"
-sudo systemctl status
 sudo systemctl enable firewalld.service 
 sudo systemctl status NetworkManager.service 
 nmcli 
@@ -6683,15 +6676,11 @@ pixi --help
 pixi self-update
 pip install -U jupyterlab
 git restore bash/rc/06_extra_and_tools 
-jupyter lab --core-mode --port 15000
 /home/albano/Courses/PythonRodrigo/fundamentos/.venv/bin/python /home/albano/Courses/PythonRodrigo/fundamentos/13-dicionario.py
 sudo lvim /etc/fstab 
 mkdir Angular
 rm -rf projeto-angular
-ng new projeto-angular
-npm i @angular/material
 sudo systemctl statu
-ng g c components/shared/title
 sudo pacman -Ssss netplan
 akonadictl fsck
 sudo pacman -S --asexplicit tre
@@ -6704,7 +6693,6 @@ yay -S --asexplicit tre-command
 tre . | less
 tre --helpk
 tre --help
-tree --help
 rm -rf node_modules
 grep -r "resource" node_modules/@angular/core | grep ".d.ts" | head -n 5
 npm install zone.js
@@ -6732,7 +6720,6 @@ rm -rf social-media-comparer
 yay -S --asexplicit insomnia
 gcl git@github.com:Fernanda-Kipper/social-media-comparer.git
 smartctl 
-smartctl --help
 smartctl --all /dev/nvme0n1
 sudo smartctl --all /dev/nvme0n1
 npm install
@@ -6980,7 +6967,6 @@ sudo pacman -S --asexplicit unison
 unison --help
 mise ls-remote syncthing
 mise ls-remote sync
-mise --help
 mise install bun@1.3.3
 bun install @angular/cli
 rm -rf node_modules 
@@ -7075,7 +7061,6 @@ sudo firewall-cmd --reload
 sudo firewall-cmd --zone=public --list-all
 sudo firewall-cmd --zone=public --change-interface=wlan0 --permanent 
 socat --help
-ng update @angular/cli @angular/core
 npm i -g @angular/core
 cat $DOTFILES/alacritty/default.toml 
 nvim $DOTFILES/alacritty/alacritty.toml
@@ -7104,7 +7089,6 @@ sudo systemctl status virtqemud.service virtqemud.socket virtqemud-admin.socket
 virsh --help
 lsd -l /boot
 git fetch --all
-ls -l
 git commit -m "feat: Adiciona projeto inicial Angular / frontend - SSR."
 yay -S --asexplicit aur/paru
 yay -S --asexplicit paru-bin
@@ -7197,7 +7181,6 @@ aur repo -l -i
 aur repo --list-attr 
 aur repo --list-repo 
 tldr aur sync
-mise self-update
 mise ls-remote zig
 mise ls-remote zls
 mise ls-remote zls@0.15.1
@@ -7208,7 +7191,6 @@ zls --version
 zls --help
 zls env
 mise ls-remote node@24
-npm i -g @angular/cli
 mise ls-remote python@3.14
 mise install python@3.14.2
 mise uninstall python@3.14.0
@@ -7239,7 +7221,6 @@ uv python ls
 uv python pin --global 3.14
 pullDotfiles 
 yarn --help
-alias l
 lsd --help
 ls --help
 lsd -I 
@@ -7425,7 +7406,6 @@ lvim .bashrc
 git pull --all
 mise install python@3.12.12
 mise install python@3.11.14
-zig build -Doptimize=ReleaseFast install --prefix /home/albano/.local/
 exity
 sudo pacman -S --asexplicit spring-tools-for-clipse
 aur sync --clean --cleanbuild spring-tools-for-eclipse
@@ -7469,7 +7449,6 @@ nvim  $HOME/github/dotfiles/tmux/.tmux.conf
 mise unuse --global bun@1.3.4
 mise unuse --global bun@1.3.4 --yes
 mise use --global bun@1.3.4 --yes
-mise ls
 bash --help
 lvim ~/.config/alacritty/alacritty.toml
 unzip '12-10 - Freela de Python - Projeto de R$930 - Automação com IA-20251226T005127Z-3-001.zip' 
@@ -7478,7 +7457,6 @@ ln -sf $HOME/github/dotfiles/scripts $HOME/bin
 test --help
 cat .python_history 
 rm .angular-config.json 
-aur sync --cleanbuild --clean --database aurutils --upgrades 
 sudo pacman -Sl aurutils
 sudo pacman -Slq aurutils 
 sudo pacman -Sl aurutils 
@@ -7488,7 +7466,6 @@ grep --help
 rg --help
 pacman -Sl aurutils | rg -v '\[installed\]'
 pacman -Sl aurutils | rg -v '\[installed\]' | awk '{print $2}'
-lvim ~/.bashrc
 lsd -d */
 lsd -dl */
 help test
@@ -8600,9 +8577,7 @@ cron
 crontab
 crontab -u
 ga bash/bashrc
-tty -s
 gp -f origin main
-update
 docker exec -it bash
 docker inspect -f  test_py
 docker inspect -f '{{ .State.Pid }}' test_py
@@ -9164,7 +9139,6 @@ docker rm 08 master_postgre_master
 docker rm 08 
 docker rmi f
 docker rmi 0f
-cd app
 docker rm -f dbmaster && docker rmi c96
 docker rm -f dbmaster && docker rmi 8f
 ns entrypoint
@@ -9325,7 +9299,6 @@ cd GNS3/
 cd JDKs/
 rm -rf JDKs/
 cd MEGA/
-cd Music/
 cd NPs/
 cd NetBeansProjects/
 mv TesteDIO ../NPs/
@@ -10102,7 +10075,6 @@ paru -R winetricks
 paru -Rs wine wine-mono wine-gecko vkd3d
 sct poweroff
 sudo mkinicpio -P
-cd Videos/
 cd 2024
 mkdir Imersao19
 mkdir Lives
@@ -10172,7 +10144,6 @@ PS1="[\u@\h \W ] $([[ $(echo $?) -eq 0 ]] && echo -n '\e[31m' || echo -n '\e[32m
 PS1="[\u@\h \W ] $([[ $(echo $?) -ne 0 ]] && echo -n '\e[31m' || echo -n '\e[32m') \$ \[\e[0m\] "
 PS1="[\u@\h \W ] $([[ `echo $?` -ne 0 ]] && echo -n '\e[31m' || echo -n '\e[32m') \$ \[\e[0m\] "
 PS1="[\u@\h \W ] $([[ `echo $?` -eq 0 ]] && echo -n '\e[31m' || echo -n '\e[32m') \$ \[\e[0m\] "
-cd bin
 cd .
 paru -S rsync
 type -a nvim
@@ -10227,7 +10198,6 @@ paru -S tree
 cd /run
 ga bash/bashrc 
 tree 
-git diff 
 ga bashrc 
 gp -f
 git restore --staged tmux/.tmux.conf 
@@ -10461,7 +10431,6 @@ docker-compose up
 paru -R sofirem-git 
 paru -R akonadi-notes ksanecore5
 paru -R uksmd
-free -h
 paru -S ffmpeg-git 
 paru -Ssss ffmpeg
 paru -Ssss '^ffmpeg'
@@ -10608,7 +10577,6 @@ paru -Sss astah
 sudo mkdir /ssd
 cat /etc/fstab
 cd ssd/
-cd /
 mkdir backup
 mount -a
 sudo mount -a
@@ -10652,7 +10620,6 @@ sudo fwupdmgr update
 paru -S sshfs
 cd github/fast_zero/
 paru -Ssss astah
-cd Desktop/
 mkdir astah
 yay -S debtap
 rm usuarios.json 
@@ -10684,7 +10651,6 @@ type -a pipx
 type _mise_hook 
 rm .zshrc.bak 
 java -h
-tree -L2
 tree -L2 -h
 nvim 03_functions 
 nvim 00_init_functions 
@@ -10861,7 +10827,6 @@ doas chmod -R 775 /tmp
 doas chmod -R 775 /win
 sudo mkdir -p /media
 sudo mkdir -p gdrive
-ng update
 paru -Ssss jdk
 paru -S jdk8-temurin 
 type -p java
@@ -11054,7 +11019,6 @@ gcm "feat: add kitty config and themes"
 rm kitty.conf.bak 
 rm kitty.conf 
 tree -hL1
-tree -L1
 rm -rf kitty-themes
 paru -Ssss dnsmasq
 paru -Ssss pir
@@ -11691,7 +11655,6 @@ paru -S inxi
 mkdir base
 mv base bare
 git remote -h
-git remote -v
 git push backup main 
 rm 3+-+Criação+de+um+Componente+Parte+2.zip 
 yay -S ttf-ms-fonts
@@ -11972,7 +11935,6 @@ sudo pacman -Qtdq
 sudo pacman -Rs oxygen
 sudo pacman -Rs oxygen-sounds 
 sudo ./remove-orphans 
-rm nohup.out 
 sudo nvim /etc/pacman.conf 
 sudo pacman -S wofi
 wofi
@@ -12020,9 +11982,7 @@ jupyter server --generate-config
 bat jupyter_server_config.py 
 paru -R deno
 mise use
-mise up
 mise upgrade
-mise --version
 paru -Si mise
 paru -Si rtx
 sudo pacman -Si rtx
@@ -12133,7 +12093,6 @@ nvim main.cpp
 head -50 PALAVRASpc.txt 
 bat package.json 
 pnpm
-npm i -g npm
 pnpm i
 pnpm start
 du -su .
@@ -12146,10 +12105,6 @@ rm -rf .pixi
 mise use -g python@3.14.0
 bat /etc/fstab 
 ng g c components/shared/menu --skip-tests
-ng g c components/shared/menu
-ng g c screens/home
-ng g c screens/counter
-ng g c components/shared/menu-item
 pacman -Sss tre
 pacman -Sss 'tre$'
 yay -Ssss tre-co
@@ -12341,8 +12296,6 @@ git diff dev..main
 git diff main..dev
 git cherry-pick feec dev 
 git cherry-pick --abort
-git switch main
-cat .gitignore 
 sudo modprobe kvm_amd
 sudo modprobe kvm
 grep -E '(vmx|svm)' /proc/cpuinfo
@@ -12353,10 +12306,7 @@ ng g c shared/components/footer
 mv frontend $HOME/github/parajas/
 rm -rf .git
 git restore --staged frontend/
-git switch dev
-git merge --no-ff main
 git push origin main
-git switch dev 
 git push origin dev
 paru -Syyu
 sudo pacman -R paru 
@@ -12456,14 +12406,11 @@ mise rm -g deno@2.2.15
 mise use -g bun@1.3.4+
 mise use -g bun@1.3.4
 bun info
-mise
 man aur
 sudo pacman -Sss uv
 uv i
 mise use -g python 3.14.2
 sudo pacman -R uv
-uv python dir
-uv python
 rm -rf .venv/
 uv python pin 3.14
 code
@@ -12530,7 +12477,6 @@ rm -rf component
 ng g c component/user
 rm -rf service
 ng g s service/user
-ng serve
 npx json-server db.json
 json-server db.json
 npx json-server db.json --port 3000
@@ -12577,7 +12523,6 @@ doas pacman -R zed-preview-bin
 aur sync zed-preview-bin
 aur sync --upgrades zed-preview-bin4
 type -a uv
-node --version
 node
 sudo pacman -Sss vim
 sudo pacman -Sss "^vim"
@@ -12603,7 +12548,6 @@ pacman -Qs '^termin'
 pacman -Qs '^termina'
 ssh parajas2
 bat config
-ssh parajas198 
 doas grub-mkconfig -o /boot/grub/grub.cfg 
 sha256sum debian-13.2.0-amd64-DVD-1.iso 
 mv .bashrc .bashrc_root
@@ -12617,10 +12561,8 @@ aur query
 sudo pacman -Ssss pygmentize
 pygmentize
 sudo pacman -Qi ghostty
-git switch main 
 git branch 
 which ghostty
-ghostty --version
 aur search spring
 sudo pacman -Ss pacman-contrib
 aur sync --upgrades 
@@ -12656,7 +12598,6 @@ git commit -m "feat: add popup keybinds tmux."
 tree --prune -a -C 
 tree --prune -a -C -L2
 tree --prune -a -C
-tree -d
 rm pacotes_chaotic.txt 
 exot
 cat 
@@ -12671,11 +12612,9 @@ rm .PKGINFO
 rm .BUILDINFO 
 sudo pacman -Qs xterm
 sudo pacman -Rsnddc xterm
-sudo pacman -Syy
 pacman -Qi pacman-contrib 
 echo $PROMPT_COMMAND 
 docker
-pushHis 
 cd bash
 cd functions/
 cat 00_init_functions 
@@ -12684,20 +12623,15 @@ rm -rf functions
 git add functions
 git add bash_functions 
 git restore --staged 
-git restore --staged .
 cp .bashrc backup/
 cat $DOTBASH/backup/.bashrc
 git add bash/backup/.bashrc 
 git commit -v -m "remove: backup .bashrc"
-ip -c a
-git add .
 git restore --staged bash/bash_functions 
 git switch debian 
 git push -v origin debian 
 git push -v -f origin debian 
 ssh parajas
-ssh parajas216 
-ssh parajas216
 mkdir -p Secao{1..37}
 mv *.mp4 Secao1
 mkdir -p Secao{01..37}
@@ -12710,7 +12644,6 @@ DELETAR=12879
 echo $DELETAR 
 DELETAR=
 which ng
-ng version
 inxi
 yarn version
 cd .ssh
@@ -12719,8 +12652,6 @@ cd /usr
 pipx
 pipx upgrade poetry 
 mise 
-cd Courses/PythonRodrigo/
-cd fundamentos/
 mise use -g python@3.14.2
 python -m venv .venv
 rm -rf .venv
@@ -12731,15 +12662,11 @@ echo $VIRTUAL_ENV
 VIRTUAL_ENV=''
 cd $DOTBASH
 cd Courses/PythonRodrigo/fundamentos/
-source venv/bin/activate
-env
 env | grep tmux
 git restore bash/.bashrc 
 git restore bash/bash_functions 
-gaa
 cat .tmux.conf 
 python
-echo -e "${PATH//:/\\n}"
 pp
 awk
 rustup update 
@@ -12764,14 +12691,10 @@ ng new secao-two
 cd secao-two/
 rm -rf secao-two/
 rm -rf secao2
-cd practice/
 cd '01. change-detaction'/
-npm i
-npm start
 cd cd '02. behavior-subject-state'/
 cd '02. behavior-subject-state'/
 cd..
-tree
 cd src/
 cargo new operadores_bitwise
 cd operadores_bitwise/
@@ -12782,7 +12705,6 @@ cd debug/
 ./operadores_atribuicao 
 cargo new std_io
 cd std_io/
-cd
 cd .config/
 mkdir foot
 cd foot/
@@ -12791,7 +12713,6 @@ cat foot.ini
 cd -
 cat /etc/xdg/foot/foot.ini > foot.ini
 nvim foot.ini 
-cd ../..
 cd Courses/Rust_brazuca/
 cargo new operadores_repeticao
 cd operadores_repeticao/
@@ -12803,29 +12724,462 @@ rm -rf operadores_repeticao
 cd ex_if01/
 cargo new ex_if02
 cd ex_if02
-cd ..
 cargo run
 nvim
 echo $LANG 
 nvim $HOME/.config/ghostty/config 
 cd github/typehints_python/
-code .
-python --version
 uv init
 uv sync 
 uv venv
 source .venv/bin/activate
-deactivate 
-uv
 git restore ghostty/config 
 btop
-tmux
 tcsh
 cd $DOTFILES
 git diff
-sudo pacman -Syu
 exit
 history -d 12813
 history -d 12808
 history -d 12785
+pushHis 
+exit
+wc -l 0 $HOME/.bash_history_limpo 
+wc -l $HOME/.bash_history_limpo 
+cd angular-signals/
+cd practice/
+cd "03. fun-with-signals"/
+rm -rf node_modules/
+rm -rf node_modules/
+npm i
+exit
+exit
+history -d 12828
+cd Courses/Angular/v21/angular-signals/projects/
+cd secao3_aula16/
+rm -rf secao3_12.linked-signal/
+ng new secao3_12.linked-signal
+exit
+cd Courses/Angular/v21/angular-signals/
+cd projects/
+cd secao3_12.linked-signal/
+exit
+export CLICOLOR_FORCE=1
+export MISE_COLOR=true
+cd .config/mise/
+lvim config.toml 
+exit
+lvim .config/mise/config.toml 
+export CLICOLOR=1
+export FORCE_COLOR=1
+export TERM=xterm-256color
+export MISE_COLOR=1
+export MISE_COLOR=0
+mise --help
+mise --version
+exit
+his -d 12868
+exit
+cd Courses/Angular/v21
+ng new projeto-angular
+cd projeto-angular/
+npm i @angular/materialk
+yt-dlp -f 248+251 https://youtu.be/_dh6dpaiTrY?si=OxWNe4BVUFE6X-c0
+exit
+npm i @angular/materialk
+ng g c components/shared/page
+ng g c components/shared/menu
+exit
+ng g c components/shared/menu
+ng g c screens/counter
+ng g c screens/todos
+ng g c components/shared/menu-item
+ng g c components/shared/title
+ng g s services/todos
+ng generate class model/todo
+ng generate class model/todo
+ng g s services/todo.service
+ng g s services/todo.service
+npm install uuid
+npm install uuid
+npm install -D @types/uuid
+npm install -D @types/uuid
+cp -r projeto-angular projeto-angular-bak
+cd projeto-angular-bak/
+exit
+exit
+kded6 --help
+kded5 --help
+kdecp --help
+exit
+exit
+history -d 12900
+history -d 12863
+exit
+cd Courses/PythonRodrigo/
+cd fundamentos/
+source venv/bin/activate
+pip list -lo
+pip list -l
+jupyter lab --core-mode --port 15000
+deactivate 
+exit
+sudo passwd rosana
+exit
+ssh parajas21
+ssh parajas216 
+exit
+cd Videos/
+cd Music/
+mkdir 2026
+cd 2026
+yt-dlp --list-formats https://www.youtube.com/watch?v=zBYVg9zlwKQ
+yt-dlp -f 251 https://www.youtube.com/watch?v=zBYVg9zlwKQ
+yt-dlp -x --audio-format opus --audio-quality 0 https://www.youtube.com/watch?v=zBYVg9zlwKQ
+yt-dlp -x --audio-format opus --audio-quality 0 https://youtu.be/TYrRJ7Spn90?si=pEociEX2LZjXWe17
+mise use -g deno@2.5.6
+mise
+mise up 
+exit
+mise use deno@2.6.3
+mise unuse deno
+mise use -g deno@2.6.3
+which deno
+echo -e "${PATH//:/\\n}"
+exit
+cd Music/2026
+yt-dlp -x --audio-format opus --audio-quality 0 https://www.youtube.com/watch?v=HA6nSQawROM
+yt-dlp -x --audio-format opus --audio-quality 0 https://www.youtube.com/watch?v=FtukH_bCDHg
+git merge --no-ff main
+git pull -v origin main 
+cat .gitignore 
+ng update
+ng update @angular/cli @angular/core
+gaa
+git commit -m "chore: Atualiza pacotes(angular,typescript,etc)."
+cd src/app/
+mv domains features
+cd features/
+alias ll
+lsd -lA
+lsd -l --group-dirs
+lsd -l --group-dirs first
+lsd -l --group-dirs first --tree
+lsd --group-dirs first --tree
+cd app
+tree -
+tree --dirsfirst 
+tree --dirsfirst -D
+npm i @angular/material
+ng g c shared/components/page
+exit
+cd github/parajas
+mv frontend ~/projects/angular/
+diff --recursive angular 'angular (copy)'
+rm -rf 'angular (copy)'
+mv frontend ~/projects/angular/
+cde
+cd 
+cd projects/angular/
+ng serve
+ng serve
+mv frontend $HOME/github/parajas
+cd $HOME/github/parajas
+git add frontend/package*
+git commit -m "chore: Atualiza pacotes"
+git switch main 
+git switch dev
+git diff 
+ol
+alias l
+cd shared/
+cd components/
+git add shared/
+git commit -m "feat: Adiciona o componente page."
+ng g c shared/components/header
+cd ../../../..
+cd -
+cd ../../..
+cd docs/
+git add identidade_visual_parajas/
+git commit -m "raw: Adiciona favicons do projeto."
+git add frontend/src/app/shared/components/header
+git commit -m "feat: Adiciona o componente compartilhado header."
+ng g c shared/components/footer
+exit
+git commit -m "feat: Adiciona o componente compartilhado menu."
+git add shared/components/menu-item
+git commit -m "feat: Adiciona o componente compartilhado menu-item."
+git add ../../public/favicon.ico 
+git commit -m "raw: Corrige favicon - aparece na barra de título."
+git push -v origin dev 
+exit
+exit
+npm startt
+ip -c a
+ping -c2 127.0.0.1
+cd src/app
+ng g c screens/home
+ng g c screens/collection
+ng g c screens/policies
+ng g c screens/collections
+ng g c screens/about
+cd ../..
+git add ../docs/
+git commit -m "raw: Adiciona imagem de logo UFPR em tamanhos personalizados."
+git add public/
+git commit -m ""
+git add src/app
+git add src/app/shared/
+git restore --staged .
+git add src/app/screens/home
+git commit -m "feat: Adiciona o componente de conteúdo da home(parajás)."
+git add src/app/screens/collections/
+git commit -m "feat: Adiciona o componente de conteúdo do item Coleções(/collections)."
+git add src/app/screens/policies/
+git commit -m "feat: Adiciona o componente de conteúdo do item Políticas(/policies)."
+git add src/app/screens/about/
+git commit -m "feat: Adiciona o componente de conteúdo do item Sobre(/about)."
+git add .
+git commit -m "feat: Adiciona os routerlinks para carregamento dinâmico dos itens do menu(Parajás/Coleções/Políticas/Sobre)."
+gst
+free -f
+free -h
+sudo systemctl enable --now smartd.service 
+sudo systemctl status smartd.service 
+sudo systemctl status udisks2.service 
+smartctl --help
+exit
+exit
+gcl git@github.com:parajas-ufpr/parajas.git parajas-main
+ll parajas*
+rm -rf parajas_frontend
+rm -rf parajas_modular_collect
+cd parajas-main/
+rm -rf parajas-main/
+ll -d parajas*
+cd parajas/
+git switch main
+git pull -v origin main\
+git switch dev 
+cd frontend/
+npm star
+exit
+npm install element-plus-ng
+rm -rf test-navbars/
+exit
+ff
+his -d 13024
+his -d 13000
+alias gs
+update
+ps
+tty 
+tty --help
+tty -s
+tty
+basename $(tty)
+cd Courses/Angular/
+tree
+tree -d
+tree -dL1
+tree -L1
+mise self-update
+mise up
+tree -L2
+cat mise.toml 
+mise use node@22.21.1
+rm -rf desafio-roteamento-simples
+mise use node@18.20.8
+exit
+cd Courses/Angular/v17/
+rm mise.toml 
+mise uninstall 22.21.1
+mise uninstall node@22.21.1
+mise install node@20.19.6
+mise use -g node@20.19.6
+npm i -g npm
+ls
+mise reshim
+cd v17
+ls -l
+node --version
+npm i -g @angular/cli
+npm i -g @angular/cli@17
+ng version
+ng new desafio-roteamento-simples
+cd desafio-roteamento-simples/
+ng serve --port 18000
+npm start 18000
+ng sp 18000
+npm sp 18000
+exit
+git commit -m "feat: Atualiza o item selecionado e o header/footer para barra fixa."
+git push -v origin dev
+npm run sp 18000
+exit
+exit
+cd github/parajas/frontend/
+npm start
+exit
+npm start
+exit
+ssh parajas198 
+ssh parajas216
+exit
+nvim convert_xlx_to_json.py
+deactivate
+mise up
+mise upgrade
+mise use -g python@3.14.2
+which pythonm
+which python
+source .venv/bin/activate
+pip list 
+pip list -l
+python convert_xlx_to_json.py 
+exit
+exit
+docker compose -f docker-compose.yml down
+uv python list -v
+pipx list
+sudo pacman -Qs uv
+sudo pacman -R uv
+sudo pacman -S --asexplicit uv
+uvb
+uv self
+gst
+git add .
+git commit -m 'chore: Atualiza docker-compose do banco de dados #funcional'
+git push -v origin dev 
+exit
+exit
+exit
+sudo pacman -R freedownloadmanager 
+sudo pacman -Syy
+sudo pacman -Rns freedownloadmanager 
+sudo rm -rf /var/cache/pacman/pkg/download-*
+sudo pacman -Scccc
+exit
+sudo repo-remove /var/cache/pacman/aurutils/aurutils.db.tar.gz freedownloadmanager
+cd /var/cache/pacman/aurutils/
+cd ..
+ll -d aurutils/
+cd aurutils/
+sudo chown albano:albano aurutils.db.tar.gz
+sudo chown albano:albano aurutils.db
+rm -rf aurutils.db.tar.gz.old 
+rm -rf aurutils.files.tar.gz.old 
+sudo chown albano:albano aurutils.files
+sudo chown albano:albano aurutils.files.tar.gz
+unlink aurutils.db
+ln -sf aurutils.db.tar.gz aurutils.db
+sudo unlink.files
+sudo unlink aurutils.files
+ln -sf aurutils.files.tar.gz aurutils.files
+exit
+uv
+uv python
+uv python list
+uv python dir
+mise ls-remote uv
+uv --version
+uv python install --help
+exit
+exit
+exit
+tmux
+ng g c components/counter
+npm start
+exit
+exit
+tmux
+exit
+cd github/
+git push -v origin main
+git remote -v
+git pull -v origin main
+zig build -Doptimize=ReleaseFast install --prefix /home/albano/.local/
+GTK_IM_MODULE=xim ghostty
+GTK_IM_MODULE=wayland ghostty
+killall ghostty
+lvim ~/.bashrc
+exit
+exit
+nohup GTK_IM_MODULE=gtk-im-context-simple ghostty &>/home/albano/logs/ &
+cd logs/
+mkdir ghostty
+> ghostty/ghostty_logs
+nohup GTK_IM_MODULE=gtk-im-context-simple ghostty &>/home/albano/logs/ghostty/ghostty_logs &
+nohup "GTK_IM_MODULE=gtk-im-context-simple ghostty" &>/home/albano/logs/ghostty/ghostty_logs &
+cd ghostty/
+bat ghostty_logs 
+exit
+exit
+cd /
+fd ghostty.desktop
+cd
+cd .local/share/applications/
+rm com.mitchellh.ghostty
+sudo rm com.mitchellh.ghostty-debug.desktop 
+sudo rm com.mitchellh.ghostty.desktop 
+vim ghostty.desktop 
+lvim ghostty.desktop 
+exit
+exit
+nc bin/ghostty
+nc $HOME/bin/ghostty
+cd bin
+ns ghostty
+env
+env | grep GTK
+touch  ~/logs/ghostty/ghostty_logs
+rm ~/logs/ghostty/ghostty_logs; > ~/logs/ghostty/ghostty_logs
+cat ~/logs/ghostty/ghostty_logs 
+lvim ghostty 
+rm ghostty 
+lvim ~/.local/share/applications/ghostty.desktop 
+lvim ~/.local/share/applications/ghostty.desktop 
+exit
+exit
+GTK_IM_MODULE=gtk-im-context-simple ghostty
+GTK_IM_MODULE=gtk-im-context-simple ghostty &
+nohup GTK_IM_MODULE=gtk-im-context-simple ghostty &
+rm nohup.out 
+pacman -Sl aurutils 
+exit
+ghostty --version
+ghostty --version
+python --version
+mise install python@3.13.11
+mise uninstall python@3.14.2
+mise ls
+bun
+deno
+deno --version
+deno --help
+cd Desktop/
+cd JornadaPython/
+cd Aula1/
+mv 'Aula 1 - Automações de Tarefas e Bots'/* .
+rm -rf 'Aula 1 - Automações de Tarefas e Bots'
+code .
+exit
+nohup bash -c "GTK_IM_MODULE=gtk-im-context-simple ghostty" &>/home/albano/logs/ghostty/ghostty_logs &
+sudo pacman -Syu
+sudo pacman -Syu
+aur sync --cleanbuild --clean --database aurutils --upgrades 
+zeditor --version
+l
+ll
+la
+sudo systemctl status
+his -d 13181
+his -d 13180
+his -d 13174
+his -d 13182
 his
+tac ~/.bash_history | awk '!seen[$0]++' | tac > ~/.bash_history_limpo
+# Mantém apenas linhas com 4 ou mais caracteres
+grep -E "^.{4,}$" ~/.bash_history_limpo > ~/.bash_history_temp && mv ~/.bash_history_temp ~/.bash_history_limpo
+wc -l ~/.bash_history_limpo 
