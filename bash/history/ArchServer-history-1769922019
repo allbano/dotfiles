@@ -1482,7 +1482,6 @@ pip list -o | cut -f1 -d' ' |  awk '{if(NR>=3)print}'
 pip list -o | cut -f1 -d' '
 pip list -o | cut -f1 -d' ' | sed '1,2d'
 pip list -o | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -U 
-pip list -lo | cut -f1 -d' ' |  sed '1,2d'
 pip freeze -l
 pip freeze -l | wc -l
 pip list -l | sed '1,2d' | wc -l
@@ -1536,7 +1535,6 @@ lvim ~/blueman.desktop
 mv blueman.desktop Test/
 sudo systemctl enable blueman-mechanism.service 
 lvim tt
-cat /etc/profile
 cat /etc/profile.d/gawk.sh 
 rm .root_hist 
 pyenv global
@@ -1546,7 +1544,6 @@ pip list -l | sed '1,2d'
 pip list -l | sed '1,2d' | cut -d' ' -f1
 pip list -l | sed '1,2d' | cut -d' ' -f1 > pacotesPy3.txt
 pip install -r pacotesPy3.txt -U
-pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1
 pyenv virtualenv latest 3.12.2 
 pyenv virtualenv 3.12.2 latest
 pip install -U certifi
@@ -1933,7 +1930,6 @@ pip instal wheel jupyterlab
 pip install -U wheel jupyterlab
 jupyter kernelspec list
 pip install jupyterlab-tabnine
-pip install jupyterlab
 pyenv virtualenv-delete jupyters
 pyenv virtualenv 3.12.4 jupyterlab
 pyenv local jupyterlab 
@@ -2355,7 +2351,6 @@ cd _telegram/
 sudo chown -hR albano:albano .
 cd eclipse-workspace/
 cd Public/
-cd Templates/
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 nvm install --list
 nvm install list-remote 
@@ -2999,7 +2994,6 @@ git shortlog
 ga $DOTBASH/bash_aliases 
 gcm "refact: Neatly organized all Git aliases."
 gcm "refact: function names (updateDotfile >> pullDotfiles, updateHist >> pushHist) and both updated."
-git merge --help
 git clone git@github.com:allbano/bd3.git ~/github/bd3
 cd Julia/
 cd AppMarvelAluguel/
@@ -3078,7 +3072,6 @@ mv init.sql projetodw_init.sql
 cp projetodw_init.sql projetodw-full.sql
 cat projetodw_altertable.sql >> projetodw-full.sql 
 cat projetodw_inserts.sql >> projetodw-full.sql 
-docker compose -f docker-compose.yml up
 gcm "Implementação do projetodw-full e do docker-compose finalizados." 
 rm docker-compose-test.yml 
 git clone https://github.com/allbano/bd3.git && cd bd3
@@ -3689,7 +3682,6 @@ curl https://gist.github.com/debxp/30b759d2ba002df9d5b7e21cfb694918#file-mp-func
 curl https://gist.github.com/debxp/30b759d2ba002df9d5b7e21cfb694918#file-mp-function-sh | rg 'mp()'
 curl https://gist.github.com/debxp/30b759d2ba002df9d5b7e21cfb694918#file-mp-function-sh | rg 'mp\(\)'
 curl https://gist.githubusercontent.com/debxp/30b759d2ba002df9d5b7e21cfb694918/raw/7277e168292568364dedbfe61a10e3e7dc03fa97/mp-function.sh
-docker volume --help
 cd github/laundry_online/
 cd crud-angularspring/
 gl -v
@@ -3725,7 +3717,6 @@ docker-compose ls
 docker-compose -f docker-compose-3.yaml down
 mv docker-compose-3.yaml ghost.yaml
 docker volume prune --help
-docker volume prune -a
 docker-compose -f ghost.yaml up -d
 docker-compose -f ghost.yaml down
 at docker-compose.yml 
@@ -3781,7 +3772,6 @@ pip uninstall ulid-py
 cd dadll
 tail -n 10 dados_0.csv 
 pip install -U pyravendb
-docker volume ls
 tail -n 100 dados_0.csv 
 python ll
 rm -rf responses.log 
@@ -3869,7 +3859,6 @@ COMP_INSTALL=1 gocomplete
 gocomplete --help
 gocomplete
 cat profile 
-lvim bashrc 
 > .tool-versions
 cat .tool-versions 
 cd Downloads/
@@ -3926,7 +3915,6 @@ mise plugin list-available
 mise use --help
 sudo find / -type f -wholename '*/mise'
 lexit
-mise ls python
 cd gitlab
 systemctl status sshd
 ls ~/.ssh
@@ -4004,7 +3992,6 @@ loginShell
 lvim --help
 lvim ~/.bash_profile 
 ll /home/albano/.fzf/bin
-lvim
 lvim ~/.fzf.bash 
 paru -Sss vlc
 mediainfo --help
@@ -5338,7 +5325,6 @@ paru -S bridge-utils
 virsh list --all
 mkdir -p postgresql
 cp ~/github/TCC/docker-compose.yml .
-nvim docker-compose.yml 
 sudo systemctl status docker.service 
 sudo systemctl status docker.socket 
 dc --help
@@ -5348,14 +5334,11 @@ mise install zig@0.14.0
 mise install zls@0.14.0
 docker-compose -f ./docker-compose.yml up --force-recreate -d
 docker-compose -f ./docker-compose.yml down
-docker volume prune
 docker-compose -f ./docker-compose.yml up -d
 docker container ls
 docker container logs 
 docker container logs  postgrescourse 
-docker compose -f docker-compose.yml up -d
 docker compose -f docker-compose.yml up --force-recreate  -d
-bat docker-compose.yml 
 lvim docker-compose.yml 
 cat docker-compose.yml 
 git clone git@github.com:manjunath5496/Neural-Networks-Books.git
@@ -5419,7 +5402,6 @@ pyenv local fast_zero
 docker rmi imersao-devops-google-alura-2025-app:latest 
 docker rm alura-google-app 
 git commit -m "Aula 2 - Adicionado docker-compose.yml"
-poetry env list
 sudo cp -r allbano* $HOME/.ssh
 sudo chown albano:albano allbano-infojusIP244
 sudo chown albano:albano allbano-infojusIP244.pub 
@@ -5948,7 +5930,6 @@ poetry env --help
 poetry config --list | grep virtualenvs
 poetry run jupyter lab build
 poetry add ipykernel --group dev
-jupyter-lab build
 bat collect_meta.py 
 bat --pager cat collect_meta.py 
 paru -S --needed fwupd smartmontools
@@ -5991,7 +5972,6 @@ paru -Si archivetools
 sudo pacman -S --needed --asexplicit sysstat
 pacman -Ssss linux-
 sudo usermod -aG named,wireshark,libvirt,docker,libvirt-qemu,qemu,fwupd,docker albano
-id albano
 sudo systemctl stop docker
 sudo systemctl stop docker.service docker.socket
 sudo chmod 711 /virtualization/docker
@@ -6229,8 +6209,6 @@ poetry add --group dev sqlalchemy
 python src/cs_sqlalchemy/database.py 
 pip install -U mypy
 bat --pager cat docker-compose.yaml 
-docker compose -f docker-compose.yaml up db-pg 
-docker compose -f docker-compose.yaml down
 docker compose -f docker-compose.yaml up -d db-pg 
 sudo pacman -R gitlab
 sudo pacman -R gspell
@@ -6503,7 +6481,6 @@ ssh-agent --help
 sshs --help
 ssh-keyscan --help
 ssh-add --help
-sudo systemctl status sshd.service 
 git pull origin main 
 git commit -m "Aula 439 - Início (Angular v20/ type: component)"
 git commit -m "Aula 444 - Final - RouterLinkActive"
@@ -6539,7 +6516,6 @@ clear
 cat 7-slice.py 
 bat 7-slice.py 
 python 7-slice.py 
-pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip install -U 
 jupyter lab build
 jupyter-lab --port 15000
 jupyter lab --help
@@ -6690,7 +6666,6 @@ yay -S --asexplicit tre-command
 tre . | less
 tre --helpk
 tre --help
-rm -rf node_modules
 grep -r "resource" node_modules/@angular/core | grep ".d.ts" | head -n 5
 npm install zone.js
 cat node_modules/@angular/platform-server/index.d.ts
@@ -6713,7 +6688,6 @@ grep -r "RenderMode" node_modules/@angular/ssr
 grep -r "provide" node_modules/@angular/ssr | head -n 20
 YT_CLIENT_ID=social-yt-channels-comparer" > .env
 cat node_modules/@angular/ssr/fesm2022/ssr.mjs | head -n 100
-rm -rf social-media-comparer
 yay -S --asexplicit insomnia
 gcl git@github.com:Fernanda-Kipper/social-media-comparer.git
 smartctl 
@@ -6825,7 +6799,6 @@ git remote -l
 git push backup archlinux
 git push --help
 git push backup archlinux 
-git config -l
 gcl /home/albano/tests/bare/dotfiles.git/
 git checkout archlinux 
 rm -rf dotfiles
@@ -6972,7 +6945,6 @@ bun install --help
 bun i -g @angular/cli
 mise uninstall bun@1.3.3
 paru -Qi mlpack
-pip list
 rm -rf trabalho-ia2
 cat log1.txt 
 make clean && make build
@@ -7022,7 +6994,6 @@ sudo systemctl status systemd-networkd.service
 sudo systemctl status NetworkManager
 sudo systemctl restart firewalld.service 
 gcl https://github.com/kobi-hari-udemy/angular-signals.git
-rm -rf angular-signals
 gcl git@github.com:kobi-hari-udemy/angular-signals.git
 cat template-config 
 mkdir firewalld
@@ -7085,7 +7056,6 @@ sudo systemctl status virtqemud.service
 sudo systemctl status virtqemud.service virtqemud.socket virtqemud-admin.socket 
 virsh --help
 lsd -l /boot
-git fetch --all
 git commit -m "feat: Adiciona projeto inicial Angular / frontend - SSR."
 yay -S --asexplicit aur/paru
 yay -S --asexplicit paru-bin
@@ -7187,7 +7157,6 @@ mise use -g zls@0.15.1
 zls --version
 zls --help
 zls env
-mise ls-remote node@24
 mise ls-remote python@3.14
 mise install python@3.14.2
 mise uninstall python@3.14.0
@@ -7204,7 +7173,6 @@ mise tool python
 alias gcl
 gcl git@github.com:luizomf/typehints_python.git
 cat uv.lock 
-pip install -U pip
 pip install uv
 l /home/albano/.local/share/mise/installs/python/3.14.2/bin
 /home/albano/.local/share/mise/installs/python/3.14.2/bin/uv
@@ -7218,7 +7186,6 @@ uv python pin --global 3.14
 pullDotfiles 
 yarn --help
 lsd --help
-ls --help
 lsd -I 
 lsd -i
 ng new devlucas-ssr
@@ -7237,7 +7204,6 @@ printenv > "/tmp/tmp-172100lz4FC0fsMHSa.txt"
 systemctl status NetworkManager
 diff /home/albano/projects/angular/ "/home/albano/projects/angular (copy)/"
 diff -r /home/albano/projects/angular/ "/home/albano/projects/angular (copy)/"
-git add --all
 git commit -m "chore: update kitty config - remove bell"
 sudo pacman -S --asexplicit btop
 sudo pacman -S --asexplicit btop rocm-smi-lib 
@@ -7252,7 +7218,6 @@ flatpak search onlyoffice
 flatpak install org.onlyoffice.desktopeditors
 cat kali2 
 rm kali2 
-git pull
 cat /proc/loadavg 
 aur pkglist 
 pacman -Q -t aurutils
@@ -7320,11 +7285,6 @@ ll .vim
 l .vim
 cat .vim/.netrwhist 
 lvim bashrc
-lvim 99_custom_startup 
-lvim 07_prompt 
-lvim 06_extra_and_tools 
-lvim 05_bash_options 
-lvim 04_history_options 
 lvim 03_functions 
 lvim 02_aliases 
 lvim 01_paths 
@@ -7379,15 +7339,12 @@ sudo pacman -S --asexplicit linux-hardened{,-docs,-headers}
 aur sync --cleanbuild --database aurutils --upgrades 
 sudo chown albano:albano /var/cache/pacman/aurutils/aurutils.db.tar.gz
 aur sync --cleanbuild --upgrades 
-alias gg
-lvim .bashrc 
 lvim debian.sources
 lvim debian-backports.sources
 unlink .bashrc 
 sudo ln -sf /home/albano/github/dotfiles/bash/.bashrc $HOME/
 l .bash*
 less .bashrc 
-flatpak update
 bluetoothctl 
 bluetoothctl --help
 bluetoothctl list
@@ -7422,7 +7379,6 @@ pacman -Si xdm-archlinux
 sudo pacman -S --asexplicit usbctl
 sudo pacman -S --asexplicit scx-scheds 
 sudo pacman -S --asexplicit scx-scheds scx-tools 
-exit\
 aur sync --clean --cleanbuild zfs-dkms
 sudo pacman -S --asexplicit zfs-dkms zfs-utils
 pushd --help
@@ -7935,7 +7891,6 @@ mv agenda agenda2
 mv agenda2/* agenda
 cd agenda2 
 rmdir agenda2
-git restore README.md 
 type -a poewtry
 type -a poetry
 poetry remove django
@@ -8013,7 +7968,6 @@ rm -rf {index.*}
 git push -ff
 git commit --amend
 wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/ -R 'index.*'
-cd cgcr/
 wget -rc -np -nH --directory-prefix=cgcr https://kretcheu.com.br/cgcr/ -R 'index.*'
 rm -rf cgcr/
 github/
@@ -8159,7 +8113,6 @@ cat /usr/share/nvim
 vim --version
 doas pacman -Si vim
 doas pacman -Qi vim
-echo $VIM
 yay -Ssss vim-
 yay -S vis
 yay -Sss vim-hi
@@ -8246,7 +8199,6 @@ yay -Qi cmake
 sudo pacman -Rscndd neovim
 sudo pacman -Sccccc
 git branch -va
-which nvim
 sudo pacman -S python-xyz
 sudo pacman -Sssss xyz-py
 sudo pacman -Sssss python-xyz
@@ -8985,7 +8937,6 @@ docker images rm c
 docker images rm c26a
 docker image rm c2
 docker image rm 3d
-cd open-webui/
 cd ./backend/
 cat start.sh 
 nvidia-xconfig 
@@ -9283,7 +9234,6 @@ cd $DOTF
 cd background/
 cd Animes/
 cd Backup/
-cd codeberg/
 cd Containers/
 rm -rf Containers/
 cd Desktop
@@ -9491,7 +9441,6 @@ paru -Rs scx-sheds bpf
 paru -Rs scx-scheds bpf
 paru -R scx-scheds bpf
 docker container rm -f pg16 
-docker images -a
 docker exec -it pg16 bash
 cat docker-ensure-initdb.sh 
 rm -rf ui
@@ -9532,7 +9481,6 @@ cd github/\
 paru -Qi bpf
 git branch main
 git checkout renan
-cd backend/
 git checkout Leandro 
 cd src
 cd main/
@@ -9798,7 +9746,6 @@ cd bd3
 rm -rf .idea
 cd MPN/
 cd cd git
-cd git
 cd SQL
 cat ini
 cd Desktop/BD3/
@@ -9813,7 +9760,6 @@ mv db3 Docs
 cat docker-entrypoint.sh 
 cat docker-entrypoint.sh > ../../bd3/projetodw/init.sh
 ../../bd3/projetodw/
-cd $DOT
 cd bantads/
 cd db
 cat init.sh
@@ -9830,7 +9776,6 @@ cd ../codeberg/
 ssh -T codeberg@codeberg.org
 cd vim-keys/
 ssh-keygen -t ed25519 -a 100
-ssh -T git@codeberg.org
 mv vim-keys vim-keys2
 cd vim-keys
 cd 0
@@ -10460,7 +10405,6 @@ go env
 go asdf
 $HOME/go/bin/asdf
 cd .asdf/
-git status
 cd services/
 cd vim
 paru -Sss "go bash"
@@ -10526,7 +10470,6 @@ paru -Sii mise
 cd ,,
 rm sudo
 node version
-npm version
 mise use -g node@20.19.0
 mise ks
 npm upgrade
@@ -10548,7 +10491,6 @@ paru -Si fzf
 paru -R fzf
 cd bin/
 cd man/
-cat ~/.bashrc
 cat ~/.bash_functions 
 cd scripts/
 bat ~/.fzf.bash 
@@ -10595,7 +10537,6 @@ bat ssh_config
 cd /etc/ssh
 cd sshd_config.d/
 cd ssh_config.d/
-cd .ssh/
 > authorized_keys
 chmod 600 authorized_keys 
 paru -Sss pfsense
@@ -10727,7 +10668,6 @@ podman init
 podman machine init
 podman machine start
 podman info
-podman
 sudo cp /etc/containers/containers.conf ~/.config/containers/
 apk search fd
 apk search fd-find
@@ -10987,7 +10927,6 @@ yay -R wezterm
 yay -Sss cmatrix
 yay -S cmatrix
 cmatrix
-reset
 mv kitty.conf kitty.conf.bak 
 cmatrix -s
 rm $HOME/.config/kitty/startup.conf 
@@ -11192,7 +11131,6 @@ rm -rf .pyenv
 pyenv update
 pyenv 
 pipx uv
-pipx 
 paru -S 
 paru -R hub
 paru -s hub
@@ -11259,7 +11197,6 @@ rmdir DocsIA/
 rm -rf Pacotes
 dust -r
 dust -rD
-poetry env remove
 poetry python remove 3.13.3
 poetry env info 
 poetry run python app.py 
@@ -11298,7 +11235,6 @@ paru -Qs android
 paru -Sssss android-studio
 paru -Ssss ipfs
 paru -S ipfs-desktop kubo
-git fetch
 docker run -dv --hostname pg17bookworm --name pg17bookworm -p 45432:5432 -e POSTGRES_PASSWORD=testing postgres:17.5-bookworm
 docker run -d --hostname pg17bookworm --name pg17bookworm -p 45432:5432 -e POSTGRES_PASSWORD=testing postgres:17.5-bookworm
 docker exec -it pg17bookworm bash
@@ -11430,7 +11366,6 @@ pyenv versions
 docker container prune 
 docker compose up
 docker compose up -d
-docker compose down
 pyenv deactivate 
 poetry check 
 paru -Ssss meet
@@ -11656,7 +11591,6 @@ python -m venv
 python -m venv .
 mise env python
 poetry init
-poetry 
 poetry config
 mise unuse zig
 inxi -N
@@ -11820,7 +11754,6 @@ sudo nano /etc/systemd/system/cpufreq.service
 mkdir kretcheu
 mv cgcr kretcheu/
 paru -Sua aur/zen-browser-bin
-du -sh
 paru -Ssss tshark
 tere 
 paru -R tere
@@ -11844,7 +11777,6 @@ mkdir LuizOtavio
 poetry init -n
 poetry add mypy --group dev
 poetry add ruff --group dev
-poetry env 
 poetry env infop
 rsync -haP ambiente_python_2025/ TypeHints/
 rm -rf ambiente_python_2025
@@ -11860,7 +11792,6 @@ poetry add --group dev pytest
 poetry add --group dev pytest-xdist
 which dmypy
 rm -rf vite
-mkdir EduardoMendes
 rmdir EduardoMendes/
 mkdir dunossauro
 mkdir -p LivePython/#258
@@ -11910,7 +11841,6 @@ rm -rf docker
 rm rustup-init.sh 
 ./test.sh 
 grep '"version"' META.json | head -1 | sed -E 's/.*"version": "(.*)".*/\1/'
-docker system prune -a
 fd *.desktop /usr/share
 bash -c '[[ -z "$TMUX" ]] && tmux new-session -A -s main || bash'
 tmux new-session -A
@@ -11987,8 +11917,6 @@ jupyverse --open-browser
 jupyverse --show-config
 jt -t monokai
 jupyter --version
-rm -rf venv
-sudo mkinitcpio -P
 sudo cpufreq-bench
 paru -Ssss vscode
 mkdir roteamento-basico
@@ -12015,7 +11943,6 @@ whois devs.dev.br
 sshs
 ssh-keyscan
 ssh -Tv git@github.com
-git stash 
 echo $SHLVL 
 mv Cursos Courses
 ng g c components/primeiro.component
@@ -12038,8 +11965,6 @@ ng g c components/about
 ng g c components/home
 ng g c pagina-nao-encontrada
 paru -Sssss antigravity
-docker ps -a
-docker images
 gitk
 ccd PythonRodrigo/
 mkdir -p src
@@ -12087,7 +12012,6 @@ bat package.json
 pnpm
 pnpm i
 pnpm start
-du -su .
 java --version
 git restore bashrc 
 pipi
@@ -12129,20 +12053,17 @@ nvim ~/.tmux.conf
 virsh 
 sudo updatedb 
 find
-cat /etc/group
 cat /sys/devices/system/cpu/cpu0/cpufreq/energy_performance_preference\
 sudo htop
 echo power | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference
 cat /sys/devices/system/cpu/cpu0/cpufreq/energy_performance_preference
 echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference
 git stash
-git branch
 git remote show
 git remote update
 git push backup debian 
 git push --h
 dh -sh .
-du -sh .
 paru -R tre-command-debug 
 paru -R kubo-git 
 paru -Ssss antigravity
@@ -12279,7 +12200,6 @@ socat
 socat -h
 uname -a
 ng e2e
-git branch -a
 git push origin art
 sudo umount /mnt
 sudo pacman -S paru
@@ -12334,7 +12254,6 @@ aur sync wd719x-firmware
 bat pacotes_chaotic.txt 
 aur brave-bin
 aur sync brave-bin
-docker ps
 sudo pacman -Qi aur
 sudo pacman -Qi aurorae 
 sudo pacman -S vifm
@@ -12385,9 +12304,6 @@ man aur sync
 aur sync --verify 
 aur view
 mise use node@24.12.0
-npm i -g yarn
-npm i -g pnpm
-npm versions
 mise rm node@24.11.1
 mise rm node@25.0.0
 mise remove node@20.19.5
@@ -12413,7 +12329,6 @@ echo $LS_
 echo $LS_OPTIONS 
 echo $LS_COLORS 
 yt-projeto-v20-design-patterns-frontend/
-ng new frontend
 rm -rf 'Code - OSS'
 rm -rf ~/.config/Code\ -\ Insiders/Cache/*
 printenv > "/tmp/tmp-1432211h72pvmK86cm.txt"
@@ -12457,7 +12372,6 @@ aur view -a
 aur query
 aur vercmp
 aur repo
-code-insiders .
 npm run server
 rm -rf user
 ng g c user
@@ -12535,8 +12449,6 @@ pacman -Qs "^termin"
 pacman -Qs '^termin'
 pacman -Qs '^termina'
 ssh parajas2
-bat config
-doas grub-mkconfig -o /boot/grub/grub.cfg 
 sha256sum debian-13.2.0-amd64-DVD-1.iso 
 mv .bashrc .bashrc_root
 aur search nvidia
@@ -12594,7 +12506,6 @@ command -v ng
 test
 type -a ng
 type -p ng
-ssh parajas198
 cat .PKGINFO 
 rm .PKGINFO 
 rm .BUILDINFO 
@@ -12632,12 +12543,9 @@ DELETAR=12879
 echo $DELETAR 
 DELETAR=
 which ng
-inxi
 yarn version
-cd .ssh
 doas inxi -Fzf
 cd /usr
-pipx
 pipx upgrade poetry 
 mise 
 python -m venv .venv
@@ -12646,7 +12554,6 @@ python -m venv venv
 source .bashrc
 echo $VIRTUAL_ENV
 VIRTUAL_ENV=''
-cd $DOTBASH
 cd Courses/PythonRodrigo/fundamentos/
 env | grep tmux
 git restore bash/.bashrc 
@@ -12663,14 +12570,12 @@ rustup update
 cargo 
 cargo update
 mkdir Rust_brazuca
-cd Rust_brazuca/
 nvim main.rs
 rustc main.rs 
 ./main 
 rm main
 cd Courses/
 mkdir v21
-cd v21
 ng new secao-two
 cd secao-two/
 rm -rf secao-two/
@@ -12695,7 +12600,6 @@ cd foot/
 cd /etc/xdg/foot/
 cat foot.ini 
 cat /etc/xdg/foot/foot.ini > foot.ini
-nvim foot.ini 
 cd Courses/Rust_brazuca/
 cargo new operadores_repeticao
 cd operadores_repeticao/
@@ -12708,7 +12612,6 @@ cd ex_if01/
 cargo new ex_if02
 cd ex_if02
 cargo run
-nvim
 echo $LANG 
 nvim $HOME/.config/ghostty/config 
 cd github/typehints_python/
@@ -12719,27 +12622,22 @@ git restore ghostty/config
 btop
 tcsh
 cd $DOTFILES
-git diff
 history -d 12813
 history -d 12808
 history -d 12785
-pushHis 
 tac ~/.bash_history | awk '!seen[$0]++' | tac > ~/.bash_history_limpo
 grep -E "^.{4,}$" ~/.bash_history_limpo > ~/.bash_history_temp && mv ~/.bash_history_temp ~/.bash_history_limpo
 wc -l 0 $HOME/.bash_history_limpo 
 wc -l $HOME/.bash_history_limpo 
-cd angular-signals/
 cd practice/
 cd "03. fun-with-signals"/
 rm -rf node_modules/
-npm i
 history -d 12828
 cd Courses/Angular/v21/angular-signals/projects/
 cd secao3_aula16/
 rm -rf secao3_12.linked-signal/
 ng new secao3_12.linked-signal
 cd Courses/Angular/v21/angular-signals/
-cd projects/
 cd secao3_12.linked-signal/
 export CLICOLOR_FORCE=1
 export MISE_COLOR=true
@@ -12777,16 +12675,9 @@ kded5 --help
 kdecp --help
 history -d 12900
 history -d 12863
-cd Courses/PythonRodrigo/
-cd fundamentos/
-source venv/bin/activate
-pip list -lo
 jupyter lab --core-mode --port 15000
-deactivate 
 sudo passwd rosana
 ssh parajas21
-ssh parajas216 
-cd Videos/
 cd Music/
 mkdir 2026
 cd 2026
@@ -12801,7 +12692,6 @@ mise use deno@2.6.3
 mise unuse deno
 mise use -g deno@2.6.3
 which deno
-echo -e "${PATH//:/\\n}"
 cd Music/2026
 yt-dlp -x --audio-format opus --audio-quality 0 https://www.youtube.com/watch?v=HA6nSQawROM
 yt-dlp -x --audio-format opus --audio-quality 0 https://www.youtube.com/watch?v=FtukH_bCDHg
@@ -12820,7 +12710,6 @@ lsd -l --group-dirs
 lsd -l --group-dirs first
 lsd -l --group-dirs first --tree
 lsd --group-dirs first --tree
-cd app
 tree -
 tree --dirsfirst 
 tree --dirsfirst -D
@@ -12831,13 +12720,11 @@ diff --recursive angular 'angular (copy)'
 rm -rf 'angular (copy)'
 mv frontend ~/projects/angular/
 cd projects/angular/
-ng serve
 mv frontend $HOME/github/parajas
 cd $HOME/github/parajas
 git add frontend/package*
 git commit -m "chore: Atualiza pacotes"
 git switch main 
-git switch dev
 git diff 
 alias l
 cd shared/
@@ -12846,9 +12733,6 @@ git add shared/
 git commit -m "feat: Adiciona o componente page."
 ng g c shared/components/header
 cd ../../../..
-cd -
-cd ../../..
-cd docs/
 git add identidade_visual_parajas/
 git commit -m "raw: Adiciona favicons do projeto."
 git add frontend/src/app/shared/components/header
@@ -12862,13 +12746,11 @@ git commit -m "raw: Corrige favicon - aparece na barra de título."
 npm startt
 ip -c a
 ping -c2 127.0.0.1
-cd src/app
 ng g c screens/home
 ng g c screens/collection
 ng g c screens/policies
 ng g c screens/collections
 ng g c screens/about
-cd ../..
 git add ../docs/
 git commit -m "raw: Adiciona imagem de logo UFPR em tamanhos personalizados."
 git add public/
@@ -12899,10 +12781,8 @@ cd parajas-main/
 rm -rf parajas-main/
 ll -d parajas*
 cd parajas/
-git switch main
 git pull -v origin main\
 git switch dev 
-cd frontend/
 npm star
 npm install element-plus-ng
 rm -rf test-navbars/
@@ -12914,13 +12794,8 @@ tty
 tty --help
 tty -s
 basename $(tty)
-cd Courses/Angular/
-tree
 tree -d
 tree -dL1
-tree -L1
-mise self-update
-tree -L2
 cat mise.toml 
 mise use node@22.21.1
 rm -rf desafio-roteamento-simples
@@ -12931,14 +12806,9 @@ mise uninstall 22.21.1
 mise uninstall node@22.21.1
 mise install node@20.19.6
 mise use -g node@20.19.6
-npm i -g npm
 mise reshim
 cd v17
-ls -l
-node --version
-npm i -g @angular/cli
 npm i -g @angular/cli@17
-ng version
 ng new desafio-roteamento-simples
 cd desafio-roteamento-simples/
 ng serve --port 18000
@@ -12949,20 +12819,15 @@ git commit -m "feat: Atualiza o item selecionado e o header/footer para barra fi
 git push -v origin dev
 npm run sp 18000
 cd github/parajas/frontend/
-ssh parajas198 
-ssh parajas216
 nvim convert_xlx_to_json.py
 deactivate
 mise up
 mise upgrade
-mise use -g python@3.14.2
 which pythonm
-which python
 source .venv/bin/activate
 pip list 
 pip list -l
 python convert_xlx_to_json.py 
-docker compose -f docker-compose.yml down
 uv python list -v
 pipx list
 sudo pacman -Qs uv
@@ -12978,8 +12843,6 @@ sudo pacman -Rns freedownloadmanager
 sudo rm -rf /var/cache/pacman/pkg/download-*
 sudo pacman -Scccc
 sudo repo-remove /var/cache/pacman/aurutils/aurutils.db.tar.gz freedownloadmanager
-cd /var/cache/pacman/aurutils/
-cd ..
 ll -d aurutils/
 cd aurutils/
 sudo chown albano:albano aurutils.db.tar.gz
@@ -13000,12 +12863,7 @@ mise ls-remote uv
 uv --version
 uv python install --help
 ng g c components/counter
-npm start
-tmux
-cd github/
-git push -v origin main
 git remote -v
-git pull -v origin main
 zig build -Doptimize=ReleaseFast install --prefix /home/albano/.local/
 GTK_IM_MODULE=xim ghostty
 GTK_IM_MODULE=wayland ghostty
@@ -13044,10 +12902,8 @@ nohup GTK_IM_MODULE=gtk-im-context-simple ghostty &
 rm nohup.out 
 pacman -Sl aurutils 
 ghostty --version
-python --version
 mise install python@3.13.11
 mise uninstall python@3.14.2
-mise ls
 deno
 deno --version
 deno --help
@@ -13056,11 +12912,7 @@ cd JornadaPython/
 cd Aula1/
 mv 'Aula 1 - Automações de Tarefas e Bots'/* .
 rm -rf 'Aula 1 - Automações de Tarefas e Bots'
-code .
 exit
-nohup bash -c "GTK_IM_MODULE=gtk-im-context-simple ghostty" &>/home/albano/logs/ghostty/ghostty_logs &
-sudo pacman -Syu
-aur sync --cleanbuild --clean --database aurutils --upgrades 
 zeditor --version
 sudo systemctl status
 his -d 13181
@@ -13069,4 +12921,536 @@ his -d 13174
 his -d 13182
 his -d 11824
 his -d 13070
+pushHis 
+exit
+cat ~/.bashrc
+ps
+bash -c "alacritty"
+cd $DOT
+cd $DOTBASH
+git diff
+cd backup/
+lvim bashrc 
+lvim .bashrc 
+cd rc
+lvim 07_prompt 
+lvim 06_extra_and_tools 
+lvim 05_bash_options 
+lvim 04_history_options 
+lvim 99_custom_startup 
+exit
+gg
+alias gg
+bash -c "GTK_IM_MODULE=gtk-im-context-simple ghostty" &
+ssh parajas198 
+cd Angular/
+cd projeto-angular/
+ccode .
+\code .
+exit
+exit
+gcl git@github.com:HarmoIA-UFPR/HarmonIA.git
+git fetch --all
+git branch
+git branch origin/featchat
+git branch origin/feat/chat
+git switch  origin/feat/chat
+git branch -a
+git switch origin/feat/ToolX
+git branch origin/feat/ToolX
+git switch  origin/feat/ToolX
+git fetch
+git pull
+gcl git@github.com:HarmoIA-UFPR/agente.git
+bat docker-compose.yml 
+bat --pager cat docker-compose.yml 
+docker compose -f docker-compose.yml up
+docker compose -f docker-compose.yml up -d
+exit
+exit
+exit
+sudo systemctl status sshd.service 
+bat --pager cat config
+ssh parajas198
+ssh parajas216
+exit
+pipx --version
+install poetry
+pipx install poetry
+poetry
+bat --pager cat docker-compose.yml 
+docker compose -f docker-compose.yml up -d
+exit
+exit
+exit
+cd github/HarmonIA/
+cd agente/
+docker compose -f docker-compose.yml start
+la
+cd app_harmonia/
+cp .env_exemplo .env
+nvim .env
+cd etl_pipeline/
+mv app_harmonia/.env ..
+poetry 
+poetry  env list
+lvim .env
+docker logs harmonia-weaviate --tail 50
+docker volume prune -a
+docker volume ls -a
+exit
+nvim docker-compose.yml 
+poetry env list
+poetry env 
+poetry env remove
+poetry env use python
+poetry install --no-root
+poetry run python -m etl_pipeline.vector_data
+exit
+poetry run python -m app_harmonia.main
+poetry run streamlit run interface/interface_web.py
+docker run -it --rm --name my-running-app python:3.13.11-alpine3.23 
+mkdir Hastag
+mv Hastag Hashtag
+cd Hashtag/
+yt-dlp --list-formats docker run -it --rm --name my-running-app python:3.13.11-alpine3.23
+yt-dlp --list-formats https://www.youtube.com/live/0GDt-6H9NWM?si=k-2MRT511GLP6CY2
+yt-dlp -f 248+251 https://www.youtube.com/live/0GDt-6H9NWM
+vlc 'Automações de Tarefas e Bots ｜ Jornada Python [Aula 1] [0GDt-6H9NWM].webm' 
+yt-dlp -f 248+251 https://www.youtube.com/live/0c2AfijcWb0
+mkdir JornadaPython_Jan_2026
+mv 'Analisando Dados com Python ｜ Jornada Python [Aula 2] [0c2AfijcWb0].webm' JornadaPython_Jan_2026
+mv 'Automações de Tarefas e Bots ｜ Jornada Python [Aula 1] [0GDt-6H9NWM].webm' JornadaPython_Jan_2026/
+cd JornadaPython_Jan_2026/
+yt-dlp -f 248+251 https://www.youtube.com/live/WiQYSER2qT0
+docker compose -f docker-compose.yml volumes 
+docker compose -f docker-compose.yml volumes --help
+docker volume prune -a
+docker logs harmonia-weaviate --tail 50
+docker --version
+exit
+exit
+his -d 13171
+exit
+exit
+lvim foot.ini 
+exit
+lvim $HOME/.config/foot/foot.ini 
+ln -sf catppucin-macchiato default
+exit
+cd .config/foot
+nvim catppucin-macchiato
+exit
+gcl ssh://git@codeberg.org/dnkl/foot.git
+cd 
+cd .ssh/
+cat allcodeberg.pub
+nvim
+nvim config
+ssh -T git@codeberg.org
+cd codeberg/
+exit
+exit
+cat $HOME/.config/alacritty/default.toml 
+nvim alacritty-theme
+ln -sf alacritty-theme default
+exit
+cat catppucin-macchiato 
+EXIT
+exit
+cat default 
+exit
+exit
+cd .config/foot/
+cat ala
+cat alacritty-theme 
+exit
+nvim foot.ini 
+nvim alacritty-theme 
+exit
+exit
+exit
+exit
+exit
+cat $HOME/.config/foot/foot.ini 
+exit
+nvim $HOME/.config/foot/foot.ini 
+exit
+exit
+echo $TERM 
+ff
+ff
+ssh parajas216
+exit
+exit
+exit
+exit
+exit
+cd Templates/Docker/nginx/
+exit
+nvim nginx.dockerfile 
+mv nginx\:stable_alpine.dockerfile nginx_stable_alpine.dockerfile 
+mv nginx.dockerfile nginx_mainline.dockerfile 
+cat .env
+exit
+exit
+exit
+cd cd projects/
+cd tests/
+cd Templates/
+cd Docker/
+cd nginx/
+cd Scratch/
+exit
+ssh parajas216 
+docker compose -f docker-compose.yml restart
+docker compose -f docker-compose.yml stats
+poetry env use python
+poetry install --no-root
+poetry run python -m etl_pipeline.vector_data
+poetry run streamlit run interface/interface_web.py
+cd app_harmonia/
+lvim llm.py 
+exit
+sudo pacman -Ssss vifm
+sudo pacman -S --asexplicit vifm
+exit
+pacman -Ssss zeal
+sudo pacman -S --asexplicit zeal
+cd Videos/
+mkdir Youtube
+cd Youtube/
+mkdir EduardoMendes
+cd EduardoMendes/
+mkdir FastAPI2025
+cd FastAPI2025/
+yt-dlp -f 'bv*+ba' https://youtube.com/playlist?list=PLOQgLBuj2-3KT9ZWvPmaGFQ0KjIez0403&si=f-AS6t5KBorM6Wll
+nvim .config/foot/foot.ini 
+exit
+mise ls python
+pipx version
+pipx versions
+pipx 
+pipx  list
+pipx  --version
+podman
+podman --version
+ls --help
+ls --help
+harmonia.devs.dev.br
+ping -c2 harmonia.devs.dev.br
+exit
+exit
+​​pipx run gole
+​​pipx install gole
+pipx
+pipx install gole
+exit
+exit
+mise ls-remote node@25
+exit
+sudo pacman -Ssss hardinfo
+sudo pacman -S --asexplicit hardinfo2
+sudo systemctl start hardinfo2.service 
+sudo systemctl status hardinfo2.service 
+sudo systemctl enable hardinfo2.service 
+inxi
+sudo usermod -aG hardinfo2 albano
+id | grep hard
+cat /etc/group
+id
+id albano
+sudo modprobe ee1004
+exit
+sudo pacman -Syuy
+sudo mkinitcpio -P
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+exit
+kl
+cd HarmonIA/
+git commit -m "Commit inicial. Adiciona README."
+cp -r $HOME/github/HarmonIA/ai-recommender-system/frontend
+cp -r $HOME/github/HarmonIA/ai-recommender-system/frontend .
+mv frontend frontend-vue
+git pull --verbose --all
+git fetch -v origin feat/ToolX
+git pull -uv origin feat/ToolX
+git pull -u -v origin feat/ToolX
+git pull -u origin feat/ToolX
+git pull --set-upstream  origin feat/ToolX
+git pull --set-upstream  origin main
+git pull --force --ff origin feat/ToolX
+git pull --force origin feat/ToolX
+cd ../../..
+rm -rf HarmonIA
+git@github.com:HarmoIA-UFPR/HarmonIA.git HarmonIA-vue
+git@github.com:HarmoIA-UFPR/HarmonIA.git ~/github/HarmonIA-vue
+gcl git@github.com:HarmoIA-UFPR/HarmonIA.git ~/github/HarmonIA-vue
+cd HarmonIA-vue/
+cd ai-recommender-system/
+diff -r frontend ~/github/app-harmonia/frontend-vue
+git switch feat/ToolX
+ls
+git pull -v origin ToolX
+git pull -v origin feat/ToolX
+cd app
+cd assets/
+cd backend/
+cd docs/
+cat Ambiente_backend.md 
+cd Courses/PythonRodrigo/
+mkdir Python
+mv PythonRodrigo Python
+cd LuizOtavio/
+mv LuizOtavio Python
+cd nic.br/
+cd kretcheu/
+cd cgcr/
+mkdir Debian
+mv kretcheu Debian/
+mkdir Cpp
+mv The-C-20-Masterclass-Source-Code Cpp
+cd ProgLhama/
+mv ProgLhama Python/
+cd Rust_brazuca/
+mkdir Rust
+mv Rust_brazuca Rust
+mv dunossauro Python/
+cd Python/
+cd PythonRodrigo/
+l;
+source venv/bin/activate
+pip list
+pip list -lo
+pip list -lo | cut -f1 -d' '
+pip list -lo | cut -f1 -d' ' |  sed '1,2d'
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1
+pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip install -U 
+python --version
+mise lks
+mise use -g python@3.14.2
+rm -rf venv
+pip list --local
+pip install -U pip
+pip install -U argcomplete
+pip install -U jupiterlab
+pip install jupiterlab
+deactivate 
+rm -rf venv-3.14.2
+python -m venv venv-3.14.2
+source venv-3.14.2/bin/activate
+which python
+cd fundamentos/
+pip install pupyterlab
+pip install jupyterlab
+pip install --upgrade pip setuptools wheel
+which pip
+which jupyter-lab
+jupyter-lab build
+exit
+rm -rf HarmonIA-vue
+gcl git@github.com:HarmoIA-UFPR/HarmonIA.git
+cd HarmonIA/
+cd docs
+cp -r docs ../app-harmonia/
+cd app-harmonia/
+glol
+git add docs
+git commit -m "docs: Adiciona pasta docs que conterá os documentos do frontend, backend e agente."
+exit
+cd Courses/Angular/
+cd v21/
+mise upgrade node@24.12.0
+mise ls-remote node@24
+mise install node@24.13.0
+mise uninstall node@24.12.0
+reset
+his -d 13357
+his -d 13356
+mise use -g node@24.13.0
+mise reshim node
+cd v21
+which npm
+npm i -g npm
+npm i -g @angular/cli
+npm i -g yarn
+npm i -g pnpm
+npm versions
+npm version
+exit
+flatpak update
+cd .ssh
+bat config
+exit
+exit
+cd github/
+rm -rf angular-signals
+cd analisedeprojetos/
+cd Diagramas/
+rm -rf aulasDjango
+cd dio-springboot/
+rm -rf neovim
+lvim
+lvim --version
+lvim -V1 -v
+echo $VIM
+which nvim
+nvim -V1 -v
+man nvim
+cd git
+rm -rf git
+cd social-media-comparer/
+git pull -v origin 
+rm -rf social-media-comparer
+cd web-moderno/
+cd exercicios-web/
+rm -rf web-moderno/
+cd zed
+du -su .
+du -s .
+du -sh .
+cd open-webui/
+git stash 
+rm -rf backend/.python-version 
+tmux 
+cd  frontend-vue/
+git add .gitignore 
+git commit -m "chore: Adiciona gitignore para o frontend-vue"
+git add .
+git commit -v "feat: Adiciona projeto VUE que vai migrar para Angular [v21]"
+git commit -m "feat: Adiciona projeto VUE que vai migrar para Angular [v21]"
+git push -v origin dev
+cd Courses/Python/PythonRodrigo/
+la
+cd fundamentos/
+python -m venv venv-3.14.2
+source venv-3.14.2/bin/activate
+pip list -l
+pip install -U mypy
+pip install -U pandas
+deactivate 
+pwd
+glol
+ss
+exit
+sudo pacman -Sss stardewvalley
+aur search stardewvalley
+flatpak search stardewvalley
+exit
+cd Courses/Angular/v21/
+cd angular-signals/
+cd projects/
+cd secao4_aula25/
+code .
+sudo pacman -Ssss kind
+sudo pacman -Ssss kubectl
+sudo pacman -Ssss kubernetes-tools
+exit
+cd Courses/Angular/v21/angular-signals/projects/secao4_aula27
+cd secao4_aula27
+rm -rf node_modules
+npm i
+npm start
+ng serve
+exit
+exit
+mkdir Sex
+cd Sex/
+yt-dlp -f 'bv*+ba' https://gay0day.com/videos/126/surprise-threeway-trevor-harris-bryce-foster-jamie-ray/
+yt-dlp https://gay0day.com/videos/126/surprise-threeway-trevor-harris-bryce-foster-jamie-ray/
+vlc 'Surprise Threeway - Trevor Harris, Bryce Foster, Jamie Ray [126].mp4' 
+exit
+cd Videos/Pessoal/Sex/
+yt-dlp https://gay0day.com/videos/170037/bravofucker-bitchy-gay-boy-brutally-fucked-by-rasmes/
+mise self-update
+echo -e "${PATH//:/\\n}"
+cat /etc/profile
+cd frontend/
+tmuux
+tree -L3
+tree -L4
+exit
+exit
+exit
+cd github/parajas/
+exit
+aur sync --cleanbuild --clean --database aurutils --upgrades 
+tmux
+exit
+cd github/app-harmonia/
+git pull --verbose 
+git pull --verbose origin main
+git pull -v origin dev
+git branch --set-upstream-to=origin/dev
+git config -l
+l frontend/README.md 
+cat frontend/README.md 
+mv frontend/README.md 
+mv frontend/README.md ..
+git restore frontend/README.md 
+rm -rf frontend
+node --version
+mise ls
+ng version
+ng new frontend
+cd frontend
+git restore README.md 
+code-insiders .
+tree
+tree -L2
+cd src/app
+tree -L1
+git add all
+git add --all
+git commit -m "feat: Adiciona projeto frontend Angular (v21)."
+cd frontend
+git push -v -u origin dev
+git switch main
+cd ../..
+l
+rm -rf frontend-vue/
+gst
+git merge --help
+git merge -e dev
+git status
+git push -v origin main
+git switch dev
+exit
+sudo pacman -Syu
+exit
+nohup bash -c "GTK_IM_MODULE=gtk-im-context-simple ghostty" &>/home/albano/logs/ghostty/ghostty_logs &
+exit
+cd ..
+cd /var/cache/pacman/aurutils/
+ls -l
+cd -
+du -sh
+docker pull postgres:18.1-alpine3.23
+cd
+l
+nvvim 01_create.sql 
+cd github/agente-proto/
+ll
+nvim docker-compose.yaml 
+docker compose -f docker-compose.yaml up db-pg 
+docker compose -f docker-compose.yaml down
+docker compose -f docker-compose.yaml up db-pg -d
+docker compose down
+docker compose -f docker-compose.yml down
+docker system prune -a
+docker ps
+docker images
+docker images -a
+docker ps -a
+docker volumes ls
+docker volume prune
+docker volume rm agente-proto_pgdata 
+docker volume rm agente_pgadmin_data 
+docker volume rm agente_pgdata 
+docker volume rm agente_weaviate_data 
+docker volume ls
+docker volume ls --help
+docker volume --help
+docker volume
+his -d 13454
 his
