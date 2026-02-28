@@ -139,3 +139,6 @@ setopt HIST_FIND_NO_DUPS    # Ignora duplicatas ao pesquisar no histórico
 if [ -f ~/.zsh_aliases ]; then
     source ~/.zsh_aliases
 fi
+
+bindkey "\eOH" beginning-of-line
+bindkey "\eOF" end-of-line
