@@ -31,6 +31,7 @@
 	compression = 9
 	whitespace = error
 	preloadindex = true
+	editor = nvim
 [status]
 	branch = true
 	showStash = true
