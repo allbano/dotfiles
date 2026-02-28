@@ -62,6 +62,6 @@ maximize = true
 window-decoration = none
 
 #initial-command = "tmux new-ses -s gt0"
-initial-command = "tmux new-ses"
+initial-command = "/usr/bin/bash -l"
 
 keybind = cmd+s>r=reload_config
