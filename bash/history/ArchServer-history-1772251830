@@ -409,10 +409,8 @@ mkdir github
 mkdir .ssh
 cd .ssh
 ls
-cd
 cd github
 git clone git@github.com:allbano/dotfiles.git
-cd ..
 mv .bashrc .bashrc.bak
 mv .bash_history .bash_history.bak
 ln -sf /home/albano/github/dotfiles/bash/bashrc ~/.bashrc
@@ -537,7 +535,6 @@ lsd -a1 ../projects/
 lsd -d1 */
 gtl
 git config --all
-git config --list
 yay -qii tracker3
 rygel
 rygel --help-all
@@ -617,7 +614,6 @@ git config --get-all
 git config --global --get-all 
 git config --system -l
 git config --global -l
-git config --global -e
 df -h /dev/
 df -h /dev/nvme1n1p8
 df -h /dev/nvme1n1p3
@@ -1119,7 +1115,6 @@ doas pacman -qs xorg-server
 doas pacman -ss nemo
 doas pacman -s cinnamon
 doas pacman -s cinnamon-translations cinnamon-settings-daemon cinnamon-control-center 
-tmux
 paru -s lightdm
 paru -s lightdm-gtk-greeter
 doas systemctl disable gdm.service 
@@ -1863,7 +1858,6 @@ lvim yt-dlp.config
 l -h
 ydlmp4 https://www.youtube.com/watch?v=o26fdenauky&ab_channel=fernandakipper%7cdev
 yt-dlp -f --list-formats  https://www.youtube.com/watch?v=o26fdenauky&ab_channel=fernandakipper%7cdev
-lvim bash_aliases 
 paru -sss yt-dlp
 paru -rscd yt-dlp
 paru -s yt-dlp-git
@@ -2789,7 +2783,6 @@ git
 git branch --help
 git branch -m
 git checkout head
-cd -
 git branch -l
 git checkout origin/head
 cd git/projetoseeg/projecteeg/
@@ -2856,7 +2849,6 @@ ps
 cd $dotfiles
 type -a git_current_branch 
 git_current_branch 
-cd -
 git_current_branch 
 git branch 2>/dev/null
 git branch 2>/dev/null
@@ -2884,7 +2876,6 @@ rep=$(git branch);[[ -z rep  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch &>/dev/null) -eq 0  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch &>/dev/null) -eq 128  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch &>/dev/null) -eq "128"  ]] && echo "deu certo" || echo "nã£o deu certo"
-cd -
 [[ $(git branch &>/dev/null) -eq "128"  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch --show-current) -eq "0"  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch --show-current) -eq "0"  ]] && echo "deu certo" || echo "nã£o deu certo"
@@ -2894,13 +2885,11 @@ cd -
 [[ $(git branch) -nq 0  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch) -ne 0  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch 2>/dev/null) -ne 0  ]] && echo "deu certo" || echo "nã£o deu certo"
-cd -
 [[ $(git branch 2>/dev/null) -ne 0  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch &>/dev/null) -ne 0  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch &>/dev/null) -eq 0  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch &>/dev/null) -eq 0  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch &>/dev/null) -ne 0  ]] && echo "deu certo" || echo "nã£o deu certo"
-cd -
 [[ $(git branch &>/dev/null) -ne 0  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch &>/dev/null) -eq 1  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch &>/dev/null) -ge 1  ]] && echo "deu certo" || echo "nã£o deu certo"
@@ -2914,7 +2903,6 @@ decho $?
 git branch; echo $?
 git branch 2>/dev/null; echo $?
 [[ $(git branch 2>/dev/null;echo $?) -eq 0  ]] && echo "deu certo" || echo "nã£o deu certo"
-cd -
 [[ $(git branch 2>/dev/null;echo $?) -eq 0  ]] && echo "deu certo" || echo "nã£o deu certo"
 [[ $(git branch &>/dev/null;echo $?) -eq 0  ]] && echo "deu certo" || echo "nã£o deu certo"
 lvim $dotfiles/bash/bash_functions 
@@ -3010,7 +2998,6 @@ cd bash
 lvim $dotfiles/bash/bash_functions 
 cd bin
 lvim $(type -p updatehist)
-cd -
 cd $dotfiles/scripts/
 lvim allarch-history 
 type -a updatehist 
@@ -3461,7 +3448,6 @@ docker rm -f df
 docker run --name postgresql16 -h postgre16 -dp 35000:5432 postgres:alpine 
 docker rm -f e8
 docker run --name postgresql16 -h postgre16 -p 35000:5432 postgres:alpine 
-cd docker/
 cd postgresql/
 cd postgresql16.3_github/
 bat docker-entrypoint.sh 
@@ -3483,7 +3469,6 @@ docker rm -f postgre16alpine
 docker run -dh postgre16 --name postgre16alpine -p 55432:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" -e postgres_password=testing postgres:alpine 
 sct daemon-reload 
 cd github/laundry_online/
-cd docker/
 cd postgresql/
 mkdir testreplication
 cd testreplication/
@@ -3586,7 +3571,6 @@ flatpak uninstall datcord
 paru -sss datcord
 paru -s datcord
 notify-send --help
-cd docker/
 cd postgresql/
 cd testreplication/
 cd db/
@@ -3743,7 +3727,6 @@ docker run -dh postgre16 --name pg16 -p 55432:5432 -e lang=pt_br.utf8 -e postgre
 docker exec -it pg16 bash
 docker rm -f pg16 
 cd ~/bin
-cd -
 ns entrypoint
 docker-compose up -d
 rm master.dockerfile 
@@ -4796,7 +4779,6 @@ cd cd git
 cd git
 cd github/
 cd appmarvelaluguel/
-cd docker/
 cd postgresql/
 cd sql
 cat bantads.sql 
@@ -4848,7 +4830,6 @@ cat init.sql > ../../bd3/projetodw/init.sql
 cat init.sql 
 cat init.sh
 lvim init.sh
-cd -
 cd github/bd3/
 docker volume ls
 docker volume ls
@@ -4946,7 +4927,6 @@ cd ~/.ssh
 ssh -t git@codeberg.org
 cat allcodeberg.pub 
 echo -n '42f2408c2c63d05e2304fdc5be842e6c7fc08c4284ff66a5c36959ca172497c9' | ssh-keygen -y sign -n gitea -f allcodeberg.pub 
-cd -
 mv vim-keys vim-keys2
 git clone https://codeberg.org/blau_araujo/vim-keys.git
 cd vim-keys
@@ -5206,7 +5186,6 @@ yay
 cat /etc/fstab
 cd /var
 cd lib
-cd docker/
 ll docker
 sudo ll docker
 sudo lsd -l -d docker
@@ -5514,7 +5493,6 @@ cat $DOTBASH/profile
 cargo
 cd .cargo/
 cd bin/
-cd git/
 lvim ~/.bash_profile
 nvim ~/.bash_profile
 mkdir bin
@@ -5589,7 +5567,6 @@ bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/
 fd
 fd
 nvim
-lvim ~/.bashrc
 paru -Si pipx
 env|rg PIP
 mise unset -g MISE_DISABLE_TOOLS
@@ -5979,7 +5956,6 @@ rm history
 rmdir bash
 man tldr
 gedit profile_archnote 
-tmux
 his | rg 898
 his|rg lvim
 his|rg lvims
@@ -6548,7 +6524,6 @@ lsd -A1 ../Projects/
 lsd -d1 */
 gtl
 git config --all
-git config --list
 yay -Qii tracker3
 rygel
 rygel --help-all
@@ -6626,7 +6601,6 @@ git config --get-all
 git config --global --get-all 
 git config --system -l
 git config --global -l
-git config --global -e
 df -h /dev/
 df -h /dev/nvme1n1p8
 df -h /dev/nvme1n1p3
@@ -7104,7 +7078,6 @@ doas pacman -Qs xorg-server
 doas pacman -Ss nemo
 doas pacman -S cinnamon
 doas pacman -S cinnamon-translations cinnamon-settings-daemon cinnamon-control-center 
-tmux
 paru -S lightdm
 paru -S lightdm-gtk-greeter
 doas systemctl disable gdm.service 
@@ -7798,7 +7771,6 @@ lvim yt-dlp.config
 l -h
 ydlmp4 https://www.youtube.com/watch?v=O26fDEnAukY&ab_channel=FernandaKipper%7CDev
 yt-dlp -F --list-formats  https://www.youtube.com/watch?v=O26fDEnAukY&ab_channel=FernandaKipper%7CDev
-lvim bash_aliases 
 paru -Sss yt-dlp
 paru -Rscd yt-dlp
 paru -S yt-dlp-git
@@ -9267,7 +9239,6 @@ docker rm -f df
 docker run --name postgresql16 -h postgre16 -dp 35000:5432 postgres:alpine 
 docker rm -f e8
 docker run --name postgresql16 -h postgre16 -p 35000:5432 postgres:alpine 
-cd docker/
 cd postgresql16.3_github/
 bat docker-entrypoint.sh 
 nvim docker-entrypoint.sh 
@@ -9287,7 +9258,6 @@ docker exec -it postgre16alpine bash
 docker rm -f postgre16alpine 
 docker run -dh postgre16 --name postgre16alpine -p 55432:5432 -e LANG=pt_BR.utf8 -e POSTGRES_INITDB_ARGS="--locale-provider=icu --icu-locale=pt-BR" -e POSTGRES_PASSWORD=testing postgres:alpine 
 sct daemon-reload 
-cd docker/
 mkdir testReplication
 cd testReplication/
 mkdir db
@@ -9388,7 +9358,6 @@ flatpak uninstall Datcord
 paru -Sss datcord
 paru -S datcord
 notify-send --help
-cd docker/
 cd testReplication/
 cd db/
 mv db ../dbReplication
@@ -10397,7 +10366,6 @@ cd Containers/
 cd VMs/
 rm -rf Containers/
 cd Desktop
-cd docker/
 cd ...
 sudo chown -hR albano:albano .
 cd eclipse-workspace/
@@ -11030,7 +10998,6 @@ docker container rm -f pg16
 docker images -a
 docker run -dh pg16 --name pg16 -p 55432:5432 -e POSTGRES_PASSWORD=testing postgres:16-alpine
 docker exec -it pg16 bash
-cd docker/
 lvim appmarvel
 lvim appmarvel-postgres16.yml 
 cd dbReplication/
@@ -11057,7 +11024,6 @@ cat ui/.gitignore
 cat ui/.gitignore >> .gitignore 
 rm ui/.gitignore 
 gcm "Adicionado Projeto Angular."
-cd docker/
 cd dockerfiles/
 cd SQL/
 cat bantads.sql 
@@ -11456,7 +11422,6 @@ lvim ~/github/dotfiles/alacritty/alacritty.toml
 lvim ~/github/dotfiles/alacritty/alacritty.toml 
 tmux --help
 lvim ~/github/dotfiles/alacritty/alacritty.toml 
-tmux
 sct status tmp.mount 
 tmux list-windows 
 cd github/dotfiles/alacritty/
@@ -11639,7 +11604,6 @@ sudo nala update
 sudo nala version
 distrobox-enter debian12 -- bash -l
 distrobox-create -n debian-sid --hostname debian-sid --nvidia -i docker.io/library/debian:sid
-lvim ~/.bash_functions 
 cd github/dotfiles/
 git status --porcelain 
 gitStatus="$(git status --porcelain)"
@@ -12155,7 +12119,6 @@ cd git
 cd cd git
 cd git
 cd AppMarvelAluguel/
-cd docker/
 cd SQL
 cat bantads.sql 
 cd dockerfiles/
@@ -12456,7 +12419,6 @@ wayland-info
 yay
 cd /var
 cd lib
-cd docker/
 ll docker
 sudo ll docker
 sudo lsd -l -d docker
@@ -13198,22 +13160,16 @@ gcm "del: old history files."
 gcm "fix: pushHis function."
 gcm "fix: pushHis function."
 git config -e
-git config --global -e
 g brs
-git config --global -e
 git diff debian_testing
 git diff arcolinux.debian_testing
 git diff arcolinux..debian_testing
-git config --global -e
 git diff arcolinux..debian_testing
-git config --global -e
 git config --global diff.tool vimdiff
 git config --global alias.d difftool
 git d
-git config --global -e
 git difftool 
 git difftool debian_testing 
-git config --global -e
 git difftool debian_testing 
 git difftool --tool-help
 git config --global diff.tool kdiff3
@@ -13228,7 +13184,6 @@ git config --global diff.tool kdiff3
 git difftool debian_testing 
 git config --global diff.tool vimdiff
 git difftool debian_testing 
-git config --global -e
 paru -Sss git-delta
 paru -S git-delta
 git log -i -1 --author=\"$1\" --pretty=\"format:%an <%ae>\"
@@ -13316,7 +13271,6 @@ env | ag PWD
 cd $OLDPWD
 dirname $PWD
 st
-git config --global -e
 echo $OLDPWD
 cd bin
 echo -n $OLDPWD
@@ -13505,14 +13459,12 @@ git config user.email
 git config --global user.
 git config --global user.name
 git config --global -l
-git config --global -e
 git config --global -l
 git show
 git config --local
 git config --local -l
 git config --help
 git clone https://github.com/joaoobibiano/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
-git config --global -e
 git clone git@github.com/joaoobibiano/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 git clone git@github.com:joaoobibiano/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 rm -rf nvim.backup
@@ -14193,7 +14145,6 @@ cd .asdf/
 git status
 cat .netrwhist 
 rm .netrwhist 
-gsts
 gsta
 gstc
 gstaa
@@ -14449,7 +14400,6 @@ cd shell/
 cat ~/.bashrc
 fzf
 cat ~/.bash_functions 
-cd $DOTBASH
 lvim bash_functions 
 cd scripts/
 lvim functionsInitBash 
@@ -14458,7 +14408,6 @@ loginShell
 cd bash
 lvim --help
 lvim ~/.bash_profile 
-lvim ~/.bashrc
 bat ~/.fzf.bash 
 ll /home/albano/.fzf/bin
 rm package.*
@@ -14566,7 +14515,6 @@ cd /etc/ssh
 cd sshd_config.d/
 cd ssh_config.d/
 sudo ln -sf /home/albano/github/dotfiles/ssh/10-ssh-albano-personal-v1.conf /etc/ssh/ssh_config.d/
-cd -
 sudo lvim 10-ssh-albano-personal-v1.conf 
 cd .ssh/
 lvim authorized_keys
@@ -14648,7 +14596,6 @@ lvim PKGBUILD
 yay -Qs open
 yay -Qs openjdk
 type -a java
-cd
 cd PKGBUILDs/
 mv astah-uml astah_uml
 paru -G astah-uml 
@@ -14659,7 +14606,6 @@ rm astah-uml-*
 rm -rf pkg src
 makepkg -si
 paru -R astah-uml{,-debug}
-cd ..
 rm astah-uml/
 rm -rf astah-uml/
 paru -S astah-uml
@@ -14667,7 +14613,6 @@ clang --help
 llvm --help
 paru -S llvm
 mkdir -p logs/firefox
-cd bash/history/
 glol -5
 type -a pushHis 
 date -d @1746706554
@@ -15158,14 +15103,11 @@ cd .cache
 cd //
 cd .config/
 cd .config/nvim/
-l
 pwd
-cd
 PS1="\u@\h \w]\$
 PS1="\u@\h \w]\$"
 exit
 sudo apk add bash-completion
-cd
 pwd
 sudo apk
 type -a sh
@@ -15193,7 +15135,6 @@ ls -ld $9which sh)
 ls -ld $(which sh)
 bash
 PS1="ðŸ“¦[\u@\h \w]$"
-cd
 PS1="ðŸ“¦[\u@\h \w]\$ "
 lsd -l
 apk add lsd
@@ -15347,7 +15288,6 @@ ga community.lua
 gcm 
 gcm "feat: active community file"
 rm plugins/bufferline-nvim.lua 
-cd
 cd .config/nvim/
 cd lua/plugins/
 cat noice.lua 
@@ -18159,7 +18099,6 @@ compgen -G
 compgen -a
 compgen -o user
 compgen -A user
-la
 lsd -l .ssh
 ssh --help
 users
@@ -18721,7 +18660,6 @@ ghostty --help
 ghostty --font-family="FiraCode Nerd Fond"
 ghostty --font-family="FiraCode Nerd Font"
 lvim $HOME/.config/ghostty/config 
-echo $SHELL
 ng new padrao-scam --no-stadalone 
 ng new padrao-scam --no-standalone 
 ng g pipe show-text --skip-tests=true
@@ -18976,7 +18914,6 @@ paru -Sssss antigravity
 paru -S --asexplicit antigravity-bin 
 docker
 docker ps -a
-docker images
 npm i -g @angular/cli
 git restore src/app/components/inicial 
 clear
@@ -19377,7 +19314,6 @@ id
 lsblk 
 rsync -aAXv --no-perms --no-owner --no-group --no-times /home/albano/Desktop /run/media/albano/DADOS/
 ./classificador 
-pushHis 
 git commit -m "feat: add wofi-laucher configs"
 git push --all
 git push origin archlinux 
@@ -19385,7 +19321,6 @@ git pull origin debian
 fish
 zig
 ;
-git switch main 
 git pull origin main
 git pull --all
 which ghostty
@@ -19497,7 +19432,6 @@ git push --help
 git push --h
 git push backup archlinux 
 ls -l
-git config -l
 gcl /home/albano/tests/bare/dotfiles.git/
 git log
 git branch 
@@ -19628,7 +19562,97 @@ make clean && make build
 lvim Makefile 
 make run
 make clean
-ll
-cd $DOTFILES
-gst
 git switch archlinux 
+pushHis 
+cd bash/history/
+cd -
+git switch main 
+git push -v origin main
+lvim bash_aliases 
+exit
+exit
+exit
+cd $DOTBASH
+cd backup/
+cd rc/
+cd git/
+cat nginx_alpine.dockerfile 
+cd ..
+rm -rf docker/
+cd zsh
+git rm ../docker 
+git rm -r ../docker 
+git commit -m "remove: docker folder."
+mux
+echo $SHELL
+alias tmux="tmux set-option -g default-command "${SHELL}"
+alias tmux="tmux set-option -g default-command "${SHELL}" 
+alias tmux="tmux set-option -g default-command \"${SHELL}\"" 
+tmux new-ses
+his
+his -d 19621
+lvim ~/.bashrc
+lvim ~/.bash_functions 
+tmux set-option -g default-command "${SHELL} -l" \; new-sess
+tmux set-option -g default-command "${SHELL} -l" \; new-ses
+tmux set-option -g default-command "${SHELL}" -l \; new-ses
+tmux set-option -g default-command "${SHELL}" -l \; new-session 
+tmux set-option -g default-command "${SHELL} -l" && tmux new-session
+tmux set-option -g default-command "${SHELL} -l" \\\; new-session
+tmux set-option -g default-command "exec $(basename $SHELL) -l"\; new-session
+tmux set-option -g default-command "exec $(basename $SHELL) -l" new-session
+exit
+exioot
+exit
+tmux set-option -g default-command "exec $(basename $SHELL) -l"; tmux
+exit
+nvim ~/.bash_aliases 
+exit
+tmux
+exit
+exit
+mv .zshrc $DOTFILES/zsh/
+ln -sf $HOME/github/dotfiles/zsh/.zshrc .
+la
+exit
+cat $DOTFILES/git/config 
+ll -d ~/.gitconfig 
+rm -rf .gitconfig 
+ln -sf $HOME/github/dotfiles/git/config ~/.gitconfig
+git config -h
+git config --list
+git config --global set --help
+git config -l
+cat ~/.gitconfig 
+git config set core.editor nvim
+git config --global edit
+git config --global set core.editor nvim
+git config --global -e
+git --version
+git config edit --global
+git config set core.editor nvim --global 
+git config set --global  core.editor nvim
+cd
+cd tests/
+ll
+cd docker/
+l
+docker pull python:3.12.12-slim
+docker images
+> docker-compose.yaml
+nvim docker-compose.yaml 
+exit
+tmu
+alias tmu
+cd $DOTFILES
+git add ghostty/
+git commit -m "chore: Update the ghostty configs file to use bash as the initial shell."
+gsts
+git add zsh/.zshrc 
+git commit -m "feat: Add my custom zshrc file (Using ohmyzsh)."
+git config list --show-origin 
+git config edit
+git add git/
+gst
+git commit -m "chore: Update git config."
+git push -v origin archlinux 
