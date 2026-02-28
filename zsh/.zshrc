@@ -1,63 +1,21 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:/home/albano/.cargo/bin
-
-#History setup
-HISTFILE=$HOME/.zsh_history
-HISTSIZE=100000
-SAVEHIST=$HISTSIZ
-
-setopt hist_ignore_all_dups # remove older duplicate entries from history
-setopt hist_ignore_space # Ignore all commands init with space
-setopt hist_reduce_blanks # remove superfluous blanks from history items
-setopt inc_append_history # save history entries as soon as they are entered
-#setopt share_history # share history between different instances of the shell
-setopt auto_cd # cd by typing directory name if it's not a command
-setopt correct_all # autocorrect commands
-setopt auto_list # automatically list choices on ambiguous completion
-setopt auto_menu # automatically use menu completion
-setopt always_to_end # move cursor to end if word had one match
-
-# Commands Ignore
-IGNORE="cd|cd *|~|..|/etc|/usr|/var"
-IGNORE="$IGNORE|github/dotfiles/|github/BANTADS/"
-# Ls/exa/lsd ignore
-IGNORE="$IGNORE|ls|lsd|lsd -l|lsd -la|exa|ll|l|x|xx|ll ~|l ~"
-# git's ignore
-IGNORE="$IGNORE|gst|ga .|gp|gl|glol|glob"
-# Vim, lvim, nvim ignore
-IGNORE="$IGNORE|lvim|lvim ~/.bashrc|vim|vim ~/.bashrc|nvim|nvim ~/.bashrc"
-# Commands ignore
-IGNORE="$IGNORE|* --help|help *|help|* --version|history|history *|his|his *"
-IGNORE="$IGNORE|pwd|bg|fg|ua|ud|uy|ur|exit|man *"
-IGNORE="$IGNORE|htop|nvtop|bashtop|du|ncdu|dust|cargo|ip -c a"
-IGNORE="$IGNORE|* systemctl status|neofetch|lspci|lsusb|lsblk|lsblk -f"
-IGNORE="$IGNORE|alias|alias *|. ~/.bashrc"
-IGNORE="$IGNORE|doas systemctl status *"
-# compilation ignore
-IGNORE="$IGNORE|make|make *"
-# python ignore
-IGNORE="$IGNORE|py3a|py3d"
-# frameworks ignore
-IGNORE="$IGNORE|nvm version|ng version|npm version"
-export HISTORY_IGNORE="$IGNORE"
+export LS_OPTIONS='--color=auto'
+export DOTFILES="$HOME/github/dotfiles"
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="half-life"
 
+SHELL="/usr/bin/zsh"
+export SHELL
+
+bindkey -v
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -112,6 +70,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
+#
+eval "$(~/.local/bin/mise activate zsh)"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -119,13 +79,14 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
-	zsh-syntax-highlighting
- 	fzf
- 	zsh-autosuggestions
- 	k
+  git
+  fzf
+  mise
+  docker
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  fast-syntax-highlighting
 )
-
 
 source $ZSH/oh-my-zsh.sh
 
@@ -140,31 +101,42 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch $(uname -m)"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# 1. Define o arquivo de histórico exclusivo do Zsh (Isso é o que separa do Bash)
+HISTFILE=~/.zsh_history
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# 2. Define o limite de comandos guardados na memória da sessão atual
+HISTSIZE=10000
 
-# >>> juliaup initialize >>>
+# 3. Define o limite de comandos salvos no arquivo físico
+SAVEHIST=10000
 
-# !! Contents within this block are managed by juliaup !!
+# 4. Opções de comportamento do histórico (Recomendadas)
+setopt APPEND_HISTORY       # Adiciona ao final do arquivo em vez de sobrescrevê-lo
+setopt INC_APPEND_HISTORY   # Grava o comando no arquivo imediatamente, sem esperar o shell fechar
+setopt SHARE_HISTORY        # Compartilha o histórico entre múltiplos terminais abertos
+setopt EXTENDED_HISTORY     # Salva o timestamp (agora no arquivo certo)
+setopt HIST_IGNORE_DUPS     # Não grava o mesmo comando se ele for digitado repetidas vezes em sequência
+setopt HIST_FIND_NO_DUPS    # Ignora duplicatas ao pesquisar no histórico
 
-path=('/home/albano/.juliaup/bin' $path)
-export PATH
-
-# <<< juliaup initialize <<<
+# Carrega aliases personalizados
+if [ -f ~/.zsh_aliases ]; then
+    source ~/.zsh_aliases
+fi
