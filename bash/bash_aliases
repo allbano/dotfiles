@@ -266,7 +266,7 @@ alias yd=yt-dlp
 
 ######## TMUX
 alias tx="tmux new"
-alias tz="tmux new /usr/bin/zsh"
+alias tmu="tmux set-option -g default-command \"exec $(basename $SHELL) -l\"; tmux"
 
 ######## SYSTEMCTL
 alias sct="sudo systemctl "
