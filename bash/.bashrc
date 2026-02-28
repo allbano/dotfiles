@@ -129,8 +129,6 @@ fi
 # 8. CARREGAMENTO DE EXTRAS (ALIASES E DOTFILES)
 # =========================================================================== #
 [[ -f "$DOTFILES/bash/bash_aliases" ]] && source "$DOTFILES/bash/bash_aliases"
-[[ -r "$DOTBASH/functions/00_init_functions" ]] && source "$DOTBASH/functions/00_init_functions"
-[[ -r "$DOTBASH/functions/functionsInitBash" ]] && source "$DOTBASH/functions/functionsInitBash"
 
 # Custom Startup (Lógica do arquivo 99_custom_startup)
 [[ $SHLVL -eq 1 && $(ps -o tty= -p$$ | sed 's/pts\///') -eq 0 ]] && pullDotfiles
