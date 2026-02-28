@@ -15,7 +15,6 @@ ZSH_THEME="half-life"
 SHELL="/usr/bin/zsh"
 export SHELL
 
-bindkey -v
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
