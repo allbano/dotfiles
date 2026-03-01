@@ -3,21 +3,23 @@
 #                        Consolidado & Refatorado                             #
 # =========================================================================== #
 
-# 1. PROTEÇÃO DE SHELL NÃO-INTERATIVO
+# PROTEÇÃO DE SHELL NÃO-INTERATIVO
 # =========================================================================== #
 [[ $- != *i* ]] && return
 
-# 2. CARREGAMENTO DE FUNÇÕES (IMPORTANTE: Carregar antes de usar)
+# CARREGAMENTO DE FUNÇÕES (IMPORTANTE: Carregar antes de usar)
 # =========================================================================== #
 if [[ -f "$HOME/.bash_functions" ]]; then
     source "$HOME/.bash_functions"
 fi
 
-# 3. VARIÁVEIS DE AMBIENTE GERAIS
+# VARIÁVEIS DE AMBIENTE GERAIS
 # =========================================================================== #
 export EDITOR="nvim"
 export VISUAL="nvim"
 export PAGER="less -R -s -M -Gg"
+# Ghostty needed
+export GTK_IM_MODULE=gtk-im-context-simple
 
 # Configuração de Manpager
 if command -v lvim &>/dev/null; then
@@ -28,7 +30,7 @@ else
     export AUR_PAGER="nvim"
 fi
 
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
 export LS_OPTIONS="--color=auto"
 
 # Caminhos XDG e Pastas Padrão
@@ -45,17 +47,26 @@ export PIPX_DEFAULT_PYTHON="/usr/bin/python"
 export DOTFILES="$HOME/github/dotfiles"
 export DOTBASH="$DOTFILES/bash"
 
-# 4. PATH (CAMINHOS DO SISTEMA)
+# PATH (CAMINHOS DO SISTEMA)
 # =========================================================================== #
 # Usa a função path_append definida em .bash_functions
 path_append "$HOME/bin"
 path_append "$HOME/.local/bin"
 path_append "$HOME/go/bin"
 path_append "$HOME/.cargo/bin"
-#path_append "/usr/sbin"
-path_append "/sbin"
+path_append "/usr/sbin"
+#path_append "/sbin"
 
-# 5. CONFIGURAÇÕES DO BASH (OPTIONS)
+# CONFIGURAÇÃO DE HISTÓRICO
+# =========================================================================== #
+export HISTFILE="$HOME/.bash_history"
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+export HISTCONTROL=ignoreboth:erasedups
+
+PROMPT_HISTORY="history -n; history -w; history -c; history -r;"
+
+# CONFIGURAÇÕES DO BASH (OPTIONS)
 # =========================================================================== #
 shopt -s histappend       # Anexa ao histórico
 shopt -s histreedit       # Re-editar falhas
@@ -73,15 +84,6 @@ if [[ -r /usr/share/bash-completion/bash_completion ]]; then
     source /usr/share/bash-completion/bash_completion
 fi
 
-# 6. CONFIGURAÇÃO DE HISTÓRICO
-# =========================================================================== #
-export HISTCONTROL=erasedups
-export HISTFILE="$HOME/.bash_history"
-export HISTSIZE=25000
-export HISTFILESIZE=25000
-
-# Sincronização imediata do histórico
-export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
 
 # 7. FERRAMENTAS EXTERNAS E INTEGRAÇÕES
 # =========================================================================== #
@@ -104,7 +106,7 @@ if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
 fi
 
 # FZF
-[ -f "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"
+[[ -f "$HOME/.fzf.bash" ]] && source "$HOME/.fzf.bash"
 
 # Pipx
 if command -v register-python-argcomplete &>/dev/null && command -v pipx &>/dev/null; then
@@ -131,9 +133,17 @@ fi
 [[ -r "$DOTBASH/functions/functionsInitBash" ]] && source "$DOTBASH/functions/functionsInitBash"
 
 # Custom Startup (Lógica do arquivo 99_custom_startup)
-[[ $SHLVL -eq 1 || $(ps -o tty= -p$$ | sed 's/pts\///') -eq 0 ]] && pullDotfiles
+[[ $SHLVL -eq 1 && $(ps -o tty= -p$$ | sed 's/pts\///') -eq 0 ]] && pullDotfiles
+
+# Configuração do FZF para Ctrl+R
+# --no-sort: Mantém ordem cronológica
+# --exact: Busca exata (opcional)
+export FZF_CTRL_R_OPTS="--no-sort --history-size=100000"
 
 # 9. ATIVAÇÃO DO PROMPT
 # =========================================================================== #
 # A função build_prompt está em .bash_functions
-PROMPT_COMMAND="build_prompt; $PROMPT_COMMAND"
+# PROMPT_COMMAND="build_prompt; $PROMPT_COMMAND"
+PROMPT_COMMAND="build_prompt; ${PROMPT_HISTORY}"
+
+export PROMPT_COMMAND
