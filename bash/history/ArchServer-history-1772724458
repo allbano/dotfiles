@@ -407,7 +407,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 mkdir github
 mkdir .ssh
-cd .ssh
 ls
 cd github
 git clone git@github.com:allbano/dotfiles.git
@@ -2169,7 +2168,6 @@ pip freeze
 pip install -u pip
 pip install -u poetry
 pip freeze
-poetry
 pyenv verions
 pyenv virtualenv 
 pyenv virtualenv anaconda3-2024.02-1 testanac
@@ -2184,12 +2182,10 @@ pyenv global 3.12.2
 pyenv activate testanac
 pip list -k
 pip install -u poetry
-poetry
 poetry completions bash > $dotfiles/bash-completion/poetry
 vlink
 lvim .inputrc
 pyenv activate testanac
-poetry
 lvim .inputrc
 pyenv activate testanac
 pyenv activate testanac
@@ -2244,7 +2240,6 @@ pyenv which python
 pyenv which pip
 pip versions
 pip version
-poetry
 pyenv deactivate testanac
 pyenv deactivate anaconda3-2024.02-1/envs/testanac
 pyenv local
@@ -2589,9 +2584,7 @@ cd git/projetoseeg/eegdjango/
 cd git/projetoseeg/eegdjango/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
 exir
-exitr
 exirt
-exitr
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
 cd git/pythonando/healing/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
@@ -3245,7 +3238,6 @@ manage.py makemigrations
 manage.py migrate
 /home/albano/git/testes/django/djangomodels
 manage.py shell
-cd .ssh
 ssh -i allbano_site_aws_ec2.pem admin@allbano.com
 manage.py makemigrations
 manage.py migrate
@@ -4908,14 +4900,12 @@ lvim docker-compose-test.yml
 docker compose -f docker-compose-test.yml up -d
 lvim docker-compose-test.yml 
 docker compose -f docker-compose-test.yml up -d
-cd .ssh
 cat allnotebook.pub 
 cd ../codeberg/
 ssh -t codeberg@codeberg.org
 git clone git@codeberg.org:blau_araujo/vim-keys.git
 git clone https://codeberg.org/blau_araujo/vim-keys.git
 cd vim-keys/
-cd .ssh
 cat allnotebook.pub 
 ssh-keygen -t ed25519 -a 100
 cat allcodeberg.pub 
@@ -5101,7 +5091,6 @@ cd crud-angular-spring/
 paru -sss linux
 ng new crud-angular
 pstree
-cd .ssh
 ssh alldeb
 ssh-copy-id -p 6969 -i /home/albano/.ssh/allnotebook.pub  192.168.15.3
 ssh-copy-id -p 6969 -i /home/albano/.ssh/allnotebook.pub  192.168.15.2
@@ -5111,7 +5100,6 @@ cat allbano_site_aws_ec2.pem
 cat allnotebook
 rm allnotebook*
 rm notebook_dellg15*
-cd .ssh
 cat allbano_site_aws_ec2.pem 
 cd /etc/ssh
 nvim ssh_config
@@ -5160,13 +5148,11 @@ ps aux| rg ssh-agent
 ssh -t git@github.com
 ssh-add -l
 lvim ~/.bash_profile 
-cd .ssh
 sct restart sshd
 ssh -t git@github.com
 cd github/bd3/
 gp -v 
 ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
-cd .ssh
 cat allbano_site_aws_ec2.pem
 ss
 tldr ss
@@ -5523,7 +5509,6 @@ nvim ~/.bash_profile
 python --help
 npm version
 yarn --help
-ng version
 mise install python 
 mise use -g python@system
 mise deactivate python
@@ -5608,7 +5593,6 @@ poetry completion bash
 paru -Sss tee
 . /usr/share/bash-completion/completions/poetry.sh 
 poetry list --help
-poetry
 poetry env use venvagenda
 poetry env remove --all
 pip l
@@ -8045,7 +8029,6 @@ pip freeze -
 pip freeze
 pip install -U poetry
 pip freeze
-poetry
 pyenv verions
 pyenv virtualenv 
 pyenv virtualenv anaconda3-2024.02-1 testAnac
@@ -8059,12 +8042,10 @@ pyenv global 3.12.2
 pyenv activate testAnac
 pip list -k
 pip install -U poetry
-poetry
 poetry completions bash > $DOTFILES/bash-completion/poetry
 vlink
 lvim .inputrc
 pyenv activate testAnac
-poetry
 lvim .inputrc
 pyenv activate testAnac
 pyenv activate testAnac
@@ -8119,7 +8100,6 @@ pyenv which python
 pyenv which pip
 pip versions
 pip version
-poetry
 pyenv deactivate testAnac
 pyenv deactivate anaconda3-2024.02-1/envs/testAnac
 pyenv local
@@ -8437,9 +8417,7 @@ cd git/projetosEEG/eegDjango/
 cd git/projetosEEG/eegDjango/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
 exir
-exitr
 exirt
-exitr
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
 cd git/pythonando/healing/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envVars.txt
@@ -10898,7 +10876,6 @@ paru -R libreoffice-extension-languagetool
 vlc
 cat /etc/pass
 cat /etc/passwd
-exitr
 cd github
 git clone git@github.com:allbano/TrabalhoFinalDAC.git
 cd TrabalhoFinalEDII/
@@ -14145,6 +14122,7 @@ cd .asdf/
 git status
 cat .netrwhist 
 rm .netrwhist 
+gsts
 gsta
 gstc
 gstaa
@@ -14383,7 +14361,6 @@ paru -S llvm18
 zig 
 type -a node
 type -a ng
-ng version
 fzf 
 rm -rf .fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -14523,7 +14500,6 @@ chmod 600 authorized_keys
 nmcli connection reload
 nmcli connection down 'Wired connection 1' 
 nmcli connection up 'Wired connection 1' 
-ip -c a
 nmcli connection down ConnectionHome 
 nmcli connection up ConnectionHome 
 paru -Ssss nftables
@@ -14555,7 +14531,6 @@ git restore bash/history/notebook-dellg15-history-1744223826
 agaa
 gaa
 gcm "add: ssh and sshd config files."
-cd .ssh
 uname -f
 paru -S simplenote-electron-bin
 lvim authorized_keys 
@@ -16335,7 +16310,6 @@ zfs_ids_to_path --help
 man zfs_ids_to_path
 paru -Sss zfs
 zfs --help
-systemctl --user status
 paru -Sss jami
 pipx upgrade uv
 type -a python
@@ -16485,7 +16459,6 @@ cp -r ~/github/minimal-nvim/nvim/plugin .
 cp -r ~/github/minimal-nvim/nvim/.settings .
 bat run.sh 
 lvim Dockerfile 
-git restore .
 lvim build.sh 
 > config.lua
 rm lazy-lock.json
@@ -17284,7 +17257,6 @@ mise install node@22
 mise install usage
 mise ins
 mise use -g usage@latesty
-mise use -g usage@latest
 mise list
 mise install neovim@0.10.4
 mise install zig@0.14.1
@@ -17433,7 +17405,6 @@ sudo systemctl start sshd.service
 sudo systemctl status ssh-access.target 
 sudo systemctl status sshdgenkeys.service 
 sudo systemctl status sshd-unix-local.socket 
-git diff
 git restore bash/bashrc 
 mise use -g node@22.20.0
 fileinfo
@@ -17717,7 +17688,6 @@ blueprint-compiler version
 export BLUEPRINT_COMPILER=$(which blueprint-compiler)
 echo "Usando blueprint-compiler em: $BLUEPRINT_COMPILER"
 zig build -Doptimize=ReleaseFast -Dsystem-blueprint
-mise 
 sudo pacman -S blueprint-compiler
 gtk_blueprint_compiler --version
 which gtk_blueprint_compiler
@@ -17841,7 +17811,6 @@ gcl git@github.com:parajas-ufpr/parajas.git
 rsync /home/albano/Desktop/Parajas/ .
 rsync -havP /home/albano/Desktop/Parajas/ /home/albano/github/parajas/docs/
 git commit -m "docs: Adiciona os documentos de modelagem da aplicação."
-pipx
 pipx install poetry
 poetry init --help
 python -m venv
@@ -18163,7 +18132,6 @@ paru -Ssss padre
 paru -Ssss Padre
 less /etc/passwd
 less --help
-uname -a
 mise ls 
 ng new prj-secao-5
 git branch -m main
@@ -18205,7 +18173,6 @@ lvim 07_prompt
 lvim 99_custom_startup 
 lvim 06_extra_and_tools 
 exit6
-mise
 git commit -m 'fix: update mise environment. Mise's path OK in ssh."
 git commit -m "fix: update mise environment. Mise's path OK in ssh."
 git merge archlinux
@@ -18391,7 +18358,6 @@ python src/sqlalchemy_v2/wip.py
 rm -rf .venv
 mkdir ArtyomShumeiko
 poetry new cs-sqlalchemy
-lla
 poetry add --group dev sqlalchemy
 poetry add --group dev asyncpg
 poetry add --group dev psycopg
@@ -18448,7 +18414,6 @@ rm -rf usr/
 paru -S --asexplicit qemu-full brltty harfbuzz-icu libphonenumber raptor freerdp gitlab
 paru -Si icu
 paru -S --asexplicit qemu-full brltty harfbuzz-icu libphonenumber raptor freerdp
-sudo grub-mkconfig -o /boot/grub/grub.cfg 
 paru -S --asexplicit spring-tools-for-eclipse 
 paru -Ssss teams
 paru -S teams-for-linux
@@ -18630,7 +18595,6 @@ paru -R doas
 doas
 doas lvim /etc/pacman.conf 
 sudo lvim /etc/pacman.conf 
-sudo pacman -Syu
 sudo pacman -S --asexplicit opendoas
 cat /etc/doas.conf.pacsave
 sudo mv /etc/doas.conf.pacsave /etc/doas.conf
@@ -18688,7 +18652,6 @@ git commit -m "Aula 427 - Incicio/Final - Criaçao do Projeto"
 git commit -m "Aula 428 - Incicio/Final - @If[Not *ngif]"
 clear
 ng g p transform-text --skip-tests true
-git restore .
 git restore --staged --all
 git restore --staged .
 git commit --amend -m "Aula 429 - Incio - Pipes Standalone"
@@ -18722,9 +18685,7 @@ mise ls-remote --all
 node
 mise use
 mise registry
-mise up
 mise upgrade
-mise self-update
 mise --version
 paru -Si mise
 paru -Si rtx
@@ -18825,7 +18786,6 @@ ng new 1-roteamento-standalone --style scss --ssr false
 nvim .gitignore 
 sudo pacman -S --asexplicit brave-bin 
 git commit -m "Aula 434/438 - Criação e configuração do projeto Inicial"
-python --version
 python -m venv .venv
 pip install -U pip
 pip install -U jupyterlab 
@@ -18914,13 +18874,11 @@ paru -Sssss antigravity
 paru -S --asexplicit antigravity-bin 
 docker
 docker ps -a
-npm i -g @angular/cli
 git restore src/app/components/inicial 
 clear
 gst"
 git commit -m "Aula 453 - Incicio - Criando os componentes. Organizando o projeto."
 git commit -m "Aula 453 - Final - Implementação de Rotas Filhas - OK"
-sudo systemctl status
 sudo systemctl enable firewalld.service 
 sudo systemctl start firewalld.service 
 sudo systemctl status firewalld.service 
@@ -19121,7 +19079,6 @@ pnpm
 npm i -g yarn
 npm i -g pnpm
 npm i -g npm@stable
-npm i -g npm
 pnpm i
 pnpm build
 pnpm start
@@ -19138,11 +19095,9 @@ pixi
 pixi --help
 pixi self-update
 pip install -U jupyterlab
-which python
 git restore bash/rc/06_extra_and_tools 
 rm -rf .pixi
 mise use -g python@3.14.0
-mise ls-remote python@3.14
 source .venv/bin/activate
 pip list
 jupyter lab --core-mode --port 15000
@@ -19404,7 +19359,6 @@ sudo lvim /usr/lib/systemd/system/power-profiles-daemon.service
 sudo systemctl edit power-profiles-daemon.service
 sudo systemctl daemon-reload 
 systemctl status tlp auto-cpufreq
-ff
 sudo systemctl status power-profiles-daemon.service 
 systemctl cat power-profiles-daemon
 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_driver
@@ -19464,7 +19418,6 @@ paru -S --edit mlpack
 paru -S --asexplicit mlpack
 paru -Scccc
 yay -S --asexplicit mlpack
-mise ls
 yay -S --editmenu --asexplicit mlpack
 g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp -o classificador -larmadillo -lmlpack
 pkg-config --cflags --libs mlpack 2>&1 || echo "mlpack not found via pkg-config"
@@ -19583,13 +19536,13 @@ cd zsh
 git rm ../docker 
 git rm -r ../docker 
 git commit -m "remove: docker folder."
+git push -v origin archlinux 
 mux
 echo $SHELL
 alias tmux="tmux set-option -g default-command "${SHELL}"
 alias tmux="tmux set-option -g default-command "${SHELL}" 
 alias tmux="tmux set-option -g default-command \"${SHELL}\"" 
 tmux new-ses
-his
 his -d 19621
 lvim ~/.bashrc
 lvim ~/.bash_functions 
@@ -19608,7 +19561,6 @@ tmux set-option -g default-command "exec $(basename $SHELL) -l"; tmux
 exit
 nvim ~/.bash_aliases 
 exit
-tmux
 exit
 exit
 mv .zshrc $DOTFILES/zsh/
@@ -19629,30 +19581,170 @@ git config --global edit
 git config --global set core.editor nvim
 git config --global -e
 git --version
+git config edit
 git config edit --global
 git config set core.editor nvim --global 
 git config set --global  core.editor nvim
+git config list --show-origin 
 cd
 cd tests/
-ll
 cd docker/
-l
 docker pull python:3.12.12-slim
 docker images
 > docker-compose.yaml
 nvim docker-compose.yaml 
 exit
-tmu
 alias tmu
-cd $DOTFILES
-git add ghostty/
-git commit -m "chore: Update the ghostty configs file to use bash as the initial shell."
-gsts
-git add zsh/.zshrc 
-git commit -m "feat: Add my custom zshrc file (Using ohmyzsh)."
-git config list --show-origin 
-git config edit
-git add git/
+exit
+tmu
+tmu new-sess -s zb0
+exit
+exit
+nvim .config/ghostty/config 
+exit
+tmux new-ses -s gb0
+exit
+tmux
+git restore .
+tmu new-sess -s gb0
+exit
+exit
+exit
+tmux -L tmux-bash new-session -s gb0
+docker system prune -a 
+docker volume prune -a 
+docker compose -f docker-compose-app.yaml down
+docker compose -f docker-compose-app.yaml exec harmonia-app /bin/sh
+docker compose -f docker-compose-app.yaml up -d
+git restore backend/poetry.lock 
+git add docker-compose-app.yaml 
+gst 
+glol
+git commit -m "feat: Adiciona docker-compose do backend Projeto Harmonia."
+git push -v origin dev
+git add backend/
+git commit -m "feat: Atualiza para obter enviromments diretamente do container."
+cd agente-proto/
+bat --pager cat docker-compose
+bat --pager cat docker-compose.yaml 
+cd ..
+cd app-harmonia/
+git add backend/.env 
+ssh parajas216 
+sudo pacman -Suy
+exit
+exit
+exit
+sudo pacman -Sytu
+sudo pacman -Sss linux
+sudo pacman -Sss '^linux'
+uname -a
+sudo pacman -S --asexplicit linux{,-headers}
+exit
+ip -c a
+sudo pacman -R linux-lts{,-headers}
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+ff
+sudo systemctl status
+systemctl --user status
+cd .ssh
+nvim config
+ssh harmonia-server 
+exit
+tmu new-ses -s gb0
+exit
+exitr
+exit
+which node
+mise
+mise plugin 
+mise plugin --help
+mise install usage@latest
+l
+lla
+mise install -g usage@latest
+mise install --global usage@latest
+mise use --global usage@latest
+cd github/agente-proto/
 gst
-git commit -m "chore: Update git config."
-git push -v origin archlinux 
+git diff
+cat docker-compose-app.yaml 
+rm docker-compose-app.yaml 
+mkdir -p /home/albano/github/agente-proto/agente-chat/api /home/albano/github/agente-proto/agente-chat/core
+cp /home/albano/github/agente-proto/agente/chunking.py /home/albano/github/agente-proto/agente-chat/core/
+cp /home/albano/github/agente-proto/agente/embedding.py /home/albano/github/agente-proto/agente-chat/core/
+cp /home/albano/github/agente-proto/agente/llm.py /home/albano/github/agente-proto/agente-chat/core/
+cp /home/albano/github/agente-proto/agente/llm_manager.py /home/albano/github/agente-proto/agente-chat/core/
+cp /home/albano/github/agente-proto/agente/prompt.py /home/albano/github/agente-proto/agente-chat/core/
+cp /home/albano/github/agente-proto/agente/search.py /home/albano/github/agente-proto/agente-chat/core/
+touch /home/albano/github/agente-proto/agente-chat/core/__init__.py
+touch /home/albano/github/agente-proto/agente-chat/api/__init__.py
+grep -r "agente\." /home/albano/github/agente-proto/agente-chat/core/
+sed -i 's/agente\./agente_chat\.core\./g' /home/albano/github/agente-proto/agente-chat/core/*.py
+pytest /home/albano/github/agente-proto/agente-chat/core
+pytest /home/albano/github/agente-proto/agente-chat
+python -m pytest test_agente.py
+python -m venv venv && source venv/bin/activate && pip install pytest fastapi pydantic motor sqlalchemy >/dev/null && pytest /home/albano/github/agente-proto/agente-chat
+source venv/bin/activate && pip install httpx >/dev/null && python test_agente_chat.py
+export PYTHONPATH=/home/albano/github/agente-proto:$PYTHONPATH && source venv/bin/activate && python test_agente_chat.py
+mv /home/albano/github/agente-proto/agente-chat /home/albano/github/agente-proto/agente_chat
+export PYTHONPATH=/home/albano/github/agente-proto:$PYTHONPATH && source venv/bin/activate && python test_agente_chat.py
+source venv/bin/activate && pip install numpy weaviate-client openai sentence-transformers >/dev/null && export PYTHONPATH=/home/albano/github/agente-proto:$PYTHONPATH && python test_agente_chat.py
+cd /home/albano/github/agente-proto/agente_chat
+cd ~/github/agente-proto/agente_chat && poetry init --name agente-chat --description "Endpoint de chat usando Weaviate e LLM" --author "Albano" -n
+cd ~/github/agente-proto/agente_chat && poetry add fastapi pydantic uvicorn weaviate-client openai sentence-transformers numpy && poetry add --group dev pytest httpx
+cd /home/albano/github/agente-proto
+cd /home/albano/github/agente-proto && poetry -C agente_chat run uvicorn agente_chat.api.main:app --host 0.0.0.0 --port 8000 &
+sleep 3 && curl -s -X POST http://127.0.0.1:8000/chat -H "Content-Type: application/json" -d '{"pergunta": "Como posso criar imagens com IA?", "session_uuid": "01940000-0000-7000-0000-000000000000"}' > /home/albano/github/agente-proto/agente_chat/test_resp_1.json
+cd /home/albano/github/agente-proto && poetry -C agente_chat run python -m uvicorn agente_chat.api.main:app --host 0.0.0.0 --port 8000 &
+source venv/bin/activate && export PYTHONPATH=/home/albano/github/agente-proto:$PYTHONPATH && python test_agente_chat.py
+kill -9 $(ps aux | grep test_agente_chat.py | awk '{print $2}')
+source venv/bin/activate && export PYTHONPATH=/home/albano/github/agente-proto:$PYTHONPATH && uvicorn agente_chat.api.main:app --host 0.0.0.0 --port 8000 &
+kill -9 $(ps aux | grep uvicorn | awk '{print $2}')
+cd /home/albano/github/agente-proto/agente_chat
+cd /home/albano/github/agente-proto
+sleep 5 && curl -s -X POST http://127.0.0.1:8000/chat -H "Content-Type: application/json" -d '{"pergunta": "Como posso criar imagens com IA?", "session_uuid": "01940000-0000-7000-0000-000000000000"}' > /home/albano/github/agente-proto/agente_chat/test_resp_1.json
+tail -n 20 /home/albano/github/agente-proto/agente_chat/test_resp_1.json
+cd /home/albano/github/agente-proto && poetry -C agente_chat run python test_agente_chat.py
+cp /home/albano/github/agente-proto/test_agente_chat.py /home/albano/github/agente-proto/agente_chat/test_agente_chat.py && cd /home/albano/github/agente-proto && poetry -C agente_chat run python agente_chat/test_agente_chat.py
+cd /home/albano/github/agente-proto/agente_chat
+cd /home/albano/github/agente-proto/agente_chat && PYTHONPATH=/home/albano/github/agente-proto poetry run python test_agente_chat.py
+cd /home/albano/github/agente-proto/agente_chat && poetry add httpx
+cd /home/albano/github/agente-proto/agente_chat && PYTHONPATH=/home/albano/github/agente-proto poetry run python test_agente_chat.py
+cd /home/albano/github/agente-proto/agente_chat && poetry add pydantic-settings
+cd /home/albano/github/agente-proto/agente_chat && PYTHONPATH=/home/albano/github/agente-proto poetry run python test_agente_chat.py
+cd /home/albano/github/agente-proto/agente_chat && poetry add optimum optimum-intel openvino
+cd /home/albano/github/agente-proto/agente_chat && PYTHONPATH=/home/albano/github/agente-proto poetry run python test_agente_chat.py
+exit
+cd $DOTFILES
+sudo pacman -Syu
+aur sync --cleanbuild --clean --database aurutils --upgrades
+python --version
+which python
+mise self-update
+mise up
+mise uninstall python@3.14.2
+mise install python@3.14.3
+mise mise ls-re
+mise 
+mise up usage
+mise use -g usage@latest
+mise ls-remote python@3.14
+mise ls
+mise ls-remote zls
+mise ls-remote node@24
+mise install node@24.14.0
+mise use -g node@24.14.0
+npm i -g npm
+npm i -g @angular/cli
+ng version
+exit
+poetry
+pipx
+pipx --version
+which pipx
+cd github/app-harmonia/
+ll
+git pull -v origin dev
+tmux server-access --help
+his
