@@ -544,7 +544,6 @@ most /etc/fstab
 most -s /etc/fstab
 env | rg ls_color
 env | rg ls_color
-gaa
 gcam "fix: modificado variavel ls_colors para ls_options."
 git pull
 git pull --force
@@ -1057,7 +1056,6 @@ ga bash/bash_functions
 gcm "updated bash_aliases and bash_functions."
 ga scripts/functionsinitbash 
 gcm "all functions ok."
-gaa
 gcm "included bash_history arch linux distro."
 paru -r qt5-gsettings 
 paru -r python-cx-freeze 
@@ -1723,7 +1721,6 @@ sudo systemctl restart bluetooth
 sudo systemctl status bluetooth
 rm -rf .ipynb_checkpoints
 lvim updatehist 
-gaa
 gcm "added updatehist script."
 curl https://ohmyposh.dev/install.sh
 curl https://ohmyposh.dev/install.sh > install.sh
@@ -2342,10 +2339,8 @@ flatpak search raicast
 flatpak search raycast
 flatpak search raykast
 gst -s
-gaa
 git restore --staged bash-completion/poetry 
 gcm "updated archnote profile and zshrc."
-gaa
 gsgt
 gcm "added portry autocomplete."
 pyenv deactivate healing 
@@ -2390,7 +2385,6 @@ lsblk -a
 lsblk -l
 lsblk -h
 lsblk -n
-gaa
 gcm "updated lsk alias and added lsku alias."
 btn
 exot
@@ -2904,7 +2898,6 @@ lvim $dotfiles/bash/bash_functions
 type -a git_current_branch 
 git_current_branch 
 cd $dotfiles
-gaa
 gcm "included glow bash-completion. updated the bashrc, zshrc and bash_functions files."
 cd git/projetoseeg/eegdjango/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
@@ -2982,7 +2975,6 @@ git add templates/
 git add eeg/
 git add usuarios/
 gcm "finalizado todas as funcionalidades de usu„°rio."
-gaa
 gcm "adicionado app experimentos."
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
 sudo rm /etc/xdg/autostart/blueman.desktop 
@@ -4561,7 +4553,6 @@ cat history/alldeb-history
 pushhis 
 cat history/alldeb-history 
 cd history/
-gaa
 time
 date -u
 stat -c alldeb-history 
@@ -4575,7 +4566,6 @@ date -d @$uptodate
 cd $dotbash/history/
 note="notebook-dellg15"
 rm "$note"*
-gaa
 git restore --staged notebook-dellg15-history
 lvim ~/bin/functionsinitbash 
 type -a pushhis 
@@ -4584,7 +4574,6 @@ pushhis
 lvim ~/bin/functionsinitbash 
 . ~/bin/functionsinitbash 
 pushhis 
-gaa
 gcm "refact: pushhis function."
 gpp
 cd $dotfiles
@@ -4749,7 +4738,6 @@ lvim functionsinitbash
 ga $dotbash/bash_aliases 
 gcm "refact: neatly organized all git aliases."
 gs
-gaa
 gcm "refact: function names (updatedotfile >> pulldotfiles, updatehist >> pushhist) and both updated."
 gp -v --all
 git merge --help
@@ -4800,7 +4788,6 @@ mv -r ../db3 docs
 cd ../bd3/
 mv ../db3 .
 mv db3 docs
-gaa
 gcm "adicionado docs, incluindo o projeto de dw."
 exot
 gp -v
@@ -4810,7 +4797,6 @@ pulldotfiles
 cd github/bd3/
 cd projetodw/
 cd trabalhofinaldac/
-gaa
 gp -v --all
 gl -v --all
 cd postgresql/
@@ -4872,7 +4858,6 @@ sudo chmod -r 644 docs/
 cd docs/
 chmod +x docs/
 cd docs/
-gaa
 gcm "refatorada permiss„µes dos arquivos para as corretas e deletado arquivos duplicados."
 gp -v 
 cd projetodw/
@@ -4995,7 +4980,6 @@ cd projetodw/
 lvim init.sh
 mv projetodw.sql ../docs/
 rm bd_partes.sql 
-gaa
 docker compose -f docker-compose.yml up
 docker compose -f docker-compose.yml up
 docker compose -f docker-compose.yml up
@@ -5020,12 +5004,10 @@ cat projetodw_inserts.sql >> projetodw-full.sql
 lvim projetodw-full.sql 
 lvim init.sh 
 docker compose -f docker-compose.yml up
-gaa
 gcm "implementa„ß„£o do projetodw-full e do docker-compose finalizados." 
 rm docker-compose-test.yml 
 cd projetodw/
 mv projetodw_* ../docs/
-gaa
 gcm "removido arquivos de teste. organizado arquivos parciais para pasta docs."
 gp -v
 mkdir testes
@@ -5033,7 +5015,6 @@ cd testes/
 git clone https://github.com/allbano/bd3.git && cd bd3
 rm -rf bd3/
 cd ~/github/bd3/
-gaa
 gcm "inclu„≠das as instru„ß„µes para executar o projeto no readme."
 gp -v
 rustup check
@@ -5136,7 +5117,6 @@ paru -s dbeaver
 ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
 cd github/b
 cd github/bd3/
-gaa
 gcm "corrigido path dos volumes no docker-compose."
 gp -v
 cd ~/.ssh
@@ -5199,25 +5179,19 @@ cd crud-angular/
 gcm "first commit."
 git remote add origin git@github.com:allbano/crud-angularspring.git
 git push -u origin main
-gaa
 git restore crud-angular/
 cd crud-angular/
 npm run
-gaa
 ga readme.md 
 gcm "first commit."
 git remote add origin git@github.com:allbano/crud-angularspring.git
 gp -u origin main
-gaa
-gaa
 cd crud-angular/
-gaa
 gcm "added angular 15 project."
 cd crud-angular/
 pnpm 
 ng add @angular/material
 cd ,,
-gaa
 cd crud-angular/
 lrm -rf crud-angular/
 rm -rf crud-angular/
@@ -5232,12 +5206,10 @@ docker compose -f docker-compose.yml stop
 docker ps =a
 ng new crud-angular
 cd crud-angular/
-gaa
 gcm "added crud-angular project."
 ng add @angular/material
 cd crud-angular/
 ng add @angular/material
-gaa
 gcm "added angular/material."
 cd github/bd3/
 apropos ls
@@ -5300,7 +5272,6 @@ git merge -e luizsenji
 git checkout luizsenji 
 git branch -l
 git checkout albano
-gaa
 gcm "arrumado c„≥digo de integra„ß„£o do frontend."
 gp -v
 cd ui
@@ -14529,7 +14500,6 @@ man ssh_config
 sudo lvim /etc/ssh/ssh_config.d/10-ssh-albano-personal-v1.conf 
 git restore bash/history/notebook-dellg15-history-1744223826 
 agaa
-gaa
 gcm "add: ssh and sshd config files."
 uname -f
 paru -S simplenote-electron-bin
@@ -17400,7 +17370,6 @@ ll /run/media/albano/DADOS/.ssh
 ll -d /run/media/albano/DADOS/.ssh
 rsync -haP /run/media/albano/DADOS/.ssh/ ~/.ssh
 ls -ls
-cat config
 sudo systemctl start sshd.service 
 sudo systemctl status ssh-access.target 
 sudo systemctl status sshdgenkeys.service 
@@ -17763,7 +17732,6 @@ git add
 git commit -m "feat: Atualizado ate a aula 31. Esqueci de commitar antes \!\!\!"
 git commit --amend -m "feat: Atualizado ate a aula 31. Esqueci de commitar antes."
 git commit -m "feat: Aula 31 - Assistida."
-glo
 paru -Ssss zed
 mise ls-remote zed
 paru -S --asexplicit ls++
@@ -18183,7 +18151,6 @@ cp -r prj-secao-5-ate-54
 cp -r prj-secao-5-ate-54 .
 cp -r prj-secao-5/  prj-secao-5-ate-54/
 cp -r prj-secao-5/  prj-secao-5-55/
-git add .
 git commit -m "Aula 55 - In√≠cio"
 git commit -m "Aula 55 - In√≠cio"
 git commit -m "Aula 55 - Finalizada"
@@ -18828,9 +18795,7 @@ git stash pop
 git stash push
 exity
 lvim bashrc
-echo $SHLVL 
 mv Cursos Courses
-;;
 ng g c components/primeiro.component
 ng g c components/segundo.component
 ng g c components/primeiro
@@ -19536,7 +19501,6 @@ cd zsh
 git rm ../docker 
 git rm -r ../docker 
 git commit -m "remove: docker folder."
-git push -v origin archlinux 
 mux
 echo $SHELL
 alias tmux="tmux set-option -g default-command "${SHELL}"
@@ -19586,8 +19550,6 @@ git config edit --global
 git config set core.editor nvim --global 
 git config set --global  core.editor nvim
 git config list --show-origin 
-cd
-cd tests/
 cd docker/
 docker pull python:3.12.12-slim
 docker images
@@ -19610,7 +19572,6 @@ tmu new-sess -s gb0
 exit
 exit
 exit
-tmux -L tmux-bash new-session -s gb0
 docker system prune -a 
 docker volume prune -a 
 docker compose -f docker-compose-app.yaml down
@@ -19619,9 +19580,7 @@ docker compose -f docker-compose-app.yaml up -d
 git restore backend/poetry.lock 
 git add docker-compose-app.yaml 
 gst 
-glol
 git commit -m "feat: Adiciona docker-compose do backend Projeto Harmonia."
-git push -v origin dev
 git add backend/
 git commit -m "feat: Atualiza para obter enviromments diretamente do container."
 cd agente-proto/
@@ -19643,12 +19602,9 @@ sudo pacman -S --asexplicit linux{,-headers}
 exit
 ip -c a
 sudo pacman -R linux-lts{,-headers}
-sudo grub-mkconfig -o /boot/grub/grub.cfg 
-ff
 sudo systemctl status
 systemctl --user status
 cd .ssh
-nvim config
 ssh harmonia-server 
 exit
 tmu new-ses -s gb0
@@ -19660,14 +19616,11 @@ mise
 mise plugin 
 mise plugin --help
 mise install usage@latest
-l
 lla
 mise install -g usage@latest
 mise install --global usage@latest
 mise use --global usage@latest
 cd github/agente-proto/
-gst
-git diff
 cat docker-compose-app.yaml 
 rm docker-compose-app.yaml 
 mkdir -p /home/albano/github/agente-proto/agente-chat/api /home/albano/github/agente-proto/agente-chat/core
@@ -19716,8 +19669,6 @@ cd /home/albano/github/agente-proto/agente_chat && PYTHONPATH=/home/albano/githu
 cd /home/albano/github/agente-proto/agente_chat && poetry add optimum optimum-intel openvino
 cd /home/albano/github/agente-proto/agente_chat && PYTHONPATH=/home/albano/github/agente-proto poetry run python test_agente_chat.py
 exit
-cd $DOTFILES
-sudo pacman -Syu
 aur sync --cleanbuild --clean --database aurutils --upgrades
 python --version
 which python
@@ -19743,8 +19694,126 @@ poetry
 pipx
 pipx --version
 which pipx
-cd github/app-harmonia/
-ll
 git pull -v origin dev
 tmux server-access --help
+dit
+dir
+pushd dir
+pushd .
+cd -
+dirs
+pushd -3
+pushd -2
+pushd +2
+dirs --help
+dirs -v
+dirs -p
+exit
+ll ~/.config/foot/
+exit
+exit
+nvim ~/.config/foot/foot.ini 
+exit
+nvim ~/.config/foot/alacritty-theme 
+exit
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+exit
+exit
+sudo pacman -Ssss linux-ltsdd
+sudo pacman -Ssss linux-lts
+exit
+poetry add sqlalchemy
+cd fastapi_zero/
+python
+cd ..
+alembic upgrade head
+task formaty
+task format
+sqlite3 database.db 
+task test
+cd -
+python --version
+poetry
+deactivate 
+exit
+exit
+sudo pacman -Syu
+exit
+tmux -L tmux-bash new-session -s fb0
+cd ~/.config/ghostty/
+cat config
+nvim config
+exit
+exit
+exit
+exit
+exit
+echo $XDG_SESSION_TYPE
+fc-cache -fv
+exit
+ghostty +list-fonts | grep -i caskaydia
+exit
+cd tests/
+exit
+ll -d Documents/
+ll -d Documents/*
+ll -d Documents/d*
+ll -d */
+ll -d d*/
+ll -d find . -maxdepth 1 -type d ! -path .*/
+find . -maxdepth 1 -type d ! -path .*/
+find . -maxdepth 1 -type d ! -path .
+find . -maxdepth 1 -type d ! -path Documents/
+find . -maxdepth 1 -type d ! -path ~/Documents/
+find . -maxdepth 1 -type d ! -path ~/Documents
+find . -maxdepth 1 -type d ! -path ./Documents
+find Documents/ -maxdepth 1 -type d ! 
+find Documents/ -maxdepth 1 -type d
+mkdir -p Documents/MD
+mv *.md Documents/MD
+rm -rf shared
+git commit -m "remove: Remove arquitetura anterior."
+git add --all
+git commit -m "raw: Adiciona imagens do projeto na pasta public."
+exit
+[[ $SHLVL -eq 1 && ${$(tty)#*/pts/} -eq 0 ]] && pullDotfiles
+[[ $SHLVL -eq 2 && ${$(tty)#*/pts/} -eq 1 ]] && pullDotfiles
+${$(tty)}
+echo ${$(tty)}
+tty
+echo $SHLVL 
+nvim ~/.bashrc
+exit
+cd $DOTFILES
+git add bash/
+git commit -m "feat: Update pullDotfiles callback."
+git commit -m "fix: Corrects screen sharpness."
+ff
+git push -v origin archlinux 
+cd
+cd github/app-harmonia/
+git diff
+git add .
+git commit -m "feat: Adiciona tag meta com descri√ß√£o para SEO."
+git push -v origin dev
+cd frontend/
+l
+cd src/app/
+ll
+ng g c presentation/pages/home
+glo
+glol
+gaa
+glol -15
+git commit -m "feat: Adiciona componente/tela inicial do portal Harmonia."
+ng g c presentation/shared/components/navbar
+git add presentation/
+gst
+tmux -L tmux-bash new-session -s gb0
+nvim ~/.config/ghostty/config 
+his -d 19817
+his -d 19816
+his -d 19814
+his -d 19783
 his
+exit
