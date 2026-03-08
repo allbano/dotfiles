@@ -131,7 +131,9 @@ fi
 [[ -f "$DOTFILES/bash/bash_aliases" ]] && source "$DOTFILES/bash/bash_aliases"
 
 # Custom Startup (Lógica do arquivo 99_custom_startup)
-[[ $SHLVL -eq 1 && $(ps -o tty= -p$$ | sed 's/pts\///') -eq 0 ]] && pullDotfiles
+#[[ $SHLVL -eq 1 && $(ps -o tty= -p$$ | sed 's/pts\///') -eq 0 ]] && pullDotfiles
+[[ $SHLVL -eq 1 && $(tty) == /dev/pts/0 ]] && pullDotfiles
+
 
 # Configuração do FZF para Ctrl+R
 # --no-sort: Mantém ordem cronológica

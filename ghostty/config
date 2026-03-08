@@ -44,6 +44,8 @@
 # Configuração da fonte
 font-family = "CaskaydiaCove Nerd Font"
 font-size = 12
+font-style = Regular
+font-thicken = true
 
 background-opacity = 0.8
 
@@ -61,7 +63,11 @@ maximize = true
 
 #window-decoration = none
 
-#initial-command = "tmux new-ses -s gt0"
-initial-command = "/usr/bin/bash -l"
+initial-command = "tmux -L tx-ghostty-bash new-ses -s gb0"
+#initial-command = "/usr/bin/bash -l"
 
 keybind = cmd+s>r=reload_config
+
+# Evita que o texto fique entre dois pixels físicos
+adjust-cell-width = 0
+adjust-cell-height = 2
