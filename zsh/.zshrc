@@ -83,7 +83,6 @@ plugins=(
   mise
   docker
   zsh-autosuggestions
-  zsh-syntax-highlighting
   fast-syntax-highlighting
 )
 
