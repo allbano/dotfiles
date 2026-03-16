@@ -89,20 +89,15 @@ fi
 # =========================================================================== #
 
 # Dircolors
-if command -v dircolors &>/dev/null; then
-    if [[ -r "$HOME/.dircolors" ]]; then
-        eval "$(dircolors -b "$HOME/.dircolors")"
-    else
-        eval "$(dircolors -b)"
-    fi
+if [[ -f "$HOME/.dircolors" ]]; then
+    eval "$(dircolors -b "$HOME/.dircolors")"
+else
+    eval "$(dircolors -b)"
 fi
 
 # SSH Agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent -s > "$XDG_RUNTIME_DIR/ssh-agent.env"
-fi
-if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
-    [ -f "$XDG_RUNTIME_DIR/ssh-agent.env" ] && source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
 fi
 
 # FZF
@@ -119,7 +114,11 @@ if command -v go &>/dev/null; then
 fi
 
 # Mise (asdf replacement)
-[[ -x "$HOME/.local/bin/mise" ]] && eval "$($HOME/.local/bin/mise completion bash)" && eval "$($HOME/.local/bin/mise activate bash)"
+#[[ -x "$HOME/.local/bin/mise" ]] && eval "$($HOME/.local/bin/mise completion bash)" && eval "$($HOME/.local/bin/mise activate bash)"
+if [[ -x "$HOME/.local/bin/mise" ]]; then
+    eval "$($HOME/.local/bin/mise completion bash | tr -d '\000')"
+    eval "$($HOME/.local/bin/mise activate bash | tr -d '\000')"
+fi
 
 # Angular
 if command -v ng &>/dev/null; then
@@ -130,10 +129,10 @@ fi
 # =========================================================================== #
 [[ -f "$DOTFILES/bash/bash_aliases" ]] && source "$DOTFILES/bash/bash_aliases"
 
-# Custom Startup (Lógica do arquivo 99_custom_startup)
-#[[ $SHLVL -eq 1 && $(ps -o tty= -p$$ | sed 's/pts\///') -eq 0 ]] && pullDotfiles
-[[ $SHLVL -eq 1 && $(tty) == /dev/pts/0 ]] && pullDotfiles
-
+# pull dotfiles
+if [[ $SHLVL -eq 1 ]] && [[ $(tty 2>/dev/null) == /dev/pts/0 ]]; then
+    pullDotfiles
+fi
 
 # Configuração do FZF para Ctrl+R
 # --no-sort: Mantém ordem cronológica
