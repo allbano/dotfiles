@@ -17575,7 +17575,6 @@ which pythoin
 sudo kbuildsycoca6
 lvim ~/.local/share/applications/ghostty.desktop
 kbuildsycoca5
-kbuildsycoca6
 bat config 
 export LANG=pt_BR.UTF-8
 ghostty --term=xterm-256color
@@ -19099,7 +19098,6 @@ which ghostty
 git checkout tip
 mise unuse python
 zig build -Doptimize=ReleaseFast install --prefix /home/albano/.local/
-ghostty --version
 sudo systemctl enable --now power-profiles-daemon.service 
 lsku
 nu -sh /home
@@ -19561,7 +19559,6 @@ exit
 tmux -L tmux-bash new-session -s fb0
 cd ~/.config/ghostty/
 cat config
-nvim config
 exit
 exit
 exit
@@ -19616,7 +19613,6 @@ his -d 19816
 his -d 19814
 his -d 19783
 exit
-pushHis 
 git commit -m "chore: Update ghostty initial command."
 cd -
 cd src/app
@@ -19687,7 +19683,6 @@ exit
 exit
 cd\
 exit
-cd github/
 cd agente
 cd src/
 cd agente_chat/
@@ -19804,7 +19799,6 @@ npx tsc --noEmit -p tsconfig.app.json
 npx tsc --noEmit -p tsconfig.app.json
 npm run build
 npm run build
-sudo pacman -Syu
 ssh harmonia-server 
 which yay
 grep -n '\$(' ~/.bashrc
@@ -20017,7 +20011,6 @@ his -d 20060
 his -d 20053
 his -d 20019
 his -d 20061
-his
 exit
 paru -Ssss codex
 paru -R windsurf 
@@ -20065,10 +20058,8 @@ cd github/BANTADS-20261S/
 git push
 glol -15
 git cd bantads-ui/
-ll
 cd bantads-ui/
 ls
-yay -Syu
 ng serve
 git add --all
 git commit -m "feat: add autocadastro page"
@@ -20095,6 +20086,68 @@ yay -Rsccdd python-backports-zstd
 yay -Rsccdd openai-codex-bin-debug 
 yay -Syyu
 exit
-paru -Syu
 exit
 pullDotfiles 
+pushHis 
+pacman -Qs ghostty
+sudo pacman -Syu
+paru -S --asexplicit ghostty
+yay -S --asexplicit ghostty
+exit
+exit
+exit
+ll gh*
+find . -type f -wholename '*ghosty* 
+find . -type f -wholename '*ghosty*'
+find . -type f -wholename '*ghos*'
+ll com.mit
+chmod g+w com.mitchellh.ghostty.desktop 
+sudo chmod g+w com.mitchellh.ghostty.desktop 
+sudo chown root:users com.mitchellh.ghostty.desktop 
+lvim vscodium.desktop 
+sudo lvim com.mitchellh.ghostty.desktop 
+exit
+cd /usr/share/applications/
+ll com.mit*
+sudo lvim foot.desktop 
+nvim ~/.local/share/applications/ghostty.desktop 
+sudo lvim foot.desktop 
+exit
+exit
+/usr/bin/ghostty --version
+sudo mv /usr/share/applications/com.mitchellh.ghostty.desktop /usr/share/applications/ghostty.desktop
+his -d 20126
+his
+cat /usr/share/applications/ghostty.desktop
+exit
+sudo lvim /usr/share/applications/ghostty.desktop
+exit
+yay -Syu
+sudo rm /usr/share/applications/ghostty.desktop
+sudo cp ~/.local/share/applications/ghostty.desktop /usr/share/applications/
+ll /usr/share/applications/ghost
+sudo chown root:users /usr/share/applications/ghostty.desktop 
+sudo chmod 664 /usr/share/applications/ghostty.desktop 
+ll /usr/share/applications/ghost*
+sudo nvim ~/.local/share/applications/ghostty.desktop
+mv ~/.local/share/applications/ghostty.desktop ~/.local/share/applications/ghostty_local.desktop 
+ll ~/.local/share/applications/ghostty_local.desktop 
+kbuildsycoca6 --noincremental
+kbuildsycoca6
+exit
+exit
+exit
+cd $DOTFILES/ghostty/
+nvim config
+exit
+exit
+paru -Syu
+exit
+rm ~/.local/share/applications/ghostty_local.desktop 
+rm ~/.local/bin/ghostty 
+cd github/
+rm -rf ghostty/
+ll
+exit
+ghostty --version
+find /usr/share/applications ~/.local/share/applications -iname '*ghostty*.desktop' -ls
