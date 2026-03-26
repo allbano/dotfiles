@@ -63,7 +63,7 @@ maximize = true
 
 #window-decoration = none
 
-initial-command = "tmux -L tx-ghostty-bash new-ses -s gb0"
+initial-command = "tmux -L tx-ghostty new-session"
 #initial-command = "/usr/bin/bash -l"
 
 keybind = cmd+s>r=reload_config
