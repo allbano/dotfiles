@@ -291,7 +291,6 @@ apropos tmux
 tmux new-session -s kx0 \; set -g mouse off \; send-keys "/usr/bin/zsh --login" 
 tmux new-session -s k0 "/usr/bin/zsh --login" \; set -g mouse off
 tmux new-session -s kx0 "/usr/bin/zsh --login" \; set -g mouse off
-echo $PS1
 paru -Qi nvidia-dkms 
 rm .zcomp*
 rm .zshrc.omz-uninstalled-2025-07-10_20-24-56 
@@ -323,7 +322,6 @@ man nvidiactl
 sudo systemctl status nvidiactl.service 
 paru -Sss nvidia
 paru -S cuda{,-tools} cudnn ffnvcodec-headers libnvidia-container
-flatpak update 
 systemctl --user status pipewire.service wireplumber.service 
 paru -R linux-lts{,-headers}
 paru -S linux-cachyos{,-headers}
@@ -337,7 +335,6 @@ systemctl --user status kde-baloo.service
 systemctl --user status keyboxd.service 
 systemctl --user status wireplumber.service 
 systemctl --user restart wireplumber.service 
-systemctl --user restart pipewire.service wireplumber.service 
 mkdir -p gits/md
 > python_libs_help.md
 lvim python_libs_help.md 
@@ -407,7 +404,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 mkdir github
 mkdir .ssh
-ls
 cd github
 git clone git@github.com:allbano/dotfiles.git
 mv .bashrc .bashrc.bak
@@ -2570,7 +2566,6 @@ paru -s clementine
 paru -sss clementine
 paru -s clementine
 python manage runserver
-cd github/
 rm -rf marvel-app
 git clone git@github.com:joaov1821/marvel-app.git
 cd marvel-app/
@@ -2588,7 +2583,6 @@ pip list -lo | cut -f1 -d' ' |  sed '1,2d' | xargs -n1 pip3 install -u
 pip install -u djlint
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
 python manage collectstatic
-cd github/
 git clone git@github.com:luizomf/curso-django-projeto1.git
 cd curso-django-projeto1/
 mv manage.py manage
@@ -2784,11 +2778,9 @@ cd $dotfiles
 git checkout c4f
 git checkout c4f6
 git checkout c4f69b7
-cd github/
 cd trabalhofinaledii/
 git checkout 17a5
 cd $dotfiles
-cd bash
 cd $dotfiles
 updatedotfiles 
 git_current_branch 
@@ -2806,7 +2798,6 @@ type -a git_current_branch
 echo $ps1
 echo $ps1 | rg 'git branch'
 type -a git_current_branch 
-cd github/
 rm -rf api_rest/
 cd bantads/
 git_current_branch 
@@ -2843,7 +2834,6 @@ lvim $dotfiles/bash/bash_functions
 cd $dotfiles
 git_current_branch 
 type -a git_current_branch 
-cd bash
 source bash_functions 
 git_current_branch 
 type -a git_current_branch 
@@ -2979,7 +2969,6 @@ gcm "adicionado app experimentos."
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/printenvvariablestofile.py /home/albano/.vscode/extensions/ms-python.python-2024.6.0/python_files/deactivate/bash/envvars.txt
 sudo rm /etc/xdg/autostart/blueman.desktop 
 cd $dotfiles
-cd bash
 lvim $dotfiles/bash/bash_functions 
 cd bin
 lvim $(type -p updatehist)
@@ -3023,7 +3012,6 @@ paru -si zig
 paru -si clang
 paru -si llvm
 code --version
-cd github/
 cd zed/
 cd script/
 his|wc -l
@@ -3122,17 +3110,13 @@ ollama
 ollama serve
 paru -s ca-certificates
 docker run -d -p 25000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
-docker volume ls
-docker volume ls
 docker volume rm open-webui 
-docker volume ls
 docker run -d -p 25000:8080 --add-host=127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 docker run -d --network=host -v open-webui:/app/backend/data -e ollama_base_url=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
 docker container -f ee
 docker container rm -f ee
 docker run -d --network=host -p 25000:8080 -v open-webui:/app/backend/data -e ollama_base_url=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main
 docker container rm -f 33
-docker volume ls
 docker volume rm open-webui 
 docker run -d -p 25000:8080 -e ollama_base_url=https://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
 docker container rm -f d2
@@ -3145,7 +3129,6 @@ docker images rm c
 docker images rm c26a
 docker image rm c2
 docker image rm 3d
-cd github/
 git clone git@github.com:open-webui/open-webui.git
 cd open-webui/
 cp -rpp .env.example .env
@@ -3203,7 +3186,6 @@ find . -type d -empty -print
 diff -r /home/albano/ufpr/ /run/media/albano/netac2tb/ufpr/
 pyenv uninstall 3.12.2
 pyenv virtualenv 3.12.4 testes
-cd git
 cd test
 cd testes/
 cat index
@@ -3287,7 +3269,6 @@ vscodium .
 manage.py shell
 cd ~/git
 mv agenda agenda-django
-cd github/
 git clone git@github.com:fernanda-kipper/login-page.git
 cd login-page/
 docker build -t angular-docker .
@@ -3394,7 +3375,6 @@ pyenv local --unset
 pyenv local jupyterlab
 cat usuarios_202406190252.sql 
 rm usuarios_202406190252.sql 
-cd git
 cd agenda-django/
 cat notas.txt 
 mkdir ola_django
@@ -3462,7 +3442,6 @@ mkdir master
 mkdir replica
 cd master
 cd laundry_online/
-cd app
 lvim dockerfile 
 cd docker/postgresql/testreplication/db/master/
 lvim postgresql.conf
@@ -3567,7 +3546,6 @@ lvim master.dockerfile
 docker start postgre16alpine 
 docker exec -it postgre16alpine bash
 docker exec -it postgre16alpine bash
-cd github/
 cd laundry_online/
 cd postgres
 cd docker/postgresql/
@@ -3597,8 +3575,6 @@ cd master/
 lvim master.dockerfile 
 docker-compose up --force-refresh -d
 docker volume 
-docker volume ls
-docker volume ls
 docker volume rm open-webui 
 docker volume rm marvel_postgre16 
 docker rm -f dbmaster 
@@ -3616,8 +3592,6 @@ lvim master.dockerfile
 docker-compose up -d
 docker rm dbmaster 
 docker rmi 4c
-docker volume ls
-docker volume ls
 docker-compose up -d
 docker start 92
 docker logs
@@ -3637,13 +3611,9 @@ docker logs 4a
 docker rm -f 4a
 docker volume rm master_postgre_master 
 docker volume ks
-docker volume ls
 docker-compose up -d
-docker volume ls
 docker rm -f dbmaster 
 docker rmi 22
-docker volume ls
-docker volume ls
 docker volume rm master_postgre_master 
 lvim master.dockerfile 
 lvim init.sql
@@ -3652,14 +3622,11 @@ docker logs b7
 docker exec -it dbmaster bash
 docker rm -f dbmaster 
 docker rmi 92
-docker volume ls
 docker rm 08 master_postgre_master
 docker rm 08 
-docker volume ls
 docker volume rm 08 master_postgre_master 
 docker volume rm 0
 docker volume rm 08df3a30a37818a941a92b872eb3c3274e720406cf8f4d79d454f08ae5048768 
-docker volume ls
 lvim init.sql 
 docker-compose up -d
 docker logs e8
@@ -3670,19 +3637,15 @@ docker rm dbmaster
 docker rm -f dbmaster 
 docker rmi f
 docker volume rm master_postgre_master 
-docker volume ls
 docker-compose up -d
 docker exec -it dbmaster bash
 docker rm -f dbmaster 
 docker rmi 0f
-docker volume ls
 docker volume rm master_postgre_master 
 docker volume rm e367
 docker volume rm e36
 docker volume rm 368327213c95af2ad30f43ceffcefda416752ca0f520a4b90c5382704e429530 
-docker volume ls
 cd github/laundry_online/
-cd app
 lvim master.dockerfile 
 docker-compose up -d
 lvim master.dockerfile 
@@ -3693,7 +3656,6 @@ lvim master.dockerfile
 docker rm -f dbmaster && docker rmi c96
 docker volume rm master_postgre_master 36
 docker volume rm master_postgre_master 36142ca0ba72c28e3b457ac812fb001ffca858000cfec8993bfdc8851f41965a 
-docker volume ls
 docker-compose up -d
 docker exec -it dbmaster bash
 docker rm -f dbmaster && docker rmi 8f
@@ -3741,12 +3703,10 @@ cd docker/postgresql/dbreplication/master/
 lvim postgresql.conf 
 docker-compose up --force-recreate -d 
 docker rm -f dbmaster 
-docker volume ls
 docker volume rm master_postgre_master 
 cp entrypoint entrypoint2
 lvim entrypoint2
 docker-compose up --force-recreate -d 
-docker volume ls
 lvim standby.signal
 docker rm -f dbmaster 
 docker rm -f dbreplication 
@@ -3765,8 +3725,6 @@ lvim init.sql
 docker rm -f dbmaster dbreplication 
 docker-compose up --force-recreate -d
 docker rm -f dbmaster dbreplication 
-docker volume ls
-docker volume ls
 docker volume rm master_dbmaster master_dbreplication 
 docker-compose up --force-recreate -d
 docker logs e7
@@ -3775,7 +3733,6 @@ docker rm -f dbmaster dbreplication
 docker volume rm master_dbmaster master_dbreplication 
 lvim entrypoint
 lvim init.sql 
-docker volume ls
 lvim docker entrypoint
 lvim entrypoint
 lvim pg_hba.conf 
@@ -3785,7 +3742,6 @@ lvim entrypoint2
 docker volume rm master_dbmaster master_dbreplication 
 docker rm -f dbmaster dbreplication 
 docker volume rm master_dbmaster master_dbreplication 
-docker volume ls
 docker ps -a 
 docker rm -f dbmaster dbreplication 
 docker volume rm master_dbmaster master_dbreplication 
@@ -3793,11 +3749,8 @@ docker volume rm master_master master_replication
 cd docker/postgresql/dbreplication/master/
 lvim entrypoint2
 lvim entrypoint
-docker volume ls
 docker rm -f dbmaster dbreplication 
 docker volume rm master_master master_replication 
-docker volume ls
-docker volume ls
 docker-compose up --force-recreate -d
 docker-compose stop
 docker-compose up --force-recreate -d
@@ -3821,7 +3774,6 @@ docker rm -f dbmaster dbreplication
 rm -rf master
 sudo rm -rf master
 sudo rm -rf replication/
-docker volume ls
 lvim pg_hba.conf 
 cd docker/postgresql/dbreplication/
 lvim docker-compose
@@ -4031,22 +3983,16 @@ lvim docker-compose
 docker-compose up 
 docker image rm dd
 docker-compose up
-docker volume ls
-docker volume ls
 docker rm -f dbmaster 
-docker volume ls
-docker volume ls
 docker image rm dd
 doas rm -rf master
 docker-compose up
-docker volume ls
 doas rm -rf master
 docker rmi dd
 docker-compose up --build
 doas rm -rf master
 docker rmi dd
 docker rmi dd
-docker volume ls
 docker volume rm 3b
 docker build -f ./master.dockerfile -t dbmaster .
 docker run -dh dbmaster --name dbmaster -p 55532:5432 -e lang=pt_br.utf8 -e postgres_initdb_args="--locale-provider=icu --icu-locale=pt-br" dbmaster:latest 
@@ -4093,15 +4039,12 @@ docker-compose up --build
 cd docker/postgresql/dbreplication/
 docker exec -it dbmaster bash
 docker-compose up --build --force-recreate
-docker volume ls
 docker rmi 4e
 doas rm -rf master
-docker volume ls
 lvim master.dockerfile 
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up -d 
 docker exec -it dbmaster bash
 doas rm -rf master
-docker volume ls
 docker rmi dbmaster
 lvim master.dockerfile 
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up -d 
@@ -4111,11 +4054,9 @@ docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
 doas rm -rf master
 docker rmi dbmaster
-docker volume ls
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
 doas rm -rf master
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
-docker volume ls
 rm -rf master
 doas rm -rf master
 docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --force-recreate 
@@ -4263,7 +4204,6 @@ docker build -f ./master.dockerfile -t dbmaster:latest . && docker-compose up --
 docker build -f ./master.dockerfile -t dbmaster:latest .
 sct daemon-reload 
 docker images -a
-docker volume ls
 docker build -f ./master.dockerfile -t dbmaster:latest .
 lvim entrypoint_master 
 docker build -f ./master.dockerfile -t dbmaster:latest .
@@ -4637,7 +4577,6 @@ pushhis
 glol -8
 lvim ~/.tmux.conf 
 sudo cat /sys/module/nvidia_drm/parameters/modeset
-cd bash
 lvim ~/github/dotfiles/bash/bash_aliases 
 find /etc/ -type f -wholename '*.kwinrc
 find /etc/ -type f -wholename '*.kwinrc'
@@ -4700,7 +4639,6 @@ type -a updatedotfiles
 cd $dotfiles
 type -a updatedotfiles 
 updatedotfiles 
-cd bash
 cd scripts/
 cat functionsinitbash 
 type -a updatedotfiles 
@@ -4753,11 +4691,8 @@ cd appmarvelaluguel/
 cd desktop/bd3/
 cd mpn/
 cd .
-cd git
 cd gitlab/
 cd cd git
-cd git
-cd github/
 cd appmarvelaluguel/
 cd postgresql/
 cd sql
@@ -4809,8 +4744,6 @@ cat init.sql
 cat init.sh
 lvim init.sh
 cd github/bd3/
-docker volume ls
-docker volume ls
 docker volume rm empresa-aerea-mongo 
 docker volume rm empresa-aerea-pg 
 docker volume rm 09
@@ -4915,7 +4848,6 @@ htop
 lvim alt.sql
 cd projetodw/
 cp init.sql ../../
-cd ../..
 cd bd3/
 docker compose -f docker-compose-test.yml stop
 docker compose -f docker-compose-test.yml start
@@ -4948,7 +4880,6 @@ git help merge
 mv tldr tldt
 ./tldt ss
 cd $dotfiles
-cd bash
 lvim profile_archnote 
 cd $dotbash
 test
@@ -4958,7 +4889,6 @@ echo -e "${path//:/\\n}"
 paru -s tldr
 tldr git merge
 cd $dotfiles
-cd bash
 git diff profile_alldeb profile_archnote
 cd $dotbash
 lvim profile_archnote 
@@ -5037,7 +4967,6 @@ cd bin
 cargo search bottom
 cargo search btm
 cd github/dotfiles/
-cd bash
 cd .
 cd scripts/
 lvim functionsinitbash 
@@ -5065,7 +4994,6 @@ cd crud-angular-spring/
 cd crud-angular/
 cat package
 cat package.json 
-cd ../..
 rm -rf crud-angular-spring/
 mkdir crud-angular-spring
 cd crud-angular-spring/
@@ -5284,7 +5212,6 @@ pnpm
 npm search angular
 npm i -g @angular/cli@18
 ng
-ng --help
 ng update @angular/cdk
 cd 
 npm i -g @angular/cli@18
@@ -5442,7 +5369,6 @@ mise completion bash --include-bash-completion-lib
 mise completion bash --include-bash-completion-lib | sudo tee /etc/bash_completion.d/mise
 paru -S bash-completion
 bat /etc/bash_completion.d/mise
-cd bash
 cat profile 
 type -a mise
 cat $DOTBASH/profile 
@@ -5547,7 +5473,6 @@ type -a poewtry
 type -a poetry
 cd 
 cd .local/bin/
-ls
 cat poetry.lock 
 poetry remove django
 django
@@ -5636,7 +5561,6 @@ cd bin
 cat usuarios 
 lvim
 cd githu
-cd github/
 paru -S jdk17-openjdk 
 paru -S jdk21-openjdk 
 paru -S jdk-openjdk 
@@ -5644,7 +5568,6 @@ sudo archlinux-java get
 paru -S dbeaver
 mv -p SQLAlchemy ~/git/
 mv SQLAlchemy ~/git/
-cd git
 mkdir SQLAlchemy
 cd SQLAlchemy/
 poetry env use
@@ -5672,7 +5595,6 @@ cd git/sqlalchemy/
 /bin/python /home/albano/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariablesToFile.py /home/albano/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/bash/envVars.txt
 poetry run src/sqlalchemy/core.py 
 poetry run python src/sqlalchemy/core.py 
-cd src/
 cd sqlalchemy/
 rm __init__.py 
 poetry run python core_insert.py.py
@@ -5770,8 +5692,6 @@ npm -g ls
 gp --ff
 gp -ff
 gloga
-alias glol
-ng --help
 github/dotfiles/
 rm .bashrc 
 cp ~/.bashrc .
@@ -5824,13 +5744,11 @@ ga .
 gc -m "Modified README."
 lvim ~/.bashrc..
 lsd -la
-nvtop
 github/dotfiles/
 ga .
 github/dotfiles/
 github/dotfiles
 gc -m "Updated .bashrc"
-ng --help
 nvm list
 nvm use default 18.17.1
 nvm list
@@ -5856,7 +5774,6 @@ ng new ui
 ng g m cliente
 cd g m auth
 ng g m auth
-cd src/
 cd app/
 cd atu
 cd auth/
@@ -8947,7 +8864,6 @@ rsync -haAXvP --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/
 rsync -haAXvP --info progress2 --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/
 rsync -haAXvP --info=progress2 --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/
 rsync -haAXvP --info=progress2 --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/ | pv -petar
-paru -S pv
 rsync -haAXvP --info=progress2 --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/ | pv -petar
 rsync -haAXvP --info=progress2 --progress SexTorrents /run/media/albano/NETAC2Tb/Backup/
 diff SexTorrents /run/media/albano/NETAC2Tb/Backup/SexTorrents
@@ -8968,7 +8884,6 @@ find . -type d -empty -print
 diff -r /home/albano/UFPR/ /run/media/albano/NETAC2Tb/UFPR/
 pyenv uninstall 3.12.2
 pyenv virtualenv 3.12.4 testes
-cd git
 cd test
 cd testes/
 cat index
@@ -9153,7 +9068,6 @@ pyenv local --unset
 pyenv local jupyterlab
 cat usuarios_202406190252.sql 
 rm usuarios_202406190252.sql 
-cd git
 cd agenda-django/
 cat notas.txt 
 mkdir ola_django
@@ -9215,7 +9129,6 @@ mkdir master
 mkdir replica
 cd master
 cd laundry_online/
-cd app
 cd docker/postgresql/testReplication/db/master/
 lvim postgresql.conf
 docker exec -it postgre16alpine bash
@@ -9400,7 +9313,6 @@ docker volume rm master_postgre_master
 docker volume rm e367
 docker volume rm e36
 docker volume rm 368327213c95af2ad30f43ceffcefda416752ca0f520a4b90c5382704e429530 
-cd app
 lvim master.dockerfile 
 lvim master.dockerfile 
 docker exec -it dbmaster bash
@@ -10320,7 +10232,6 @@ sudo chown -hR albano:albano .
 cd eclipse-workspace/
 cd extdrive/
 rmdir extdrive/
-cd git
 cd GNS3/
 cd JDKs/
 rm -rf JDKs/
@@ -10392,7 +10303,6 @@ paru -Sss docker
 paru -S docker dive container-diff docker-compose python-docker
 paru -S criu docker-scan docker-buildx
 paru -Sss base-deve;
-java --version
 paru -Ssss openjdk
 paru -S jre17-openjdk
 paru -S dbeaver
@@ -10685,7 +10595,6 @@ cd custom/
 cp -r core ~/.config/nvim/lua/custom/
 cp -r plugins/* ~/.config/nvim/lua/custom/plugins/
 cd ~/.config/nvim/lua/custom/plugins/
-cd ../..
 sudo sensors
 paru -R oh-my-zsh-git 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -10830,8 +10739,6 @@ bat /etc/os-release
 echo $ID
 ip --help
 paru -Ssss postman
-flatpak search postman
-flatpak install com.getpostman.Postman
 localectl 
 localedef 
 localedef --help
@@ -10961,7 +10868,6 @@ lvs
 sudo lvs
 sudo lvs --help
 lvim package.json 
-cd ../..
 cd TrabalhoFinalDAC/
 ng new ui
 rm -rf ui
@@ -11117,7 +11023,6 @@ cd dac
 cd controller/
 git checkout renan 
 cd ../../../..
-cd ../..
 cd gateway/
 cat index.js 
 git checkout luizsenji 
@@ -11247,7 +11152,6 @@ apk
 apk add fastfetch
 sudo apk add fastfetch
 distrobox-enter Alpine -- bash -l
-cd git
 cd test
 cd testes/
 cd testAngular17/
@@ -11623,7 +11527,6 @@ type -a pnpm
 type -a npm
 npm --help
 updateDotfiles 
-cd git
 ng new listaDeTarefasAngular
 cd listaDeTarefasAngular/
 sudo nvim /etc/pacman.conf
@@ -11634,7 +11537,6 @@ sudo lsb_release
 sudo lsb_release --help
 sudo lsb_release -a
 sudo lsb_release -c
-ng --help
 cd git/listaDeTarefasAngular/
 ng generate component components/header
 paru -Qsss font
@@ -11660,7 +11562,6 @@ ng g c components/task-item
 npx json-server db.json
 ng verion
 uv
-cd git
 paru -S nerd-fonts-git 
 ng new product-store
 cd git/product-store/
@@ -11929,7 +11830,6 @@ sudo /usr/bin/nvim
 sudo type -a nvim
 cd .nv
 cd ComputeCache/
-cd ../..
 rm ~/.config/konsolerc 
 docker --help
 git chechout
@@ -12063,9 +11963,7 @@ cd AppMarvelAluguel/
 cd Desktop/BD3/
 cd MPN/
 cd .
-cd git
 cd cd git
-cd git
 cd AppMarvelAluguel/
 cd SQL
 cat bantads.sql 
@@ -12188,7 +12086,6 @@ glow README.md
 htop 
 lvim alt.sql
 cp init.sql ../../
-cd ../..
 cd bd3/
 docker compose -f docker-compose-test.yml stop
 docker compose -f docker-compose-test.yml start
@@ -12298,7 +12195,6 @@ rm init.sql
 cd crud-angular-spring/
 cat package
 cat package.json 
-cd ../..
 rm -rf crud-angular-spring/
 mkdir crud-angular-spring
 cd crud-angular-spring/
@@ -12466,7 +12362,6 @@ npm i -g @angular/cli@18
 pnpm 
 npm search angular
 npm i -g @angular/cli@18
-ng --help
 ng update @angular/cdk
 npm i -g @angular/cli@18
 npm i -g npm@latest && npm i -g pnpm@latest
@@ -13043,7 +12938,6 @@ ga bash/*
 gcm "refact: bashrc file (remove clock and update PS1)."
 gcm "fix: update all deprecated alacritty's config file. Remove *.yml files."
 gco debian_testing
-glol -20
 gco main
 git config --global -l
 git config --global merge.ff false
@@ -13683,7 +13577,6 @@ sct status qemu-pr-helper
 sct status qemu-vmsr-helper
 qemu-x86_64 --help
 sudo chmod 774 /win
-ll /
 sudo chmod 777 /win
 cd /etc/network/
 ip -6 a sh
@@ -13802,7 +13695,6 @@ docker-compose ls
 docker-compose -f docker-compose-3.yaml down
 mv docker-compose-3.yaml ghost.yaml
 docker volume prune --help
-docker volume prune -a
 docker-compose -f ghost.yaml up -d
 docker-compose -f ghost.yaml down
 at docker-compose.yml 
@@ -13896,7 +13788,6 @@ pip install -U pyravendb
 rm dados.py
 rm dados_gerados.csv 
 docker-compose -d up
-docker volume ls
 docker-compose up -d --force-recreate
 nvim dados_0.csv 
 cd github/bd3/bigdata
@@ -13994,7 +13885,6 @@ docker-compose down pg16bigdata
 docker-compose down postgresql
 docker-compose up -d postgresql
 docker exec -it pg16bigdata bash
-cd dados
 head -10 dados_0.json 
 sed -n '512497p' dados_0.csv 
 sed -n '2500000p' dados_0.csv 
@@ -14079,7 +13969,6 @@ dust -r /home/albano
 paru -Ssss uutils
 paru -S uutils-coreutils
 paru -Si uutils-coreutils
-ls
 rm -rf "${ASDF_DATA_DIR:-$HOME/.asdf}"
 rm -rf "$HOME/.tool-versions" "$HOME/.asdfrc"
 go go
@@ -14353,7 +14242,6 @@ cd scripts/
 lvim functionsInitBash 
 cat ./loginShell 
 loginShell 
-cd bash
 lvim --help
 lvim ~/.bash_profile 
 bat ~/.fzf.bash 
@@ -14371,7 +14259,6 @@ mediainfo --help
 cd Videos/2025/Telegram/abril/
 mediainfo document_5994518578383034561.mp4 
 ffmpeg -i document_5994518578383034561.mp4 
-cd github/
 cd TCC/
 reuniao_tcc_07042025.md
 > reuniao_tcc_07042025.md
@@ -14393,13 +14280,11 @@ sudo chown albano:albano /ssd
 cd ssd/
 cd /
 sudo rm bootloader version 
-lsblk -f
 mkdir backup
 mount -a
 sudo mount -a
 lsblk
 sudo mount -o uid=1000,gid=1000 -U f7117e9d-2b4e-4322-8c2f-83e9d52afb75 /home/albano/ALL
-lsblk -f
 sudo mount -o uid=albano,gid=albano -U f7117e9d-2b4e-4322-8c2f-83e9d52afb75 /home/albano/ALL
 sudo dmesg | grep mount
 sudo mount -U f7117e9d-2b4e-4322-8c2f-83e9d52afb75 /home/albano/ALL
@@ -14558,7 +14443,6 @@ clang --help
 llvm --help
 paru -S llvm
 mkdir -p logs/firefox
-glol -5
 type -a pushHis 
 date -d @1746706554
 man paru
@@ -15039,11 +14923,9 @@ bash --version
 sudo apk list |rg bash-com
 sudo apk list |rg bash-completion
 sudo apk list |rg '^bash-completion'
-ls
 cat .local/
 cd .local/
 cd share
-cd ../..
 cd .cache
 cd //
 cd .config/
@@ -16219,7 +16101,6 @@ git checkout 5cdc
 git checkout fcf8
 git checkout HEAD
 git checkout main
-git log --oneline 
 git checkout aa98
 git checkout 85fa
 git checkout 7c1e
@@ -16585,7 +16466,6 @@ paru -Ssss brave
 paru -S brave-
 paru -S brave-bin 
 google
-nvme list
 nvme --help
 systemctl status
 lua --version
@@ -16699,7 +16579,6 @@ paru -S ghc
 paru -Sss cabal
 paru -R ghc
 docker-compose -f docker-compose.yml up -d
-paru -Qs dbeaver
 paru -Ssss dbeaver
 sudo archlinux-java set java-8-temurin
 paru -Ssss deepfilter
@@ -16746,7 +16625,6 @@ systemctl --user restart pipewire.service pipewire-pulse.socket; && sleep 5s; &&
 systemctl --user restart pipewire.service pipewire-pulse.socket; sleep 5s; systemctl --user restart wireplumber.service
 systemctl --user status pipewire.service wireplumber.service pipewire-pulse.socket
 zip
-sudo archlinux-java set java-21-openjdk
 gcm "Atualizado todos os arquivos para apresentação do TCC1"
 tput 
 tput flash
@@ -17134,7 +17012,6 @@ apropos tmux
 tmux new-session -s kx0 \; set -g mouse off \; send-keys "/usr/bin/zsh --login" 
 tmux new-session -s k0 "/usr/bin/zsh --login" \; set -g mouse off
 tmux new-session -s kx0 "/usr/bin/zsh --login" \; set -g mouse off
-echo $PS1
 paru -Qi nvidia-dkms 
 rm .zcomp*
 rm .zshrc.omz-uninstalled-2025-07-10_20-24-56 
@@ -17166,7 +17043,6 @@ man nvidiactl
 sudo systemctl status nvidiactl.service 
 paru -Sss nvidia
 paru -S cuda{,-tools} cudnn ffnvcodec-headers libnvidia-container
-flatpak update 
 systemctl --user status pipewire.service wireplumber.service 
 paru -R linux-lts{,-headers}
 paru -S linux-cachyos{,-headers}
@@ -17180,7 +17056,6 @@ systemctl --user status kde-baloo.service
 systemctl --user status keyboxd.service 
 systemctl --user status wireplumber.service 
 systemctl --user restart wireplumber.service 
-systemctl --user restart pipewire.service wireplumber.service 
 mkdir -p gits/md
 > python_libs_help.md
 lvim python_libs_help.md 
@@ -17247,7 +17122,6 @@ ssh -T git@github.com
 cat known_hosts
 rm known_hosts
 mv known_hosts.old known_hosts
-cat /etc/fstab 
 paru -S --needed --asexplicit visual-studio-code
 paru -S --needed --asexplicit visual-studio-code-bin 
 sudo pacman -Ssss nvidia-settings
@@ -17400,12 +17274,10 @@ sudo efibootmgr -b 6 -B
 sudo efibootmgr -b 3 -B
 sudo efibootmgr -b 2 -B
 efibootmgr 
-yay -Syyu
 yay -R vscodium-bin-debug 
 yay -S calibre
 paru -S --asexplicit rclone
 plasmashell --version
-ssh premio@infosfera.inf.br
 mkdir SASS
 mv SASS Angular/
 npm init --yes
@@ -17519,7 +17391,6 @@ paru -S --asexplicit zen-browser
 sudo nmcli connection modify Ap202_5G ipv4.dns "8.8.8.8 8.8.4.4"
 sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo lvim /etc/pacman.d/mirrorlist
-sudo pacman -Syyu
 curl -I https://aur.archlinux.org
 paru -Cc
 sudo timedatectl status
@@ -17588,7 +17459,6 @@ sudo pacman -S --asexplicit jdk8-openjdk
 sudo pacman -S --asexplicit java-rhino 
 sudo pacman -S --asexplicit jdk11-openjdk 
 sudo pacman -S --asexplicit jdk17-openjdk 
-sudo archlinux-java status
 sudo pacman -Sssss sts
 sudo pacman -Sssss spring
 paru -Ssssa spring
@@ -17603,7 +17473,6 @@ rm -rf css
 styles.css
 > styles.css
 rm -rf assets
-npm i
 cat src/index.html 
 rm styles.css 
 rm -rf SASS-BEM
@@ -18226,7 +18095,6 @@ git checkout -b debian
 git push origin debian
 git push origin main
 rm activate 
-git branch -h
 git branch -D main
 paru -Sua
 paru -Syua
@@ -18241,7 +18109,6 @@ bat Make
 bat Makefile 
 rm $(which ghostty)
 mise use -g zig@0.15.2
-git switch main
 git pull --h
 git checkout tip 
 rm -rf .zig-cache .cache
@@ -18530,7 +18397,6 @@ wofi --sort-order=alphabetical --show drun --allow-images
 ns wofi-launcher
 GLOL -5
 sudo lvim /usr/share/applications/kitty.desktop 
-lvim kitty.conf 
 lvim confitg
 lvim config
 tmux list-sessions 
@@ -18717,7 +18583,6 @@ pip install -U ruff
 pip install -U taskipy
 eglinfo 
 eglinfo | grep "OpenGL renderer"
-sudo systemctl status nvidia-persistenced.service 
 lspci -k | grep 'VGA|3D'
 lspci -k | grep -E 'VGA|3D'
 lspci -k | grep -EA2 'VGA|3D'
@@ -18726,7 +18591,6 @@ lspci -k | rg -EA3 'VGA|3D'
 sudo nano /etc/modprobe.d/blacklist-nouveau.conf
 sudo nvim /etc/modprobe.d/blacklist-nouveau.conf
 sudo lvim /etc/modprobe.d/blacklist-nouveau.conf
-sudo mkinitcpio -P
 lspci -k | rg -A3 'VGA|3D'
 lsmod | grep nouveau
 sudo pacman -Ss linux-
@@ -18793,7 +18657,6 @@ git stash
 git pull origin main 
 git stash pop
 git stash push
-exity
 lvim bashrc
 mv Cursos Courses
 ng g c components/primeiro.component
@@ -18832,13 +18695,11 @@ ng g c components/home
 ng g c inicial
 git commit -m "Aula 449 - Incicio/Final - Path Vazio(Inicial)"
 ng g c pagina-nao-encontrada
-gsty
 git commit -m "Aula 450 - Incicio/Final - 404/Página não encontrada"
 git commit -m "Aula 451 - Incicio/Final - Propriedade Title da Rota"
 paru -Sssss antigravity
 paru -S --asexplicit antigravity-bin 
 docker
-docker ps -a
 git restore src/app/components/inicial 
 clear
 gst"
@@ -18959,7 +18820,6 @@ rm -rf trabalho-ia-gpt
 mv trabalho-ia-gemini trabalho-ia
 echo "# trabalho-ia-rp" >> README.md
 git init
-git add --all
 git rm --cached .
 git rm --cached 
 git rm --cached *
@@ -18989,7 +18849,6 @@ rm text_processor.cpp && mv text_processor2.cpp text_processor.cpp
 diff --color neural_network.cpp neural_network2.cpp 
 rm neural_network.cpp && mv neural_network2.cpp neural_network.cpp 
 git commit -m "feat: Adiciona variáveis para armazenar os pesos das classes e implementa Wieghted Loss"
-git push
 cmake ..
 cmake --build .
 ./classificador /home/albano/Desktop/TrabalhoIA/trabalho-ia/data/
@@ -19050,7 +18909,6 @@ pnpm start
 du -su .
 du -sh node_modules/
 git branch --all
-java --version
 lvim 06_extra_and_tools 
 lvim bash/bashrc
 lvim bashrc
@@ -19101,7 +18959,6 @@ paru -S --asexplicit rustup lldb
 yay -S --asexplicit tre-command
 tre .
 tre . | less
-rm -rf node_modules
 rm package
 rm package*
 tre
@@ -19113,7 +18970,6 @@ yay -R tre-command
 tree --help
 kscreen-doctor --outputs
 ng update @angular/cli @angular/core
-rm -rf node_modules
 code-insiders .
 cat node_modules/@angular/core/package.json
 cat node_modules/@angular/ssr/package.json
@@ -19187,7 +19043,6 @@ rm -rf social-media-comparer
 yay -Ssss insomnia
 yay -S --asexplicit insomnia
 gcl git@github.com:Fernanda-Kipper/social-media-comparer.git
-npm start
 smartctl 
 smartctl --help
 smartctl --all /dev/nvme0n1
@@ -19219,10 +19074,7 @@ npm run build
 npm run build
 npm run build
 ls -a .env*
-npm start
 cat .env
-npm start
-npm start
 paru -Ssss neow
 paru -Ssss neofetch
 rm -rf Parajas
@@ -19248,9 +19100,7 @@ git checkout tip
 mise unuse python
 zig build -Doptimize=ReleaseFast install --prefix /home/albano/.local/
 ghostty --version
-ng serve
 sudo systemctl enable --now power-profiles-daemon.service 
-lsk
 lsku
 nu -sh /home
 du -sh /home
@@ -19276,9 +19126,7 @@ tmux list-windows -a -F "#S:#I #W #P #D" | fzf --sync --tmux center | awk "{prin
 exiut
 which fzf
 sudo ln -sf /home/albano/.fzf/bin/fzf /usr/bin/fzf
-ssh parajas
 ssh parajas2
-code .
 nvim ~/.tmux.conf 
 sudo dmesg | grep 'module verification failed'
 sudo mokutil 
@@ -19340,7 +19188,6 @@ git branch
 git lfs -h
 git lfs --help
 git lfs install
-pullDotfiles 
 git remote -l
 git remote show
 git remote update
@@ -19350,10 +19197,7 @@ git push backup debian
 git push --help
 git push --h
 git push backup archlinux 
-ls -l
 gcl /home/albano/tests/bare/dotfiles.git/
-git log
-git branch 
 git branch -a
 git checkout archlinux 
 dh -sh .
@@ -19362,15 +19206,11 @@ rm -rf dotfiles
 git
 git --work-tree --help
 git --help
-yay -Syu
 doas grub-mkconfig -o /boot/grub/grub.cfg 
-paru -Syu
 paru -R tre-command-debug 
 paru -R kubo-git 
-paru -Ssss antigravity
 paru -R antigravity-bin 
 paru -S --asexplicit antigravity 
-paru -Syyu
 autoupdate 
 wchi autoupdate 
 which autoupdate 
@@ -19414,7 +19254,6 @@ g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnaly
 ./classificador 2>&1 | head -300
 g++ -std=c++17 -O3 main.cpp v0.08-SentimentAnalyzer.cpp v0.01-MLP_SentimentAnalyzer.cpp v0.01-RBFN_SentimentAnalyzer.cpp -o classificador $(pkg-config --cflags --libs mlpack)
 ./classificador 2>&1 | head -200
-flatpak update
 g++ -std=c++17 -O2 -I/usr/include -lmlpack -larmadillo -pthread *.cpp -o sentiment_app
 g++ -std=c++17 -O2 -I/usr/include -lmlpack -larmadillo -pthread *.cpp -o sentiment_app
 ./sentiment_app
@@ -19481,11 +19320,7 @@ lvim Makefile
 make run
 make clean
 git switch archlinux 
-pushHis 
 cd bash/history/
-cd -
-git switch main 
-git push -v origin main
 lvim bash_aliases 
 exit
 exit
@@ -19495,7 +19330,6 @@ cd backup/
 cd rc/
 cd git/
 cat nginx_alpine.dockerfile 
-cd ..
 rm -rf docker/
 cd zsh
 git rm ../docker 
@@ -19529,7 +19363,6 @@ exit
 exit
 mv .zshrc $DOTFILES/zsh/
 ln -sf $HOME/github/dotfiles/zsh/.zshrc .
-la
 exit
 cat $DOTFILES/git/config 
 ll -d ~/.gitconfig 
@@ -19538,7 +19371,6 @@ ln -sf $HOME/github/dotfiles/git/config ~/.gitconfig
 git config -h
 git config --list
 git config --global set --help
-git config -l
 cat ~/.gitconfig 
 git config set core.editor nvim
 git config --global edit
@@ -19586,7 +19418,6 @@ git commit -m "feat: Atualiza para obter enviromments diretamente do container."
 cd agente-proto/
 bat --pager cat docker-compose
 bat --pager cat docker-compose.yaml 
-cd ..
 cd app-harmonia/
 git add backend/.env 
 ssh parajas216 
@@ -19602,10 +19433,7 @@ sudo pacman -S --asexplicit linux{,-headers}
 exit
 ip -c a
 sudo pacman -R linux-lts{,-headers}
-sudo systemctl status
-systemctl --user status
 cd .ssh
-ssh harmonia-server 
 exit
 tmu new-ses -s gb0
 exit
@@ -19669,7 +19497,6 @@ cd /home/albano/github/agente-proto/agente_chat && PYTHONPATH=/home/albano/githu
 cd /home/albano/github/agente-proto/agente_chat && poetry add optimum optimum-intel openvino
 cd /home/albano/github/agente-proto/agente_chat && PYTHONPATH=/home/albano/github/agente-proto poetry run python test_agente_chat.py
 exit
-aur sync --cleanbuild --clean --database aurutils --upgrades
 python --version
 which python
 mise self-update
@@ -19681,26 +19508,22 @@ mise
 mise up usage
 mise use -g usage@latest
 mise ls-remote python@3.14
-mise ls
 mise ls-remote zls
 mise ls-remote node@24
 mise install node@24.14.0
 mise use -g node@24.14.0
 npm i -g npm
 npm i -g @angular/cli
-ng version
 exit
 poetry
 pipx
 pipx --version
 which pipx
-git pull -v origin dev
 tmux server-access --help
 dit
 dir
 pushd dir
 pushd .
-cd -
 dirs
 pushd -3
 pushd -2
@@ -19716,7 +19539,6 @@ nvim ~/.config/foot/foot.ini
 exit
 nvim ~/.config/foot/alacritty-theme 
 exit
-sudo grub-mkconfig -o /boot/grub/grub.cfg 
 exit
 exit
 sudo pacman -Ssss linux-ltsdd
@@ -19725,19 +19547,16 @@ exit
 poetry add sqlalchemy
 cd fastapi_zero/
 python
-cd ..
 alembic upgrade head
 task formaty
 task format
 sqlite3 database.db 
 task test
-cd -
 python --version
 poetry
 deactivate 
 exit
 exit
-sudo pacman -Syu
 exit
 tmux -L tmux-bash new-session -s fb0
 cd ~/.config/ghostty/
@@ -19773,7 +19592,6 @@ mkdir -p Documents/MD
 mv *.md Documents/MD
 rm -rf shared
 git commit -m "remove: Remove arquitetura anterior."
-git add --all
 git commit -m "raw: Adiciona imagens do projeto na pasta public."
 exit
 [[ $SHLVL -eq 1 && ${$(tty)#*/pts/} -eq 0 ]] && pullDotfiles
@@ -19782,38 +19600,501 @@ ${$(tty)}
 echo ${$(tty)}
 tty
 echo $SHLVL 
-nvim ~/.bashrc
 exit
-cd $DOTFILES
 git add bash/
 git commit -m "feat: Update pullDotfiles callback."
 git commit -m "fix: Corrects screen sharpness."
-ff
-git push -v origin archlinux 
-cd
-cd github/app-harmonia/
-git diff
-git add .
 git commit -m "feat: Adiciona tag meta com descrição para SEO."
-git push -v origin dev
-cd frontend/
-l
-cd src/app/
-ll
 ng g c presentation/pages/home
 glo
-glol
-gaa
-glol -15
 git commit -m "feat: Adiciona componente/tela inicial do portal Harmonia."
 ng g c presentation/shared/components/navbar
-git add presentation/
-gst
 tmux -L tmux-bash new-session -s gb0
 nvim ~/.config/ghostty/config 
 his -d 19817
 his -d 19816
 his -d 19814
 his -d 19783
+exit
+pushHis 
+git commit -m "chore: Update ghostty initial command."
+cd -
+cd src/app
+ng g s application/auth/auth.service
+git commit -m "feat: Adiciona componente navbar."
+git commit --amend -m "feat: Adiciona componente navbar."
+git add app.routes.ts 
+git commit -m "feat: Adiciona rota do Portal HarmonIA."
+git add presentation/
+git commit -m "fix: Corrige imports."
+git add application/
+git commit -m "feat: Adiciona serviço controlador de autenticação."
+ng g s application/chat/chat.service
+git restore application/auth/
+git commit -m "feat: Adiciona serviço controlador de chat."
+ng g c presentation/pages/auth/login
+tree presentation/
+git commit -m "feat: Adiciona componente/tela de auth/login de usuário."
+ng g c presentation/pages/chat
+git commit -m "feat: Adiciona componente/tela de chat do usuário/IA."
+ng g c presentation/shared/components/sidebar
+git commit -m "feat: Adiciona componente sidebar."
+ng --help
+ng generate --help
+git commit -m "feat: Adiciona funcionalidade de infraestrutura."
+git commit -m "feat: Atualiza lógica/service de autenticação e chat."
+ng g guard domain/auth/guards/auth.guard
+git commit -m "feat: Adiciona guarda para rota com auth."
+ng g interface domain/models/credentials.model
+ng g interface domain/models/user.model
+ng g class domain/models/auth/auth.repository
+git commit -m "refactor: Atualiza sistema de autenticação."
+gcm "refactor: Atualiza sidebar."
+cd app
+cd ../..
+cd /home/albano/tests/Angular/HarmonIA/frontend
+npx ng build 2>&1
+npx ng build 2>&1
+npx ng test 2>&1 | head -50
+npx start
+gcm "fix: Atualiza/Corrige providers e erros de digitação."
+npx ng build 2>&1 | head -80
+cd /home/albano/github/app-harmonia/frontend && npx ng serve --port 4200 2>&1 &
+gcm "feat: Adiciona tela e funcionalidades do chat."
+exit
+exit
+exit
+git switch 
+alias glol
+git checkout -b ricardo
+git branch -h
+git branch -D ricardo
+git branch 
+git pull -v --force origin dev
+git pull -v --ff origin dev
+git log
+git log -2
+git log -1
+exit
+exit
+git config list --local 
+git config -l
+exit
+git log --oneline 
+git merge -v dev
+exit
+exit
+exit
+cd\
+exit
+cd github/
+cd agente
+cd src/
+cd agente_chat/
+cd config/
+cat docker-compose.yaml 
+cd src/agente_chat/config/
+la
+rm -rf agente-proto
+gcl git@github.com:HarmoIA-UFPR/agente-proto.git
+git checkout main
+git checkout dev
+mkdir -p modelos/{LaBSE,Qwen}
+poetry env activate
+poetry install --no-root
+poetry run python -c "from huggingface_hub import snapshot_download; snapshot_download(repo_id='sentence-transformers/LaBSE', local_dir='modelos/LaBSE')"
+poetry run python -m etl_pipeline.quantize_labse
+poetry run python -c "from huggingface_hub import snapshot_download; snapshot_download(repo_id='Qwen/Qwen2.5-1.5B-Instruct', local_dir='modelos/Qwen')"
+poetry run python -m etl_pipeline.quantize_model
+cd modelos/
+rm -rf {LaBSE,Qwen}
+mv modelos ~/test/
+cd agente
+docker ps
+cd ../agente-proto/
+cp -r ~/test/modelos/
+cp -r ~/test/modelos/ .
+du sh modelos/
+du -sh modelos/
+htop
+exit
+exit
+systemctl --user restart pipewire.service wireplumber.service 
+git pull -vv origin main
+sudo pacman -Syyu
+exit
+sudo pacman -S --asexplicit linux-lts{,-headers}
+exit
+exit
+aur sync --cleanbuild --clean --database aurutils --upgrades
+exit
+cd /home/albano/github/app-harmonia/frontend
+npm search uuidv7
+cd /home/albano/github/app-harmonia
+ls -la frontend/src/app/presentation/pages/auth/login/
+cd /home/albano/github/app-harmonia/frontend
+cd github/app-harmonia/
+ng serve --port 15000
+git commit -m "feat: Adiciona middleware para garantir desconexão sem travar a api."
+git commit -m "fix: Corrige rota de path para garantir desconexão."
+git commit -m "feat: Adiciona funcionalidade de login/logout."
+ocker container rm $(docker ps -a -q -f status=exited)
+docker container rm $(docker ps -a -q -f status=exited)
+docker ps -a
+docker volume prune -a
+docker volume ls
+git commit -m "fix: Adiciona permissão de qualquer origem para o CORSMiddleware."
+git add ../backend/
+git commit -m "fix: Corrige bug do CORSMiddleware."
+cd frontend/
+git commit -m "feat: Adiciona listagem na sidebar dos uuids"
+git push -v origin devv
+git commit -m "chore: Atualiza tipos string genéricos para uuid7 nos campos do tipo uuid versão 7."
+git commit -m "feat: Adiciona lógica de chat e mostra lista de interações com o usuário."
+git push -vv origin main
+git push -vv origin dev
+git commit -m "refact: Atualiza proporções e tamanhos para melhoria visual."
+gaa
+git commit -m "feat: Adiciona criação de chat funcional."
+cp -r ~/test/modelos/
+cp -r ~/test/modelos/ .
+du sh modelos/
+du -sh modelos/
+htop
+exit
+exit
+systemctl --user restart pipewire.service wireplumber.service 
+git pull -vv origin main
+sudo pacman -Syyu
+exit
+sudo pacman -S --asexplicit linux-lts{,-headers}
+exit
+exit
+aur sync --cleanbuild --clean --database aurutils --upgrades
+exit
+cd /home/albano/github/app-harmonia/frontend
+npm search uuidv7
+cd /home/albano/github/app-harmonia
+ls -la frontend/src/app/presentation/pages/auth/login/
+cd /home/albano/github/app-harmonia/frontend
+cd github/app-harmonia/
+cd frontend/
+exit
+exit
+cd /home/albano/github/app-harmonia/frontend
+cd /home/albano/github/app-harmonia/frontend && npx ng build 2>&1 | tail -40
+npx ng build
+curl -s -v http://200.17.199.216:55036/history-chats/by-user/019cdc08-f7aa-7151-8058-8f7c2599b065
+curl -X OPTIONS -v -H 'Origin: http://localhost:4200' -H 'Access-Control-Request-Method: GET' http://200.17.199.216:55036/history-chats/by-user/019cdc08-f7aa-7151-8058-8f7c2599b065
+cd /home/albano/github/app-harmonia/backend
+netstat -nlp | grep 55036
+ps aux | grep 55036
+cd /home/albano/github/app-harmonia/frontend
+npm run build
+npm run test
+npm run test -- --watch=false
+npm run test -- --watch=false
+npm run build
+npm run build
+npm run build
+npm run build
+npm run build
+npm run build
+npx tsc --noEmit -p tsconfig.app.json
+npx tsc --noEmit -p tsconfig.app.json
+npm run build
+npm run build
+sudo pacman -Syu
+ssh harmonia-server 
+which yay
+grep -n '\$(' ~/.bashrc
+yay -Ssss postman
+paru -Ssss postman
+exit
+$HOME/.local/bin/mise activate bash | cat -v
+cd bash
+which mise
+paru -S si
+exit
+PS1=$
+source PS1
+source $PS1
+export $PS1
+echo $PS1
+export PS1=\$
+export PS1="\$"
+nvim ~/.bashrc
+exit
+mise hook-env -s bash | cat -v
+exec bash
+exit
+mise ls
+unset PROMPT_COMMAND
+exit
+git restore .env-exemplo 
+git restore .vscode/
+git restore --staged .vscode/
+git restore --staged .env-exemplo 
+git commit -m "feat: update docker-compose / include mongodb and configs postgres."
+git add .env-exemplo 
+git commit -m "feat: add .env example for centralize environments"
+git commit -m "chore: adds basic .vscode settings"
+exit
+cd projects/st4e/ms-conta/
+sudo pacman -Ssss maven
+sudo pacman -S --asexplicit maven
+mvn flyway:info
+mvn -e flyway:info
+sudo archlinux-java status
+sudo pacman -S openjdk
+sudo pacman -Ssss openjdk
+sudo pacman -S --asexplicit jdk21-openjdk
+sudo archlinux-java set java-21-openjdk
+java --version
+mvn clean install
+mvn clean package
+./mvnw clean compile
+mvn - espring-boot:run
+ls -la src/main/resources/db/migration/
+mvn -X spring-boot:run
+find src/main/resources -type f
+cat src/main/resources/db/migration/V1__create_conta.sql
+mvn -e spring-boot:run
+mvn spring-boot:run -X
+mvn spring-boot:run -Dspring-boot.run.arguments=--debug
+mvn dependency:tree | grep flyway
+jar -tf ~/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.0.3/spring-boot-autoconfigure-4.0.3.jar | grep -i flyway
+ls ~/.m2/repository/org/springframework/boot/ | grep flyway
+jar -tf ~/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.0.3/spring-boot-jdbc-4.0.3.jar | grep -i flyway
+find ~/.m2/repository/org/springframework/boot/ -name "*.jar" | xargs -I{} sh -c 'jar -tf {} 2>/dev/null | grep -i flyway && echo "  ^^ found in: {}"'
+mvn clean install -U
+mvn clean
+mvn spring-boot:run
+exit
+ssh parajas
+docker compose -f docker-compose-bantads.yaml up bantads-pg18-account 
+exit
+flatpak update
+exit
+flatpak search postman
+flatpak install com.gotpostman.Postman
+flatpak install com.getpostman.Postman
+paru -R insomnia 
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+exit
+exit
+paru -Syyu
+exit
+nvtop
+git diff tmux/.tmux.conf
+git restore  tmux/.tmux.conf
+git diff
+git restore --staged bash/
+git pull -v origin archlinux 
+git add .
+git commit -m "refact: Refactor the MISE entries and test for for the presence of null bytes."
+git push -v origin archlinux 
+sudo systemctl status
+systemctl --user status
+sudo mkinitcpio -P
+exit
+ff
+inxi -M
+inxi -m
+exit
+chsh -l
+paru -Qss csh
+exit
+cd $DOTFILES
+cd kitty/
+exit
+lvim kitty.conf 
+exit
+exit
+nvim .config/kitty/kitty.conf 
+exit
+flatpak update 
+yay -Gp pgadmin4
+yay -Ssss pgadmin4
+yay -Gp pgadmin4-server
+which yarn
+yay -S --asexplicit pgadmin4
+paru -Qs dbeaver
+paru -Rsccdd dbeaver
+exit
+exit
+mv node_modules front/
+rm -rf node_modules
+exit
+cd Front-End/
+cd front/
+npm start
+exit
+cd /home/albano/Front-End/front
+node --version && npm --version
+cp -r /home/albano/Front-End/front/src/app /home/albano/Front-End/front/src/app_backup
+node --version && npm --version 2>/dev/null || echo "node not found"
+cd /home/albano/Front-End
+which node && node -v && npm -v
+cd /home/albano/Front-End/front
+ls -la /usr/local/bin/node /usr/bin/node 2>&1; echo "---"; ls -la /usr/local/bin/npm /usr/bin/npm 2>&1; echo "---"; echo $PATH
+cd /home/albano/Front-End/front && rm -f src/app/app.module.ts src/app/app-routing.module.ts src/app/auth/auth.module.ts src/app/auth/auth-routing.module.ts src/app/cliente/cliente.module.ts src/app/cliente/cliente-routing.module.ts src/app/gerente/gerente.module.ts src/app/gerente/gerente-routing.module.ts src/app/administrador/administrador.module.ts src/app/administrador/administrador-routing.module.ts src/app/conta/conta.module.ts src/app/shared/shared.module.ts src/polyfills.ts src/test.ts karma.conf.js .browserslistrc tsconfig.spec.json src/styles.scss && find src -name "*.scss" -delete && echo "Cleanup done"
+cd /home/albano/Front-End/front && npm install 2>&1 | tail -30
+cd /home/albano/Front-End/front && npm install 2>&1 | tail -15
+cd /home/albano/Front-End/front && rm -f package-lock.json && npm install 2>&1 | tail -20
+cd /home/albano/Front-End/front/src/app
+cd /home/albano/Front-End/front/src/app && grep -rl "errors?\.\[" --include="*.html" .
+cd /home/albano/Front-End/front/src/app && find . -name "*.html" -not -path "*/app_backup/*" -exec grep -l "errors?\.\[" {} \;
+cd /home/albano/Front-End/front/src/app && find . -name "*.html" -not -path "*/app_backup/*" | xargs grep -l "errors?\\." 2>/dev/null
+cd /home/albano/Front-End/front/src/app && find . -name "*.html" -not -path "*/app_backup/*" -exec sed -i "s/\.errors?\.\[/\.errors\[/g" {} + && echo "Done fixing warnings"
+cd /home/albano/Front-End/front
+find /home/albano/Front-End/front/src/app -name "*.spec.ts" -not -path "*/app_backup/*" -exec rm -v {} \;
+smartctl --all /dev/sda 
+sudo smartctl --all /dev/sda 
+sudo fdisk /dev/sda 
+sudo mkfs.btrfs --help
+his | grep 'sudomkfs
+his | grep 'sudomkfs'
+his | grep 'sudo mkfs'
+his | grep 'mkfs.'
+getconf PAGE_SIZE
+lsblk -o NAME,PHY-SEC,LOG-SEC,MIN-IO,OPT-IO /dev/sda
+cat /sys/block/sdX/queue/physical_block_size
+sudo cat /sys/block/sdX/queue/physical_block_size
+sudo cat /sys/block/sda/queue/physical_block_size
+cat /sys/block/sda/queue/logical_block_size
+sudo mkfs.btrfs -f -L DADOS -d single -m dup -s 4k -n 16k --csum crc32c /dev/sda1
+sudo mkfs.btrfs -f -L VIDEOS -d single -m dup -s 4k -n 16k --csum crc32c /dev/sda2
+his -d 20028
+sudo mount /dev/sda1 /mnt
+sudo btrfs su create /mnt/@
+sudo btrfs su create /mnt/@snapshots
+sudo mkdir /dados
+sudo mkdir -p /dados/hd1/{Dados,Videos,snapdados,snapvideos}
+cat /etc/fstab 
+sudo mount -o rw,relatime,compress=zstd:3,nossd,discard=async,space_cache=v2,subvol=@ /dev/sda1 /dados/hd1/Dados
+sudo mount /dev/sda2 /mnt
+sudo btrfs su create /mnt/{@,@snapshots}
+sudo umount /mnt
+sudo mount -o rw,relatime,compress=zstd:3,nossd,discard=async,space_cache=v2,subvol=@snapdados /dev/sda1 /dados/hd1/snapdados/
+sudo mount -o rw,relatime,compress=zstd:3,nossd,discard=async,space_cache=v2,subvol=@snapshots /dev/sda1 /dados/hd1/snapdados/
+sudo mount -o rw,relatime,compress=zstd:3,nossd,discard=async,space_cache=v2,subvol=@ /dev/sda2 /dados/hd1/Videos
+sudo mount -o rw,relatime,compress=zstd:3,nossd,discard=async,space_cache=v2,subvol=@snapshots /dev/sda2 /dados/hd1/snapvideos
+lsk
+ll /
+cd /dados
+sudo chown root:users
+sudo chown root:users hd1
+sudo chmod -R 775 hd1
+sudo chown -R root:users hd1
+cd hd1/
+diff -rv /run/media/albano/ALL/ /dados/hd1/Dados/
+diff -r --color /run/media/albano/ALL/ /dados/hd1/Dados/
+exit
+lsk
+sudo smartctl --all /dev/sdb
+sudo nvme list
+exit
+exit
+exit
+qwcd github/BANTADS-20261S/
+exit
+cd git
+mv Infosfera/ ../projects/
+cd ..
+cd projects/
+Infosfera/
+unzip premio_infosfera.zip 
+cd dist/
+sudo mount -o rw,relatime,compress=zstd:3,nossd,discard=async,space_cache=v2,subvol=@snapshots /dev/sda2 /dados/hd1/snapvideos/
+genfstab -U
+sudo genfstab -U /
+exit
+exit
+ssh premio@infosfera.inf.br
+ssh ubuntu@admin.ibepes.org.br
+his -d 20060
+his -d 20053
+his -d 20019
+his -d 20061
 his
 exit
+paru -Ssss codex
+paru -R windsurf 
+paru -Ssss antigravity
+yay -S --asexplicit openai-codex-bin 
+codex 
+yay -R openai-codex-bin 
+paru -Ssss woeusb
+paru -Ssss ventoy
+paru -S --asexplicit ventoy-bin
+cd Downloads/ISOs/
+pv --help
+paru -S pv
+pv cachyos-desktop-linux-260308.iso | dd of=/dev/sdb
+paru -Qs hparm
+paru -S --asexplicit hparm
+nvme list
+hdparm -tT /dev/sda
+sudo hdparm -tT /dev/sda
+sudo hdparm -i /dev/sda
+nvme list
+cat /etc/group
+cat /etc/group| grep hd
+sudo usermod -aG virtlogin albano
+sudo usermod -aG virtlogin,plasmalogin albano
+exit
+lsblk -f
+cd /virtualization/
+cd
+sudo systemctl status nvidia-persistenced.service 
+exit
+glol
+glol -5
+glol -10
+ls -l
+l
+code .
+npm i
+ng version
+cd src/app/
+ng g c features/clientes/pages/self-registration
+git commit -m "feat: add screen self-registration"
+exit
+cd github/BANTADS-20261S/
+git push
+glol -15
+git cd bantads-ui/
+ll
+cd bantads-ui/
+ls
+yay -Syu
+ng serve
+git add --all
+git commit -m "feat: add autocadastro page"
+git push -v origin dev
+git switch main 
+git merge dev
+glol -20
+git push -v origin main
+git pull -v origin dev
+git switch main
+git pull -v origin main
+git switch dev
+gsty
+gst
+ls -la /home/albano/github/BANTADS-20261S/bantads-ui/src/app
+npm run build
+mv src/app/features/clientes/layouts/auth-layout src/app/features/clientes/layouts/autocadastro && cd src/app/features/clientes/layouts/autocadastro && mv auth-layout.ts autocadastro.ts && mv auth-layout.html autocadastro.html && mv auth-layout.css autocadastro.css
+cd /home/albano/github/BANTADS-20261S/bantads-ui
+mv src/app/features/clientes/components/self-registration src/app/features/clientes/components/form-dados-pessoais && cd src/app/features/clientes/components/form-dados-pessoais && mv self-registration.ts form-dados-pessoais.component.ts && mv self-registration.html form-dados-pessoais.component.html && mv self-registration.css form-dados-pessoais.component.css
+cd /home/albano/github/BANTADS-20261S/bantads-ui
+npx ng build
+npx ng build > /tmp/build.log 2>&1 && cat /tmp/build.log
+yay -Rsccdd python-backports-zstd
+yay -Rsccdd openai-codex-bin-debug 
+yay -Syyu
+exit
+paru -Syu
+exit
+pullDotfiles 
