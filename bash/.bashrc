@@ -64,7 +64,7 @@ export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth:erasedups
 
-PROMPT_HISTORY="history -n; history -w; history -c; history -r;"
+PROMPT_HISTORY="history -a; history -n;"
 
 # CONFIGURAÇÕES DO BASH (OPTIONS)
 # =========================================================================== #
@@ -143,6 +143,7 @@ export FZF_CTRL_R_OPTS="--no-sort --history-size=100000"
 # =========================================================================== #
 # A função build_prompt está em .bash_functions
 # PROMPT_COMMAND="build_prompt; $PROMPT_COMMAND"
-PROMPT_COMMAND="build_prompt; ${PROMPT_HISTORY}"
+PROMPT_COMMAND="${PROMPT_HISTORY} build_prompt;"
 
 export PROMPT_COMMAND
+

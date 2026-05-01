@@ -6,6 +6,11 @@ export ZSH="$HOME/.oh-my-zsh"
 export LS_OPTIONS='--color=auto'
 export DOTFILES="$HOME/github/dotfiles"
 
+#  Configurar autocompinit / autocomplete
+fpath=(/usr/local/share/zsh/site-functions /usr/share/zsh/site-functions $fpath)
+autoload -Uz compinit
+compinit
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -22,7 +27,7 @@ export SHELL
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -71,6 +76,7 @@ export SHELL
 # ZSH_CUSTOM=/path/to/new-custom-folder
 #
 eval "$(~/.local/bin/mise activate zsh)"
+source <(ng completion script)
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -78,12 +84,18 @@ eval "$(~/.local/bin/mise activate zsh)"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
   fzf
   mise
   docker
   zsh-autosuggestions
   fast-syntax-highlighting
+  uv
+  poetry
+  node
+  npm
+  ng
+  bun
+  deno
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -96,11 +108,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -136,8 +148,11 @@ setopt HIST_FIND_NO_DUPS    # Ignora duplicatas ao pesquisar no histórico
 
 # Carrega aliases personalizados
 if [ -f ~/.zsh_aliases ]; then
-    source ~/.zsh_aliases
+source ~/.zsh_aliases
 fi
 
 bindkey "\eOH" beginning-of-line
 bindkey "\eOF" end-of-line
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
