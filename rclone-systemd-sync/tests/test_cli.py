@@ -2,7 +2,7 @@ from pathlib import Path
 
 from typer.testing import CliRunner
 
-from rclone_systemd_sync.cli import app
+from rclone_systemd_sync.cli import SYNC_INTERVAL_MINUTES_PROMPT, app
 
 
 runner = CliRunner()
@@ -82,26 +82,22 @@ def test_config_timer_writes_systemd_timer(tmp_path: Path) -> None:
             "config",
             "timer",
             "documents",
-            "--on-boot-sec",
-            "5min",
-            "--on-unit-active-sec",
-            "30min",
-            "--persistent",
             "--output-dir",
             str(tmp_path),
         ],
+        input="15\n",
     )
 
     timer_path = tmp_path / "rclone-bisync-documents.timer"
     assert result.exit_code == 0
+    assert SYNC_INTERVAL_MINUTES_PROMPT in result.output
     assert f"Generated: {timer_path}" in result.output
     assert timer_path.read_text(encoding="utf-8") == (
         "[Unit]\n"
         "Description=Run rclone bisync job documents\n"
         "\n"
         "[Timer]\n"
-        "OnBootSec=5min\n"
-        "OnUnitActiveSec=30min\n"
+        "OnCalendar=*:0/15\n"
         "Persistent=true\n"
         "Unit=rclone-bisync-documents.service\n"
         "\n"

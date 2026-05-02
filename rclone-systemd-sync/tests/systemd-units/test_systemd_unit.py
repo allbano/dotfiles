@@ -34,9 +34,7 @@ def test_service_unit_renders_oneshot_service() -> None:
 def test_timer_unit_renders_schedule_for_matching_service() -> None:
     unit = SystemdTimerUnit(
         name="documents",
-        on_boot_sec="5min",
-        on_unit_active_sec="30min",
-        persistent=True,
+        on_calendar="*:0/15",
     )
 
     assert unit.filename() == "rclone-bisync-documents.timer"
@@ -46,8 +44,7 @@ def test_timer_unit_renders_schedule_for_matching_service() -> None:
         "Description=Run rclone bisync job documents\n"
         "\n"
         "[Timer]\n"
-        "OnBootSec=5min\n"
-        "OnUnitActiveSec=30min\n"
+        "OnCalendar=*:0/15\n"
         "Persistent=true\n"
         "Unit=rclone-bisync-documents.service\n"
         "\n"

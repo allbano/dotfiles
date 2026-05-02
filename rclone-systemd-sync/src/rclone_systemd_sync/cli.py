@@ -30,6 +30,20 @@ app.add_typer(systemd_app, name="systemd")
 
 
 NameArgument = Annotated[str, typer.Argument(help="Nome logico do job. Ex: documents")]
+MIN_SYNC_INTERVAL_MINUTES = 5
+SYNC_INTERVAL_MINUTES_PROMPT = (
+    "Dê quanto em quanto tempo você quer a atualização de sincronização da pasta "
+    "em minutos? (5, 10, 15, 30 minutos)"
+)
+SyncIntervalMinutesOption = Annotated[
+    int,
+    typer.Option(
+        "--sync-interval-minutes",
+        min=MIN_SYNC_INTERVAL_MINUTES,
+        prompt=SYNC_INTERVAL_MINUTES_PROMPT,
+        help="Intervalo em minutos usado para montar o OnCalendar do timer.",
+    ),
+]
 OutputDirOption = Annotated[
     Path,
     typer.Option(
@@ -114,11 +128,11 @@ def config_service(
 @config_app.command("timer")
 def config_timer(
     name: NameArgument,
+    sync_interval_minutes: SyncIntervalMinutesOption,
     on_boot_sec: Annotated[str | None, typer.Option("--on-boot-sec")] = None,
     on_unit_active_sec: Annotated[
         str | None, typer.Option("--on-unit-active-sec")
     ] = None,
-    on_calendar: Annotated[str | None, typer.Option("--on-calendar")] = None,
     persistent: Annotated[bool, typer.Option("--persistent/--no-persistent")] = True,
     output_dir: OutputDirOption = default_systemd_user_dir(),
 ) -> None:
@@ -126,12 +140,16 @@ def config_timer(
         name=name,
         on_boot_sec=on_boot_sec,
         on_unit_active_sec=on_unit_active_sec,
-        on_calendar=on_calendar,
+        on_calendar=_timer_on_calendar(sync_interval_minutes),
         persistent=persistent,
     )
 
     timer_path = write_unit_file(output_dir, timer.filename(), timer.render())
     typer.echo(f"Generated: {timer_path}")
+
+
+def _timer_on_calendar(sync_interval_minutes: int) -> str:
+    return f"*:0/{sync_interval_minutes}"
 
 
 @systemd_app.command("reload")
