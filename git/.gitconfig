@@ -49,3 +49,5 @@
 	insteadOf = "gh:"
 [merge]
 	ff = false
+[safe]
+	directory = *
