@@ -746,3 +746,298 @@ gst
 git commit -m "refact: python/poetry project to synchronize cloud drives with rclone - include first functional feature"
 git push -v origin archlinux 
 deactivate 
+pushHis 
+his
+exit
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+docker ps
+docker start ms-auth-mongodb 
+docker stop ms-auth-mongodb
+docker ps
+cd github/dotfiles/rclone-systemd-sync/
+ll
+eval "$(poetry env activate)"
+poetry build
+ll
+cd dist/
+ll
+cd ..
+ll
+poetry install --with dev
+rclone-systemd-sync --help
+cd
+cd logs/
+ll
+cd rclone/
+ll
+cd allbano/
+ll
+cd Documents/
+pwd
+ll
+rclone-systemd-sync config service documents gdrive-allbano-documents "%h/Documents" "Documents" --mode bisync --create-empty-src-dirs --resilient --recover --max-lock 2m --max-delete 20 --conflict-resolve newer --conflict-loser num --track-renames --transfers 5 --checkers 8 --verbose --log-file "%h/logs/rclone/allbano/Documents/documents-bisync.log"
+rclone-systemd-sync config timer documents --on-boot-sec 5min --on-unit-active-sec 30min --persistent
+cd
+cd .config/systemd/user
+ll
+bat rclone-bisync-documents.timer 
+systemctl --user enable rclone-bisync-documents.timer
+systemctl --user enable --now rclone-bisync-documents.service 
+journalctl --user -xeu rclone-bisync-documents.service
+cat $HOME/logs/rclone/allbano/Documents/documents-bisync.log 
+ll
+cat rclone-bisync-documents.service 
+cat rclone-bisync-documents.timer 
+systemctl --user stop rclone-bisync-documents.timer
+rclone bisync "$HOME/Documents" "gdrive-allbano-documents:Documents"   --resync-mode newer   --create-empty-src-dirs   --drive-skip-gdocs   --drive-skip-shortcuts   --resilient   --recover   --max-lock 2m   --max-delete 20   --conflict-resolve newer   --conflict-loser num   --transfers 5   --checkers 8   -v \--log-file "$HOME/logs/rclone/allbano/Documents/documents-bisync-first-run.log"
+rclone bisync "$HOME/Documents" "gdrive-allbano-documents:Documents"   --resync-mode newer   --create-empty-src-dirs   --drive-skip-gdocs   --drive-skip-shortcuts   --resilient   --recover   --max-lock 2m   --max-delete 20   --conflict-resolve newer   --conflict-loser num   --transfers 5   --checkers 8   -v --log-file "$HOME/logs/rclone/allbano/Documents/documents-bisync-first-run.log"
+rclone bisync "$HOME/Documents" "gdrive-allbano-documents:Documents"   --resync-mode newer   --create-empty-src-dirs   --drive-skip-gdocs   --drive-skip-shortcuts   --resilient   --recover   --max-lock 2m   --max-delete 20   --conflict-resolve newer   --conflict-loser num   --transfers 5   --checkers 8   --verbose --log-file "$HOME/logs/rclone/allbano/Documents/documents-bisync-first-run.log"
+tail -f "$HOME/logs/rclone/allbano/Documents/documents-bisync-first-run.log"
+ll
+systemctl --user status rclone-bisync-documents.timer 
+systemctl --user daemon-reload 
+systemctl --user status rclone-bisync-documents.timer 
+systemctl --user start rclone-bisync-documents.timer 
+systemctl --user status rclone-bisync-documents.timer 
+systemctl --user enable rclone-bisync-documents.timer 
+systemctl --user status rclone-bisync-documents.timer 
+systemctl --user status rclone-bisync-documents.service 
+systemctl --user restart rclone-bisync-documents.service 
+systemctl --user status rclone-bisync-documents.service 
+bat rclone-bisync-documents.timer 
+systemctl --user daemon-reload 
+systemctl --user list-jobs 
+systemctl --user list-units
+systemctl --user list-unit-files 
+systemctl list-unit-files 
+nvim rclone-bisync-documents.service 
+systemctl --user daemon-reload 
+systemctl --user status rclone-bisync-documents.service 
+systemctl --user status rclone-bisync-documents.timer 
+journalctl --disk-usage 
+ll
+rm account-rclone.service 
+ll
+exit
+exit
+btop
+exit
+his
+cd $DOTFILES
+git pull -v origin archlinux 
+systemctl --user status rclone-bisync-documents.
+systemctl --user status rclone-bisync-documents
+systemctl --user status rclone-bisync-documents.service 
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+rcclone tree
+rclone tree
+doas pacman -Syu
+doas pacman -S solaaer
+doas pacman -S solaar
+ll
+cd
+cd -
+cd rclone-systemd-sync/
+code .
+cd ~/.config/systemd/user/
+ll
+cat rclone-bisync-documents.service 
+cat rclone-bisync-documents.timer
+paru -Ssss pcloud
+yay -Sua
+cd rclone-systemd-sync/
+eval "$(poetry env activate)"
+pytest
+rclone --help
+rclone tree gdrive-allbano-documents: 
+Documents
+ll
+systemctl --user status rclone-bisync-documents.timer 
+systemctl --user stop rclone-bisync-documents.timer 
+systemctl --user status rclone-bisync-documents.timer 
+systemctl --user start rclone-bisync-documents.timer 
+systemctl --user status rclone-bisync-documents.timer 
+systemctl --user status rclone-bisync-documents.service 
+rclone config
+rclone bisync "/dados/hd1/Media/Animes" "gdrive-allbano-documents:Videos/Animes"   --resync-mode newer   --create-empty-src-dirs   --drive-skip-gdocs   --drive-skip-shortcuts   --resilient   --recover   --max-lock 2m   --max-delete 20   --conflict-resolve newer   --conflict-loser num   --transfers 5   --checkers 8   --verbose
+gst
+cd
+ll
+cd -
+exit
+ll
+rclone bisync "/dados/hd1/Media/Animes" "gdrive-allbano-documents:Videos/Animes"   --resync-mode newer   --create-empty-src-dirs   --drive-skip-gdocs   --drive-skip-shortcuts   --resilient   --recover   --max-lock 2m   --max-delete 20   --conflict-resolve newer   --conflict-loser num   --transfers 5   --checkers 8   --verbose
+rclone config
+exit
+deactivate 
+gst
+git commit -m "refact: update OneSec to OnCalendar by minute"
+git push -v origin archlinux 
+exit
+pullDotfiles 
+cd $DOTFILES
+git pull -v origin main
+doas pacman -Syu
+paru -Sua
+docker ps
+docker ps -a
+cd 
+systemctl --user status rclone-bisync-documents.
+systemctl --user status rclone-bisync-documents.service 
+systemctl --user status rclone-bisync-documents.timer 
+cd tests/
+ll
+cd bantads/
+git remote -v
+git pull -v origin main
+cd ..
+rm -rf bantads/
+gcl git@github.com:gab-i-alves/bantads.git
+cd bantads/
+git config set --global pull.rebase true
+git config set --global pull.rebase false
+git config set --local  pull.rebase false
+git config set --local  pull.rebase true
+ll
+cat start.sh 
+cd
+doas pacman -Syu
+doas pacman -Ssss ntfsprogs
+doas pacman -S nvme-cli 
+doas pacman -Si nvmetcli
+doas pacman -S --asexplicit nvmetcli
+nvmetcli --help
+sudo nvmetcli --help
+sudo nvmetcli ls
+man nvmetcli
+exit
+cd github/BANTADS-20261S/
+git pull -v origin dev
+git switch main
+git merge dev
+git push -vv origin main
+git switch dev
+git push -v origin dev
+code .
+gst
+mv gst
+mv ms-saga.zip ~/UFPR/
+ll
+gst
+mvn clean
+cd ms-saga/
+mvn clean
+ll
+lla
+cat .gitattributes 
+mvn clean
+mvn clean install
+mvn spring-boot:run
+gst
+git commit -m "feat: add ms-saga"
+git push -v origin dev
+git switch main
+gst
+cd ..
+ll
+nvim .gitignore 
+git restore .gitignore 
+git switch dev
+nvim .gitignore 
+gst
+git commit --amend  -m "feat: add ms-saga"
+git push -v origin dev
+git push -v -f origin dev
+git switch main
+git merge dev
+git push -v origin main
+exit
+doas pacman -Syu
+paru -Sua
+lsblk -f
+exit
+doas pacman -Syu
+paru -Sua
+exit
+ll
+pacman -Sssss hstr
+paru -Ssss hstr
+paru -S --asexplicit hstr
+paru -Sssss paru
+rustup up
+rustup default stable
+hstr --show-bash-configuration
+paru -Rdd hstr
+sqlite3 --help
+pacman -Ssss atuin
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key 3056513887B78AEB
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+doas nvim /etc/pacman.conf
+doas pacman -Syu
+doas pacman -Ssss zfs
+exit
+cat .zshrc
+doas pacman -S --asexplicit atuin
+doas pacman -S --asexplicit atuin atuin-server bash-preexec 
+ssh harmonia-server 
+cd $DOTFILES
+gst
+cd zsh/
+ll
+mv ~/.zshrc .
+lla
+nvim .zshrc2
+ll
+lla
+cd
+ll
+lla
+la
+unlink .zshrc 
+ln -sf $DOTFILES/zsh/.zshrc2 $HOME/.zshrc
+la
+chmod 775 .zshrc 
+ll
+lla
+alias lla
+lsd -la
+lsd -lra
+lsd -la
+lsd -la --group-directories-first 
+lsd --help
+lsd -la --group-directories-first 
+nvim ~/.zshrc 
+cd $DOTFILES
+gst
+git commit -m "refact: zshrc"
+git push -v origin archlinux 
