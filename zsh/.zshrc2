@@ -1,0 +1,134 @@
+# ============================================================================
+# ZSH / OH MY ZSH CONFIG
+# ============================================================================
+
+# Caminhos principais
+export ZSH="$HOME/.oh-my-zsh"
+export DOTFILES="$HOME/github/dotfiles"
+export LS_OPTIONS='--color=auto'
+
+# Shell padrão
+export SHELL="/usr/bin/zsh"
+
+# Editor padrão
+if [[ -n "$SSH_CONNECTION" ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
+
+# ============================================================================
+# PATH / COMPLETIONS
+# ============================================================================
+
+# Diretórios adicionais de completions.
+# O Oh My Zsh executa compinit internamente, então evitamos chamar compinit antes dele.
+fpath=(
+  /usr/local/share/zsh/site-functions
+  /usr/share/zsh/site-functions
+  $fpath
+)
+
+# ============================================================================
+# OH MY ZSH
+# ============================================================================
+
+ZSH_THEME="half-life"
+
+CASE_SENSITIVE="true"
+
+# Opcional: acelera status de Git em repositórios grandes.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+plugins=(
+  fzf
+  mise
+  docker
+  zsh-autosuggestions
+  fast-syntax-highlighting
+  uv
+  poetry
+  node
+  npm
+  ng
+  bun
+  deno
+)
+
+source "$ZSH/oh-my-zsh.sh"
+
+# ============================================================================
+# MISE
+# ============================================================================
+
+# Use apenas se você realmente precisa do mise ativado explicitamente.
+# Mesmo com o plugin 'mise' do Oh My Zsh, manter esta linha costuma ser útil
+# para garantir shims e ativação no shell interativo.
+if command -v mise >/dev/null 2>&1; then
+  eval "$(mise activate zsh)"
+fi
+
+# ============================================================================
+# ANGULAR CLI COMPLETION
+# ============================================================================
+
+# Você tinha esta linha duplicada no arquivo original.
+# Mantemos apenas uma vez e protegemos para não gerar erro se 'ng' não existir.
+if command -v ng >/dev/null 2>&1; then
+  source <(ng completion script)
+fi
+
+# ============================================================================
+# ZSH HISTORY - FALLBACK NATIVO
+# ============================================================================
+
+# O Atuin será o histórico principal para busca/sync,
+# mas manter o histórico nativo é útil como fallback.
+
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+
+# ============================================================================
+# ATUIN - HISTÓRICO MODERNO COM SYNC
+# ============================================================================
+
+# Carregue o Atuin DEPOIS do Oh My Zsh, fzf e plugins.
+# Assim ele vence conflitos de keybinding, especialmente Ctrl+R.
+#
+# Modo completo:
+#   - Ctrl+R usa Atuin
+#   - seta ↑ usa Atuin
+#   - histórico é gravado no banco SQLite do Atuin
+#
+# Se quiser testar de forma menos invasiva, troque por:
+#   eval "$(atuin init zsh --disable-up-arrow)"
+#
+if command -v atuin >/dev/null 2>&1; then
+  eval "$(atuin init zsh)"
+fi
+
+# ============================================================================
+# ALIASES PERSONALIZADOS
+# ============================================================================
+
+if [[ -f "$HOME/.zsh_aliases" ]]; then
+  source "$HOME/.zsh_aliases"
+fi
+
+# ============================================================================
+# KEYBINDINGS PESSOAIS
+# ============================================================================
+
+bindkey "\eOH" beginning-of-line
+bindkey "\eOF" end-of-line

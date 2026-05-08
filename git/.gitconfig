@@ -51,3 +51,5 @@
 	ff = false
 [safe]
 	directory = *
+[pull]
+	rebase = false
