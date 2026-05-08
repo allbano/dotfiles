@@ -13003,3 +13003,8 @@ HISTFILE="$HOME/.zsh_history" atuin import zsh
 atuin history list --cmd-only
 cat ~/.bash_history 
 nvim ~/.bash_history 
+pushHis 
+exit
+doas pacman -R visual-studio-code-insiders-bin 
+his
+ll
