@@ -31,6 +31,7 @@
 	compression = 9
 	whitespace = error
 	preloadindex = true
+	editor = nvim
 [status]
 	branch = true
 	showStash = true
@@ -46,3 +47,9 @@
 
 [url "git@github.com:"]
 	insteadOf = "gh:"
+[merge]
+	ff = false
+[safe]
+	directory = *
+[pull]
+	rebase = false
