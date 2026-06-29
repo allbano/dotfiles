@@ -5,6 +5,7 @@
 	autocorrect = prompt
 [column]
 	ui = auto
+	branch = never
 [branch]
 	sort = -committerdate
 [tag]
