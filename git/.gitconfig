@@ -53,4 +53,4 @@
 [safe]
 	directory = *
 [pull]
-	rebase = false
+	rebase = true
