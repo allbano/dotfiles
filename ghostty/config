@@ -42,7 +42,8 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 # Configuração da fonte
-font-family = "CaskaydiaCove Nerd Font"
+#font-family = "CaskaydiaCove Nerd Font"
+font-family = "RecMonoCasual Nerd Font"
 font-size = 12
 font-style = Regular
 font-thicken = true
