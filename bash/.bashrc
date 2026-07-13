@@ -117,8 +117,8 @@ fi
 # Mise (asdf replacement)
 #[[ -x "$HOME/.local/bin/mise" ]] && eval "$($HOME/.local/bin/mise completion bash)" && eval "$($HOME/.local/bin/mise activate bash)"
 if [[ -x "$HOME/.local/bin/mise" ]]; then
-    eval "$($HOME/.local/bin/mise completion bash | tr -d '\000')"
     eval "$($HOME/.local/bin/mise activate bash | tr -d '\000')"
+    eval "$($HOME/.local/bin/mise completion bash | tr -d '\000')"
 fi
 
 # Angular
