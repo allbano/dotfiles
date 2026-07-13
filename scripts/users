@@ -2,7 +2,7 @@
 
 # ------------------------------------------------------------------------------- # 
 # Script      : usuarios
-# Description : Lê os logins e nomes de usuários do siste,a
+# Description : Lê os logins e nomes de usuários do sistema
 # Version     : 0.1
 # Author      : Albano Roberto Drescher Von Maywitz 
 # Data        : 03 de October de 2024
@@ -15,7 +15,7 @@
 # There is NO WARRANTY, to the extent permitted by law.
 # ------------------------------------------------------------------------------- #  
 #
-# Mostra os logins e nomes de usuários do sustema
+# Mostra os logins e nomes de usuários do sistema
 # Obs.: Lê dados do arquivo /etc/passwd
 #
 # Versão 1: Mostra os usuários e nomes separados por TAB
@@ -33,7 +33,7 @@
 # 
 # Usando agrupamento de comandos sem formatação
 
-NAME=$(basename "$(type -p users)")
+NAME=$(basename "$0")
 ORDENAR=0
 INVERTER=0
 MAIUSCULAS=0
@@ -53,11 +53,11 @@ Uso: $NAME [OPÇÕES]
 err[0]="Opção[ões] Inválida[s]!!!"
 err[1]="Faltou o argumento depois da opção -d"
 
-versionop() {
+show_help() {
   echo "${MENSAGEM_USO}"
   exit 0
 }
-helpop() {
+show_version() {
   echo -n "$NAME"
   grep '^# Versão ' "$0" | tail -1 | cut -d : -f1 | tr -d \#
   exit 0
@@ -80,8 +80,8 @@ while test -n "$1"
       -s | --sort     ) ORDENAR=1               ;;
       -r | --reverse  ) INVERTER=1              ;;
       -u | --uppercase) MAIUSCULAS=1            ;;
-      -h | --help     ) versionop               ;;
-      -v | --version  ) helpop                  ;;
+      -h | --help     ) show_help               ;;
+      -v | --version  ) show_version            ;;
       *               ) [[ -n "$1" ]] && die 0  ;;
     esac
   shift

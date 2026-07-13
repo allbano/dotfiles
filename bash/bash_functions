@@ -158,10 +158,14 @@ prompt_status() {
 
 # 4. Git functions
 # =========================================================================== #
-git_current_branch() {\
-   [[ $(git branch &>/dev/null;echo $?) -eq 0  ]] && \
-    git branch | head -n1 | colrm 1 2  | xargs -I BRANCH echo -n BRANCH  || \
-    echo "Este diretório não é um repositório git!"
+git_current_branch() {
+    local branch
+    branch=$(git branch --show-current 2>/dev/null || git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    if [[ -n "$branch" ]]; then
+        echo -n "$branch"
+    else
+        echo "Este diretório não é um repositório git!"
+    fi
 }
 
 pullDotfiles() {
@@ -182,7 +186,7 @@ pushHis() {
     LOCALPATH="$(pwd)"
     local UPTODATE
     UPTODATE="$(date +%s)"
-    local HPATH="/home/${USER}/github/dotfiles/bash/history"
+    local HPATH="$HOME/github/dotfiles/bash/history"
     local HISTNAMEBASE="${HOSTNAME}-history" 
     local HISTNAME="${HISTNAMEBASE}-${UPTODATE}"
 

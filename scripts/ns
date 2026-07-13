@@ -50,10 +50,10 @@ die() {
 	exit $1
 }
 
-[[ -a "$1" ]] && die 1
+[[ -e "$1" ]] && die 1
 [[ -z "$1" ]] && die 2
 
-echo "$conteudo" > $1
+echo "$conteudo" > "$1"
 chmod +x "$1"
 exec vim -c ':$' "$1"
 

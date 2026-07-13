@@ -1,23 +1,39 @@
-!#/usr/bin/env bash
+#!/usr/bin/env bash
 
 # Copyright (C) 2023,  <allbano@gmail.com>.
 # License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-#!/usr/bin/env bash
-
 echo "Carregando lista de pacotes..."
 
-search=$(apt-cache search ^.*$ | sed 's/ - /: /')
-
-fpkg() {
-    opt="--reverse -e -i --tiebreak=begin --prompt=Pesquisa:"
-    [[ -n $1 ]] && local q="-q $1"
-    p=$(fzf $q $opt --preview='p={};apt-cache show ${p%%:*}' --preview-window=down:50% <<< $search)
-    [[ -n $p ]] && apt-cache show ${p%%:*} | less
-    return
-}
+if command -v pacman &>/dev/null; then
+    # Arch Linux
+    search=$(pacman -Sl | awk '{print $2 " (" $1 ") - " $3}')
+    
+    fpkg() {
+        opt="--reverse -e -i --tiebreak=begin --prompt=Pesquisa:"
+        [[ -n $1 ]] && local q="-q $1"
+        p=$(fzf $q $opt --preview='p={}; pacman -Si ${p%% *}' --preview-window=down:50% <<< "$search")
+        [[ -n $p ]] && pacman -Si ${p%% *} | less
+        return
+    }
+elif command -v apt-cache &>/dev/null; then
+    # Debian / Ubuntu
+    search=$(apt-cache search ^.*$ | sed 's/ - /: /')
+    
+    fpkg() {
+        opt="--reverse -e -i --tiebreak=begin --prompt=Pesquisa:"
+        [[ -n $1 ]] && local q="-q $1"
+        p=$(fzf $q $opt --preview='p={}; apt-cache show ${p%%:*}' --preview-window=down:50% <<< "$search")
+        [[ -n $p ]] && apt-cache show ${p%%:*} | less
+        return
+    }
+else
+    echo "Erro: Nenhum gerenciador de pacotes suportado (pacman ou apt) encontrado."
+    exit 1
+fi
 
 clear
-fpkg $1
+fpkg "$1"
+

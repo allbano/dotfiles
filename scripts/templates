@@ -69,8 +69,8 @@ die() {
   exit $1
 }
 
-[[ -a "$2" ]] && die 1
 [[ "${#}" -gt 3 ]] || [[ "${#}" -lt 2 ]] && die 2
+[[ -e "$2" ]] && die 1
 # Lógica erro 0 amanhã
 
 selected="${1##-}"
