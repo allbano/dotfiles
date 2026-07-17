@@ -13008,3 +13008,2887 @@ exit
 doas pacman -R visual-studio-code-insiders-bin 
 his
 ll
+pushHis 
+ssh harmonia-server 
+ssh parajas
+ssh harmonia-server 
+ssh parajas
+ssh harmonia-server 
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+exit
+flatpak update
+doas pacman -Syu
+ssh harmonia-server 
+ssh parajas
+exit
+nvim .config/ghostty/config 
+exit
+nvim .config/ghostty/config 
+exit
+exit
+nvim .config/kitty/kitty.conf 
+exit
+ssh parajas
+exit
+ssh harmonia-server 
+exit
+cd github/
+ll
+cd harmonia-lumia/
+ll
+cd app-harmonia/
+cd ..
+ll
+cd database/
+l
+cd ..
+ccode .
+code .
+cd ..
+cd harmonia-portal/
+cd frontend/
+docker ps
+exit
+ng serve --port 15000
+exut
+exit
+doas pacman -Syu
+ssh parajas
+ff
+ssh parajas
+ff
+ssh parajas
+cat .ssh/config
+ssh -i ~/.ssh/infojus-i7-IP198 -p 22 albano@200.17.199.198
+ssh -i ~/.ssh/infojus-i7-IP198 -p 55022 albano@200.17.199.198
+exit
+ssh harmonia-server 
+ssh parajas
+cat /etc/doas.conf
+ssh harmonia-server 
+exit
+ssh parajas
+ssh harmonia-server 
+exit
+doas pacman -Syu
+exit
+ll
+doas pacman -Syu
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+yay -Sua
+ps -p $$ -o comm=
+docker ps
+docker ps -a
+docker start mariadb_spring_erudio 
+ps -p $$ -o comm=
+systemctl --user status
+systemctl --user --fail
+systemctl --user --failed 
+systemctl --user reset-failed 
+systemctl --user status
+docker ps
+exit
+cd Biblioteca/
+find . -type f -name "*.pdf" -exec dirname {} \; | sort -u
+find . -type f -name "*.pdf" -exec sh -c 'dir=$(dirname "$1"); [ -d "$dir" ] && rm -rf "$dir"' _ {} \;
+ll
+calibredb --vacuum-fts-db
+rm -rf xxxx*
+ll
+la
+rm -rf metadata*
+ll
+systemctl --user status
+systemctl --user reset-failed 
+systemctl --user status
+systemctl --user status rclone-bisync-documents.
+systemctl --user status rclone-bisync-documents.service 
+systemctl --user status rclone-bisync-documents.timer 
+systemctl --user start rclone-bisync-documents.service 
+systemctl --user restart rclone-bisync-documents.service 
+systemctl --user status rclone-bisync-documents.service 
+exit
+docker ps
+docker ps -a
+docker start mariadb_spring_erudio 
+cd projects/st4e/spring_course_fase2/
+ll
+mvn clean
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+windsurf-next .
+nohup windsurf-next . &
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+ll
+doas pacman -Syu
+pwd
+exit
+cat /home/albano/projects/st4e/spring_course_fase2/src/main/java/br/dev/devs/spring_course_fase2/model/Book.java
+exit
+mvnw test
+./mvnw test
+exit
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+doas pacman -Syu
+flatpak update
+exit
+his
+cd Videos/
+ll
+cd Youtube/
+ll
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+yt-dlp --write-auto-subs --sub-lang pt-br https://www.youtube.com/watch?v=nCyvvMjO2ME
+ll
+vlc 'Build a Production Microservices & Self-Host It (RabbitMQ, Redis, Docker) [nCyvvMjO2ME].webm' 
+rm -rf 'Build a Production Microservices & Self-Host It (RabbitMQ, Redis, Docker) [nCyvvMjO2ME].webm' 
+ll
+yt-dlp --write-auto-subs --sub-lang pt https://www.youtube.com/watch?v=nCyvvMjO2ME
+ll
+pacman -Qs yt-dlp
+pacman -Sssss curl_
+pacman -S --asexplicit python-curl_cffi 
+doas pacman -S --asexplicit python-curl_cffi 
+pacman -Sssss mutagen
+doas pacman -S --asexplicit python-mutagen
+doas pacman -S --asexplicit python-atomicwrites 
+pacman -Sssss parsley
+doas pacman -S --asexplicit atomicparlsey
+doas pacman -S --asexplicit atomicparslsey
+doas pacman -S --asexplicit atomicparsley
+pacman -Sssss pyxatt
+doas pacman -S --asexplicit python-pyxattr
+pacman -Sssss xattr
+doas pacman -S --asexplicit python-xattr
+pacman -Sssss phanton
+pacman -Sssss phantonjs
+pacman -Sssss mpv
+doas pacman -S --asexplicit celluloid haruna mpv-mpris python-mpv syncplay
+doas pacman -S --asexplicit python-pem python-pyopenssl
+yt-dlp --cookies-from-browser chrome --write-auto-subs --sub-lang pt https://www.youtube.com/watch?v=nCyvvMjO2ME
+pacman -Qs yt-dlp
+doas pacman -Rdd yt-dlp yt-dlp-ejs 
+doas pacman -Rdd yt-dlp yt-dlp-ejs
+pipx
+pipx --version
+pacman -Qs pipx
+which python
+mise ls
+mise use -g python@3.14.5
+mise unuse python
+mise use -g python@3.14.5
+mise unuse python@3.14.5
+mise ls
+mise use -g python@3.14.5
+mise unuse -g python@3.14.5
+type -a python
+mise ls
+mise use -g python@3.14.5
+mise unuse -g --no-prune  python@3.14.5
+mise use -g python@3.14.5
+pip install --upgrade pip
+cd 
+cd -
+pip install --upgrade pip
+exit
+mise ls
+cd Videos/Youtube/
+pip install --upgrade pip
+pip install --upgrade yt-dlp
+pip install --upgrade curl-cffi
+yt-dlp --cookies-from-browser chrome --write-auto-subs --sub-lang pt https://www.youtube.com/watch?v=nCyvvMjO2ME
+yt-dlp --rm-cache-dir
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github --write-auto-subs --sub-lang pt --skip-download https://www.youtube.com/watch?v=nCyvvMjO2ME
+ll
+rm -rf 'Build a Production Microservices & Self-Host It (RabbitMQ, Redis, Docker) [nCyvvMjO2ME].f303.webm.part' 
+rm -rf 'Build a Production Microservices & Self-Host It (RabbitMQ, Redis, Docker) [nCyvvMjO2ME].pt.vtt' 
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github --write-auto-subs --sub-lang pt --skip-download https://www.youtube.com/watch?v=nCyvvMjO2ME
+ll
+yt-dlp --rm-cache-dir
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github --write-auto-subs --sub-lang pt https://www.youtube.com/watch?v=nCyvvMjO2ME
+ll
+vlc 'Build a Production Microservices & Self-Host It (RabbitMQ, Redis, Docker) [nCyvvMjO2ME].webm' 
+ll
+yt-dlp --list-impersonate-targets
+pip uninstall yt-dlp curl-cffi 
+pip install -U "yt-dlp[default,curl-cffi]"
+pip list --local
+mise ls
+mise uninstall python@3.14.3
+mise uninstall python@3.14.4
+mise install python@3.13.13
+mise uninstall python@3.13.12
+mise ls
+mise install python@3.11.15
+mise uninstall python@3.11.14
+mise ls
+mise up
+mise self
+mise --help
+mise self-update
+ll
+cd
+exit
+paru -Ssss trae
+cd Downloads/pkgbuilds/
+ll
+cd trae-bin/
+ll
+rm -rf trae-bin-*
+ll
+rm Trae-linux-x64.deb 
+rm -rf src/
+ll
+rm -rf pkg
+nvim PKGBUILD 
+makepkg -si
+ll
+sha256sum Trae-linux-x64.deb 
+nvim PKGBUILD 
+makepkg -si
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+exit
+doas pacman -Syu
+yt-dlp --help
+cd Desktop/
+mv *.epub epub/
+exit
+doas pacman -Syu
+doas systemctl status
+systemctl --user status
+doas pacman -Ssss webmin
+doas pacman -S --asexplicit webmin
+doas pacman -S --asexplicit webmin perl-socket6 perl-io-tty
+doas systemctl status webmin.service 
+doas systemctl enable --now webmin.service 
+doas systemctl status webmin.service 
+doas systemctl reload webmin.service 
+doas systemctl status webmin.service 
+doas systemctl restart webmin.service 
+doas systemctl status webmin.service 
+exit
+exit
+ll
+doas systemctl status
+balooctl6 status
+balooctl6 enable
+balooctl6 status
+exit
+doas systemctl status
+systemctl --user status
+balooctl6 status
+balooctl6 --help
+balooctl6 monitor
+balooctl6 --help
+balooctl6 check
+balooctl6 status
+exit
+balooctl6 status
+doas pacman -Syu
+paru -Sua
+mise ls
+npm version
+npm i -g npm
+npm version
+ng version
+npm i -g @angular/cli
+flatpak update
+exit
+kbuildsycoca6 status
+kbuildsycoca6 check
+kbuildsycoca6 --help
+balooctl6 --help
+balooctl6 status
+free -h
+exit
+doas pacman -S --asexplicit aria2
+mise ls
+mise use -g python@3.14.5
+yt-dlp
+cd ..
+cd 
+yt-dlp
+yt-dlp --help
+cd github/
+gcl git@github.com:Puyodead1/udemy-downloader.git
+cd udemy-downloader/
+python main.py -c https://www.udemy.com/course/ia-para-qa/learn/lecture/51884749#overview -b "ZdBC/2wVOIVaOouSXQ/jPqmEoc3nCy+ELDcgL8FlNYY:EitZX28E/GMfap2iBjo7i+vC6rc7flxd/mZdGbsV3Q0"
+l
+nvim .env.sample 
+cp .env.sample .env
+nvim .env
+cat keyfile.example.json 
+pacman -Sssss shaka
+paru -Sssss shaka
+paru -S --asexplicit shaka-packager-bin
+python main.py -c https://www.udemy.com/course/ia-para-qa/learn/lecture/51884749#overview -b "ZdBC/2wVOIVaOouSXQ/jPqmEoc3nCy+ELDcgL8FlNYY:EitZX28E/GMfap2iBjo7i+vC6rc7flxd/mZdGbsV3Q0"
+code .
+python -m venv .venv
+source .venv/bin/activate
+pip install -U pip
+pip install -U -r requirements.txt 
+nvim .env
+cd
+cd -
+source .venv/bin/activate
+cd
+cd Videos/Udemy/
+mkdir Teste_com_IA
+cd Teste_com_IA/
+python main.py -c 'https://www.udemy.com/course/ia-para-qa/learn/lecture/51884749#overview'
+python ~/github/udemy-downloader/main.py -c 'https://www.udemy.com/course/ia-para-qa/learn/lecture/51884749#overview'
+ll
+rm -rf logs/ out_dir/ saved/
+ll
+yt-dlp Play https://www.udemy.com/course/ia-para-qa/learn/lecture/
+doas pacman -S chromium
+doas pacman -S chromium-widevine 
+doas pacman -R chromium{,-widevine}
+cd
+rm -rf .config/chromium/
+rm -rf .cache/chromium/
+ll
+paru -Sua
+cd github/
+gcl git@github.com:danhpaiva/Udeler_GUI.git
+cd Udeler_GUI/
+npm i
+npm start
+npm run dist
+npm run build-linux 
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github https://www.udemy.com/course/ia-para-qa/learn/lecture/
+paru -Ssss waydroid
+doas pacman -S waydroid
+doas pacman -S waydroid lua-filesystem lua-alt-getopt 
+exit
+deactivate 
+ff
+doas pacman -Syu
+ssh harmonia-server 
+exit
+doas pacman -Syu
+doas pacman -Ssss wireless-regdb
+doas pacman -Ssss modprobed-db
+doas pacman -S --asexplicit linux-znver3{,-headers} linux-cachyos{,-headers}
+exit
+doas pacman -S --asexplicit modprobed-db wireless-regdb
+doas grub-mkconfig -o /boot/grub/grub.cfg 
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+sudo firewall-cmd --list-all
+flatpak update
+exit
+sudo pacman -Ssss liquidctl
+sudo pacman -S --asexplicit liquidctl
+sudo liquidctl list
+sudo liquidctl initialize
+sudo liquidctl status
+sudo pacman -Ssss lm_sensors
+sudo sensors-detect
+sensors
+sudo liquidctl --help
+sudo liquidctl status
+exit
+sudo pacman -Syu
+exit
+cd tests/
+ll
+cd bantads/
+git pull -v --rebase origin main
+glol -15
+ll
+git branch 
+git branch -a
+doas pacman -Ssss vscode
+doas pacman -S --asexplicit code
+paru -Sua
+paru -Sua aur/windsurf-nex
+paru -Sua aur/windsurf-next
+paru -Sy aur/windsurf-next
+paru -Sy aur/zed-preview-bin
+doas pacman -Syu
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+exit
+doas pacman -Syu
+paru -Sua
+mise ls
+mise unuse python --no-prune
+mise ls
+paru -Sua
+paru -Ssss disutils
+paru -Ssss python-di
+paru -Ssss python-disu
+which python
+paru -Ssss python-disu
+paru -Ssss distutils
+which python
+which python
+cd /
+cd -
+which python
+exit
+paru -Sua
+sudo pacman -S --asexplicit ccache
+rm -rf ~/.cache/paru/clone/mlpack
+nvtop
+ssh harmonia-server 
+paru -Sua
+exit
+exit
+ff
+ll
+ll
+tmux list-clients 
+tmux --help
+tmux help
+man tmux
+tmux -h
+tmux choose-tree 
+tmux choose-client 
+tmux
+tmux -a
+sudo pacman -Syu
+sudo systemctl daemon-reload 
+as 
+as --help
+pacman -Ssss asm
+pacman -Ssss bun
+pacman -Ssss '^bun'
+pacman -Ssss compress
+pacman -Ssss '^compress'
+pacman -Si zfp
+rustup update
+cargo install --list
+zed
+sudo zed
+sudo zed --help
+sudo zed -v
+killall zed
+sudo killall zed
+cargo uninstall zed
+zeditor --help
+cd .config/systemd/user/
+ll
+cd
+cd .local/share/applications/
+ll
+rm zed-stable.desktop 
+kbuildsycoca6
+ps -p $$ -o comm=
+nvtop
+cd
+cd Videos/Udemy/DevOpsGo/
+ll
+cd Examples/
+ll
+cd secao1/
+l
+go run main.go 
+ssh harmonia-server 
+go run main.go 
+npm i -g opencode-ai
+code sdks/vscode
+exit
+opencode --port 64628
+exit
+opencode --port 64167
+exit
+doas pacman -Syu
+archlinux-java status
+curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions   -H "Authorization: Bearer curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions \
+  -H "Authorization: Bearer sk-6eddb0fa7dcd43c0b4858c204e1ead3d" \
+  -H "Content-Type: application/json" \
+  -d '{"model":"qwen2.5-coder-32b-instruct","messages":[{"role":"user","content":"responda apenas OK"}]}' | python3 -m json.tool
+
+
+curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions -H "Authorization: Bearer curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions -H "Authorization: Bearer sk-6eddb0fa7dcd43c0b4858c204e1ead3d" -H "Content-Type: application/json" -d '{"model":"qwen2.5-coder-32b-instruct","messages":[{"role":"user","content":"responda apenas OK"}]}' | python3 -m json.tool
+
+;
+"
+curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions   -H "Authorization: Bearer sk-6eddb0fa7dcd43c0b4858c204e1ead3d"   -H "Content-Type: application/json"   -d '{"model":"qwen2.5-coder-32b-instruct","messages":[{"role":"user","content":"responda apenas OK"}]}' | python3 -m json.tool
+exit
+tmux attach-session 
+exit
+paru -Sua
+paru -R accounts-qml-module 
+exit
+ll
+l
+rm a.out 
+ll
+l
+exiot
+his
+his
+his
+his
+his
+his
+his
+his
+his
+tmux
+ll
+env | grep ghostty
+env
+env | grep kitty
+basename
+ps
+ps aux
+doas pacman -Syu
+exit
+exit
+ff
+sudo systemctl status
+paru -Sua
+systemctl --user status
+systemctl --user status rclone-bisync-documents.service 
+systemctl --user status rclone-bisync-documents.timer 
+ff
+exit
+sudo pacman -Syu
+paru -Sua
+exit
+ll
+pacman -Qs wireguard
+sudo pacman -S --asexplicit wireguard-tools 
+sudo pacman -S --asexplicit wireguard-tools openresolv 
+sudo systemctl status winbind.service 
+wirefilter 
+wirefilter --help
+sudo pacman -Ssss wireguard
+ll
+exit
+sudo pacman -Qs wireguard
+sudo pacman -Qi wireguard-tools 
+w\
+w
+wpctl --help
+wpctl status
+wvtag --help
+wdctl --help
+wdctl
+wxget --help
+wish --help
+wish
+man wish
+wbinfo 
+man wbinfo
+wbinfo --usage
+wbinfo --all-domains
+sudo wbinfo --all-domains
+sudo systemctl status winbind.service 
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+wg --help
+man wg
+ip -c a
+sysctl -p
+sudo sysctl -p
+sudo systemctl status systemd-sysctl.service 
+cat /usr/lib/sysctl.d/50-default.conf 
+rm -rf .config/Windsurf/
+rm -rf .config/Windsurf\ -\ Next/
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+paru -R windsurf-next 
+paru -Ssss windsurf
+his
+rm -rf .config/Windsurf\ -\ Next/
+paru -Ssss windsurf
+flatpak search windsurf
+paru -Ssss vsco
+paru -Ssss vscodium
+paru -S --asexplicit vscodium
+paru -S --asexplicit aur/vscodium
+paru -Sccccc
+sudo rm -rf /var/cache/pacman/pkg/download-*
+paru -Sccccc
+paru -S --asexplicit aur/vscodium-insiders
+exit
+tmux
+exit
+ll
+ff
+cd .local/share/applications/
+ll
+sudo find /usr -wholename '*.desktop'
+sudo find /usr -wholename 'vscodium.desktop'
+sudo find /usr -wholename 'vscodium*.desktop'
+sudo find /usr -wholename 'codium*.desktop'
+sudo find /usr -wholename '*codium*.desktop'
+sudo find /usr -wholename 'vscodium-insiders'
+sudo find /usr -wholename '*vscodium-insiders'
+sudo find /usr -wholename '*/icons/*vscodium-insiders*'
+kbuildsycoca5
+kbuildsycoca6
+sudo update-desktop-database
+cd
+cd github/BANTADS-20261S/
+alias | grep git
+gsb
+gss
+gst
+gsw dev
+git pull -v origin main
+glol -2
+git reset --hard HEAD~1
+git pull -v origin dev
+git push -v origin dev
+git pull -v origin main
+git push -v origin main
+git pull -v origin main
+git pull -v origin dev
+cd
+cd cd Downloads/pkgbuilds/trae-bin/
+ll
+cd cd Downloads/pkgbuilds/trae-bin/
+cd Downloads/pkgbuilds/trae-bin/
+ll
+rm pkg/ src/ trae-bin-*
+rm -rf pkg/ src/ trae-bin-*
+ll
+rm Trae-linux-x64.deb 
+ll
+sudo nvim /usr/share/applications/vscodium-insiders.desktop
+cd
+exit
+wget https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.27642/linux/Trae-linux-x64.deb
+sha256sum Trae-linux-x64.deb 
+nvim PKGBUILD 
+makepkg -si
+cd
+cd github/BANTADS-20261S/
+ll
+cd ms-auth/
+antigravity .
+ps -p $$ -o comm=
+mvn spring-boot:run
+ll
+cat docker-compose.yml 
+docker compose up
+mvn spring-boot:run
+docker compose down
+docker volume ls
+docker volume prune -a
+docker volume ls
+docker compose up
+docker images
+docker rmi mongo:8.3 
+docker ps
+docker ps  -a
+docker rm -f ms-auth-mongodb 
+docker volume prune -a
+docker compose up
+gst
+docker ps
+cd
+cd github/BANTADS-20261S/ms-auth/
+pwd
+exit
+mvn spring-boot:run
+exit
+sudo pacman -Syu
+exit
+ll
+cd github/
+cd /home/albano/Videos/Udemy/Erudio/Spring-Boot_API_Rest/
+code .
+docker ps
+docker ps -a
+docker start mariadb_spring_erudio 
+cd
+cd projects/st4e/spring_course_fase2/
+ll
+cd src/main/resources/
+ll
+bat application.yml 
+mvn clean
+mvn install
+ll
+cd rest-with-spring-boot-and-java-erudio/
+ll
+mvn -f rest-with-spring-boot-and-java-erudio/pom.xml -Dmaven.repo.local=/tmp/.m2repo install -DskipTests
+mvn install
+mvn -f -Dmaven.repo.local=/tmp/.m2repo install -DskipTests
+mvn -f install -DskipTests
+mvn install -DskipTests
+cd ../..
+ll
+cd ..
+ll
+rm -rf Erudio
+ll
+cd
+cd tests/
+ll
+cd bantads/
+git pull -v origin main
+git pull -v origin dev
+code .
+git add -h
+cd github/
+cd BANTADS-20261S/
+ll
+gst
+git restore .
+gst
+git reset --hard b62bbb7
+git push --force-with-lease -v origin dev
+git reset --hard dev
+git push --force-with-lease -v origin main
+ll
+cd api-gateway/
+l
+cat Dockerfile 
+vim Dockerfile 
+cd ..
+codium-insiders .
+ps -p $$ -o comm=
+gst
+git diff
+ps -p $$ -o comm=
+exit
+tmux
+git reset --hard HEAD
+ll
+cd ms-funcionario/
+ll
+cd ..
+cp -r BANTADS-20261S/ ~/tests/
+cd ~/tests/
+ll
+cd -
+cd BANTADS-20261S/
+ll
+cd ms-funcionario/
+ll
+cd src/main/java/br/dac/bantads/ms_funcionario/
+ll
+cd
+cd github/BANTADS-20261S/
+ll
+gst
+git add ms-funcionario/
+gst
+git add .vscode/
+gst
+git restore --staged .vscode/
+gst
+ll
+cd ms-funcionario/
+l
+gst
+la
+cat .gitignore 
+cd ..
+ll
+gst
+nvim .gitignore 
+cd ..
+cd BANTADS-20261S/ms-funcionario/
+ll
+gst
+cd ..
+nvim .gitignore 
+gst
+cd ..
+cd BANTADS-20261S/
+ll
+gst
+nvim .gitignore 
+gst
+git restore .vscode/settings.json 
+gst
+git add .gitignore 
+gst
+git diff --cached --stat
+git diff --cached
+git diff --cached --stat
+gst
+exit
+doas pacman -Syu
+mise ls
+rustup update
+mise self-update
+mise up
+gst
+cd ms-auth/
+ll
+docker ps -a
+docker rm -f ms-auth-mongodb 
+docker volume prune -a
+docker compose -f docker-compose.yml up
+ll
+mvn clean
+mvn spring-boot:run
+docker ps
+docker ps -a
+docker compose down
+docker volume prune -a
+docker compose -f docker-compose.yml up
+docker ps
+mvn spring-boot:run
+gst
+his
+gst
+git diff --cached --binary > commit_dyego.patch
+ll
+mv commit_dyego.patch ~/tests/BANTADS-20261S/
+gst
+git reset --hard HEAD
+gst
+cd ~/tests/BANTADS-20261S/
+ll
+cp commit_dyego.patch ~/github/BANTADS-20261S/
+cd -
+gst
+git apply --check ../commit_dyego.patch
+git apply ../commit_dyego.patch
+gst
+cd ..
+ll
+gst
+git apply commit_dyego.patch
+gst
+git rm commit_dyego.patch 
+gst
+git reset --hard HEAD
+git apply --check --index ~/tests/BANTADS-20261S/commit_dyego.patch
+gst
+git apply --index ~/tests/BANTADS-20261S/commit_dyego.patch
+gst
+git reset --hard HEAD
+ll
+cd api-gateway/
+ll
+code .
+pwd
+code .
+antigravity .
+ps -p $$ -o comm=
+cd ..
+antigravity .
+ps -p $$ -o comm=
+cd
+cd tests/
+bantads/
+ll
+code .
+git diff --cached --stat
+gst
+git diff --cached --stat
+git restore --staged .
+gst
+cd api-gateway/
+pwd
+gst
+cd ..
+cd api-gateway/
+> .gitignore
+nvim .gitignore 
+gst
+git diff --cached --binary > commit_matheus.patch
+ll
+cd ..
+cd BANTADS-20261S/
+ll
+gst
+git apply --index ~/github/BANTADS-20261S/api-gateway/commit_matheus.patch
+gst
+git reset --hard HEAD
+gst
+exit
+gst
+git reset --hard HEAD
+gst
+git reset --hard HEAD
+gst
+rm -rf dist
+gst
+mv commit_matheus.patch ~/tests/BANTADS-20261S/
+cd ~/tests/BANTADS-20261S/
+gst
+exit
+doas pacman -Syu
+nvim .config/foot/foot.ini 
+exit
+ll
+nvim .config/foot/foot.ini 
+exit
+exit
+nvim .config/foot/foot.ini 
+htop
+exity
+his
+exit
+exit
+nvim .config/foot/foot.ini 
+ll
+frf
+ff
+e
+ee
+eea
+ea
+e
+eza
+doas pacman -Syu
+exit
+nvim .config/foot/foot.ini 
+sudo nvim
+exit
+exit
+doas pacman -Syu
+echo $KITTY_WINDOW_ID 
+echo $TERM
+echo $KITTY_PID 
+echo $KITTY_PUBLIC_KEY 
+echo $KITTY_INSTALLATION_DIR/
+paru -Sua
+ps -p $$ -o comm=
+paru -Sssss antigravity
+paru -S --asexplicit antigravity-ide
+pacman -Ssss logrotate
+doas pacman -S --asexplicit logrotate
+exit
+ps -p $PPID -o comm=
+ps -p $PID -o comm=
+ps -p $PID
+ps
+ps -p $PID
+echo $PID
+env
+env| grep PI
+exit
+exit
+htop
+plasmashell
+reboot
+doas pacman -Syu
+exit
+cd Downloads/pkgbuilds/trae-bin/
+ll
+rm -rf pkg/ src/ trae-bin-*
+gst
+rm Trae-linux-x64.deb 
+gst
+ll
+nvim PKGBUILD 
+wget https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.30128/linux/Trae-linux-x64.deb
+sha256sum Trae-linux-x64.deb 
+nvim PKGBUILD 
+paru -Ssss trae-bin
+paru -Ssss trae
+makepkg -si
+cd
+cd github/BANTADS-20261S/
+cd ms-auth/
+gst
+git diff ../.vscode/settings.json
+git restore ../.vscode/settings.json 
+gst
+ll
+cat scripts/
+rm -rf scripts/
+ll
+gst
+git rm scripts 
+git rm -r scripts
+gst
+git commit -m "remove: scripts ScyllaDB"
+git push -v origin dev
+docker ps
+curl -X 'GET' 'http://localhost:8085/auth/accounts' -H 'accept: */*'
+curl -X 'GET' 'http://localhost:8085/auth/accounts' -H 'accept: */*'; echo
+reset
+curl -X 'GET' 'http://localhost:8085/auth/accounts' -H 'accept: */*'; echo
+curl -X 'GET' 'http://localhost:8085/auth/accounts' -H 'accept: */*' | jq
+ll
+gst
+git ../ms-conta/pom.xml
+gst
+git commit -m "remove: flyway dependency"
+gst
+git ../ms-conta/
+gst
+git add ../ms-conta/
+gst
+git commit -m "remove: flyway dependency"
+git push -v origin dev
+flatpak update
+mvn spring-boot:run
+cd
+gst
+exit
+doas pacman -Syu
+exit
+paru -Sua
+exit
+yay -Ssss codex
+yay -S --asexplicit codex-bin
+yay -Sccccc
+sudo rm -rf /var/cache/pacman/pkg/download-*
+yay -Sccccc
+du -sh ~/.cache/yay/
+du -sh ~/.config/yay
+exit
+doas pacman -Syu
+flatpak update
+ff
+paru -Sua
+exit
+doas pacman -Syu
+paru -Sua
+exit
+flatpak update
+paru -Sua
+exit
+docker pull rabbitmq:4.3.0-management-alpine
+doas pacman -S kclock 
+cd Videos/Udemy/ValdirCezar/RabbitMQ/
+ll
+cd producer-service/
+code .
+ll
+mvn install
+cd ..
+cd -
+code .
+mvn install
+cd ..
+rm -rf producer-service
+ll
+mv producer-service.zip producer-service-mvn.zip 
+cd producer-service/
+gradle run
+ll
+./gradle run
+doas pacman -Ssss gradle
+doas pacman -S --asexplicit --needed gradle{,-doc}
+gradle run
+gradle --scan
+code .
+gradle build
+gradle dependencies
+gradle dependencies --configuration compileClasspath
+gradle bootRun
+gradle clean
+cd tests/bantads/
+git push -v origin dev
+git pull -v origin dev
+exit
+gradle bootRun
+gradle clean
+gradle bootRun
+gradle clean
+gradle bootRun
+gradle clean
+gradle bootRun
+gradle build
+gradle dependencies
+gradle bootRun
+curl -s "http://localhost:50000/produces?message=Teste RabbitMQ"
+docker ps
+curl -s -u guest:guest http://localhost:15672/api/queues | head -c 3000
+his
+gradle bootRun
+cd Videos/Udemy/ValdirCezar/RabbitMQ/producer-service/
+ll
+lsof -i :50000
+kill -15 98701
+gradle bootRun
+exit
+cd Videos/Udemy/ValdirCezar/RabbitMQ/
+ll
+rmdir data/
+rmdir logs/
+rm -rf logs/
+sudo rm -rf logs/
+ll
+mkdir logs
+docker ps
+docker ps -a
+docker rm rabbitmq 
+docker volume ls
+docker compose -f docker-compose.yml up
+docker compose -f docker-compose.yml down
+ll
+cd producer-service/
+ll
+code .
+cd ..
+ll
+cd consumer-service/
+code .
+gradle build
+cd ..
+cd producer-service/
+codium-insiders .
+cd ..
+cd consumer-service/
+gradle build
+gradle --scan
+gradle build
+gradle clean
+gradle dependencies --configuration compileClasspath
+gradle build
+gradle clean
+gradle bootRun
+gradle clean
+gradle build
+curl -G --data-urlencode "mensagem=Teste padronizado 01" http://localhost:50000/producer
+curl "http://localhost:50000/producer?mensagem=Teste%20de%20produtor%20consumidor%20rabbitmq%2004"
+curl "http://localhost:50000/producer/?mensagem=Teste%20de%20produtor%20consumidor%20rabbitmq%2004"
+curl -H "Accept: application/json" -H "Content-Type: application/json" "http://localhost:50000/producer?mensagem=Teste%20de%20produtor%20consumidor%20rabbitmq%2004"
+curl "http://localhost:50000/produces?mensagem=Teste%20de%20produtor%20consumidor%20rabbitmq%2004"
+curl "http://localhost:50000/produces?message=Teste%20de%20produtor%20consumidor"
+curl "http://localhost:50000/produces?message=Teste%20de%20produtor%20consumidor%2001"; echo
+cd Videos/Udemy/ValdirCezar/RabbitMQ/
+ll
+cd commons/
+antigravity-ide .
+cp -r ~/.antigravity/extensions ~/.antigravity-ide/; mkdir -p "/home/albano/.config/Antigravity IDE/User"; cp ~/.config/Antigravity/User/settings.json ~/.config/Antigravity\ IDE/User/; cp ~/.config/Antigravity/User/keybindings.json ~/.config/Antigravity\ IDE/User/
+ps -p $$ -o comm=
+exit
+mvn install
+mvn clean package
+ps -p $$ -o comm=
+mvn clean package
+exit
+mvn clean
+mvn build
+mvn clean package -DskipTests
+exit
+rm -f libs/commons-0.0.1-SNAPSHOT-plain.jar
+ll
+gradle clean
+gradle clean package
+msn clean
+mvn clean
+mvn clean package
+ll
+tree
+mvn clean
+mvn install
+exit
+gradle clean
+gradle build
+gradle clean
+gradle install
+gradle clean
+gradle clean package
+gradle build
+gradle dependencies --configuration compileClasspath
+gradle dependencies
+gradle clean package
+gradle build
+gradle clean package
+gradle clean
+gradle build
+gradle clean package
+gradle clean
+gradle build
+gradle bootRun
+gradle clean
+gradle build
+gradle clean
+gradle build
+gradle bootRun
+exit
+gradle bootRun
+exit
+cd Videos/Udemy/ValdirCezar/RabbitMQ/consumer-service/
+gradle clean
+gradle build
+gradle bootRun
+docker exec -it <container-rabbit> rabbitmqctl purge_queue product.log
+docker exec -it rabbitmq rabbitmqctl purge_queue product.log
+gradle clean
+gradle bootRun
+cd
+xit
+cd github/BANTADS-20261S/
+ll
+cd ms-funcionario/
+antigravity-ide .
+ps -p $$ -o comm=
+gst
+git restore src/
+gst
+git reset --hard HEAD
+gst
+git reset --hard HEAD
+gst
+ps -p $$ -o comm=
+git restore src/
+gst
+cd ..
+gst
+git add ms-funcionario/src/main/java/br/dac/bantads/ms_funcionario/repository/FuncionarioRepository.java 
+gst
+cd ms-funcionario/
+l
+cd src/main/java/br/dac/bantads/ms_funcionario/
+ll
+rm repositorie/
+rm -rf repositorie/
+gst
+ps -p $$ -o comm=
+gst
+cd ..
+ll
+cd ~/github/BANTADS-20261S/
+ll
+cd bantads-ui/
+ll
+cd src
+ll
+cd ..
+npm install
+gst
+ng serve --port 15000
+exit
+cd github/BANTADS-20261S/
+gst
+git diff --cached --stat
+git diff --staged --stat
+antigravity-ide .
+ps -p $$ -o comm=
+gst
+cd ms-funcionario/
+gst
+git restore src/main/java/br/dac/bantads/ms_funcionario/dto/FuncionarioRequestDTO.java 
+gst
+git diff --staged --sta
+git diff --staged --stat 
+gst
+git diff --cached --binary > commit_dyego.patch
+ll
+gst
+mv commit_dyego.patch ~/Desktop/DAC
+gst
+git reset --hard HEAD
+gst
+git apply --index ~/Desktop/DAC/commit_dyego.patch
+gst
+git diff --staged --stat
+git reset --hard HEAD
+cd ..
+gst
+git diff --staged --stat
+gst
+git diff --staged --stat
+git diff --cached --binary > commit_matheus.patch
+gst
+rm commit_matheus.patch 
+gst
+git restore --staged ms-conta/
+gst
+git restore --staged ms-cliente/src/main/java/br/dac/bantads/ms_cliente/application/service/
+gst
+git stash
+gst
+git diff --staged --stat
+git commit -m "refact: update Cliente Service e Controller"
+git push -v origin dev
+git stash apply
+gst
+git diff --cached --binary > commit_matheus.patch
+gst
+mv commit_matheus.patch ~/Desktop/DAC/
+ll
+gst
+doas pacman -Syu
+exit
+flatpak update
+doas pacman -Syu
+ff
+flatpak update
+ssh harmonia-server 
+ssh parajas
+ssh harmonia-server 
+ff
+exit
+ff
+inxi
+inxi -FG
+balooctl6 
+balooctl6 status
+balooctl6 monitor
+balooctl6 resume
+balooctl6 status
+flatpak update
+paru -Syyua
+flatpak update
+exit
+paru -Sua
+sudo nvim /etc/paru.conf
+doas nvim /etc/paru.conf
+exit
+doas nvim /etc/paru.conf
+paru -Sua
+ip -c a
+ssh harmonia-server 
+cd github/
+cd harmonia-portal/
+git pull -v origin dev
+cd ..
+rm -rf harmonia-portal/
+gcl git@github.com:HarmonIA-UFPR/harmonia-portal.git
+cd harmonia-portal/
+cd  docs/
+ll
+cd Logo_SVG/
+ll
+exit
+sudo pacman -Syu
+paru -Syyua
+cd Downloads/pkgbuilds/
+cd trae-bin/
+ll
+rm -rf pkg/ src/ trae-bin-*
+ll
+rm Trae-linux-x64.deb 
+nvimm PKGBUILD 
+nvim PKGBUILD 
+his
+nvim PKGBUILD 
+wget https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.33256/linux/Trae-linux-x64.deb
+sha256sum Trae-linux-x64.deb 
+nvim PKGBUILD 
+makepkg -si
+nc
+echo just testing! | nc termbin.com 9999
+echo "just testing!" | nc termbin.com 9999
+curl https://termbin.com/test
+ls -l | nc termbin.com 9999
+ll
+rm -rf pkg/ src/ trae-bin-*
+ll
+em Trae-linux-x64.deb 
+rm Trae-linux-x64.deb 
+gst
+exit
+ff
+flatpak update
+exit
+yay -Syyua
+paru -Syyua
+paru -R libsoup
+paru -R libsoup rclone-manager 
+paru -S --asexplicit rclone-manager 
+paru -Syyua
+doas pacman -D --asdeps libsoup
+paru -Syyua
+sudo pacman -Qdtq | sudo pacman -Rns -
+doas mkinicpio -P
+doas mkinitcpio -P
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+sudo pacman -Qdtq | sudo pacman -Rns -
+exit
+doas pacman -Syu
+pacman -Qe
+paru -Sua
+yay -Sua
+ps -p $$ -o comm=
+exit
+doas pacman -Syu
+flatpak update 
+paru -Sua
+exit
+doas pacman -R linux-cachyos{,-headers}
+doas pacman -Syu
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+paru -Sua
+paru -Syyua
+flatpak update
+exit
+exit
+cd github/
+gcl git@github.com:J0a00liveira/dev-livros.git
+am 
+flatpak update 
+cd github/
+ll
+cp -r BANTADS-20261S/
+cp -r BANTADS-20261S/ BANTADS-20261S-CC
+cd BANTADS-20261S-CC/
+ll
+gst
+git restore --staged .
+gst
+git reset --hard HEAD
+gst
+cd ..
+rm -rf BANTADS-20261S-CC/
+cd BANTADS-20261S/
+ll
+gst
+cd ..
+rm -rf BANTADS-20261S/
+gcl git@github.com:allbano/BANTADS-20261S.git
+cd BANTADS-20261S/
+git pull -v origin dev
+paru -Ssss claude
+yay -S --asexplicit claude-code
+yay -S --asexplicit aur/claude-code
+claude --help
+claude
+cd ..
+gcl git@github.com:allbano/BANTADS-20261S.git BANTADS-CC
+ll
+cd BANTADS-CC
+ll
+bantads-ui/
+gst
+ll
+cd ..
+ll
+rm -rf bantads-ui/
+ll
+gst
+rm -rf .git
+ll
+claude
+code .
+cd ..
+rm -rf BANTADS-CC/
+cp -r BANTADS-20261S/ BANTADS-20261S-CC
+vm BANTADS-20261S-CC/ BANTADS-CC
+mv BANTADS-20261S-CC/ BANTADS-CC
+ll
+cd BANTADS-CC/
+code .
+claude
+claude --resume
+gst
+git diff --stat
+gst
+git restore --staged .
+gst
+doas pacman -Syu
+ll
+gst
+cd ..
+cd BANTADS-CC/
+gst
+paru -Syu
+cd ..
+cd BANTADS-20261S/
+git pull -v --rebase origin dev
+git apply --index ../BANTADS-CC/commit_allbano.patch
+gst
+git diff --stat 
+git diff --staged --stat 
+git commit -m "refact: update docker-compose-bantads and nginx configs"
+git push -v origin dev
+git merge dev
+git push -v origin main
+glol -15
+git pull -v --rebase origin dev
+glol -15
+exit
+cd Downloads/pkgbuilds/trae-bin/
+ll
+wget https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.38456/linux/Trae-linux-x64.deb
+sha256sum Trae-linux-x64.deb 
+nvim PKGBUILD 
+makepkg -si
+doas pacman -Syu
+paru -Ssss mendeley
+cd github/BANTADS-20261S/
+git pull -v --rebase origin dev
+git pull -v --rebase origin main
+gst
+git pull -v --rebase origin main
+glol -15
+exit
+flatpak update
+doas pacman -Syu
+paru -Sua
+which python
+mise unuse -g --no-prune  python
+mise unuse --no-prune  python
+mise ls
+yay -Sua
+doas pacman -Ssss distu
+doas pacman -S --asexplicit --asdeps python-distutils-extra cython python-numpy python-pandas python-wheel 
+doas pacman -S --asexplicit python-distutils-extra cython python-numpy python-pandas python-wheel 
+exit
+mise ls
+which python
+cd github
+mise ls
+which python
+paru -Sua
+cd ~/.cache/paru/clone/mlpack
+grep -nE 'CMAKE_INSTALL_PREFIX|DESTDIR|cmake --install|make.*install|package\(\)' PKGBUILD
+nvim PKGBUILD 
+paru -Sua
+paru -Syyua
+PYINSTALL="src/mlpack-4.8.0/src/mlpack/bindings/python/PythonInstall.cmake"
+test -f "$PYINSTALL" && echo "Arquivo encontrado" || echo "Arquivo não encontrado"
+sed -i   's/-m pip install /-m pip install --ignore-installed /g'   "$PYINSTALL"
+grep -n -- '--ignore-installed' "$PYINSTALL"
+sed -i   's/-m pip install /-m pip install --ignore-installed /g'   "$PYINSTALL"
+grep -n -- '--ignore-installed' "$PYINSTALL"
+echo $PYINSTALL 
+rm -rf pkg/
+makepkg -Rsi
+ll
+rm -rf pkg/ src/
+ll
+cat PKGBUILD 
+nvim PKGBUILD 
+cat PKGBUILD 
+rm -rf src pkg
+makepkg -si
+python -c 'import mlpack; print(mlpack.__version__); print(mlpack.__file__)'
+nvim PKGBUILD 
+makepkg -si
+gst
+cd ..
+rm -rf mlpack/
+paru -Sua
+doas pacman -Syu
+paru -Syu
+doas pacman -Syu
+paru -Sua
+cd github/BANTADS-20261S/
+git pull -v origin main 
+git pull -v origin dev
+gst
+cd ..
+rm -rf BANTADS-20261S/
+gcl git@github.com:allbano/BANTADS-20261S.git
+cd BANTADS-20261S/
+git pull -v origin dev
+code .
+ll
+gst
+git commit -m "refact: update mongo version"
+git push -v origin dev
+paru -Sccccc
+doas rm -rf /var/cache/pacman/pkg/download-*
+paru -Sccccc
+paru -Sua
+cd Desktop/DAC/GMAIL_Key/
+nvim gmail_keys
+gst
+git commit -m "feat: add ms_notificacao microservice"
+git push -v origin dev
+cd github/BANTADS-20261S/
+gst
+cd ..
+gcl git@github.com:razeranthom/test_dac.git
+cd test_dac/
+pwd
+cd ..
+cd BANTADS-20261S/
+gst
+git commit -m "refact: add two code axes implemented / migrated to topic exchange / CQRS"
+git push -v origin dev
+ll
+bat --pager cat docker-compose-bantads.yaml 
+docker compose -f docker-compose-bantads.yaml down -v
+docker compose -f docker-compose-bantads.yaml up --build bantads-ms-conta
+claude /config
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+docker ps
+cd github/BANTADS-20261S/
+gst
+paru -Syu
+mise ls
+mise unuse -g --no-prune  python
+mise ls
+cd 
+cd /
+cd -
+mise ls
+paru -Syu
+exitr
+his
+his
+doas pacman -Syu
+cd github/test_bantads/
+ll
+source /home/albano/github/test_bantads/dac-test/bin/activate
+pytest -s -v test_dac_bantads.py
+cd ../BANTADS-
+cd ../BANTADS-20261S/
+gst
+docker compose -f docker-compose-bantads.yaml up -d --force-recreate --build 
+docker ps
+source /home/albano/github/test_bantads/dac-test/bin/activate
+pytest -s -v test_dac_bantads.py
+exit
+deactivate 
+exit
+doas pacman -Ssss mongo
+doas pacman -S --asexplicit mongodb-compass 
+exit
+cd github/BANTADS-20261S/
+docker compose -f docker-compose-bantads.yaml down -v --rmi local
+docker builder prune -a
+docker compose -f docker-compose-bantads.yaml down -v --rmi local
+docker compose -f docker-compose-bantads.yaml up -d --force-recreate --build 
+docker compose -f docker-compose-bantads.yaml down -v --rmi local
+docker builder prune -a
+docker system prune
+docker compose -f docker-compose-bantads.yaml up -d --force-recreate --build 
+cd ..
+cd test_bantads/
+source /home/albano/github/test_bantads/dac-test/bin/activate
+ll
+pytest -s -v test_dac_bantads.py
+exit
+cd ../BANTADS-20261S/
+gst
+docker compose -f docker-compose-bantads.yaml down -v --rmi local
+docker builder prune -f
+docker images
+docker ps
+docker compose -f docker-compose-bantads.yaml up -d --force-recreate --build 
+docker ps
+docker compose -f docker-compose-bantads.yaml down -v --rmi local
+docker builder prune -a
+docker compose -f docker-compose-bantads.yaml up -d --force-recreate --build
+pytest -s -v test_dac_bantads.py
+doas pacman -Ssss anydesk
+deactivate 
+exit
+gst
+git diff --staged --stat 
+git commit -m "fix: fixes CQRS and screen administrador"
+git push -v origin dev
+sudo pacman -Syu
+tmux
+ll
+;;;
+his
+his
+cd github/BANTADS-20261S/
+code .
+gst
+git merge main
+gst
+git pull -v --rebase origin dev
+git config list
+git config list --local 
+git config set pull.rebase true
+git config list --local 
+git pull -v origin main
+git merge main
+git pull -v origin main
+git push -v origin dev
+git pull -v origin dev
+docker ps 
+docker compose -f docker-compose-bantads.yaml down -v --rmi local
+docker builder prune -f
+doas pacman -Syu
+paru -Sua
+docker ps
+docker compose -f docker-compose-bantads.yaml up -d --force-recreate --build
+cd ../test_bantads/
+ll
+source /home/albano/github/test_bantads/dac-test/bin/activate
+pytest -s -v test_dac_bantads.py
+docker compose -f docker-compose-bantads.yaml down -v --rmi local
+docker builder prune -f
+docker compose -f docker-compose-bantads.yaml up -d --force-recreate --build
+pytest -s -v test_dac_bantads.py
+exit
+gst
+git diff --staged --sta
+git diff --staged --stat
+git diff --staged
+git commit -m "refact: update and sanitized legacy source code."
+paru -Sua
+git push -v origin dev
+gst
+git merge dev
+git push -v origin main
+paru -R mlpack 
+paru -Sua
+ssh harmonia-server 
+bat .ssh/config 
+cd github/dotfiles/ssh
+gst
+git diff
+his
+gst
+git commit -m "refact: update ghostty config (command)"
+git push -v origin archlinux 
+cd
+bat .ssh/config 
+bat --pager cat .ssh/config 
+nvim ~/.ssh/config 
+ssh harmonia-server-IP216 
+systemctl status sshd.service 
+systemctl status ssh-access.target 
+systemctl status sshguard.service 
+systemctl status sshdgenkeys.service 
+docker context ls
+echo $DOCKER_HOST 
+cd github/dotfiles/
+rg "DOCKER_HOST"
+tmux
+tmux\
+his
+his
+cd github/dotfiles/
+rg "DOCKER_HOST"
+env | rg "DOCKER_HOST"
+rg --files-with-matches "DOCKER_HOST" | fzf --preview 'rg --page-index --color=always "DOCKER_HOST" {}'
+doas pacman -Syu
+rg --files-with-matches "DOCKER_HOST" | fzf --preview 'rg --color=always "DOCKER_HOST" {}'
+ssh harmonia-server-IP216 
+env| rg EDITOR
+sudo systemctl edit sshd-unix-local.socket 
+cd
+cd github/
+gcl git@github.com:HarmonIA-UFPR/harmonia-ferramentas.git
+cd harmonia-ferramentas/
+git branch
+git branch -a
+git branch -h
+git branch -l
+git branch -al
+git switch 2-criar-pasta-de-documentação-docs 
+git fetch -v origin 2-criar-pasta-de-documentação-docs:2-criar-pasta-de-documentação-docs 
+git pull -v origin 2-criar-pasta-de-documentação-docs:2-criar-pasta-de-documentação-docs 
+ll
+git checkout main
+git branch --verbose --all
+git branch -va
+git merge 2-criar-pasta-de-documentação-docs 
+cd ..
+rm -rf harmonia-ferramentas/
+gcl git@github.com:HarmonIA-UFPR/harmonia-ferramentas.git
+cd harmonia-
+cd harmonia-ferramentas/
+git pull -v origin main 
+git pull -v origin 2-criar-pasta-de-documentação-docs 
+git switch 2-criar-pasta-de-documentação-docs 
+git switch main
+git branch -r
+git branch -rv
+git branch -v
+git branch -D 2-criar-pasta-de-documentação-docs 
+gst
+git fetch 
+git branch 
+git push -v origin --delete 2-criar-pasta-de-documentação-docs
+wget https://www.cl72.org/110dataAlgo/Algorithms%20%20%20Data%20Structures%20=%20Programs%20[Wirth%201976-02].pdf
+ll
+exit
+his
+his
+his
+doas pacman -Syu
+doas pacman -R falkon kde-network-meta 
+tmux ls
+tmux --help
+man tmux
+tmux --help
+flatpak update
+his
+ll
+cd Videos/Udemy/DevOpsGo/
+ll
+cd Examples/
+ll
+code .
+paru -Syu
+his
+doas pacman -Syu
+paru -Syu
+ll
+cd .config/foot/
+ll
+exit
+ll
+exit
+mise ls
+mise install go@1.26.4
+mise use -g go@1.26.4
+mise use -g golangci-lint-langserver@0.0.12
+mise use -g golangci-lint@2.12.2
+echo -e "${PATH//:/\\n}"
+mise ls
+which go
+mise ls
+cd ..
+cd 
+echo -e "${PATH//:/\\n}"
+which go
+which mise
+cd .config/
+ll
+ll f*
+ll -d f*
+mv foot/ ~/github/dotfiles/
+ll -d f*
+ln -sf /home/albano/github/dotfiles/foot /home/albano/.config/
+exit
+cd .config/
+ll -d f*
+cd $DOTFILES
+gst
+git diff alacritty/
+git restore alacritty/
+gst
+git commit -m "feat: adds foot software configuration to dotfiles."
+git push -v origin archlinux 
+cd Videos/Udemy/DevOpsGo/Examples/secao1/
+l
+code .
+ll
+go run main.go 10
+go run main.go adc
+go run main.go 
+cd Videos/
+ll
+cd Youtube/
+ll
+yt-dlp -f 'bv*+ba' https://www.youtube.com/watch?v=KDXX7m3iBzc
+mise ls-remote yt-dlp
+mise use -g yt-dlp@2026.06.09
+ll
+cd EduardoMendes/
+cd ..
+yt-dlp -f 'bv*+ba' https://www.youtube.com/watch?v=KDXX7m3iBzc
+ll
+vlc 'SAMBA DA UTOPIA (Jonathan Silva) [KDXX7m3iBzc].webm' 
+ffmpeg --version
+ffmpeg --help
+man ffmpeg
+ffmpeg -help
+ffmpeg -version
+ffmpeg -v
+ffmpeg -version
+which ggmpeg
+which ffmpeg
+du -sh $(which ffmpeg)
+du -h $(which ffmpeg)
+du -sh $(which ffmpeg)
+ffmpeg -i 'SAMBA DA UTOPIA (Jonathan Silva) [KDXX7m3iBzc].webm' 'SAMBA DA UTOPIA (Jonathan Silva) [KDXX7m3iBzc].mkv' 
+ll
+vlc 'SAMBA DA UTOPIA (Jonathan Silva) [KDXX7m3iBzc].mkv' 
+doas pacman -Ssss notion
+doas pacman -S --asexplicit notion
+notion
+doas pacman -R notion
+paru -Ssss notion
+go
+ls -l
+ll
+l
+exit
+doas pacman -Syu
+flatpak update
+ll
+gst
+ll
+l
+alias l
+alias ll
+cd github/dotfiles/
+ll
+ssh harmonia-server-IP216 
+doas pacman -Sty
+doas pacman -Syu
+cat ~/.config/alacritty/alacritty.toml
+cat ~/.config/kitty/kitty.conf 
+bat --pager cat ~/.config/kitty/kitty.conf 
+bat --pager cat ~/.config/foot/foot.ini 
+nvim ~/.config/ghostty/config 
+exit
+;;
+ll
+which in
+doas pacman -Ssss in
+doas pacman -Ssss '^in'
+ff
+mise ls
+which go
+mise self-update
+cd Videos/Youtube/
+ll
+mkdir LucasBadico
+cd LucasBadico/
+ll
+mkdir GoBasic
+cd GoBasic/
+yt-dlp -f 'bv*+ba' https://www.youtube.com/live/RFdCCBPaRRw
+ll
+rm 'GOLANG Básico - AULA 01：  Hello go world [RFdCCBPaRRw].f313.webm.part' 
+ll
+paru -Sua
+paru -R tra-bin
+yt-dlp --cookies-from-browser chrome -f "bv*+ba*" --embed-metadata --embed-thumbnail --write-description --all-subs --embed-subs https://www.youtube.com/playlist?list=PL-tb3yiDrcKrG4ke9kSy_7m3lxRYATvX2
+paru -R trae-bin
+paru -R trae-bin-debug 
+paru -Sssss '^trae'
+paru -Sssss trae
+yay -S --asexplicit trae
+paru -Sssss trae
+paru -R trae
+cd Downloads/pkgbuilds/
+ll
+yay -G trae
+cd trae
+ll
+makepkg -si
+ll
+rm -rf pkg/ src/ trae-2.3.44884-1-x86_64.pkg.tar.zst
+gst
+ll
+cd /home/albano/Downloads/pkgbuilds/trae
+rm -f Trae-linux-x64-*.tar.gz Trae-linux-arm64-*.tar.gz
+makepkg -g
+nvim PKGBUILD 
+makepkg --printsrcinfo > .SRCINFO
+ll
+makepkg -si
+exit
+ll
+gst
+ll
+rm -rf pkg/ src/ 
+gst
+rm Trae-linux-* trae-2.3.49027-1-x86_64.pkg.tar.zst 
+gst
+ll
+exit
+cd github/dotfiles/
+gstg
+gst
+git restore ghostty/config 
+git pull -v --rebase origin archlinux 
+exit
+pacman -Qs trae
+gst
+cd Downloads/pkgbuilds/trae
+ll
+flatpak update
+makepkg -g
+exit
+rm -rf src/
+gst
+rm Trae-linux-x64-2.3.49027-1.tar.gz.part 
+gst
+nvim PKGBUILD 
+updpkgsums
+ll
+rm Trae-linux-x64-2.3.50210-1.tar.gz.part 
+axel https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.50210/linux/Trae-linux-x64.tar.gz
+ll
+updpkgsums
+gst
+makepkg -si
+ll
+rm Trae-linux-*
+rm -rf pkg/ src/
+ll
+rm trae-2.3.50210-1-x86_64.pkg.tar.zst 
+gst
+gst
+claude
+claude --help
+claude
+exit
+codex
+codex --help
+codex update 
+pacman -Qs codex
+pacman -Sss codex
+pacman -Sss claude
+sudo pacman -S --asexplicit claude-desktop-bin 
+pacman -S ydotool
+pacman -Sss ydotool
+sudo pacman -S --asexplicit ydotool
+sudo usermod -aG input $USER
+sudo usermod -aG input albano
+cat /etc/group
+cat /etc/group |rg input
+his
+ip -c a
+sudo pacman -Syu
+sudo pacman -S --asexplicit wireguard-tools 
+wg show
+sudo wg show
+claude
+sudo pacman -Qs claude
+sudo pacman -R claude-desktop-bin 
+flatpak update
+cd github/
+cd dotfiles/
+git pull -v origin archlinux 
+cd ..
+cd harmonia-portal/
+git pull -v origin dev
+cd ..
+ll
+cd harmonia-ferramentas/
+git pull -v origin main
+git fetch
+git pull -v origin dev
+which go
+mise self-update
+mise up
+mise ls
+mise uninstall node@20.19.6
+mise ls
+mise uninstall node@24.11.1
+mise use -g node@24.14.1
+cd ..
+cd -
+mise ls
+ng
+npm i -g npm
+npm i -g yarn
+npm i -g pnpm
+npm i -g @angular/cli
+npm config set allow-scripts=yarn --location=user
+mise ls
+sudo pacman -Syu
+mise use -g node@24.14.0
+mise use -g node@24.14.1
+mise uninstall node@24.13.0
+mise uninstall node@24.14.0
+mise ls
+mise uninstall python@3.11.15
+mise ls
+lvim
+codex
+sudo pacman -Ssss codex
+codex .
+ll
+cat lista-extensoes.txt 
+cd Videos/Udemy/DevOpsGo/
+ll
+cd Examples/
+ll
+cd secao1/
+codium-insiders .
+cd ..
+mkdir -p secao2
+cd secao2
+> main.go
+cd ..
+ll
+tree
+cd secao2
+ll
+codium-insiders .
+sudo pacman -Syu
+cd Videos/Udemy/DevOpsGo/Examples/secao2
+ll
+cat main.go > ponteiros.go
+ll
+go run ponteiros.go 
+exit
+go run pointer-function.go 
+sudo pacman -Syu
+flatpak update
+cd Videos/Udemy/
+ll
+mkdir -p Go
+mv DevOpsGo/
+mv DevOpsGo/ Go/
+ll
+cd Go/
+ll
+lsblk -f
+lsk
+lsku
+ff
+ping -c a
+ping -c2 200.17.199.216
+ping -c2 200.17.199.197
+ping -c2 200.17.199.198
+ll
+pwd
+ll
+cd DevOpsGo/
+ll
+cd Examples/
+ll
+cd secao2
+codium-insiders .
+ll
+go run pointer-struct.go 
+cd ..
+ll
+cd ..
+ll
+mv main.go Examples/
+cd Examples/
+ll
+mkdir -p secao3
+mv main.go secao3
+cd secao3
+ll
+codium-insiders .
+go mod init httpserver
+codium-insiders .
+cd /tmp/
+ls -l
+tail --help
+tail -n 20 qipc_systemsem_trAJIDZiPMrANydlwsXkwmNyXzwpEZvBcc1719bc695ca1b5f68edcd6c2dac4a3947ddac39 
+cd
+sudo pacman -Syu
+ssh harmonia-server-IP216 
+tmux
+echo GOPATH
+echo $GOPATH
+cd github/dotfiles/
+git pull -v origin archlinux 
+git config list --global 
+yay -Syu
+pacman -Qi shaka-packager-bin 
+pacman -R claude-code 
+sudo pacman -R claude-code 
+sudo pacman -R shaka-packager-bin 
+ps -p $$ -o comm=
+cd
+curl -fsSL https://antigravity.google/cli/install.sh | bash
+agy
+cd github/dotfiles/
+gst
+git diff
+echo -e "${PATH//:/\\n}"
+git diff
+gst
+git restore bash/.bashrc 
+git diff bash
+git restore bash/bash_profile 
+gst
+git diff
+git restore zsh/
+yay -Sua
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set -o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set +o posix
+set +o privileged
+set +o verbose
+set +o xtrace
+yay -R devin-desktop 
+yay -Ssss anbtigravity-ide
+ps -p $$ -o comm=
+yay -Ssss antigravity-ide
+ps -p $$ -o comm=
+agy
+ll
+git fetch --all --tags 
+git tag -h
+git tag -l
+sudo pacman -Syu
+yay -Sua
+sudo pacman -Syu
+cd github/dotfiles/
+ll
+ps -p $$ -o comm=
+type -p users
+gst
+git dff bash/
+git diff bash/
+git diff rclone-systemd-sync/
+git restore  rclone-systemd-sync/
+gst
+python --version
+which python
+mise ls
+mise up
+mise self-update
+mise use -g python@3.14.6
+mise uninstall python@3.14.5
+mise ls
+bun
+ll
+gst
+git add bash/
+gst
+git diff scripts/ns
+git add scripts/ns
+gst
+git diff scripts/sp
+git add scripts/sp
+gst
+git diff scripts/templates
+git add scripts/templates
+gst
+git diff scripts/users 
+git add scripts/users 
+gst
+git diff tmux/
+git add tmux/
+gst
+git diff vim/
+git add vim/.vimrc 
+gst
+git commit -m "fix: fixes writing erros and updates"
+git push -v origin archlinux 
+ll
+gst
+bat bootstrap.sh 
+mv bootstrap.sh dotfiles
+gst
+ll
+git commit -m "feat: adds installation script."
+git push -v origin archlinux 
+nvim ~/.bashrc
+ps -p $$ -o comm=
+gst
+git commit -m "refact: adds the GOPATH environment variable."
+git push
+env
+env| rg GOPATH
+which go
+type -a mise
+ll
+cd Courses/
+ll
+mkdir Go
+cd Go/
+ll
+cd ..
+ll
+cd Go/
+ll
+mkdir -p LucasBadico
+cd LucasBadico/
+mkdir Basic
+cd Basic/
+mkdir -p 02_soma
+cd 02_soma/
+> main.go
+antigravity-ide .
+ps -p $$ -o comm=
+which mise
+ps -p $$ -o comm=
+go run main.go
+go --help
+nvim ~/.bashrc
+cd $DOTBASH
+ll
+gst
+git commit -m "fix: fixes mise autocomplete initialization."
+git push -v
+git push -v origin archlinux 
+ssh harmonia-server-IP216 
+ll
+ff
+echo $GOPATH/
+cd go/
+ll
+cd 
+mise reshim
+which go
+go tool
+cat /usr/share/bash-completion/completions/go
+go
+go install github.com/posener/complete/gocomplete@latest
+go uninstall github.com/posener/complete/gocomplete@latest
+go cd go
+cd go
+ls -l
+cd bin/
+l
+which go
+mise ls-remote gocomplete
+which gocomplete
+go
+go gopath
+go env
+go env -w GOBIN="$GOPATH"
+go env -w GOBIN=$GOPATH
+go env -w GOBIN=$GOPATH/bin
+go env -w GOBIN="$GOPATH/bin"
+go env -w GOBIN="/home/albano/go/bin"
+echo $GOBIN
+ll $GOBIN
+cd
+nvim ~/.bashrc
+exit
+go env
+exit
+echo $GOPATH
+go env
+go env 
+go env --help
+go help env
+go env -u
+go env GOBIN
+go env GOPATH
+basename go
+basename $(go env GOBIN)
+cd go
+cd bin/
+l
+./goplay 
+cd ..
+which go
+which golangci-lint
+rm -rf bin/
+ll
+cd pkg/
+ls -l
+cd ..
+ll
+rm -rf pkg
+sudo rm -rf pkg/
+ll
+go env
+which go
+go env -w GOPATH=/home/albano/.local/share/mise/installs/go/1.26.4/
+go env -w GOPATH=/home/albano/.local/share/mise/installs/go/1.26.4
+go env GOPATH
+go env -w GOPATH=/home/albano/go
+go env -w GOPATH="/home/albano/go"
+go env GOPATH
+go env
+go env -u GOPATH
+go env GOPATH
+go env -w
+ll
+ln --help
+ln -sf $(go env GOBIN) bin
+ll
+which go
+echo -e "${PATH//:/\\n}"
+cd go
+ll
+unlink bin
+ll
+mv ~/.local/share/mise/installs/go/* /home/albano/go/ 2>/dev/null
+rm -rf ~/.local/share/mise/installs/go
+ln -s /home/albano/go/versoes-go ~/.local/share/mise/installs/go
+mise ls
+mise reshim
+mise ls
+which go
+ln -s /home/albano/go ~/.local/share/mise/installs/go
+cd ~/.local/share/mise/installs/go
+ll
+cd ~/.local/share/mise/installs
+ls -l
+unlink go
+ln -s /home/albano/go ~/.local/share/mise/installs/go
+mise ls
+which go
+readlink ~/.local/share/mise/installs/go
+ll
+cd go
+ll
+cd 1.26.4/bin/
+ll
+btop
+cd ~/.local/share/mise/installs
+ls -l
+unlink go
+ls -l
+mv /home/albano/go  ~/.local/share/mise/installs/ 2>/dev/null
+ll
+mise ls
+which go
+which gocomplete 
+which gofmt 
+go get gopl.io/ch1/helloworld
+go version
+cd /
+ll
+cat ssh-agent.env 
+sudo rm ssh-agent.env 
+ll
+lsblk 
+lsblk -f
+lsblk
+lsk
+cd /home/
+dust
+ls -l
+doas dust -L1
+dust --help
+doas dust -D
+doas dust -D .
+doas dust -d1 .
+doas dust -rd1 .
+cd albano/
+dust -rd2
+dust -rd1
+dust -rD
+ssh harmonia-server-IP216 
+ssh harmonia-server-IP197 
+sudo pacman -Syu
+yay -Suas
+yay -Sua
+flatpak update
+cd Downloads/pkgbuilds/trae
+ll
+yay -Sua
+paru -Sua
+flatpak update
+cd .local/share/icons/
+ll
+cd
+fd Obsidian
+fd obsidian
+fd -H obsidian
+cd .cursor/
+ll
+cd ..
+cd .local/share/icons/
+ll
+codex
+cd /home/albano/.icons/Obsidian
+ll
+cd ..
+ll
+sudo pacman -Syu
+tar --zstd -cf obsidian.tar.zst Obsidian/
+ll
+du -sh Obsidian/
+tar -tvf obsidian.tar.zst 
+ll
+cd
+yay -Sua
+mise self-update
+mise ls
+mise use -g go@latest
+mise ls
+mise use -g bun@latest
+mise ls
+mise use -g deno@latest
+mise ls
+mise uninstall deno@2.7
+mise ls
+mise uninstall bun@1.3.12
+mise ls
+kind --help
+mise use -g yt-dlp@latest
+mise ls
+mise uninstall yt-dlp@2026.06.09
+mise ls
+cd -
+cd 
+cd /
+ls -l
+cd -
+mise ls
+which go
+which deno
+which bun
+mise use -g node@24.18.0
+mise ls
+npm i -g npm
+npm i -g pnpm
+npm i -g yarn
+npm i -g @angular/cli
+ng version
+npm version
+node --version
+mise ls
+echo $PATH
+echo -e "${PATH//:/\\n}"
+echo -e "${PATH//:/\\n}" | nl
+echo $PATH | tr ':' '\n' | nl
+man tr
+nvim ~/.bashrc
+man tr
+his
+yay -Sua
+sudo pacman -Syu
+exity
+ssh harmonia-server-IP216 
+ssh harmonia-server-IP197 
+ssh harmonia-server-IP216 
+ssh harmonia-server-IP197
+flatpak update 
