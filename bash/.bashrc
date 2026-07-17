@@ -42,7 +42,7 @@ export JUPYTERLAB_DIR="$XDG_DATA_HOME/jupyter/lab"
 export DOCKER_HOST="unix:///var/run/docker.sock"
 export JAVA_HOME="/usr/lib/jvm/default"
 export PIPX_DEFAULT_PYTHON="/usr/bin/python"
-export GOPATH="$HOME/go"
+#export GOPATH="$HOME/go"
 
 # Dotfiles
 export DOTFILES="$HOME/github/dotfiles"
@@ -53,7 +53,7 @@ export DOTBASH="$DOTFILES/bash"
 # Usa a função path_append definida em .bash_functions
 path_append "$HOME/bin"
 path_append "$HOME/.local/bin"
-path_append "$GOPATH/bin"
+#path_append "$GOPATH/bin"
 path_append "$HOME/.cargo/bin"
 path_append "/usr/sbin"
 #path_append "/sbin"
