@@ -1,2 +1,9 @@
+# Forçar carregamento do locale do sistema no login
+if [ -r /etc/default/locale ]; then
+    set -a
+    . /etc/default/locale
+    set +a
+fi
+
 # Init bashrc
 [ -f "$HOME/.bashrc" ] &&  . "$HOME/.bashrc"
