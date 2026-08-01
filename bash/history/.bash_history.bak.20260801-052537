@@ -15892,3 +15892,1277 @@ ssh harmonia-server-IP197
 ssh harmonia-server-IP216 
 ssh harmonia-server-IP197
 flatpak update 
+pushHis 
+cd github/dotfiles/
+ll
+gst
+git diff
+gst
+git commit -m "refact: remove GOPATH environment."
+git push -v origin archlinux 
+which python
+pip install -U pip
+pip install -U uv
+pip install -U ruff
+pip install -U ty
+pip install pyrefly
+pip install -U pyrefly
+sudo pacman -Syu
+sudo pacman -S --asexplicit webkitgtk-6.0
+sudo pacman -S --asexplicit webkitgtk-6.0{,-docs}
+sudo pacman -S --asexplicit gst-plugins-bad
+yay -Sua
+cd
+cd Courses/Go/
+mkdir Teomewhy
+cd Teomewhy/
+pwd
+ll
+cd Courses/
+l
+cd Go/
+l
+cd ..
+mkdir SQL
+mkdir -p SQL/Teomewhy
+cd SQL/Teomewhy
+ll
+pwd
+ps -p $$ -o comm=
+ll
+mv archive data/raw
+mkdir -p data/raw
+mv archive data/raw
+ll
+cd data/raw/
+ll
+mv archive/* .
+ll
+rmdir archive/
+cd ..
+antigravity-ide .
+ps -p $$ -o comm=
+ll
+rm archive.zip 
+ll
+cd data/raw/
+ll
+cd ..
+ll
+mv importSQL.py raw/
+ll
+cd raw/
+l
+ll
+chmod +x importSQL.py 
+./importSQL.py 
+ll
+cd ..
+ll
+cd raw/
+ll
+./importSQL.py 
+cd ../..
+ll
+gcl git@github.com:allbano/teoSQL-V2-myway.git
+ll
+rm -rf teoSQL-V2-myway/
+ll
+gcl git@github.com:allbano/teoSQL-V2-myway.git
+cd teoSQL-V2-myway/
+antigravity-ide .
+ps -p $$ -o comm=
+cd ..
+ll
+cd ep01/
+ll
+cat 01_script.sql 
+ps -p $$ -o comm=
+sudo pacman -Syu
+cd github/harmonia-lumia/
+codex
+sudo pacman -Syu
+flatpak update
+cd Courses/Go/Teomewhy/
+ll
+gcl git@github.com:allbano/curso-go-ds-myway.git
+cd curso-go-ds-myway/
+ll
+antigravity-ide .
+ps -p $$ -o comm=
+cd 01_intro/
+LL
+ll
+go run hello.go 
+ll
+ps -p $$ -o comm=
+go build hello.go 
+ll
+./hello 
+rm hello
+ll
+gst
+ll
+la
+cd .
+ll
+cd ..
+ll
+cd 02_tipos/
+ll
+cd 01_numericos/
+l
+bat numeros.go 
+go run numeros.go 
+sudo pacman -Syu
+yay -Sua
+antigravity --help
+mise self-update
+mise up
+ssh harmonia-server-IP197 
+cd Videos/Youtube/
+mkdir -p DevRaiz/
+cd DevRaiz/
+yt-dlp --cookies-from-browser chrome -f "bv*+ba*" --embed-metadata --embed-thumbnail --write-description --all-subs --embed-subs https://youtube.com/playlist?list=PL_vezUGkr_e7mPpg2RjWDgRWT2Fpo86Yt&si=OmijCsrm0RvWFdTY
+ll
+yt-dlp -f "bv*+ba*" https://youtube.com/playlist?list=PL_vezUGkr_e7mPpg2RjWDgRWT2Fpo86Yt&si=OmijCsrm0RvWFdTY
+ll
+rm --rf *.webm
+rm -rf *.webm
+ll
+yt-dlp -f "bv*+ba" https://youtube.com/playlist?list=PL_vezUGkr_e7mPpg2RjWDgRWT2Fpo86Yt&si=OmijCsrm0RvWFdTY
+ssh harmonia-server-IP216 
+flatpak update
+sudo pacman -Syu
+flatpak update
+cd Courses/Go/LucasBadico/Basic/
+ll
+pwd
+mise self-update
+mise up
+ll
+cd 02_03_ref_params/
+ll
+go run main.go 
+cd ..
+cd 02_05_for_range/
+go run main.go 
+go help modelus
+go help modules
+go mod init main
+ll
+go run main.go 
+paru -Sya
+paru -Syu
+cd
+paru -Syyu
+bat /etc/doas.conf
+paru -Syu
+doas pacman -Syu
+paru -Syu
+paru -Sya
+paru -Syu
+sudo nvim /etc/paru.conf
+sudo pacman -Ssss opendoas
+sudo pacman -Ssss opendoas-sudo
+paru -Ssss opendoas-sudo
+paru -Ssss doas-sudo
+sudo pacman -R opendoas 
+sudo pacman -Ssss doas 
+sudo pacman -Ssss sudo
+sudo pacman -R opendoas 
+sudo pacman -S --asexplicit sudo-rs
+sudo-rs --help
+sudo --help
+sudo nvim /etc/paru.conf
+paru -Syu
+sudo-rs systemctl status
+sudo systemctl status
+man sudo-rs
+lvim
+sudo su -
+sudo-rs pacman -Sss qbittorrent
+sudo-rs pacman -S --asexplicit qbittorrent
+paru -Sua
+paru -Sssss pgadmin4 
+paru -R pgadmin4-server
+paru -Rsdd pgadmin4-server
+paru -S --asexplicit pgadmin4-server-bin
+sudo-rs pacman -Syu
+type -a python
+mise doctor
+flatpak update
+cd /home/albano/Courses/Go/LucasBadico/Basic
+ll
+cd 02_06_structs/
+go mod init main
+ll
+go run main.go 
+cd ..
+cd 02_07_errors/
+go mod init main
+go run main.go 
+cd ../02_08_calculadora/
+go mod init main
+ll
+go run main.go 
+cd
+cd github/
+agy
+go run main.go 
+sudo pacman -R trae 
+cd ..
+code .
+sudo-rs pacman -Syu
+yay -Syu
+yay -R pgadmin4-server-debug 
+yay -Syu
+cd 02_08_calculadora/
+go run main.go 
+cd
+cd github/harmonia-lumia/
+ll
+antigravity-ide .
+ps -p $$ -o comm=
+ssh harmonia-server-IP197 
+cd -
+gst
+rm .vscode/settings.json 
+cd ..
+ll
+git clone https://github.com/ggerganov/llama.cpp
+du -sh llama.cpp/
+cd llama.cpp/
+ssh harmonia-server-IP197 
+paru -Sua
+cd github/llama.cpp/
+ll
+mkdir build
+cd build/
+cmake ..
+htop
+btop
+yay -Ssss openblas
+cmake --build . --config Release
+ll
+cd bin/
+ll
+./llama-cli --help
+sudo pacman -S openblas
+sudo pacman -S --asexplicit openblas
+nproc 
+cd ../..
+du -si build
+du -sh build
+sudo pacman -S --asexplicit openblas
+ll
+cd ..
+cd build/bin/
+llama serve -hf DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF:Q4_K_M
+ll
+cd /home/albano/.cache/huggingface/hub/
+ll
+du -sh models--DavidAU--Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/
+du -sh models--Qwen--Qwen2.5-1.5B-Instruct/
+./llama serve -hf DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF:Q4_K_M
+ll
+cd /home/albano/.cache/huggingface/hub/
+ll
+cd -
+cd /home/albano/.cache/huggingface/hub/models--DavidAU--Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/
+ll
+tree
+cd -
+cd /home/albano/.cache/huggingface/hub/models--DavidAU--Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/snapshots/b73a29e861a1922ca7b508790c254c91158ec4bb/
+cd -
+./llama serve --model /home/albano/.cache/huggingface/hub/models--DavidAU--Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/snapshots/b73a29e861a1922ca7b508790c254c91158ec4bb/Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q4_K_M.gguf -ngl 999 -fa on --no-mmap -c 32768 --port 25000
+cd
+cd IA_Models/
+axel https://us.aws.cdn.hf.co/xet-bridge-us/6a5976e58e13b67a2fcde7a1/5459ec606f1363008fc2ae663066cf9e1db0b6fd16f85a3e44366d9b52b95ade?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M.gguf%3B+filename%3D%22Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M.gguf%22%3B&Expires=1784716983&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNmE1OTc2ZTU4ZTEzYjY3YTJmY2RlN2ExLzU0NTllYzYwNmYxMzYzMDA4ZmMyYWU2NjMwNjZjZjllMWRiMGI2ZmQxNmY4NWEzZTQ0MzY2ZDliNTJiOTVhZGVcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWF0dGFjaG1lbnQlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN1F3ZW4zLjYtMjdCLUZhYmxlLUZ1cy03MTEtVW5IZXJldGljLU5NLURBVS1ORU8tTUFYLU5FTy1NVFAtUTVfS19NLmdndWYlM0IrZmlsZW5hbWUlM0QlMjJRd2VuMy42LTI3Qi1GYWJsZS1GdXMtNzExLVVuSGVyZXRpYy1OTS1EQVUtTkVPLU1BWC1ORU8tTVRQLVE1X0tfTS5nZ3VmJTIyJTNCIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJFcG9jaFRpbWUiOjE3ODQ3MTY5ODN9fX1dfQ__&Signature=MEQCIE-3lYPrNIfDdlSehcTCa6Zq-14KHnf0ky6wGGkB8YAbAiBVP86YxybMrKYgTUmUsriGOOhuRtTDYiSKbxmEFZF3KA__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F
+ll
+axel https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/resolve/main/Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M.gguf?download=true
+ps -p $$ -o comm=
+aria2c https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/resolve/main/Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M.gguf?download=true
+ll
+mv 5459ec606f1363008fc2ae663066cf9e1db0b6fd16f85a3e44366d9b52b95ade Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M.gguf
+ll
+mv Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M.gguf Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M_0.gguf 
+~/github/llama.cpp/build/bin/llama serve --model /home/albano/IA_Models/Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M_0.gguf -ngl 999 -fa on --no-mmap -c 32768 --port 25000
+ps -p $$ -o comm=
+~/github/llama.cpp/build/bin/llama-cli --model /home/albano/IA_Models/Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M_0.gguf -ngl 999 -fa on --no-mmap -c 32768 --port 25000
+~/github/llama.cpp/build/bin/llama-cli --model /home/albano/IA_Models/Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M_0.gguf -ngl 999 -fa on --no-mmap -c 32768
+ll
+rm -rf models--sentence-transformers--LaBSE/
+ll
+rm -rf models--Qwen--Qwen2.5-1.5B-Instruct/
+rm -rf models--DavidAU--Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/
+ll
+cd 
+~/github/llama.cpp/build/bin/llama serve --model /home/albano/IA_Models/Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M_0.gguf -ngl 999 -fa on --no-mmap -c 32768 --port 25000
+mise ls
+kind --help
+flatpak update
+sudo pacman -Syu
+ninja --version
+mise ls-remote ninja
+rustup update
+yay -Sua
+sudo pacman -Syu
+sudo pacman -R uv
+type -a python 
+mise unuse --no-prune python
+cd /
+lsblk -f
+cd
+mise ls
+echo $PATH | tr ':' '\n'
+echo -e "${PATH//:/\\n}"
+echo -e "${PATH//:/\\n}" | nl
+yay -Sua
+ll
+sudo pacman -Syu
+ll
+cd $DOTFILES
+git pull -v origin archlinux 
+cd ~/.config/ghostty/
+ll
+nvim config
+ll
+yay -Syu
+yay -Syyu
+nvim ~/.config/ghostty/config 
+exit
+ll
+yay -Syyu
+nvim ~/.config/ghostty/config 
+ll
+systemctl status
+ll
+nvim ~/.config/ghostty/config 
+ll
+yay -Syyu
+systemctl --user status
+ll
+his
+sudo firewall-cmd --list-all
+su -
+ll
+cd github/llama.cpp/
+cd -
+cd github/llama.cpp/
+rm -rf build
+cmake -B build -DGGML_BLAS=ON -DGGML_BLAS_VENDOR=OpenBLAS
+cmake --build build --config Release
+cd build/bin/
+ll
+./llama serve --model /home/albano/.cache/huggingface/hub/models--DavidAU--Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/snapshots/b73a29e861a1922ca7b508790c254c91158ec4bb/Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q4_K_M.gguf -ngl 999 -fa on --no-mmap -c 32768 --port 25000
+mise self-update
+./llama serve --model /home/albano/IA_Models/Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q5_K_M.gguf  -ngl 999 -fa on --no-mmap -c 32768 --port 25000
+cd
+ssh harmonia-server-IP216 
+mise where go
+go --version
+go version
+go
+cd Courses/Go/
+ll
+mkdir GoLangBook
+cd GoLangBook/
+mkdir 01_Example
+cd 01_Example/
+ll
+mise self-update
+rustup update
+echo -e "${PATH//:/\\n}" | nl
+cargo install --list
+> main.go
+code .
+go run main.go 
+go run main.go 4
+go run main.go Hello World
+reset
+go run main.go Hello World
+ll
+mise ls
+zig 
+go
+sudo pacman -Syu
+sudo pacman -Ssss wireguard
+sudo pacman -Ssss '^wireguard'
+wg --version
+wg --help
+sudo-rs wg show
+sudo-rs ln -sf /usr/bin/sudo-rs /usr/bin/srs
+srs systemctl status
+systemctl --user status
+lsblk -f
+lsk
+srs pacman -Sssss browser
+srs pacman -Sssss microsoft
+cd tests/
+ll
+mkdir -p Golang
+cd Golang/
+mkdir 01_fmt_off
+cd 01_fmt_off/
+> main.go
+go mod init
+go mod init main
+ll
+code .
+srs pacman -Syu
+yay -Sua
+go run main.go 
+sudo pacman -Syu
+srs wg show
+find /usr/bin -name sudo
+find /usr/share/bash-completion/completions/su*
+find /usr/share/bash-completion/completions -name su*
+find /usr/share/bash-completion/completions -name sudo
+find /usr/share/bash-completion/completions-core/ -name sudo
+find /usr/share/bash-completion/completions-core/ -name su*
+srs cp /usr/share/bash-completion/completions-core/sudo-rs.bash /usr/share/bash-completion/completions-core/srs.bash
+srs nvim /usr/share/bash-completion/completions-core/srs.bash
+su -
+srs nvim /usr/share/bash-completion/completions-core/srs.bash
+sudo codium-insiders /usr/share/bash-completion/completions-core/srs.bash
+sudo zeditor /usr/share/bash-completion/completions-core/srs.bash
+cp  /usr/share/bash-completion/completions-core/srs.bash .
+ll
+codium-insiders srs.bash 
+mv srs.bash tests/
+cd tests/
+ll
+mkdir -p bash
+mv srs.bash bash/
+ll
+cd bash/
+codium-insiders .
+ll
+sudo rm /usr/share/bash-completion/completions-core/srs.bash
+sudo mv ./srs.bash /usr/share/bash-completion/completions-core/
+srs pacman -Syu
+pacinfo --help
+pacinfo sudo-rs
+pacinfo --help
+pacinfo sudo
+cd Courses/
+ll
+cd Go/
+l
+cd GoLangBook/
+ll
+cd 01_Example/
+ll
+code .
+cd ..
+code .
+ll
+cd 02_Example/
+go run main.go 
+go run main.go Meu Argumento
+go run main.go "$DOTFILES"
+cd ..
+cd tests/syscalls/
+go run main.go
+reset
+cat /proc/self/cmdline 
+cd tests/syscalls/
+go run main.go
+go run main.go Teste de "Usabilidade Remota"
+time go run main.go Teste de "Usabilidade Remota"
+time go run main.go Teste de Acessibilidade Remota
+go run main.go Teste de Acessibilidade Remota
+time go run main.go Teste de "Usabilidade Remota"
+go run main.go Teste de "Usabilidade Remota"
+go build -o echo main.go
+ll
+./echo "Quero uma tarde" linda contigo!
+ECHO="Quero uma tarde" linda contigo!
+ECHO="Quero uma tarde" linda contigo"
+ECHO="Quero uma tarde linda contigo"
+./echo $ECHO
+cd -
+cd ..
+ll
+cd tests/syscalls/
+./echo $ECHO
+./echo $DOTFILES/
+env
+./echo $PATH
+env
+./echo $_
+reset
+rm echo 
+ll
+go run main.go Teste de "Usabilidade Remota"
+time go run main.go Teste de "Usabilidade Remota"
+go run main.go
+go run main.go ~/.bash_history 
+go run main.go $HOME/.bash_history 
+reset
+type -p go
+go
+go get -u github.com/posener/complete/gocomplete
+go install github.com/posener/complete/gocomplete@latest
+ll
+which gocomplete 
+gocomplete --help
+gocomplete -install
+ll
+echo $DOTFILES/
+cd $DOTFILES
+gst
+git diff
+ll
+cat dotfiles 
+ll
+gst
+git diff bash/
+go version 
+nvim ~/.bashrc
+gocomplete go
+gocomplete --help
+gst
+go env 
+go env GOPATH
+go env GOBIN
+gst
+git restore bash/
+git restore zsh/
+gst
+cd
+srs pacman -Syu
+go build -o dup main.go 
+ll
+cat ~/.bash_history | ./dup 
+./dup < ~/.bash_history 
+./dup < ~/.bashrc
+go 
+go fmt main.go 
+exit
+curl -s https://raw.githubusercontent.com/Watchdog0x/goComplete/main/go-completion.sh
+curl -s https://raw.githubusercontent.com/Watchdog0x/goComplete/main/go-completion.sh | tee go.bash
+ll
+rm go.bash 
+ll
+curl -s https://raw.githubusercontent.com/Watchdog0x/goComplete/main/go-completion.sh | sudo tee /usr/share/bash-completion/completions/go.bash
+ll /usr/share/bash-completion/completions/go.bash
+ll /usr/share/bash-completion/completions
+mise ls
+go
+go run --help
+go version
+go tool 
+go fmt --help
+go help fmt
+ll
+srs pacman -Syu
+his
+yay -Sua
+his
+srs pacman -Syu
+yay -Sua
+yay -S antigravity
+yay -Sssss antigravity
+agy
+ll
+cd Courses/Go/GoLangBook/
+cd ..
+cd LucasBadico/
+l
+cd Basic/
+l
+cp -r 02_08_calculadora/  ../../tests/
+cd ../..
+ll
+cd tests/
+l
+cd 02_08_calculadora/
+ll
+antigravity-ide .
+ps -p $$ -o comm=
+mise self-update
+mise ls
+mise up
+mise ls
+which deno
+cd
+cd -
+which deno
+bun
+mise ls
+nvim --version
+srs pacman -Syu
+npm i 
+gst
+cd harmonia-ui/
+ll
+gst
+git restore --staged .
+gst
+git restore .gitignore 
+gst
+git restore --staged ../.vscode/
+gst
+cd ..
+ll
+cp harmonia-ui/.gitignore ./
+ll
+gst
+git rm .gitignore 
+git rm -f .gitignore 
+gst
+npm test 
+reset
+cd harmonia-ui/
+npm test
+npm i
+npm test
+his
+code .
+yay -Sua
+./calc 3+3
+./calc 3*3
+./calc 25.33*0.0004262
+srs pacman -Ssss tor
+yay -Sssss "browser tor"
+yay -Ssss tor
+srs pacman -S --asexplicit tor
+srs pacman -R ktorrent 
+yay -Ssss tor-browser
+srs pacman -S --asexplicit tor-browser
+srs pacman -S --needed --asexplicit tor-browser zenity
+yay -Sua
+yay -Syu
+srs pacman -Syu
+srs visudo
+cat /etc/sudoers
+srs cat /etc/sudoers
+srs visudo
+srs nvim /etc/sudoers
+sudo pacman -Syu
+/usr/bin/env python
+which python
+mise ls 
+mise use -g python@3.14.6
+which python
+/usr/bin/env python
+which python3
+cd 
+cd Videos/Udemy/
+l
+mkdir Python_para_DevOps
+cd Python
+cd Python_para_DevOps/
+ll
+pwd
+sudo systemctl status 
+timedatectl
+lsk
+type -p gopls
+type -p godot
+rm calc
+ll
+go test ./...
+go test -race --count=1 -v ./...
+ll
+cd ..
+ll
+cd Calc/
+ll
+go test -v ./...
+go test\ ./...
+go test ./...
+go clean -cache
+go clean -testcache
+go clean -cache -testcache
+go test ./...
+go build .
+ll
+rm calc 
+ll
+go build .
+ll
+go test ./...
+go test -race --count=1 -v ./...
+sudo pacman -Syu
+yay -Sua
+ssh ubuntu@infosfera.inf.br
+ssh albano@infosfera.inf.br
+ssh ubuntu@infosfera.inf.br
+ssh albano@infosfera.inf.br
+ll
+cd .ssh
+ll
+cat albano-server-parajas
+cat albano-server-parajas.pub 
+ssh harmonia-server-IP197
+ssh -i ~/.ssh/albano-server-parajas albano@infosfera.inf.br
+ssh albano@infosfera.inf.br
+ssh -i ~/.ssh/albano-server-parajas albano@infosfera.inf.br
+ssh albano@infosfera.inf.br
+ssh -i ~/.ssh/albano-server-parajas albano@infosfera.inf.br
+cd .ssh
+nvim config
+ssh infosfera-server 
+nvim config
+ssh infosfera-server 
+nvim config
+cd ~/Desktop/Infojus/
+ll
+cat albano_infosfera_inf_br.txt 
+ssh harmonia-server-IP197
+ssh parajas-server 
+ssh infosfera-server 
+ll
+nvim confi
+nvim config 
+ssh infosfera.inf.br 
+scp albano@infosfera.inf.br:/home/albano/backup_projetos/archives/site-content-20260728T025037Z.tar.zst .
+cd /run/media/albano/DYEGO/
+ll
+mkdir ssh
+cp -r ~/.ssh ./ssh/
+cd .ssh
+ll
+cd
+cd .ssh
+ll
+rm -rf agent/
+ll
+exit
+cd ssh
+ll
+cd ..
+ll
+cd .ssh/
+ll
+cd ..
+cp -r ~/.ssh ssh/
+cd ssh
+ll
+la
+cat .ssh/
+ll
+ll .ssh/
+rm -rf agent
+ll
+cd .ssh/
+ll
+rm -rf agent/
+ll
+exit
+scp -i ~/.ssh/albano-server-parajas albano@infosfera.inf.br:/home/albano/backup_projetos/archives/site-content-20260728T025037Z.tar.zst .
+srs pacman -Syu
+ssh infosfera.inf.br 
+docker ps
+docker ps -a
+docker builder prune -f
+srs pacman -Syu
+yay -Sua
+yay -Sssss antigravity
+ps -p $$ -o comm=
+mise self-update
+ps -p $$ -o comm=
+srs pacman -Ssss antigravity
+which agy
+which ag
+which ag-backup 
+which ag-tool 
+ag-tool --help
+ag-tool list-accounts
+yay -Sssss antigravity
+rustup update
+mise up
+ll
+mv Desktop/Infojus/
+mv ./site-content-20260728T025037Z.tar.zst  Desktop/Infojus/
+ll
+cd  Desktop/Infojus/
+ll
+cd
+cd github/harmonia-lumia/
+ll
+srs pacman -Syu
+codex .
+gst
+ssh infosfera.inf.br 
+cd $DOTFILES
+gst
+git restore ghostty/config
+srs pacman -Syu
+cd github/
+gcl https://github.com/ggerganov/llama.cpp
+sudo pacman -Ssss hermes
+yay -Ssss hermex
+yay -Ssss hermes
+ssh infosfera.inf.br 
+rm -rf llama.cpp/
+gcl git@github.com:ggml-org/llama.cpp.git
+flatpak update
+cd $DOTFILES
+git fsck -h
+git fsck
+cd github/llama.cpp/
+ll
+cmake -S . -B build-openblas -G Ninja -DCMAKE_BUILD_TYPE=Release -DGGML_NATIVE=ON -DGGML_BLAS=ON -DGGML_BLAS_VENDOR=OpenBLAS
+cmake --build build-openblas -j12 --target llama-cli llama-server llama-bench
+cd build-openblas/
+ll
+cd ..
+ll
+cd build-openblas/bin/
+ll
+mkdir -p /home/albano/ai-models
+axel --help
+axel -o /home/albano/ai-models https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q5_K_M.gguf?download=true
+axel -o /home/albano/ai-models https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q5_K_M.gguf
+reset
+hjis
+his
+axel -o /home/albano/ai-models https://us.aws.cdn.hf.co/xet-bridge-us/688b451a53e70a07b0669a7c/beca45caf0e79b680fc4de5279eaf116b609f42b31b1bd4245fe35aa0997d269?user_id=public&response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27Qwen3-Coder-30B-A3B-Instruct-Q5_K_M.gguf%3B+filename%3D%22Qwen3-Coder-30B-A3B-Instruct-Q5_K_M.gguf%22%3B&X-Xet-Cas-Uid=public&Expires=1785392645&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjg4YjQ1MWE1M2U3MGEwN2IwNjY5YTdjL2JlY2E0NWNhZjBlNzliNjgwZmM0ZGU1Mjc5ZWFmMTE2YjYwOWY0MmIzMWIxYmQ0MjQ1ZmUzNWFhMDk5N2QyNjlcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWF0dGFjaG1lbnQlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN1F3ZW4zLUNvZGVyLTMwQi1BM0ItSW5zdHJ1Y3QtUTVfS19NLmdndWYlM0IrZmlsZW5hbWUlM0QlMjJRd2VuMy1Db2Rlci0zMEItQTNCLUluc3RydWN0LVE1X0tfTS5nZ3VmJTIyJTNCJlgtWGV0LUNhcy1VaWQ9cHVibGljIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJFcG9jaFRpbWUiOjE3ODUzOTI2NDV9fX1dfQ__&Signature=MEYCIQCNORygOtRcW2jXRfJm7BI72zPG8cY3POX2hSZXVz4j6gIhAPwNZLn817%7EdAuBLjLTwggNffkAvndwLpIuATpkqWVe9&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F
+ll
+cd
+ll
+rm -rf IA_Models/
+mise ls
+which python
+pip install -U huggingface_hub[hf_transfer]
+pip install -U pip
+mise up
+mise self-update
+mise up
+export HF_HUB_ENABLE_HF_TRANSFER=1
+env HF
+env | rg HF_
+hf 
+cd ../..
+rm -rf build-openblas/
+cmake --build build-openblas -j12 --target llama-quantize llama-cli llama-server llama-bench
+cmake -S . -B build-openblas -G Ninja -DCMAKE_BUILD_TYPE=Release -DGGML_NATIVE=ON -DGGML_BLAS=ON -DGGML_BLAS_VENDOR=OpenBLAS
+cmake --build build-openblas -j12 --target llama-quantize llama-cli llama-server llama-bench
+hf download unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF --include "Qwen3-Coder-30B-A3B-Instruct-Q5_K_M.gguf" --local-dir ~/ai-models/
+cd build-openblas/bin/
+ll
+ll ~/ai-models/
+ll
+llama-server --model "$HOME/models/qwen3-coder-30b/Qwen3-Coder-30B-A3B-Instruct-Q5_K_M.gguf" --alias qwen3-coder-30b-q5 --host 127.0.0.1 --port 50000 --n-gpu-layers 0 --ctx-size 16384 --threads 6 --threads-batch 12 --parallel 1 --batch-size 1024 --ubatch-size 512 --jinja --flash-attn auto --temp 0.7 --top-p 0.8 --top-k 20 --min-p 0 --repeat-penalty 1.05 --load-mode mmap
+./llama-server --model "$HOME/models/qwen3-coder-30b/Qwen3-Coder-30B-A3B-Instruct-Q5_K_M.gguf" --alias qwen3-coder-30b-q5 --host 127.0.0.1 --port 50000 --n-gpu-layers 0 --ctx-size 16384 --threads 6 --threads-batch 12 --parallel 1 --batch-size 1024 --ubatch-size 512 --jinja --flash-attn auto --temp 0.7 --top-p 0.8 --top-k 20 --min-p 0 --repeat-penalty 1.05 --load-mode mmap
+./llama-server --model "$HOME/ai-models/qwen3-coder-30b/Qwen3-Coder-30B-A3B-Instruct-Q5_K_M.gguf" --alias qwen3-coder-30b-q5 --host 127.0.0.1 --port 50000 --n-gpu-layers 0 --ctx-size 16384 --threads 6 --threads-batch 12 --parallel 1 --batch-size 1024 --ubatch-size 512 --jinja --flash-attn auto --temp 0.7 --top-p 0.8 --top-k 20 --min-p 0 --repeat-penalty 1.05 --load-mode mmap
+ll ~/ai-models/
+cd ai-models/
+ll
+./llama-server --model "$HOME/ai-models/Qwen3-Coder-30B-A3B-Instruct-Q5_K_M.gguf" --alias qwen3-coder-30b-q5 --host 127.0.0.1 --port 50000 --n-gpu-layers 0 --ctx-size 16384 --threads 6 --threads-batch 12 --parallel 1 --batch-size 1024 --ubatch-size 512 --jinja --flash-attn auto --temp 0.7 --top-p 0.8 --top-k 20 --min-p 0 --repeat-penalty 1.05 --load-mode mmap
+ll
+llama-server   -hf unsloth/Qwen3.6-35B-A3B-GGUF:UD-Q5_K_M   --no-mmproj   --host 127.0.0.1   --port 8080   --n-gpu-layers 0   --ctx-size 16384   --threads 6   --threads-batch 12   --parallel 1   --batch-size 1024   --ubatch-size 512   --jinja   --flash-attn auto   --load-mode mmap
+mise ls-remote go
+mise ls
+mise uninstall go@1.26.4
+mise ls
+mise use -g golangci-lint@latest
+mise ls
+mise use -g golangci-lint-langserver@latest
+mise ls
+mise use -g king@latest
+mise use -g kind@latest
+mise ls
+mise uninstall kind@0.31.0
+mise ls
+exit
+mise ls
+cd .config/nvim/
+srs pacman -Syu
+yay -Sua
+nvim
+yay -Syu
+srs systemctl status
+./llama-server   -hf unsloth/Qwen3.6-35B-A3B-GGUF:UD-Q5_K_M   --no-mmproj   --host 127.0.0.1   --port 8080   --n-gpu-layers 0   --ctx-size 16384   --threads 6   --threads-batch 12   --parallel 1   --batch-size 1024   --ubatch-size 512   --jinja   --flash-attn auto   --load-mode mmap
+ll
+which go
+cd $(type -p go)
+type -p go
+baseline $(type -p go)
+basename $(type -p go)
+cd $(which go)
+env | rg GO
+env
+env | rg GO
+cd $GOBIN
+ls
+ll
+cd ..
+ll
+cd pkg/
+ll
+cd ..
+cd src
+ll
+cd ..
+ll
+cd lib/
+l
+cd ..
+ll
+cd test/
+l
+cd ..
+cd
+cd ~/.config/nvim
+ll
+gst
+git log -1
+git rev-parse HEAD
+git log -n 1
+git log -1 --shortstat 
+git log -1 --oneline 
+git log -1 --format="%H"
+git tag -a v5-latest $(git log -1 --format="%H") -m "Updates v5 latest"
+git tag
+gst
+git commit -m "feat: update AstroNvim v5 to v6"
+git push -v origin main 
+git tag -a v6 $(git log -1 --format="%H") -m "Updates v5 to v6"
+git tag
+git log --oneline --decorate
+tmux
+mise ls-remote zig
+mise up zig
+mise use -g zig@latest
+mise ls
+mise use -g zls@0.16.0
+mise ls
+bun
+mise ls-remote bun
+mise ls
+nvim
+cd
+cd -
+cd Courses/Go/GoLangBook/
+l
+cd tests/
+l
+cd syscalls/
+l
+cd ..
+ll
+cd ..
+ll
+cd ..
+ll
+cd LucasBadico/
+cd ..
+cd tests/
+l
+cd Calc/
+l
+nvim
+find /home/albano/.local/share/nvim/lazy/transparent.nvim -maxdepth 3 -type f -printf '%P\n'
+find /home/albano/.local/share/nvim/lazy/transparent.nvim -maxdepth 3 -type f -printf '%s\n'
+find /home/albano/.local/share/nvim/lazy/transparent.nvim -maxdepth 3 -type f -printf '%P\n'
+find /home/albano/.local/share/nvim/lazy/transparent.nvim -maxdepth 3 -type f -printf '%T\n'
+find /home/albano/.local/share/nvim/lazy/transparent.nvim -maxdepth 3 -type f -printf '%V\n'
+find /home/albano/.local/share/nvim/lazy/transparent.nvim -maxdepth 3 -type f -printf '%P\n'
+nvim
+gst
+git commit -m "feat: updates all plugins to the version most compatible with AstroNvim/v6 and Neovim 0.12.x"
+git push -v origin main 
+nvim
+nvim
+gst
+git commit -m "feat: adds catppuccin colorscheme."
+git push -v origin main 
+ll
+nvim
+codex .
+srs pacman -Syu
+srs chmod 755 /var/log/pcp/pmcd/
+flatpak update 
+wg genkey | tee dev_priv.key | wg pubkey > dev_pub.key
+ll
+rm dev_*
+srs wg show
+ip -c a
+srs firewall-cmd --list-all
+srs systemctl status wg-quick.target 
+cd /etc/wireguard/
+srs su -
+code resume --last
+codex resume --last
+cd .config/nvim
+codex resume --last
+cd
+ll
+mkdiur VPN
+mkdir VPN
+ll
+his
+his
+cd VPN/
+mkdir harmoniaIP197
+cd harmoniaIP197/
+ll
+ls -la
+ls -l
+cd ..
+ll
+cd ..
+ll
+cd -
+cd harmoniaIP197/
+wg genkey | tee dev_priv.key | wg pubkey > dev_pub.key
+ll
+cat dev_pub.key 
+ll
+cd
+sudo /etc/wireguard/wg0.conf
+cd VPN/harmoniaIP197/
+ll
+cat dev_priv.key 
+sudo firewall-cmd --list-all
+srs firewall-cmd --list-all
+sudo wg show
+ip link show type wireguard
+systemctl status systemd-networkd
+networkctl status wg0
+systemctl status wg-quick@wg0
+systemctl enable --now wg-quick@wg0
+systemctl status wg-quick@wg0
+srs firewall-cmd --list-all
+ll
+cat dev_priv.key 
+nvim wg-harmonia.conf
+sudo nvim /etc/wireguard/wg0.conf
+sudo firewall-cmd --permanent --zone=public --add-port=51820/udp
+sudo firewall-cmd --relaod
+sudo firewall-cmd --reload
+sudo firewall-cmd --list-all
+ll
+sudo nmcli connection import type wireguard file ./wg-harmonia.conf
+nmcli -f NAME,TYPE connection show
+sudo nmcli connection modify wg-harmonia connection.autoconnect no
+nmcli -f NAME,TYPE connection show
+sudo nmcli connection up wg-harmonia
+ip -c a
+ping -c2 10.10.0.2
+nmcli connection show
+nmcli connection show wg-harmonia 
+nmcli connection down wg-harmonia 
+ip -c a
+ssh harmonia-server-IP197 
+sudo pacman -Syu
+agy
+sudo pacman -Syu
+flatpak update
+cd github/dotfiles/
+mise self-update
+mise up
+echo $PATH
+echo -e "${PATH//:/\\n}"
+mise ls
+mise ls-remote python
+which python3
+which python
+codex .
+codex
+codex --resume
+cd
+lsblk -f
+agy
+agy resume --last
+sqlite3 ~/.gemini/antigravity-cli/conversation_summaries.db "SELECT conversation_id, preview, datetime(last_modified_time, 'localtime') FROM conversation_summaries ORDER BY last_modified_time DESC LIMIT 10;"
+ls -lt ~/.gemini/antigravity-cli/brain
+agy 
+agy -c 0e2764c3-2a04-4e2f-bfbf-e2125fa3c2bd
+ls -lt ~/.gemini/antigravity-cli/brain
+agy -c 92eb17ba-ef11-4486-b681-c655b0c013d8
+ls -lt ~/.gemini/antigravity-cli/brain
+srs pacman -Ssss opencode
+srs pacman -S --asexplicit opencode{-bin,desktop-bin}
+srs pacman -S --asexplicit opencode{-bin,-desktop-bin}
+cd $DOTFILES
+gst
+codex resume --last
+cd $DOTFILES
+gst
+git commit -m "feat: adds transparency-toggle to tmux and terminal (kitty, ghostty and alacritty) configurations."
+git push -v origin archlinux 
+tmux
+cd
+cd -
+srs pacman -Ssss warp
+yay -Ssss warp-terminal
+yay -S --asexplicit warp-terminal-bin
+yay -R warp-terminal-bin
+yay -Scccc
+sudo rm -rf /var/cache/pacman/pkg/download-*
+yay -Scccc
+yay -Syu
+mise unuse --no-prune python
+cd
+ll
+ll tmux/docs/
+yay -Syu
+opencode --port 44020
+ll
+ll tmux/docs/
+opencode --port 33680
+cd
+cd .vscode
+ll
+codex
+codex 
+gst
+type -p opencode
+opencode --port 34521
+codex
+opencode --port 55595
+exit
+code sdks/vscode
+mise ls
+rustup update
+cd github/dotfiles/
+codex
+srs systemctl status
+srs systemctl status --failed 
+srs systemctl reset-failed wg-quick@wg0.service 
+srs systemctl status --failed 
+srs systemctl status
+srs systemctl status wg-quick@wg0.service 
+ip -c a
+exit
+exit
+tmux
+ll
+tmux
+cd ..
+ll
+cd ..
+opencode
+pipx --version
+srs pacman -Sssss python-pip
+which pipx
+mise ls
+which python
+mise use -g python@3.14.6
+cd github
+cd ..
+which python
+which pipx
+pip install -U pip pipx poetry
+pip list
+pip list -lo
+pip list -l
+pip install -U uv
+which uiv
+which uv
+pip install -U graphifyy
+graphify opencode install
+opencode
+graphify install --platform opencode
+opencode 
+ll
+opoencode --help
+opencode --help
+cd
+cd Projetos/
+ll
+cd ..
+rmdir Projetos/
+ll
+mkdir -p Projects
+cd projects/
+ll
+mkdir -p tests/docker
+cd tests/docker/
+opencode .
+ll
+cat docker-compose.yml 
+nvim docker-compose.yml 
+ll
+mv docker-compose.yml dockercompose-postgresql18.yml
+ll
+docker compose -f dockercompose-postgresql18.yml up
+cat dockercompose-postgresql18.yml 
+docker ps
+docker images
+docker image prune
+docker images
+docker rmi maven:3.8.4-openjdk-17-slim 
+docker rmi node:20-alpine 
+docker images
+opencode .
+ll
+cd $DOTFILES
+ll
+docker compose -f dockercompose-postgresql18.yml down
+docker compose -f dockercompose-postgresql18.yml down -v
+codex resume --last
+cd $DOTFILES
+lsblk -f
+du -sh ~
+srs rm -rf /home/albano/.local/share/waydroid/
+du -sh ~
+lsblk -f
+dust -r
+dust -r ~
+lsblk -f
+cd 
+cd .cache/
+ll
+rm -rf aurutils/
+rm -rf huggingface/
+dust -r ~
+lsblk -f
+flatpak update
+kitten query_terminal --wait-for=2 font_family font_size background_opacity >'/tmp/kitty-v02.WXNWU9/before.out'
+kitten query_terminal --wait-for=2 font_family font_size background_opacity >'/tmp/kitty-v02.WXNWU9/after.out'
+kitten query_terminal --wait-for=2 font_family font_size background_opacity >'/tmp/kitty-v02.WXNWU9/restart.out'
+lsblk -f
+tmux
+ll
+cd .config/kitty/
+ll
+nvim kitty.conf 
+ll
+ff
+exit
+tmux
+docker ps
+docker ps -a
+codex resume --last
+ff
+cd $DOTFILES
+codex resume --last
+gst
+glol -5
+git commit -m "fix: fixes a bug in the transparency-toggle function for a Kitty and Alacritty terminals."
+git push -v origin archlinux 
+codex .
+codex resume --last
+codex resume --help
+cd ..
+ll
+cd parajas/
+opencode
+opencode --help
+opencode completion bash
+gst
+exit
+kitten query_terminal --wait-for 2 font_family font_size background_opacity > /tmp/dotfiles-kitty-font-v2.v6XHTw/before
+kitten query_terminal --wait-for 2 font_family font_size background_opacity > /tmp/dotfiles-kitty-font-v2.v6XHTw/after
+kitten query_terminal --wait-for 2 font_family font_size background_opacity > /tmp/dotfiles-kitty-font-v2.v6XHTw/restarted
+tmux
+ll
+exit
+tmux
+codex resume --all
+gst
+codex resume --all
+codex resume --last
+gst
+glol -5
+git commit -m "fix: fixes a bug in the fonts-toggle function for a Kitty, Alacritty and ghostty terminals."
+git push -v origin main
+git push -v origin archlinux 
+his
