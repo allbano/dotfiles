@@ -11,7 +11,7 @@ draw_bold_text_with_bright_colors = true
 decorations = "none"
 #dynamic_title = true
 # BEGIN dotfiles terminal-opacity
-opacity = 1.0
+opacity = 0.8
 # END dotfiles terminal-opacity
 startup_mode = "Maximized"
 padding = { x = 2, y = 2 }
@@ -37,7 +37,5 @@ multiplier = 3
 save_to_clipboard = false
 
 [terminal]
-shell = { program = "/usr/bin/bash", args = ["--login"] }
-
-#[terminal]
-#shell = { program = "/usr/bin/tmux", args = ["new-session"] }
+#shell = { program = "/usr/bin/bash", args = ["--login"] }
+shell = { program = "/usr/bin/tmux", args = ["new-session"] }
