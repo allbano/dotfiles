@@ -10,16 +10,20 @@ draw_bold_text_with_bright_colors = true
 [window]
 decorations = "none"
 #dynamic_title = true
-opacity = 0.8
+# BEGIN dotfiles terminal-opacity
+opacity = 1.0
+# END dotfiles terminal-opacity
 startup_mode = "Maximized"
 padding = { x = 2, y = 2 }
 dimensions = { columns = 100, lines = 40 }
 
+# BEGIN dotfiles terminal-font
 [font]
-size = 12.0
-normal = { family = "CaskaydiaCove Nerd Font", style = "Semilight" }
-bold = { family = "CaskaydiaCove Nerd Font", style = "Semibold" }
+size = 12
+normal = { family = "CaskaydiaCove Nerd Font", style = "Regular" }
+bold = { family = "CaskaydiaCove Nerd Font", style = "Bold" }
 italic = { family = "CaskaydiaCove Nerd Font", style = "Italic" }
+# END dotfiles terminal-font
 
 
 [mouse]

@@ -2,11 +2,30 @@
 
 set -Eeuo pipefail
 
+ensure_system_sbin_path() {
+    local system_sbin
+
+    for system_sbin in /usr/sbin /sbin; do
+        if [[ -d "$system_sbin" ]]; then
+            case ":${PATH:-}:" in
+                *":${system_sbin}:"*) ;;
+                *) PATH="${PATH:+${PATH}:}${system_sbin}"; export PATH ;;
+            esac
+            return 0
+        fi
+    done
+}
+
+ensure_system_sbin_path
+
 readonly TRANSPARENT_OPACITY="0.8"
 readonly OPAQUE_OPACITY="1.0"
 readonly GHOSTTY_SERVICE="app-com.mitchellh.ghostty.service"
-readonly GHOSTTY_STATE_DIR="${TERMINAL_TRANSPARENCY_STATE_DIR:-${HOME}/.local/state/dotfiles/terminal-transparency}"
+readonly TRANSPARENCY_STATE_DIR="${TERMINAL_TRANSPARENCY_STATE_DIR:-${XDG_STATE_HOME:-${HOME}/.local/state}/dotfiles/terminal-transparency}"
+readonly GHOSTTY_STATE_DIR="$TRANSPARENCY_STATE_DIR"
 readonly GHOSTTY_STATE_FILE="${GHOSTTY_STATE_DIR}/ghostty.conf"
+readonly KITTY_STATE_FILE="${TRANSPARENCY_STATE_DIR}/kitty.conf"
+readonly ALACRITTY_CONFIG_FILE="${TERMINAL_TRANSPARENCY_ALACRITTY_CONFIG:-${XDG_CONFIG_HOME:-${HOME}/.config}/alacritty/alacritty.toml}"
 
 RESULT=""
 ERROR_MESSAGE=""
@@ -16,6 +35,7 @@ CLIENT_PID=""
 KITTY_TARGET_SOCKET=""
 ALACRITTY_TARGET_SOCKET=""
 ALACRITTY_TARGET_WINDOW_ID=""
+ALACRITTY_BACKUP_FILE=""
 
 usage() {
     printf 'Usage: %s {toggle|status} [client-termname] [client-name] [client-pid]\n' "${0##*/}"
@@ -122,35 +142,99 @@ require_command() {
     fi
 }
 
+read_kitty_opacity() {
+    local opacity
+
+    if [[ ! -f "$KITTY_STATE_FILE" ]]; then
+        CURRENT_OPACITY="$TRANSPARENT_OPACITY"
+        return 0
+    fi
+
+    opacity=$(awk -F= '
+        /^[[:space:]]*opacity[[:space:]]*=/ {
+            value = $2
+            gsub(/[[:space:]]/, "", value)
+            last = value
+        }
+        END { if (last != "") print last }
+    ' "$KITTY_STATE_FILE")
+
+    if [[ "$opacity" != "$TRANSPARENT_OPACITY" && \
+          "$opacity" != "1" && "$opacity" != "$OPAQUE_OPACITY" ]]; then
+        fail "Kitty: estado inválido em $KITTY_STATE_FILE"
+        return 1
+    fi
+    CURRENT_OPACITY="$opacity"
+}
+
+write_kitty_opacity() {
+    local opacity="$1"
+    local temporary_file
+
+    mkdir -p -- "$TRANSPARENCY_STATE_DIR"
+    chmod 700 -- "$TRANSPARENCY_STATE_DIR"
+    temporary_file=$(mktemp "${KITTY_STATE_FILE}.tmp.XXXXXX")
+    chmod 600 -- "$temporary_file"
+    printf '# Gerado por toggle-terminal-transparency.\n' >"$temporary_file"
+    printf 'opacity=%s\n' "$opacity" >>"$temporary_file"
+    mv -f -- "$temporary_file" "$KITTY_STATE_FILE"
+}
+
 toggle_kitty() {
     local command_output
+    local current_opacity
+    local target_opacity
+    local old_file_exists=0
 
     require_command kitten "Kitty" || return 1
-
     resolve_kitty_socket || return 1
+    read_kitty_opacity || return 1
+    current_opacity="$CURRENT_OPACITY"
 
+    if [[ "$current_opacity" == "1" || "$current_opacity" == "$OPAQUE_OPACITY" ]]; then
+        target_opacity="$TRANSPARENT_OPACITY"
+    else
+        target_opacity="$OPAQUE_OPACITY"
+    fi
+    [[ -f "$KITTY_STATE_FILE" ]] && old_file_exists=1
+
+    if ! write_kitty_opacity "$target_opacity"; then
+        fail "Kitty: não foi possível persistir $KITTY_STATE_FILE"
+        return 1
+    fi
     if ! command_output=$(kitten @ --to "$KITTY_TARGET_SOCKET" \
-        set-background-opacity --toggle "$OPAQUE_OPACITY" 2>&1); then
+        set-background-opacity "$target_opacity" 2>&1); then
+        if ((old_file_exists)); then
+            write_kitty_opacity "$current_opacity" || true
+        else
+            rm -f -- "$KITTY_STATE_FILE"
+        fi
         fail "Kitty: falha no controle remoto: $(compact_error "$command_output")"
         return 1
     fi
 
-    RESULT="Kitty: transparência alternada (${TRANSPARENT_OPACITY} ↔ ${OPAQUE_OPACITY})"
+    if [[ "$target_opacity" == "$OPAQUE_OPACITY" ]]; then
+        RESULT="Kitty: opaco ${OPAQUE_OPACITY}"
+    else
+        RESULT="Kitty: transparência ${TRANSPARENT_OPACITY}"
+    fi
 }
 
 status_kitty() {
     local command_output
+    local opacity
 
     require_command kitten "Kitty" || return 1
-
     resolve_kitty_socket || return 1
+    read_kitty_opacity || return 1
+    opacity="$CURRENT_OPACITY"
 
     if ! command_output=$(kitten @ --to "$KITTY_TARGET_SOCKET" ls 2>&1); then
         fail "Kitty: socket indisponível: $(compact_error "$command_output")"
         return 1
     fi
 
-    RESULT="Kitty: controle dinâmico disponível; base configurada ${TRANSPARENT_OPACITY}"
+    RESULT="Kitty: opacidade configurada $opacity"
 }
 
 resolve_kitty_socket() {
@@ -227,9 +311,9 @@ get_alacritty_opacity() {
 
     resolve_alacritty_target || return 1
 
-    if ! config_output=$(ALACRITTY_SOCKET="$ALACRITTY_TARGET_SOCKET" \
-        ALACRITTY_WINDOW_ID="$ALACRITTY_TARGET_WINDOW_ID" \
-        alacritty msg get-config 2>&1); then
+    if ! config_output=$(alacritty msg \
+        --socket "$ALACRITTY_TARGET_SOCKET" \
+        get-config --window-id "$ALACRITTY_TARGET_WINDOW_ID" 2>&1); then
         fail "Alacritty: falha ao consultar IPC: $(compact_error "$config_output")"
         return 1
     fi
@@ -259,6 +343,59 @@ resolve_alacritty_target() {
     fi
 }
 
+write_alacritty_opacity() {
+    local opacity="$1"
+    local temporary_file
+
+    if [[ ! -f "$ALACRITTY_CONFIG_FILE" || ! -w "$ALACRITTY_CONFIG_FILE" ]]; then
+        fail "Alacritty: configuração não gravável: $ALACRITTY_CONFIG_FILE"
+        return 1
+    fi
+    if ! grep -Fq '# BEGIN dotfiles terminal-opacity' "$ALACRITTY_CONFIG_FILE" || \
+       ! grep -Fq '# END dotfiles terminal-opacity' "$ALACRITTY_CONFIG_FILE"; then
+        fail "Alacritty: bloco gerenciado de opacidade não encontrado"
+        return 1
+    fi
+
+    temporary_file=$(mktemp "${ALACRITTY_CONFIG_FILE}.tmp.XXXXXX")
+    ALACRITTY_BACKUP_FILE=$(mktemp "${ALACRITTY_CONFIG_FILE}.backup.XXXXXX")
+    cp -- "$ALACRITTY_CONFIG_FILE" "$ALACRITTY_BACKUP_FILE"
+
+    awk -v begin='# BEGIN dotfiles terminal-opacity' \
+        -v end='# END dotfiles terminal-opacity' \
+        -v opacity="$opacity" '
+        $0 == begin {
+            print
+            print "opacity = " opacity
+            inside = 1
+            next
+        }
+        $0 == end {
+            print
+            inside = 0
+            next
+        }
+        !inside { print }
+    ' "$ALACRITTY_CONFIG_FILE" >"$temporary_file"
+
+    chmod --reference="$ALACRITTY_CONFIG_FILE" "$temporary_file"
+    mv -f -- "$temporary_file" "$ALACRITTY_CONFIG_FILE"
+}
+
+discard_alacritty_backup() {
+    if [[ -n "$ALACRITTY_BACKUP_FILE" ]]; then
+        rm -f -- "$ALACRITTY_BACKUP_FILE"
+        ALACRITTY_BACKUP_FILE=""
+    fi
+}
+
+restore_alacritty_backup() {
+    if [[ -n "$ALACRITTY_BACKUP_FILE" && -f "$ALACRITTY_BACKUP_FILE" ]]; then
+        cp -- "$ALACRITTY_BACKUP_FILE" "$ALACRITTY_CONFIG_FILE"
+        discard_alacritty_backup
+    fi
+}
+
 toggle_alacritty() {
     local current_opacity
     local target_opacity
@@ -273,12 +410,16 @@ toggle_alacritty() {
         target_opacity="$OPAQUE_OPACITY"
     fi
 
-    if ! command_output=$(ALACRITTY_SOCKET="$ALACRITTY_TARGET_SOCKET" \
-        ALACRITTY_WINDOW_ID="$ALACRITTY_TARGET_WINDOW_ID" \
-        alacritty msg config "window.opacity=${target_opacity}" 2>&1); then
+    write_alacritty_opacity "$target_opacity" || return 1
+    if ! command_output=$(alacritty msg \
+        --socket "$ALACRITTY_TARGET_SOCKET" \
+        config --window-id "$ALACRITTY_TARGET_WINDOW_ID" \
+        "window.opacity=${target_opacity}" 2>&1); then
+        restore_alacritty_backup
         fail "Alacritty: falha ao alterar IPC: $(compact_error "$command_output")"
         return 1
     fi
+    discard_alacritty_backup
 
     if [[ "$target_opacity" == "$OPAQUE_OPACITY" ]]; then
         RESULT="Alacritty: opaco ${OPAQUE_OPACITY}"
@@ -322,13 +463,42 @@ read_ghostty_opacity() {
 
 write_ghostty_opacity() {
     local opacity="$1"
+    local existing_font_family=""
+    local existing_font_size=""
     local temporary_file
+
+    if [[ -f "$GHOSTTY_STATE_FILE" ]]; then
+        existing_font_family=$(awk '
+            /^[[:space:]]*font-family[[:space:]]*=/ {
+                value = $0
+                sub(/^[^=]*=[[:space:]]*/, "", value)
+                sub(/[[:space:]]*$/, "", value)
+                gsub(/^"|"$/, "", value)
+                if (value != "") last = value
+            }
+            END { if (last != "") print last }
+        ' "$GHOSTTY_STATE_FILE")
+        existing_font_size=$(awk -F= '
+            /^[[:space:]]*font-size[[:space:]]*=/ {
+                value = $2
+                gsub(/[[:space:]]/, "", value)
+                last = value
+            }
+            END { if (last != "") print last }
+        ' "$GHOSTTY_STATE_FILE")
+    fi
 
     mkdir -p -- "$GHOSTTY_STATE_DIR"
     chmod 700 -- "$GHOSTTY_STATE_DIR"
     temporary_file=$(mktemp "${GHOSTTY_STATE_FILE}.tmp.XXXXXX")
     chmod 600 -- "$temporary_file"
     printf 'background-opacity = %s\n' "$opacity" >"$temporary_file"
+    if [[ -n "$existing_font_family" ]]; then
+        printf 'font-family = ""\nfont-family = "%s"\n' "$existing_font_family" >>"$temporary_file"
+    fi
+    if [[ -n "$existing_font_size" ]]; then
+        printf 'font-size = %s\n' "$existing_font_size" >>"$temporary_file"
+    fi
     mv -f -- "$temporary_file" "$GHOSTTY_STATE_FILE"
 }
 

@@ -49,7 +49,7 @@ font-style = Regular
 font-thicken = true
 
 background-opacity = 0.8
-# Override opcional gerenciado por scripts/toggle-terminal-transparency.
+# Override opcional de runtime gerenciado pelos helpers de transparência e fonte.
 config-file = ?/home/albano/.local/state/dotfiles/terminal-transparency/ghostty.conf
 
 shell-integration-features = no-cursor,sudo,title

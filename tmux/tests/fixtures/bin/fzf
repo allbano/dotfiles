@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+selection=""
+printf 'fzf %s\n' "$*" >>"$MOCK_LOG"
+
+for argument in "$@"; do
+    case "$argument" in
+        --prompt=Fonte*) selection="${MOCK_FZF_FAMILY:-CaskaydiaCove NF}" ;;
+        --prompt=Tamanho*) selection="${MOCK_FZF_SIZE:-13}" ;;
+    esac
+done
+
+# Consome toda a entrada para que o produtor da pipeline não termine com
+# SIGPIPE e mascare o resultado que o teste quer validar.
+while IFS= read -r _line; do
+    :
+done
+
+[[ -n "$selection" ]] || exit 2
+printf '%s\n' "$selection"

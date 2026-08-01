@@ -3,6 +3,10 @@
 set -Eeuo pipefail
 
 printf 'kitten %s\n' "$*" >>"$MOCK_LOG"
+if [[ "${MOCK_KITTEN_FAIL:-0}" == "1" && "$*" == *" set-background-opacity "* ]]; then
+    printf 'mock remote control failure\n' >&2
+    exit 1
+fi
 if [[ "$*" == *" ls" ]]; then
     printf '[]\n'
 fi

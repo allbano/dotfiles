@@ -1,0 +1,844 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+ensure_system_sbin_path() {
+    local system_sbin
+
+    for system_sbin in /usr/sbin /sbin; do
+        if [[ -d "$system_sbin" ]]; then
+            case ":${PATH:-}:" in
+                *":${system_sbin}:"*) ;;
+                *) PATH="${PATH:+${PATH}:}${system_sbin}"; export PATH ;;
+            esac
+            return 0
+        fi
+    done
+}
+
+ensure_system_sbin_path
+
+readonly DEFAULT_FAMILY="${TERMINAL_FONT_DEFAULT_FAMILY:-CaskaydiaCove Nerd Font}"
+readonly DEFAULT_SIZE="${TERMINAL_FONT_DEFAULT_SIZE:-12}"
+readonly DEFAULT_STYLE="${TERMINAL_FONT_DEFAULT_STYLE:-Regular}"
+readonly MIN_FONT_SIZE="6"
+readonly MAX_FONT_SIZE="48"
+readonly FONT_STATE_DIR="${TERMINAL_FONT_STATE_DIR:-${XDG_CONFIG_HOME:-${HOME}/.config}/dotfiles/terminal-fonts}"
+readonly CURRENT_PROFILE_FILE="${FONT_STATE_DIR}/current.conf"
+readonly PROFILES_DIR="${FONT_STATE_DIR}/profiles"
+readonly GHOSTTY_STATE_DIR="${TERMINAL_FONT_GHOSTTY_STATE_DIR:-${TERMINAL_TRANSPARENCY_STATE_DIR:-${XDG_STATE_HOME:-${HOME}/.local/state}/dotfiles/terminal-transparency}}"
+readonly GHOSTTY_STATE_FILE="${GHOSTTY_STATE_DIR}/ghostty.conf"
+readonly ALACRITTY_CONFIG_FILE="${TERMINAL_FONT_ALACRITTY_CONFIG:-${XDG_CONFIG_HOME:-${HOME}/.config}/alacritty/alacritty.toml}"
+readonly KITTY_CONFIG_FILE="${TERMINAL_FONT_KITTY_CONFIG:-${XDG_CONFIG_HOME:-${HOME}/.config}/kitty/kitty.conf}"
+
+RESULT=""
+ERROR_MESSAGE=""
+CLIENT_TERMNAME=""
+CLIENT_NAME=""
+CLIENT_PID=""
+TERMINAL=""
+KITTY_TARGET_SOCKET=""
+ALACRITTY_TARGET_SOCKET=""
+ALACRITTY_TARGET_WINDOW_ID=""
+ALACRITTY_BACKUP_FILE=""
+PROFILE_FAMILY=""
+PROFILE_SIZE=""
+PROFILE_STYLE=""
+SELECTED_FAMILY=""
+SELECTED_SIZE=""
+SELECTED_STYLE=""
+GHOSTTY_OPACITY=""
+OLD_CURRENT_EXISTS=0
+OLD_CURRENT_CONTENT=""
+
+usage() {
+    cat <<'EOF'
+Uso:
+  change-terminal-font
+  change-terminal-font profile <nome> [client-termname] [client-name] [client-pid]
+  change-terminal-font family <nome> [client-termname] [client-name] [client-pid]
+  change-terminal-font size <pontos> [client-termname] [client-name] [client-pid]
+  change-terminal-font status [client-termname] [client-name] [client-pid]
+  change-terminal-font reset [client-termname] [client-name] [client-pid]
+EOF
+}
+
+fail() {
+    ERROR_MESSAGE="$1"
+    return 1
+}
+
+compact_error() {
+    local message="${1//$'\n'/ }"
+    message="${message//$'\r'/ }"
+    printf '%.220s' "$message"
+}
+
+notify() {
+    local message="$1"
+
+    if [[ -n "$CLIENT_NAME" && -n "${TMUX:-}" ]] && command -v tmux >/dev/null 2>&1; then
+        if tmux display-message -c "$CLIENT_NAME" "$message" 2>/dev/null; then
+            return
+        fi
+    fi
+
+    printf '%s\n' "$message"
+}
+
+require_command() {
+    local command_name="$1"
+    local component_name="$2"
+
+    if ! command -v "$command_name" >/dev/null 2>&1; then
+        fail "$component_name: comando '$command_name' não encontrado"
+        return 1
+    fi
+}
+
+client_environment_value() {
+    local variable_name="$1"
+    local process_owner
+    local entry
+
+    if [[ ! "$CLIENT_PID" =~ ^[0-9]+$ || "$CLIENT_PID" -le 1 || \
+          ! -r "/proc/${CLIENT_PID}/status" || ! -r "/proc/${CLIENT_PID}/environ" ]]; then
+        return 1
+    fi
+
+    process_owner=$(awk '/^Uid:/ { print $2; exit }' "/proc/${CLIENT_PID}/status")
+    if [[ "$process_owner" != "$(id -u)" ]]; then
+        return 1
+    fi
+
+    while IFS= read -r -d '' entry; do
+        if [[ "$entry" == "${variable_name}="* ]]; then
+            printf '%s\n' "${entry#*=}"
+            return
+        fi
+    done <"/proc/${CLIENT_PID}/environ"
+
+    return 1
+}
+
+find_terminal_ancestor() {
+    local expected_process="$1"
+    local process_id="$CLIENT_PID"
+    local process_name
+    local process_executable
+    local process_owner
+    local parent_id
+    local depth
+
+    if [[ ! "$process_id" =~ ^[0-9]+$ || "$process_id" -le 1 ]]; then
+        return 1
+    fi
+
+    for ((depth = 0; depth < 8; depth++)); do
+        if [[ ! -r "/proc/${process_id}/status" ]]; then
+            return 1
+        fi
+
+        process_name=$(awk '/^Name:/ { print $2; exit }' "/proc/${process_id}/status")
+        process_owner=$(awk '/^Uid:/ { print $2; exit }' "/proc/${process_id}/status")
+        process_executable=$(readlink -f "/proc/${process_id}/exe" 2>/dev/null || true)
+
+        if [[ "$process_owner" == "$(id -u)" && \
+              ( "$process_name" == "$expected_process" || \
+                "${process_executable##*/}" == "$expected_process" ) ]]; then
+            printf '%s\n' "$process_id"
+            return
+        fi
+
+        parent_id=$(awk '/^PPid:/ { print $2; exit }' "/proc/${process_id}/status")
+        if [[ ! "$parent_id" =~ ^[0-9]+$ || "$parent_id" -le 1 || "$parent_id" == "$process_id" ]]; then
+            return 1
+        fi
+        process_id="$parent_id"
+    done
+
+    return 1
+}
+
+detect_terminal() {
+    local hint="${1,,}"
+    local term_program="${TERM_PROGRAM:-}"
+    local client_term_program
+    local kitty_window_id
+    local alacritty_window_id
+
+    term_program="${term_program,,}"
+    client_term_program=$(client_environment_value TERM_PROGRAM || true)
+    client_term_program="${client_term_program,,}"
+    kitty_window_id=$(client_environment_value KITTY_WINDOW_ID || true)
+    alacritty_window_id=$(client_environment_value ALACRITTY_WINDOW_ID || true)
+
+    case "$hint" in
+        *ghostty*) printf 'ghostty\n'; return 0 ;;
+        *kitty*) printf 'kitty\n'; return 0 ;;
+        *alacritty*) printf 'alacritty\n'; return 0 ;;
+    esac
+
+    case "$client_term_program" in
+        *ghostty*) printf 'ghostty\n'; return 0 ;;
+        *kitty*) printf 'kitty\n'; return 0 ;;
+        *alacritty*) printf 'alacritty\n'; return 0 ;;
+    esac
+
+    case "$term_program" in
+        *ghostty*) printf 'ghostty\n'; return 0 ;;
+        *kitty*) printf 'kitty\n'; return 0 ;;
+        *alacritty*) printf 'alacritty\n'; return 0 ;;
+    esac
+
+    if [[ -n "$kitty_window_id" ]] || [[ -n "${KITTY_WINDOW_ID:-}" ]]; then
+        printf 'kitty\n'
+        return 0
+    fi
+
+    if [[ -n "$alacritty_window_id" ]] || [[ -n "${ALACRITTY_WINDOW_ID:-}" ]]; then
+        printf 'alacritty\n'
+        return 0
+    fi
+
+    if find_terminal_ancestor ghostty >/dev/null 2>&1; then
+        printf 'ghostty\n'
+        return 0
+    fi
+    if find_terminal_ancestor kitty >/dev/null 2>&1; then
+        printf 'kitty\n'
+        return 0
+    fi
+    if find_terminal_ancestor alacritty >/dev/null 2>&1; then
+        printf 'alacritty\n'
+        return 0
+    fi
+
+    return 1
+}
+
+trim() {
+    local value="$1"
+    value="${value#"${value%%[![:space:]]*}"}"
+    value="${value%"${value##*[![:space:]]}"}"
+    printf '%s' "$value"
+}
+
+read_profile_file() {
+    local profile_file="$1"
+    local line
+    local key
+    local value
+
+    PROFILE_FAMILY="$DEFAULT_FAMILY"
+    PROFILE_SIZE="$DEFAULT_SIZE"
+    PROFILE_STYLE="$DEFAULT_STYLE"
+
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        line=$(trim "$line")
+        [[ -z "$line" || "$line" == \#* ]] && continue
+
+        if [[ "$line" != *=* ]]; then
+            fail "perfil inválido: linha sem '=' em $profile_file"
+            return 1
+        fi
+
+        key=$(trim "${line%%=*}")
+        value=$(trim "${line#*=}")
+        case "$key" in
+            family) PROFILE_FAMILY="$value" ;;
+            size) PROFILE_SIZE="$value" ;;
+            style) PROFILE_STYLE="$value" ;;
+            *) fail "perfil inválido: chave desconhecida '$key'"; return 1 ;;
+        esac
+    done <"$profile_file"
+}
+
+validate_family() {
+    local family="$1"
+    local matched_families
+    local matched_spacing
+
+    if [[ -z "$family" || "$family" == *$'\n'* || "$family" == *$'\r'* || \
+          "$family" == *'"'* || "$family" == *\\* ]]; then
+        fail "família de fonte inválida"
+        return 1
+    fi
+
+    require_command fc-match "Fontconfig" || return 1
+    matched_families=$(fc-match -f '%{family}' "$family" 2>/dev/null || true)
+    matched_spacing=$(fc-match -f '%{spacing}' "$family" 2>/dev/null || true)
+    if [[ "$matched_spacing" != "100" ]] || \
+       ! printf '%s\n' "$matched_families" |
+           tr ',' '\n' |
+           sed 's/^[[:space:]]*//; s/[[:space:]]*$//' |
+           grep -Fxq -- "$family"; then
+        fail "fonte monoespaçada não encontrada: $family"
+        return 1
+    fi
+}
+
+validate_size() {
+    local size="$1"
+
+    if [[ ! "$size" =~ ^[0-9]+([.][0-9]+)?$ ]] || \
+       ! awk -v value="$size" -v minimum="$MIN_FONT_SIZE" -v maximum="$MAX_FONT_SIZE" \
+           'BEGIN { exit !(value >= minimum && value <= maximum) }'; then
+        fail "tamanho de fonte inválido: $size (use ${MIN_FONT_SIZE} a ${MAX_FONT_SIZE} pontos)"
+        return 1
+    fi
+}
+
+validate_style() {
+    local style="$1"
+    local style_pattern='^[[:alnum:]][[:alnum:]_. -]*$'
+
+    if [[ ! "$style" =~ $style_pattern ]]; then
+        fail "estilo de fonte inválido"
+        return 1
+    fi
+}
+
+validate_profile() {
+    validate_family "$PROFILE_FAMILY" || return 1
+    validate_size "$PROFILE_SIZE" || return 1
+    validate_style "$PROFILE_STYLE" || return 1
+}
+
+load_current_profile() {
+    if [[ -f "$CURRENT_PROFILE_FILE" ]]; then
+        read_profile_file "$CURRENT_PROFILE_FILE" || return 1
+    else
+        PROFILE_FAMILY="$DEFAULT_FAMILY"
+        PROFILE_SIZE="$DEFAULT_SIZE"
+        PROFILE_STYLE="$DEFAULT_STYLE"
+    fi
+
+    validate_profile
+}
+
+load_named_profile() {
+    local profile_name="$1"
+    local profile_file
+
+    if [[ ! "$profile_name" =~ ^[A-Za-z0-9._-]+$ ]]; then
+        fail "nome de perfil inválido: $profile_name"
+        return 1
+    fi
+
+    profile_file="${PROFILES_DIR}/${profile_name}.conf"
+    if [[ ! -f "$profile_file" ]]; then
+        fail "perfil não encontrado: $profile_name"
+        return 1
+    fi
+
+    read_profile_file "$profile_file" || return 1
+    validate_profile
+}
+
+write_profile_file() {
+    local profile_file="$1"
+    local family="$2"
+    local size="$3"
+    local style="$4"
+    local temporary_file
+
+    mkdir -p -- "$(dirname "$profile_file")"
+    chmod 700 -- "$(dirname "$profile_file")"
+    temporary_file=$(mktemp "${profile_file}.tmp.XXXXXX")
+    chmod 600 -- "$temporary_file"
+    printf '# Gerado por change-terminal-font; não usar como shell script.\n' >"$temporary_file"
+    printf 'family=%s\nsize=%s\nstyle=%s\n' "$family" "$size" "$style" >>"$temporary_file"
+    mv -f -- "$temporary_file" "$profile_file"
+}
+
+write_current_profile() {
+    write_profile_file "$CURRENT_PROFILE_FILE" \
+        "$SELECTED_FAMILY" "$SELECTED_SIZE" "$SELECTED_STYLE"
+}
+
+ensure_profile_files() {
+    mkdir -p -- "$PROFILES_DIR"
+    chmod 700 -- "$FONT_STATE_DIR" "$PROFILES_DIR"
+
+    if [[ ! -f "${PROFILES_DIR}/default.conf" ]]; then
+        write_profile_file "${PROFILES_DIR}/default.conf" \
+            "$DEFAULT_FAMILY" "$DEFAULT_SIZE" "$DEFAULT_STYLE"
+    fi
+    if [[ ! -f "${PROFILES_DIR}/compact.conf" ]]; then
+        write_profile_file "${PROFILES_DIR}/compact.conf" \
+            "$DEFAULT_FAMILY" "10" "$DEFAULT_STYLE"
+    fi
+    if [[ ! -f "${PROFILES_DIR}/presentation.conf" ]]; then
+        write_profile_file "${PROFILES_DIR}/presentation.conf" \
+            "$DEFAULT_FAMILY" "16" "$DEFAULT_STYLE"
+    fi
+}
+
+capture_current_profile() {
+    OLD_CURRENT_EXISTS=0
+    OLD_CURRENT_CONTENT=""
+
+    if [[ -f "$CURRENT_PROFILE_FILE" ]]; then
+        OLD_CURRENT_EXISTS=1
+        OLD_CURRENT_CONTENT=$(<"$CURRENT_PROFILE_FILE")
+    fi
+}
+
+restore_current_profile() {
+    local temporary_file
+
+    if ((OLD_CURRENT_EXISTS)); then
+        temporary_file=$(mktemp "${CURRENT_PROFILE_FILE}.restore.XXXXXX")
+        chmod 600 -- "$temporary_file"
+        printf '%s\n' "$OLD_CURRENT_CONTENT" >"$temporary_file"
+        mv -f -- "$temporary_file" "$CURRENT_PROFILE_FILE"
+    else
+        rm -f -- "$CURRENT_PROFILE_FILE"
+    fi
+}
+
+font_candidates() {
+    require_command fc-list "Fontconfig" || return 1
+    fc-list ':spacing=100' family 2>/dev/null |
+        tr ',' '\n' |
+        sed 's/^[[:space:]]*//; s/[[:space:]]*$//' |
+        awk 'NF && !seen[$0]++' |
+        sort -f
+}
+
+choose_family() {
+    require_command fzf "Seletor de fonte" || return 1
+
+    if ! SELECTED_FAMILY=$(font_candidates | fzf \
+        --no-select-1 --no-exit-0 --layout=reverse --border \
+        --prompt='Fonte > ' \
+        --header="Atual: ${PROFILE_FAMILY} | Enter seleciona | Esc cancela" \
+        --query="$PROFILE_FAMILY"); then
+        fail "seleção de fonte cancelada"
+        return 1
+    fi
+}
+
+choose_size() {
+    local sizes
+
+    sizes=$(printf '%s\n' 6 7 8 9 10 11 12 13 14 15 16 18 20 22 24 28 32 36 40 48)
+    if ! SELECTED_SIZE=$(printf '%s\n' "$sizes" | fzf \
+        --no-select-1 --no-exit-0 --layout=reverse --border \
+        --prompt='Tamanho (pt) > ' \
+        --header="Atual: ${PROFILE_SIZE} | Enter seleciona | Esc cancela" \
+        --query="$PROFILE_SIZE"); then
+        fail "seleção de tamanho cancelada"
+        return 1
+    fi
+}
+
+toml_quote() {
+    local value="$1"
+    value="${value//\\/\\\\}"
+    value="${value//\"/\\\"}"
+    printf '"%s"' "$value"
+}
+
+resolve_kitty_socket() {
+    local client_socket
+    local kitty_pid
+    local runtime_directory
+    local derived_socket
+
+    client_socket=$(client_environment_value KITTY_LISTEN_ON || true)
+    if [[ -n "$client_socket" ]]; then
+        KITTY_TARGET_SOCKET="$client_socket"
+        return 0
+    fi
+
+    if kitty_pid=$(find_terminal_ancestor kitty); then
+        runtime_directory="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+        derived_socket="${runtime_directory}/kitty-${kitty_pid}"
+        if [[ -S "$derived_socket" ]]; then
+            KITTY_TARGET_SOCKET="unix:${derived_socket}"
+            return 0
+        fi
+    fi
+
+    if [[ -n "${KITTY_LISTEN_ON:-}" ]]; then
+        KITTY_TARGET_SOCKET="$KITTY_LISTEN_ON"
+        return 0
+    fi
+
+    fail "Kitty: socket ausente; reinicie o Kitty após carregar a configuração"
+}
+
+resolve_alacritty_target() {
+    local client_socket
+    local client_window_id
+
+    client_socket=$(client_environment_value ALACRITTY_SOCKET || true)
+    client_window_id=$(client_environment_value ALACRITTY_WINDOW_ID || true)
+
+    ALACRITTY_TARGET_SOCKET="${client_socket:-${ALACRITTY_SOCKET:-}}"
+    ALACRITTY_TARGET_WINDOW_ID="${client_window_id:-${ALACRITTY_WINDOW_ID:-}}"
+
+    if [[ -z "$ALACRITTY_TARGET_SOCKET" || -z "$ALACRITTY_TARGET_WINDOW_ID" ]]; then
+        fail "Alacritty: socket ou window ID ausente no ambiente do cliente tmux"
+        return 1
+    fi
+}
+
+read_ghostty_opacity() {
+    local opacity
+
+    GHOSTTY_OPACITY="0.8"
+    if [[ ! -f "$GHOSTTY_STATE_FILE" ]]; then
+        return 0
+    fi
+
+    opacity=$(awk -F= '
+        /^[[:space:]]*background-opacity[[:space:]]*=/ {
+            value = $2
+            gsub(/[[:space:]]/, "", value)
+            last = value
+        }
+        END { if (last != "") print last }
+    ' "$GHOSTTY_STATE_FILE")
+
+    if [[ -n "$opacity" ]]; then
+        if [[ "$opacity" != "0.8" && "$opacity" != "1" && "$opacity" != "1.0" ]]; then
+            fail "Ghostty: opacidade inválida em $GHOSTTY_STATE_FILE"
+            return 1
+        fi
+        GHOSTTY_OPACITY="$opacity"
+    fi
+}
+
+write_ghostty_state() {
+    local temporary_file
+
+    mkdir -p -- "$GHOSTTY_STATE_DIR"
+    chmod 700 -- "$GHOSTTY_STATE_DIR"
+    temporary_file=$(mktemp "${GHOSTTY_STATE_FILE}.tmp.XXXXXX")
+    chmod 600 -- "$temporary_file"
+    {
+        printf '# Estado gerenciado por os helpers de terminal.\n'
+        printf 'background-opacity = %s\n' "$GHOSTTY_OPACITY"
+        printf 'font-family = ""\n'
+        printf 'font-family = "%s"\n' "$SELECTED_FAMILY"
+        printf 'font-size = %s\n' "$SELECTED_SIZE"
+    } >"$temporary_file"
+    mv -f -- "$temporary_file" "$GHOSTTY_STATE_FILE"
+}
+
+reload_ghostty() {
+    local ghostty_pid
+    local command_output
+
+    if ghostty_pid=$(find_terminal_ancestor ghostty); then
+        if ! kill -USR2 "$ghostty_pid" 2>/dev/null; then
+            fail "Ghostty: não foi possível sinalizar o processo validado $ghostty_pid"
+            return 1
+        fi
+        return 0
+    fi
+
+    require_command systemctl "Ghostty" || return 1
+    if ! systemctl --user is-active --quiet app-com.mitchellh.ghostty.service; then
+        fail "Ghostty: processo ancestral não identificado e unidade systemd inativa"
+        return 1
+    fi
+    if ! command_output=$(systemctl --user reload app-com.mitchellh.ghostty.service 2>&1); then
+        fail "Ghostty: reload pelo systemd falhou: $(compact_error "$command_output")"
+        return 1
+    fi
+}
+
+apply_ghostty() {
+    local old_file_exists=0
+    local old_file_content=""
+
+    if [[ -f "$GHOSTTY_STATE_FILE" ]]; then
+        old_file_exists=1
+        old_file_content=$(<"$GHOSTTY_STATE_FILE")
+    fi
+
+    read_ghostty_opacity || return 1
+    write_ghostty_state
+
+    if ! reload_ghostty; then
+        if ((old_file_exists)); then
+            printf '%s\n' "$old_file_content" >"$GHOSTTY_STATE_FILE"
+        else
+            rm -f -- "$GHOSTTY_STATE_FILE"
+        fi
+        return 1
+    fi
+
+    RESULT="Ghostty: fonte ${SELECTED_FAMILY}, ${SELECTED_SIZE} pt"
+}
+
+write_alacritty_font_block() {
+    local temporary_file
+    local block_file
+    local family_quoted
+    local normal_style_quoted
+    local bold_style_quoted
+    local italic_style_quoted
+
+    if [[ ! -f "$ALACRITTY_CONFIG_FILE" || ! -w "$ALACRITTY_CONFIG_FILE" ]]; then
+        fail "Alacritty: configuração não gravável: $ALACRITTY_CONFIG_FILE"
+        return 1
+    fi
+    if ! grep -Fq '# BEGIN dotfiles terminal-font' "$ALACRITTY_CONFIG_FILE" || \
+       ! grep -Fq '# END dotfiles terminal-font' "$ALACRITTY_CONFIG_FILE"; then
+        fail "Alacritty: bloco gerenciado de fonte não encontrado"
+        return 1
+    fi
+
+    family_quoted=$(toml_quote "$SELECTED_FAMILY")
+    normal_style_quoted=$(toml_quote "$SELECTED_STYLE")
+    bold_style_quoted=$(toml_quote "Bold")
+    italic_style_quoted=$(toml_quote "Italic")
+    block_file=$(mktemp "${ALACRITTY_CONFIG_FILE}.font-block.XXXXXX")
+    temporary_file=$(mktemp "${ALACRITTY_CONFIG_FILE}.tmp.XXXXXX")
+    ALACRITTY_BACKUP_FILE=$(mktemp "${ALACRITTY_CONFIG_FILE}.backup.XXXXXX")
+    cp -- "$ALACRITTY_CONFIG_FILE" "$ALACRITTY_BACKUP_FILE"
+
+    {
+        printf '[font]\n'
+        printf 'size = %s\n' "$SELECTED_SIZE"
+        printf 'normal = { family = %s, style = %s }\n' "$family_quoted" "$normal_style_quoted"
+        printf 'bold = { family = %s, style = %s }\n' "$family_quoted" "$bold_style_quoted"
+        printf 'italic = { family = %s, style = %s }\n' "$family_quoted" "$italic_style_quoted"
+    } >"$block_file"
+
+    awk -v begin='# BEGIN dotfiles terminal-font' \
+        -v end='# END dotfiles terminal-font' \
+        -v replacement="$block_file" '
+        $0 == begin {
+            print
+            while ((getline line < replacement) > 0) print line
+            close(replacement)
+            inside = 1
+            next
+        }
+        $0 == end {
+            print
+            inside = 0
+            next
+        }
+        !inside { print }
+    ' "$ALACRITTY_CONFIG_FILE" >"$temporary_file"
+
+    chmod --reference="$ALACRITTY_CONFIG_FILE" "$temporary_file"
+    mv -f -- "$temporary_file" "$ALACRITTY_CONFIG_FILE"
+    rm -f -- "$block_file"
+}
+
+discard_alacritty_backup() {
+    if [[ -n "$ALACRITTY_BACKUP_FILE" ]]; then
+        rm -f -- "$ALACRITTY_BACKUP_FILE"
+        ALACRITTY_BACKUP_FILE=""
+    fi
+}
+
+restore_alacritty_backup() {
+    if [[ -n "$ALACRITTY_BACKUP_FILE" && -f "$ALACRITTY_BACKUP_FILE" ]]; then
+        cp -- "$ALACRITTY_BACKUP_FILE" "$ALACRITTY_CONFIG_FILE"
+        discard_alacritty_backup
+    fi
+}
+
+apply_alacritty() {
+    local command_output
+    local family_quoted
+    local style_quoted
+
+    require_command alacritty "Alacritty" || return 1
+    resolve_alacritty_target || return 1
+    write_alacritty_font_block || return 1
+
+    family_quoted=$(toml_quote "$SELECTED_FAMILY")
+    style_quoted=$(toml_quote "$SELECTED_STYLE")
+    if ! command_output=$(alacritty msg \
+        --socket "$ALACRITTY_TARGET_SOCKET" \
+        config --window-id "$ALACRITTY_TARGET_WINDOW_ID" \
+            "font.size=${SELECTED_SIZE}" \
+            "font.normal.family=${family_quoted}" \
+            "font.normal.style=${style_quoted}" \
+            "font.bold.family=${family_quoted}" \
+            'font.bold.style="Bold"' \
+            "font.italic.family=${family_quoted}" \
+            'font.italic.style="Italic"' 2>&1); then
+        restore_alacritty_backup
+        fail "Alacritty: falha ao aplicar via IPC: $(compact_error "$command_output")"
+        return 1
+    fi
+
+    discard_alacritty_backup
+    RESULT="Alacritty: fonte ${SELECTED_FAMILY}, ${SELECTED_SIZE} pt"
+}
+
+apply_kitty() {
+    local command_output
+
+    require_command kitten "Kitty" || return 1
+    resolve_kitty_socket || return 1
+    if [[ ! -r "$KITTY_CONFIG_FILE" ]]; then
+        fail "Kitty: configuração não legível: $KITTY_CONFIG_FILE"
+        return 1
+    fi
+
+    if ! command_output=$(kitten @ --to "$KITTY_TARGET_SOCKET" \
+        load-config "$KITTY_CONFIG_FILE" 2>&1); then
+        fail "Kitty: falha ao recarregar a configuração: $(compact_error "$command_output")"
+        return 1
+    fi
+    if ! command_output=$(kitten @ --to "$KITTY_TARGET_SOCKET" \
+        set-font-size "$SELECTED_SIZE" 2>&1); then
+        fail "Kitty: falha ao aplicar tamanho: $(compact_error "$command_output")"
+        return 1
+    fi
+
+    RESULT="Kitty: fonte ${SELECTED_FAMILY}, ${SELECTED_SIZE} pt"
+}
+
+apply_selected_profile_unlocked() {
+    local terminal="$1"
+
+    SELECTED_FAMILY="$PROFILE_FAMILY"
+    SELECTED_SIZE="$PROFILE_SIZE"
+    SELECTED_STYLE="$PROFILE_STYLE"
+    validate_profile || return 1
+
+    capture_current_profile
+    write_current_profile
+
+    case "$terminal" in
+        ghostty) apply_ghostty || { restore_current_profile; return 1; } ;;
+        alacritty) apply_alacritty || { restore_current_profile; return 1; } ;;
+        kitty) apply_kitty || { restore_current_profile; return 1; } ;;
+        *)
+            restore_current_profile
+            fail "terminal não suportado: $terminal"
+            return 1
+            ;;
+    esac
+}
+
+apply_selected_profile() {
+    local terminal="$1"
+    local lock_fd
+    local result_code
+
+    mkdir -p -- "$FONT_STATE_DIR"
+    chmod 700 -- "$FONT_STATE_DIR"
+    exec {lock_fd}>"${FONT_STATE_DIR}/.lock"
+    if ! flock -x "$lock_fd"; then
+        exec {lock_fd}>&-
+        fail "não foi possível bloquear o estado central de fontes"
+        return 1
+    fi
+
+    if apply_selected_profile_unlocked "$terminal"; then
+        result_code=0
+    else
+        result_code=$?
+    fi
+
+    flock -u "$lock_fd" || true
+    exec {lock_fd}>&-
+    return "$result_code"
+}
+
+set_target() {
+    CLIENT_TERMNAME="${1:-}"
+    CLIENT_NAME="${2:-}"
+    CLIENT_PID="${3:-}"
+}
+
+resolve_target_terminal() {
+    if ! TERMINAL=$(detect_terminal "$CLIENT_TERMNAME"); then
+        fail "terminal não identificado (${CLIENT_TERMNAME:-sem identificação})"
+        return 1
+    fi
+}
+
+run_and_notify() {
+    if "$@"; then
+        notify "$RESULT"
+        return 0
+    fi
+
+    [[ -n "$ERROR_MESSAGE" ]] || ERROR_MESSAGE="operação falhou"
+    notify "Fonte: erro — $ERROR_MESSAGE"
+    return 1
+}
+
+main() {
+    local action="${1:-interactive}"
+    local profile_name
+    local requested_family
+    local requested_size
+
+    case "$action" in
+        interactive)
+            set_target "${2:-}" "${3:-}" "${4:-}"
+            resolve_target_terminal || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            ensure_profile_files
+            load_current_profile || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            choose_family || { notify "Fonte: cancelada — $ERROR_MESSAGE"; return 130; }
+            choose_size || { notify "Fonte: cancelada — $ERROR_MESSAGE"; return 130; }
+            PROFILE_FAMILY="$SELECTED_FAMILY"
+            PROFILE_SIZE="$SELECTED_SIZE"
+            PROFILE_STYLE="$DEFAULT_STYLE"
+            run_and_notify apply_selected_profile "$TERMINAL"
+            ;;
+        profile)
+            profile_name="${2:-}"
+            set_target "${3:-}" "${4:-}" "${5:-}"
+            ensure_profile_files
+            load_named_profile "$profile_name" || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            resolve_target_terminal || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            run_and_notify apply_selected_profile "$TERMINAL"
+            ;;
+        family)
+            requested_family="${2:-}"
+            set_target "${3:-}" "${4:-}" "${5:-}"
+            load_current_profile || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            PROFILE_FAMILY="$requested_family"
+            resolve_target_terminal || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            run_and_notify apply_selected_profile "$TERMINAL"
+            ;;
+        size)
+            requested_size="${2:-}"
+            set_target "${3:-}" "${4:-}" "${5:-}"
+            load_current_profile || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            PROFILE_SIZE="$requested_size"
+            resolve_target_terminal || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            run_and_notify apply_selected_profile "$TERMINAL"
+            ;;
+        status)
+            set_target "${2:-}" "${3:-}" "${4:-}"
+            load_current_profile || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            TERMINAL=$(detect_terminal "$CLIENT_TERMNAME" || true)
+            RESULT="Fonte: ${PROFILE_FAMILY}, ${PROFILE_SIZE} pt${TERMINAL:+ (${TERMINAL})}"
+            notify "$RESULT"
+            ;;
+        reset)
+            set_target "${2:-}" "${3:-}" "${4:-}"
+            ensure_profile_files
+            load_named_profile default || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            resolve_target_terminal || { notify "Fonte: erro — $ERROR_MESSAGE"; return 1; }
+            run_and_notify apply_selected_profile "$TERMINAL"
+            ;;
+        help|-h|--help)
+            usage
+            ;;
+        *)
+            usage >&2
+            return 64
+            ;;
+    esac
+}
+
+main "$@"

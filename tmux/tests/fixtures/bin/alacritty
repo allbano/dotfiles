@@ -3,11 +3,29 @@
 set -Eeuo pipefail
 
 printf 'alacritty %s\n' "$*" >>"$MOCK_LOG"
-if [[ "${1:-}" == "msg" && "${2:-}" == "get-config" ]]; then
+subcommand=""
+for argument in "$@"; do
+    case "$argument" in
+        get-config|config) subcommand="$argument"; break ;;
+    esac
+done
+
+if [[ "$subcommand" == "get-config" ]]; then
     printf '{"general":{"ipc_socket":true},"window":{"opacity":%s},"font":{"size":12.0}}\n' \
         "$(<"$MOCK_ALACRITTY_OPACITY")"
-elif [[ "${1:-}" == "msg" && "${2:-}" == "config" ]]; then
-    printf '%s\n' "${3#window.opacity=}" >"$MOCK_ALACRITTY_OPACITY"
+elif [[ "$subcommand" == "config" ]]; then
+    if [[ "${MOCK_ALACRITTY_FAIL:-0}" == "1" ]]; then
+        printf 'mock IPC failure\n' >&2
+        exit 1
+    fi
+    for option in "$@"; do
+        case "$option" in
+            window.opacity=*)
+                printf '%s\n' "${option#window.opacity=}" >"$MOCK_ALACRITTY_OPACITY"
+                ;;
+        esac
+    done
+    printf 'ok\n'
 else
     exit 2
 fi

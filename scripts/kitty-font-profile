@@ -1,0 +1,96 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+ensure_system_sbin_path() {
+    local system_sbin
+
+    for system_sbin in /usr/sbin /sbin; do
+        if [[ -d "$system_sbin" ]]; then
+            case ":${PATH:-}:" in
+                *":${system_sbin}:"*) ;;
+                *) PATH="${PATH:+${PATH}:}${system_sbin}"; export PATH ;;
+            esac
+            return 0
+        fi
+    done
+}
+
+ensure_system_sbin_path
+
+readonly FONT_STATE_DIR="${TERMINAL_FONT_STATE_DIR:-${XDG_CONFIG_HOME:-${HOME}/.config}/dotfiles/terminal-fonts}"
+readonly PROFILE_FILE="${FONT_STATE_DIR}/current.conf"
+readonly TRANSPARENCY_STATE_DIR="${TERMINAL_TRANSPARENCY_STATE_DIR:-${XDG_STATE_HOME:-${HOME}/.local/state}/dotfiles/terminal-transparency}"
+readonly KITTY_OPACITY_FILE="${TRANSPARENCY_STATE_DIR}/kitty.conf"
+
+font_family_is_available() {
+    local family="$1"
+    local matched_families
+    local matched_spacing
+
+    command -v fc-match >/dev/null 2>&1 || return 1
+    matched_families=$(fc-match -f '%{family}' "$family" 2>/dev/null || true)
+    matched_spacing=$(fc-match -f '%{spacing}' "$family" 2>/dev/null || true)
+
+    [[ "$matched_spacing" == "100" ]] || return 1
+    printf '%s\n' "$matched_families" |
+        tr ',' '\n' |
+        sed 's/^[[:space:]]*//; s/[[:space:]]*$//' |
+        grep -Fxq -- "$family"
+}
+
+emit_font_profile() {
+    local family
+    local size
+
+    [[ -r "$PROFILE_FILE" ]] || return 0
+
+    family=$(awk -F= '
+        /^[[:space:]]*family[[:space:]]*=/ {
+            value = $0
+            sub(/^[^=]*=[[:space:]]*/, "", value)
+            sub(/[[:space:]]*$/, "", value)
+            print value
+            exit
+        }
+    ' "$PROFILE_FILE")
+    size=$(awk -F= '
+        /^[[:space:]]*size[[:space:]]*=/ {
+            value = $0
+            sub(/^[^=]*=[[:space:]]*/, "", value)
+            sub(/[[:space:]]*$/, "", value)
+            print value
+            exit
+        }
+    ' "$PROFILE_FILE")
+
+    [[ -n "$family" && "$size" =~ ^[0-9]+([.][0-9]+)?$ ]] || return 0
+    [[ "$family" != *$'\n'* && "$family" != *$'\r'* && \
+       "$family" != *'"'* && "$family" != *\\* ]] || return 0
+    font_family_is_available "$family" || return 0
+    awk -v value="$size" 'BEGIN { exit !(value >= 6 && value <= 48) }' || return 0
+
+    printf 'font_family %s\n' "$family"
+    printf 'font_size %s\n' "$size"
+}
+
+emit_opacity_profile() {
+    local opacity
+
+    [[ -r "$KITTY_OPACITY_FILE" ]] || return 0
+    opacity=$(awk -F= '
+        /^[[:space:]]*opacity[[:space:]]*=/ {
+            value = $2
+            gsub(/[[:space:]]/, "", value)
+            last = value
+        }
+        END { if (last != "") print last }
+    ' "$KITTY_OPACITY_FILE")
+
+    case "$opacity" in
+        0.8|1|1.0) printf 'background_opacity %s\n' "$opacity" ;;
+    esac
+}
+
+emit_font_profile
+emit_opacity_profile
