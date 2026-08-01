@@ -6,6 +6,7 @@ readonly REPOSITORY_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 readonly HELPER="${REPOSITORY_ROOT}/scripts/change-terminal-font"
 readonly TRANSPARENCY_HELPER="${REPOSITORY_ROOT}/scripts/toggle-terminal-transparency"
 readonly KITTY_PROFILE="${REPOSITORY_ROOT}/scripts/kitty-font-profile"
+readonly TMUX_CONFIG="${REPOSITORY_ROOT}/tmux/.tmux.conf"
 readonly TEST_ROOT="$(mktemp -d)"
 readonly MOCK_BIN="${REPOSITORY_ROOT}/tmux/tests/fixtures/bin"
 readonly FONT_STATE_DIR="${TEST_ROOT}/font-state"
@@ -47,6 +48,13 @@ assert_file_not_contains() {
         fail "did not expect '$unexpected' in $file"
     fi
 }
+
+font_binding=$(grep -F 'change-terminal-font interactive' "$TMUX_CONFIG")
+assert_contains "$font_binding" 'bind-key F run-shell -b'
+assert_contains "$font_binding" '/usr/bin/tmux display-popup -c #{q:client_name}'
+assert_contains "$font_binding" 'interactive #{q:client_termname} #{q:client_name} #{q:client_pid}'
+assert_file_not_contains "$TMUX_CONFIG" \
+    "bind-key F display-popup"
 
 unset KITTY_LISTEN_ON KITTY_WINDOW_ID KITTY_PID ALACRITTY_SOCKET ALACRITTY_WINDOW_ID || true
 mkdir -p "$FONT_STATE_DIR" "$GHOSTTY_STATE_DIR"
