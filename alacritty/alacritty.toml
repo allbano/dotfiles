@@ -1,6 +1,7 @@
 [general]
 import = ["/home/albano/.config/alacritty/default.toml"]
 live_config_reload = true
+ipc_socket = true
 working_directory = "None"
 
 [colors]

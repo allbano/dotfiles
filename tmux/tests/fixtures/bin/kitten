@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+printf 'kitten %s\n' "$*" >>"$MOCK_LOG"
+if [[ "$*" == *" ls" ]]; then
+    printf '[]\n'
+fi

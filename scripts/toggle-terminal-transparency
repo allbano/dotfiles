@@ -1,0 +1,505 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+readonly TRANSPARENT_OPACITY="0.8"
+readonly OPAQUE_OPACITY="1.0"
+readonly GHOSTTY_SERVICE="app-com.mitchellh.ghostty.service"
+readonly GHOSTTY_STATE_DIR="${TERMINAL_TRANSPARENCY_STATE_DIR:-${HOME}/.local/state/dotfiles/terminal-transparency}"
+readonly GHOSTTY_STATE_FILE="${GHOSTTY_STATE_DIR}/ghostty.conf"
+
+RESULT=""
+ERROR_MESSAGE=""
+CURRENT_OPACITY=""
+CLIENT_NAME=""
+CLIENT_PID=""
+KITTY_TARGET_SOCKET=""
+ALACRITTY_TARGET_SOCKET=""
+ALACRITTY_TARGET_WINDOW_ID=""
+
+usage() {
+    printf 'Usage: %s {toggle|status} [client-termname] [client-name] [client-pid]\n' "${0##*/}"
+}
+
+fail() {
+    ERROR_MESSAGE="$1"
+    return 1
+}
+
+compact_error() {
+    local message="${1//$'\n'/ }"
+    message="${message//$'\r'/ }"
+    printf '%.180s' "$message"
+}
+
+client_environment_value() {
+    local variable_name="$1"
+    local process_owner
+    local entry
+
+    if [[ ! "$CLIENT_PID" =~ ^[0-9]+$ || "$CLIENT_PID" -le 1 || \
+          ! -r "/proc/${CLIENT_PID}/status" || ! -r "/proc/${CLIENT_PID}/environ" ]]; then
+        return 1
+    fi
+
+    process_owner=$(awk '/^Uid:/ { print $2; exit }' "/proc/${CLIENT_PID}/status")
+    if [[ "$process_owner" != "$(id -u)" ]]; then
+        return 1
+    fi
+
+    while IFS= read -r -d '' entry; do
+        if [[ "$entry" == "${variable_name}="* ]]; then
+            printf '%s\n' "${entry#*=}"
+            return
+        fi
+    done <"/proc/${CLIENT_PID}/environ"
+
+    return 1
+}
+
+notify() {
+    local message="$1"
+
+    if [[ -n "$CLIENT_NAME" && -n "${TMUX:-}" ]] && command -v tmux >/dev/null 2>&1; then
+        if tmux display-message -c "$CLIENT_NAME" "$message" 2>/dev/null; then
+            return
+        fi
+    fi
+
+    printf '%s\n' "$message"
+}
+
+detect_terminal() {
+    local hint="${1,,}"
+    local term_program="${TERM_PROGRAM:-}"
+    term_program="${term_program,,}"
+
+    case "$hint" in
+        *ghostty*)
+            printf 'ghostty\n'
+            return
+            ;;
+        *kitty*)
+            printf 'kitty\n'
+            return
+            ;;
+        *alacritty*)
+            printf 'alacritty\n'
+            return
+            ;;
+    esac
+
+    case "$term_program" in
+        *ghostty*)
+            printf 'ghostty\n'
+            return
+            ;;
+        *kitty*)
+            printf 'kitty\n'
+            return
+            ;;
+        *alacritty*)
+            printf 'alacritty\n'
+            return
+            ;;
+    esac
+
+    if [[ -n "${KITTY_LISTEN_ON:-}" || -n "${KITTY_WINDOW_ID:-}" ]]; then
+        printf 'kitty\n'
+    elif [[ -n "${ALACRITTY_SOCKET:-}" || -n "${ALACRITTY_WINDOW_ID:-}" ]]; then
+        printf 'alacritty\n'
+    else
+        return 1
+    fi
+}
+
+require_command() {
+    local command_name="$1"
+    local terminal_name="$2"
+
+    if ! command -v "$command_name" >/dev/null 2>&1; then
+        fail "$terminal_name: comando '$command_name' não encontrado"
+    fi
+}
+
+toggle_kitty() {
+    local command_output
+
+    require_command kitten "Kitty" || return 1
+
+    resolve_kitty_socket || return 1
+
+    if ! command_output=$(kitten @ --to "$KITTY_TARGET_SOCKET" \
+        set-background-opacity --toggle "$OPAQUE_OPACITY" 2>&1); then
+        fail "Kitty: falha no controle remoto: $(compact_error "$command_output")"
+        return 1
+    fi
+
+    RESULT="Kitty: transparência alternada (${TRANSPARENT_OPACITY} ↔ ${OPAQUE_OPACITY})"
+}
+
+status_kitty() {
+    local command_output
+
+    require_command kitten "Kitty" || return 1
+
+    resolve_kitty_socket || return 1
+
+    if ! command_output=$(kitten @ --to "$KITTY_TARGET_SOCKET" ls 2>&1); then
+        fail "Kitty: socket indisponível: $(compact_error "$command_output")"
+        return 1
+    fi
+
+    RESULT="Kitty: controle dinâmico disponível; base configurada ${TRANSPARENT_OPACITY}"
+}
+
+resolve_kitty_socket() {
+    local client_socket
+    local kitty_pid
+    local runtime_directory
+    local derived_socket
+
+    if client_socket=$(client_environment_value KITTY_LISTEN_ON) && [[ -n "$client_socket" ]]; then
+        KITTY_TARGET_SOCKET="$client_socket"
+        return
+    fi
+
+    if kitty_pid=$(find_terminal_ancestor kitty); then
+        runtime_directory="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+        derived_socket="${runtime_directory}/kitty-${kitty_pid}"
+        if [[ -S "$derived_socket" ]]; then
+            KITTY_TARGET_SOCKET="unix:${derived_socket}"
+            return
+        fi
+    fi
+
+    if [[ -n "${KITTY_LISTEN_ON:-}" ]]; then
+        KITTY_TARGET_SOCKET="$KITTY_LISTEN_ON"
+        return
+    fi
+
+    fail "Kitty: socket ausente; reinicie o Kitty após carregar a nova configuração"
+}
+
+extract_alacritty_opacity() {
+    awk '
+        /"window"[[:space:]]*:/ {
+            value = $0
+            sub(/^.*"window"[[:space:]]*:[[:space:]]*\{/, "", value)
+            if (match(value, /"opacity"[[:space:]]*:[[:space:]]*[0-9.]+/)) {
+                value = substr(value, RSTART, RLENGTH)
+                sub(/^.*:[[:space:]]*/, "", value)
+                print value
+                exit
+            }
+        }
+        /^[[:space:]]*\[window\][[:space:]]*$/ {
+            in_window = 1
+            next
+        }
+        in_window && /^[[:space:]]*\[/ {
+            in_window = 0
+        }
+        in_window && /^[[:space:]]*opacity[[:space:]]*=/ {
+            value = $0
+            sub(/^[^=]*=[[:space:]]*/, "", value)
+            sub(/[[:space:]#,].*$/, "", value)
+            gsub(/["\047]/, "", value)
+            print value
+            exit
+        }
+        /^[[:space:]]*window\.opacity[[:space:]]*=/ {
+            value = $0
+            sub(/^[^=]*=[[:space:]]*/, "", value)
+            sub(/[[:space:]#,].*$/, "", value)
+            gsub(/["\047]/, "", value)
+            print value
+            exit
+        }
+    '
+}
+
+get_alacritty_opacity() {
+    local config_output
+    local opacity
+
+    require_command alacritty "Alacritty" || return 1
+
+    resolve_alacritty_target || return 1
+
+    if ! config_output=$(ALACRITTY_SOCKET="$ALACRITTY_TARGET_SOCKET" \
+        ALACRITTY_WINDOW_ID="$ALACRITTY_TARGET_WINDOW_ID" \
+        alacritty msg get-config 2>&1); then
+        fail "Alacritty: falha ao consultar IPC: $(compact_error "$config_output")"
+        return 1
+    fi
+
+    opacity=$(extract_alacritty_opacity <<<"$config_output")
+    if [[ ! "$opacity" =~ ^(0|1)(\.[0-9]+)?$ && ! "$opacity" =~ ^\.[0-9]+$ ]]; then
+        fail "Alacritty: não foi possível interpretar window.opacity"
+        return 1
+    fi
+
+    CURRENT_OPACITY="$opacity"
+}
+
+resolve_alacritty_target() {
+    local client_socket
+    local client_window_id
+
+    client_socket=$(client_environment_value ALACRITTY_SOCKET || true)
+    client_window_id=$(client_environment_value ALACRITTY_WINDOW_ID || true)
+
+    ALACRITTY_TARGET_SOCKET="${client_socket:-${ALACRITTY_SOCKET:-}}"
+    ALACRITTY_TARGET_WINDOW_ID="${client_window_id:-${ALACRITTY_WINDOW_ID:-}}"
+
+    if [[ -z "$ALACRITTY_TARGET_SOCKET" || -z "$ALACRITTY_TARGET_WINDOW_ID" ]]; then
+        fail "Alacritty: socket ou window ID ausente no ambiente do cliente tmux"
+        return 1
+    fi
+}
+
+toggle_alacritty() {
+    local current_opacity
+    local target_opacity
+    local command_output
+
+    get_alacritty_opacity || return 1
+    current_opacity="$CURRENT_OPACITY"
+
+    if awk -v value="$current_opacity" 'BEGIN { exit !(value >= 0.999) }'; then
+        target_opacity="$TRANSPARENT_OPACITY"
+    else
+        target_opacity="$OPAQUE_OPACITY"
+    fi
+
+    if ! command_output=$(ALACRITTY_SOCKET="$ALACRITTY_TARGET_SOCKET" \
+        ALACRITTY_WINDOW_ID="$ALACRITTY_TARGET_WINDOW_ID" \
+        alacritty msg config "window.opacity=${target_opacity}" 2>&1); then
+        fail "Alacritty: falha ao alterar IPC: $(compact_error "$command_output")"
+        return 1
+    fi
+
+    if [[ "$target_opacity" == "$OPAQUE_OPACITY" ]]; then
+        RESULT="Alacritty: opaco ${OPAQUE_OPACITY}"
+    else
+        RESULT="Alacritty: transparência ${TRANSPARENT_OPACITY}"
+    fi
+}
+
+status_alacritty() {
+    local opacity
+
+    get_alacritty_opacity || return 1
+    opacity="$CURRENT_OPACITY"
+    RESULT="Alacritty: opacidade ${opacity}"
+}
+
+read_ghostty_opacity() {
+    local opacity
+
+    if [[ ! -f "$GHOSTTY_STATE_FILE" ]]; then
+        CURRENT_OPACITY="$TRANSPARENT_OPACITY"
+        return
+    fi
+
+    opacity=$(awk -F= '
+        /^[[:space:]]*background-opacity[[:space:]]*=/ {
+            value = $2
+            gsub(/[[:space:]]/, "", value)
+            print value
+            exit
+        }
+    ' "$GHOSTTY_STATE_FILE")
+
+    if [[ "$opacity" != "$TRANSPARENT_OPACITY" && "$opacity" != "1" && "$opacity" != "$OPAQUE_OPACITY" ]]; then
+        fail "Ghostty: estado inválido em $GHOSTTY_STATE_FILE"
+        return 1
+    fi
+
+    CURRENT_OPACITY="$opacity"
+}
+
+write_ghostty_opacity() {
+    local opacity="$1"
+    local temporary_file
+
+    mkdir -p -- "$GHOSTTY_STATE_DIR"
+    chmod 700 -- "$GHOSTTY_STATE_DIR"
+    temporary_file=$(mktemp "${GHOSTTY_STATE_FILE}.tmp.XXXXXX")
+    chmod 600 -- "$temporary_file"
+    printf 'background-opacity = %s\n' "$opacity" >"$temporary_file"
+    mv -f -- "$temporary_file" "$GHOSTTY_STATE_FILE"
+}
+
+find_terminal_ancestor() {
+    local expected_process="$1"
+    local process_id="$CLIENT_PID"
+    local process_name
+    local process_executable
+    local process_owner
+    local parent_id
+    local depth
+
+    if [[ ! "$process_id" =~ ^[0-9]+$ || "$process_id" -le 1 ]]; then
+        return 1
+    fi
+
+    for ((depth = 0; depth < 8; depth++)); do
+        if [[ ! -r "/proc/${process_id}/status" ]]; then
+            return 1
+        fi
+
+        process_name=$(awk '/^Name:/ { print $2; exit }' "/proc/${process_id}/status")
+        process_owner=$(awk '/^Uid:/ { print $2; exit }' "/proc/${process_id}/status")
+        process_executable=$(readlink -f "/proc/${process_id}/exe" 2>/dev/null || true)
+
+        if [[ "$process_owner" == "$(id -u)" && \
+              ( "$process_name" == "$expected_process" || \
+                "${process_executable##*/}" == "$expected_process" ) ]]; then
+            printf '%s\n' "$process_id"
+            return
+        fi
+
+        parent_id=$(awk '/^PPid:/ { print $2; exit }' "/proc/${process_id}/status")
+        if [[ ! "$parent_id" =~ ^[0-9]+$ || "$parent_id" -le 1 || "$parent_id" == "$process_id" ]]; then
+            return 1
+        fi
+        process_id="$parent_id"
+    done
+
+    return 1
+}
+
+reload_ghostty() {
+    local ghostty_pid
+    local command_output
+
+    if ghostty_pid=$(find_terminal_ancestor ghostty); then
+        if ! kill -USR2 "$ghostty_pid" 2>/dev/null; then
+            fail "Ghostty: não foi possível sinalizar o processo validado $ghostty_pid"
+            return 1
+        fi
+        return
+    fi
+
+    require_command systemctl "Ghostty" || return 1
+
+    if ! systemctl --user is-active --quiet "$GHOSTTY_SERVICE"; then
+        fail "Ghostty: processo ancestral não identificado e unidade systemd inativa"
+        return 1
+    fi
+
+    if ! command_output=$(systemctl --user reload "$GHOSTTY_SERVICE" 2>&1); then
+        fail "Ghostty: reload pelo systemd falhou: $(compact_error "$command_output")"
+        return 1
+    fi
+}
+
+toggle_ghostty() {
+    local current_opacity
+    local target_opacity
+    local old_file_exists=0
+
+    read_ghostty_opacity || return 1
+    current_opacity="$CURRENT_OPACITY"
+
+    if [[ "$current_opacity" == "1" || "$current_opacity" == "$OPAQUE_OPACITY" ]]; then
+        target_opacity="$TRANSPARENT_OPACITY"
+    else
+        target_opacity="$OPAQUE_OPACITY"
+    fi
+
+    if [[ -f "$GHOSTTY_STATE_FILE" ]]; then
+        old_file_exists=1
+    fi
+
+    if ! write_ghostty_opacity "$target_opacity"; then
+        fail "Ghostty: não foi possível gravar $GHOSTTY_STATE_FILE"
+        return 1
+    fi
+
+    if ! reload_ghostty; then
+        if ((old_file_exists)); then
+            write_ghostty_opacity "$current_opacity" || true
+        else
+            rm -f -- "$GHOSTTY_STATE_FILE"
+        fi
+        return 1
+    fi
+
+    if [[ "$target_opacity" == "$OPAQUE_OPACITY" ]]; then
+        RESULT="Ghostty: opaco ${OPAQUE_OPACITY}"
+    else
+        RESULT="Ghostty: transparência ${TRANSPARENT_OPACITY}"
+    fi
+}
+
+status_ghostty() {
+    local opacity
+
+    read_ghostty_opacity || return 1
+    opacity="$CURRENT_OPACITY"
+    RESULT="Ghostty: opacidade configurada ${opacity}"
+}
+
+run_action() {
+    local action="$1"
+    local terminal="$2"
+
+    case "${action}:${terminal}" in
+        toggle:kitty)
+            toggle_kitty
+            ;;
+        status:kitty)
+            status_kitty
+            ;;
+        toggle:alacritty)
+            toggle_alacritty
+            ;;
+        status:alacritty)
+            status_alacritty
+            ;;
+        toggle:ghostty)
+            toggle_ghostty
+            ;;
+        status:ghostty)
+            status_ghostty
+            ;;
+        *)
+            fail "ação ou terminal não suportado: ${action}:${terminal}"
+            ;;
+    esac
+}
+
+main() {
+    local action="${1:-}"
+    local terminal_hint="${2:-}"
+    local terminal
+
+    CLIENT_NAME="${3:-}"
+    CLIENT_PID="${4:-}"
+
+    if [[ "$action" != "toggle" && "$action" != "status" ]]; then
+        usage >&2
+        return 64
+    fi
+
+    if ! terminal=$(detect_terminal "$terminal_hint"); then
+        ERROR_MESSAGE="terminal não identificado (${terminal_hint:-sem identificação})"
+        notify "Transparência: erro — $ERROR_MESSAGE"
+        return 1
+    fi
+
+    if run_action "$action" "$terminal"; then
+        notify "$RESULT"
+    else
+        if [[ -z "$ERROR_MESSAGE" ]]; then
+            ERROR_MESSAGE="$terminal: operação falhou"
+        fi
+        notify "Transparência: erro — $ERROR_MESSAGE"
+        return 1
+    fi
+}
+
+main "$@"

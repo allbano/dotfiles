@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+printf 'systemctl %s\n' "$*" >>"$MOCK_LOG"
+if [[ "${MOCK_SYSTEMCTL_FAIL:-0}" == "1" ]]; then
+    exit 1
+fi
+if [[ "$*" == *" is-active --quiet "* || "$*" == *" reload "* ]]; then
+    exit 0
+fi
+exit 2

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+printf 'alacritty %s\n' "$*" >>"$MOCK_LOG"
+if [[ "${1:-}" == "msg" && "${2:-}" == "get-config" ]]; then
+    printf '{"general":{"ipc_socket":true},"window":{"opacity":%s},"font":{"size":12.0}}\n' \
+        "$(<"$MOCK_ALACRITTY_OPACITY")"
+elif [[ "${1:-}" == "msg" && "${2:-}" == "config" ]]; then
+    printf '%s\n' "${3#window.opacity=}" >"$MOCK_ALACRITTY_OPACITY"
+else
+    exit 2
+fi
