@@ -17,7 +17,7 @@ fi
 # =========================================================================== #
 export EDITOR="nvim"
 export VISUAL="nvim"
-export PAGER="less -R -s -M -Gg"
+export PAGER="cat"
 # Ghostty needed
 export GTK_IM_MODULE=gtk-im-context-simple
 
