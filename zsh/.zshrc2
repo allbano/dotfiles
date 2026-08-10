@@ -26,6 +26,7 @@ fi
 fpath=(
   /usr/local/share/zsh/site-functions
   /usr/share/zsh/site-functions
+  "$HOME/.fzf/bin"
   $fpath
 )
 

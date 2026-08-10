@@ -154,5 +154,4 @@ fi
 bindkey "\eOH" beginning-of-line
 bindkey "\eOF" end-of-line
 
-# Load Angular CLI autocompletion.
-source <(ng completion script)
+

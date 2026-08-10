@@ -6,15 +6,9 @@ path=(
   "$HOME/bin"
   "$HOME/.local/bin"
   "$HOME/.cargo/bin"
+  "$HOME/.fzf/bin"
   $path
 )
-
-
-# Angular CLI autocompletion
-if command -v ng 1>/dev/null 2>&1; then
-  source <(ng completion script)
-fi
-
 # Extra PATH settings
 path+=(
   /usr/sbin
@@ -23,4 +17,11 @@ path+=(
 
 # Export the updated path
 export PATH
+
+# Angular CLI autocompletion
+if command -v ng 1>/dev/null 2>&1; then
+  source <(ng completion script)
+fi
+
+
 
