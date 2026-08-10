@@ -201,6 +201,30 @@ pushHis() {
     cd "${LOCALPATH}" || exit 2
 }
 
+_cmdsh_fzf_search() {
+    # Defina o caminho exato para o arquivo que o cmdsh gera
+    local cmd_file="$HOME/github/dotfiles/bash/history/commands_history"
+    local selected_command
+
+    # Verifica se o arquivo existe para evitar erros
+    if [[ ! -f "$cmd_file" ]]; then
+        echo -e "\nArquivo não encontrado: $cmd_file"
+        return 1
+    fi
+
+    # O fzf lê o arquivo. 
+    # --height=40% e --layout=reverse deixam a interface parecida com o Ctrl+R padrão
+    selected_command=$(cat "$cmd_file" | fzf --height=40% --layout=reverse --prompt="cmdsh> " --query="$READLINE_LINE")
+
+    # Se você escolheu um comando (não cancelou com Esc)
+    if [[ -n "$selected_command" ]]; then
+        # Insere o comando na linha atual
+        READLINE_LINE="$selected_command"
+        # Move o cursor para o final do comando inserido
+        READLINE_LINE=${#READLINE_LINE}
+    fi
+}
+
 
 
 

@@ -76,6 +76,7 @@ shopt -s checkwinsize     # Atualiza tamanho da janela
 shopt -s autocd           # cd sem digitar cd
 shopt -s cdspell          # Corrige erros no cd
 shopt -s cmdhist          # Comandos multi-linha únicos
+shopt -u lithist
 shopt -s dotglob          # * inclui ocultos
 shopt -s extglob          # Globbing estendido
 shopt -s expand_aliases   # Expande aliases
@@ -135,10 +136,13 @@ if [[ $SHLVL -eq 1 ]] && [[ $(tty 2>/dev/null) == /dev/pts/0 ]]; then
     pullDotfiles
 fi
 
+
 # Configuração do FZF para Ctrl+R
 # --no-sort: Mantém ordem cronológica
 # --exact: Busca exata (opcional)
 export FZF_CTRL_R_OPTS="--no-sort --history-size=100000"
+
+bind -x '"\C-f": _cmdsh_fzf_search'
 
 # 9. ATIVAÇÃO DO PROMPT
 # =========================================================================== #
