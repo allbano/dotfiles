@@ -3596,8 +3596,7 @@ mise where python
 mise sync
 mise set MISE_DISABLE_TOOLS=python
 mise sync python
-echo -e "${PATH//:/\\n}"\
-mise unset MISE_DISABLE_TOOLS
+echo -e "${PATH//:/\\n}" mise unset MISE_DISABLE_TOOLS
 rm mise.toml 
 mise set 
 mise set --help
@@ -5185,8 +5184,7 @@ pacman -Ss arcolinux_repo/
 ./install
 cd $DOTF
 pyenv install 3.12.4
-ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//──/g' -e 's/─/├/' -e '$s/├/└/'\
-ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//──/g' -e 's/─/├/' -e '$s/├/└/'
+ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//──/g' -e 's/─/├/' -e '$s/├/└/' ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//──/g' -e 's/─/├/' -e '$s/├/└/'
 sudo chown --help
 cd Pictures/
 sudo chown -hR albano /u
@@ -5752,8 +5750,7 @@ paru -S devtools
 paru -Si nvchecker
 tree -dL2
 paru -Qs docker
-cd github/\
-git pull --help
+cd github/ git pull --help
 git diff docker-compose.yml
 gcm "Fix: corrigido problema com nome de volume."
 paru -Ssss "^linux"
@@ -6521,8 +6518,7 @@ docker-compose -f docker-compose2.yml up -d
 docker-compose -f docker-compose2.yml up -d lojadevarejo && docker-compose -f docker-compose2.yml up projetodw -d
 docker-compose -f docker-compose2.yml up lojadevarejo
 rm ~/.codeium/user_settings.pb
-kwalletd5 --help\
-kwalletd5 --help
+kwalletd5 --help kwalletd5 --help
 rm docker-compose.yml 
 lvim backup-full.sql
 docker-compose -f docker-compose2.yml up -d --force-recreate lojadevarejo
@@ -10051,8 +10047,7 @@ ls /sys
 ls /sys/dev
 ls /sys/dev/block/
 ls /sys/devices/
-alacritty --help\
-ll /run/media/albano/DADOS/.ssh
+alacritty --help ll /run/media/albano/DADOS/.ssh
 ll -d /run/media/albano/DADOS/.ssh
 rsync -haP /run/media/albano/DADOS/.ssh/ ~/.ssh
 ls -ls
@@ -10193,8 +10188,7 @@ nmcli connection monitor Ap202_5G
 nmcli connection show
 gcl git@github.com:allbano/livro-aprendizado-de-maquina-sklearn-keras-tf.git
 mkise ls
-sudo nmcli connection reload \
-sudo nmcli connection reload 
+sudo nmcli connection reload  sudo nmcli connection reload 
 paru -S zen-browser
 paru -S --asexplicit zen-browser
 sudo nmcli connection modify Ap202_5G ipv4.dns "8.8.8.8 8.8.4.4"
@@ -10404,8 +10398,7 @@ ng g c card-roxo
 ng g c card-button
 ng g c card-roxo-button
 ng g m cards
-ghostty --version\
-git add 
+ghostty --version git add 
 git commit -m "feat: Atualizado ate a aula 31. Esqueci de commitar antes \!\!\!"
 git commit --amend -m "feat: Atualizado ate a aula 31. Esqueci de commitar antes."
 git commit -m "feat: Aula 31 - Assistida."
@@ -10429,8 +10422,7 @@ mkdir base
 mv base bare
 mkdir dotfiles.git
 git remote -h
-lsd -l\
-git clone ~/Tests/bare/dotfiles.git
+lsd -l git clone ~/Tests/bare/dotfiles.git
 git remote add backup ~/Tests/bare/dotfiles.git
 git remote -v
 git push backup main 
@@ -10547,8 +10539,7 @@ paru -Ssss mokutil
 paru -S --asexplicit mokutil
 sudo mokutil --sb-state
 paru -Qs ucode
-uname -a\
-pacman -Ssss linux
+uname -a pacman -Ssss linux
 paru -S --asexplicit usbctl lib32-libva lib32-util-linux linux-tools
 sudo pacman -S --asexplicit timeshift btrfs-assistant btrfs-heatmap 
 sudo pacman -S --needed --asexplicit timeshift btrfs-assistant btrfs-heatmap xorg-xhost snapper btrfsmaintenance 
@@ -11438,8 +11429,7 @@ ng g c primeiro --type=Component
 git commit -m "Aula 439 - Início (Angular v20/ type: component)"
 ng g c primeiro
 ng g c segundo
-gst\
-git commit -m "Aula 444 - Final - RouterLinkActive"
+gst git commit -m "Aula 444 - Final - RouterLinkActive"
 ng g c base
 git commit --amend -m "Aula 444 - Parte 2 - RouterLinkActive"
 git commit -m "Aula 445 - Início - Parte 3 - RouterLinkActive"
@@ -11858,8 +11848,7 @@ cat /etc/group
 ls /lib/modules/$(uname -r)/kernel/drivers/cpufreq | grep amd
 sudo lvim /etc/default/grub
 sudo systemctl restart power-profiles-daemon
-cat /sys/devices/system/cpu/cpu0/cpufreq/energy_performance_preference\
-sudo htop
+cat /sys/devices/system/cpu/cpu0/cpufreq/energy_performance_preference sudo htop
 sudo pacman -S --asexplicit codeblocks
 codeblocks
 sudo pacman -R codeblocks
@@ -12283,8 +12272,7 @@ git config list --local
 git config -l
 git log --oneline 
 git merge -v dev
-cd\
-cd agente
+cd cd agente
 cd src/
 cd agente_chat/
 cd config/
@@ -12738,8 +12726,7 @@ git commit -m "chore: atualiza gitignore para ignorar .env"
 git commit -m "refact: corrige a rota /auth para /auth/login e cria a /auth/logout"
 git commit -m "refact: atualiza o hash da senha conforme a especificação - SHA256 + SALT"
 yay -Sccccc
-yay -Syyu\
-paru -R webkit2gtk
+yay -Syyu paru -R webkit2gtk
 paru -R spring-tools-for-eclipse webkit2gtk
 set +o monitor
 set -o pipefail
@@ -12827,8 +12814,7 @@ git commit -m "feat: add rclone script to config rclone (no credentials)"
 doas paccman -Syu
 account-rclone 
 nvim account-rclone 
-account-rclone \
-cd .config/systemd/user/
+account-rclone  cd .config/systemd/user/
 bat account-rclone.service 
 cat default.target.wants/
 cat default.target.wants/podman.service 
@@ -13188,10 +13174,7 @@ npm i -g opencode-ai
 code sdks/vscode
 opencode --port 64628
 opencode --port 64167
-curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions   -H "Authorization: Bearer curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions \
-  -H "Authorization: Bearer sk-6eddb0fa7dcd43c0b4858c204e1ead3d" \
-  -H "Content-Type: application/json" \
-  -d '{"model":"qwen2.5-coder-32b-instruct","messages":[{"role":"user","content":"responda apenas OK"}]}' | python3 -m json.tool
+curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions   -H "Authorization: Bearer curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions    -H "Authorization: Bearer sk-6eddb0fa7dcd43c0b4858c204e1ead3d"    -H "Content-Type: application/json"    -d '{"model":"qwen2.5-coder-32b-instruct","messages":[{"role":"user","content":"responda apenas OK"}]}' | python3 -m json.tool
 
 curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions -H "Authorization: Bearer curl -s -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions -H "Authorization: Bearer sk-6eddb0fa7dcd43c0b4858c204e1ead3d" -H "Content-Type: application/json" -d '{"model":"qwen2.5-coder-32b-instruct","messages":[{"role":"user","content":"responda apenas OK"}]}' | python3 -m json.tool
 "
@@ -13209,8 +13192,7 @@ wirefilter --help
 sudo pacman -Ssss wireguard
 sudo pacman -Qs wireguard
 sudo pacman -Qi wireguard-tools 
-w\
-wpctl --help
+w wpctl --help
 wpctl status
 wvtag --help
 wdctl --help
@@ -13526,8 +13508,7 @@ systemctl status sshdgenkeys.service
 docker context ls
 echo $DOCKER_HOST 
 rg "DOCKER_HOST"
-tmux\
-env | rg "DOCKER_HOST"
+tmux env | rg "DOCKER_HOST"
 rg --files-with-matches "DOCKER_HOST" | fzf --preview 'rg --page-index --color=always "DOCKER_HOST" {}'
 rg --files-with-matches "DOCKER_HOST" | fzf --preview 'rg --color=always "DOCKER_HOST" {}'
 env| rg EDITOR
@@ -14291,3 +14272,434 @@ git commit -m "fix: fixes a bug in the fonts-toggle function for a Kitty, Alacri
 his
 cd $DOTFILES
 gst
+is
+his
+his
+ll
+opencode -n
+cd $DOTBASH
+ll
+cd history/
+ll
+nvim commands_history 
+ll
+rm commands_history 
+cd ..
+ll
+cd ..
+ll
+cd cmdsh/
+ll
+nvim main.go 
+gst
+env | rg READLINE
+gst
+lsk
+srs pacman -Syu
+ll
+cd $DOTFILES
+ll
+cd cmdsh/
+ll
+antigravity-ide 
+code .
+lsk
+paru -Sua
+paru -Syu
+which opencode
+mise self-update
+mise up
+opencode --port 39912
+his
+cd $DOTBASH/history/
+ll
+l
+cd ..
+ll
+cd backup/
+l;
+cd ../..
+mkdir srcbak
+tar --zstd -cf bashrc_etc.tar.zst --remove-files  bash/backup/
+ll
+ll bash/
+mv bashrc_etc.tar.zst srcbak/
+ll
+gst
+ga srcbak/
+glol -5
+git commit -m "raw: updates legacy source code files."
+git push -v origin archlinux 
+ll
+gst
+git rm bash/
+git rm -r bash/
+git add bash/backup/
+git rm bash/backup/
+gst
+git restore bash-completion/
+gst
+git restore --staged bash-completion/
+gst
+git restore --staged zsh/
+gst
+git restore --staged cmdsh/
+gst
+git restore --staged cmdsh/docs/
+git restore --staged docs/
+gst
+git restore --staged bash/.bashrc 
+gst
+git restore --staged bash/bash_functions 
+gst
+git commit --amend -m "raw: updates legacy source code files."
+git push -v origin archlinux 
+git push -vf origin archlinux 
+gst
+git add zsh/
+gst
+git commit -m "refact: remove Atuin from zsh configurations."
+git push -v origin archlinux 
+gst
+git add bash-completion/
+gst
+git commit -m "refact: fizes bash-completion for the paru command."
+gst
+git diff bash/.bashrc
+git diff bash/
+git add bash/
+gst
+git commit -m "feat: adds a bash function for interaction between fzf and the commands-history file."
+git push -v origin archlinux 
+gst
+git commit -m "feat: adds a Go project that removes duplicate lines from .bash_history and sorts them alphabetically."
+git push -v origin archlinux 
+rm -rf ~/.config/Code/Cache ~/.config/Code/CachedData ~/.config/Code/Local Storage
+opencode --port 55345
+which opencode
+opencode
+srs pacman -Syu
+srs pacman -Q linux-rt linux-rt-headers
+findmnt -no FSTYPE /
+uname -r 
+srs pacman -U /var/cache/pacman/pkg/linux-rt-7.1.7.rt1.arch1-1-x86_64.pkg.tar.zst /var/cache/pacman/pkg/linux-rt-headers-7.1.7.rt1.arch1-1-x86_64.pkg.tar.zst
+sudo nvim /var/lib/dkms/acpi_call/1.2.2/source/dkms.conf
+srs pacman -Syu
+srs findmnt -t zfs
+srs findmnt -t btrfs
+findmnt -t btrfs
+srs mkinitcpio -P
+srs pacman -Syu
+lsk
+srs pacman -Syu
+uname -a
+srs pacman -Syu
+srs systemctl status 
+systemctl --user status 
+srs systemctl status sshd.service 
+srs firewall-cmd --list-all
+ssh harmonia-server-IP197 
+lsk
+nvim ~/.zsh_history 
+lsk
+nvim ~/.zsh_history 
+wc -l ~/.zsh_history 
+nvim ~/.zsh_history 
+ll
+lsk
+ssh harmonia-server-IP216 
+nvtop
+ll
+cd github/
+ll
+tar -tvf lumia-project.tar.zst 
+ll
+rm lumia-project.tar.zst 
+ll
+cd lumia/
+ll
+cd app-harmonia/
+ll
+gst
+cd ..
+gst
+git remote -v
+ll
+cd app-harmonia/
+l
+rm -rf frontend/
+ll
+cd ..
+ll
+cd tools/
+ll
+cd harmonia-model-toggle/
+ll
+cd ..
+ll
+cd ..
+ll
+cd modelos/
+ll
+cd ...
+ll
+code .
+srs pacman -Syu
+cd /home/albano/github/lumia/
+ll
+la
+rm .git
+rm -rf  .git
+ll
+srs pacman -Ssss visual-studio
+paru -Ssss visual-studio-code
+paru -Ssss codium-insiders
+ssh harmonia-server-IP197
+dust -r /run/media/albano/DADOS/albano/
+diff -r /home/albano/Music/ /run/media/albano/DADOS/albano/Music/
+cd /run/media/albano/DADOS/
+lsblk
+sudo umount /run/media/albano/DADOS 
+sudo umount /run/media/albano/DADOS
+lsblk
+lsblk -f
+lsk
+srs pacman -Syu
+paru -Syu
+bat /etc/fstab
+lsk
+sudo mkdir /vt
+sudo chown albano:albano /vt
+ll /
+mise ls
+cd github/lumia/
+ll
+python --version
+pip install -U pip poetry
+poetry --version
+lsk
+exit
+srs pacman -Syu
+flatpak update
+distrobox
+distrobox ls
+docker ls
+docker ps
+docker rm -f pg18_weaviate_like 
+paru -Sssss linux-
+paru -Sssss 'linux lts'
+ll
+cd Courses/Go/GoLangBook/
+ll
+cd 01_Example/
+ll
+nvim main.go
+go run ./main.go 
+go run ./main.go Deu muito ruim!
+nvim main.go
+cd ~/.config/nvim
+gst
+diff -r /run/media/albano/ALLDATA/ /dados/hd1/Videos/
+rmdir '/run/media/albano/ALLDATA/SXPR/Torrent/gaytor.net/VTorrents/H - M'/
+rmdir '/run/media/albano/ALLDATA/SXPR/Torrent/gaytor.net/VTorrents/Vint Classics Collection 70s  - Part 1'/
+his
+sudo nvim /etc/fstab
+sudo findmnt 
+sudo umount /dados/hd1/
+sudo umount /dados/hd1/snapdados 
+sudo umount /dados/hd1/Dados 
+sudo umount /dados/hd1/snapvideos 
+sudo umount /dados/hd1/Videos 
+lsk
+sudo nvim /etc/fstab
+sudo mount -a
+sudo systemctl daemon-reload 
+lsk
+sudo mount -fav
+lsk
+nvim ~/.config/opencode/opencode.jsonc 
+ll
+cd docs/
+l
+flatpak update
+cd
+docker ps
+ls -l
+cd ai-models/
+ll
+cd ..
+ll
+rm -rf graphify-out/
+ll
+cd Scratch/
+ll
+cd ..
+rmdir Scratch/
+ll
+cd Templates/
+ll
+cd ..
+ll
+cd chats/
+ll
+cd ..
+ll
+rm -rf chats/
+ll
+cd gdrive/
+ll
+du -sh .
+cd ..
+rm -rf gdrive/
+ll
+cd logs/
+ll
+cd ..
+ll
+cd tests/
+ll
+his
+ll
+rm ArchServer-history-1774565094 
+ll
+rm -rf yt-projeto-v20-design-patterns-frontend/
+ll
+rm -rf BANTADS-20261S/
+ll
+rm -rf bantads-ui/
+rm -rf bantads
+ll
+cd jlab/
+ll
+cd venv/
+ll
+cd ..
+ll
+cd ..
+ll
+his
+his
+his
+his
+his
+his
+his
+paru -Ss linux lts
+paru -Ssq 'linux-.*lts'
+paru -Ss 'linux-.*lts'
+opencode ./
+gst
+git diff
+nvim
+srs pacman -Syu
+paru -Ss 'linux-.*lts'
+srs pacman -S --asexplicit linux-lts-docs
+srs pacman -R linux-rt{,-headers} linux-hardened{,-docs,-headers}
+srs pacman -R linux-rt{,-headers} linux-hardened{,-docs,-headers} usbctl
+srs pacman -S --asexplicit linux-cachyos{,-headers}
+srs pacman -S --asexplicit linux-cachyos{,-docs,-headers}
+srs pacman -S --asexplicit linux-cachyos{,-headers}
+srs pacman -S --asexplicit linux-cachyos-lts{,-headers}
+srs grub-mkconfig -o /boot/grub/grub.cfg 
+ll
+pullDotfiles 
+cd github/
+gcl git@github.com:HarmonIA-UFPR/lumia-modelagem.git
+cd lumia-modelagem/
+ll
+sql
+cd sql/
+ll
+nvim ~/.config/opencode/opencode.jsonc 
+srs pacman -Syu
+zfs
+srs pacman -Ssss zfs
+sudo su -
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+paru -Sua
+cd .config/nvim
+cd
+mise self-update
+mise up
+mise ls
+which opencode
+cd /home/albano/.local/share/mise/installs/opencode/
+ls -l
+cd 1.18.16/
+ls -l
+cd
+mise ls
+mise uninstall node@24.14.1
+mise uninstall node@24.18.0
+mise ls
+mise install node@22.23.2
+mise ls
+mise up
+mise uninstall deno@2.9.4
+mise ls
+type -a deno
+deno
+paru -Sua
+sudo /etc/sudoers
+sudo nvim /etc/sudoers
+sudo pacman -Syu
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+cd Desktop/Harmonia/
+ll
+sudo rm -rf /vt
+opencode .
+ll
+opencode .
+which python
+mise ls
+python -m venv venv
+ll
+source venv/bin/activate
+opencode -s ses_00763d172ffeH97Fh3tRDS9kDH
+pip install -U pip openpyxl
+opencode .
+docker ps
+cd github/lumia-modelagem/
+ll
+cd docs/
+l
+ssh harmonia-server-IP197 
+nvim docker-compose.yml
+ll
+mv docker-compose.yml ..
+ll
+cd ..
+ll
+docker compose up -d
+ll
+sql
+cd sql
+ll
+ssh harmonia-server-IP197 
+cd ~/Desktop/Harmonia/
+nvim 01_create_table.sql 
+ll
+nvim ~/Desktop/Harmonia/02_alter_table.sql 
+nvim ~/Desktop/Harmonia/03_insert_table.sql 
+ssh harmonia-server-IP197 
+ssh harmonia-server-IP197 
+opencode -s ses_00763d172ffeH97Fh3tRDS9kDH
+ll
+mv *.sql ~/github/lumia-modelagem/sql/
+cd ~/github/lumia-modelagem/sql/
+ll
+gst
+git add ../docker-compose.yml 
+git commit -m "feat: adiciona arquivo docker compose do postgresql."
+git push -v origin main
+gst
+rm catalogo_ferramentas.sql 
+ll
+gst
+deactivate 
+ll
+gst
+git commit -m "feat: adiciona arquivos sql iniciais de montagem e inserção."
+git push -v origin main
+cd
+his
