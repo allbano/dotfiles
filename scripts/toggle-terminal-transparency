@@ -16,7 +16,22 @@ ensure_system_sbin_path() {
     done
 }
 
+ensure_fzf_path() {
+    local fzf_bin
+
+    for fzf_bin in "${HOME}/.fzf/bin" "${HOME}/.local/share/fzf/bin"; do
+        if [[ -d "$fzf_bin" ]]; then
+            case ":${PATH:-}:" in
+                *":${fzf_bin}:"*) ;;
+                *) PATH="${fzf_bin}${PATH:+:${PATH}}"; export PATH ;;
+            esac
+            return 0
+        fi
+    done
+}
+
 ensure_system_sbin_path
+ensure_fzf_path
 
 readonly TRANSPARENT_OPACITY="0.8"
 readonly OPAQUE_OPACITY="1.0"
