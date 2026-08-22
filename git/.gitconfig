@@ -6,6 +6,7 @@
 [column]
 	ui = auto
 	branch = never
+	status = plain
 [branch]
 	sort = -committerdate
 [tag]
