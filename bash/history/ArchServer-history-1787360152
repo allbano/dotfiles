@@ -14703,3 +14703,1234 @@ git commit -m "feat: adiciona arquivos sql iniciais de montagem e inserção."
 git push -v origin main
 cd
 his
+pushHis 
+sudo pacman -Syu
+exit
+srs pacman -Syu
+srs pacman -S --asexplicit linux
+srs pacman -S --asexplicit linux linux-headers linux-docs 
+srs nvim /etc/mkinitcpio.conf
+srs ls -l /etc/mkinitcpio.conf.d
+srs nvim /etc/mkinitcpio.d/linux-lts.preset 
+srs mkinitcpio -P
+srs pacman -Syyu
+srs grub-mkconfig -o /boot/grub/grub.cfg 
+srs ls -la /boot/
+srs rm /boot/initramfs-linux*
+srs rm /boot/vmlinuz-linux*
+srs ls -la /boot/
+srs mkinitcpio -P
+srs mkinitcpio -U
+srs pacman -S --asexplicit linux-lts{,-headers} linux-cachyos-lts{,-docs,-headers} linux{,-headers,-docs}
+srs pacman -R --asexplicit linux-lts{,-headers} linux-cachyos-lts{,-docs,-headers} linux{,-headers,-docs}
+srs pacman -R linux-lts{,-headers} linux-cachyos-lts{,-docs,-headers} linux{,-headers,-docs}
+srs pacman -R linux-lts{,-headers} linux-cachyos-lts{,-headers} linux{,-headers,-docs}
+srs pacman -S linux-znver3{,-headers} linux-lts{,-headers}
+srs grub-mkconfig -o /boot/grub/grub.cfg 
+srs nvim /etc/default/grub
+srs grub-mkconfig -o /boot/grub/grub.cfg 
+cd .config/nvim/
+ll
+gst
+glol -5
+git commit -m "refact: updates to the last chosen colorscheme."
+git push -v origin main
+srs pacman -Syu
+ll
+cd github/
+ll
+cd lumia-modelagem/
+ll
+cat docker-compose.yml 
+srs pacman -Syu
+paru -Syu
+cd ..
+gcl git clone https://github.com/addyosmani/agent-skills.git
+gcl https://github.com/addyosmani/agent-skills.git
+cd agent-skills/
+ll
+which npx
+npx skills add addyosmani/agent-skills --list
+npx skills add addyosmani/agent-skills
+nvim ~/.config/opencode/opencode.jsonc 
+npx skills add addyosmani/agent-skills --agent opencode --global
+mkdir -p ~/.config/opencode/vendor
+git clone --depth 1 https://github.com/addyosmani/agent-skills.git ~/.config/opencode/vendor/agent-skills
+git -C ~/.config/opencode/vendor/agent-skills pull --ff-only
+git -C ~/.config/opencode/vendor/agent-skills rev-parse HEAD
+nvim ~/.config/opencode/opencode.jsonc 
+ll
+nvim AGENTS.md 
+cd
+ll
+cd github/dotfiles/
+gst
+git diff
+gst
+git diff root/.bashrc
+su -
+gst
+lazygit root/.bashrc 
+sudo nvim root/.bashrc 
+ll -d root/
+ll -d root/.bashrc 
+git add root/.bashrc 
+gst
+git commit -m "refact: updates bashrc root user."
+git push -v origin archlinux 
+gst
+git add docs/
+gst
+git restore --staged docs/v0.0.1_
+git restore --staged docs/
+gst
+pgrep --help
+cd $DOTFILES
+opencode 
+agy plugin install https://github.com/addyosmani/agent-skills.git
+opencode 
+cd
+cd .config/opencode/
+ll
+opencode .
+srs pacman -Syu
+paru -Sua
+srs pacman -Syu
+free -h
+top
+pee
+srs pacman -Sss pee
+srs pacman -Sss '^pee$'
+srs pacman -Sss moreutils
+cmm
+comm
+comm --help
+join --help
+pacman -Qs bin
+pacman -Qs binu
+strings --help
+pacman -Ssss uutils
+mise self-update -y
+mise up
+mise ls
+mise ls-remote go
+mise ls-remote canj
+pacman -Sss broot
+srs pacman -S --asexplicit broot
+broot 
+br
+brt
+br
+broot 
+broot --help
+br -s
+cd $DOTFILES
+gst
+git diff bash/bash_profile
+git diff bash/.bashrc
+git restore bash/bash_profile 
+gst
+br ~
+br /
+br --outcmd /
+br --cmd /
+br --cmd ":pt"
+br -f --cmd ":pt"
+gst
+git restore bash/
+git restore zsh
+gst
+srs pacman -R broot fish 
+cd
+cd .config/fish/
+ll
+cd ..
+rm -rf fish/
+ll
+cd broot/
+cd ..
+rm -rf broot/
+yarn
+ll
+paru -R yarn
+rm -rf node_modules/
+rm -rf yarn/ yarn.lock 
+rm -rf VSCodium
+rm -rf 'Code - Insiders'/
+rm -rf 'Code - OSS'/
+paru -Syu
+cd
+sudo pacman -Syu
+br
+his
+his
+his
+his
+his
+his
+cd $DOTFILES
+sgy
+agy
+cd github/lumia-modelagem/
+antigravity-ide .
+pacman -Sssss sqlfluff
+srs pacman -S --asexplicit sqlfluff
+srs pacman -Syu
+paru -Sua
+gst
+mkdir .vscode
+mv .sqlfluff .vscode/
+ll
+cgst
+gst
+mise self-update -y
+mise up
+mise ls
+mise ls-remote autoclaw
+ll
+opencode
+mise up
+mise up --bump
+mise use -g node@24.19.0
+mise ls
+tmux --version
+pacman -Qi tmux
+pacman -Ssss avidemux
+srs pacman -S --asexplicit avidemux-qt
+cd '/dados/hd1/Dados/Torrent/VTorrent/Catalina - Frat House Memories/VIDEO_TS/'
+ll
+cat VIDEO_TS.VOB VTS_01_0.VOB VTS_01_1.VOB VTS_01_2.VOB VTS_01_3.VOB VTS_02_0.VOB VTS_02_1.VOB VTS_03_0.VOB VTS_03_1.VOB VTS_04_0.VOB VTS_04_1.VOB VTS_05_0.VOB VTS_05_1.VOB > Catalina_Frat_House_Memories_FullDVD.vob
+ll
+ls
+printf "file '%s'\n" VTS_01_[1-9]*.VOB > lista_principal.txt
+ll
+cat lista_principal.txt 
+srs pacman -Rs avidemux-qt
+srs pacman -Rd avidemux-qt
+srs pacman -Rc avidemux-qt
+srs pacman -Rscdd avidemux-qt
+srs pacman -Rscdd avidemux-{cli,qt}
+ffmpeg -f concat -safe 0 -i lista_principal.txt -map 0 -c copy Catalina__Frat_House_Memories.mkv
+ffmpeg -f concat -safe 0 -i lista_principal.txt -map 0 -c copy Catalina__Frat_House_Memories.mp4
+ffmpeg -hwaccel cuda -hwaccel_output_format cuda -f concat -safe 0 -i lista_principal.txt -map 0:v -map 0:a -map 0:s? -c:v h264_nvenc -preset p6 -cq 23 -c:a aac -b:a 192k -c:s copy Catalina__Frat_House_Memories.mkv
+cd
+srs pacman -Syu
+sudo su -
+cd /var/log
+du -sh journal/
+journalctl -u nginx
+journalctl -u docker
+journalctl -b docker
+journalctl -b
+exit
+srs pacman -Syu
+flatpak update 
+ps -n 1
+ps -n 2
+ps -n 3
+ps -n 4
+ps -n 5
+ps -n 6
+ps -n 7
+htop
+journalctl --help
+dmesg --syslog
+sudo dmesg --syslog
+paru -Sua
+agy --version
+agy
+ll
+lsblk -f
+duf
+lfs
+dysk 
+dysk --help
+dysk -a
+paru -Sssss '^du..'
+paru -Sssss '^du'
+paru -S dua-cli
+dua
+paru -Si dua-cli
+man dua
+man dua-cli
+paru -R dua-cli
+dust
+dust -r
+rm -rf .npm
+rm -rf github/zed
+cd github/
+ls -l
+cd ..
+ll
+lsblk -f
+lsk
+paru -Syu
+cd git
+ll
+cd ..
+ll
+cd codeberg/
+ll
+cd ..
+ll
+opencode 
+cd .opencode/
+ll
+cd plans/
+ll
+l
+la
+cd ..
+cd bin/
+ll
+la
+cd ..
+cd ~/.config/opencode/
+ll
+cd vendor/
+ll
+cd agent-skills/
+ll
+cd ..
+ll
+cd ..
+ll
+nvim opencode.jsonc 
+opencode 
+cd
+cd git
+ll
+cd Python/
+ll
+cd FastAPI/
+l
+cd fastapi_zero/
+ls -l
+git branch
+git switch main
+opencode
+opoencode
+opencode
+opencode -c
+id
+cat /etc/group
+srs usermod -aG systemd-journal albano
+srs usermod -aG systemd-journal-remote albano
+srs usermod -aG amule albano
+sudo usermod -aG amule albano
+groups albano
+sct status sssd
+srs pacman -Rns sssd
+srs pacman -Sss freeipa
+dijkstra
+dijkstra --help
+man dijkstra
+distro
+which distro
+dig
+dirmngr
+dirmngr --help
+pacman -Sss realmd
+pacman -Sss sssd
+pacman -R sssd
+srs pacman -R sssd ding-libs 
+srs pacman -R sssd ding-libs gssproxy 
+srs pacman -Rns sssd ding-libs gssproxy 
+srs pacman -Rns sssd
+srs systemctl daemon-reload 
+srs systemctl list-machines 
+groups albano
+cat /etc/group
+cat /etc/group| rg systemd-
+sar
+sar -u
+srs systemctl status sysstat
+srs systemctl enable --now sysstat
+sar -u
+sar -r
+sar -u
+sar -q
+srs systemctl status sysstat
+sensors
+pacman -Ssss nload
+pacman -Ssss '^nload'
+pacman -S --asexplicit nload
+srs pacman -S --asexplicit nload
+sensors
+nload
+nload --help
+iostat -x 1
+iostat
+iostat -h
+ip -s link
+journalctl 
+journalctl -f
+journalctl --since "1 hour ago"
+journalctl _UID=1000
+journalctl _UID=1000 --since "1 hour ago"
+systemctl --user list-units
+systemctl --user list-unit-files 
+systemctl --user disable rclone-bisync-documents.timer 
+systemctl --user disable rclone-bisync-documents.service 
+systemctl --user disable --now rclone-bisync-documents.service 
+systemctl --user list-unit-files 
+journalctl --help
+journalctl --user
+journalctl --help
+srs pacman -Syu
+paru -R zed
+paru -S --asexplicit zed-preview
+gst
+git add sql/
+gst
+git commit -m "refact: atualiza os scripts de criação e população do banco."
+git push -v origin main
+gst
+git commit -m "style: adiciona configuração de linter SQL(sqlfluff) e alteração da fonte do terminal do vscode."
+exit
+uuidgen --help
+uuidgen -7
+cd github/lumia-modelagem/
+docker compose up -d
+for i in {1..7}; do uuidgen --time-v7; done
+paru -S --asexplicit zed-preview
+paru -Sssss zed-preview
+paru -R zed-preview
+paru -S --asexplicit zed-preview-bin
+which npm
+npm i -g eslint@latest
+which python
+docker compose down -v --rmi all
+paru -Sua
+srs pacman -Syu
+srs pacman -Sss micro
+srs pacman -Ss '^micro'
+srs pacman -S --asexplicit micro
+micro 
+ll
+pacman -Ssss sector
+for i in {1..80}; do uuidgen --time-v7; done
+cd github/lumia-modelagem/
+ll
+docker compose up
+docker compose down -v --rmi all
+docker compose up
+docker compose down -v
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+uuidgen -7
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker ps
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker compose down -v 
+docker compose up --force-recreate 
+docker ps
+docker compose down -v 
+docker ps
+docker ps -a
+docker images
+docker rmi mariadb:latest 
+docker rmi pg18-weaviate-like:latest 
+docker rmi postgres:18
+docker rmi rust:alpine 
+docker rmi postgres:18-alpine 
+docker builder prune -f
+gst
+git commit -m "refact: atualiza os scripts de montagem do banco de dados (tags)."
+git push -v origin main 
+for i in {1..154}; do uuidgen --time-v7; done
+ll
+cd docs/
+ll
+mkdir converter
+cd converter/
+nvim main.go
+gst
+timedatectl 
+srs pacman -Syu
+mise self-update -y
+mise up
+flatpak update 
+paru -Sua
+paru -Sssss linux-
+srs pacman -S --asexplicit linux-xanmod-rt{,-headers} linux-cachyos-lts{,-headers,-doc}
+srs pacman -S --asexplicit linux-xanmod-rt{,-headers} linux-cachyos-lts{,-headers,-docs}
+srs pacman -S --asexplicit linux-xanmod-rt{,-headers,-doc} linux-cachyos-lts{,-headers}
+srs pacman -S --asexplicit linux-xanmod-rt{,-headers,-docs} linux-cachyos-lts{,-headers}
+rustup update
+which rustup
+which rustc
+rustup --help
+srs pacman -S --asexplicit linux-xanmod-rt{,-headers} linux-cachyos-lts{,-headers}
+rustup default stable
+echo -e "${PATH//:/\\n}"
+cd $DOTFILES
+ll
+gst
+cd bash
+nvim ~/.bashrc
+echo -e "${PATH//:/\\n}"
+ll /home/albano/.local/bin
+pipx --help
+pipx list
+pipx upgrade-all
+pipx list
+pipx reinstall harlequin 
+pipx reinstall hsql
+pipx list
+pipx reinstall graphifyy 
+pipx list
+pipx reinstall gole 
+pipx list
+gole --help
+gole -c
+gst
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+find /boot -maxdepth 1 -type f -name 'vmlinuz-*' -printf '%p\n' | LC_ALL=C sort -Vr
+grep -nE 'reverse_sorted_list|version_sort|GRUB_TOP_LEVEL' /etc/grub.d/10_linux
+sudo grep -nE "^[[:space:]]*(submenu|menuentry) '" /boot/grub/grub.cfg
+grep -nE 'reverse_sorted_list|version_sort|GRUB_TOP_LEVEL' /etc/grub.d/10_linux
+cd /etc/default/
+ls -l
+sudo install -d -m0755 /etc/default/grub.d
+ls -l
+sudoedit /etc/default/grub.d/99-kernel-principal.cfg
+ll
+ll grub.d/
+cat grub.d/99-kernel-principal.cfg 
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudoedit /etc/default/grub.d/99-kernel-principal.cfg
+find /boot -maxdepth 1 -type f -name 'vmlinuz-*' -printf '%p\n' | LC_ALL=C sort -Vr
+sudoedit /etc/default/grub.d/99-kernel-principal.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+cd /dados/hd1/Dados/Torrent/
+ll
+ffmpeg --hwaccel cuda --hwaccel_output_format cuda -i 'Maximus Sky  & AzphatX.ts' -vf "yadif_cuda" -c:v hevc_nvenc -pix_fmt p010le -preset p6 -tune hq -cq 15 -b:v 0 -c:a aac -b:a 192k M<aximus_Sky_&_AzphatX.mkv
+ffmpeg --hwaccel cuda --hwaccel_output_format cuda -i 'Maximus Sky  & AzphatX.ts' -vf "yadif_cuda" -c:v hevc_nvenc -pix_fmt p010le -preset p6 -tune hq -cq 15 -b:v 0 -c:a aac -b:a 192k M<aximus_Sky_E_AzphatX.mkv
+ffmpeg --hwaccel cuda --hwaccel_output_format cuda -i 'Maximus Sky  & AzphatX.ts' -vf "yadif_cuda" -c:v hevc_nvenc -pix_fmt p010le -preset p6 -tune hq -cq 15 -b:v 0 -c:a aac -b:a 192k Maximus_Sky_E_AzphatX.mkv
+ffmpeg -hwaccel cuda -hwaccel_output_format cuda -i 'Maximus Sky  & AzphatX.ts' -vf "yadif_cuda" -c:v hevc_nvenc -pix_fmt p010le -preset p6 -tune hq -cq 15 -b:v 0 -c:a aac -b:a 192k Maximus_Sky_E_AzphatX.mkv
+ffmpeg -hwaccel cuda -hwaccel_output_format cuda -i 'Maximus Sky  & AzphatX.ts' -vf "scale_cuda=format=p010le" -c:v hevc_nvenc -preset p6 -tune hq -cq 15 -b:v 0 -c:a aac -b:a 192k Maximus_Sky_E_AzphatX.mkv
+ffmpeg -hwaccel cuda -hwaccel_output_format cuda -i 'Maximus Sky  & AzphatX.ts' -vf "scale_cuda=1920:1080:interp_algo=lanczos" -c:v hevc_nvenc -preset p6 -tune hq -cq 16 -b:v 0 -c:a copy Maximus_Sky_E_AzphatX_upgpu.mkv
+ll
+vlc Maximus_Sky_E_AzphatX_upgpu.mkv 
+nvtop
+paru -Sua
+srs pacman -Syu
+ll
+rm -rf Maximus_Sky_E_AzphatX.mkv 
+ll
+lsk
+lsblk
+lsblk -f
+lsk
+cd /dados
+mkdir 1.8T
+ls -l
+cd hd1/
+ll
+cd Dados/
+ll
+mkdir 1.8T
+ll
+cd 1.8T/
+cd ..
+rmdir 1.8T/
+ll
+du -sh Torrent/
+du -sh Videos/
+srs pacman -Syu
+nu
+l
+la
+rm .zcompdump-ArchServer-5.9*
+sudo rm .zcompdump-ArchServer-5.9*
+la
+sudo nvim /etc/ssh/sshd_config
+sudo nvim /etc/ssh/sshd_config.d/20-systemd-userdb.conf 
+sudo nvim /etc/ssh/sshd_config.d/99-archlinux.conf 
+bat /etc/ssh/sshd_config.d/20-systemd-userdb.conf
+bat /etc/ssh/sshd_config.d/99-archlinux.conf 
+mv /etc/ssh/sshd_config.d/99-archlinux.conf /etc/ssh/sshd_config.d/00-archlinux.conf 
+sudo mv /etc/ssh/sshd_config.d/99-archlinux.conf /etc/ssh/sshd_config.d/00-archlinux.conf 
+cd /etc/ssh/sshd_config.d/
+ls -l
+userdbctl --help
+cd /
+codex
+cd
+cd -
+sudo su -
+cd
+codex 
+ll
+mkdir docs
+cd docs
+ll
+git init
+gst
+> README.md
+git commit -m "Commit Inicial - README / My Arch install explain"
+gst
+ll
+git diff
+ll
+gst
+mv 00v1_explain_archlinux_diff.md 01v1_explain_archlinux_diff.md 
+gst
+git restore 00v1_explain_archlinux_diff.md 
+gst
+rm 00v1_explain_archlinux_diff.md 
+gst
+ll
+git add 01v1_*
+gst
+ll
+diff 00v1_explain_archlinux_diff.md 01v1_explain_archlinux_diff.md 
+ll
+rm 00v1_explain_archlinux_diff.md 
+gst
+git restore 00v1_explain_archlinux_diff.md 
+gst
+git log
+git restore --staged *
+git restore --staged .
+gst
+git add 00v1_commands_explain_archlinux_diff.md 
+git commit -m "docs: adiciona explicação de todos os comandos executados no arquivo 00v1_explain*"
+ll
+gst
+git restore --staged 01v1_commands_explain_archlinux_diff.md 
+git commit -m "docs: adiciona arquivo de auditoria do 00v1_explain feito pelo antigravity(agy) para verificar as diferenças na instalação do Arch"
+gst
+git commit -m "docs: adiciona explicação de todos os comandos executados no arquivo 01v1_explain*"
+docker ps
+cd
+cd github/lumia-modelagem/
+agy
+gst
+mise self-update
+mise up
+mise upgrade --bump
+mise ls
+mise use -g node@24.19.0
+mise uninstall node@26.7.0
+mise ls
+mise uninstall node@lts
+mise ls
+mise use -g node@lts
+mise ls
+mise install node@latest
+mise ls
+mise up
+cd docs/converter/
+go --version
+go version
+go build .
+ll
+./converter --help
+go test -v ./...
+gst
+git commit -m "feat: adiciona subprojeto converter (converte dados de planilhas para inserts postgresql 18+)"
+gst
+git push -v origin main 
+go test -v ./...
+ll
+go build .
+gst
+lsk
+ll
+./converter --help
+./converter --input /home/albano/Desktop/Harmonia/dataset_ferramentas_curadas_albano_test_DB.xlsx --select 1-12 --tag INSERT_TOOLS_NO_TAGS
+cd ../..
+ll
+docker compose up
+docker compose down -v --rmi all
+docker compose up
+docker compose down -v
+gst
+git add sql/scripts/01_create_table.sql 
+git commit -m "fix: fixes a typo in one of the columns"
+git push -v origin main 
+ll
+nvim .gitignore
+gst
+nvim .gitignore
+gst
+nvim .gitignore
+gst
+git rm docs/converter/converter 
+gst
+git restore .
+gst
+git rm docs/converter/converter 
+gst
+cd docs/converter/
+ll
+go build .
+gst
+ll
+gst
+git commit -m "remove: delete converter binary file"
+git push -v origin main 
+gst
+ll
+cd ../..
+ll
+gst
+git add .gitignore 
+git commit -m "chore: adiciona .gitignore"
+glol
+git commit -m "feat: adiciona o arquivo sql de inserção de ferramentas."
+git push -v origin main
+docker compose up --force-recreate 
+codex
+srs pacman -Syu
+paru -Sua
+paru -Sss paru
+which paru
+mise ls
+cd github/lumia-modelagem/
+opencode --port 18176
+opencode
+which uv
+pipx list
+mise ls-remote uv
+mise install uv@latest
+mise use -g uv@latest
+mise ls
+mise self-update -y
+mise up
+mise ls
+zig --version
+zig version
+zig -h
+ll
+ip -c a
+docker ps
+cd github/lumia-modelagem/
+docker compose down -v
+ip -c a
+pacman -Qs codium
+paru -Ssss vscodium-insiders
+paru -Ssss vscode
+srs pacman -S --asexplicit code
+srs pacman -S --asexplicit visual-studio-code-bin
+paru -Ssss icu69
+paru -S --asexplicit icu69
+paru -Ssss vscode
+nvim --verison
+nvim --version
+nvim -V1 -v
+nvim
+sudo pacman -Syu
+mise self-update -y
+mise up
+mise ls
+mise which poetry
+mise ls-remote poetry
+mise ls-remote uv
+which uv
+pipx list
+mise ls
+mise up
+mise up uv
+mise use -g python@3.14.7
+mise 
+mise env
+ps -n 1
+ps -n 2
+ps -n 3
+ps -n 4
+ps -n 5
+ps -n 6
+ps -n 7
+ps -n 8
+systemctl status
+systemctl --user status
+sudo systemctl status
+srs pacman -Syu
+paru -Sua
+srs pacman -Syu
+lsk
+echo $PATH
+echo -e "${PATH//:/\\n}"
+pacman -Qs codex
+pacman -Qs antigravity
+codex
+opencode
+cd Music/
+ll
+lsd --directory-only 
+lsd --directory-only -l
+lsd --group-dirs
+lsd --group-dirs first 
+lsd --group-dirs first -l
+cd 2026
+ll
+mkdir -p Classic/
+cd Classic/
+yt-dlp --list-formats https://www.youtube.com/watch?v=0UN_HbOTTcI
+yt-dlp --list-formats https://www.youtube.com/watch?v=NsZRjl9Em2g
+yt-dlp -f "137+251" --merge-output-format mkv "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp --list-formats https://www.youtube.com/watch?v=NsZRjl9Em2g
+yt-dlp -f "137+251" --merge-output-format mkv "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp -f "248+251" --merge-output-format mkv "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+mise ls
+mise use -g yt-dlp@latest
+mise unuse yt-dlp
+which
+pipx list
+pipx install yt-dlp
+yt-dlp --list-formats https://www.youtube.com/watch?v=NsZRjl9Em2g
+cd
+cd -
+which yt-dlp
+yt-dlp --list-formats https://www.youtube.com/watch?v=NsZRjl9Em2g
+yt-dlp -f "248+251" --merge-output-format mkv "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp -f "bv*+ba" --merge-output-format mkv "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp -f "137+251" "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+pipx uninstall yt-dlp 
+which pip
+pip install --upgrade yt-dlp
+yt-dlp -f "137+251" "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+reset
+yt-dlp -f "137+251" "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+cd 
+cd -
+yt-dlp -f "137+251" "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp --rm-cache-dir
+yt-dlp -f "137+251" "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp --rm-cache-dir
+yt-dlp -U
+yt-dlp --cookies-from-browser chrome -f "248+251" --merge-output-format mkv "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+pip uninstall yt-dlp
+pip install --upgrade yt-dlp[default]
+yt-dlp --rm-cache-dir
+yt-dlp -U
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github --format "248+251" --merge-output-format mkv "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+ll
+vlc 'Mozart Effect for Deep Focus ｜ Elevate Your Mind and Study Effortlessly [NsZRjl9Em2g].mkv' 
+yt-dlp --format 251 "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp -f 251 "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp --remote-components ejs:github --format 251 "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp --remote-components --extract-audio ejs:github --format 251 "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp --remote-components ejs:github --extract-audio --format 251 "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp --remote-components ejs:github --cookies-from-browser chrome --format 251 "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+ll
+yt-dlp --remote-components ejs:github --cookies-from-browser chrome --format 251 --audio-format opus "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+ls -l
+yt-dlp --list-formats "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+yt-dlp --remote-components ejs:github --cookies-from-browser chrome --format 251 --extract-audio --audio-format opus "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+ll
+yt-dlp --list-formats https://www.youtube.com/watch?v=nPffL3cNGrs
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github --format "248+251" --merge-output-format mkv "https://www.youtube.com/watch?v=NsZRjl9Em2g"
+ll
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github --format "248+251" --merge-output-format mkv https://www.youtube.com/watch?v=nPffL3cNGrs
+yt-dlp --remote-components ejs:github --cookies-from-browser chrome --format 251 --extract-audio --audio-format opus https://www.youtube.com/watch?v=nPffL3cNGrs
+ll
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github --format "248+251" --merge-output-format mkv https://www.youtube.com/watch?v=0Jdy1C_QqvE
+yt-dlp --remote-components ejs:github --cookies-from-browser chrome --format 251 --extract-audio --audio-format opus https://www.youtube.com/watch?v=0Jdy1C_QqvE
+ll
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github --format "248+251" --merge-output-format mkv https://www.youtube.com/watch?v=uDCjW-9mE2k
+yt-dlp --list-formats https://www.youtube.com/watch?v=uDCjW-9mE2k
+yt-dlp --remote-components ejs:github --cookies-from-browser chrome --format 251 --extract-audio --audio-format opus https://www.youtube.com/watch?v=uDCjW-9mE2k
+ll
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github --format "248+251" --merge-output-format mkv https://www.youtube.com/watch?v=dmsibDQLzzQ
+yt-dlp --remote-components ejs:github --cookies-from-browser chrome --format 251 --extract-audio --audio-format opus https://www.youtube.com/watch?v=dmsibDQLzzQ
+ll
+yt-dlp --cookies-from-browser chrome --remote-components ejs:github --format "248+251" --merge-output-format mkv https://www.youtube.com/watch?v=1_Hwx1HR_7k
+yt-dlp --remote-components ejs:github --cookies-from-browser chrome --format 251 --extract-audio --audio-format opus https://www.youtube.com/watch?v=1_Hwx1HR_7k
+paru -Ssss android-studio
+srs pacman -S android-studio
+srs firewall-cmd --list-all
+sudo firewall-cmd --permanent --zone=public --add-port=59169/tcp
+sudo firewall-cmd --permanent --zone=public --add-port=59169/udp
+sudo firewall-cmd --permanent --zone=public --remove-port=49455
+sudo firewall-cmd --permanent --zone=public --remove-port=49455/tcp
+sudo firewall-cmd --permanent --zone=public --remove-port=49455/udp
+sudo firewall-cmd --reload
+srs firewall-cmd --list-all
+sudo systemctl stop firewalld.service 
+sudo systemctl status firewalld.service 
+sudo systemctl start firewalld.service 
+sudo systemctl status firewalld.service 
+docker ps
+docker ps -a
+paru -Sua
+flatpak update
+nvim
+ll
+cd /
+ll
+sudo mkdir vt
+ll
+sudo chown root:users /vt
+ll
+sudo chmod 775 /vt
+ll
+lsk
+lsblk -f
+cd /
+ll
+du -sh .
+du --help
+du -X /dados -X /home
+du -X /dados -X /home -sh .
+du -x /dados -x /home -sh .
+sudo du -x /dados -x /home -sh .
+sudo du -x /dados /home -sh .
+sudo du -x /dados,/home -sh .
+du --help
+du --exclude=/dados --exclude=/home -sh .
+sudo du --exclude=/dados --exclude=/home -sh .
+lsblk -f
+lsblk
+sudo du --exclude=/dados --exclude=/home --exclude=/proc --exclude=/tmp --exclude=/virtualization -sh .
+sudo du --exclude='/dados' --exclude='/home' --exclude='/proc' --exclude='/tmp' --exclude='/virtualization' -sh .
+du --help
+pacman -Ss ncdu
+pacman -S duf
+pacman -Ss duf
+pacman -Ss dusty
+pacman -Ss dust
+pacman -Ss sd
+pacman -Ss mise
+srs pacman -S --asexplicit sd
+sd --help
+srs systemctl status power-profiles-daemon.service 
+paru -Sss crush
+mise self-update -y
+mise up
+mise use -g go@1.27
+mise use -g go@1.27.0
+opencode --version
+opencode --help
+opencode --help
+opencode completion bash
+opencode completion bash | sudo tee
+opencode completion bash | sudo tee /usr/share/bash-completion/completions/opencode.bash
+opencode --help
+auth list
+opencode auth list
+nvim ~/.local/share/opencode/auth.json
+opencode auth list
+opencode models --refresh
+opencode models
+cd .config/opencode/
+ll
+mkdir -p {agents,commands,skills}
+ll
+nvim opencode.jsonc 
+opencode
+ll
+cd agents/
+ll
+ls -l
+opencode --version
+ll
+cd ..
+ll
+nvim AGENTS.md
+nvim ~/.config/opencode/tui.json
+nvim ~/.config/opencode/agents/plan-refine.md
+nvim ~/.config/opencode/agents/build-ask.md
+nvim ~/.config/opencode/agents/build-guarded.md
+nvim ~/.config/opencode/agents/build-auto.md
+opencode
+ll
+cd
+ll
+cd Courses/
+l
+cd kretcheu/
+l
+cd cgcr/
+l
+cd ..
+ll
+cd ..
+ll
+cd
+cd Videos/Udemy/Go/DevOpsGo/
+ll
+cd Examples/
+ll
+code .
+cd
+cd github/lumia-modelagem/
+gst
+git pull -v origin main
+cd docs/
+ll
+cd converter/
+ll
+rm converter 
+ll
+cd ..
+ll
+opencode .
+gst
+cd ..
+ll
+cd ..
+ll
+mkdir projects
+ll
+mv docs/converter projects/
+gst
+mv projects/converter docs/
+gst
+cd converter
+cd docs/
+ll
+cd converter/
+ll
+git diff --cached --binary > commit_converter_simplification.patch
+gst
+ll
+git add .
+gst
+git diff --cached --binary > commit_converter_simplification.patch
+gst
+ll
+git restore --staged .
+gst
+git restore .
+gst
+ll
+git apply commit_converter_simplification.patch
+gst
+git restore .
+gst
+ll
+cd ..
+ll
+gst
+cd converter/
+ll
+cd ..
+ll
+flatpak update
+srs pacman -Syu
+zfs
+flatpak update
+srs pacman -Syu
+paru -Sua
+which paru
+sudo rm /usr/local/bin/paru
+yay -Syyu
+yay -Sss paru
+srs pacman -S --asexplicit paru
+paru -Sua
+paru -Scccc
+sudo rm -rf /var/cache/pacman/pkg/download-*
+paru -Scccc
+srs pacman -Scccc
+srs pacman -R linux-znver3{,-headers,-docs}
+srs pacman -R linux-znver3{,-headers,-doc}
+srs pacman -R linux-znver3{,-headers}
+ll
+gst
+git add docs/v0.0.1_execution_commands_history_cmdsh.md 
+git commit -m "docs: adds commands history execution cmdsh."
+git push -v origin archlinux 
+which fzf
+cd docs/
+ll
+cd ..
+ll
+cd tmux/
+ll
+cd docs/
+ll
+vm v0.0.2_execution_commands_debug-fzf-path_bug_fix_20260820.md v0.3_execution_commands_debug-fzf-path_bug_fix_20260820.md 
+mv v0.0.2_execution_commands_debug-fzf-path_bug_fix_20260820.md v0.3_execution_commands_debug-fzf-path_bug_fix_20260820.md 
+ll
+gst
+opencode .
+ll
+cd $DOTFILES
+gst
+git commit -m "fix: fixes a bug in fzf path."
+git push -v origin archlinux 
+ll
+cd $DOTFILES
+gst
+srs pacman -Syu
+go --version
+go version
+type -a go
+cd $DOTFILES
+flatpak update
+ls -l /dev/tty
+ls -l /dev/tty*
+ls -l /dev/pty*
+ls -l /dev/pt
+ls -l /dev/pt*
+ls -l /dev/pts*
+cd pts
+cd /dev/pts
+ls -l
+ls
+cd
+mise ls
+lsblk -f
+cd /vt
+ls -l
+cd ..
+ll
+cd
+ll
+gst
+opencode
+opencode -n
+opencode session -n
+opencode session list
+opencode session list -n
+opencode session list --help
+opencode session list --pure
+opencode --help
+opencode session
+opencode session list --help
+opencode session list -n
+opencode session list -n5
+git config -l
+cd $DOTFILES
+ll
+cd cmdsh/
+ll
+./cmdsh --help
+cd docs/
+ll
+l
+cd ..
+rmdir docs/
+ll
+..
+ll
+cd docs/
+ll
+cd ../cmdsh/
+ll
+gst
+ll
+gst
+git config list --local 
+git config list
+git config set --global column.status "auto column"
+gst
+git config set --global column.status "auto column"
+git config get column.status
+git config set --global column.status false
+git config get column.status
+gst
+git config set --global column.status plain
+gst
+git config set --global column.status auto
+gst
+git config set --global column.status dense
+gst
+git config set --global column.status nodense
+gst
+git config unset column.status 
+gst
+git config set --global column.status plain
+gst
+ll
+rm cmdsh 
+gst
+go test ./...
+go build ./
+gst
+ll
+./cmdsh --help
+his
+ll
+code .
+mise self-update -y
+mise up
+gst
+cd ..
+ll
+cd tmux/
+ll
+nvim .tmux.conf 
+gst
+..
+his
+cd bash/history/
+ll
+nvim ~/.bashrc
+ll
+fzf commands_history 
+cd
+cd bin
+ll
+ns fzf_functions
+source fzf_functions 
+cat fzf_functions 
+nvim ~/.bashrc
+rm fzf_functions 
+nvim ~/.bashrc
+ll
+cd $DOTFILES
+gst
+mv specs ~/tests/
+gst
+nvim $DOTBASH/history/commands_history 
+cd bash/history/
+ll
+nvim ArchServer-history-1786587412 
+cd
+nvim ~/.bash_history 
