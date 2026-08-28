@@ -65,6 +65,16 @@ export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth:erasedups
 
+# Prevenção na captura: comandos triviais não entram no histórico.
+# A deduplicação esparsa fica a cargo do cmdsh (alias hsync).
+HIS="bg:fg:jobs:exit:clear:pwd:his:cd:cd *:..:cat *"
+HIS+="$HIS:ps:ps aux:ss:ip:ip -c a:ip -c r"
+HIS+="$HIS:ls:ls *:ll:ll *:l *:la *:e:e *:ea:ea *:dir"
+HIS+="$HIS:git status:git status --short:gst:gss:gsb:glol:glol *:glod:glod *"
+HIS+="$HIS:ud:un:ldk:lsku"
+HIS+="$HIS:ff:paru -Syu:yay -Syu:sudo pacman -Syu:sudo-rs pacman -Syu:srs pacman -Syu"
+export HISTIGNORE="${HIS}"
+
 PROMPT_HISTORY="history -a; history -n;"
 
 # CONFIGURAÇÕES DO BASH (OPTIONS)

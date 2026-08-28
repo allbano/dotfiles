@@ -2,6 +2,7 @@
 
 ########## BASH
 alias his='history'
+alias hsync='cmdsh sync'
 
 
 ########## GIT
@@ -240,12 +241,6 @@ alias e='eza --icons -lg'
 alias lsk='lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,FSUSE%,FSAVAIL,SIZE'
 alias lsku='lsblk --output NAME,TRAN,MAJ:MIN,TYPE,FSTYPE,MOUNTPOINTS,FSUSE%,FSAVAIL,SIZE,UUID'
 
-########## ARCHLINUX SYSTEM
-alias ua='paru -Syu' 
-alias uay='paru -Syyu' 
-alias ur='sudo reflector --verbose -p https --sort rate -n 10 --save /etc/pacman.d/mirrorlist && paru -Syyuu' 
-alias uy='yay -Syu'
-alias uyy='yay -Syyu'
 
 ########## DEBIAN SYSTEM
 alias ud='sudo apt update && sudo apt upgrade'
@@ -256,17 +251,13 @@ alias ports='sudo netstat -tulanp'
 alias ips='ip -c -br a'
 
 ########## Aliases
-alias nba="nvim $DOTBASH/bash_aliases"
+alias nba="nvim /home/${USER}/bash_aliases"
 
 ######### Fastfetch
 alias ff="fastfetch"
 
 ######### Yt-dlp ( Youtube )
 alias yd=yt-dlp
-
-######## TMUX
-alias tx="tmux new"
-alias tmu="tmux set-option -g default-command \"exec $(basename $SHELL) -l\"; tmux"
 
 ######## SYSTEMCTL
 alias sct="sudo systemctl "

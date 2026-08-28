@@ -202,13 +202,13 @@ pushHis() {
 }
 
 _cmdsh_fzf_search() {
-    # Defina o caminho exato para o arquivo que o cmdsh gera
-    local cmd_file="$HOME/github/dotfiles/bash/history/commands_history"
+    # Arquivo curado gerado pelo cmdsh (docs/v0.1_plan_cmdsh_historico_comandos.md)
+    local cmd_file="${DOTFILES:-$HOME/github/dotfiles}/bash/history/commands_history"
     local selected_command
 
     # Verifica se o arquivo existe para evitar erros
     if [[ ! -f "$cmd_file" ]]; then
-        echo -e "\nArquivo não encontrado: $cmd_file"
+        echo -e "\nArquivo não encontrado: $cmd_file (rode 'hsync' para gerá-lo)"
         return 1
     fi
 
@@ -221,7 +221,7 @@ _cmdsh_fzf_search() {
         # Insere o comando na linha atual
         READLINE_LINE="$selected_command"
         # Move o cursor para o final do comando inserido
-        READLINE_LINE=${#READLINE_LINE}
+        READLINE_POINT=${#READLINE_LINE}
     fi
 }
 
