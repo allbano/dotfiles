@@ -138,18 +138,22 @@ fi
 
 # SSH Agent
 # Carrega o ambiente de um agente já em execução; só inicia um novo se não houver.
-_ssh_agent_env="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}/ssh-agent.env"
+_ssh_agent_dir="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+_ssh_agent_env="${_ssh_agent_dir}/ssh-agent.env"
 if pgrep -u "$USER" ssh-agent > /dev/null; then
-    # Agente já existe: carrega SSH_AUTH_SOCK/SSH_AGENT_PID se ainda não definidos
     if [[ -z "$SSH_AUTH_SOCK" && -r "$_ssh_agent_env" ]]; then
         source "$_ssh_agent_env" > /dev/null
     fi
 else
-    # Nenhum agente: inicia e já exporta no shell atual (não apenas no arquivo)
-    ssh-agent -s > "$_ssh_agent_env"
-    source "$_ssh_agent_env" > /dev/null
+    if [[ ! -d "$_ssh_agent_dir" ]]; then
+        mkdir -p "$_ssh_agent_dir" 2>/dev/null && chmod 700 "$_ssh_agent_dir"
+    fi
+    if [[ -d "$_ssh_agent_dir" ]]; then
+        ssh-agent -s > "$_ssh_agent_env"
+        source "$_ssh_agent_env" > /dev/null
+    fi
 fi
-unset _ssh_agent_env
+unset _ssh_agent_dir _ssh_agent_env
 
 # FZF
 [[ -f "$HOME/.fzf.bash" ]] && source "$HOME/.fzf.bash"
