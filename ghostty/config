@@ -47,6 +47,7 @@ font-family = "RecMonoCasual Nerd Font"
 font-size = 12
 font-style = Regular
 font-thicken = true
+font-feature = +calt,+liga,+clig
 
 background-opacity = 0.8
 # Override opcional de runtime gerenciado pelos helpers de transparência e fonte.
