@@ -201,9 +201,18 @@ pushHis() {
     cd "${LOCALPATH}" || exit 2
 }
 
+# cmdsh: pega o path "curated" da linha 3 de ~/.cmdsh.toml e exporta CMDSH_FILE (se o arquivo existir)
+_cmdsh_toml="$HOME/.cmdsh.toml"
+if [[ -f "$_cmdsh_toml" ]]; then
+    _curated=$(sed -n '3p' "$_cmdsh_toml" | sed -E 's/^[^"]*"([^"]*)".*$/\1/')
+    [[ -n "$_curated" ]] && export CMDSH_FILE="$_curated"
+    unset _curated
+fi
+unset _cmdsh_toml
+
 _cmdsh_fzf_search() {
     # Arquivo curado gerado pelo cmdsh (docs/v0.1_plan_cmdsh_historico_comandos.md)
-    local cmd_file="${DOTFILES:-$HOME/github/dotfiles}/bash/history/commands_history"
+    local cmd_file="${CMDSH_FILE}"
     local selected_command
 
     # Verifica se o arquivo existe para evitar erros
