@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+selection=""
+printf 'fzf %s\n' "$*" >>"${MOCK_LOG}"
+
+# Consome toda a entrada para que o produtor da pipeline não termine com
+# SIGPIPE e mascare o resultado que o teste quer validar.
+mapfile -t lines
+
+# MOCK_FZF_LINE: número da linha a selecionar (1-based). Vazio simula cancelamento (Esc).
+if [[ -z "${MOCK_FZF_LINE:-}" ]]; then
+    exit 130
+fi
+
+for line in "${lines[@]}"; do
+    if [[ "$line" == "${MOCK_FZF_LINE}"$'\t'* ]]; then
+        selection="$line"
+        break
+    fi
+done
+
+if [[ -z "$selection" ]]; then
+    exit 1
+fi
+
+printf '%s\n' "$selection"
