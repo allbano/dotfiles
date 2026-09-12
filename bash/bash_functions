@@ -213,12 +213,18 @@ unset _cmdsh_toml
 _cmdsh_fzf_search() {
     # Arquivo curado gerado pelo cmdsh (docs/v0.1_plan_cmdsh_historico_comandos.md)
     # Lê o path do arquivo gerado pelo cmdsh a partir da variável de ambiente CMDSH_FILE.
-    local cmd_file="${CMDSH_FILE}"
+    local cmd_file="${CMDSH_FILE:-}"
+    local raw_selected
     local selected_command
 
-    # Verifica se o arquivo existe para evitar erros
+    # Valida a variável e o arquivo antes de abrir o fzf.
+    if [[ -z "$cmd_file" ]]; then
+        printf '\nCMDSH_FILE não está definido\n' >&2
+        return 1
+    fi
+
     if [[ ! -f "$cmd_file" ]]; then
-        echo -e "\nArquivo não encontrado: $cmd_file (rode 'hsync' para gerá-lo)"
+        printf '\nArquivo não encontrado: %s (rode '\''hsync'\'' para gerá-lo)\n' "$cmd_file" >&2
         return 1
     fi
 
@@ -230,22 +236,19 @@ _cmdsh_fzf_search() {
     #          igual à navegação do Ctrl+R que começa pelos últimos comandos).
     # A lista é numerada (NR) para mostrar a linha do arquivo, como o Ctrl+R
     # mostra o número do histórico; o número é removido após a seleção.
-    local raw_selected
     raw_selected=$(awk '{printf "%d\t%s\n", NR, $0}' "$cmd_file" \
-        | fzf --height=40% --layout=default --prompt="cmdsh> " --tac --query="$READLINE_LINE")
+        | fzf --height=40% --layout=default --prompt="cmdsh> " --tac --query="${READLINE_LINE-}")
+
+    # Cancelamento (Esc): não altera a linha atual do shell.
+    if [[ -z "$raw_selected" ]]; then
+        return 0
+    fi
+
     selected_command=$(printf '%s\n' "$raw_selected" | sed -E 's/^[0-9]+\t//')
 
-    # Se você escolheu um comando (não cancelou com Esc)
-    if [[ -n "$selected_command" ]]; then
-        # Registra no histórico (comportamento igual a digitar + Enter)
-        history -s "$selected_command"
-        # Mostra o comando numa linha própria, abaixo do prompt, e o executa
-        printf '\n%s\n' "$selected_command"
-        eval "$selected_command"
-        # Limpa o buffer para não reenviar nada ao voltar ao prompt
-        READLINE_LINE=""
-        READLINE_POINT=0
-    fi
+    # Coloca o comando selecionado no buffer de edição, editável, sem executar.
+    READLINE_LINE="$selected_command"
+    READLINE_POINT=${#selected_command}
 }
 
 
