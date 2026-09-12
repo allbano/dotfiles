@@ -212,6 +212,7 @@ unset _cmdsh_toml
 
 _cmdsh_fzf_search() {
     # Arquivo curado gerado pelo cmdsh (docs/v0.1_plan_cmdsh_historico_comandos.md)
+    # Lê o path do arquivo gerado pelo cmdsh a partir da variável de ambiente CMDSH_FILE.
     local cmd_file="${CMDSH_FILE}"
     local selected_command
 
@@ -221,16 +222,29 @@ _cmdsh_fzf_search() {
         return 1
     fi
 
-    # O fzf lê o arquivo. 
-    # --height=40% e --layout=reverse deixam a interface parecida com o Ctrl+R padrão
-    selected_command=$(cat "$cmd_file" | fzf --height=40% --layout=reverse --prompt="cmdsh> " --query="$READLINE_LINE")
+    # O fzf lê o arquivo indicado por $CMDSH_FILE.
+    # --height=40%  -> janela abaixo do prompt do shell (PS1 visível).
+    # --layout=default -> prompt/cmdsh> na ÚLTIMA LINHA, lista acima (igual ao Ctrl+R).
+    # --prompt="cmdsh> " -> mantém o prompt customizado do Ctrl+F.
+    # --tac -> exibe a lista do FIM para o COMEÇO (mais recente no topo,
+    #          igual à navegação do Ctrl+R que começa pelos últimos comandos).
+    # A lista é numerada (NR) para mostrar a linha do arquivo, como o Ctrl+R
+    # mostra o número do histórico; o número é removido após a seleção.
+    local raw_selected
+    raw_selected=$(awk '{printf "%d\t%s\n", NR, $0}' "$cmd_file" \
+        | fzf --height=40% --layout=default --prompt="cmdsh> " --tac --query="$READLINE_LINE")
+    selected_command=$(printf '%s\n' "$raw_selected" | sed -E 's/^[0-9]+\t//')
 
     # Se você escolheu um comando (não cancelou com Esc)
     if [[ -n "$selected_command" ]]; then
-        # Insere o comando na linha atual
-        READLINE_LINE="$selected_command"
-        # Move o cursor para o final do comando inserido
-        READLINE_POINT=${#READLINE_LINE}
+        # Registra no histórico (comportamento igual a digitar + Enter)
+        history -s "$selected_command"
+        # Mostra o comando numa linha própria, abaixo do prompt, e o executa
+        printf '\n%s\n' "$selected_command"
+        eval "$selected_command"
+        # Limpa o buffer para não reenviar nada ao voltar ao prompt
+        READLINE_LINE=""
+        READLINE_POINT=0
     fi
 }
 

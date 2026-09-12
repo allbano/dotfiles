@@ -208,8 +208,10 @@ fi
 
 # Configuração do FZF para Ctrl+R
 # --no-sort: Mantém ordem cronológica
-# --exact: Busca exata (opcional)
-export FZF_CTRL_R_OPTS="--no-sort --history-size=100000"
+# --history-size: quantidade de entradas
+# --height=40% --layout=default: mesma cara do Ctrl+F (janela abaixo do PS1,
+#   input/prompt na última linha)
+export FZF_CTRL_R_OPTS="--no-sort --history-size=100000 --height=40% --layout=default"
 
 bind -x '"\C-f": _cmdsh_fzf_search'
 
