@@ -6,10 +6,12 @@ export ZSH="$HOME/.oh-my-zsh"
 export LS_OPTIONS='--color=auto'
 export DOTFILES="$HOME/github/dotfiles"
 
-#  Configurar autocompinit / autocomplete
-fpath=(/usr/local/share/zsh/site-functions /usr/share/zsh/site-functions $fpath)
-autoload -Uz compinit
-compinit
+# O setup de completion fica a cargo do Oh My Zsh (lib/completion.zsh),
+# que roda o compinit uma unica vez. Rodar compinit aqui antes causava:
+#  - varredura duplicada do fpath em todo shell novo
+#  - confito de registro entre completions (ex.: ng xargs)
+# Os diretorios /usr/{,local/}share/zsh/site-functions ja fazem parte do
+# fpath padrao do zsh, portanto nao precisam ser adicionados aqui.
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -75,8 +77,11 @@ CASE_SENSITIVE="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 #
-eval "$(~/.local/bin/mise activate zsh)"
-source <(ng completion script)
+# NOTE: `mise activate` e o completion do Angular sao carregados pelos
+# plugins `mise` e `ng` do Oh My Zsh (ver plugins= abaixo). Manter
+# `eval "$(mise activate zsh)"` aqui duplicava a ativacao do mise, e
+# `source <(ng completion script)` custava ~290ms por shell, forçando o
+# node a cada inicializacao.
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -86,14 +91,11 @@ source <(ng completion script)
 plugins=(
   fzf
   mise
-  docker
   zsh-autosuggestions
   fast-syntax-highlighting
-  uv
-  poetry
+  ng
   node
   npm
-  ng
   bun
   deno
 )

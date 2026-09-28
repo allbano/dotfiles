@@ -17,11 +17,3 @@ path+=(
 
 # Export the updated path
 export PATH
-
-# Angular CLI autocompletion
-if command -v ng 1>/dev/null 2>&1; then
-  source <(ng completion script)
-fi
-
-
-
