@@ -56,7 +56,7 @@ path_append "$HOME/.local/bin"
 #path_append "$GOPATH/bin"
 path_append "$HOME/.cargo/bin"
 path_append "/usr/sbin"
-#path_append "/sbin"
+path_append "/home/albano/.bun/bin"
 
 # CONFIGURAÇÃO DE HISTÓRICO
 # =========================================================================== #
@@ -222,4 +222,5 @@ bind -x '"\C-f": _cmdsh_fzf_search'
 PROMPT_COMMAND="${PROMPT_HISTORY} build_prompt;"
 
 export PROMPT_COMMAND
+
 
