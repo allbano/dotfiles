@@ -7,6 +7,8 @@ path=(
   "$HOME/.local/bin"
   "$HOME/.cargo/bin"
   "$HOME/.fzf/bin"
+  "$HOME/.opencode/bin"
+  "$HOME/.bun/bin"
   $path
 )
 # Extra PATH settings

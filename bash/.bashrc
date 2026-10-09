@@ -57,6 +57,8 @@ path_append "$HOME/.local/bin"
 path_append "$HOME/.cargo/bin"
 path_append "/usr/sbin"
 path_append "/home/albano/.opencode/bin"
+path_append "/home/albano/.bun/bin"
+path_append "/home/albano/.kimi-code/bin"
 
 # CONFIGURAÇÃO DE HISTÓRICO
 # =========================================================================== #
