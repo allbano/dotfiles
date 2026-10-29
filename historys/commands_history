@@ -8060,3 +8060,10 @@ zpool --version
 zsh
 ~/.config/opencode/
 ~/Templates/
+git push -v github dev && git push -v gitlab dev
+docker rmi $(docker images -f "reference=lumia-subdev*" -q)
+rclone sync /home/albano/Desktop gdrive:Desktop --verbose --progress --dry-run
+rclone copy /dados/hd1/Dados/Videos.tar gdrive_chunker: --drive-chunk-size 128M --transfers 1 --retries 10 --low-level-retries 20 --stats 5s --verbose --progress --bwlimit 22M
+for i in {01..07}; do mkdir "Secao$i"; done
+rclone sync /dados/hd1/Dados/Videos/SoparaDeletar/BAFM•MOVIES gdrive:Pessoal/Videos/Unclassified --progress --verbose
+rclone sync /virtualization/allbano-virt/gaytor.net/jesseotokyo gdrive:Pessoal/VideosUnclassified/jesseotokyo --drive-chunk-size 128M --transfers 4 --checkers 8 --buffer-size 64M --tpslimit 10 --fast-list --checksum --retries 10 --low-level-retries 20 --stats 5s --bwlimit 22M --progress --verbose
