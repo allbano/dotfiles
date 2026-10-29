@@ -1,3 +1,12 @@
+# OPENSPEC:START
+# OpenSpec shell completions configuration
+if [ -d '/home/albano/.local/share/bash-completion/completions' ]; then
+  for f in '/home/albano/.local/share/bash-completion/completions'/*; do
+    [ -f "$f" ] && . "$f"
+  done
+fi
+# OPENSPEC:END
+
 # =========================================================================== #
 #                           Arch Linux .bashrc                                #
 #                        Consolidado & Refatorado                             #
