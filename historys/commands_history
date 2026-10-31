@@ -30,6 +30,7 @@
 /usr/bin/python --version
 /usr/bin/python3 /usr/sbin/powerprofilesctl
 /usr/sbin
+;ll
 COMP_INSTALL=1 gocomplete
 Computer-Science-Reference-Books/
 ECHO="Quero uma tarde linda contigo"
@@ -217,6 +218,8 @@ balooctl6 config
 balooctl6 config show
 balooctl6 disable
 balooctl6 enable
+balooctl6 failed
+balooctl6 indexSize
 balooctl6 monitor
 balooctl6 resume
 balooctl6 status
@@ -281,6 +284,7 @@ bat .bashrc | rg 'export PATH' | sed 's/export PATH=//; s/"\$(//; s/)"//'
 bat .bashrc | rg 'export PATH' | sed 's/export PATH=//; s/"\$//'
 bat .cmdsh.toml
 bat .npm/_logs/2026-09-04T16_12_21_436Z-debug-0.log
+bat /home/albano/.local/share/applications/rclone-manager-handler.desktop
 bat < "$(alias)"
 bat <"$(alias)"
 bat agent-runtime-observability.md
@@ -294,8 +298,8 @@ bat k2s.py
 bat mise.toml
 bat opencode.jsonc
 bat plan.md
+bat rback
 bat ~/.cmdsh.toml
-bat ~/.cmdsh.toml 
 bat ~/.ssh/config
 blexit
 blktrace
@@ -330,11 +334,15 @@ btrfs check --help
 btrtl
 bun
 bun add -d @opentui/solid solid-js
+bun add -g @fission-ai/openspec@latest
 bun add -g omo-ai
 bun add -g omo-ai omo
+bun i
 bun install -g --trust @opencode/cli
 bun remove -g @opencode/cli
 bun remove @opencode/cli
+bunx skills add petergyang/no-ai-slop --skill no-ai-slop -a opencode -g -y
+bunx skills ls -a opencode -g
 busctl --user get-name-owner org.freedesktop.secrets
 busctl --user list
 cairo --help
@@ -365,10 +373,14 @@ cargo uninstall bottom
 cargo update exa
 cat
 cc --version
+ccd github/lumia
+cd..
 cdgst
+cdll
 cfdisk /dev/sda
 cgit branch
 cgst
+chage -l albano
 chmod +x Docs/
 chmod +x docs/
 chmod +x importSQL.py
@@ -386,6 +398,7 @@ chmod 644 albano-server-parajas.pub
 chmod 644 infojus-i7-IP198.pub
 chmod 650 README.md
 chmod 700 /home/albano/.ssh
+chmod 700 rback
 chmod 744 * .
 chmod 750 README.md
 chmod 755 init.sh
@@ -447,18 +460,31 @@ cmdsh include "systemctl --user status"
 cmdsh include './lumia-cli dev down --volumes --rmi all --models'
 cmdsh include './lumia-cli dev up --real'
 cmdsh include 'cd ~/Videos/Youtube/2026'
+cmdsh include 'docker rmi $(docker images -f "reference=lumia-subdev*" -q)'
+cmdsh include 'for i in {01..07}; do mkdir "Secao$i"; done'
 cmdsh include 'for i in {01..10}; do mkdir "Secao$i"; done'
+cmdsh include 'git push -v github dev && git push -v gitlab dev'
 cmdsh include 'mkdir Secao{01..10}'
+cmdsh include 'npm config set allow-scripts=esbuild --location=user'
 cmdsh include 'openssl rand -base64 32'
+cmdsh include 'rclone copy /dados/hd1/Dados/Videos.tar gdrive_chunker: --drive-chunk-size 128M --transfers 1 --retries 10 --low-level-retries 20 --stats 5s --verbose --progress --bwlimit 22M'
+cmdsh include 'rclone sync /dados/hd1/Dados/Videos/SoparaDeletar/BAFM•MOVIES gdrive:Pessoal/Videos/Unclassified --progress --verbose'
+cmdsh include 'rclone sync /home/albano/Desktop gdrive:Desktop --verbose --progress --dry-run'
 cmdsh include 'rclone sync /home/albano/Documents gdrive:/Documents --verbose --progress'
+cmdsh include 'rclone sync /virtualization/allbano-virt/gaytor.net/jesseotokyo gdrive:Pessoal/VideosUnclassified/jesseotokyo --drive-chunk-size 128M --transfers 4 --checkers 8 --buffer-size 64M --tpslimit 10 --fast-list --checksum --retries 10 --low-level-retries 20 --stats 5s --bwlimit 22M --progress --verbose'
 cmdsh include -c TOML "du -sh ~/Documents/"
 cmdsh include du -sh ~/Documents/
 cmdsh review
 cmdsh sync
+cmdsh sync --dedup --order
 cmdsh sync --dry-run
 cmdsh sync --order --dedup
+cmdsh sync --review
+cmdsh sync --revview
 cmdsh sync -O
+cmdsh sync -d -o
 cmdsh sync -o
+cmdsh update --dedup --space-begin --space-end --order --dry-run
 cmdsh update --space-end --order --dedup
 cmdsh update --space-end --space-begin --order --dedup
 cmdsh update -B
@@ -526,6 +552,7 @@ cp -r *.png ../../../landing-page/src/assets/
 cp -r ../../Trabalho2025_02/DADOS/* ../data/
 cp -r ../Trabalho2025_02/DADOS/* .
 cp -r ./ArchServer-history-1774565094  ~/tests/
+cp -r .env .runtime/dev/
 cp -r .vscode ../TypeHints/
 cp -r /usr/share/ghostty/themes .
 cp -r 2026 Focus/
@@ -549,6 +576,7 @@ cp -r ~/test/modelos/
 cp -r ~/test/modelos/ .
 cp -rpp .env.example .env
 cp ../sqlalchemy/pgadmin4.yml .
+cp .runtime/dev/.env .
 cp 2026 Focus/
 cp config/dev/.env.example .runtime/dev/.env
 cpupower idle-info
@@ -575,6 +603,7 @@ curl -IL http://localhost:20000
 curl -IL http://localhost:20000/
 curl -IL http://localhost:80
 curl -IL http://localhost:80/
+curl -L https://aka.ms/install-dotnet-preview -o install-dotnet-preview.sh
 curl -X 'GET' 'http://localhost:8085/auth/accounts' -H 'accept: */*'
 curl -X 'GET' 'http://localhost:8085/auth/accounts' -H 'accept: */*' | jq
 curl -X 'GET' 'http://localhost:8085/auth/accounts' -H 'accept: */*'; echo
@@ -591,6 +620,8 @@ curl -fsSL https://raw.githubusercontent.com/mislav/hub/refs/heads/master/etc/hu
 curl -fsSL https://raw.githubusercontent.com/mislav/hub/refs/heads/master/etc/hub.bash_completion.sh | > $DOTBASHCN/hub
 curl -fsSL https://raw.githubusercontent.com/mislav/hub/refs/heads/master/etc/hub.bash_completion.sh | tee "$DOTBASHCN/hub"
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+curl -fsSL https://raw.githubusercontent.com/petergyang/no-ai-slop/main/skills/no-ai-slop/SKILL.md -o ~/.config/opencode/skills/no-ai-slop/SKILL.md
+curl -fsSL https://raw.githubusercontent.com/petergyang/no-ai-slop/main/skills/no-ai-slop/eval.md -o ~/.config/opencode/skills/no-ai-slop/eval.md
 curl -fsSl https://raw.githubusercontent.com/eza-community/eza/refs/heads/main/completions/bash/eza |  sudo tee eza
 curl -fssl https://ollama.com/install.sh | bash
 curl -il http://localhost:20000
@@ -619,6 +650,7 @@ curl -ssl https://raw.githubusercontent.com/sharktheone/arch-mojo/main/src/insta
 curl -ssl https://raw.githubusercontent.com/sharktheone/arch-mojo/main/src/install.py > installmojo.txt
 curl -v "http://localhost:4201/api/search?q=@kipperdev"
 curl -v https://aur.archlinux.org/rpc
+curl harmonia.tec.br
 curl https://blauaraujo.com/tgl.src/hacks/20231228_070542-listar-arquivos-carregados-na-inicializacao-do-bash.md
 curl https://blauaraujo.com/tgl.src/hacks/20231228_070542-listar-arquivos-carregados-na-inicializacao-do-bash.md | glow
 curl https://blauaraujo.com/tgl.src/hacks/20240217_094213-encontrar-pacotes-disponiveis-debian.md | glow
@@ -633,6 +665,7 @@ curl https://ohmyposh.dev/install.sh > install.sh
 curl https://pyenv.run | bash
 curl https://raw.githubusercontent.com/imomaliev/tmux-bash-completion/master/completions/tmux > ~/.bash_completion
 curl https://termbin.com/test
+curl https://www.sbc.org.br/evento/xlvii-congresso-da-sociedade-brasileira-de-computacao-csbc-2027/
 czkawka_cli
 date
 date +%s
@@ -823,6 +856,7 @@ docker build -t nginx_python Dockerfile
 docker build -t nginx_python dockerfile
 docker builder prune
 docker builder prune -a
+docker builder prune -af
 docker builder prune -f
 docker builder prune -f\
 docker buildx build -t dbmater -f ./Dockerfile
@@ -880,6 +914,7 @@ docker compose -f docker-compose.yaml down
 docker compose -f docker-compose.yaml up -d db-pg
 docker compose -f docker-compose.yaml up db-pg
 docker compose -f docker-compose.yml down
+docker compose -f docker-compose.yml down -v --rmi local
 docker compose -f docker-compose.yml stop
 docker compose -f docker-compose.yml up
 docker compose -f docker-compose.yml up --force-recreate  -d
@@ -921,6 +956,9 @@ docker container ls -a
 docker container ls -aq
 docker container prune
 docker container rm $(docker ps -a -q -f status=exited)
+docker container rm $(docker ps -a)
+docker container rm -f $(docker ps -a)
+docker container rm -f $(docker ps -q)
 docker container rm -f 33
 docker container rm -f b98
 docker container rm -f d2
@@ -994,9 +1032,11 @@ docker exec -it test_py "bash -l"
 docker exec -it test_py bash
 docker exec -it test_py sh
 docker exec -iu lojadevarejo bash
+docker iamges
 docker image
 docker image list
 docker image ls
+docker image ls -a
 docker image prune
 docker image prune -a
 docker image pull
@@ -1044,9 +1084,12 @@ docker logs e7
 docker logs e8
 docker logs ed
 docker ls
+docker network
 docker network create --help
 docker network ls
 docker network prune
+docker network rm lumia-dev_backend
+docker network rm lumia-dev_outbound
 docker network rm lumia-model-network
 docker network rm none
 docker network rm tasks_network_dev
@@ -1057,6 +1100,7 @@ docker prune -a
 docker ps
 docker ps --all
 docker ps -a
+docker ps -q
 docker pull postgres
 docker pull postgres:16
 docker pull postgres:16-alpine
@@ -1114,6 +1158,7 @@ docker rm pg16master
 docker rm postgres16
 docker rm rabbitmq
 docker rmi
+docker rmi $(docker images -f "reference=lumia-subdev*" -q)
 docker rmi --help
 docker rmi -f 75
 docker rmi -f debian:testing
@@ -1228,10 +1273,13 @@ docker volume
 docker volume --help
 docker volume create empresa-area
 docker volume ls
+docker volume ls -q
 docker volume prune
 docker volume prune --help
 docker volume prune -a
+docker volume rm $(docker volume ls -q)
 docker volume rm 25cd64b4a4385eebff5b949ed98dbb1bea17cd1d3dab9a59a9cfe6c36a7fc68a
+docker volume rm lumia-dev_vector-real-data
 docker volume rm lumia-pg18-model
 docker volume rm lumia-validation_pg-agente
 docker volume rm lumia-validation_pg-tool
@@ -1301,6 +1349,8 @@ docker-compose up --force-refresh -d
 docker-compose up -d
 docker-compose up -d --force-recreate
 docker-compose up -d lojadevarejo
+dotnet
+dotnet --version
 du --exclude=/dados --exclude=/home -sh .
 du --help
 du --max-depth 1 --human-readable "${@:-.}" | sort --human-numeric-sort
@@ -1564,6 +1614,7 @@ exec opera &
 exec vlc
 exiit
 exit\
+exiut
 exot
 export $(dbus-launch)
 export $PS1
@@ -1716,6 +1767,7 @@ ffmpeg -v
 file
 file  'Data Structures and Algorithm Analysis in C - Mark Allen Weiss.kchmviewer'
 file $(type -p fastfetch)
+file $(which pgrep)
 file 'Data Structures and Algorithm Analysis in C - Mark Allen Weiss.kchmviewer'
 file ./agy
 file CLtx.dat
@@ -1724,6 +1776,7 @@ file WWRDpc.dat
 file agy
 file alpha
 file arco
+file pgrep
 fileinfo
 fileinfo 'Captura de tela de 2022-03-25 17-02-46.png'
 fileinfo --help
@@ -1762,6 +1815,9 @@ find . -type f -wholename '*ghosty*'
 find . -type f -wholename '*linguagem go*'
 find . -type f -wholename '*linguagem*go*'
 find . -wholename '*sysctl.conf'
+find . -wholename '*vscodium*'
+find . -wholename codium
+find . -wholename vscodium
 find / -t f -wholename "gitk"
 find /boot -maxdepth 1 -type f -name 'vmlinuz-*' -printf '%p\n' | LC_ALL=C sort -Vr
 find /etc/ -type f -wholename '*.kwinrc
@@ -1775,6 +1831,11 @@ find /home/${USER}/.cache/yay -mindepth 1 -maxdepth 1 -type d | sort
 find /home/${USER}/.cache/yay -mindepth 1 -maxdepth 1 -type d) | sort
 find /home/albano/ -type f -wholename '*/ghostty'
 find /home/albano/ -type f -wholename '*ghostty$'
+find /home/albano/.local/share/applications -type -f -wholename '*ghostty*.desktop
+find /home/albano/.local/share/applications -type -f -wholename '*ghostty*.desktop'
+find /home/albano/.local/share/applications -type f -wholename '*ghostty*.desktop'
+find /home/albano/.local/share/applications -type f -wholename '*ghostty*.desktop' -exec cat {}
+find /home/albano/.local/share/applications -type f -wholename '*ghostty*.desktop' -exec cat {} \;
 find /home/albano/.local/share/nvim/lazy/transparent.nvim -maxdepth 3 -type f -printf '%P\n'
 find /home/albano/.local/share/nvim/lazy/transparent.nvim -maxdepth 3 -type f -printf '%T\n'
 find /home/albano/.local/share/nvim/lazy/transparent.nvim -maxdepth 3 -type f -printf '%V\n'
@@ -1796,7 +1857,13 @@ find /usr/include -name "*rbf*"
 find /usr/include -name "dropout.hpp"
 find /usr/include -name "leaky_relu.hpp"
 find /usr/share/applications ~/.local/share/applications -iname '*ghostty*.desktop' -ls
+find /usr/share/applications/ -type f -wholename '*RClone*.desktop'
 find /usr/share/applications/ -type f -wholename '*ghostty*'
+find /usr/share/applications/ -type f -wholename '*ghostty*.desktop'
+find /usr/share/applications/ -type f -wholename '*ghostty*.desktop' -exec rm -f
+find /usr/share/applications/ -type f -wholename '*ghostty*.desktop' -exec rm -f {}
+find /usr/share/applications/ -type f -wholename '*ghostty*.desktop' -exec rm -f {} +
+find /usr/share/applications/ -type f -wholename '*rclone*.desktop'
 find /usr/share/bash-completion/ -wholename '*/opencode'
 find /usr/share/bash-completion/ -wholename '*/opencode*'
 find /usr/share/bash-completion/ -wholename '*/opencode*' -exec rm {} +
@@ -1821,6 +1888,8 @@ find ~ -type d -wholename "*gitk*"
 find ~ -type d -wholename "*lvim*"
 find ~ -user albano
 find ~ -wholename "*lvim*"
+find ~/.local/share/ -type f -wholename '*rclone*'
+find ~/.local/share/ -type f -wholename '*rclone*.desktop'
 find ~/.m2/repository/org/springframework/boot/ -name "*.jar" | xargs -I{} sh -c 'jar -tf {} 2>/dev/null | grep -i flyway && echo "  ^^ found in: {}"'
 find ~/Test -maxdepth 1
 find ~/test -maxdepth 1
@@ -1850,6 +1919,7 @@ flatpak-coredumpctl --help
 fmt --help
 for i in {0..15}; do printf "\e[48;5;${i}m %s \e[0m" "$(printf "%03d" "$i")"; done; echo
 for i in {0..16}; do printf "\e[48;5;${i}m %s \e[0m" "$(printf "%03d" "$i")"; done; echo
+for i in {01..07}; do mkdir "Secao$i"; done
 for i in {04..38}; do mkdir "Secao$i"; done
 for i in {1..154}; do uuidgen --time-v7; done
 for i in {1..256} ; do echo -en "\e[48;5;${i}m " ; done ; echo
@@ -1908,6 +1978,7 @@ g++ main.cpp v0.06-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopen
 g++ main.cpp v0.07-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
 g++ main.cpp v0.08-SentimentAnalyzer.cpp -o classificador -O3 -larmadillo -fopenmp
 ga backend/.air.toml .vscode/air-go.schema.json
+ga bash/
 gaa
 gcc --version
 gcc -O3 -lm -Wall  Ponto.c exTestPonto.c -o xxx
@@ -2086,6 +2157,7 @@ git clone --help
 git clone --recurse-submodules git@github.com:HarmonIA-UFPR/lumia-assistente-dev.git
 git clone --recurse-submodules git@github.com:HarmonIA-UFPR/lumia.git
 git clone --recurse-submodules git@github.com:parajas-ufpr/parajas.git
+git clone --recurse-submodules git@github.com:petergyang/no-ai-slop.git
 git clone --verbose --progress -6  git@github.com:arnaldojuni0r/Livros.git Liivros2
 git clone --verbose --progress -6  git@github.com:arnaldojuni0r/Livros.git Livros2
 git clone -6 -- git@github.com:KAYOKG/BibliotecaDev.git BibliotecaDev2
@@ -2117,6 +2189,7 @@ git clone git@github.com:allbano/TrabalhoFinalDAC.git
 git clone git@github.com:allbano/agenda.git
 git clone git@github.com:allbano/bd3.git ~/github/bd3
 git clone git@github.com:allbano/dotfiles.git
+git clone git@github.com:allbano/gpet.git
 git clone git@github.com:allbano/laundry_online.git
 git clone git@github.com:allbano/zed.git
 git clone git@github.com:arnaldojuni0r/Livros.git
@@ -2374,6 +2447,7 @@ git merge -e main
 git merge -e nicolas
 git merge -e renan
 git merge -h
+git merge -m "chore: mergeada branch fix/tela_ferramentas_troca_modalidade_por_tag na branch dev."
 git merge -v --verify --commit main
 git merge -v dev
 git merge Leandro_endpoint_criar_cliente
@@ -2382,9 +2456,9 @@ git merge archlinux
 git merge arcolinux
 git merge debian_testing
 git merge dev
+git merge dev -m "chore: mergeada branch dev - entrega II."
 git merge feat/conta-email-checklist-a2
 git merge feat/feat/conta-email-checklist-a2
-git merge feat/feat/conta-email-checklist-a2 
 git merge feat/migracao-assistente-m1
 git merge feat/migracao-assistente-m2
 git merge feat/migracao-assistente-m3
@@ -2394,12 +2468,24 @@ git merge feat/migracao-assistente-m6
 git merge feat/migracao-assistente-m7
 git merge feat/migracao-assistente-m8
 git merge feat/migracao-assistente-m9
+git merge fix/agente-healthcheck-custo
+git merge fix/catalogo_sinc_jsonl_sql -m "chore: mergeada branch fix/catalogo_sinc_jsonl_sql na branch dev."
+git merge fix/corrige_cli_python -m "chore: mergeada branch fix/corrige_cli_python na branch dev."
+git merge fix/corrige_uuids_versao_7 -m "chore: mergeada branch fix/corrige_uuids_versao_7 na branch dev."
+git merge fix/degustacao-consultas-frontend
+git merge fix/prompt_secoes_agente -m "chore: mergeada branch fix/prompt_secoes_agente na branch dev."
+git merge fix/tela_ferramentas_troca_modalidade_por_tag  -m "chore: mergeada branch fix/tela_ferramentas_troca_modalidade_por_tag na branch dev."
+git merge fix/ui_filtros_testes -m "chore: mergeada branch fix/ui_filtros_testes na branch dev."
+git merge fix/ultimas_correcoes -m "chore: mergeada branch fix/ultimas_correcoes na branch dev."
 git merge main
 git merge nicolas
 git merge origin albano
 git merge origin/Leandro
 git merge origin/luizsenji
 git merge origin/renan
+git merge refactor/dashboard-grid-ferramentas
+git merge refactor/filtros-catalogo-backend
+git merge refactor/perfil-abas-voltar
 git merge renan
 git mv .mvn backend/
 git mv Dockerfile pg16.dockerfile
@@ -2454,6 +2540,7 @@ git push -u origin main
 git push -v
 git push -v  origin dev
 git push -v -f origin dev
+git push -v github dev && git push -v gitlab dev
 git push -v origin --delete 2-criar-pasta-de-documentação-docs
 git push -v origin archlinux
 git push -v origin dev
@@ -2478,6 +2565,7 @@ git rebase -h
 git remote -h
 git remote -l
 git remote -v
+git remote -vv
 git remote add backup ~/Tests/bare/dotfiles.git
 git remote add github git@github.com:HarmonIA-UFPR/harmonia-ferramentas.git
 git remote add github git@github.com:HarmonIA-UFPR/lumia-assistente-dev.git
@@ -2490,6 +2578,8 @@ git remote add origin git@github.com:allbano/crud-angularspring.git
 git remote add origin git@github.com:allbano/trabalho-ia-rp.git
 git remote add upstream git@github.com:yuchdev/CppBooks.git
 git remote remove origin
+git remote rename github hub
+git remote rename gitlab lab
 git remote rename origin github
 git remote show
 git remote update
@@ -2568,12 +2658,17 @@ git rm --cached
 git rm --cached *
 git rm --cached .
 git rm --cached .env
+git rm --cached service.json
 git rm -f .gitignore
 git rm -r --cached .
+git rm -r .vscode
 git rm -r bash/
 git rm -r scripts
+git rm -rf .vscode
+git rm -rf\ .vscode
 git rm .abacusai/config.json
 git rm .gitignore
+git rm .vscode
 git rm bash/
 git rm commit_converter_simplification.patch
 git rm dataset_tool_deployment_type_tab.xlsx
@@ -2613,6 +2708,8 @@ git status ../alacritty/alacritty.toml
 git submodule update --init --recursive
 git switch
 git switch -
+git switch -c dev
+git switch -c fix/corrige_uuids_versao_7
 git switch 1.2.x
 git switch 2-criar-pasta-de-documentação-docs
 git switch archlinux
@@ -2621,7 +2718,6 @@ git switch debian
 git switch dev
 git switch devv
 git switch feat/conta-email-checklist-a1
-git switch feat/conta-email-checklist-a1 
 git switch feat/migracao-assistente-m4
 git switch main
 git tag
@@ -2820,8 +2916,10 @@ hwinfo
 id
 id albano
 id allarch
+id | rg input
 ifconfig
 ifconfig --help
+images
 info
 info autoconf
 info compopt
@@ -2841,7 +2939,10 @@ inxi -Mxx
 inxi -Mxxx
 inxi -N
 inxi -m
+inxi -mM
+inxi -mx
 inxi -mxx
+inxi -mxxx
 ip
 ip --help
 ip -6 -c a sh
@@ -2990,8 +3091,10 @@ kbuildsycoca5
 kbuildsycoca5 --help
 kbuildsycoca6
 kbuildsycoca6 --help
+kbuildsycoca6 --help-all
 kbuildsycoca6 --noincremental
 kbuildsycoca6 check
+kbuildsycoca6 reload
 kbuildsycoca6 status
 kill -15 98701
 kill -9 $(ps aux | grep 'rm -rf /home/albano/github/parajas/frontend/src/app/shared/components' | grep -v grep | awk '{print $2}') 2>/dev/null || true
@@ -3001,9 +3104,15 @@ kill -9 2919
 kill -9 chrome
 kill -9 google-chrome-beta
 killall --help
+killall -15 vlc
+killall -9 qbittorrent
+killall -9 vlc
+killall -l
 killall -v -n 5310
+killall KILL vlc
 killall bash
 killall plasma-discover 2>/dev/null
+killall vlc
 kimi
 kind --help
 kitten --help
@@ -3015,6 +3124,7 @@ kitten query_terminal --wait-for=2 font_family font_size background_opacity >'/t
 kitten query_terminal --wait-for=2 font_family font_size background_opacity >'/tmp/kitty-v02.WXNWU9/restart.out'
 kitty +kitten themes
 kl
+kotlin
 kotlin --version
 kotlin -version
 kotlin ex01.kt
@@ -3025,7 +3135,9 @@ kotlinc --version
 kotlinc -version
 kotlinc ex01.kt -include-runtime -d ex01.jar
 kotlinc main.kt
+kotlinc-jvm
 kwriteconfig6 --file discoverrc --group "Software" --key "Backend-packagekit-backend" "false"
+l;l
 lazygit
 lazygit --help
 lazygit root/.bashrc
@@ -3173,6 +3285,13 @@ ls ~/.local/share/systemd/user/
 ls ~/.m2/repository/org/springframework/boot/ | grep flyway
 ls ~/.ssh
 lsb_release
+lsb_release -a
+lsb_release -c
+lsb_release -cs
+lsb_release -d
+lsb_release -i
+lsb_release -s
+lsb_release -v
 lsblk
 lsblk --help
 lsblk --output NAME,MAJ:MIN,FSTYPE,TYPE,MOUNTPOINTS,UUID
@@ -3309,7 +3428,9 @@ lumia-cli dev keys
 lumia-cli dev model --real
 lumia-cli dev purge --real --confirm lumia-dev
 lumia-cli dev up --real
+lumia-migration/
 lvim
+m,ise up
 make
 make --version
 make -n
@@ -3684,6 +3805,9 @@ ng new crud-angular2
 ng new curso-angular --no-standalone
 ng new desafio1 --style scss --ssr false
 ng new frontend
+ng new frontend-admin
+ng new frontend-public
+ng new gpet-frontend
 ng new landing-page
 ng new listaDeTarefasAngular
 ng new meu_novo_projeto --style=scss --ssr=false
@@ -3787,6 +3911,7 @@ npm config delete node_gyp
 npm config delete scripts-prepend-node-path
 npm config list
 npm config ls -l
+npm config set allow-scripts=esbuild --location=user
 npm config set allow-scripts=yarn --location=user
 npm fund
 npm i
@@ -3970,14 +4095,19 @@ nvidiactl help
 nvim
 nvim  ~/.config/plasma-workspace/env/mise.sh
 nvim $DOTBASH/.bashrc
+nvim .config/mise/config.toml
 nvim .gitignore
 nvim .gitmodules
+nvim .npmrc
 nvim .runtime/dev/.env
+nvim /etc/sysctl.d/99-wireguard.conf
 nvim Cargo.toml
+nvim Links_uteis.md
 nvim PKGBUILD
 nvim README.md
 nvim allbano_tads_andreia
 nvim allbano_tads_andreia.pub
+nvim arquitect.md
 nvim compose.dev.real.yaml
 nvim compose.dev.yaml
 nvim compose.prod.s1.yaml
@@ -3985,8 +4115,11 @@ nvim config
 nvim docker-compose.yaml
 nvim generate_reports.py
 nvim k2s
+nvim mise.toml
 nvim opencode.jsonc
 nvim qwen-keys.txt
+nvim rback
+nvim resolver
 nvim settings.json
 nvim src/
 nvim src/main.rs
@@ -3996,22 +4129,25 @@ nvim ~/.bash_functions
 nvim ~/.bash_profile
 nvim ~/.bashrc
 nvim ~/.cmdsh.toml
-nvim ~/.cmdsh.toml 
 nvim ~/.config/kitty/kitty.conf
 nvim ~/.config/plasma-workspace/env/mise.sh
 nvim ~/.config/rclone/rclone.conf
 nvim ~/.gemini/GEMINI.md
+nvim ~/.kimi-code/config.toml
+nvim ~/.local/share/qBittorrent/nova3/engines/jackett.json
 nvim ~/.qwen/settings.json
 nvim ~/.ssh/config
 nvim ~/.tmux.conf
 nvim ~/.vscode/extensions/qwenlm.qwen-code-vscode-ide-companion-0.21.11-linux-x64/package.json
 nvim ~/.vscode/extensions/qwenlm.qwen-code-vscode-ide-companion-0.21.11-linux-x64/schemas/settings.schema.json
 nvim ~/.zprofile
+nvim ~/Desktop/Links_uteis.md
 nvim ~/Desktop/MeusDocs/
 nvim ~/Desktop/MeusDocs/qwen_code_keys.txt
 nvim ~/abin
 nvim ~/bin
 nvtop
+nvvim .npmrc
 ollama
 ollama list
 ollama run codellama:34b
@@ -4050,6 +4186,7 @@ opencode -s ses_fb0fe99bcffetMbnhw8qgrGlf5
 opencode -v
 opencode .
 opencode ./
+opencode /home/albano/.local/share/applications
 opencode agent
 opencode agent list
 opencode agent ls
@@ -4091,10 +4228,20 @@ opencode session list |cat
 opencode stats
 opencode unin
 opencode uninstall
+opencode up
+opencode update
 opencode upgrade
+opencode upgrade \
+opencode ~/.ssh
 opencode-trace --stats
 opencode-trace --stats | jq
 opencode2
+openspec
+openspec completion install
+openspec compretion install
+openspec init --language "Portuguese (Brazil)" --tools antigravity,opencode,kimi,copilot
+openspec init --language "Portuguese (Brazil)" --tools antigravity,opencode,kimi,github-copilot
+openspec update
 openssl rand -base64 32
 opoencode
 opoencode --help
@@ -4131,6 +4278,7 @@ pacman -Qq
 pacman -Qqm
 pacman -Qqm | xargs -r printf "$cachedir/%s\n"
 pacman -Qqm | xargs -r printf "/home/${USER}/.cache/yay/%s\n"
+pacman -Qqo '/usr/lib/perl5/5.42'
 pacman -Qs antigravity
 pacman -Qs arcolinux_repo
 pacman -Qs bin
@@ -4206,6 +4354,7 @@ pactl info
 pactree gnome-shell
 parted --help
 parted -l
+partybox encore essential 2
 paru --help
 paru -G astah-uml
 paru -G vscodium-insiders
@@ -4213,6 +4362,7 @@ paru -Pc
 paru -Q
 paru -Q perf
 paru -Qd
+paru -Qdt
 paru -Qe
 paru -Qi
 paru -Qi bash-completion
@@ -4238,7 +4388,9 @@ paru -Qi optimus-manager-qt
 paru -Qi perf
 paru -Qi picom-git
 paru -Qi reflective-rapidjson
+paru -Qi serf
 paru -Qi sublime-text-dev
+paru -Qi trurl
 paru -Qi ufraw-thumbnailer
 paru -Qi wasi-compiler-rt
 paru -Qii fwupd
@@ -4265,6 +4417,10 @@ paru -Qs arcolinux_repo_xlarge
 paru -Qs asdf
 paru -Qs axel
 paru -Qs codex
+paru -Qs codium
+paru -Qs openjdk
+paru -Qs visual-studio
+paru -Qs vscodium
 paru -Qss '.*-meta'
 paru -Qss 'kde.*-meta'
 paru -Qss csh
@@ -4298,29 +4454,62 @@ paru -R arcolinuxd-system-config-git
 paru -R arianna
 paru -R astah-uml
 paru -R astah-uml{,-debug}
+paru -R aurutils
 paru -R broadcom-wl-dkms
 paru -R broadcom-wl-dkms linux-firmware-bnx2x
 paru -R btrfs-convert
 paru -R chromium chromium-widevine
+paru -R colord-kde
 paru -R cosmic-terminal
 paru -R cpu-x
 paru -R devin-desktop
 paru -R easytag
 paru -R fatrace
+paru -R gradle
+paru -R jdk8-openjdk
+paru -R jre8-openjdk jre8-openjdk-headless
+paru -R jre8-openjdk-headless
+paru -R jre8-openjdk-headless jre8-openjdk
+paru -R kdevelop
+paru -R kdevelop-meta
 paru -R linux-xanmod-rt linux-xanmod-rt-headers
 paru -R openai-codex
 paru -R opencode-desktop-bin
+paru -R perl-authen-pam perl-encode-detect
+paru -R serf
+paru -R subversion
+paru -R subversion devtools
+paru -R trurl
 paru -R vscodium-all-marketplace vscodium-insiders
+paru -R webmin perl-authen-pam perl-encode-detect
+paru -R yarn
+paru -R zeal
 paru -Rc deepin-terminal
 paru -Rc optimus-manager{,-qt}
 paru -Rc reiserfsprogs
 paru -Rcndd ufraw-thumbnailer
 paru -Rcns reiserfsprogs
+paru -Rnd dotnet-sdk-8.0
+paru -Rnd jdk11-openjdk
+paru -Rnd jdk11-openjdk jre8-openjdk
+paru -Rnd jdk11-openjdk jre8-openjdk-headless
+paru -Rnd jre8-openjdk jre8-openjdk-headless
+paru -Rnd jre8-openjdk jre8-openjdk-headless jdk8-openjdk
+paru -Rnd packagekit-qt6
+paru -Rnd vscodium vscodium-marketplace
+paru -Rnd vscodium-insiders-marketplace
+paru -Rns dotnet-host
+paru -Rns dotnet-sdk dotnet-targeting-pack dotnet-runtime
+paru -Rns dotnet-sdk dotnet-targeting-pack dotnet-runtime netstandard-targeting-pack
+paru -Rns dotnet-sdk-8.0
+paru -Rns dotnet-sdk-8.0 dotnet-targeting-pack-8.0 dotnet-runtime-8.0 netstandard-targeting-pack
 paru -Rns vscodium-all-marketplace vscodium-insiders
 paru -Rs arcolinux-sweet-mars-git
 paru -Rs audacious
 paru -Rs bpf
 paru -Rs codelite-unstable
+paru -Rs dotnet-sdk
+paru -Rs dotnet-sdk-8.0
 paru -Rs kcachegrind kcachegrind-common
 paru -Rs kcachegrind-common
 paru -Rs kde-sdk-meta kcachegrind kcachegrind-common
@@ -4335,6 +4524,7 @@ paru -Rscdd ffmpeg-amd-full
 paru -Rscn gwe
 paru -Rscn vscodium-bin
 paru -Rscndd electron-builder
+paru -Rsnd dotnet-sdk-8.0
 paru -S
 paru -S --asexplicit antigravity
 paru -S --asexplicit antigravity-ide
@@ -4342,22 +4532,32 @@ paru -S --asexplicit archlinux-contrib archlinux-java-run archlinux-keyring
 paru -S --asexplicit aur/visual-studio-code-bin
 paru -S --asexplicit bash-language-server
 paru -S --asexplicit blktrace
+paru -S --asexplicit btfs qbittorrent-nox
 paru -S --asexplicit devin-des
 paru -S --asexplicit devin-desktop
+paru -S --asexplicit dotnet-sdk
+paru -S --asexplicit dotnet-sdk-8.0
+paru -S --asexplicit dotnet-sdk-8.0-bin
 paru -S --asexplicit easytag
 paru -S --asexplicit freedownloadmanager
+paru -S --asexplicit helix
 paru -S --asexplicit hyprpm
 paru -S --asexplicit hyprshutdown
+paru -S --asexplicit jackett
+paru -S --asexplicit jdk11-openjdk
 paru -S --asexplicit kid3
 paru -S --asexplicit kid3{,-qt}
 paru -S --asexplicit mtr
 paru -S --asexplicit opencode-desktop-bin
 paru -S --asexplicit packagekit-qt6
+paru -S --asexplicit tar
 paru -S --asexplicit traceroute
 paru -S --asexplicit visual-studio-code-bin
 paru -S --asexplicit visual-studio-code-insiders-bin
 paru -S --asexplicit vscodium
 paru -S --asexplicit vscodium vscodium-marketplace
+paru -S --asexplicit vscodium-insiders
+paru -S --asexplicit vscodium-insiders vscodium-insiders-marketplace
 paru -S --needed --asexplicit aic94xx-firmware wd719x-firmware upd72020x-fw ast-firmware
 paru -S --needed --asexplicit aic94xx-firmware wd719x-firmware upd72020x-fw ast-firmware linux-firmware-{qlogic,realtek,other,liquidio,mellanox,mediatek}
 paru -S --needed --asexplicit axel wget curl aria2
@@ -4367,14 +4567,18 @@ paru -S --needed --asexplicit duf
 paru -S --needed --asexplicit dust
 paru -S --needed --asexplicit fd
 paru -S --needed --asexplicit firefox-developer-edition{,-i18n-pt-br}
+paru -S --needed --asexplicit helix haskell-language-server lua-language-server taplo yaml-language-server
 paru -S --needed --asexplicit tree-sitter-python
 paru -S --needed acpi_call-dkms
 paru -S aria2
 paru -S asciinema
 paru -S axel
+paru -S gradle
+paru -S kdevelop-php kdevelop-python
 paru -S links
 paru -Sccc
 paru -Scccc
+paru -Sccccc
 paru -Scccccc
 paru -Si axel
 paru -Si code
@@ -4409,11 +4613,13 @@ perl
 perl --help
 perl --version
 perl -MCPAN -e 'install Tk'
+pgrep
 pgrep --help
 pi
 pidof
 pidof mingetty
 pidof systemd
+ping -c2 10.10.0.1
 ping -c2 10.10.0.2
 ping -c2 192.99.4.15
 ping -c2 200.17.199.197
@@ -4860,6 +5066,7 @@ ps au | grep bash
 ps aux
 ps aux --sort=-%mem
 ps aux | grep -E "(rm -rf|mkdir|touch|find)" | grep -v grep
+ps aux | grep -i pacman
 ps aux | grep 55036
 ps aux | rg '11703'
 ps aux | rg 'pid=11703'
@@ -4921,6 +5128,7 @@ python manage --help
 python manage collectstatic
 python manage createsuperuser
 python ~/github/udemy-downloader/main.py -c 'https://www.udemy.com/course/ia-para-qa/learn/lecture/51884749#overview'
+qbittorrent-nox
 rankmirrors --help
 rankmirrors -n 6
 rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup
@@ -4949,6 +5157,7 @@ rclone config file
 rclone config file | tail -n1
 rclone config reconnect allbano:
 rclone config show
+rclone copy /dados/hd1/Dados/Videos.tar gdrive_chunker: --drive-chunk-size 128M --transfers 1 --retries 10 --low-level-retries 20 --stats 5s --verbose --progress --bwlimit 22M
 rclone help flags
 rclone help flags | grep "--buffer"
 rclone help flags | grep "--dir-cache"
@@ -4984,9 +5193,12 @@ rclone mount allbano: /home/albano/gdrive --config $(rclone config file | tail -
 rclone mount gdrive: /home/albano/gdrive
 rclone mount gdrive: /home/albano/gdrive --config $(rclone config file | tail -n1)
 rclone mount gdrive:/home/albano/gdrive
+rclone sync /dados/hd1/Dados/Videos/SoparaDeletar/BAFM•MOVIES gdrive:Pessoal/Videos/Unclassified --progress --verbose
+rclone sync /home/albano/Desktop gdrive:Desktop --verbose --progress --dry-run
 rclone sync /media/gdrive/allbano allbano:/Videos
 rclone sync /media/gdrive/allbano remote:/Videos
 rclone sync /media/gdrive/allbano remote:allbano/Videos
+rclone sync /virtualization/allbano-virt/gaytor.net/jesseotokyo gdrive:Pessoal/VideosUnclassified/jesseotokyo --drive-chunk-size 128M --transfers 4 --checkers 8 --buffer-size 64M --tpslimit 10 --fast-list --checksum --retries 10 --low-level-retries 20 --stats 5s --bwlimit 22M --progress --verbose
 rclone tree
 rclone tree gdrive-allbano-documents:
 rclone-systemd-sync --help
@@ -5012,26 +5224,45 @@ rm $(type -p converter)
 rm $(which cmdsh)
 rm $(which converter)
 rm $HOME/.config/kitty/startup.conf
+rm 'Kurose - Redes de computadores e a internet-Uma Abordagem Top-Down - 6a.pdf'
 rm *
 rm *.mkv
 rm -f .runtime/subdev-client/tunnel.json
 rm -rf  qwenlm.qwen-code-vscode-ide-companion-0.21.11-linux-x64/
+rm -rf  ~/.config/autostart/org.zealdocs.zeal.desktop
 rm -rf  ~/github/harmonia-ferramentas-agente/.opencode/plugins
+rm -rf '/dados/hd1/Dados/Videos/SoparaDeletar/Sam Ledger'
 rm -rf .abacusai
 rm -rf .abacusai-chromium-profile/
 rm -rf .agents/
 rm -rf .ai_completion/
+rm -rf .cache/paru/clone/vscodium
+rm -rf .cache/paru/clone/vscodium-insiders
+rm -rf .cache/paru/clone/vscodium-insiders-marketplace/
+rm -rf .cache/yay/vscodium
+rm -rf .cache/yay/vscodium-all-marketplace
 rm -rf .config/devin/
+rm -rf .config/opencode.bak
+rm -rf .config/opera-developer/
 rm -rf .devin
 rm -rf .devin-shared/
 rm -rf .git
 rm -rf .git .gitignore
+rm -rf .github
+rm -rf .ipfs
+rm -rf .ipfs/
+rm -rf .local/share/applications/vscodium-insiders.desktop
+rm -rf .local/share/aurutils/view/vscodium
+rm -rf .local/share/baloo
 rm -rf .local/share/devin
 rm -rf .local/share/devin/
+rm -rf .local/state/mise/trusted-configs/Arch-pkgs-vscodium-insiders-f2bc65769209c116
+rm -rf .local/state/nvim/undo/%home%albano%Arch-pkgs%vscodium-insiders%PKGBUILD
 rm -rf .opencode/
 rm -rf .opencode/plugins/graphify.js
 rm -rf .runtime
 rm -rf .runtime/
+rm -rf .vscode
 rm -rf .vscode-insiders-shared/
 rm -rf .vscode-oss
 rm -rf .vscode-oss-shared/
@@ -5041,12 +5272,16 @@ rm -rf /home/albano/.local/share/mise/installs/poetry/latest/bin/poetry
 rm -rf /home/albano/github/.opencode/plugins/graphify.js
 rm -rf /var/cache/pacman/pkg/download-*
 rm -rf API_REST/
+rm -rf Arch-pkgs/vscodium-insiders
 rm -rf Exercicio_I01/
 rm -rf GECEP/
+rm -rf LPOO1Exercises/
 rm -rf Tuplas01/
 rm -rf Videos/
+rm -rf WEBII
 rm -rf a94
 rm -rf agenda-django/
+rm -rf agent-skills
 rm -rf antigravity-ide/
 rm -rf api_rest
 rm -rf api_rest/
@@ -5055,25 +5290,49 @@ rm -rf bash/
 rm -rf build/
 rm -rf dev/
 rm -rf docs/evidencias/
+rm -rf frontend-*
 rm -rf frontend/
+rm -rf gpet
+rm -rf gpet-atividades
+rm -rf gpet-frontend/
+rm -rf gpet/
+rm -rf harmonia-estudos-go
 rm -rf harmonia-ferramentas
+rm -rf harmonia-ferramentas-agente/
 rm -rf harmonia-ferramentas/
+rm -rf harmonia-lumia/
+rm -rf koboldcpp
 rm -rf lumia
 rm -rf lumia-agente-dev/
+rm -rf lumia-assistente-dev/
 rm -rf lumia/lumia-user
+rm -rf lumia_test.tar.zst
 rm -rf ms-auth/
+rm -rf no-ai-slop/
+rm -rf node_modules
+rm -rf node_modules/
 rm -rf nvme0n1.blktrace.blk*
+rm -rf open-webui
 rm -rf opencode/
+rm -rf openspec
+rm -rf openspec/
 rm -rf parajas/
+rm -rf pg_ulid/
 rm -rf pkg/
+rm -rf prompts/
 rm -rf saudacao/
+rm -rf skills/no-ai-slop
+rm -rf skills/no-ai-slop/agents
 rm -rf src
 rm -rf src/
 rm -rf target/
+rm -rf test_bantads/
 rm -rf tests/
 rm -rf tool_deployment_type_map_join*
 rm -rf trabalho-ia2/
 rm -rf tuplas01/
+rm -rf udemy-downloader
+rm -rf webcoder
 rm -rf ~/.abacusai/
 rm -rf ~/.agents
 rm -rf ~/.bash_history.bak.20260906-025740
@@ -5081,10 +5340,16 @@ rm -rf ~/.cache/discover
 rm -rf ~/.cache/knewstuff3 ~/.cache/plasma_discover*
 rm -rf ~/.cache/omo/models.dev.json 2>/dev/null; rm -rf ~/.cache/senpi/models.dev.json
 rm -rf ~/.cache/opencode/npm/.opencode/plugins/graphify.js
+rm -rf ~/.cache/pip
+rm -rf ~/.cache/pypoetry
 rm -rf ~/.clau
 rm -rf ~/.claude
 rm -rf ~/.cmdsh.toml
+rm -rf ~/.config/Claude
 rm -rf ~/.config/opencode/skills/graphify/
+rm -rf ~/.config/opencode/skills/no-ai-slop
+rm -rf ~/.config/pip
+rm -rf ~/.config/pypoetry
 rm -rf ~/.local/bin/graphify
 rm -rf ~/.qwen
 rm -rf ~/.qwen/
@@ -5100,9 +5365,11 @@ rm .gitkeep
 rm .vscode/settings.json
 rm /home/albano/.bash_history.bak.20260829-154604
 rm /home/albano/.local/bin/cmdsh
+rm /home/albano/.local/share/applications/RClone_Manager.desktop
 rm 000007_seed_tcc2_project.*
 rm Cargo.toml
 rm Cello\ Adagios\ for\ Stress\ Relief\ \&\ Mental\ Clarity\ \ Soft\ Music\ to\ Unwind\ \[1_Hwx1HR_7k\].mkv
+rm Musica
 rm Relaxation/GOOD\ MORNING\ 🌤️\ SMOOTH\ MORNING\ JAZZ\ ｜\ Calm\ \&\ Peaceful\ Jazz\ Music\ for\ a\ Slow\ Morning\ \[Cyw7sgmCZUo\].*
 rm Relaxation/The\ Best\ of\ Vivaldi\ 🎻\ La\ Stravaganza\,\ The\ Four\ Season\ ✨\ Healing\,\ Relaxation\ 🎵\ \[FS8DjzceXp0\].*
 rm Relaxation/🌙\ Deeply\ Emotional\ Blues\ Guitar\ ｜\ Late-Night\ Blues\ for\ a\ Broken\ Heart\ \[c43Gy5AJomc\].description
@@ -5112,28 +5379,37 @@ rm Vivaldi\ x\ Paganini\ x\ Bach\ Inspired\ 🎻\ Fast\ \&\ Relaxing\ Violin\ Mu
 rm allbano_home*
 rm bash/history/commands_history
 rm cat
+rm commands_history
 rm dataset_tool_deployment_type_tab.xlsx
 rm dev/
+rm docs/plan/007v1_PLAN_migracao_interligacao_modulos*
 rm ferramentas_dataset__20260917.xlsx
+rm gpet/.gitkeep
 rm harmonia-ferramentas/
+rm install-dotnet-preview.sh
 rm lumia/lumia-agente/etl_pipeline/paths.py
 rm lumia/lumia-ui/package.json.head lumia/lumia-ui/tsconfig.app.json.bak
 rm mise.toml
 rm opencode.bash
 rm output_insert.sql
 rm pkg/
+rm resolver
 rm settings.json.corrupted
 rm tags-atualizado-19082026.xlsx
 rm tags-atualizado-202609116.xlsx
+rm tmux-client-933069.log
 rm tools.json
 rm tools.jsonl
+rm tools/session-info-tui.test.tsx
 rm vscodium-insiders-1.135.05934-1-x86_64.pkg.tar.zst
 rm ~/.local/bin/cmdsh
+rm ~/.local/share/applications/{antigravity-ide,claude-code-url-handler}.desktop
 rmc Relaxation/GOOD\ MORNING\ 🌤️\ SMOOTH\ MORNING\ JAZZ\ ｜\ Calm\ \&\ Peaceful\ Jazz\ Music\ for\ a\ Slow\ Morning\ \[Cyw7sgmCZUo\].*
 rmdir  commands/
 rmdir /home/albano/github/lumia/lumia-ferramentas/lumia/lumia-ui/src/app/application/user/services
 rmdir Music/
 rmdir history/
+rmdir lumia-migration/
 rmdir opencode/
 rmdir sqlalchemy/
 rsync --help
@@ -5266,6 +5542,8 @@ sed -i '/^zz$/d' $DOTBASH/history/commands_history
 sed -i '/^zz/d' $DOTBASH/history/commands_history
 sed -i '26d' ~/.ssh/known_hosts
 sed -i 's/agente\./agente_chat\.core\./g' /home/albano/github/agente-proto/agente-chat/core/*.py
+sed -i 's|ExecStart=/home/albano/.local//bin/ghostty|ExecStart=/usr/bin/ghostty|' ~/.local/share/dbus-1/services/com.mitchellh.ghostty.service ~/.local/share/dbus-1/services/com.mitchellh.ghostty-debug.service
+sed -i 's|ExecStart=/home/albano/.local//bin/ghostty|ExecStart=/usr/bin/ghostty|' ~/.local/share/systemd/user/app-com.mitchellh.ghostty.service ~/.local/share/systemd/user/app-com.mitchellh.ghostty-debug.service
 sed -n '10000000p' dados_0.csv
 sed -n '2500000p' dados_0.csv
 sed -n '3p' "$HOME/.cmdsh.toml" | sed -E 's/^[^"]*"([^"]*)".*$/\1/'
@@ -5379,9 +5657,17 @@ srs findmnt -t btrfs
 srs findmnt -t zfs
 srs firewall-cmd --list-all
 srs grub-mkconfig -o /boot/grub/grub.cfg
+srs inxi -a -mmxxx
+srs inxi -m
+srs inxi -mmxxx
+srs inxi -mx
+srs inxi -mxx
+srs inxi -mxxx
+srs inxi -mxxxx
 srs iostat
 srs iotop -a
 srs iotop -ak
+srs ip route add 10.10.0.1 via 10.10.0.2
 srs ls -l /etc/mkinitcpio.conf.d
 srs ls -la /boot/
 srs lsd -l /boot
@@ -5476,6 +5762,7 @@ srs pacman -U vscodium-insiders-1.135.05934-1-x86_64.pkg.tar.zst
 srs pacman -U vscodium-insiders-1.135.06030-1-x86_64.pkg.tar.zst
 srs plasma-discover
 srs rm -rf /home/albano/.local/share/waydroid/
+srs rm -rf /usr/share/applications/ghostty.desktop
 srs rm -rf /usr/share/bash-completion/completions/paru
 srs rm -rf /var/cache/pacman/pkg/download-*
 srs rm /boot/initramfs-linux*
@@ -5512,6 +5799,8 @@ ss -ntp
 ss -tan
 ss -tanp
 ss -tanp | awk '{print $4,$5,$8,$9}'
+ss -tlnp
+ss -tlnp | grep 9117
 ssh --help
 ssh -4 -Tv git@bolha.dev
 ssh -N -L 39409:127.0.0.1:39409 parajas-server
@@ -5529,6 +5818,9 @@ ssh -i /home/albano/.ssh/allarch_dellg15 albano@192.168.5.2
 ssh -i /home/albano/.ssh/allbano-infojusIP244 -p 55022 allbano@200.17.199.244
 ssh -i allbano_site_aws_ec2.pem admin@allbano.com
 ssh -i ~/.ssh/albano-server-parajas albano@infosfera.inf.br
+ssh -i ~/.ssh/all-debianserver-infojus-i7-IP216 -p 55022 albano@10.10.0.1
+ssh -i ~/.ssh/allarch_dellg15 -p 55022 albano@10.10.0.1
+ssh -i ~/.ssh/allarch_dellg15 albano@10.10.0.1
 ssh -i ~/.ssh/allbano_site_aws_ec2.pem admin@allbano.com
 ssh -i ~/.ssh/infojus-i7-IP198 -p 22 albano@200.17.199.198
 ssh -i ~/.ssh/infojus-i7-IP198 -p 55022 albano@200.17.199.198
@@ -5541,10 +5833,14 @@ ssh -p 6969 albano@192.168.15.3
 ssh -t codeberg@codeberg.org
 ssh -t git@codeberg.org
 ssh -t git@github.com
+ssh -v -i ~/.ssh/all-debianserver-infojus-i7-IP216 -p 55022 albano@10.10.0.1
+ssh -v -i ~/.ssh/allarch_dellg15 -p 55022 albano@10.10.0.1
 ssh -v -p 1022 -o PreferredAuthentications=password andreia@200.17.200.58
 ssh -v -p 1022 albano@200.17.200.58
 ssh -v -p 1022 andreia@200.17.200.58
+ssh -v infosfera.inf.br
 ssh -v tcc-tads-server
+ssh -v ubuntu@infosfera.inf.br
 ssh albano@infosfera.inf.br
 ssh allbano
 ssh alldeb
@@ -5553,7 +5849,6 @@ ssh harmonia-agent-server-IP197
 ssh harmonia-server
 ssh harmonia-server-IP197
 ssh harmonia-server-IP216
-ssh harmonia-server-IP216 
 ssh infosfera-server
 ssh infosfera.inf.br
 ssh infosferacast@infosfera.inf.br
@@ -5563,16 +5858,19 @@ ssh parajas-server
 ssh parajas2
 ssh parajas216
 ssh premio@infosfera.inf.br
+ssh root@infosfera.inf.br
 ssh tcc-tads-server
 ssh ubuntu@admin.ibepes.org.br
 ssh ubuntu@infosfera.inf.br
 ssh-add --help
 ssh-add -l
 ssh-agent --help
+ssh-copy-id -i /home/albano/.ssh/albano-server-parajas albano@infosfera.inf.br
 ssh-copy-id -p 6969  albano@192.168.15.3
 ssh-copy-id -p 6969 -i /home/albano/.ssh/allnotebook.pub  192.168.15.2
 ssh-copy-id -p 6969 -i /home/albano/.ssh/allnotebook.pub  192.168.15.3
 ssh-copy-id albano@192.168.15.3 -p 6969
+ssh-keygen -R infosfera.inf.br
 ssh-keygen -f "/home/albano/.ssh/known_hosts" -R "[200.17.200.58]:1022"
 ssh-keygen -t ed25519 -C "allarch_dellg15"
 ssh-keygen -t ed25519 -C "notebook_dellg15"
@@ -5580,6 +5878,8 @@ ssh-keygen -t ed25519 -a 100
 ssh-keygen -t ed25519 -c "allarch_dellg15"
 ssh-keyscan
 ssh-keyscan --help
+ssh-keyscan -p 55022 10.10.0.1 2>/dev/null | ssh-keygen -lf -
+ssh-keyscan -p 55022 200.17.199.197 2>/dev/null | ssh-keygen -lf -
 sshd -t
 sshs
 sshs --help
@@ -5677,7 +5977,10 @@ sudo cd /root
 sudo chmod -R 0700 Docs/
 sudo chmod -R 644 Docs/
 sudo chmod -R 750 /root
+sudo chmod -R 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/
 sudo chmod -R 775 /tmp
+sudo chmod -R 775 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github
+sudo chmod -R 775 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/
 sudo chmod -R 775 /win
 sudo chmod -R 775 hd1
 sudo chmod -r 0700 docs/
@@ -5689,6 +5992,17 @@ sudo chmod 4755 /opt/visual-studio-code-insiders/chrome-sandbox
 sudo chmod 4755 /opt/visual-studio-code/chrome-sandbox
 sudo chmod 664 /usr/share/applications/ghostty.desktop
 sudo chmod 711 /virtualization/docker
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/copilot/
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/copilot/sdk
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/copilot/sdk/definitions/
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/copilot/sdk/definitions/sidekick/
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/copilot/sdk/prebuilds/
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/copilot/sdk/prebuilds/linux-x64/
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/copilot/sdk/tgrep/
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/copilot/sdk/tgrep/bin/
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/copilot/sdk/tgrep/bin/linux-x64/
+sudo chmod 755 /usr/share/code-insiders/resources/app/extensions/copilot/node_modules/@github/copilot/tgrep/bin/linux-x64/
 sudo chmod 770 UFPR
 sudo chmod 774 /win
 sudo chmod 775 /vt
@@ -5724,6 +6038,7 @@ sudo chown root:root /opt/visual-studio-code/chrome-sandbox
 sudo chown root:root bigdata.sql
 sudo chown root:root init.sh
 sudo chown root:users
+sudo chown root:users /dados/hd1/Dados/
 sudo chown root:users /usr/share/applications/ghostty.desktop
 sudo chown root:users /vt
 sudo chown root:users com.mitchellh.ghostty.desktop
@@ -5850,6 +6165,9 @@ sudo find /usr/sbin -type l -wholename snap
 sudo find /usr/sbin -wholename 'snap*.py'
 sudo find /usr/sbin -wholename 'snap.*.py'
 sudo find /usr/sbin -wholename 'snap_scheduler.py'
+sudo find /usr/share/applications/ -type f -wholename '*ghostty*.desktop' -exec mv {} /home/albano/.local/share/applications \; -exec chown -R albano:albano /home/albano/.local/share/applications/{} \;
+sudo find /usr/share/applications/ -type f -wholename '*ghostty*.desktop' -exec mv {} /home/albano/.local/share/applications/ \; -exec chown -R albano:albano /home/albano/.local/share/applications/{} \;
+sudo find /usr/share/applications/ -type f -wholename '*ghostty*.desktop' -exec rm -f {} \;
 sudo find /usr/share/bash-completion/ -wholename '*/opencode*' -exec rm {} +
 sudo find /usr/share/bash-completion/completions/ -name 'tmux*' 2> /dev/null
 sudo find /usr/share/bash-completion/completions/ -name 'tmux*' 2> /dev/null -exec . {} \;
@@ -5859,6 +6177,7 @@ sudo find ~/.local/share/applications -maxdepth 1 -name "arcolinux-*.desktop"
 sudo findmnt
 sudo firewall-cmd --add-port=6969/tcp --permanent
 sudo firewall-cmd --add-service=ssh-alt --permanent
+sudo firewall-cmd --direct --get-all-rules
 sudo firewall-cmd --get-services
 sudo firewall-cmd --info-service=ssh-alt
 sudo firewall-cmd --list-all
@@ -5879,6 +6198,7 @@ sudo firewall-cmd --reload
 sudo firewall-cmd --remove-port=6969/tcp --permanent
 sudo firewall-cmd --remove-service=ssh --permanent
 sudo firewall-cmd --state
+sudo firewall-cmd --zone=public --list-all
 sudo firewall-config
 sudo fwupd
 sudo fwupdmgr
@@ -5930,6 +6250,8 @@ sudo journalctl -b 0
 sudo journalctl -x
 sudo journalctl -xe
 sudo kbuildsycoca6
+sudo killall -15 vlc
+sudo killall -9 vlc
 sudo killall zed
 sudo kioclient
 sudo kioclient --help
@@ -5977,6 +6299,7 @@ sudo mkfs.btrfs -f -L VIDEOS -d single -m dup -s 4k -n 16k --csum crc32c /dev/sd
 sudo mkinitcpio --automods --verbose -P
 sudo mkinitcpio --automods -P
 sudo mkinitcpio --help
+sudo mkinitcpio -A
 sudo mkinitcpio -L
 sudo mkinitcpio -P
 sudo mkinitcpio -g /boot/initramfs-linux.img -k 6.11.4-arch2-1
@@ -6008,6 +6331,7 @@ sudo nala install inxi
 sudo nala install man
 sudo nala install man-db
 sudo nala install tldr
+sudo nala install unzip
 sudo nala search plasma-des
 sudo nala update
 sudo nala upgrade
@@ -6218,6 +6542,7 @@ sudo pacman -S --asexplicit codeblocks
 sudo pacman -S --asexplicit docker docker-compose docker-buildx docker-rootless-extras docker-machine
 sudo pacman -S --asexplicit erofs-utils
 sudo pacman -S --asexplicit erofs-utils erofsfuse
+sudo pacman -S --asexplicit ghostty
 sudo pacman -S --asexplicit gst-plugins-bad
 sudo pacman -S --asexplicit hyprland-qt-support xdg-desktop-portal xdg-desktop-portal-hyprland
 sudo pacman -S --asexplicit java-rhino
@@ -6304,6 +6629,8 @@ sudo pacman -S code
 sudo pacman -S icu
 sudo pacman -S iproute2
 sudo pacman -S kclock
+sudo pacman -S linux-cachyos{,-headers}
+sudo pacman -S linux-{lts,lts-headers}
 sudo pacman -S neovim
 sudo pacman -S nvme-cli
 sudo pacman -S sndio
@@ -6357,7 +6684,6 @@ sudo pacman -q flatpak >/dev/null 2>&1
 sudo pacman -q flatpak >/dev/null 2>&1 && flatpack update -y
 sudo pacman -q flatpak >/dev/null 2>&1 && flatpak update -y
 sudo pacman -q paru
-sudo pacman -q xorg*
 sudo pacman -qdtq
 sudo pacman -qdtq| wc -l
 sudo pacman -qi yarn
@@ -6367,7 +6693,6 @@ sudo pacman -qq
 sudo pacman -qqa
 sudo pacman -qqq
 sudo pacman -qqs xorg
-sudo pacman -qs xorg
 sudo pacman -qs xorg-server
 sudo pacman -r $(sudo pacman -qdtq)
 sudo pacman -r lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
@@ -6408,13 +6733,19 @@ sudo reboot
 sudo rebooty
 sudo rm $(find /usr/share/bash-completion/ -wholename '*/opencode*')
 sudo rm $(which cmdsh)
+sudo rm -rf /etc/webmin
 sudo rm -rf /home/albano/.cache/paru/clone/vscodium-insiders
 sudo rm -rf /home/albano/.cache/paru/clone/vscodium-insiders/
+sudo rm -rf /usr/share/vscodium-insiders-bin
 sudo rm -rf /usr/share/vscodium/resources/
 sudo rm -rf /var/cache/pacman/pkg/download-*
 sudo rm -rf bantads/
 sudo rm -rf nvme0n1.blktrace.*
+sudo rm -rf pg_ulid/
 sudo rm /etc/ssh/sshd_config
+sudo rm /var/lib/pacman/db.lck
+sudo rmdir  /usr/lib/perl5/5.42
+sudo rmdir /dados/hd1/snapdados/
 sudo rmmod btusb
 sudo rsync -haP /var/lib/docker/ /virtualization/docker/
 sudo sed -i "s/NoDisplay=true/NoDisplay=false/g" /etc/xdg/autostart/*.desktop
@@ -6569,6 +6900,7 @@ sudo systemctl status systemd-coredump.socket
 sudo systemctl status systemd-networkd
 sudo systemctl status systemd-networkd.service
 sudo systemctl status systemd-sysctl.service
+sudo systemctl status systemd-timesyncd.service
 sudo systemctl status systemd-udevd
 sudo systemctl status tlp.service
 sudo systemctl status webmin.service
@@ -6614,6 +6946,8 @@ sudo unlink /usr/share/bash-completion/completions/yd
 sudo unlink 10-albano-personal.conf
 sudo up link set virbr1 up
 sudo update-desktop-database
+sudo update-desktop-database -v
+sudo update-desktop-database ~/.local/share/applications
 sudo updatedb
 sudo upower --show-info
 sudo upower -e
@@ -6652,6 +6986,9 @@ sudo virsh net-list --title
 sudo watch -n 1 sensors
 sudo wbinfo --all-domains
 sudo wg show
+sudo wg showconf
+sudo wg showconf wg-harmonia
+sudo wg showconf wg0
 sudo zed
 sudo zed --help
 sudo zed -v
@@ -6670,6 +7007,7 @@ systemctl --user --failed
 systemctl --user cat app-kwalletmanager5@bdc128ddefbe4292830d23a7697e40ba.service
 systemctl --user daemon-reexec
 systemctl --user daemon-reload
+systemctl --user daemon-reload && systemctl --user enable --now jackett
 systemctl --user disable --now app-kwalletmanager5@542536cf65354c5bad1213663f17b495.service
 systemctl --user disable --now rclone-bisync-documents.service
 systemctl --user disable --now rclone-gdrive-allbano.service
@@ -6678,6 +7016,7 @@ systemctl --user disable rclone-bisync-documents.service
 systemctl --user disable rclone-bisync-documents.timer
 systemctl --user disable rclone@allbano.service
 systemctl --user edit app-kwalletmanager5@8ee9546af24c4cc9a93b138a2232ead5.service
+systemctl --user enable --now jackett
 systemctl --user enable --now pipewire pipewire-pulse wireplumber
 systemctl --user enable --now podman.service
 systemctl --user enable --now podman.socket
@@ -6693,8 +7032,10 @@ systemctl --user list-units
 systemctl --user list-units | grep kwallet
 systemctl --user reload
 systemctl --user reset-failed
+systemctl --user reset-failed app-com.mitchellh.ghostty.service
 systemctl --user restart app-kwalletmanager5@542536cf65354c5bad1213663f17b495.service
 systemctl --user restart app-kwalletmanager5@7e635e5c7e5546e899f40a7941d49095.service
+systemctl --user restart jackett.service
 systemctl --user restart pipewire.service
 systemctl --user restart pipewire.service pipewire-pulse.socket; && sleep 5s; && systemctl --user restart wireplumber.service
 systemctl --user restart pipewire.service pipewire-pulse.socket; sleep 5s; systemctl --user restart wireplumber.service
@@ -6706,6 +7047,7 @@ systemctl --user restart podman.socket
 systemctl --user restart rclone-bisync-documents.service
 systemctl --user restart rclone@allbano.service
 systemctl --user restart wireplumber.service
+systemctl --user restart wireplumber.service pipewire.service
 systemctl --user start rclone-bisync-documents.service
 systemctl --user start rclone-bisync-documents.timer
 systemctl --user start rclone-gdrive-allbano.service
@@ -6716,6 +7058,8 @@ systemctl --user status app-kwalletmanager5@8ee9546af24c4cc9a93b138a2232ead5.ser
 systemctl --user status app-kwalletmanager5@b5e08d7c15464bcbb728bd649cf87b53.service
 systemctl --user status app-kwalletmanager5@bdc128ddefbe4292830d23a7697e40ba.service
 systemctl --user status dbus
+systemctl --user status jackett
+systemctl --user status jackett.service
 systemctl --user status kde-baloo.service
 systemctl --user status keyboxd.service
 systemctl --user status pipewire
@@ -6737,6 +7081,7 @@ systemctl --user status rclone-gdrive-allbano.service
 systemctl --user status rclone@allbano.service
 systemctl --user status wireplumber
 systemctl --user status wireplumber.service
+systemctl --user status wireplumber.service pipewire.service
 systemctl --user stop plasma-baloorunner.service
 systemctl --user stop rclone-bisync-documents.timer
 systemctl --user stop rclone-gdrive-allbano.service
@@ -6755,6 +7100,7 @@ systemctl status docker.service
 systemctl status docker.socket
 systemctl status gns3-server@
 systemctl status gns3-server@albano.service
+systemctl status jackett.service
 systemctl status nvidia-persistenced.service
 systemctl status pipewire-pulse.service
 systemctl status podman
@@ -6789,6 +7135,11 @@ tail -n50 CLtx.dat
 tail -n50 WTEXpc.dat
 tail -n50 WWRDpc.dat
 tar --help
+tar --help | rg '--remove'
+tar --help | rg '--remove*'
+tar --help | rg '.-remove*'
+tar --help | rg 'archive'
+tar --help | rg --remove
 tar --list --usage -T file.tar
 tar --list --usage file.tar
 tar --list -T file.tar
@@ -6799,6 +7150,7 @@ tar --list -f ./icu-76.1-1-x86_64.pkg.tar.zst
 tar --list -fT ./icu-76.1-1-x86_64.pkg.tar.zst
 tar --list -fT file.tar
 tar --list file.tar
+tar --remove-files -cpvf Videos.tar Videos
 tar --zstd --preserve-permissions --atime-preserve --acls --xattrs --cvpf animes.tar.zst *
 tar --zstd --preserve-permissions --atime-preserve --acls --xattrs -cvpf animes.tar.zst *
 tar --zstd -cf bashrc_etc.tar.zst --remove-files  bash/backup/
@@ -6814,8 +7166,11 @@ tar -tvf docs_plan_lumia.tar.zst
 tar -tvf infoesferacast-site-v02.tar.gz
 tar -tvf lumia-project.tar.zst
 tar -tvf obsidian.tar.zst
+tar -xf Videos.tar "Videos/TorrentFiles"
 tar -xf icu-76.1-1-x86_64.pkg.tar.zst
 tar -xft icu-76.1-1-x86_64.pkg.tar.zst
+tar -xvf Videos.tar "Videos/Fica"
+tar -xvf Videos.tar "Videos/Fica/"
 tar f --list --usage file.tar
 tar f --list file.tar
 tar tf file.tar
@@ -6857,6 +7212,7 @@ time go run main.go Teste de "Usabilidade Remota"
 time go run main.go Teste de Acessibilidade Remota
 time wc -l < ./tt
 timedatectl
+timedatectl status
 tk
 tk --help
 tkconch
@@ -6918,6 +7274,7 @@ tlp-stat -c
 tlp-stat -s
 tlrc
 tlrc --version
+tm tmux-client-933069.log
 tmu
 tmu new-ses -s gb0
 tmu new-sess -s gb0
@@ -6927,8 +7284,10 @@ tmux --help
 tmux --version
 tmux -L tmux-bash new-session -s fb0
 tmux -L tmux-bash new-session -s gb0
+tmux -V
 tmux -a
 tmux -h
+tmux -v
 tmux attach-session
 tmux bash
 tmux choose-client
@@ -6991,6 +7350,12 @@ touch /home/albano/github/agente-proto/agente-chat/core/__init__.py
 touch /home/albano/github/parajas/frontend/src/app/shared/ui/page-layout/page-layout.css
 touch Etapa01/README.md
 touch config
+touch gpet/.gitkeep
+touch infra/.gitkeep
+touch scripts/.gitkeep
+touch tests/e2e/.gitkeep
+touch tests/integration/.gitkeep
+touch tests/unit/.gitkeep
 touch texto.txt
 touch ~/.config/starship.toml
 tput
@@ -7227,6 +7592,8 @@ unlink .zprofile
 unlink .zshrc
 unlink /etc/ssh/sshd_config.d/10-albano-personal-sshd-v1.conf
 unlink /home/albano/.local/share/mise/shims/poetry
+unlink /home/albano/Music
+unlink Musica
 unlink bin
 unlink config.toml
 unlink go
@@ -7252,6 +7619,7 @@ unzip eeg_recording.zip
 unzip premio_infosfera.zip
 up
 update
+update-desktop-database ~/.local/share/applications
 updateDotfiles
 updateHis
 updateHist
@@ -7448,6 +7816,7 @@ wget https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.30128/lin
 wget https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.33256/linux/Trae-linux-x64.deb
 wget https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.38456/linux/Trae-linux-x64.deb
 wget https://lll.justthegays.online/II/04.25/miig/131969.mp4?id=0 -O Aleonny_Nathan_gets_fucked.mp4
+wget https://raw.githubusercontent.com/AlaaBrahim/qBitTorrent-animetosho-search-plugin/main/animetosho.py
 wget https://www.cl72.org/110dataAlgo/Algorithms%20%20%20Data%20Structures%20=%20Programs%20[Wirth%201976-02].pdf
 wget https://z-lib.fm/dl/5728305/a4a3b2
 whatis gcc
@@ -7522,6 +7891,7 @@ which vivaldi
 which yarn
 which yay
 which yt-dlp
+who -a
 whoami
 whois
 whois devs.dev.br
@@ -7543,25 +7913,16 @@ wofi --sort-order=alphabetical --show drun --allow-images
 wpctl status
 wvtag --help
 wxget --help
-x -d .vimrc
 xargs --help
 xdg-open 'firefox &'
 xdg-open 'firefox'
 xdg-open 'https://meleu.sh/'
 xdg-open .bashrc
 xdg-open Calculator
-xdg-open VLC
 xdg-open calculator
 xdg-open vlc
-xit
-xrandr
 xrandr --listproviders
 xrandr --prop
-xx
-xx -h
-xx -u
-y
-yarn
 yarn --help
 yarn start
 yasm
@@ -7952,6 +8313,7 @@ yt-dlp --remote-components ejs:github --format 251 --extract-audio https://youtu
 yt-dlp --remote-components ejs:github --list-formats https://www.youtube.com/watch?v=nfzMJqPxnjg
 yt-dlp --remote-components ejs:github --list-formats https://www.youtube.com/watch?v=vk9pFo_65PY
 yt-dlp --remote-components ejs:github --list-formats https://youtu.be/igtEakjK7Lg?si=94INSaoiLg4cgiNt
+yt-dlp --remote-components ejs:github -f "bv*+ba*" --write-description https://youtu.be/fWGiEBYpF7I?si=pDqXEKc__KPEAHlP
 yt-dlp --remote-components ejs:github -f 248+251
 yt-dlp --rm-cache-dir
 yt-dlp --write-auto-subs --sub-lang pt https://www.youtube.com/watch?v=nCyvvMjO2ME
@@ -8060,10 +8422,3 @@ zpool --version
 zsh
 ~/.config/opencode/
 ~/Templates/
-git push -v github dev && git push -v gitlab dev
-docker rmi $(docker images -f "reference=lumia-subdev*" -q)
-rclone sync /home/albano/Desktop gdrive:Desktop --verbose --progress --dry-run
-rclone copy /dados/hd1/Dados/Videos.tar gdrive_chunker: --drive-chunk-size 128M --transfers 1 --retries 10 --low-level-retries 20 --stats 5s --verbose --progress --bwlimit 22M
-for i in {01..07}; do mkdir "Secao$i"; done
-rclone sync /dados/hd1/Dados/Videos/SoparaDeletar/BAFM•MOVIES gdrive:Pessoal/Videos/Unclassified --progress --verbose
-rclone sync /virtualization/allbano-virt/gaytor.net/jesseotokyo gdrive:Pessoal/VideosUnclassified/jesseotokyo --drive-chunk-size 128M --transfers 4 --checkers 8 --buffer-size 64M --tpslimit 10 --fast-list --checksum --retries 10 --low-level-retries 20 --stats 5s --bwlimit 22M --progress --verbose
